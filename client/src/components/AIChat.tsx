@@ -125,7 +125,7 @@ export default function AIChat() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-96 h-[500px] max-h-[80vh] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden">
+        <div className="fixed bottom-6 right-6 z-50 w-96 h-[400px] max-h-[70vh] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden">
           {/* Header */}
           <div className="bg-green-600 text-white p-4">
             <div className="flex items-center justify-between mb-3">

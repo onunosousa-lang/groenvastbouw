@@ -87,3 +87,15 @@
 - [x] Corrigir Navbar para usar Link do wouter em vez de âncoras (#)
 - [x] Atualizar navegação para funcionar entre Home e Projecten
 - [x] Adicionar lógica para navegar para home antes de scroll to section
+
+## Correções Adicionais Urgentes
+
+- [x] Corrigir altura do chatbot na página Projecten (ainda muito alto, impossível fechar)
+- [x] Configurar formulário de contacto para enviar emails corretamente
+- [x] Testar formulário de contacto
+
+## Novas Melhorias
+
+- [x] Adicionar favicon ao website
+- [x] Otimizar SEO completo (meta tags, Open Graph, Twitter Cards)
+- [x] Aplicar nova paleta de cores "Modern Eco" ao CSS
