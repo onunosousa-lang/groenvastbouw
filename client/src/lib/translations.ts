@@ -2,11 +2,13 @@ export const translations = {
   nl: {
     // Navigation
     nav_about: "Over Ons",
+    nav_services: "Diensten",
+    nav_senmar: "Senmar Partnerschap",
+    nav_contact: "Contact",
+    nav_benefits: "Voordelen",
     nav_passive: "Passief Huis",
     nav_models: "Modellen",
     nav_process: "Proces",
-    nav_contact: "Contact",
-    nav_benefits: "Voordelen",
     nav_sustainability: "Duurzaamheid",
     
     // Hero
@@ -146,11 +148,13 @@ export const translations = {
   en: {
     // Navigation
     nav_about: "About Us",
+    nav_services: "Services",
+    nav_senmar: "Senmar Partnership",
+    nav_contact: "Contact",
+    nav_benefits: "Benefits",
     nav_passive: "Passive House",
     nav_models: "Models",
     nav_process: "Process",
-    nav_contact: "Contact",
-    nav_benefits: "Benefits",
     nav_sustainability: "Sustainability",
     
     // Hero

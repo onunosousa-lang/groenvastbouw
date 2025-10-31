@@ -32,8 +32,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="text-2xl font-bold text-green-700">
-              Groenvastbouw
+            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center">
+              <img src="/logo.png" alt="Groenvastbouw" className="h-16 w-auto" />
             </a>
           </div>
 
@@ -42,17 +42,17 @@ export default function Navbar() {
             <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-gray-700 hover:text-green-700 transition-colors">
               {t('nav_about')}
             </a>
-            <a href="#passive" onClick={(e) => { e.preventDefault(); scrollToSection('passive'); }} className="text-gray-700 hover:text-green-700 transition-colors">
-              {t('nav_passive')}
+            <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-gray-700 hover:text-green-700 transition-colors">
+              {t('nav_services')}
             </a>
-            <a href="#models" onClick={(e) => { e.preventDefault(); scrollToSection('models'); }} className="text-gray-700 hover:text-green-700 transition-colors">
-              {t('nav_models')}
+            <a href="#senmar" onClick={(e) => { e.preventDefault(); scrollToSection('senmar'); }} className="text-gray-700 hover:text-green-700 transition-colors">
+              {t('nav_senmar')}
             </a>
-            <a href="#process" onClick={(e) => { e.preventDefault(); scrollToSection('process'); }} className="text-gray-700 hover:text-green-700 transition-colors">
-              {t('nav_process')}
+            <a href="#benefits" onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); }} className="text-gray-700 hover:text-green-700 transition-colors">
+              {t('nav_benefits')}
             </a>
-            <a href="#sustainability" onClick={(e) => { e.preventDefault(); scrollToSection('sustainability'); }} className="text-gray-700 hover:text-green-700 transition-colors">
-              {t('nav_sustainability')}
+            <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-gray-700 hover:text-green-700 transition-colors">
+              FAQ
             </a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
               <Button variant="default" className="bg-green-700 hover:bg-green-800">
@@ -93,17 +93,17 @@ export default function Navbar() {
               <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-gray-700 hover:text-green-700">
                 {t('nav_about')}
               </a>
-              <a href="#passive" onClick={(e) => { e.preventDefault(); scrollToSection('passive'); }} className="text-gray-700 hover:text-green-700">
-                {t('nav_passive')}
+              <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-gray-700 hover:text-green-700">
+                {t('nav_services')}
               </a>
-              <a href="#models" onClick={(e) => { e.preventDefault(); scrollToSection('models'); }} className="text-gray-700 hover:text-green-700">
-                {t('nav_models')}
+              <a href="#senmar" onClick={(e) => { e.preventDefault(); scrollToSection('senmar'); }} className="text-gray-700 hover:text-green-700">
+                {t('nav_senmar')}
               </a>
-              <a href="#process" onClick={(e) => { e.preventDefault(); scrollToSection('process'); }} className="text-gray-700 hover:text-green-700">
-                {t('nav_process')}
+              <a href="#benefits" onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); }} className="text-gray-700 hover:text-green-700">
+                {t('nav_benefits')}
               </a>
-              <a href="#sustainability" onClick={(e) => { e.preventDefault(); scrollToSection('sustainability'); }} className="text-gray-700 hover:text-green-700">
-                {t('nav_sustainability')}
+              <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-gray-700 hover:text-green-700">
+                FAQ
               </a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
                 <Button variant="default" className="bg-green-700 hover:bg-green-800 w-full">

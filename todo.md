@@ -1,25 +1,21 @@
-# Groenvastbouw Website TODO
+# Groenvastbouw Website TODO - Redesign
 
-## Funcionalidades Principais
+## Alterações Solicitadas
 
-- [x] Sistema bilingue (NL/EN) com language switcher
-- [x] Hero section com imagem impactante e CTA
-- [x] Seção "Sobre Nós" (missão, visão, valores)
-- [x] Seção "Casas Passivas" (benefícios, poupança energética)
-- [x] Seção "Modelos" (T3, T4, T5 com preços e especificações)
-- [x] Seção "Níveis de Desempenho" (Optimal, Passive, Super Passive)
-- [x] Seção "Processo de Construção" (6 passos)
-- [x] Seção "Parceria Senmar" (tecnologia e vantagens)
-- [x] Seção "Sustentabilidade" (certificações, impacto ambiental)
-- [x] Seção "Projetos" (galeria de imagens)
-- [x] Formulário de contacto funcional
-- [x] Design responsivo (mobile, tablet, desktop)
-- [x] Navegação fixa no topo
-- [x] Footer com informações da empresa
-- [x] Otimização de imagens
-- [ ] Animações suaves ao scroll
-- [ ] Meta tags SEO
-- [ ] Favicon e logo
-
-- [x] Adicionar seção "Sobre o Fundador" com informações do CV de Nuno Sousa
-- [x] Incluir experiência profissional e qualificações
+- [x] Remover todos os preços específicos
+- [x] Adicionar logo da Groenvastbouw
+- [x] Adicionar mais fotos ao site
+- [x] Implementar backgrounds dinâmicos com imagens
+- [x] Adicionar transparências e overlays
+- [x] Criar seção de Serviços (casas, escritórios, extensões, renovações)
+- [x] Enfatizar serviços turnkey vs. apenas estrutura
+- [x] Melhorar seção Senmar com link externo e mais detalhes
+- [x] Criar seção FAQ detalhada
+- [x] Mover informação do fundador para o final
+- [x] Atualizar email para info@groenvastbouw.nl
+- [x] Atualizar telefone para 0629841297
+- [x] Reduzir espaços brancos
+- [x] Adicionar mais elementos visuais
+- [x] Implementar estilo carousel/slider
+- [x] Focar em qualidade de vida e materiais de alta qualidade
+- [x] Destacar eficiência energética e especificações passivas
