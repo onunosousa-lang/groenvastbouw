@@ -746,7 +746,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="mb-6">
                   <div className="text-3xl font-bold text-gray-900 mb-2">
-                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
+                    €950-€1,050<span className="text-lg font-normal text-gray-600">/m²*</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
@@ -839,7 +839,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="mb-6">
                   <div className="text-3xl font-bold text-gray-900 mb-2">
-                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
+                    €1,250-€1,350<span className="text-lg font-normal text-gray-600">/m²*</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
