@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import AIChat from '@/components/AIChat';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -83,20 +83,97 @@ export default function Home() {
     }
   ];
 
+  const principles = [
+    {
+      title_nl: "Qualidade e personalização",
+      title_en: "Quality and Customization",
+      description_nl: "Os nossos colaboradores, altamente especializados e qualificados, garantem que cada casa pré-fabricada cumpre os mais altos padrões de acabamento, durabilidade e estética, proporcionando, em cada projeto, uma qualidade excecional.",
+      description_en: "Our highly specialized and qualified team ensures that each prefabricated house meets the highest standards of finish, durability and aesthetics, providing exceptional quality in every project.",
+      icon: Award
+    },
+    {
+      title_nl: "Sustentabilidade",
+      title_en: "Sustainability",
+      description_nl: "Damos prioridade à responsabilidade ambiental, utilizando madeira de origem sustentável e métodos de construção ecológicos, minimizando a nossa pegada ecológica.",
+      description_en: "We prioritize environmental responsibility, using sustainably sourced wood and eco-friendly construction methods, minimizing our ecological footprint.",
+      icon: Leaf
+    },
+    {
+      title_nl: "Disponibilizamos conhecimento",
+      title_en: "We Share Knowledge",
+      description_nl: "Partilhamos com os nossos clientes informação sobre tecnologias, processos e os benefícios das casas pré-fabricadas, para que possam tomar decisões informadas.",
+      description_en: "We share information with our clients about technologies, processes and the benefits of prefabricated houses, so they can make informed decisions.",
+      icon: Users
+    },
+    {
+      title_nl: "Flexibilidade e personalização",
+      title_en: "Flexibility and Customization",
+      description_nl: "Acreditamos que cada cliente tem necessidades e preferências únicas. Por esse motivo, oferecemos soluções personalizadas que atendem aos gostos e necessidades de cada indivíduo.",
+      description_en: "We believe each client has unique needs and preferences. That's why we offer customized solutions that meet each individual's tastes and needs.",
+      icon: Key
+    },
+    {
+      title_nl: "Desenvolvimento Profissional",
+      title_en: "Professional Development",
+      description_nl: "Investimos nos nossos colaboradores e oferecemos oportunidades contínuas de formação e desenvolvimento, garantindo que a nossa equipa se mantenha qualificada, bem informada e motivada.",
+      description_en: "We invest in our team and offer continuous training and development opportunities, ensuring our staff remains qualified, well-informed and motivated.",
+      icon: Users
+    }
+  ];
+
+  const buildingTypes = [
+    {
+      title_nl: "Casas e chalés",
+      title_en: "Houses and Chalets",
+      description_nl: "Temos uma vasta experiência em todo o tipo de construção residencial, desde casas compactas a vivendas luxuosas.",
+      description_en: "We have extensive experience in all types of residential construction, from compact homes to luxurious villas."
+    },
+    {
+      title_nl: "Edifícios comerciais",
+      title_en: "Commercial Buildings",
+      description_nl: "A tecnologia que utilizamos permite-nos projetar e construir edifícios comerciais e de serviços com vários andares incluindo edifícios de escritórios e espaços culturais.",
+      description_en: "Our technology allows us to design and build multi-story commercial and service buildings including office buildings and cultural spaces."
+    },
+    {
+      title_nl: "Edifícios residenciais",
+      title_en: "Residential Buildings",
+      description_nl: "Os nossos serviços incluem o desenvolvimento e construção de complexos residenciais desde casas geminadas e apartamentos, passando por urbanizações. Desta forma, oferecemos soluções regenerativas, flexíveis e inovadoras para responder às exigências de grandes projetos residenciais e de ecoturismo.",
+      description_en: "Our services include the development and construction of residential complexes from townhouses and apartments to housing developments. We offer regenerative, flexible and innovative solutions for large residential and ecotourism projects."
+    },
+    {
+      title_nl: "Tiny houses / bungalows",
+      title_en: "Tiny Houses / Bungalows",
+      description_nl: "Criamos uma variedade de casas pequenas (tiny houses), perfeitas para um estilo de vida simples e minimalista. Estas, utilizam o espaço de forma super eficiente, reduzem os custos de construção, manutenção e de vida, oferecendo um ambiente acolhedor e sustentável. Facilmente re-localizáveis, servem pessoas que priorizam a simplicidade ou a mobilidade.",
+      description_en: "We create a variety of tiny houses, perfect for a simple and minimalist lifestyle. These use space super efficiently, reduce construction, maintenance and living costs, offering a welcoming and sustainable environment. Easily relocatable, they serve people who prioritize simplicity or mobility."
+    },
+    {
+      title_nl: "Saunas e anexos",
+      title_en: "Saunas and Annexes",
+      description_nl: "Estamos disponíveis para construir qualquer estrutura ou anexo à sua casa. Desde saunas, ginásios, churrasqueiras, casas de ferramentas, nenhum projeto é demasiado pequeno para nós.",
+      description_en: "We are available to build any structure or annex to your home. From saunas, gyms, barbecues, tool sheds, no project is too small for us."
+    },
+    {
+      title_nl: "Arranjos exteriores",
+      title_en: "Outdoor Arrangements",
+      description_nl: "Desenvolvemos todo o tipo de arranjos exteriores e soluções de agricultura para autoconsumo, desde canteiros a estufas passando por lagos e florestas comestíveis. Ambos realçam a beleza do seu espaço e suportam um estilo de vida mais autónomo e sustentável.",
+      description_en: "We develop all types of outdoor arrangements and self-consumption agriculture solutions, from flower beds to greenhouses, ponds and edible forests. Both enhance the beauty of your space and support a more autonomous and sustainable lifestyle."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <WhatsAppButton />
+      <AIChat />
 
       {/* Hero Section - Full Screen with Background Image */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/vista_exterior.jpg" 
-            alt="Passive House" 
+            src="/images/header-background.jpg" 
+            alt="Sustainable passive houses in forest" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-3xl">
@@ -196,6 +273,81 @@ export default function Home() {
                 </div>
                 <h4 className="font-semibold text-gray-900">{value.title}</h4>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Principles Section */}
+      <section id="principles" className="relative py-20 bg-gradient-to-br from-green-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'Nossos Princípios' : 'Our Principles'}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {language === 'nl' 
+                ? 'Os valores que nos guiam em cada projeto' 
+                : 'The values that guide us in every project'}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {principles.map((principle, index) => {
+              const Icon = principle.icon;
+              return (
+                <Card key={index} className="border-green-200 hover:shadow-2xl transition-all hover:scale-105">
+                  <CardHeader>
+                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mb-4">
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl">
+                      {language === 'nl' ? principle.title_nl : principle.title_en}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 leading-relaxed">
+                      {language === 'nl' ? principle.description_nl : principle.description_en}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Build Section */}
+      <section id="building-types" className="relative py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'O que Construímos' : 'What We Build'}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {language === 'nl' 
+                ? 'Soluções personalizadas para cada necessidade' 
+                : 'Customized solutions for every need'}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {buildingTypes.map((type, index) => (
+              <Card key={index} className="border-gray-200 hover:shadow-xl transition-all hover:border-green-400">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <Building2 className="w-6 h-6 text-green-700" />
+                  </div>
+                  <CardTitle className="text-xl">
+                    {language === 'nl' ? type.title_nl : type.title_en}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700 leading-relaxed">
+                    {language === 'nl' ? type.description_nl : type.description_en}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

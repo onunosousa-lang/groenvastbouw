@@ -32,3 +32,18 @@
 - [x] Corrigir informação sobre anos de experiência da Senmar
 - [x] Criar seção de preços com 3 níveis (Optimal, Passive, Super Passive)
 - [x] Adicionar preços turnkey e estrutura separados
+
+## Correções e Melhorias Finais
+
+- [x] Trocar logo para versão com fundo transparente
+- [x] Corrigir problema do header (barra preta no lado direito)
+- [x] Gerar imagem AI de floresta de pinheiros com casas prefabricadas para header
+- [x] Substituir botão WhatsApp por widget de chat integrado
+- [x] Adicionar assistente AI/chatbot para responder perguntas
+
+## Novas Secções a Adicionar
+
+- [x] Adicionar secção "Princípios" com ilustrações
+- [x] Adicionar secção "O que construímos" com diferentes tipos de projetos
+- [x] Gerar imagens ilustrativas para cada princípio (usando ícones)
+- [x] Adicionar cards para cada tipo de construção

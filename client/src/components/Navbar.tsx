@@ -40,8 +40,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          {/* Desktop Navigation + Language Switcher */}
+          <div className="hidden lg:flex items-center space-x-6">
             <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
               about
             </a>
@@ -63,10 +63,6 @@ export default function Navbar() {
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm">
               drop us a line
             </a>
-          </div>
-
-          {/* Language Switcher */}
-          <div className="hidden lg:flex items-center">
             <button
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
               className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition-colors text-sm font-semibold"
