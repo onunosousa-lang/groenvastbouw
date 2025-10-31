@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -47,8 +48,8 @@ export default function Home() {
     {
       question_nl: "Hoe lang duurt de bouw?",
       question_en: "How long does construction take?",
-      answer_nl: "De structuurmontage ter plaatse duurt slechts 7-10 dagen. Voor een complete turnkey woning rekenen we op 4-6 maanden vanaf het moment van bestelling tot oplevering. Dit is aanzienlijk sneller dan traditionele bouw, omdat de elementen geprefabriceerd worden in een gecontroleerde fabrieksomgeving.",
-      answer_en: "On-site structure assembly takes only 7-10 days. For a complete turnkey home, we estimate 4-6 months from order to delivery. This is significantly faster than traditional construction because the elements are prefabricated in a controlled factory environment."
+      answer_nl: "De structuurmontage ter plaatse duurt ongeveer 3 maanden vanaf bestelling. Voor een complete turnkey woning rekenen we op ongeveer 6 maanden totaal (3 maanden structuur + 3 maanden afwerking). Dit is aanzienlijk sneller dan traditionele bouw, omdat de elementen geprefabriceerd worden in een gecontroleerde fabrieksomgeving.",
+      answer_en: "On-site structure assembly takes approximately 3 months from order. For a complete turnkey home, we estimate approximately 6 months total (3 months structure + 3 months finishing). This is significantly faster than traditional construction because the elements are prefabricated in a controlled factory environment."
     },
     {
       question_nl: "Kunnen jullie ook op mijn eigen kavel bouwen?",
@@ -59,8 +60,8 @@ export default function Home() {
     {
       question_nl: "Wat zijn de voordelen van samenwerking met Senmar?",
       question_en: "What are the advantages of the Senmar partnership?",
-      answer_nl: "Senmar is een gerenommeerde Portugese fabrikant met 30+ jaar ervaring in houtskeletbouw. Ze produceren in een state-of-the-art fabriek met strikte kwaliteitscontrole. Voordelen: bewezen technologie, hoogwaardige materialen, snelle productie, concurrerende prijzen door schaalvoordeel, en uitstekende isolatiewaarden (tot R10). Alle elementen worden geprefabriceerd en getest voordat ze naar Nederland worden verzonden.",
-      answer_en: "Senmar is a renowned Portuguese manufacturer with 30+ years of experience in timber-frame construction. They produce in a state-of-the-art factory with strict quality control. Advantages: proven technology, high-quality materials, fast production, competitive prices through economies of scale, and excellent insulation values (up to R10). All elements are prefabricated and tested before being shipped to the Netherlands."
+      answer_nl: "Senmar is een gerenommeerde Portugese fabrikant gespecialiseerd in hoogwaardige houtskeletbouw. Ze produceren in een state-of-the-art fabriek in centraal Portugal met strikte kwaliteitscontrole. Voordelen: bewezen technologie, hoogwaardige materialen, snelle productie, concurrerende prijzen door schaalvoordeel, en uitstekende isolatiewaarden (tot R10). Alle elementen worden geprefabriceerd en getest voordat ze naar Nederland worden verzonden.",
+      answer_en: "Senmar is a renowned Portuguese manufacturer specialized in high-quality timber-frame construction. They produce in a state-of-the-art factory in central Portugal with strict quality control. Advantages: proven technology, high-quality materials, fast production, competitive prices through economies of scale, and excellent insulation values (up to R10). All elements are prefabricated and tested before being shipped to the Netherlands."
     },
     {
       question_nl: "Welke certificeringen hebben jullie?",
@@ -77,14 +78,15 @@ export default function Home() {
     {
       question_nl: "Wat zijn de kosten?",
       question_en: "What are the costs?",
-      answer_nl: "De kosten variëren afhankelijk van grootte, specificaties en afwerkingsniveau. Voor een indicatie: een standaard T4 woning (120m²) in passieve specificatie kost tussen €150.000-€200.000 turnkey, afhankelijk van locatie en wensen. Neem contact met ons op voor een persoonlijke offerte op basis van uw specifieke situatie.",
-      answer_en: "Costs vary depending on size, specifications, and finishing level. As an indication: a standard T4 home (120m²) in passive specifications costs between €150,000-€200,000 turnkey, depending on location and wishes. Contact us for a personal quote based on your specific situation."
+      answer_nl: "Wij bieden drie prestatieniveaus: Optimal (€800-€900/m² structuur, €1,500-€1,700/m² turnkey), Passive (€900-€1,000/m² structuur, €1,600-€1,800/m² turnkey), en Super Passive (€1,000-€1,100/m² structuur, €1,700-€1,900/m² turnkey). Bijvoorbeeld: een T3 woning van 97m² in Passive specificatie kost €155,000-€175,000 turnkey. De turnkey prijs is afhankelijk van afwerkingsniveau en individuele wensen. Neem contact op voor een persoonlijke offerte.",
+      answer_en: "We offer three performance levels: Optimal (€800-€900/m² structure, €1,500-€1,700/m² turnkey), Passive (€900-€1,000/m² structure, €1,600-€1,800/m² turnkey), and Super Passive (€1,000-€1,100/m² structure, €1,700-€1,900/m² turnkey). For example: a T3 home of 97m² in Passive specifications costs €155,000-€175,000 turnkey. Turnkey price depends on finishing level and individual requirements. Contact us for a personal quote."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <WhatsAppButton />
 
       {/* Hero Section - Full Screen with Background Image */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -98,10 +100,16 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
-              {t('hero_title')}
+            <div className="mb-4">
+              <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>
+              <p className="text-xl md:text-2xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
+              {language === 'nl' 
+                ? 'Duurzame Woningen op Maat' 
+                : 'Sustainable Homes Tailored to You'}
             </h1>
-            <p className="text-xl md:text-2xl text-white/95 mb-8 drop-shadow-lg">
+            <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">
               {language === 'nl' 
                 ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energie-efficiënt, duurzaam en betaalbaar.' 
                 : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'}
@@ -351,8 +359,8 @@ export default function Home() {
               </p>
               <p className="text-gray-700 mb-6">
                 {language === 'nl' 
-                  ? 'Senmar is een gerenommeerde Portugese fabrikant met meer dan 30 jaar ervaring in ecologische houtskeletbouw. Hun state-of-the-art fabriek produceert hoogwaardige geprefabriceerde elementen met strikte kwaliteitscontrole. Door deze samenwerking kunnen wij u de beste kwaliteit bieden tegen zeer concurrerende prijzen.' 
-                  : 'Senmar is a renowned Portuguese manufacturer with over 30 years of experience in ecological timber-frame construction. Their state-of-the-art factory produces high-quality prefabricated elements with strict quality control. Through this partnership, we can offer you the best quality at very competitive prices.'}
+                  ? 'Senmar is een gerenommeerde Portugese fabrikant gespecialiseerd in ecologische houtskeletbouw. Hun state-of-the-art fabriek in centraal Portugal produceert hoogwaardige geprefabriceerde elementen met strikte kwaliteitscontrole. Door deze samenwerking kunnen wij u de beste kwaliteit bieden tegen zeer concurrerende prijzen.' 
+                  : 'Senmar is a renowned Portuguese manufacturer specialized in ecological timber-frame construction. Their state-of-the-art factory in central Portugal produces high-quality prefabricated elements with strict quality control. Through this partnership, we can offer you the best quality at very competitive prices.'}
               </p>
               
               <div className="bg-green-50 p-6 rounded-lg mb-6">
@@ -361,7 +369,7 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    language === 'nl' ? '30+ jaar ervaring in houtskeletbouw' : '30+ years of experience in timber-frame construction',
+                    language === 'nl' ? 'Gespecialiseerde fabrikant in centraal Portugal' : 'Specialized manufacturer in central Portugal',
                     language === 'nl' ? 'Isolatiewaarden tot R10 (super passief)' : 'Insulation values up to R10 (super passive)',
                     language === 'nl' ? 'CE-gecertificeerde producten' : 'CE-certified products',
                     language === 'nl' ? 'Geprefabriceerd in gecontroleerde omgeving' : 'Prefabricated in controlled environment',
@@ -508,6 +516,220 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="relative py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'Transparante Prijzen' : 'Transparent Pricing'}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {language === 'nl' 
+                ? 'Kwaliteit en duurzaamheid tegen een eerlijke prijs' 
+                : 'Quality and sustainability at a fair price'}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Optimal */}
+            <Card className="border-2 border-green-200 hover:border-green-400 transition-all">
+              <CardHeader className="bg-gradient-to-br from-green-50 to-green-100">
+                <CardTitle className="text-2xl">OPTIMAL</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-700">
+                  {language === 'nl' ? 'Hoge Prestaties' : 'High Performance'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €800-€900<span className="text-lg font-normal text-gray-600">/m²</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 5.7</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">200mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">BENG-conform</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '70-80% energiebesparing' : '70-80% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
+                  <p className="text-2xl font-bold text-green-700">€1,500-€1,700/m²</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Passive */}
+            <Card className="border-2 border-green-500 shadow-xl scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                {language === 'nl' ? 'POPULAIR' : 'POPULAR'}
+              </div>
+              <CardHeader className="bg-gradient-to-br from-green-100 to-green-200">
+                <CardTitle className="text-2xl">PASSIVE</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-800">
+                  {language === 'nl' ? 'Premium Prestaties' : 'Premium Performance'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €900-€1,000<span className="text-lg font-normal text-gray-600">/m²</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 8.5</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">300mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">BENG++</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '85-90% energiebesparing' : '85-90% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
+                  <p className="text-2xl font-bold text-green-700">€1,600-€1,800/m²</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Super Passive */}
+            <Card className="border-2 border-green-200 hover:border-green-400 transition-all">
+              <CardHeader className="bg-gradient-to-br from-green-50 to-green-100">
+                <CardTitle className="text-2xl">SUPER PASSIVE</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-700">
+                  {language === 'nl' ? 'Passivhaus Gecertificeerd' : 'Passivhaus Certified'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €1,000-€1,100<span className="text-lg font-normal text-gray-600">/m²</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 9.9</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">350mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">Passivhaus</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '90% energiebesparing' : '90% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
+                  <p className="text-2xl font-bold text-green-700">€1,700-€1,900/m²</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-green-50 rounded-lg p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              {language === 'nl' ? 'Wat is inbegrepen?' : 'What\'s included?'}
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold text-lg mb-3 text-green-800">
+                  {language === 'nl' ? 'Structuur (3 maanden)' : 'Structure (3 months)'}
+                </h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Complete houtskeletbouw' : 'Complete timber frame'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Hoogwaardige isolatie' : 'High-performance insulation'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Triple-glas ramen en deuren' : 'Triple-glazed windows and doors'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Transport vanuit Portugal' : 'Transport from Portugal'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Professionele montage' : 'Professional assembly'}</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg mb-3 text-green-800">
+                  {language === 'nl' ? 'Turnkey (+3 maanden)' : 'Turnkey (+3 months)'}
+                </h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Funderingen' : 'Foundations'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Binnen- en buitenafwerking' : 'Interior and exterior finishing'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Elektra en loodgieterwerk' : 'Electrical and plumbing'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Keuken en badkamers' : 'Kitchen and bathrooms'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Sleutelklaar opgeleverd' : 'Turnkey delivery'}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-600 mt-6">
+              {language === 'nl' 
+                ? 'Prijzen zijn indicatief en afhankelijk van locatie, terreinomstandigheden en maatwerk. Neem contact op voor een persoonlijke offerte.' 
+                : 'Prices are indicative and depend on location, site conditions and customization. Contact us for a personal quote.'}
+            </p>
           </div>
         </div>
       </section>

@@ -19,3 +19,16 @@
 - [x] Implementar estilo carousel/slider
 - [x] Focar em qualidade de vida e materiais de alta qualidade
 - [x] Destacar eficiência energética e especificações passivas
+
+## Novas Alterações Solicitadas
+
+- [x] Redesenhar header inspirado no Senmar (navegação horizontal limpa)
+- [x] Usar logo apenas com símbolo (sem texto)
+- [x] Adicionar tagline "Nuchter bouwen. Slim wonen."
+- [x] Adicionar preços por m² para estrutura
+- [x] Atualizar timeline: 3 meses estrutura + 3 meses acabamentos
+- [x] Clarificar que turnkey depende de acabamentos individuais
+- [x] Adicionar botão flutuante WhatsApp
+- [x] Corrigir informação sobre anos de experiência da Senmar
+- [x] Criar seção de preços com 3 níveis (Optimal, Passive, Super Passive)
+- [x] Adicionar preços turnkey e estrutura separados
