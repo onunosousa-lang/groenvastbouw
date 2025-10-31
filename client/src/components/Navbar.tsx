@@ -60,6 +60,9 @@ export default function Navbar() {
             <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
               faq
             </a>
+            <a href="/projecten" className="text-white/90 hover:text-green-400 transition-colors text-sm">
+              projecten
+            </a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm">
               drop us a line
             </a>
@@ -101,6 +104,9 @@ export default function Navbar() {
               </a>
               <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400">
                 faq
+              </a>
+              <a href="/projecten" className="text-white/90 hover:text-green-400">
+                projecten
               </a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center">
                 drop us a line

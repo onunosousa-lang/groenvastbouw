@@ -127,22 +127,34 @@ export default function AIChat() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-50 w-96 h-[600px] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden">
           {/* Header */}
-          <div className="bg-green-600 text-white p-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-8 w-8" />
-              <div>
-                <div className="font-semibold">Groenvastbouw AI</div>
-                <div className="text-xs text-green-100">
-                  {language === 'nl' ? 'Online - Wij helpen u graag' : 'Online - Happy to help'}
+          <div className="bg-green-600 text-white p-4">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-3">
+                <img src="/logo-icon.png" alt="Groenvastbouw" className="h-8 w-8" />
+                <div>
+                  <div className="font-semibold">Groenvastbouw AI</div>
+                  <div className="text-xs text-green-100">
+                    {language === 'nl' ? 'Online - Wij helpen u graag' : 'Online - Happy to help'}
+                  </div>
                 </div>
               </div>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="hover:bg-green-700 p-1 rounded transition-colors"
+              >
+                <X size={20} />
+              </button>
             </div>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="hover:bg-green-700 p-1 rounded transition-colors"
+            {/* WhatsApp Button */}
+            <a 
+              href="https://wa.me/31629841297?text=Hallo%20Groenvastbouw%2C%20ik%20heb%20een%20vraag%20over..." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white py-2 px-4 rounded-lg transition-colors text-sm font-medium w-full"
             >
-              <X size={20} />
-            </button>
+              <MessageCircle size={16} />
+              {language === 'nl' ? 'Chat via WhatsApp' : 'Chat via WhatsApp'}
+            </a>
           </div>
 
           {/* Messages */}

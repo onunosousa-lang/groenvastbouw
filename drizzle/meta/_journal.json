@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1761929589085,
+      "tag": "0000_kind_baron_zemo",
+      "breakpoints": true
+    }
+  ]
+}

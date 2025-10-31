@@ -1,11 +1,13 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { trpc } from '@/lib/trpc';
 import Navbar from '@/components/Navbar';
 import AIChat from '@/components/AIChat';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Home as HomeIcon, Leaf, Zap, Clock, Award, Users, Building2, Hammer, Key, ExternalLink, ChevronDown } from 'lucide-react';
+import { Home as HomeIcon, Leaf, Zap, Clock, Award, Users, Building2, Hammer, Key, ExternalLink, ChevronDown, Lightbulb, PenTool } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
 
@@ -26,10 +28,24 @@ export default function Home() {
     }
   };
 
+  const sendMessage = trpc.contact.sendMessage.useMutation({
+    onSuccess: () => {
+      toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    },
+    onError: (error) => {
+      toast.error(language === 'nl' ? 'Er is een fout opgetreden. Probeer het opnieuw.' : 'An error occurred. Please try again.');
+      console.error('Contact form error:', error);
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error(language === 'nl' ? 'Vul alle verplichte velden in' : 'Please fill in all required fields');
+      return;
+    }
+    sendMessage.mutate(formData);
   };
 
   const faqs = [
@@ -85,37 +101,37 @@ export default function Home() {
 
   const principles = [
     {
-      title_nl: "Qualidade e personalização",
+      title_nl: "Kwaliteit en maatwerk",
       title_en: "Quality and Customization",
-      description_nl: "Os nossos colaboradores, altamente especializados e qualificados, garantem que cada casa pré-fabricada cumpre os mais altos padrões de acabamento, durabilidade e estética, proporcionando, em cada projeto, uma qualidade excecional.",
+      description_nl: "Onze hooggespecialiseerde en gekwalificeerde medewerkers garanderen dat elk geprefabriceerd huis voldoet aan de hoogste normen van afwerking, duurzaamheid en esthetiek, en bieden bij elk project uitzonderlijke kwaliteit.",
       description_en: "Our highly specialized and qualified team ensures that each prefabricated house meets the highest standards of finish, durability and aesthetics, providing exceptional quality in every project.",
       icon: Award
     },
     {
-      title_nl: "Sustentabilidade",
+      title_nl: "Duurzaamheid",
       title_en: "Sustainability",
-      description_nl: "Damos prioridade à responsabilidade ambiental, utilizando madeira de origem sustentável e métodos de construção ecológicos, minimizando a nossa pegada ecológica.",
+      description_nl: "Wij geven prioriteit aan milieubewustzijn door gebruik te maken van duurzaam gewonnen hout en milieuvriendelijke bouwmethoden, waardoor onze ecologische voetafdruk wordt geminimaliseerd.",
       description_en: "We prioritize environmental responsibility, using sustainably sourced wood and eco-friendly construction methods, minimizing our ecological footprint.",
       icon: Leaf
     },
     {
-      title_nl: "Disponibilizamos conhecimento",
+      title_nl: "Wij delen kennis",
       title_en: "We Share Knowledge",
-      description_nl: "Partilhamos com os nossos clientes informação sobre tecnologias, processos e os benefícios das casas pré-fabricadas, para que possam tomar decisões informadas.",
+      description_nl: "Wij delen informatie met onze klanten over technologieën, processen en de voordelen van geprefabriceerde huizen, zodat zij weloverwogen beslissingen kunnen nemen.",
       description_en: "We share information with our clients about technologies, processes and the benefits of prefabricated houses, so they can make informed decisions.",
       icon: Users
     },
     {
-      title_nl: "Flexibilidade e personalização",
+      title_nl: "Flexibiliteit en maatwerk",
       title_en: "Flexibility and Customization",
-      description_nl: "Acreditamos que cada cliente tem necessidades e preferências únicas. Por esse motivo, oferecemos soluções personalizadas que atendem aos gostos e necessidades de cada indivíduo.",
+      description_nl: "Wij geloven dat elke klant unieke behoeften en voorkeuren heeft. Daarom bieden wij op maat gemaakte oplossingen die voldoen aan de smaak en behoeften van elk individu.",
       description_en: "We believe each client has unique needs and preferences. That's why we offer customized solutions that meet each individual's tastes and needs.",
       icon: Key
     },
     {
-      title_nl: "Desenvolvimento Profissional",
+      title_nl: "Professionele ontwikkeling",
       title_en: "Professional Development",
-      description_nl: "Investimos nos nossos colaboradores e oferecemos oportunidades contínuas de formação e desenvolvimento, garantindo que a nossa equipa se mantenha qualificada, bem informada e motivada.",
+      description_nl: "Wij investeren in onze medewerkers en bieden voortdurende opleidings- en ontwikkelingsmogelijkheden, zodat ons team gekwalificeerd, goed geïnformeerd en gemotiveerd blijft.",
       description_en: "We invest in our team and offer continuous training and development opportunities, ensuring our staff remains qualified, well-informed and motivated.",
       icon: Users
     }
@@ -123,45 +139,45 @@ export default function Home() {
 
   const buildingTypes = [
     {
-      title_nl: "Casas e chalés",
+      title_nl: "Woningen en chalets",
       title_en: "Houses and Chalets",
-      description_nl: "Temos uma vasta experiência em todo o tipo de construção residencial, desde casas compactas a vivendas luxuosas.",
+      description_nl: "Wij hebben uitgebreide ervaring in alle soorten residentiële bouw, van compacte woningen tot luxe villa's.",
       description_en: "We have extensive experience in all types of residential construction, from compact homes to luxurious villas."
     },
     {
-      title_nl: "Edifícios comerciais",
+      title_nl: "Commerciële gebouwen",
       title_en: "Commercial Buildings",
-      description_nl: "A tecnologia que utilizamos permite-nos projetar e construir edifícios comerciais e de serviços com vários andares incluindo edifícios de escritórios e espaços culturais.",
+      description_nl: "Onze technologie stelt ons in staat om commerciële gebouwen en dienstengebouwen met meerdere verdiepingen te ontwerpen en te bouwen, waaronder kantoorgebouwen en culturele ruimtes.",
       description_en: "Our technology allows us to design and build multi-story commercial and service buildings including office buildings and cultural spaces."
     },
     {
-      title_nl: "Edifícios residenciais",
+      title_nl: "Woongebouwen",
       title_en: "Residential Buildings",
-      description_nl: "Os nossos serviços incluem o desenvolvimento e construção de complexos residenciais desde casas geminadas e apartamentos, passando por urbanizações. Desta forma, oferecemos soluções regenerativas, flexíveis e inovadoras para responder às exigências de grandes projetos residenciais e de ecoturismo.",
+      description_nl: "Onze diensten omvatten de ontwikkeling en bouw van wooncomplexen, van rijtjeshuizen en appartementen tot woonwijken. Wij bieden regeneratieve, flexibele en innovatieve oplossingen voor grote residentiële projecten en ecotoerisme.",
       description_en: "Our services include the development and construction of residential complexes from townhouses and apartments to housing developments. We offer regenerative, flexible and innovative solutions for large residential and ecotourism projects."
     },
     {
       title_nl: "Tiny houses / bungalows",
       title_en: "Tiny Houses / Bungalows",
-      description_nl: "Criamos uma variedade de casas pequenas (tiny houses), perfeitas para um estilo de vida simples e minimalista. Estas, utilizam o espaço de forma super eficiente, reduzem os custos de construção, manutenção e de vida, oferecendo um ambiente acolhedor e sustentável. Facilmente re-localizáveis, servem pessoas que priorizam a simplicidade ou a mobilidade.",
+      description_nl: "Wij creëren een verscheidenheid aan tiny houses, perfect voor een eenvoudige en minimalistische levensstijl. Deze gebruiken de ruimte super efficiënt, verlagen de bouw-, onderhouds- en woonkosten en bieden een gastvrije en duurzame omgeving. Gemakkelijk verplaatsbaar, bedienen ze mensen die eenvoud of mobiliteit prioriteit geven.",
       description_en: "We create a variety of tiny houses, perfect for a simple and minimalist lifestyle. These use space super efficiently, reduce construction, maintenance and living costs, offering a welcoming and sustainable environment. Easily relocatable, they serve people who prioritize simplicity or mobility."
     },
     {
-      title_nl: "Saunas e anexos",
+      title_nl: "Sauna's en bijgebouwen",
       title_en: "Saunas and Annexes",
-      description_nl: "Estamos disponíveis para construir qualquer estrutura ou anexo à sua casa. Desde saunas, ginásios, churrasqueiras, casas de ferramentas, nenhum projeto é demasiado pequeno para nós.",
+      description_nl: "Wij zijn beschikbaar om elke structuur of bijgebouw bij uw huis te bouwen. Van sauna's, fitnessruimtes, barbecues, gereedschapsschuren, geen project is te klein voor ons.",
       description_en: "We are available to build any structure or annex to your home. From saunas, gyms, barbecues, tool sheds, no project is too small for us."
     },
     {
-      title_nl: "Arranjos exteriores",
+      title_nl: "Buitenaanleg",
       title_en: "Outdoor Arrangements",
-      description_nl: "Desenvolvemos todo o tipo de arranjos exteriores e soluções de agricultura para autoconsumo, desde canteiros a estufas passando por lagos e florestas comestíveis. Ambos realçam a beleza do seu espaço e suportam um estilo de vida mais autónomo e sustentável.",
+      description_nl: "Wij ontwikkelen alle soorten buitenaanleg en zelfvoorzienende landbouwoplossingen, van bloembedden tot kassen, vijvers en eetbare bossen. Beide versterken de schoonheid van uw ruimte en ondersteunen een autonomere en duurzamere levensstijl.",
       description_en: "We develop all types of outdoor arrangements and self-consumption agriculture solutions, from flower beds to greenhouses, ponds and edible forests. Both enhance the beauty of your space and support a more autonomous and sustainable lifestyle."
     }
   ];
-
   return (
     <div className="min-h-screen bg-white">
+      <SEO />
       <Navbar />
       <AIChat />
 
@@ -283,11 +299,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              {language === 'nl' ? 'Nossos Princípios' : 'Our Principles'}
+              {language === 'nl' ? 'Onze Principes' : 'Our Principles'}
             </h2>
             <p className="text-xl text-gray-600">
               {language === 'nl' 
-                ? 'Os valores que nos guiam em cada projeto' 
+                ? 'De waarden die ons bij elk project leiden' 
                 : 'The values that guide us in every project'}
             </p>
           </div>
@@ -322,11 +338,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              {language === 'nl' ? 'O que Construímos' : 'What We Build'}
+              {language === 'nl' ? 'Wat Wij Bouwen' : 'What We Build'}
             </h2>
             <p className="text-xl text-gray-600">
               {language === 'nl' 
-                ? 'Soluções personalizadas para cada necessidade' 
+                ? 'Op maat gemaakte oplossingen voor elke behoefte' 
                 : 'Customized solutions for every need'}
             </p>
           </div>
@@ -435,6 +451,38 @@ export default function Home() {
                   {language === 'nl' 
                     ? 'Kies voor complete turnkey oplevering of alleen de structuur, waarna u zelf de afwerking verzorgt.' 
                     : 'Choose complete turnkey delivery or structure-only, after which you arrange the finishing yourself.'}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20 transition-all">
+              <CardHeader>
+                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                  <Lightbulb className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white">{language === 'nl' ? 'Advies & Consultancy' : 'Advice & Consultancy'}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-white/90">
+                  {language === 'nl' 
+                    ? 'Professioneel advies over duurzaam bouwen, energiebesparende oplossingen en passieve huizen. Wij helpen u de juiste keuzes te maken.' 
+                    : 'Professional advice on sustainable construction, energy-saving solutions and passive houses. We help you make the right choices.'}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20 transition-all">
+              <CardHeader>
+                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                  <PenTool className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white">{language === 'nl' ? 'Development & Ontwerp' : 'Development & Design'}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-white/90">
+                  {language === 'nl' 
+                    ? 'Van concept tot realisatie. Wij ontwikkelen uw droomproject met aandacht voor detail, functionaliteit en duurzaamheid.' 
+                    : 'From concept to realization. We develop your dream project with attention to detail, functionality and sustainability.'}
                 </p>
               </CardContent>
             </Card>
@@ -698,7 +746,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="mb-6">
                   <div className="text-3xl font-bold text-gray-900 mb-2">
-                    €800-€900<span className="text-lg font-normal text-gray-600">/m²</span>
+                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
@@ -723,8 +771,11 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="border-t pt-4">
-                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
-                  <p className="text-2xl font-bold text-green-700">€1,500-€1,700/m²</p>
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -743,7 +794,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="mb-6">
                   <div className="text-3xl font-bold text-gray-900 mb-2">
-                    €900-€1,000<span className="text-lg font-normal text-gray-600">/m²</span>
+                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
@@ -768,8 +819,11 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="border-t pt-4">
-                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
-                  <p className="text-2xl font-bold text-green-700">€1,600-€1,800/m²</p>
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -785,7 +839,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <div className="mb-6">
                   <div className="text-3xl font-bold text-gray-900 mb-2">
-                    €1,000-€1,100<span className="text-lg font-normal text-gray-600">/m²</span>
+                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
@@ -810,8 +864,11 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="border-t pt-4">
-                  <p className="text-sm text-gray-600 mb-2">{language === 'nl' ? 'Turnkey vanaf:' : 'Turnkey from:'}</p>
-                  <p className="text-2xl font-bold text-green-700">€1,700-€1,900/m²</p>
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
                 </div>
               </CardContent>
             </Card>

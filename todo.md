@@ -47,3 +47,31 @@
 - [x] Adicionar secção "O que construímos" com diferentes tipos de projetos
 - [x] Gerar imagens ilustrativas para cada princípio (usando ícones)
 - [x] Adicionar cards para cada tipo de construção
+
+## Correção de Header
+
+- [ ] Verificar e corrigir display do header no preview
+- [ ] Garantir que menu horizontal aparece corretamente em desktop
+
+## Correções Finais
+
+- [x] Corrigir textos em português na versão holandesa
+- [ ] Combinar chatbot AI + WhatsApp num único widget
+- [x] Ativar formulário de contacto funcional (enviar para info@groenvastbouw.nl)
+- [x] Remover "key in hand" da tabela de preços
+- [x] Adicionar asterisco (*) aos preços
+- [x] Adicionar nota: "Preços indicativos, não incluem trabalhos de fundação"
+
+- [x] Ajustar preços para refletir apenas estrutura Senmar (sem transporte/montagem)
+- [x] Verificar precisão dos preços nos documentos fornecidos
+- [x] Atualizar nota: "Preços apenas para estrutura. Fundações, transporte e montagem calculados separadamente"
+
+## Novas Funcionalidades
+
+- [x] Criar página separada "/projecten" para portfolio
+- [x] Adicionar projeto Chocolate Makers na página de projecten
+- [x] Expandir secção de serviços (adicionar Advies, Development)
+- [x] Otimizar SEO completo (meta tags, schema.org, alt text)
+- [x] Adicionar sitemap e robots.txt
+- [x] Combinar chatbot AI + WhatsApp num único widget
+- [x] Ativar formulário de contacto funcional
