@@ -81,3 +81,9 @@
 - [x] Reduzir altura do chatbot para garantir que botão de fechar seja visível (600px → 500px + max-h-80vh)
 - [x] Ajustar posicionamento para ficar mais baixo na tela
 - [x] Testar em diferentes resoluções
+
+## Correção de Navegação entre Páginas
+
+- [x] Corrigir Navbar para usar Link do wouter em vez de âncoras (#)
+- [x] Atualizar navegação para funcionar entre Home e Projecten
+- [x] Adicionar lógica para navegar para home antes de scroll to section

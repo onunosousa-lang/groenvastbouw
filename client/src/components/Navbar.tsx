@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'wouter';
 
 export default function Navbar() {
   const { language, setLanguage } = useLanguage();
+  const [location, setLocation] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -16,11 +18,23 @@ export default function Navbar() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
+    // Se não estiver na home, navegar primeiro para home
+    if (location !== '/') {
+      setLocation('/');
+      // Aguardar navegação e depois scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -60,9 +74,9 @@ export default function Navbar() {
             <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
               faq
             </a>
-            <a href="/projecten" className="text-white/90 hover:text-green-400 transition-colors text-sm">
+            <Link href="/projecten" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               projecten
-            </a>
+            </Link>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm">
               drop us a line
             </a>
@@ -105,9 +119,9 @@ export default function Navbar() {
               <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400">
                 faq
               </a>
-              <a href="/projecten" className="text-white/90 hover:text-green-400">
+              <Link href="/projecten" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 projecten
-              </a>
+              </Link>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center">
                 drop us a line
               </a>
