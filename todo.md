@@ -99,3 +99,7 @@
 - [x] Adicionar favicon ao website
 - [x] Otimizar SEO completo (meta tags, Open Graph, Twitter Cards)
 - [x] Aplicar nova paleta de cores "Modern Eco" ao CSS
+
+## Correção de Fontes
+
+- [x] Reverter fontes para versão original (remover Inter + Playfair Display)
