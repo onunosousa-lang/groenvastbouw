@@ -75,3 +75,9 @@
 - [x] Adicionar sitemap e robots.txt
 - [x] Combinar chatbot AI + WhatsApp num único widget
 - [x] Ativar formulário de contacto funcional
+
+## Correção do Chatbot
+
+- [x] Reduzir altura do chatbot para garantir que botão de fechar seja visível (600px → 500px + max-h-80vh)
+- [x] Ajustar posicionamento para ficar mais baixo na tela
+- [x] Testar em diferentes resoluções
