@@ -58,14 +58,14 @@ export default function Home() {
     {
       question_nl: "Wat is het verschil tussen turnkey en alleen structuur?",
       question_en: "What is the difference between turnkey and structure-only?",
-      answer_nl: "Bij een turnkey project leveren wij een volledig afgewerkte woning, inclusief alle afwerkingen, installaties en sleutelklaar opgeleverd. Bij alleen structuur leveren wij de complete draagconstructie (wanden, vloeren, dak) met isolatie en luchtdichte laag, waarna u zelf of met eigen aannemers de afwerking kunt verzorgen.",
-      answer_en: "With a turnkey project, we deliver a fully finished home, including all finishes, installations, and ready to move in. With structure-only, we deliver the complete load-bearing structure (walls, floors, roof) with insulation and airtight layer, after which you can arrange the finishing yourself or with your own contractors."
+      answer_nl: "Wij leveren de complete hoogwaardige draagconstructie (wanden, vloeren, dak) met isolatie, luchtdichte laag en ramen. Voor de afwerking (elektra, loodgieterswerk, vloeren, keukens, etc.) werken wij samen met betrouwbare lokale partners, of u kunt uw eigen aannemers inschakelen. Dit geeft u flexibiliteit in budget en persoonlijke voorkeuren.",
+      answer_en: "We deliver the complete high-quality load-bearing structure (walls, floors, roof) with insulation, airtight layer and windows. For finishing (electrical, plumbing, flooring, kitchens, etc.) we work with reliable local partners, or you can engage your own contractors. This gives you flexibility in budget and personal preferences."
     },
     {
       question_nl: "Hoe lang duurt de bouw?",
       question_en: "How long does construction take?",
-      answer_nl: "De structuurmontage ter plaatse duurt ongeveer 3 maanden vanaf bestelling. Voor een complete turnkey woning rekenen we op ongeveer 6 maanden totaal (3 maanden structuur + 3 maanden afwerking). Dit is aanzienlijk sneller dan traditionele bouw, omdat de elementen geprefabriceerd worden in een gecontroleerde fabrieksomgeving.",
-      answer_en: "On-site structure assembly takes approximately 3 months from order. For a complete turnkey home, we estimate approximately 6 months total (3 months structure + 3 months finishing). This is significantly faster than traditional construction because the elements are prefabricated in a controlled factory environment."
+      answer_nl: "De structuurmontage ter plaatse duurt ongeveer 7-10 dagen. De volledige productie en levering vanaf bestelling duurt ongeveer 3 maanden. Voor de afwerking rekent u nog eens 3-6 maanden, afhankelijk van uw gekozen afwerkingsniveau en beschikbaarheid van aannemers. Dit is aanzienlijk sneller dan traditionele bouw, omdat de elementen geprefabriceerd worden in een gecontroleerde fabrieksomgeving.",
+      answer_en: "On-site structure assembly takes approximately 7-10 days. Full production and delivery from order takes approximately 3 months. For finishing, count another 3-6 months, depending on your chosen finishing level and contractor availability. This is significantly faster than traditional construction because the elements are prefabricated in a controlled factory environment."
     },
     {
       question_nl: "Kunnen jullie ook op mijn eigen kavel bouwen?",
@@ -94,8 +94,8 @@ export default function Home() {
     {
       question_nl: "Wat zijn de kosten?",
       question_en: "What are the costs?",
-      answer_nl: "Wij bieden drie prestatieniveaus: Optimal (€800-€900/m² structuur, €1,500-€1,700/m² turnkey), Passive (€900-€1,000/m² structuur, €1,600-€1,800/m² turnkey), en Super Passive (€1,000-€1,100/m² structuur, €1,700-€1,900/m² turnkey). Bijvoorbeeld: een T3 woning van 97m² in Passive specificatie kost €155,000-€175,000 turnkey. De turnkey prijs is afhankelijk van afwerkingsniveau en individuele wensen. Neem contact op voor een persoonlijke offerte.",
-      answer_en: "We offer three performance levels: Optimal (€800-€900/m² structure, €1,500-€1,700/m² turnkey), Passive (€900-€1,000/m² structure, €1,600-€1,800/m² turnkey), and Super Passive (€1,000-€1,100/m² structure, €1,700-€1,900/m² turnkey). For example: a T3 home of 97m² in Passive specifications costs €155,000-€175,000 turnkey. Turnkey price depends on finishing level and individual requirements. Contact us for a personal quote."
+      answer_nl: "Wij bieden drie prestatieniveaus voor de structuur: Optimal (€950-€1,050/m²), Passive (€1,100-€1,200/m²), en Super Passive (€1,250-€1,350/m²). Deze prijzen zijn alleen voor de structuur, exclusief transport (€13.200), montage en funderingen. Voor afwerking en installaties werken wij met betrouwbare partners of u kunt uw eigen aannemers inschakelen. Neem contact op voor een persoonlijke offerte op maat.",
+      answer_en: "We offer three performance levels for the structure: Optimal (€950-€1,050/m²), Passive (€1,100-€1,200/m²), and Super Passive (€1,250-€1,350/m²). These prices are for structure only, excluding transport (€13,200), assembly and foundations. For finishing and installations, we work with reliable partners or you can engage your own contractors. Contact us for a personalized quote."
     }
   ];
 
@@ -385,8 +385,8 @@ export default function Home() {
             </h2>
             <p className="text-xl text-white/90">
               {language === 'nl' 
-                ? 'Van concept tot sleutelklaar - wij realiseren uw duurzame droomproject' 
-                : 'From concept to turnkey - we realize your sustainable dream project'}
+                ? 'Van concept tot realisatie - wij leveren uw duurzame droomproject' 
+                : 'From concept to realization - we deliver your sustainable dream project'}
             </p>
           </div>
 
@@ -444,13 +444,13 @@ export default function Home() {
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
                   <Key className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-white">{language === 'nl' ? 'Turnkey of Structuur' : 'Turnkey or Structure'}</CardTitle>
+                <CardTitle className="text-white">{language === 'nl' ? 'Flexibele Oplevering' : 'Flexible Delivery'}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-white/90">
                   {language === 'nl' 
-                    ? 'Kies voor complete turnkey oplevering of alleen de structuur, waarna u zelf de afwerking verzorgt.' 
-                    : 'Choose complete turnkey delivery or structure-only, after which you arrange the finishing yourself.'}
+                    ? 'Wij leveren de hoogwaardige structuur, waarna u met onze partners of eigen aannemers de afwerking naar wens kunt realiseren.' 
+                    : 'We deliver the high-quality structure, after which you can complete the finishing with our partners or your own contractors.'}
                 </p>
               </CardContent>
             </Card>
@@ -491,11 +491,11 @@ export default function Home() {
           <div className="mt-16 bg-white/10 backdrop-blur-md rounded-lg p-8 border border-white/20">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-bold mb-4">{language === 'nl' ? 'Turnkey Service' : 'Turnkey Service'}</h3>
+                <h3 className="text-2xl font-bold mb-4">{language === 'nl' ? 'Volledige Service' : 'Full Service'}</h3>
                 <p className="text-white/90 mb-4">
                   {language === 'nl' 
-                    ? 'Wij verzorgen het complete proces van ontwerp tot oplevering. Inclusief alle installaties, afwerkingen en sleutelklaar opgeleverd. U hoeft zich nergens zorgen over te maken.' 
-                    : 'We handle the complete process from design to delivery. Including all installations, finishes and turnkey delivery. You don\'t have to worry about anything.'}
+                    ? 'Wij verzorgen het complete proces van ontwerp tot levering van de structuur. Voor installaties en afwerkingen werken wij met betrouwbare partners, of u kunt uw eigen aannemers inschakelen voor maximale flexibiliteit.' 
+                    : 'We handle the complete process from design to delivery of the structure. For installations and finishes, we work with reliable partners, or you can engage your own contractors for maximum flexibility.'}
                 </p>
                 <ul className="space-y-2">
                   {[

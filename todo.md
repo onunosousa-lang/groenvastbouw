@@ -103,3 +103,9 @@
 ## Correção de Fontes
 
 - [x] Reverter fontes para versão original (remover Inter + Playfair Display)
+
+## Remoção de Preços Turnkey e Melhorias
+
+- [x] Remover preços turnkey da secção "Wat zijn de kosten?"
+- [x] Manter apenas preços de estrutura
+- [x] Atualizar textos para focar em estrutura + parceiros para afwerking
