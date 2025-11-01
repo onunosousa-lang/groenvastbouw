@@ -141,3 +141,13 @@
 - [x] Remover barra fixa do slogan abaixo do header
 - [x] Slogan grande e centrado sobre a imagem hero (text-4xl + text-3xl)
 - [x] Layout minimalista e limpo
+
+## Atualização Final - Logo Verde-Limão e Nova Imagem
+
+- [x] Usar novo logo verde-limão (melhor contraste)
+- [x] Mobile: "Nuchter bouwen. Slim wonen." numa só linha (text-3xl italic)
+- [x] Remover "Slim wonen" separado de baixo
+- [x] Adicionar "Groenvastbouw" centrado ao lado do logo no topo (text-xl)
+- [x] Balancear texto principal
+- [x] Gerar nova imagem hero com prompt fornecido (casa passiva golden hour)
+- [x] Substituir imagem de fundo atual (hero-groenvastbouw.jpg)

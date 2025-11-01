@@ -185,17 +185,16 @@ export default function Home() {
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/header-background.jpg" 
-            alt="Sustainable passive houses in forest" 
+            src="/images/hero-groenvastbouw.jpg" 
+            alt="Modern ecological passive house in Netherlands by Groenvastbouw" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/50 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 z-10">
-          {/* Mobile: Slogan grande centrado */}
+          {/* Mobile: Slogan numa linha centrado */}
           <div className="lg:hidden text-center mb-12">
-            <h2 className="text-4xl font-light text-green-400 mb-4 drop-shadow-2xl">Nuchter bouwen</h2>
-            <p className="text-3xl text-white font-light drop-shadow-2xl">Slim wonen</p>
+            <h2 className="text-3xl font-light text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
           <div className="max-w-3xl lg:mx-0 mx-auto">
