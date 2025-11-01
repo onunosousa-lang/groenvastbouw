@@ -193,7 +193,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 z-10">
           {/* Mobile: Slogan abaixo do header com espaço */}
-          <div className="lg:hidden text-center pt-20 pb-12">
+          <div className="lg:hidden text-center pt-8 pb-12">
             <h2 className="text-xl font-normal text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
