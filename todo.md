@@ -196,3 +196,19 @@
 ## Correção de Texto
 
 - [x] Corrigido "Duurzame Woningen op Maat" para "Duurzame woningen op maat"
+
+## Melhorias de Credibilidade e Profissionalismo
+
+### Pesquisa e Dados
+- [x] Pesquisar especificações técnicas Senmar (certificações, valores U, etc.)
+- [x] Encontrar/calcular certificação energética (EPC label A++/A+++)
+- [x] Pesquisar benefícios fiscais NL para construção passiva (ISDE)
+- [x] Comparar tempo de construção: 50-70% mais rápido
+- [x] Comparar consumo energético: 60-90% menos energia
+
+### Conteúdo
+- [x] Reescrever secção "Sobre mim" - experiência ampla, projeto Amsterdam
+- [x] Adicionar preços de referência leves na FAQ (€270-340/m² com asterisco)
+- [x] Adicionar nova FAQ sobre vantagens técnicas e energia
+- [x] Adicionar dados de certificação energética (EPC A++/A+++)
+- [x] Manter design limpo e não sobrecarregado

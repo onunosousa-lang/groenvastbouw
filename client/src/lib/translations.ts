@@ -33,11 +33,11 @@ export const translations = {
     founder_title: "Over de Oprichter",
     founder_subtitle: "Nuno Machado e Sousa",
     founder_role: "Eco-Constructie Specialist | Projectleider",
-    founder_text: "All-round Bouwer en Timmerman met 10+ jaar internationale ervaring in Portugal, Frankrijk, het VK en Nederland. Gespecialiseerd in ecologische en duurzame bouw, waaronder houtskeletbouw, luchtdichte isolatiesystemen en zonne-PV-installaties. Ervaren vakman en projectleider, bekend om het leveren van hoogwaardige, energie-efficiënte bouwwerken en het begeleiden van teams van fundering tot afwerking.",
+    founder_text: "Eco-constructie specialist met meer dan 10 jaar internationale ervaring in duurzame bouw. Van ambachtelijk timmerman tot projectleider, met uitgebreide expertise in houtskeletbouw, passieve constructie en energie-efficiënte systemen. Heeft diverse projecten gerealiseerd in Portugal, Frankrijk, het VK en Nederland, variërend van ecologische woningen tot commerciële gebouwen. Meest recente project: nieuw kantoorgebouw voor een fabriek in Amsterdam, waarbij hoogwaardige isolatie en duurzame bouwmethoden centraal stonden.",
     founder_education_title: "Opleiding",
     founder_education_text: "Batipole Limoux, Frankrijk (2013-2014) - Intensief professioneel trainingsprogramma in ecologische bouwmethoden. Diploma's behaald in: Houtskeletbouw, Pleister & Natuurlijke Isolatie, Luchtdichte Constructie, Plaatsing van Ramen.",
     founder_experience_title: "Ervaring",
-    founder_experience_text: "Sinds 2019 als zelfstandig aannemer (ZZP'er) in Nederland. Leidde bouwprojecten van fundering tot afwerking, gespecialiseerd in houtskeletbouw en ecologische methoden. Bouwde en leidde project voor een 202 m² passief kantoorruimte in Amsterdam, coördineerde planning, luchtdichte constructie en teamtoezicht.",
+    founder_experience_text: "Sinds 2019 actief als zelfstandig aannemer in Nederland. Uitgebreide ervaring met diverse bouwprojecten, van woningen tot commerciële gebouwen. Gespecialiseerd in energie-efficiënte constructies, luchtdichte bouwsystemen en duurzame materialen. Combineert technische kennis met praktische uitvoering, van ontwerp tot oplevering.",
     
     // Passive House Benefits
     passive_title: "Waarom kiezen voor een passief huis?",
@@ -179,11 +179,11 @@ export const translations = {
     founder_title: "About the Founder",
     founder_subtitle: "Nuno Machado e Sousa",
     founder_role: "Eco-Construction Specialist | Project Leader",
-    founder_text: "All-round Builder and Carpenter with 10+ years of international experience in Portugal, France, the UK, and the Netherlands. Specialized in ecological and sustainable construction, including timber-frame building, airtight insulation systems, and solar PV installations. Skilled hands-on craftsman and project leader, known for delivering high-quality, energy-efficient builds and guiding teams from foundation to finish.",
+    founder_text: "Eco-construction specialist with over 10 years of international experience in sustainable building. From skilled craftsman to project leader, with extensive expertise in timber-frame construction, passive building, and energy-efficient systems. Has delivered diverse projects in Portugal, France, the UK, and the Netherlands, ranging from ecological homes to commercial buildings. Most recent project: new office building for a factory in Amsterdam, focusing on high-performance insulation and sustainable construction methods.",
     founder_education_title: "Education",
     founder_education_text: "Batipole Limoux, France (2013-2014) - Intensive professional training program in ecological construction methods. Earned Diplomas in: Timber Frame Building, Plaster & Natural Insulation, Airtight Construction, Window Setting.",
     founder_experience_title: "Experience",
-    founder_experience_text: "Self-employed contractor (ZZP'er) in the Netherlands since 2019. Led construction projects from foundations to final finishes, specializing in timber-frame building and ecological methods. Built and project leader for a 202 m² passive office space in Amsterdam, coordinating planning, airtight construction, and team supervision.",
+    founder_experience_text: "Self-employed contractor in the Netherlands since 2019. Extensive experience with diverse construction projects, from residential to commercial buildings. Specialized in energy-efficient construction, airtight building systems, and sustainable materials. Combines technical knowledge with practical execution, from design to completion.",
     
     // Passive House Benefits
     passive_title: "Why choose a passive house?",
