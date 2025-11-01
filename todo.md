@@ -109,3 +109,9 @@
 - [x] Remover preços turnkey da secção "Wat zijn de kosten?"
 - [x] Manter apenas preços de estrutura
 - [x] Atualizar textos para focar em estrutura + parceiros para afwerking
+
+## Atualização de Favicon
+
+- [x] Criar favicon com logo oficial da Groenvastbouw
+- [x] Gerar múltiplos tamanhos (16x16, 32x32, 180x180)
+- [x] Atualizar referências no HTML
