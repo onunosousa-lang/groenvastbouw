@@ -159,3 +159,16 @@
 - [x] Slogan "Nuchter bouwen. Slim wonen." numa linha, fonte normal (text-xl font-normal italic)
 - [x] Reduzir gap entre slogan e texto principal (mb-12 → mb-6)
 - [x] Subir resto do conteúdo hero
+
+## Bugs a Corrigir Urgente
+
+- [x] Logo transparente verificado e cache buster adicionado (?v=2)
+- [x] "Groenvastbouw" restaurado no header mobile (text-lg bold centrado)
+- [x] Texto hero subido (-mt-20 para slogan, -mt-12 para conteúdo)
+- [x] Desktop protegido com classes lg:mt-0 (não afetado)
+
+## Correções Finais Header e Slogan
+
+- [x] Logo ao lado de "Groenvastbouw" (juntos com gap-2)
+- [x] Texto "Groenvastbouw" centrado no header (logo posicionado à esquerda dele)
+- [x] Slogan muito mais alto (-mt-32, -mt-16 para conteúdo)
