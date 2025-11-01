@@ -125,3 +125,11 @@
 - [x] Criar sitemap.xml melhorado
 - [x] Criar robots.txt
 - [x] Adicionar meta tags adicionais para SEO local (geo tags, keywords expandidas)
+
+## Rebalanceamento Layout Mobile
+
+- [x] Header mobile: logo + "Groenvastbouw" centrados e totalmente visíveis
+- [x] Remover slogan verde pequeno do header
+- [x] Remover "Groenvastbouw" grande verde da hero section (mobile only)
+- [x] Mover slogan branco para logo abaixo do header (centrado, fixed)
+- [x] Subir texto "Duurzame Woningen op Maat" para balancear (-mt-16)

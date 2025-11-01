@@ -56,10 +56,9 @@ export default function Navbar() {
 
           {/* Logo - Mobile (Centrado) */}
           <div className="flex lg:hidden flex-1 justify-center items-center">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex flex-col items-center gap-1">
-              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-14 w-auto" />
-              <div className="text-white font-bold text-base">Groenvastbouw</div>
-              <div className="text-green-400 text-[10px] italic">Nuchter bouwen. Slim wonen.</div>
+            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center gap-2">
+              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
+              <div className="text-white font-bold text-lg">Groenvastbouw</div>
             </a>
           </div>
 
