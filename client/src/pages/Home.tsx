@@ -193,8 +193,8 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 z-10">
           {/* Mobile: Slogan numa linha centrado */}
-          <div className="lg:hidden text-center mb-12">
-            <h2 className="text-3xl font-light text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
+          <div className="lg:hidden text-center mb-6">
+            <h2 className="text-xl font-normal text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
           <div className="max-w-3xl lg:mx-0 mx-auto">

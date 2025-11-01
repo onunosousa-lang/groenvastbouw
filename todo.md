@@ -151,3 +151,11 @@
 - [x] Balancear texto principal
 - [x] Gerar nova imagem hero com prompt fornecido (casa passiva golden hour)
 - [x] Substituir imagem de fundo atual (hero-groenvastbouw.jpg)
+
+## Ajuste Final Layout Mobile
+
+- [x] Logo transparente à esquerda (h-12)
+- [x] Texto "Groenvastbouw" centrado na tela (text-lg bold)
+- [x] Slogan "Nuchter bouwen. Slim wonen." numa linha, fonte normal (text-xl font-normal italic)
+- [x] Reduzir gap entre slogan e texto principal (mb-12 → mb-6)
+- [x] Subir resto do conteúdo hero
