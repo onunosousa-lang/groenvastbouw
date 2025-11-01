@@ -42,16 +42,25 @@ export default function Navbar() {
       isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-gray-900/80 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center gap-4">
+        <div className="flex items-center justify-between h-20 lg:h-20">
+          {/* Logo - Desktop */}
+          <div className="hidden lg:flex items-center gap-4">
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center">
               <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
             </a>
-            <div className="hidden md:block">
+            <div>
               <div className="text-white font-bold text-lg">Groenvastbouw</div>
               <div className="text-green-400 text-xs italic">Nuchter bouwen. Slim wonen.</div>
             </div>
+          </div>
+
+          {/* Logo - Mobile (Centrado) */}
+          <div className="flex lg:hidden flex-1 justify-center items-center">
+            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex flex-col items-center gap-1">
+              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-14 w-auto" />
+              <div className="text-white font-bold text-base">Groenvastbouw</div>
+              <div className="text-green-400 text-[10px] italic">Nuchter bouwen. Slim wonen.</div>
+            </a>
           </div>
 
           {/* Desktop Navigation + Language Switcher */}
@@ -90,7 +99,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white"
+            className="lg:hidden text-white absolute right-4 top-1/2 -translate-y-1/2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

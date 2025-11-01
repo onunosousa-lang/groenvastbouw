@@ -1,4 +1,11 @@
+# robots.txt for Groenvastbouw
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
 
+# Sitemap
 Sitemap: https://groenvastbouw.nl/sitemap.xml
+
+# Crawl-delay (optional, helps with server load)
+Crawl-delay: 1

@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://groenvastbouw.nl/</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://groenvastbouw.nl/images/header-background.jpg</image:loc>
+      <image:title>Groenvastbouw Passive Houses</image:title>
+    </image:image>
   </url>
+
+  <!-- Projects Page -->
   <url>
     <loc>https://groenvastbouw.nl/projecten</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Section: About -->
+  <url>
+    <loc>https://groenvastbouw.nl/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Section: Services -->
+  <url>
+    <loc>https://groenvastbouw.nl/#services</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Section: Senmar Technology -->
+  <url>
+    <loc>https://groenvastbouw.nl/#senmar</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Section: Pricing -->
+  <url>
+    <loc>https://groenvastbouw.nl/#pricing</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: FAQ -->
+  <url>
+    <loc>https://groenvastbouw.nl/#faq</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Section: Contact -->
+  <url>
+    <loc>https://groenvastbouw.nl/#contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

@@ -115,3 +115,13 @@
 - [x] Criar favicon com logo oficial da Groenvastbouw
 - [x] Gerar múltiplos tamanhos (16x16, 32x32, 180x180)
 - [x] Atualizar referências no HTML
+
+## Melhorias Mobile e SEO
+
+- [x] Ajustar header mobile: logo centrado, 10% maior
+- [x] Adicionar nome "Groenvastbouw" no header mobile
+- [x] Mostrar slogan no header mobile
+- [x] Implementar Schema.org markup (Organization, LocalBusiness, Service)
+- [x] Criar sitemap.xml melhorado
+- [x] Criar robots.txt
+- [x] Adicionar meta tags adicionais para SEO local (geo tags, keywords expandidas)
