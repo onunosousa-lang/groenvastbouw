@@ -133,3 +133,11 @@
 - [x] Remover "Groenvastbouw" grande verde da hero section (mobile only)
 - [x] Mover slogan branco para logo abaixo do header (centrado, fixed)
 - [x] Subir texto "Duurzame Woningen op Maat" para balancear (-mt-16)
+
+## Redesign Mobile Estilo Senmar
+
+- [x] Header transparente sem cor de fundo (mobile)
+- [x] Apenas logo no header (canto superior esquerdo, h-12)
+- [x] Remover barra fixa do slogan abaixo do header
+- [x] Slogan grande e centrado sobre a imagem hero (text-4xl + text-3xl)
+- [x] Layout minimalista e limpo

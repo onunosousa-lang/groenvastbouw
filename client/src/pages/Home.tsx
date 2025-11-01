@@ -181,11 +181,6 @@ export default function Home() {
       <Navbar />
       <AIChat />
 
-      {/* Slogan abaixo do header - Mobile only */}
-      <div className="lg:hidden fixed top-20 left-0 right-0 z-40 bg-gray-900/90 backdrop-blur-sm py-2">
-        <p className="text-center text-sm text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
-      </div>
-
       {/* Hero Section - Full Screen with Background Image */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -197,7 +192,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 z-10">
-          <div className="max-w-3xl lg:mt-0 -mt-16">
+          {/* Mobile: Slogan grande centrado */}
+          <div className="lg:hidden text-center mb-12">
+            <h2 className="text-4xl font-light text-green-400 mb-4 drop-shadow-2xl">Nuchter bouwen</h2>
+            <p className="text-3xl text-white font-light drop-shadow-2xl">Slim wonen</p>
+          </div>
+
+          <div className="max-w-3xl lg:mx-0 mx-auto">
             {/* Desktop: mostrar Groenvastbouw + slogan */}
             <div className="mb-4 hidden lg:block">
               <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>

@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-gray-900/80 backdrop-blur-sm'
+      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'lg:bg-gray-900/80 lg:backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 lg:h-20">
@@ -54,11 +54,10 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Logo - Mobile (Centrado) */}
-          <div className="flex lg:hidden flex-1 justify-center items-center">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center gap-2">
-              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
-              <div className="text-white font-bold text-lg">Groenvastbouw</div>
+          {/* Logo - Mobile (Canto superior esquerdo) */}
+          <div className="flex lg:hidden">
+            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center">
+              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
             </a>
           </div>
 
