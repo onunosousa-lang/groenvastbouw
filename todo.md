@@ -172,3 +172,23 @@
 - [x] Logo ao lado de "Groenvastbouw" (juntos com gap-2)
 - [x] Texto "Groenvastbouw" centrado no header (logo posicionado à esquerda dele)
 - [x] Slogan muito mais alto (-mt-32, -mt-16 para conteúdo)
+
+## Bugs Críticos a Corrigir
+
+- [ ] Texto sobreposto - "Groenvastbouw" e slogan em cima um do outro
+- [ ] Logo ainda tem fundo branco (não é transparente)
+- [ ] Verificar se logo correto foi copiado
+
+## Bugs Críticos a Corrigir AGORA
+
+- [x] Texto sobreposto corrigido - removido posicionamento absoluto problemático
+- [x] Slogan e corpo separados - flex-col com justify-center no container
+- [x] Logo transparente RGBA copiado corretamente
+- [x] Cache buster atualizado para v=4
+
+## Ajustes Finais de Espaçamento e Balanço
+
+- [x] Logo e texto lado a lado com gap-2 (sem sobreposição)
+- [x] Slogan mais perto do topo (-mt-24, mb-16 para balanço)
+- [x] Separação adequada entre slogan e corpo (mb-16)
+- [x] Removido posicionamento absoluto (sem sobreposições)

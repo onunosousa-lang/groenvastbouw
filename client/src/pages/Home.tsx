@@ -191,13 +191,13 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/50 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-4 z-10">
-          {/* Mobile: Slogan numa linha centrado - muito mais alto */}
-          <div className="lg:hidden text-center mb-6 -mt-32">
+        <div className="container mx-auto px-4 z-10 flex flex-col justify-center h-full">
+          {/* Mobile: Slogan numa linha centrado - balanceado mais perto do topo */}
+          <div className="lg:hidden text-center mb-16 -mt-24">
             <h2 className="text-xl font-normal text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
-          <div className="max-w-3xl lg:mx-0 mx-auto lg:mt-0 -mt-16">
+          <div className="max-w-3xl lg:mx-0 mx-auto">
             {/* Desktop: mostrar Groenvastbouw + slogan */}
             <div className="mb-4 hidden lg:block">
               <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>
