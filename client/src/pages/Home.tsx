@@ -191,9 +191,9 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/50 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-4 z-10 flex flex-col justify-center h-full">
-          {/* Mobile: Slogan numa linha centrado - balanceado mais perto do topo */}
-          <div className="lg:hidden text-center mb-16 -mt-24">
+        <div className="container mx-auto px-4 z-10">
+          {/* Mobile: Slogan abaixo do header com espaço */}
+          <div className="lg:hidden text-center pt-20 pb-12">
             <h2 className="text-xl font-normal text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
               {language === 'nl' 
-                ? 'Duurzame Woningen op Maat' 
+                ? 'Duurzame woningen op maat' 
                 : 'Sustainable Homes Tailored to You'}
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">

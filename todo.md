@@ -192,3 +192,7 @@
 - [x] Slogan mais perto do topo (-mt-24, mb-16 para balanço)
 - [x] Separação adequada entre slogan e corpo (mb-16)
 - [x] Removido posicionamento absoluto (sem sobreposições)
+
+## Correção de Texto
+
+- [x] Corrigido "Duurzame Woningen op Maat" para "Duurzame woningen op maat"
