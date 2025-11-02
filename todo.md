@@ -222,3 +222,12 @@
 - [x] Atualizar componente AIChat frontend
 - [x] Adicionar DEEPSEEK_API_KEY via webdev_request_secrets
 - [x] Verificar que chatbot está funcionando (sem erros TypeScript/build)
+
+## Melhoria System Prompt Chatbot
+
+- [x] Extrair dados-chave dos documentos fornecidos
+- [x] Adicionar comparações de mercado ao system prompt
+- [x] Reescrever tom mais conversacional e humano
+- [x] Remover formatação Markdown (asteriscos, hífens)
+- [x] Adicionar resposta específica "Porquê Groenvastbouw?"
+- [x] Testar chatbot com perguntas reais
