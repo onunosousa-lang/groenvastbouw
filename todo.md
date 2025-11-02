@@ -212,3 +212,13 @@
 - [x] Adicionar nova FAQ sobre vantagens técnicas e energia
 - [x] Adicionar dados de certificação energética (EPC A++/A+++)
 - [x] Manter design limpo e não sobrecarregado
+
+## Integração DeepSeek API no Chatbot
+
+- [x] Criar router tRPC para DeepSeek chat
+- [x] Criar system prompt personalizado com info Groenvastbouw
+- [x] Adicionar constraints para manter foco em construção sustentável
+- [x] Implementar histórico de conversação
+- [x] Atualizar componente AIChat frontend
+- [x] Adicionar DEEPSEEK_API_KEY via webdev_request_secrets
+- [x] Verificar que chatbot está funcionando (sem erros TypeScript/build)
