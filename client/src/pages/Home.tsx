@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Home as HomeIcon, Leaf, Zap, Clock, Award, Users, Building2, Hammer, Key, ExternalLink, ChevronDown, Lightbulb, PenTool } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -28,24 +29,46 @@ export default function Home() {
     }
   };
 
-  const sendMessage = trpc.contact.sendMessage.useMutation({
-    onSuccess: () => {
-      toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    },
-    onError: (error) => {
-      toast.error(language === 'nl' ? 'Er is een fout opgetreden. Probeer het opnieuw.' : 'An error occurred. Please try again.');
-      console.error('Contact form error:', error);
-    },
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       toast.error(language === 'nl' ? 'Vul alle verplichte velden in' : 'Please fill in all required fields');
       return;
     }
-    sendMessage.mutate(formData);
+
+    setIsSubmitting(true);
+
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS not configured');
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone || 'Niet opgegeven',
+          message: formData.message,
+        },
+        publicKey
+      );
+
+      toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Contact form error:', error);
+      toast.error(language === 'nl' ? 'Er is een fout opgetreden. Probeer het opnieuw.' : 'An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const faqs = [
@@ -1077,8 +1100,14 @@ export default function Home() {
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                 />
               </div>
-              <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-lg py-6">
-                {t('contact_submit')}
+              <Button 
+                type="submit" 
+                className="w-full bg-green-600 hover:bg-green-700 text-lg py-6"
+                disabled={isSubmitting}
+              >
+                {isSubmitting 
+                  ? (language === 'nl' ? 'Verzenden...' : 'Sending...') 
+                  : t('contact_submit')}
               </Button>
             </form>
           </div>
