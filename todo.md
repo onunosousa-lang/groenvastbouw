@@ -245,3 +245,10 @@
 - [x] Adicionar ficheiro de verificação google354ff5512fe97ed9.html
 - [x] Copiar para client/public/
 - [x] Verificar que está acessível na raiz do site
+
+## Meta Tags Verificação Google
+
+- [x] Adicionar meta tag Google Search Console ao index.html
+- [x] Preparar placeholders para Google Analytics (aguardando ID)
+- [x] Preparar placeholders para Google Tag Manager (aguardando ID)
+- [x] Instruir sobre deploy no Vercel - Guia criado em VERCEL_DEPLOY_GUIDE.md
