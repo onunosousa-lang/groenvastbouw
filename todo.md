@@ -252,3 +252,28 @@
 - [x] Preparar placeholders para Google Analytics (aguardando ID)
 - [x] Preparar placeholders para Google Tag Manager (aguardando ID)
 - [x] Instruir sobre deploy no Vercel - Guia criado em VERCEL_DEPLOY_GUIDE.md
+
+## Deploy GitHub → Vercel
+
+- [x] Verificar estado do repositório Git
+- [x] Fazer push de 4 commits para GitHub (a0189b7 → 80b10de)
+- [x] Aguardar deploy automático no Vercel
+- [ ] Confirmar que novo deployment está em produção
+- [ ] Validar ficheiro Google Search Console em produção
+
+## Bug Chatbot Produção
+
+- [x] Chatbot dá erro "cannot respond" no mobile (produção)
+- [x] Verificar se DEEPSEEK_API_KEY está configurada no Vercel
+- [x] Criar guia para configurar environment variables no Vercel - VERCEL_SECRETS_GUIDE.md
+- [ ] Usuário: Adicionar DEEPSEEK_API_KEY no Vercel
+- [ ] Usuário: Fazer redeploy
+- [ ] Testar após configuração
+
+## Logs Detalhados Chatbot
+
+- [x] Adicionar logs para verificar se API key está presente
+- [x] Adicionar logs para erros específicos (401, 429, 500)
+- [x] Melhorar mensagens de erro para usuário
+- [ ] Fazer push e redeploy
+- [ ] Verificar logs no Vercel após testar chatbot

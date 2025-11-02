@@ -65,7 +65,12 @@ export const deepseekRouter = router({
     .mutation(async ({ input }) => {
       const apiKey = process.env.DEEPSEEK_API_KEY;
       
+      console.log('[DeepSeek] Chat request received');
+      console.log('[DeepSeek] API Key present:', !!apiKey);
+      console.log('[DeepSeek] API Key prefix:', apiKey ? apiKey.substring(0, 7) + '...' : 'N/A');
+      
       if (!apiKey) {
+        console.error('[DeepSeek] DEEPSEEK_API_KEY not found in environment');
         throw new Error('DEEPSEEK_API_KEY not configured. Please add it in Settings → Secrets.');
       }
 
@@ -94,7 +99,21 @@ export const deepseekRouter = router({
 
         if (!response.ok) {
           const errorData = await response.json().catch(() => ({}));
-          console.error('DeepSeek API error:', errorData);
+          console.error('[DeepSeek] API error response:', {
+            status: response.status,
+            statusText: response.statusText,
+            errorData,
+          });
+          
+          // Provide more specific error messages
+          if (response.status === 401) {
+            throw new Error('Invalid DeepSeek API key. Please check your DEEPSEEK_API_KEY in Vercel settings.');
+          } else if (response.status === 429) {
+            throw new Error('DeepSeek API rate limit exceeded. Please try again later.');
+          } else if (response.status === 500) {
+            throw new Error('DeepSeek API server error. Please try again later.');
+          }
+          
           throw new Error(`DeepSeek API error: ${response.status} ${response.statusText}`);
         }
 
@@ -109,7 +128,12 @@ export const deepseekRouter = router({
           usage: data.usage,
         };
       } catch (error) {
-        console.error('DeepSeek chat error:', error);
+        console.error('[DeepSeek] Chat error:', {
+          error,
+          message: error instanceof Error ? error.message : 'Unknown error',
+          stack: error instanceof Error ? error.stack : undefined,
+        });
+        
         throw new Error(
           error instanceof Error 
             ? error.message 
