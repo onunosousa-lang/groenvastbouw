@@ -280,8 +280,17 @@
 
 ## Debug Mode Chatbot
 
-- [ ] Modificar AIChat.tsx para mostrar erros completos no browser
-- [ ] Adicionar modo debug temporário
-- [ ] Deploy e testar
-- [ ] Identificar erro exato
+- [x] Modificar AIChat.tsx para mostrar erros completos no browser
+- [x] Adicionar modo debug temporário
+- [x] Deploy e testar - push feito, aguardando Vercel
+- [ ] Identificar erro exato - aguardando teste do usuário
 - [ ] Remover debug mode após corrigir
+
+## Problema Identificado: Backend não funciona no Vercel
+
+- [x] Erro identificado: "The page c... is not valid JSON"
+- [x] Causa: Vercel retorna HTML em vez de JSON nas rotas API
+- [ ] Verificar vercel.json e configuração de rotas
+- [ ] Verificar se servidor está sendo deployado corretamente
+- [ ] Corrigir configuração
+- [ ] Testar em produção
