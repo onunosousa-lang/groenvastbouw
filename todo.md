@@ -239,3 +239,9 @@
 - [x] Verificar se histórico de conversação está a ser enviado corretamente
 - [x] Verificar se max_tokens está a limitar respostas
 - [x] Testar e corrigir - RESOLVIDO: max_tokens aumentado de 1000 para 2000
+
+## Google Search Console
+
+- [x] Adicionar ficheiro de verificação google354ff5512fe97ed9.html
+- [x] Copiar para client/public/
+- [x] Verificar que está acessível na raiz do site
