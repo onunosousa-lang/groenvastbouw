@@ -83,11 +83,16 @@ export default function AIChat() {
         );
       }
       
+      // DEBUG MODE: Show detailed error in chat
+      const errorDetails = error instanceof Error 
+        ? `Error: ${error.message}\n\nStack: ${error.stack?.substring(0, 200) || 'N/A'}`
+        : `Unknown error: ${JSON.stringify(error)}`;
+      
       const errorMessageContent: Message = {
         role: 'assistant',
         content: language === 'nl' 
-          ? 'Sorry, ik kan momenteel niet reageren. Neem direct contact met ons op via:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297\n\nOf gebruik de WhatsApp knop hierboven!'
-          : 'Sorry, I cannot respond at the moment. Please contact us directly at:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297\n\nOr use the WhatsApp button above!'
+          ? `Sorry, ik kan momenteel niet reageren.\n\n🔍 DEBUG INFO:\n${errorDetails}\n\nNeem contact met ons op via:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297`
+          : `Sorry, I cannot respond at the moment.\n\n🔍 DEBUG INFO:\n${errorDetails}\n\nPlease contact us at:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297`
       };
       setMessages(prev => [...prev, errorMessageContent]);
     } finally {

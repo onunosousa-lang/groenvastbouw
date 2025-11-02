@@ -277,3 +277,11 @@
 - [x] Melhorar mensagens de erro para usuário
 - [ ] Fazer push e redeploy
 - [ ] Verificar logs no Vercel após testar chatbot
+
+## Debug Mode Chatbot
+
+- [ ] Modificar AIChat.tsx para mostrar erros completos no browser
+- [ ] Adicionar modo debug temporário
+- [ ] Deploy e testar
+- [ ] Identificar erro exato
+- [ ] Remover debug mode após corrigir
