@@ -231,3 +231,11 @@
 - [x] Remover formatação Markdown (asteriscos, hífens)
 - [x] Adicionar resposta específica "Porquê Groenvastbouw?"
 - [x] Testar chatbot com perguntas reais
+
+## Bug Chatbot Mobile
+
+- [x] Investigar: chatbot mobile dá respostas curtas e genéricas
+- [x] Comparar com chatbot Manus (funciona bem)
+- [x] Verificar se histórico de conversação está a ser enviado corretamente
+- [x] Verificar se max_tokens está a limitar respostas
+- [x] Testar e corrigir - RESOLVIDO: max_tokens aumentado de 1000 para 2000
