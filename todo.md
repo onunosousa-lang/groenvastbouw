@@ -294,3 +294,11 @@
 - [ ] Verificar se servidor está sendo deployado corretamente
 - [ ] Corrigir configuração
 - [ ] Testar em produção
+
+## Adaptar Backend para Vercel Serverless
+
+- [ ] Criar pasta api/ com handler serverless
+- [ ] Criar api/trpc.ts para processar chamadas tRPC
+- [ ] Configurar vercel.json com rewrites corretos
+- [ ] Testar em produção
+- [ ] Remover debug mode após confirmar funcionamento
