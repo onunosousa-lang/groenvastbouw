@@ -297,8 +297,10 @@
 
 ## Adaptar Backend para Vercel Serverless
 
-- [ ] Criar pasta api/ com handler serverless
-- [ ] Criar api/trpc.ts para processar chamadas tRPC
-- [ ] Configurar vercel.json com rewrites corretos
+- [x] Criar pasta api/ com handler serverless
+- [x] Criar api/trpc.ts para processar chamadas tRPC
+- [x] Configurar vercel.json com rewrites corretos
+- [x] Instalar @vercel/node
+- [x] Push para GitHub - aguardando deploy Vercel
 - [ ] Testar em produção
 - [ ] Remover debug mode após confirmar funcionamento
