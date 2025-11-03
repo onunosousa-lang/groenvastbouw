@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { trpc } from '@/lib/trpc';
+import { toast } from 'sonner';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -15,6 +17,8 @@ export default function AIChat() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  const chatMutation = trpc.deepseek.chat.useMutation();
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -28,8 +32,8 @@ export default function AIChat() {
       const welcomeMessage: Message = {
         role: 'assistant',
         content: language === 'nl' 
-          ? 'Hallo! Ik ben de Groenvastbouw AI assistent. Ik kan al uw vragen beantwoorden over onze passieve huizen, prijzen, technologie en meer. Hoe kan ik u helpen?'
-          : 'Hello! I\'m the Groenvastbouw AI assistant. I can answer all your questions about our passive houses, pricing, technology and more. How can I help you?'
+          ? 'Hallo! Ik ben de Groenvastbouw AI-assistent. Ik kan u helpen met vragen over onze passieve huizen, prijzen, bouwproces en duurzame bouw. Waar kan ik u mee helpen?'
+          : 'Hello! I\'m the Groenvastbouw AI assistant. I can help you with questions about our passive houses, prices, construction process and sustainable building. How can I help you?'
       };
       setMessages([welcomeMessage]);
     }
@@ -45,35 +49,52 @@ export default function AIChat() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          messages: [...messages, userMessage]
-        }),
+      // Send message with conversation history (excluding welcome message)
+      const conversationHistory = messages.filter(m => m.content !== messages[0]?.content);
+      
+      const response = await chatMutation.mutateAsync({
+        message: input,
+        conversationHistory: conversationHistory.length > 0 ? conversationHistory : undefined,
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to get response');
-      }
-
-      const data = await response.json();
       const assistantMessage: Message = { 
         role: 'assistant', 
-        content: data.message 
+        content: response.message 
       };
       setMessages(prev => [...prev, assistantMessage]);
     } catch (error) {
       console.error('Chat error:', error);
-      const errorMessage: Message = {
+      
+      // Check if it's a configuration error
+      const errorMessage = error instanceof Error ? error.message : '';
+      const isConfigError = errorMessage.includes('DEEPSEEK_API_KEY');
+      
+      if (isConfigError) {
+        toast.error(
+          language === 'nl'
+            ? 'DeepSeek API nog niet geconfigureerd. Neem contact op via info@groenvastbouw.nl'
+            : 'DeepSeek API not yet configured. Please contact info@groenvastbouw.nl'
+        );
+      } else {
+        toast.error(
+          language === 'nl'
+            ? 'Er is een fout opgetreden. Probeer het opnieuw of neem contact op.'
+            : 'An error occurred. Please try again or contact us.'
+        );
+      }
+      
+      // DEBUG MODE: Show detailed error in chat
+      const errorDetails = error instanceof Error 
+        ? `Error: ${error.message}\n\nStack: ${error.stack?.substring(0, 200) || 'N/A'}`
+        : `Unknown error: ${JSON.stringify(error)}`;
+      
+      const errorMessageContent: Message = {
         role: 'assistant',
         content: language === 'nl' 
-          ? 'Sorry, er is een fout opgetreden. Neem direct contact met ons op via info@groenvastbouw.nl of bel 06 2984 1297.'
-          : 'Sorry, an error occurred. Please contact us directly at info@groenvastbouw.nl or call 06 2984 1297.'
+          ? `Sorry, ik kan momenteel niet reageren.\n\n🔍 DEBUG INFO:\n${errorDetails}\n\nNeem contact met ons op via:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297`
+          : `Sorry, I cannot respond at the moment.\n\n🔍 DEBUG INFO:\n${errorDetails}\n\nPlease contact us at:\n📧 info@groenvastbouw.nl\n📱 06 2984 1297`
       };
-      setMessages(prev => [...prev, errorMessage]);
+      setMessages(prev => [...prev, errorMessageContent]);
     } finally {
       setIsLoading(false);
     }
@@ -97,17 +118,16 @@ export default function AIChat() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-96 h-[500px] max-h-[80vh] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden">
+        <div className="fixed bottom-6 right-6 z-50 w-96 h-[400px] max-h-[70vh] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden">
           {/* Header */}
           <div className="bg-green-600 text-white p-4">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
-                <img src="/logo-icon.png" alt="Groenvastbouw" className="h-8 w-8" />
+                <img src="/logo-icon.png?v=4" alt="Groenvastbouw" className="h-8 w-8" />
                 <div>
                   <div className="font-semibold">Groenvastbouw AI</div>
-                  <div className="text-xs text-green-100 flex items-center gap-1">
-                    <span className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></span>
-                    {language === 'nl' ? 'Online - Powered by DeepSeek' : 'Online - Powered by DeepSeek'}
+                  <div className="text-xs text-green-100">
+                    {language === 'nl' ? 'Powered by DeepSeek' : 'Powered by DeepSeek'}
                   </div>
                 </div>
               </div>
@@ -138,13 +158,13 @@ export default function AIChat() {
                 className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] p-3 rounded-lg ${
+                  className={`max-w-[80%] p-3 rounded-lg ${
                     message.role === 'user'
                       ? 'bg-green-600 text-white'
                       : 'bg-white text-gray-800 shadow'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-line leading-relaxed">{message.content}</p>
+                  <p className="text-sm whitespace-pre-line">{message.content}</p>
                 </div>
               </div>
             ))}
@@ -152,9 +172,9 @@ export default function AIChat() {
               <div className="flex justify-start">
                 <div className="bg-white text-gray-800 shadow p-3 rounded-lg">
                   <div className="flex gap-1">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce"></div>
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                   </div>
                 </div>
               </div>
@@ -181,6 +201,11 @@ export default function AIChat() {
                 <Send size={20} />
               </button>
             </div>
+            <p className="text-xs text-gray-500 mt-2 text-center">
+              {language === 'nl' 
+                ? 'AI kan fouten maken. Controleer belangrijke informatie.'
+                : 'AI can make mistakes. Verify important information.'}
+            </p>
           </form>
         </div>
       )}

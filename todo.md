@@ -196,3 +196,111 @@
 ## Correção de Texto
 
 - [x] Corrigido "Duurzame Woningen op Maat" para "Duurzame woningen op maat"
+
+## Melhorias de Credibilidade e Profissionalismo
+
+### Pesquisa e Dados
+- [x] Pesquisar especificações técnicas Senmar (certificações, valores U, etc.)
+- [x] Encontrar/calcular certificação energética (EPC label A++/A+++)
+- [x] Pesquisar benefícios fiscais NL para construção passiva (ISDE)
+- [x] Comparar tempo de construção: 50-70% mais rápido
+- [x] Comparar consumo energético: 60-90% menos energia
+
+### Conteúdo
+- [x] Reescrever secção "Sobre mim" - experiência ampla, projeto Amsterdam
+- [x] Adicionar preços de referência leves na FAQ (€270-340/m² com asterisco)
+- [x] Adicionar nova FAQ sobre vantagens técnicas e energia
+- [x] Adicionar dados de certificação energética (EPC A++/A+++)
+- [x] Manter design limpo e não sobrecarregado
+
+## Integração DeepSeek API no Chatbot
+
+- [x] Criar router tRPC para DeepSeek chat
+- [x] Criar system prompt personalizado com info Groenvastbouw
+- [x] Adicionar constraints para manter foco em construção sustentável
+- [x] Implementar histórico de conversação
+- [x] Atualizar componente AIChat frontend
+- [x] Adicionar DEEPSEEK_API_KEY via webdev_request_secrets
+- [x] Verificar que chatbot está funcionando (sem erros TypeScript/build)
+
+## Melhoria System Prompt Chatbot
+
+- [x] Extrair dados-chave dos documentos fornecidos
+- [x] Adicionar comparações de mercado ao system prompt
+- [x] Reescrever tom mais conversacional e humano
+- [x] Remover formatação Markdown (asteriscos, hífens)
+- [x] Adicionar resposta específica "Porquê Groenvastbouw?"
+- [x] Testar chatbot com perguntas reais
+
+## Bug Chatbot Mobile
+
+- [x] Investigar: chatbot mobile dá respostas curtas e genéricas
+- [x] Comparar com chatbot Manus (funciona bem)
+- [x] Verificar se histórico de conversação está a ser enviado corretamente
+- [x] Verificar se max_tokens está a limitar respostas
+- [x] Testar e corrigir - RESOLVIDO: max_tokens aumentado de 1000 para 2000
+
+## Google Search Console
+
+- [x] Adicionar ficheiro de verificação google354ff5512fe97ed9.html
+- [x] Copiar para client/public/
+- [x] Verificar que está acessível na raiz do site
+
+## Meta Tags Verificação Google
+
+- [x] Adicionar meta tag Google Search Console ao index.html
+- [x] Preparar placeholders para Google Analytics (aguardando ID)
+- [x] Preparar placeholders para Google Tag Manager (aguardando ID)
+- [x] Instruir sobre deploy no Vercel - Guia criado em VERCEL_DEPLOY_GUIDE.md
+
+## Deploy GitHub → Vercel
+
+- [x] Verificar estado do repositório Git
+- [x] Fazer push de 4 commits para GitHub (a0189b7 → 80b10de)
+- [x] Aguardar deploy automático no Vercel
+- [ ] Confirmar que novo deployment está em produção
+- [ ] Validar ficheiro Google Search Console em produção
+
+## Bug Chatbot Produção
+
+- [x] Chatbot dá erro "cannot respond" no mobile (produção)
+- [x] Verificar se DEEPSEEK_API_KEY está configurada no Vercel
+- [x] Criar guia para configurar environment variables no Vercel - VERCEL_SECRETS_GUIDE.md
+- [ ] Usuário: Adicionar DEEPSEEK_API_KEY no Vercel
+- [ ] Usuário: Fazer redeploy
+- [ ] Testar após configuração
+
+## Logs Detalhados Chatbot
+
+- [x] Adicionar logs para verificar se API key está presente
+- [x] Adicionar logs para erros específicos (401, 429, 500)
+- [x] Melhorar mensagens de erro para usuário
+- [ ] Fazer push e redeploy
+- [ ] Verificar logs no Vercel após testar chatbot
+
+## Debug Mode Chatbot
+
+- [x] Modificar AIChat.tsx para mostrar erros completos no browser
+- [x] Adicionar modo debug temporário
+- [x] Deploy e testar - push feito, aguardando Vercel
+- [ ] Identificar erro exato - aguardando teste do usuário
+- [ ] Remover debug mode após corrigir
+
+## Problema Identificado: Backend não funciona no Vercel
+
+- [x] Erro identificado: "The page c... is not valid JSON"
+- [x] Causa: Vercel retorna HTML em vez de JSON nas rotas API
+- [ ] Verificar vercel.json e configuração de rotas
+- [ ] Verificar se servidor está sendo deployado corretamente
+- [ ] Corrigir configuração
+- [ ] Testar em produção
+
+## Adaptar Backend para Vercel Serverless
+
+- [x] Criar pasta api/ com handler serverless
+- [x] Criar api/trpc.ts para processar chamadas tRPC
+- [x] Configurar vercel.json com rewrites corretos
+- [x] Instalar @vercel/node
+- [x] Push para GitHub - aguardando deploy Vercel
+- [ ] Testar em produção
+- [ ] Remover debug mode após confirmar funcionamento

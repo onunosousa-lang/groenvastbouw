@@ -117,8 +117,14 @@ export default function Home() {
     {
       question_nl: "Wat zijn de kosten?",
       question_en: "What are the costs?",
-      answer_nl: "Wij bieden drie prestatieniveaus voor de structuur: Optimal (€950-€1,050/m²), Passive (€1,100-€1,200/m²), en Super Passive (€1,250-€1,350/m²). Deze prijzen zijn alleen voor de structuur, exclusief transport (€13.200), montage en funderingen. Voor afwerking en installaties werken wij met betrouwbare partners of u kunt uw eigen aannemers inschakelen. Neem contact op voor een persoonlijke offerte op maat.",
-      answer_en: "We offer three performance levels for the structure: Optimal (€950-€1,050/m²), Passive (€1,100-€1,200/m²), and Super Passive (€1,250-€1,350/m²). These prices are for structure only, excluding transport (€13,200), assembly and foundations. For finishing and installations, we work with reliable partners or you can engage your own contractors. Contact us for a personalized quote."
+      answer_nl: "Voor de hoogwaardige draagconstructie hanteren wij indicatieve prijzen vanaf €270/m² (Optimal) tot €340/m² (Super Passive Passivhaus-standaard).* Deze prijzen zijn exclusief transport, montage, funderingen en afwerking. Voor een complete offerte op maat van uw project, neem contact met ons op.\n\n*Prijzen zijn indicatief en afhankelijk van projectspecificaties, locatie en gekozen afwerkingsniveau.",
+      answer_en: "For the high-quality load-bearing structure, we work with indicative prices starting from €270/m² (Optimal) to €340/m² (Super Passive Passivhaus standard).* These prices exclude transport, assembly, foundations, and finishing. For a complete customized quote for your project, please contact us.\n\n*Prices are indicative and depend on project specifications, location, and chosen finishing level."
+    },
+    {
+      question_nl: "Hoeveel energie bespaart een passief huis echt?",
+      question_en: "How much energy does a passive house actually save?",
+      answer_nl: "Een passief huis verbruikt 60-90% minder energie dan een traditionele woning. Waar een traditioneel huis ongeveer 100-170 kWh/m²/jaar verbruikt, gebruikt een passief huis slechts 15-60 kWh/m²/jaar. Dit resulteert in energiekosten van ongeveer €200-400 per jaar in plaats van €1.500-2.500. Onze gebouwen behalen EPC-label A++ of A+++ (hoogste ratings). Bovendien is de constructietijd 50-70% korter dan traditionele bouw dankzij prefabricage.",
+      answer_en: "A passive house consumes 60-90% less energy than a traditional home. Where a traditional house uses approximately 100-170 kWh/m²/year, a passive house uses only 15-60 kWh/m²/year. This results in energy costs of approximately €200-400 per year instead of €1,500-2,500. Our buildings achieve EPC label A++ or A+++ (highest ratings). Additionally, construction time is 50-70% faster than traditional building thanks to prefabrication."
     }
   ];
 
