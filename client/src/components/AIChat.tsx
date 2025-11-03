@@ -39,6 +39,40 @@ export default function AIChat() {
     }
   }, [isOpen, language]);
 
+<<<<<<< HEAD
+=======
+  const getAIResponse = async (userMessage: string): Promise<string> => {
+    try {
+      // Call DeepSeek API via our backend
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage,
+          history: messages.map(m => ({
+            role: m.role === 'user' ? 'user' : 'assistant',
+            content: m.content
+          }))
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('API request failed');
+      }
+
+      const data = await response.json();
+      return data.reply || (language === 'nl' 
+        ? 'Sorry, ik kon geen antwoord genereren. Neem contact op via info@groenvastbouw.nl'
+        : 'Sorry, I couldn\'t generate a response. Please contact info@groenvastbouw.nl');
+    } catch (error) {
+      console.error('Chat API error:', error);
+      throw error;
+    }
+  };
+
+>>>>>>> d107bbc7995b86a01d310a42be5314f0e7f215ce
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;

@@ -36,7 +36,11 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   // OAuth callback under /api/oauth/callback
   registerOAuthRoutes(app);
+<<<<<<< HEAD
   // Chat API route
+=======
+  // Chat API for DeepSeek
+>>>>>>> d107bbc7995b86a01d310a42be5314f0e7f215ce
   app.use(chatRouter);
   // tRPC API
   app.use(
