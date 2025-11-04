@@ -1,0 +1,58 @@
+diff --git a/client/index.html b/client/index.html
+index 9485dbc..ebfa648 100644
+--- a/client/index.html
++++ b/client/index.html
+@@ -71,10 +71,6 @@
+   <body>
+     <div id="root"></div>
+     <script type="module" src="/src/main.tsx"></script>
+-    <script
+-      defer
+-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+   </body>
+ 
+ </html>
+diff --git a/client/src/main.tsx b/client/src/main.tsx
+index 8adf6f5..8fc9515 100644
+--- a/client/src/main.tsx
++++ b/client/src/main.tsx
+@@ -10,6 +10,38 @@ import "./index.css";
+ 
+ const queryClient = new QueryClient();
+ 
++const injectAnalytics = () => {
++  if (typeof document === "undefined") return;
++
++  const endpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT?.trim();
++  const websiteId = import.meta.env.VITE_ANALYTICS_WEBSITE_ID?.trim();
++
++  if (!endpoint || !websiteId) {
++    if (import.meta.env.DEV) {
++      console.warn(
++        "Analytics script not injected: VITE_ANALYTICS_ENDPOINT and/or VITE_ANALYTICS_WEBSITE_ID are not defined.",
++      );
++    }
++    return;
++  }
++
++  const normalizedEndpoint = endpoint.replace(/\/+$/, "");
++  const existing = document.querySelector<HTMLScriptElement>(
++    `script[data-website-id="${websiteId}"]`,
++  );
++
++  if (existing) return;
++
++  const script = document.createElement("script");
++  script.defer = true;
++  script.src = `${normalizedEndpoint}/umami`;
++  script.dataset.websiteId = websiteId;
++
++  document.body.appendChild(script);
++};
++
++injectAnalytics();
++
+ const redirectToLoginIfUnauthorized = (error: unknown) => {
+   if (!(error instanceof TRPCClientError)) return;
+   if (typeof window === "undefined") return;
