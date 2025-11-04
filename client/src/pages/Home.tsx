@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { trpc } from '@/lib/trpc';
 import Navbar from '@/components/Navbar';
-import AIChat from '@/components/AIChat';
+
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -208,7 +208,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <SEO />
       <Navbar />
-      <AIChat />
+
 
       {/* Hero Section - Full Screen with Background Image */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
