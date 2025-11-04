@@ -10,6 +10,38 @@ import "./index.css";
 
 const queryClient = new QueryClient();
 
+const injectAnalytics = () => {
+  if (typeof document === "undefined") return;
+
+  const endpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT?.trim();
+  const websiteId = import.meta.env.VITE_ANALYTICS_WEBSITE_ID?.trim();
+
+  if (!endpoint || !websiteId) {
+    if (import.meta.env.DEV) {
+      console.warn(
+        "Analytics script not injected: VITE_ANALYTICS_ENDPOINT and/or VITE_ANALYTICS_WEBSITE_ID are not defined.",
+      );
+    }
+    return;
+  }
+
+  const normalizedEndpoint = endpoint.replace(/\/+$/, "");
+  const existing = document.querySelector<HTMLScriptElement>(
+    `script[data-website-id="${websiteId}"]`,
+  );
+
+  if (existing) return;
+
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = `${normalizedEndpoint}/umami`;
+  script.dataset.websiteId = websiteId;
+
+  document.body.appendChild(script);
+};
+
+injectAnalytics();
+
 const redirectToLoginIfUnauthorized = (error: unknown) => {
   if (!(error instanceof TRPCClientError)) return;
   if (typeof window === "undefined") return;
