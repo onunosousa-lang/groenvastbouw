@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { appRouter } from '../server/routers/index';
+import { appRouter } from '../server/routers';
 import { createContext } from '../server/_core/context';
 import { createTRPCContext } from '@trpc/server/adapters/standalone';
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
