@@ -10,7 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Home as HomeIcon, Leaf, Zap, Clock, Award, Users, Building2, Hammer, Key, ExternalLink, ChevronDown, Lightbulb, PenTool } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser'; // Replaced with serverless function
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -41,25 +41,24 @@ export default function Home() {
     setIsSubmitting(true);
 
     try {
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      if (!serviceId || !templateId || !publicKey) {
-        throw new Error('EmailJS not configured');
-      }
-
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
+      // Send email via serverless function
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           phone: formData.phone || 'Niet opgegeven',
           message: formData.message,
-        },
-        publicKey
-      );
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send email');
+      }
 
       toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
       setFormData({ name: '', email: '', phone: '', message: '' });
