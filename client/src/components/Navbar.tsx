@@ -64,9 +64,9 @@ export default function Navbar() {
 
           {/* Desktop Navigation + Language Switcher */}
           <div className="hidden lg:flex items-center space-x-6">
-            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
+            <Link href="/about" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               about
-            </a>
+            </Link>
             <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
               services
             </a>
@@ -109,9 +109,9 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-white/10">
             <div className="flex flex-col space-y-4">
-              <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-white/90 hover:text-green-400">
+              <Link href="/about" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 about
-              </a>
+              </Link>
               <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-white/90 hover:text-green-400">
                 services
               </a>

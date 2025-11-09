@@ -755,159 +755,223 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      {/* Pricing Section - Simplified */}
-      <section id="pricing" className="relative py-20 bg-gradient-to-br from-green-50 to-white">
+      <section id="pricing" className="relative py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              {language === 'nl' ? 'Passieve Houtskeletstructuren' : 'Passive Timber Frame Structures'}
+              {language === 'nl' ? 'Transparante Prijzen' : 'Transparent Pricing'}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600">
               {language === 'nl' 
-                ? 'Geleverd in samenwerking met Senmar, een toonaangevend Portugees bedrijf gespecialiseerd in hoogwaardige ecologische houtskeletbouw' 
-                : 'Delivered in partnership with Senmar, a cutting-edge Portuguese company specializing in high-quality ecological timber frame construction'}
+                ? 'Kwaliteit en duurzaamheid tegen een eerlijke prijs' 
+                : 'Quality and sustainability at a fair price'}
             </p>
           </div>
 
-          {/* Senmar Partnership Highlight */}
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Optimal */}
+            <Card className="border-2 border-green-200 hover:border-green-400 transition-all">
+              <CardHeader className="bg-gradient-to-br from-green-50 to-green-100">
+                <CardTitle className="text-2xl">OPTIMAL</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-700">
+                  {language === 'nl' ? 'Hoge Prestaties' : 'High Performance'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €950-€1,050<span className="text-lg font-normal text-gray-600">/m²*</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 5.7</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">200mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">BENG-conform</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '70-80% energiebesparing' : '70-80% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Passive */}
+            <Card className="border-2 border-green-500 shadow-xl scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                {language === 'nl' ? 'POPULAIR' : 'POPULAR'}
+              </div>
+              <CardHeader className="bg-gradient-to-br from-green-100 to-green-200">
+                <CardTitle className="text-2xl">PASSIVE</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-800">
+                  {language === 'nl' ? 'Premium Prestaties' : 'Premium Performance'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €1,100-€1,200<span className="text-lg font-normal text-gray-600">/m²*</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 8.5</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">300mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">BENG++</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '85-90% energiebesparing' : '85-90% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Super Passive */}
+            <Card className="border-2 border-green-200 hover:border-green-400 transition-all">
+              <CardHeader className="bg-gradient-to-br from-green-50 to-green-100">
+                <CardTitle className="text-2xl">SUPER PASSIVE</CardTitle>
+                <CardDescription className="text-lg font-semibold text-green-700">
+                  {language === 'nl' ? 'Passivhaus Gecertificeerd' : 'Passivhaus Certified'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="mb-6">
+                  <div className="text-3xl font-bold text-gray-900 mb-2">
+                    €1,250-€1,350<span className="text-lg font-normal text-gray-600">/m²*</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    {language === 'nl' ? 'Alleen structuur' : 'Structure only'}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">R-waarde 9.9</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">350mm isolatie</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">Passivhaus</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span className="text-sm">{language === 'nl' ? '90% energiebesparing' : '90% energy savings'}</span>
+                  </li>
+                </ul>
+                <div className="border-t pt-4">
+                  <p className="text-xs text-gray-500 italic">
+                    * {language === 'nl' 
+                      ? 'Referentieprijzen gebaseerd op Senmar standaard modellen. Exclusief transport (€13.200), montage en funderingen.' 
+                      : 'Reference prices based on Senmar standard models. Excluding transport (€13,200), assembly and foundations.'}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-green-50 rounded-lg p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              {language === 'nl' ? 'Wat is inbegrepen?' : 'What\'s included?'}
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                  {language === 'nl' ? 'Samenwerking met Senmar Portugal' : 'Partnership with Senmar Portugal'}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {language === 'nl' 
-                    ? 'Senmar is een gerenommeerde Portugese fabrikant gespecialiseerd in ecologische houtskeletbouw. Hun state-of-the-art fabriek in centraal Portugal produceert hoogwaardige geprefabriceerde elementen met strikte kwaliteitscontrole.' 
-                    : 'Senmar is a renowned Portuguese manufacturer specialized in ecological timber frame construction. Their state-of-the-art factory in central Portugal produces high-quality prefabricated elements with strict quality control.'}
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Isolatiewaarden tot R10 (super passief)' : 'Insulation values up to R10 (super passive)'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'CE-gecertificeerde producten' : 'CE-certified products'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Snelle montage (7-10 dagen)' : 'Fast assembly (7-10 days)'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Duurzame materialen (FSC-gecertificeerd hout)' : 'Sustainable materials (FSC-certified wood)'}</span>
-                  </div>
-                </div>
+                <h4 className="font-semibold text-lg mb-3 text-green-800">
+                  {language === 'nl' ? 'Structuur (3 maanden)' : 'Structure (3 months)'}
+                </h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Complete houtskeletbouw' : 'Complete timber frame'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Hoogwaardige isolatie' : 'High-performance insulation'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Triple-glas ramen en deuren' : 'Triple-glazed windows and doors'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Transport vanuit Portugal' : 'Transport from Portugal'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Professionele montage' : 'Professional assembly'}</span>
+                  </li>
+                </ul>
               </div>
-              <div className="flex justify-center">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl blur-2xl opacity-20"></div>
-                  <img
-                    src="/senmar-factory.jpg"
-                    alt="Senmar Factory"
-                    className="relative rounded-2xl shadow-2xl"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Pricing Card */}
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4 border-green-500">
-              <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-center">
-                <h3 className="text-3xl font-bold text-white mb-2">
-                  {language === 'nl' ? 'Alleen Structuur' : 'Structure Only'}
-                </h3>
-                <p className="text-green-100 text-lg">
-                  {language === 'nl' ? 'Complete draagconstructie met isolatie' : 'Complete load-bearing structure with insulation'}
-                </p>
-              </div>
-              
-              <div className="p-8 md:p-12">
-                <div className="text-center mb-8">
-                  <div className="text-5xl font-bold text-gray-900 mb-2">
-                    {language === 'nl' ? 'Vanaf' : 'Starting from'}
-                  </div>
-                  <div className="text-6xl font-bold text-green-600 mb-4">
-                    €950<span className="text-3xl text-gray-600">/m²</span>
-                  </div>
-                  <p className="text-gray-600 text-lg">
-                    {language === 'nl' 
-                      ? 'Gebaseerd op Senmar standaard modellen' 
-                      : 'Based on Senmar standard models'}
-                  </p>
-                </div>
-
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Complete houtskeletbouw' : 'Complete timber frame structure'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Hoogwaardige isolatie en luchtdichte laag' : 'High-performance insulation and airtight layer'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Triple-glas ramen en deuren' : 'Triple-glazed windows and doors'}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-gray-700">{language === 'nl' ? 'Klaar voor afwerking' : 'Ready for finishing'}</span>
-                  </div>
-                </div>
-
-                <div className="bg-gray-50 rounded-xl p-6 mb-8">
-                  <p className="text-sm text-gray-600 text-center">
-                    {language === 'nl' 
-                      ? 'Exclusief transport, montage en funderingen. Prijzen zijn indicatief en afhankelijk van locatie en maatwerk.' 
-                      : 'Excluding transport, assembly and foundations. Prices are indicative and depend on location and customization.'}
-                  </p>
-                </div>
-
-                {/* WhatsApp CTA Button */}
-                <a
-                  href="https://wa.me/31629841297?text=Hallo%2C%20ik%20wil%20graag%20meer%20informatie%20over%20de%20passieve%20houtskeletstructuren."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white text-center px-8 py-5 rounded-xl font-bold text-xl transition-all shadow-lg hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-3"
-                >
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                  </svg>
-                  {language === 'nl' ? 'Neem Contact Op via WhatsApp' : 'Contact Us via WhatsApp'}
-                </a>
+              <div>
+                <h4 className="font-semibold text-lg mb-3 text-green-800">
+                  {language === 'nl' ? 'Turnkey (+3 maanden)' : 'Turnkey (+3 months)'}
+                </h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Funderingen' : 'Foundations'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Binnen- en buitenafwerking' : 'Interior and exterior finishing'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Elektra en loodgieterwerk' : 'Electrical and plumbing'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Keuken en badkamers' : 'Kitchen and bathrooms'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>{language === 'nl' ? 'Sleutelklaar opgeleverd' : 'Turnkey delivery'}</span>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-
-          {/* Additional Info */}
-          <div className="mt-12 text-center">
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            <p className="text-center text-sm text-gray-600 mt-6">
               {language === 'nl' 
-                ? 'Wij bieden flexibele oplossingen: alleen structuur of volledig sleutelklaar. Neem contact op voor een persoonlijke offerte op maat.' 
-                : 'We offer flexible solutions: structure only or fully turnkey. Contact us for a personalized quote tailored to your needs.'}
+                ? 'Prijzen zijn indicatief en afhankelijk van locatie, terreinomstandigheden en maatwerk. Neem contact op voor een persoonlijke offerte.' 
+                : 'Prices are indicative and depend on location, site conditions and customization. Contact us for a personal quote.'}
             </p>
           </div>
         </div>
