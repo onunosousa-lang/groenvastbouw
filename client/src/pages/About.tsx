@@ -1,10 +1,21 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import { ArrowLeft } from 'lucide-react';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
+        {/* Back to Home Button */}
+        <div className="max-w-6xl mx-auto mb-8">
+          <a 
+            href="/" 
+            className="inline-flex items-center text-green-700 hover:text-green-900 font-semibold transition-colors group"
+          >
+            <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+            Terug naar Home
+          </a>
+        </div>
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
