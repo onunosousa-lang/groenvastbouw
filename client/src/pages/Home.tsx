@@ -210,58 +210,202 @@ export default function Home() {
 
 
       {/* Hero Section - Full Screen with Background Image */}
+      {/* Hero Section - Senmar Speed Focus */}
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-groenvastbouw.jpg" 
-            alt="Modern ecological passive house in Netherlands by Groenvastbouw" 
+            alt="Senmar Passive House Structure - 3 months to windproof" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent"></div>
         </div>
+        
+        {/* KvK/Insurance Mini-Badges */}
+        <div className="absolute top-24 right-4 z-20 hidden lg:block">
+          <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg text-xs space-y-1">
+            <div className="font-semibold text-gray-900">KvK: 75308045</div>
+            <div className="text-gray-700">€2,5M Verzekerd</div>
+            <div className="text-green-700 font-semibold">Senmar Exclusief</div>
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 z-10">
-          {/* Mobile: Slogan abaixo do header com espaço */}
+          {/* Mobile: Slogan */}
           <div className="lg:hidden text-center pt-8 pb-12">
             <h2 className="text-xl font-normal text-white drop-shadow-2xl italic">Nuchter bouwen. Slim wonen.</h2>
           </div>
 
-          <div className="max-w-3xl lg:mx-0 mx-auto">
-            {/* Desktop: mostrar Groenvastbouw + slogan */}
+          <div className="max-w-4xl lg:mx-0 mx-auto">
+            {/* Desktop: Groenvastbouw + slogan */}
             <div className="mb-4 hidden lg:block">
               <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>
               <p className="text-xl md:text-2xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
-              {language === 'nl' 
-                ? 'Duurzame woningen op maat' 
-                : 'Sustainable Homes Tailored to You'}
+            
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+              Passiefhuis in 3 Maanden? <span className="text-green-400">Senmar Technologie</span> Maakt het Mogelijk
             </h1>
-            <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">
-              {language === 'nl' 
-                ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energie-efficiënt, duurzaam en betaalbaar.' 
-                : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'}
+            
+            <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-lg font-medium">
+              Van order tot winddicht in 90 dagen. 40% sneller, 30% goedkoper, 100% BENG-compliant.
             </p>
+
+            {/* Value Badges */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-2xl font-bold text-green-400">€15-25K</div>
+                <div className="text-sm text-white/90">Besparing</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-2xl font-bold text-green-400">90 dagen</div>
+                <div className="text-sm text-white/90">Winddicht</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-2xl font-bold text-green-400">EPC 0,29</div>
+                <div className="text-sm text-white/90">Garantie</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-2xl font-bold text-green-400">100%</div>
+                <div className="text-sm text-white/90">Recyclebaar</div>
+              </div>
+            </div>
+
+            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-green-600 hover:bg-green-700 text-lg px-8 py-6 shadow-xl"
-                onClick={() => scrollToSection('contact')}
+              <a 
+                href="https://wa.me/31629841297?text=Hallo%20Nuno,%20ik%20wil%20meer%20weten%20over%20Senmar%20voor%20mijn%20project"
+                className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {language === 'nl' ? 'Vraag een offerte aan' : 'Request a quote'}
-              </Button>
+                💬 WhatsApp Nuno Direct
+              </a>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-6 backdrop-blur-sm"
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('senmar')}
               >
-                {language === 'nl' ? 'Onze diensten' : 'Our services'}
+                📄 Technische Details
               </Button>
             </div>
           </div>
+      {/* Senmar Value Proposition - Problem/Solution Grid */}
+      <section id="senmar-value" className="relative py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Waarom Senmar Technologie Uw Passiefhuis Revolutie is
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Traditionele passieve bouw heeft problemen. Senmar lost ze op.
+            </p>
+          </div>
+
+          {/* Problem → Solution Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* Column 1: Time */}
+            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
+              <div className="mb-4">
+                <div className="text-red-600 font-semibold mb-2 flex items-center">
+                  <Clock className="w-5 h-5 mr-2" />
+                  Traditioneel Probleem
+                </div>
+                <p className="text-gray-700">Passiefhuizen duren <strong>12-14 maanden</strong></p>
+              </div>
+              <div className="border-t-2 border-gray-200 pt-4">
+                <div className="text-green-600 font-semibold mb-2 flex items-center">
+                  <Zap className="w-5 h-5 mr-2" />
+                  Senmar Oplossing
+                </div>
+                <p className="text-gray-900 font-bold">9-10 maanden totaal</p>
+                <p className="text-sm text-gray-600 mt-1">Structuur in 3 dagen gemonteerd</p>
+              </div>
+            </div>
+
+            {/* Column 2: Compliance */}
+            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
+              <div className="mb-4">
+                <div className="text-red-600 font-semibold mb-2 flex items-center">
+                  <Award className="w-5 h-5 mr-2" />
+                  Traditioneel Probleem
+                </div>
+                <p className="text-gray-700">BENG-normen zijn <strong>administratieve nachtmerrie</strong></p>
+              </div>
+              <div className="border-t-2 border-gray-200 pt-4">
+                <div className="text-green-600 font-semibold mb-2 flex items-center">
+                  <Zap className="w-5 h-5 mr-2" />
+                  Senmar Oplossing
+                </div>
+                <p className="text-gray-900 font-bold">EPC 0,29 garantie op papier</p>
+                <p className="text-sm text-gray-600 mt-1">Beter dan passiefhuis norm (0,4)</p>
+              </div>
+            </div>
+
+            {/* Column 3: Cost */}
+            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
+              <div className="mb-4">
+                <div className="text-red-600 font-semibold mb-2 flex items-center">
+                  <Building2 className="w-5 h-5 mr-2" />
+                  Traditioneel Probleem
+                </div>
+                <p className="text-gray-700">Isolatie is <strong>duur en milieu-onvriendelijk</strong></p>
+              </div>
+              <div className="border-t-2 border-gray-200 pt-4">
+                <div className="text-green-600 font-semibold mb-2 flex items-center">
+                  <Zap className="w-5 h-5 mr-2" />
+                  Senmar Oplossing
+                </div>
+                <p className="text-gray-900 font-bold">€28/m² vs €42/m² XPS</p>
+                <p className="text-sm text-gray-600 mt-1">100% recyclebaar, A+ score</p>
+              </div>
+            </div>
+
+            {/* Column 4: Waste */}
+            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
+              <div className="mb-4">
+                <div className="text-red-600 font-semibold mb-2 flex items-center">
+                  <Leaf className="w-5 h-5 mr-2" />
+                  Traditioneel Probleem
+                </div>
+                <p className="text-gray-700">Bouwafval is <strong>15% van kosten</strong></p>
+              </div>
+              <div className="border-t-2 border-gray-200 pt-4">
+                <div className="text-green-600 font-semibold mb-2 flex items-center">
+                  <Zap className="w-5 h-5 mr-2" />
+                  Senmar Oplossing
+                </div>
+                <p className="text-gray-900 font-bold">5% afval, 80+ jaar levensduur</p>
+                <p className="text-sm text-gray-600 mt-1">70% minder CO₂ in productie</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Total Savings Highlight */}
+          <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl shadow-2xl p-8 text-center text-white mb-8">
+            <h3 className="text-3xl font-bold mb-3">Totale Besparing per Project</h3>
+            <div className="text-6xl font-bold mb-2">€15.000 - €25.000</div>
+            <p className="text-xl opacity-90">Directe kostenbesparing + snellere oplevering</p>
+          </div>
+
+          {/* WhatsApp CTA */}
+          <div className="text-center">
+            <a 
+              href="https://wa.me/31629841297?text=Hallo%20Nuno,%20hoeveel%20bespaart%20Senmar%20voor%20mijn%20project?"
+              className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💬 Hoeveel bespaart Senmar voor úw project?
+            </a>
+          </div>
         </div>
+      </section>
+        </div>
+        
         <button 
-          onClick={() => scrollToSection('about')}
+          onClick={() => scrollToSection('senmar-value')}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-10"
         >
           <ChevronDown size={40} />
@@ -1095,67 +1239,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Founder Section - Moved to Bottom */}
-      <section id="founder" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              {t('founder_title')}
-            </h2>
-          </div>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-12 items-start">
-              <div className="md:col-span-1">
-                <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-                  <div className="w-32 h-32 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <Users className="w-16 h-16 text-green-700" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {t('founder_subtitle')}
-                  </h3>
-                  <p className="text-green-700 font-semibold mb-4">
-                    {t('founder_role')}
-                  </p>
-                  <div className="text-left text-sm text-gray-600 space-y-2">
-                    <p><strong>Email:</strong> <a href="mailto:info@groenvastbouw.nl" className="text-green-700">info@groenvastbouw.nl</a></p>
-                    <p><strong>{language === 'nl' ? 'Telefoon' : 'Phone'}:</strong> <a href="tel:0629841297" className="text-green-700">06 2984 1297</a></p>
-                    <p><strong>{language === 'nl' ? 'Locatie' : 'Location'}:</strong> Wageningen, NL</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="md:col-span-2 space-y-8">
-                <div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {t('founder_text')}
-                  </p>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="text-xl">{t('founder_education_title')}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600">{t('founder_education_text')}</p>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="text-xl">{t('founder_experience_title')}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600">{t('founder_experience_text')}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
@@ -1200,4 +1283,16 @@ export default function Home() {
       </footer>
     </div>
   );
+      {/* Fixed WhatsApp Button (Mobile) */}
+      <a
+        href="https://wa.me/31629841297?text=Hallo%20Nuno,%20ik%20wil%20meer%20weten%20over%20Senmar%20voor%20mijn%20project"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BD5A] text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center lg:hidden"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp Contact"
+      >
+        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
 }
