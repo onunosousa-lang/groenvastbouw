@@ -281,10 +281,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Waarom Senmar Technologie Uw Passiefhuis Revolutie is
+              Senmar Technologie
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Traditionele passieve bouw heeft problemen. Senmar lost ze op.
+              Exclusief in Nederland: λ = 0,022, 90 dagen winddicht, 30% goedkoper
             </p>
           </div>
 
@@ -374,15 +374,42 @@ export default function Home() {
             <p className="text-xl opacity-90">Directe kostenbesparing + snellere oplevering</p>
           </div>
 
+          {/* Technical Specs */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-12 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Technische Specificaties</h3>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span><strong>Warmtegeleiding:</strong> λ = 0,022 W/mK</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span><strong>Installatietijd:</strong> 3 werkdagen voor 150m²</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span><strong>Brandklasse:</strong> B-s2,d0</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span><strong>Levensduur:</strong> 80+ jaar</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span><strong>Recyclebaar:</strong> 100%</span>
+              </li>
+            </ul>
+          </div>
+
           {/* WhatsApp CTA */}
           <div className="text-center">
             <a 
-              href="https://wa.me/31629841297?text=Hallo%20Nuno,%20hoeveel%20bespaart%20Senmar%20voor%20mijn%20project?"
+              href="https://wa.me/31629841297?text=Hallo%20Nuno,%20technische%20vraag%20over%20Senmar"
               className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
             >
-              💬 Hoeveel bespaart Senmar voor úw project?
+              💬 Technische vraag? WhatsApp Nuno
             </a>
           </div>
         </div>
