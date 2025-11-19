@@ -17,11 +17,10 @@ export const translations = {
     about_subtitle: "In samenwerking met Senmar Portugal",
     about_mission_title: "Onze Missie",
     about_mission_text: "Duurzame, hoogwaardige woningbouw toegankelijk maken door geavanceerde prefabricage.",
-    about_value_sustainability: "Duurzaamheid",
-    about_value_quality: "Precisie",
-    about_value_transparency: "Transparantie",
-    about_value_service: "Expertise",
     
+    // Senmar Section (This was missing!)
+    senmar_title: "Technologie van Senmar Portugal",
+
     // Contact
     contact_title: "Project Analyse",
     contact_subtitle: "Bespreek uw specificaties",
@@ -56,10 +55,9 @@ export const translations = {
     about_subtitle: "In partnership with Senmar Portugal",
     about_mission_title: "Our Mission",
     about_mission_text: "Making sustainable, high-performance housing accessible through advanced prefabrication.",
-    about_value_sustainability: "Sustainability",
-    about_value_quality: "Precision",
-    about_value_transparency: "Transparency",
-    about_value_service: "Expertise",
+    
+    // Senmar Section (This was missing!)
+    senmar_title: "Technology from Senmar Portugal",
     
     // Contact
     contact_title: "Project Analysis",
