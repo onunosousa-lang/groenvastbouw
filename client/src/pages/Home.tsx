@@ -244,16 +244,15 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
-              Duurzame woningen op maat
+              {language === 'nl' 
+                ? 'Duurzame woningen op maat' 
+                : 'Sustainable Homes Tailored to You'}
             </h1>
             
-            {/* NEW: Senmar 3 months line */}
-            <p className="text-2xl md:text-3xl text-green-400 font-bold mb-6 drop-shadow-lg">
-              Passiefhuis in 3 maanden met Senmar technologie
-            </p>
-            
             <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">
-              Hoogwaardige passieve huizen, kantoren en renovaties. Energie-efficiënt, duurzaam en betaalbaar.
+              {language === 'nl' 
+                ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energie-efficiënt, duurzaam en betaalbaar.' 
+                : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'}
             </p>
 
             {/* CTAs */}
