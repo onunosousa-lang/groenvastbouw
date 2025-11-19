@@ -226,7 +226,6 @@ export default function Home() {
           <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg text-xs space-y-1">
             <div className="font-semibold text-gray-900">KvK: 75308045</div>
             <div className="text-gray-700">€2,5M Verzekerd</div>
-            <div className="text-green-700 font-semibold">Senmar Exclusief</div>
           </div>
         </div>
 
@@ -276,143 +275,6 @@ export default function Home() {
             </div>
           </div>
       {/* Senmar Value Proposition - Problem/Solution Grid */}
-      <section id="senmar" className="relative py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Senmar Technologie
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Exclusief in Nederland: λ = 0,022, 90 dagen winddicht, 30% goedkoper
-            </p>
-          </div>
-
-          {/* Problem → Solution Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {/* Column 1: Time */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
-              <div className="mb-4">
-                <div className="text-red-600 font-semibold mb-2 flex items-center">
-                  <Clock className="w-5 h-5 mr-2" />
-                  Traditioneel Probleem
-                </div>
-                <p className="text-gray-700">Passiefhuizen duren <strong>12-14 maanden</strong></p>
-              </div>
-              <div className="border-t-2 border-gray-200 pt-4">
-                <div className="text-green-600 font-semibold mb-2 flex items-center">
-                  <Zap className="w-5 h-5 mr-2" />
-                  Senmar Oplossing
-                </div>
-                <p className="text-gray-900 font-bold">9-10 maanden totaal</p>
-                <p className="text-sm text-gray-600 mt-1">Structuur in 3 dagen gemonteerd</p>
-              </div>
-            </div>
-
-            {/* Column 2: Compliance */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
-              <div className="mb-4">
-                <div className="text-red-600 font-semibold mb-2 flex items-center">
-                  <Award className="w-5 h-5 mr-2" />
-                  Traditioneel Probleem
-                </div>
-                <p className="text-gray-700">BENG-normen zijn <strong>administratieve nachtmerrie</strong></p>
-              </div>
-              <div className="border-t-2 border-gray-200 pt-4">
-                <div className="text-green-600 font-semibold mb-2 flex items-center">
-                  <Zap className="w-5 h-5 mr-2" />
-                  Senmar Oplossing
-                </div>
-                <p className="text-gray-900 font-bold">EPC 0,29 garantie op papier</p>
-                <p className="text-sm text-gray-600 mt-1">Beter dan passiefhuis norm (0,4)</p>
-              </div>
-            </div>
-
-            {/* Column 3: Cost */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
-              <div className="mb-4">
-                <div className="text-red-600 font-semibold mb-2 flex items-center">
-                  <Building2 className="w-5 h-5 mr-2" />
-                  Traditioneel Probleem
-                </div>
-                <p className="text-gray-700">Isolatie is <strong>duur en milieu-onvriendelijk</strong></p>
-              </div>
-              <div className="border-t-2 border-gray-200 pt-4">
-                <div className="text-green-600 font-semibold mb-2 flex items-center">
-                  <Zap className="w-5 h-5 mr-2" />
-                  Senmar Oplossing
-                </div>
-                <p className="text-gray-900 font-bold">€28/m² vs €42/m² XPS</p>
-                <p className="text-sm text-gray-600 mt-1">100% recyclebaar, A+ score</p>
-              </div>
-            </div>
-
-            {/* Column 4: Waste */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-2xl transition-all duration-300">
-              <div className="mb-4">
-                <div className="text-red-600 font-semibold mb-2 flex items-center">
-                  <Leaf className="w-5 h-5 mr-2" />
-                  Traditioneel Probleem
-                </div>
-                <p className="text-gray-700">Bouwafval is <strong>15% van kosten</strong></p>
-              </div>
-              <div className="border-t-2 border-gray-200 pt-4">
-                <div className="text-green-600 font-semibold mb-2 flex items-center">
-                  <Zap className="w-5 h-5 mr-2" />
-                  Senmar Oplossing
-                </div>
-                <p className="text-gray-900 font-bold">5% afval, 80+ jaar levensduur</p>
-                <p className="text-sm text-gray-600 mt-1">70% minder CO₂ in productie</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Total Savings Highlight */}
-          <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl shadow-2xl p-8 text-center text-white mb-8">
-            <h3 className="text-3xl font-bold mb-3">Totale Besparing per Project</h3>
-            <div className="text-6xl font-bold mb-2">€15.000 - €25.000</div>
-            <p className="text-xl opacity-90">Directe kostenbesparing + snellere oplevering</p>
-          </div>
-
-          {/* Technical Specs */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-12 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Technische Specificaties</h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-green-600 mr-3">✓</span>
-                <span><strong>Warmtegeleiding:</strong> λ = 0,022 W/mK</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-3">✓</span>
-                <span><strong>Installatietijd:</strong> 3 werkdagen voor 150m²</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-3">✓</span>
-                <span><strong>Brandklasse:</strong> B-s2,d0</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-3">✓</span>
-                <span><strong>Levensduur:</strong> 80+ jaar</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-3">✓</span>
-                <span><strong>Recyclebaar:</strong> 100%</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* WhatsApp CTA */}
-          <div className="text-center">
-            <a 
-              href="https://wa.me/31629841297?text=Hallo%20Nuno,%20technische%20vraag%20over%20Senmar"
-              className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              💬 Technische vraag? WhatsApp Nuno
-            </a>
-          </div>
-        </div>
-      </section>
         </div>
         
         <button 
@@ -452,7 +314,10 @@ export default function Home() {
             </div>
             <div>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                {t('about_text')}
+                Groenvastbouw is uw partner voor duurzame woningbouw in Nederland. In exclusieve samenwerking met <strong>Senmar</strong>, een toonaangevend Portugees bedrijf gespecialiseerd in hoogwaardige passieve houtskeletbouw, brengen wij geavanceerde technologie naar de Nederlandse markt.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Onze Senmar-oplossingen zijn perfect voor <strong>particuliere woningbouw, sociale woningbouw, publieke gebouwen en multi-unit ontwikkelingen</strong>. Met Passiefhuis-certificering, snelle uitvoering (structuur gemonteerd in 3 maanden), uitstekende waarde en strikte milieucriteria, bieden wij een complete oplossing voor moderne bouwprojecten.
               </p>
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg shadow-lg">
                 <h3 className="text-2xl font-bold text-green-900 mb-4">
