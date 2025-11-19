@@ -151,7 +151,7 @@ export default function Home() {
       <SEO />
       <Navbar />
 
-      {/* HERO SECTION - MODERN & IMPACTFUL */}
+      {/* HERO SECTION */}
       <section id="hero" className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
@@ -299,8 +299,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MARKET SEGMENTS (B2B / B2C) */}
-      <section className="py-24 bg-slate-50">
+      {/* MARKET SEGMENTS (B2B / B2C) - ADDED ID HERE */}
+      <section id="markets" className="py-24 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">

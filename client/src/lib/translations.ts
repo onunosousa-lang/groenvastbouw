@@ -4,6 +4,7 @@ export const translations = {
     nav_about: "Over Ons",
     nav_services: "Systemen",
     nav_senmar: "Technologie",
+    nav_benefits: "Oplossingen",
     nav_contact: "Contact",
     
     // Hero
@@ -42,6 +43,7 @@ export const translations = {
     nav_about: "About Us",
     nav_services: "Systems",
     nav_senmar: "Technology",
+    nav_benefits: "Solutions",
     nav_contact: "Contact",
     
     // Hero
