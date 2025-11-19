@@ -8,7 +8,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { 
   Leaf, Zap, Clock, Award, Users, Building2, 
   Hammer, Key, ExternalLink, ChevronDown, 
-  Lightbulb, PenTool, ShieldCheck, Ruler, Factory 
+  Lightbulb, PenTool, ShieldCheck, Ruler, Factory,
+  TrendingUp, Briefcase, Home as HomeIcon
 } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
@@ -22,6 +23,7 @@ export default function Home() {
     message: ''
   });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -29,8 +31,6 @@ export default function Home() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -65,40 +65,13 @@ export default function Home() {
     }
   };
 
-  const faqs = [
-    {
-      question_nl: "Wat is een passief huis?",
-      question_en: "What is a passive house?",
-      answer_nl: "Een passief huis is een gebouw dat tot 90% minder energie verbruikt voor verwarming en koeling. Dit wordt bereikt door superieure isolatie, luchtdichte constructie en mechanische ventilatie met warmteterugwinning.",
-      answer_en: "A passive house uses up to 90% less energy for heating and cooling. This is achieved through superior insulation, airtight construction, and mechanical ventilation with heat recovery."
-    },
-    {
-      question_nl: "Wat is het verschil tussen turnkey en casco?",
-      question_en: "What is the difference between turnkey and shell?",
-      answer_nl: "Wij leveren de complete hoogwaardige, geïsoleerde structuur (casco+). Voor de afwerking (installaties, vloeren, keukens) werken wij met partners of uw eigen aannemers. Dit biedt maximale flexibiliteit.",
-      answer_en: "We deliver the complete high-quality, insulated structure (shell+). For finishing (installations, flooring, kitchens) we work with partners or your own contractors. This offers maximum flexibility."
-    },
-    {
-      question_nl: "Hoe lang duurt de productie?",
-      question_en: "How long does production take?",
-      answer_nl: "Dankzij het geautomatiseerde Senmar-productieproces duurt de fabricage slechts enkele weken. De montage op locatie van de waterdichte structuur duurt doorgaans 7 tot 10 dagen.",
-      answer_en: "Thanks to the automated Senmar production process, manufacturing takes only a few weeks. On-site assembly of the weathertight structure typically takes 7 to 10 days."
-    },
-    {
-      question_nl: "Bouwen jullie op maat?",
-      question_en: "Do you build custom designs?",
-      answer_nl: "Ja, wij zijn gespecialiseerd in maatwerk. We kunnen uw eigen architectonisch ontwerp realiseren of een van onze modellen aanpassen aan uw specifieke wensen en kavel.",
-      answer_en: "Yes, we specialize in custom work. We can realize your own architectural design or adapt one of our models to your specific wishes and plot."
-    }
-  ];
-
   const systems = [
     {
       name: "Optimal",
       r_value: "5.7",
       insulation: "200mm",
-      desc_nl: "Ideaal voor gematigde klimaten. Uitstekende basisisolatie die de standaard bouwbesluit-eisen overtreft.",
-      desc_en: "Ideal for moderate climates. Excellent basic insulation that exceeds standard building code requirements.",
+      desc_nl: "De ideale balans tussen isolatie en investering. Overtreft standaard bouwbesluit-eisen ruimschoots.",
+      desc_en: "The ideal balance between insulation and investment. Far exceeds standard building code requirements.",
       features_nl: ["200mm Minerale Wol", "Dampopen constructie", "Rc > 5.0"],
       features_en: ["200mm Mineral Wool", "Breathable construction", "R-value > 5.0"]
     },
@@ -106,20 +79,41 @@ export default function Home() {
       name: "Passive",
       r_value: "8.5",
       insulation: "300mm",
-      desc_nl: "Onze standaard voor energiezuinig wonen. Voegt een extra externe isolatielaag toe voor minimale koudebruggen.",
-      desc_en: "Our standard for energy-efficient living. Adds an extra external insulation layer for minimal thermal bridges.",
-      features_nl: ["200mm + 100mm Isolatie", "Verhoogde luchtdichtheid", "Rc > 8.0"],
-      features_en: ["200mm + 100mm Insulation", "Increased airtightness", "R-value > 8.0"],
+      desc_nl: "Onze standaard voor energiezuinig wonen. Elimineert koudebruggen voor maximaal comfort.",
+      desc_en: "Our standard for energy-efficient living. Eliminates thermal bridges for maximum comfort.",
+      features_nl: ["Dubbele isolatielaag (200+100mm)", "Superieure luchtdichtheid", "Rc > 8.0"],
+      features_en: ["Double insulation layer (200+100mm)", "Superior airtightness", "R-value > 8.0"],
       highlight: true
     },
     {
       name: "Super Passive",
       r_value: "10.5",
       insulation: "350mm",
-      desc_nl: "Het neusje van de zalm. Ontworpen voor volledige Passivhaus-certificering en nul-op-de-meter woningen.",
-      desc_en: "Top of the line. Designed for full Passivhaus certification and net-zero energy homes.",
-      features_nl: ["350mm Totale Isolatie", "Passivhaus Certificeerbaar", "Rc > 10.0"],
-      features_en: ["350mm Total Insulation", "Passivhaus Certifiable", "R-value > 10.0"]
+      desc_nl: "Ontworpen voor Passivhaus-certificering. De ultieme keuze voor nul-op-de-meter ambities.",
+      desc_en: "Designed for Passivhaus certification. The ultimate choice for net-zero ambitions.",
+      features_nl: ["Drievoudige isolatielaag", "Passivhaus Certificeerbaar", "Rc > 10.0"],
+      features_en: ["Triple insulation layer", "Passivhaus Certifiable", "R-value > 10.0"]
+    }
+  ];
+
+  const markets = [
+    {
+      title_nl: "Particulier & Wonen",
+      title_en: "Private & Residential",
+      desc_nl: "Realiseer uw droomhuis zonder bouwzorgen. Wij garanderen een vaste prijs, een vaste opleverdatum en een woning die klaar is voor de toekomst.",
+      desc_en: "Realize your dream home without construction worries. We guarantee a fixed price, a fixed delivery date, and a home that is ready for the future.",
+      icon: HomeIcon,
+      benefits_nl: ["Energiebesparing tot 90%", "Gezond binnenklimaat", "Sleutelklaar mogelijk"],
+      benefits_en: ["Energy savings up to 90%", "Healthy indoor climate", "Turnkey options available"]
+    },
+    {
+      title_nl: "Zakelijk & Ontwikkeling",
+      title_en: "Business & Development",
+      desc_nl: "Schaalbare oplossingen voor projectontwikkelaars en woningcorporaties. Maximaliseer ROI door snelle bouwtijden en lage faalkosten.",
+      desc_en: "Scalable solutions for developers and housing corporations. Maximize ROI through rapid construction times and low failure costs.",
+      icon: Briefcase,
+      benefits_nl: ["70% Sneller dan traditioneel", "Prefabricage in fabriek", "Voorspelbare kosten"],
+      benefits_en: ["70% Faster than traditional", "Factory prefabrication", "Predictable costs"]
     }
   ];
 
@@ -128,342 +122,361 @@ export default function Home() {
       <SEO />
       <Navbar />
 
-      {/* Hero Section */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* HERO SECTION - MODERN & IMPACTFUL */}
+      <section id="hero" className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-groenvastbouw.jpg" 
-            alt="Senmar Passive House Construction" 
-            className="w-full h-full object-cover scale-105"
+            alt="Advanced Modular Construction" 
+            className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-slate-900/50"></div>
         </div>
         
-        <div className="container mx-auto px-4 z-10 pt-20">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30 mb-6 backdrop-blur-sm">
-              <Factory size={16} />
-              <span className="text-sm font-medium tracking-wide uppercase">Powered by Senmar Technology</span>
+        <div className="container mx-auto px-4 z-10 relative">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 text-green-400 border border-green-500/20 mb-8 backdrop-blur-md">
+              <Factory size={14} />
+              <span className="text-xs font-bold tracking-[0.2em] uppercase">Powered by Senmar Technology</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-              {language === 'nl' ? 'De toekomst van bouwen.' : 'The future of building.'}
-              <span className="block text-green-400">{language === 'nl' ? 'Nu beschikbaar.' : 'Available now.'}</span>
+              {language === 'nl' ? 'De nieuwe standaard in' : 'The new standard in'}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 block mt-2">
+                {language === 'nl' ? 'duurzaam bouwen.' : 'sustainable construction.'}
+              </span>
             </h1>
             
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
               {language === 'nl' 
-                ? 'Hoogwaardige prefab houtskeletbouw met Passivhaus-technologie. Sneller, duurzamer en energie-efficiënter dan traditionele bouw.' 
-                : 'High-performance prefab timber frame construction with Passivhaus technology. Faster, more sustainable, and more energy-efficient than traditional building.'}
+                ? 'Wij combineren Portugese engineering met Nederlandse nuchterheid. Hoogwaardige prefab systemen die sneller, efficiënter en energiezuiniger zijn.' 
+                : 'We combine Portuguese engineering with Dutch pragmatism. High-performance prefab systems that are faster, more efficient, and more energy-efficient.'}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button 
                 onClick={() => scrollToSection('technology')}
-                className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-lg transition-all"
+                className="bg-green-600 hover:bg-green-700 text-white px-8 py-7 text-lg rounded-full transition-all shadow-lg shadow-green-900/20"
               >
-                {language === 'nl' ? 'Bekijk onze systemen' : 'View our systems'}
+                {language === 'nl' ? 'Ontdek de Technologie' : 'Discover the Technology'}
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-lg bg-transparent"
+                className="border-slate-600 text-white hover:bg-white/5 px-8 py-7 text-lg rounded-full backdrop-blur-sm"
                 onClick={() => scrollToSection('contact')}
               >
-                {language === 'nl' ? 'Neem contact op' : 'Contact us'}
+                {language === 'nl' ? 'Start uw Project' : 'Start your Project'}
               </Button>
             </div>
           </div>
         </div>
-        
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
+
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-slate-500">
           <ChevronDown size={32} />
         </div>
       </section>
 
-      {/* Partnership / Tech Intro */}
-      <section id="senmar-intro" className="py-20 bg-slate-50">
+      {/* KEY METRICS STRIP */}
+      <div className="bg-slate-950 border-b border-slate-900 py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-800/50">
+            {[
+              { label: "Energy Savings", value: "90%", icon: Leaf },
+              { label: "Faster Build", value: "70%", icon: Clock },
+              { label: "Insulation Value", value: "R-10", icon: ShieldCheck },
+              { label: "Precision", value: "1mm", icon: Ruler }
+            ].map((stat, i) => (
+              <div key={i} className="text-center px-4">
+                <div className="flex justify-center mb-2 text-green-500"><stat.icon size={20} /></div>
+                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-xs text-slate-500 uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* TECHNOLOGY / SENMAR SECTION */}
+      <section id="technology" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
-                {language === 'nl' ? 'Europese topkwaliteit.' : 'European top quality.'}
-              </h2>
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                {language === 'nl' 
-                  ? 'Groenvastbouw is de exclusieve partner van Senmar, marktleider in geavanceerde houtskeletbouw in Portugal. In hun state-of-the-art faciliteit worden woningen met millimeter-precisie geproduceerd met behulp van CNC-technologie.' 
-                  : 'Groenvastbouw is the exclusive partner of Senmar, market leader in advanced timber frame construction in Portugal. In their state-of-the-art facility, homes are produced with millimeter precision using CNC technology.'}
-              </p>
-              <ul className="space-y-4 mb-8">
-                {[
-                  { icon: ShieldCheck, text: language === 'nl' ? 'Volledig CE & Eurocode gecertificeerd' : 'Fully CE & Eurocode certified' },
-                  { icon: Ruler, text: language === 'nl' ? 'CNC-precisie productie (±1mm)' : 'CNC precision manufacturing (±1mm)' },
-                  { icon: Leaf, text: language === 'nl' ? 'FSC-gecertificeerd Scandinavisch hout (C24)' : 'FSC-certified Nordic timber (C24)' }
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 text-slate-700 font-medium">
-                    <div className="bg-green-100 p-2 rounded-lg text-green-700">
-                      <item.icon size={20} />
-                    </div>
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-green-200 rounded-xl rotate-3 opacity-30"></div>
+              <div className="absolute -inset-4 bg-slate-100 rounded-2xl -rotate-2"></div>
               <img 
                 src="/senmar-factory.jpg" 
-                alt="Senmar Factory High Tech" 
-                className="relative rounded-xl shadow-2xl w-full object-cover h-[400px]"
-                onError={(e) => {
-                  e.currentTarget.src = "/images/construction_3.jpg" // Fallback
-                }}
+                alt="Senmar Factory CNC Technology" 
+                className="relative rounded-xl shadow-2xl w-full object-cover h-[500px]"
+                onError={(e) => { e.currentTarget.src = "/images/construction_3.jpg" }}
               />
+              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur p-4 rounded-lg shadow-lg max-w-xs">
+                <p className="text-sm font-semibold text-slate-900">
+                  {language === 'nl' ? 'Geproduceerd in Coja, Portugal' : 'Manufactured in Coja, Portugal'}
+                </p>
+                <p className="text-xs text-slate-600">
+                  {language === 'nl' ? 'State-of-the-art CNC faciliteit' : 'State-of-the-art CNC facility'}
+                </p>
+              </div>
+            </div>
+            
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-100 text-slate-600 text-sm font-medium mb-6">
+                <Award size={16} className="text-green-600" />
+                Exclusive Partnership
+              </div>
+              
+              <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                {language === 'nl' ? 'Innovatie door Automatisering.' : 'Innovation through Automation.'}
+              </h2>
+              
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                {language === 'nl' 
+                  ? 'Groenvastbouw werkt exclusief samen met Senmar, pionier in modulaire houtbouw. Door het bouwproces te verplaatsen van de bouwplaats naar de fabriek, elimineren we weersinvloeden en menselijke fouten.'
+                  : 'Groenvastbouw partners exclusively with Senmar, a pioneer in modular timber construction. By moving the construction process from the site to the factory, we eliminate weather impacts and human error.'}
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 text-green-600">
+                    <Ruler size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">{language === 'nl' ? 'CNC Precisie' : 'CNC Precision'}</h4>
+                    <p className="text-slate-600 text-sm">
+                      {language === 'nl' ? 'Computergestuurde productie tot op de millimeter nauwkeurig.' : 'Computer-controlled manufacturing accurate to the millimeter.'}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 text-green-600">
+                    <Zap size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">{language === 'nl' ? 'Superieure Isolatie' : 'Superior Insulation'}</h4>
+                    <p className="text-slate-600 text-sm">
+                      {language === 'nl' ? 'Luchtdichte constructie zonder koudebruggen (Thermal Bridge Free).' : 'Airtight construction without thermal bridges.'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-10 pt-8 border-t border-slate-100">
+                 <a href="https://senmar.pt/en" target="_blank" className="text-green-600 font-semibold hover:text-green-700 inline-flex items-center gap-2">
+                   {language === 'nl' ? 'Lees meer over Senmar' : 'Read more about Senmar'} <ExternalLink size={16}/>
+                 </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technology / Systems Section (Formerly Pricing) */}
-      <section id="technology" className="py-24 bg-slate-900 text-white">
+      {/* MARKET SEGMENTS (B2B / B2C) */}
+      <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-green-400 font-bold tracking-wider uppercase text-sm">Performance</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
-              {language === 'nl' ? 'Kies uw prestatieniveau' : 'Choose your performance level'}
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              {language === 'nl' ? 'Oplossingen voor elke schaal' : 'Solutions for every scale'}
             </h2>
-            <p className="text-slate-400 text-xl max-w-2xl mx-auto">
-              {language === 'nl' 
-                ? 'Van zeer energiezuinig tot volledig Passiefhuis-gecertificeerd. Onze systemen zijn ontworpen voor de toekomst.' 
-                : 'From highly energy-efficient to fully Passive House certified. Our systems are designed for the future.'}
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              {language === 'nl' ? 'Of u nu één droomhuis bouwt of een hele wijk ontwikkelt.' : 'Whether you are building one dream home or developing an entire district.'}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {systems.map((system, index) => (
-              <Card 
-                key={index} 
-                className={`bg-slate-800 border-slate-700 text-white overflow-hidden hover:border-green-500 transition-all duration-300 ${system.highlight ? 'ring-2 ring-green-500 scale-105 z-10 shadow-2xl shadow-green-900/20' : ''}`}
-              >
-                <div className={`h-2 w-full ${system.highlight ? 'bg-green-500' : 'bg-slate-600'}`}></div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {markets.map((market, index) => (
+              <Card key={index} className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div className="h-2 bg-gradient-to-r from-green-500 to-emerald-600"></div>
                 <CardHeader>
-                  <h3 className="text-2xl font-bold">{system.name}</h3>
-                  <div className="flex items-baseline gap-2 mt-2">
-                    <span className="text-4xl font-bold text-green-400">R-{system.r_value}</span>
-                    <span className="text-slate-400 text-sm">W/m²K</span>
+                  <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-50 transition-colors">
+                    <market.icon size={28} className="text-slate-700 group-hover:text-green-600" />
                   </div>
-                  <p className="text-slate-400 text-sm mt-1">
-                    {language === 'nl' ? 'Thermische weerstand' : 'Thermal resistance'}
-                  </p>
+                  <CardTitle className="text-2xl">{language === 'nl' ? market.title_nl : market.title_en}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-6">
-                    <div>
-                      <p className="text-sm text-slate-300 leading-relaxed min-h-[60px]">
-                        {language === 'nl' ? system.desc_nl : system.desc_en}
-                      </p>
-                    </div>
-                    
-                    <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
-                      <div className="text-xs text-slate-500 uppercase mb-2 font-semibold">
-                        {language === 'nl' ? 'Specificaties' : 'Specs'}
-                      </div>
-                      <ul className="space-y-2">
-                        {(language === 'nl' ? system.features_nl : system.features_en).map((feat, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-slate-200">
-                            <Zap size={14} className="mt-1 text-green-500 shrink-0" />
-                            {feat}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="pt-4">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium text-slate-400">
-                          {language === 'nl' ? 'Isolatiedikte' : 'Insulation Thickness'}
-                        </span>
-                        <span className="text-white font-bold">{system.insulation}</span>
-                      </div>
-                      <div className="w-full bg-slate-700 rounded-full h-2">
-                        <div 
-                          className="bg-green-500 h-2 rounded-full" 
-                          style={{ width: `${(parseInt(system.insulation) / 350) * 100}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="text-slate-600 mb-8 leading-relaxed">
+                    {language === 'nl' ? market.desc_nl : market.desc_en}
+                  </p>
+                  <ul className="space-y-3">
+                    {(language === 'nl' ? market.benefits_nl : market.benefits_en).map((benefit, i) => (
+                      <li key={i} className="flex items-center gap-3 text-sm font-medium text-slate-700">
+                        <ShieldCheck size={16} className="text-green-500" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}
           </div>
-
-          <div className="mt-16 text-center">
-            <p className="text-slate-400 mb-6">
-              {language === 'nl' 
-                ? 'Wilt u weten welk systeem het beste bij uw project past?' 
-                : 'Want to know which system suits your project best?'}
-            </p>
-            <a
-              href="https://wa.me/31629841297"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-semibold border-b border-green-400 hover:border-green-300 pb-0.5 transition-all"
-            >
-              {language === 'nl' ? 'Vraag technisch advies aan Nuno' : 'Ask Nuno for technical advice'}
-              <ExternalLink size={16} />
-            </a>
-          </div>
         </div>
       </section>
 
-      {/* Services Grid - Simplified & Clean */}
-      <section className="py-20 bg-white">
+      {/* CONSTRUCTION SYSTEMS (REPLACES PRICING) */}
+      <section id="systems" className="py-24 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-              {language === 'nl' ? 'Complete Flexibiliteit' : 'Complete Flexibility'}
-            </h2>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="max-w-2xl">
+              <span className="text-green-400 font-bold tracking-wider uppercase text-sm">Engineering</span>
+              <h2 className="text-4xl font-bold mt-2 mb-4">
+                {language === 'nl' ? 'Geavanceerde Bouwsystemen' : 'Advanced Construction Systems'}
+              </h2>
+              <p className="text-slate-400 text-lg">
+                {language === 'nl' 
+                  ? 'Kies het prestatieniveau dat past bij uw ambities. Van zeer energiezuinig tot volledig zelfvoorzienend.' 
+                  : 'Choose the performance level that matches your ambitions. From highly energy-efficient to fully self-sufficient.'}
+              </p>
+            </div>
+            <Button onClick={() => scrollToSection('contact')} className="bg-white text-slate-900 hover:bg-slate-200">
+              {language === 'nl' ? 'Vergelijk Specificaties' : 'Compare Specifications'}
+            </Button>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-slate-50 hover:bg-green-50 transition-colors border border-slate-100">
-              <Building2 className="w-10 h-10 text-green-600 mb-6" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
-                {language === 'nl' ? 'Structuur (Casco)' : 'Structure (Shell)'}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {language === 'nl' 
-                  ? 'Wij leveren en monteren de hoogwaardige, wind- en waterdichte schil. U regelt de afbouw zelf.' 
-                  : 'We deliver and assemble the high-quality, wind and water-tight shell. You manage the finishing yourself.'}
-              </p>
-            </div>
-            
-            <div className="p-8 rounded-2xl bg-slate-50 hover:bg-green-50 transition-colors border border-slate-100">
-              <Hammer className="w-10 h-10 text-green-600 mb-6" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
-                {language === 'nl' ? 'Casco+' : 'Shell+'}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {language === 'nl' 
-                  ? 'Inclusief ramen, deuren en gevelbekleding. De woning is van buiten volledig af, binnen klaar voor installaties.' 
-                  : 'Includes windows, doors, and cladding. The home is finished externally, ready for installations inside.'}
-              </p>
-            </div>
 
-            <div className="p-8 rounded-2xl bg-slate-50 hover:bg-green-50 transition-colors border border-slate-100">
-              <Key className="w-10 h-10 text-green-600 mb-6" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
-                {language === 'nl' ? 'Sleutelklaar' : 'Turnkey'}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {language === 'nl' 
-                  ? 'Samen met onze vaste partners verzorgen wij het complete traject tot en met de verhuizing.' 
-                  : 'Together with our partners, we handle the entire process up to moving in.'}
-              </p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {systems.map((system, index) => (
+              <div 
+                key={index} 
+                className={`relative p-8 rounded-2xl border transition-all duration-300 ${
+                  system.highlight 
+                    ? 'bg-slate-800 border-green-500 shadow-2xl shadow-green-900/20' 
+                    : 'bg-slate-900/50 border-slate-800 hover:bg-slate-800'
+                }`}
+              >
+                {system.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                    {language === 'nl' ? 'Meest Gekozen' : 'Most Popular'}
+                  </div>
+                )}
+                
+                <h3 className="text-2xl font-bold mb-2">{system.name}</h3>
+                <div className="flex items-baseline gap-2 mb-6">
+                  <span className="text-4xl font-bold text-green-400">R-{system.r_value}</span>
+                  <span className="text-slate-500">W/m²K</span>
+                </div>
+                
+                <p className="text-slate-400 text-sm mb-8 min-h-[60px] leading-relaxed">
+                  {language === 'nl' ? system.desc_nl : system.desc_en}
+                </p>
+                
+                <div className="space-y-4 border-t border-slate-700/50 pt-6">
+                  {(language === 'nl' ? system.features_nl : system.features_en).map((feat, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <div className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 shrink-0"></div>
+                      <span className="text-sm text-slate-300">{feat}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="relative py-24 bg-slate-900 text-white overflow-hidden">
-         {/* Background decoration */}
-         <div className="absolute top-0 right-0 w-1/2 h-full bg-green-900/10 -skew-x-12 translate-x-20"></div>
+      {/* FAQ SECTION */}
+      <section id="faq" className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="text-center mb-12">
+             <h2 className="text-3xl font-bold text-slate-900">FAQ</h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border border-slate-200 rounded-lg p-5 hover:bg-slate-50 cursor-pointer transition-colors" onClick={() => setOpenFaq(openFaq === index ? null : index)}>
+                <div className="flex justify-between items-center font-semibold text-slate-800">
+                   <span>{language === 'nl' ? faq.question_nl : faq.question_en}</span>
+                   <ChevronDown size={20} className={`text-green-600 transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
+                </div>
+                {openFaq === index && <p className="mt-4 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">{language === 'nl' ? faq.answer_nl : faq.answer_en}</p>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">
-                {t('contact_title')}
-              </h2>
-              <p className="text-xl text-slate-300 mb-8">
-                {language === 'nl' 
-                  ? 'Klaar om de stap te zetten naar duurzaam wonen? Wij helpen u graag met een technische analyse van uw project.' 
-                  : 'Ready to take the step towards sustainable living? We are happy to help you with a technical analysis of your project.'}
-              </p>
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div className="bg-slate-900 p-12 text-white flex flex-col justify-between">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">{t('contact_title')}</h2>
+                <p className="text-slate-400 mb-8 text-lg leading-relaxed">
+                   {language === 'nl' 
+                     ? 'Klaar om uw project te bespreken? Wij bieden een vrijblijvende technische analyse van uw plannen.' 
+                     : 'Ready to discuss your project? We offer a no-obligation technical analysis of your plans.'}
+                </p>
+              </div>
               
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-600/20 rounded-full flex items-center justify-center text-green-400">
-                    <Users size={24} />
+                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                    <Users className="text-green-400" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400">{language === 'nl' ? 'Direct contact' : 'Direct contact'}</p>
-                    <p className="font-semibold">Nuno Machado e Sousa</p>
+                    <p className="text-sm text-slate-400 uppercase tracking-wider">Project Lead</p>
+                    <p className="font-semibold text-lg">Nuno Machado e Sousa</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-600/20 rounded-full flex items-center justify-center text-green-400">
-                    <Zap size={24} />
+                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                    <TrendingUp className="text-green-400" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400">{language === 'nl' ? 'Reactietijd' : 'Response time'}</p>
-                    <p className="font-semibold">{language === 'nl' ? 'Binnen 24 uur' : 'Within 24 hours'}</p>
+                    <p className="text-sm text-slate-400 uppercase tracking-wider">Office</p>
+                    <p className="font-semibold text-lg">Wageningen, NL</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="mt-12 pt-8 border-t border-slate-800">
-                <p className="text-slate-500 text-sm mb-2">Contact details</p>
-                <a href="mailto:info@groenvastbouw.nl" className="block text-xl font-medium hover:text-green-400 transition-colors">info@groenvastbouw.nl</a>
-                <a href="tel:0629841297" className="block text-xl font-medium hover:text-green-400 transition-colors mt-1">06 2984 1297</a>
+                
+                <div className="pt-8 border-t border-white/10">
+                  <a href="mailto:info@groenvastbouw.nl" className="block text-xl hover:text-green-400 transition-colors mb-2">info@groenvastbouw.nl</a>
+                  <a href="tel:0629841297" className="block text-xl hover:text-green-400 transition-colors">06 2984 1297</a>
+                </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-2xl text-slate-900">
+            <div className="p-12">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-slate-700">{t('contact_name')}</label>
-                    <Input
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                      className="bg-slate-50 border-slate-200"
+                    <label className="text-sm font-bold text-slate-700">{t('contact_name')}</label>
+                    <Input 
+                      value={formData.name} 
+                      onChange={(e) => setFormData({...formData, name: e.target.value})} 
+                      className="bg-slate-50 border-slate-200 focus:border-green-500"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-slate-700">{t('contact_email')}</label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                      className="bg-slate-50 border-slate-200"
+                    <label className="text-sm font-bold text-slate-700">{t('contact_email')}</label>
+                    <Input 
+                      type="email" 
+                      value={formData.email} 
+                      onChange={(e) => setFormData({...formData, email: e.target.value})} 
+                      className="bg-slate-50 border-slate-200 focus:border-green-500"
                     />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-slate-700">{t('contact_phone')}</label>
-                  <Input
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="bg-slate-50 border-slate-200"
+                  <label className="text-sm font-bold text-slate-700">{t('contact_phone')}</label>
+                  <Input 
+                    type="tel" 
+                    value={formData.phone} 
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})} 
+                    className="bg-slate-50 border-slate-200 focus:border-green-500"
                   />
                 </div>
-
+                
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-slate-700">{t('contact_message')}</label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={4}
-                    className="bg-slate-50 border-slate-200 resize-none"
+                  <label className="text-sm font-bold text-slate-700">{t('contact_message')}</label>
+                  <Textarea 
+                    value={formData.message} 
+                    onChange={(e) => setFormData({...formData, message: e.target.value})} 
+                    rows={4} 
+                    className="bg-slate-50 border-slate-200 focus:border-green-500"
                   />
                 </div>
-
-                <Button 
-                  type="submit" 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white h-12 text-lg font-medium"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting 
-                    ? (language === 'nl' ? 'Verzenden...' : 'Sending...') 
-                    : t('contact_submit')}
+                
+                <Button type="submit" className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 text-lg" disabled={isSubmitting}>
+                  {isSubmitting ? '...' : t('contact_submit')}
                 </Button>
               </form>
             </div>
@@ -471,10 +484,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-950 text-slate-400 py-12 text-sm">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2025 Groenvastbouw. KvK 75308045.</p>
+      {/* FOOTER */}
+      <footer className="bg-white border-t border-slate-100 pt-16 pb-8">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-2">
+              <img src="/logo.png" alt="Groenvastbouw" className="h-12 w-auto mb-6" />
+              <p className="text-slate-500 max-w-md leading-relaxed">
+                {language === 'nl' 
+                  ? 'Gespecialiseerd in hoogwaardige houtskeletbouw en passieve systemen. Wij bouwen de toekomst van wonen in Nederland.' 
+                  : 'Specialized in high-performance timber frame construction and passive systems. We build the future of living in the Netherlands.'}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-slate-900 mb-6">{t('footer_links')}</h4>
+              <ul className="space-y-3 text-slate-600">
+                <li><a href="#about" className="hover:text-green-600 transition-colors">{t('nav_about')}</a></li>
+                <li><a href="#technology" className="hover:text-green-600 transition-colors">{t('nav_senmar')}</a></li>
+                <li><a href="#systems" className="hover:text-green-600 transition-colors">{t('nav_services')}</a></li>
+                <li><a href="/projects" className="hover:text-green-600 transition-colors">Projects</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-slate-900 mb-6">{t('footer_contact')}</h4>
+              <ul className="space-y-3 text-slate-600">
+                <li>Wageningen, Nederland</li>
+                <li><a href="mailto:info@groenvastbouw.nl" className="hover:text-green-600">info@groenvastbouw.nl</a></li>
+                <li><a href="tel:0629841297" className="hover:text-green-600">06 2984 1297</a></li>
+                <li className="text-sm text-slate-400 pt-2">KvK: 75308045</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+            <p>&copy; 2025 Groenvastbouw. {t('footer_rights')}</p>
+            <div className="flex gap-6 mt-4 md:mt-0">
+              <span>Privacy Policy</span>
+              <span>Terms of Service</span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
