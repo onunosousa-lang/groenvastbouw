@@ -65,6 +65,35 @@ export default function Home() {
     }
   };
 
+  // --- DATA DEFINITIONS ---
+
+  const faqs = [
+    {
+      question_nl: "Wat is een passief huis?",
+      question_en: "What is a passive house?",
+      answer_nl: "Een passief huis is een gebouw dat tot 90% minder energie verbruikt voor verwarming en koeling. Dit wordt bereikt door superieure isolatie, luchtdichte constructie en mechanische ventilatie met warmteterugwinning.",
+      answer_en: "A passive house uses up to 90% less energy for heating and cooling. This is achieved through superior insulation, airtight construction, and mechanical ventilation with heat recovery."
+    },
+    {
+      question_nl: "Wat is het verschil tussen turnkey en casco?",
+      question_en: "What is the difference between turnkey and shell?",
+      answer_nl: "Wij leveren de complete hoogwaardige, geïsoleerde structuur (casco+). Voor de afwerking (installaties, vloeren, keukens) werken wij met partners of uw eigen aannemers. Dit biedt maximale flexibiliteit.",
+      answer_en: "We deliver the complete high-quality, insulated structure (shell+). For finishing (installations, flooring, kitchens) we work with partners or your own contractors. This offers maximum flexibility."
+    },
+    {
+      question_nl: "Hoe lang duurt de productie?",
+      question_en: "How long does production take?",
+      answer_nl: "Dankzij het geautomatiseerde Senmar-productieproces duurt de fabricage slechts enkele weken. De montage op locatie van de waterdichte structuur duurt doorgaans 7 tot 10 dagen.",
+      answer_en: "Thanks to the automated Senmar production process, manufacturing takes only a few weeks. On-site assembly of the weathertight structure typically takes 7 to 10 days."
+    },
+    {
+      question_nl: "Bouwen jullie op maat?",
+      question_en: "Do you build custom designs?",
+      answer_nl: "Ja, wij zijn gespecialiseerd in maatwerk. We kunnen uw eigen architectonisch ontwerp realiseren of een van onze modellen aanpassen aan uw specifieke wensen en kavel.",
+      answer_en: "Yes, we specialize in custom work. We can realize your own architectural design or adapt one of our models to your specific wishes and plot."
+    }
+  ];
+
   const systems = [
     {
       name: "Optimal",
