@@ -4,6 +4,8 @@ export const translations = {
     nav_services: "Systemen",
     nav_senmar: "Technologie",
     nav_benefits: "Oplossingen",
+    nav_projects: "Projecten",
+    nav_why_us: "Waarom Ons",
     nav_contact: "Contact",
     
     hero_title: "De toekomst van bouwen",
@@ -36,6 +38,8 @@ export const translations = {
     nav_services: "Systems",
     nav_senmar: "Technology",
     nav_benefits: "Solutions",
+    nav_projects: "Projects",
+    nav_why_us: "Why Us",
     nav_contact: "Contact",
     
     hero_title: "The future of building",
