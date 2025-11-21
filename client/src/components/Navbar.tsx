@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
 
 export default function Navbar() {
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
   const [location, setLocation] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,28 +65,28 @@ export default function Navbar() {
           {/* Desktop Navigation + Language Switcher */}
           <div className="hidden lg:flex items-center space-x-6">
             <Link href="/about" className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              about
+              {t('nav_about')}
             </Link>
             <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              services
+              {language === 'nl' ? 'Systemen' : 'Systems'}
             </a>
             <a href="#senmar" onClick={(e) => { e.preventDefault(); scrollToSection('senmar'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              technology
+              {language === 'nl' ? 'Technologie' : 'Technology'}
             </a>
             <a href="#benefits" onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              benefits
+              {language === 'nl' ? 'Oplossingen' : 'Solutions'}
             </a>
             <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToSection('pricing'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              pricing
+              FAQ
             </a>
             <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              faq
+              FAQ
             </a>
             <Link href="/projecten" className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              projecten
+              {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm">
-              drop us a line
+              {t('nav_contact')}
             </a>
             <button
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
@@ -110,28 +110,28 @@ export default function Navbar() {
           <div className="lg:hidden py-4 border-t border-white/10">
             <div className="flex flex-col space-y-4">
               <Link href="/about" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
-                about
+                {t('nav_about')}
               </Link>
               <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-white/90 hover:text-green-400">
-                services
+                {language === 'nl' ? 'Systemen' : 'Systems'}
               </a>
               <a href="#senmar" onClick={(e) => { e.preventDefault(); scrollToSection('senmar'); }} className="text-white/90 hover:text-green-400">
-                technology
+                {language === 'nl' ? 'Technologie' : 'Technology'}
               </a>
               <a href="#benefits" onClick={(e) => { e.preventDefault(); scrollToSection('benefits'); }} className="text-white/90 hover:text-green-400">
-                benefits
+                {language === 'nl' ? 'Oplossingen' : 'Solutions'}
               </a>
               <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToSection('pricing'); }} className="text-white/90 hover:text-green-400">
-                pricing
+                FAQ
               </a>
               <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400">
-                faq
+                FAQ
               </a>
               <Link href="/projecten" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
-                projecten
+                {language === 'nl' ? 'Projecten' : 'Projects'}
               </Link>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center">
-                drop us a line
+                {t('nav_contact')}
               </a>
               <button
                 onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
