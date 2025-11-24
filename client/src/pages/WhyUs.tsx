@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
-import { TrendingUp, Leaf, ShieldCheck, Ruler, Zap, Clock, Factory, BarChart3, CheckCircle, Building2, Wrench } from 'lucide-react';
+import { TrendingUp, Leaf, ShieldCheck, Ruler, Zap, Clock, Factory, BarChart3, CheckCircle, Wrench } from 'lucide-react';
 
 export default function WhyUs() {
   const { language } = useLanguage();
@@ -153,59 +153,12 @@ export default function WhyUs() {
 
           <hr className="border-gray-200 my-16" />
 
-          {/* 3. SENMAR CONSTRUCTION METHODS */}
-          <div className="mb-20">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-purple-100 rounded-xl text-purple-700"><Building2 size={32} /></div>
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '3. Senmar Bouwmethoden' : '3. Senmar Construction Methods'}</h2>
-                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Twee principes, maximale flexibiliteit' : 'Two principles, maximum flexibility'}</p>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8 mt-10">
-              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-none">
-                <div className="h-64 overflow-hidden">
-                  <img src="/senmar/006.webp" alt="Panelized Construction" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-                <CardContent className="p-8 bg-gray-50">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {language === 'nl' ? 'Gepaneeliseerde Constructie' : 'Panelized Construction'}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {language === 'nl' 
-                      ? 'Muren en panelen worden off-site in een gecontroleerde omgeving gefabriceerd, getransporteerd en als bouwblokken op locatie gemonteerd. Snellere bouwtijden, superieure kwaliteitscontrole en minder afval.'
-                      : 'Walls and panels are fabricated off-site in a controlled environment, transported, and assembled like building blocks on-site. Faster construction times, superior quality control, and reduced waste.'}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-none">
-                <div className="h-64 overflow-hidden">
-                  <img src="/senmar/006.webp" alt="Modular Construction" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-                <CardContent className="p-8 bg-gray-50">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {language === 'nl' ? 'Modulaire Constructie' : 'Modular Construction'}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {language === 'nl' 
-                      ? 'Complete secties inclusief elektrische en sanitaire installaties worden in de fabriek gebouwd. Op locatie worden deze modules als puzzelstukken samengevoegd tot een volledig geïntegreerd gebouw.'
-                      : 'Complete sections including electrical, plumbing, and finishes are built in the factory. On-site, these modules are assembled like puzzle pieces into a fully integrated building.'}
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <hr className="border-gray-200 my-16" />
-
-          {/* 4. ENERGY EFFICIENCY & SAVINGS */}
+          {/* 3. ENERGY EFFICIENCY & SAVINGS */}
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-orange-100 rounded-xl text-orange-700"><Wrench size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '4. Energie-efficiëntie & Besparingen' : '4. Energy Efficiency & Savings'}</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '3. Energie-efficiëntie & Besparingen' : '3. Energy Efficiency & Savings'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Van Optimal tot Super Passive' : 'From Optimal to Super Passive'}</p>
               </div>
             </div>
@@ -254,12 +207,12 @@ export default function WhyUs() {
 
           <hr className="border-gray-200 my-16" />
 
-          {/* 5. ECOLOGICAL IMPACT */}
+          {/* 4. ECOLOGICAL IMPACT */}
           <div className="mb-10">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-green-100 rounded-xl text-green-700"><Leaf size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '5. Ecologische Impact' : '5. Ecological Impact'}</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
               </div>
             </div>
