@@ -29,3 +29,10 @@
 ## Final Touch
 
 - [x] Add Senmar.pt website link to footer
+
+## Energy Comparison Enhancement
+
+- [x] Add detailed energy comparison section to pitch tool with 7:1 ratio
+- [x] Include real savings example (€4,275/year for 150m² house)
+- [x] Add embodied energy payback explanation
+- [x] Update main groenvastbouw.nl website with same information

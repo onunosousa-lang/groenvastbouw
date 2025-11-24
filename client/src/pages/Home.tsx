@@ -366,6 +366,99 @@ export default function Home() {
           </CardContent>
         </Card>
 
+        {/* Energie Vergelijking - CONCRETE CIJFERS */}
+        <Card className="border-green-500/50">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg flex items-center gap-2">
+              <TrendingUp className="h-5 w-5 text-green-500" />
+              Wat Betekent 86% Besparing?
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="bg-gradient-to-br from-green-500/10 to-green-500/5 p-4 rounded-lg border border-green-500/30">
+              <div className="text-center mb-3">
+                <div className="text-4xl font-black text-green-500 mb-1">7:1</div>
+                <p className="text-sm font-semibold">Passieve Huizen = 1 Gemiddeld Huis</p>
+              </div>
+              <p className="text-xs text-muted-foreground text-center">
+                7 gezinnen in onze Passieve huizen verbruiken dezelfde energie als 1 gezin in een gemiddeld Nederlands huis
+              </p>
+            </div>
+
+            {/* Real Example */}
+            <div>
+              <p className="text-sm font-semibold mb-3">Voorbeeld: 150m² Woning</p>
+              <div className="space-y-2">
+                <div className="flex justify-between items-center p-3 bg-muted/30 rounded-lg">
+                  <div>
+                    <div className="text-xs text-muted-foreground">Gemiddeld Nederlands Huis</div>
+                    <div className="text-sm font-medium">16.500 kWh/jaar</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-lg font-bold text-orange-500">€4.950</div>
+                    <div className="text-xs text-muted-foreground">per jaar</div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center p-3 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-lg border-2 border-green-500/50">
+                  <div>
+                    <div className="text-xs text-green-500 font-semibold">Groenvastbouw Passief</div>
+                    <div className="text-sm font-bold">2.250 kWh/jaar</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-lg font-black text-green-500">€675</div>
+                    <div className="text-xs text-muted-foreground">per jaar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Savings Breakdown */}
+            <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
+              <div className="grid grid-cols-2 gap-3 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-green-500">€4.275</div>
+                  <div className="text-xs text-muted-foreground">besparing per jaar</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-green-500">€128k</div>
+                  <div className="text-xs text-muted-foreground">over 30 jaar</div>
+                </div>
+              </div>
+            </div>
+
+            {/* What's Included */}
+            <div className="text-xs space-y-2">
+              <p className="font-semibold">Dit zijn verwarmingskosten (per jaar):</p>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="flex items-start gap-1">
+                  <CheckCircle2 className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Ruimteverwarming</span>
+                </div>
+                <div className="flex items-start gap-1">
+                  <CheckCircle2 className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Warm water</span>
+                </div>
+                <div className="flex items-start gap-1">
+                  <CheckCircle2 className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Ventilatie</span>
+                </div>
+                <div className="flex items-start gap-1">
+                  <CheckCircle2 className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Koeling (zomer)</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Embodied Energy */}
+            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
+              <p className="text-xs font-semibold text-blue-500 mb-2">Bonus: Lagere Bouw-impact</p>
+              <p className="text-xs text-muted-foreground">
+                Houtskeletbouw (Senmar) gebruikt <span className="font-semibold text-blue-500">50% minder energie</span> tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het <span className="font-semibold text-blue-500">carbon-positief</span> voor 50+ jaar.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* SECTIE 4: BEZWAREN AFHANDELEN */}
         <div id="bezwaren" className="scroll-mt-20">
           <Card className="border-purple-500/50">
