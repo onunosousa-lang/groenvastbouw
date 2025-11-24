@@ -36,3 +36,10 @@
 - [x] Include real savings example (€4,275/year for 150m² house)
 - [x] Add embodied energy payback explanation
 - [x] Update main groenvastbouw.nl website with same information
+
+## Language Toggle
+
+- [x] Create LanguageContext with Dutch/English support
+- [x] Add language toggle button to header
+- [x] Translate all content to English
+- [x] Test language switching
