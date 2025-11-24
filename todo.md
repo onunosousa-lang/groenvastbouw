@@ -25,3 +25,7 @@
 - [x] Add contact information (phone: 0629841297, email: info@groenvastbouw.nl, website: www.groenvastbouw.nl)
 - [x] Generate QR code for website access
 - [x] Integrate QR code into page design
+
+## Final Touch
+
+- [x] Add Senmar.pt website link to footer

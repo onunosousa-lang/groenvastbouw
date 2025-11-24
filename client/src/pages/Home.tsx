@@ -535,7 +535,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col gap-3">
             {/* Contact Info */}
-            <div className="grid grid-cols-3 gap-2 text-xs">
+            <div className="grid grid-cols-2 gap-2 text-xs">
               <a href="tel:0629841297" className="flex items-center gap-1.5 text-green-500 hover:text-green-400 transition-colors">
                 <Phone className="h-3 w-3" />
                 <span className="font-medium">06 2984 1297</span>
@@ -547,6 +547,10 @@ export default function Home() {
               <a href="https://www.groenvastbouw.nl" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-green-500 hover:text-green-400 transition-colors">
                 <Globe className="h-3 w-3" />
                 <span className="font-medium">groenvastbouw.nl</span>
+              </a>
+              <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-blue-500 hover:text-blue-400 transition-colors">
+                <Globe className="h-3 w-3" />
+                <span className="font-medium">senmar.pt</span>
               </a>
             </div>
             
