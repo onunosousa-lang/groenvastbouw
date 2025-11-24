@@ -17,3 +17,11 @@
 - [x] Include elevator pitch section at top
 - [x] Add expandable sections for deeper details
 - [x] Create quick navigation for jumping between topics
+
+## New Requirements
+
+- [x] Extract images from Senmar PDFs
+- [x] Translate all content from English to Dutch
+- [x] Add contact information (phone: 0629841297, email: info@groenvastbouw.nl, website: www.groenvastbouw.nl)
+- [x] Generate QR code for website access
+- [x] Integrate QR code into page design
