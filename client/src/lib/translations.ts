@@ -1,5 +1,6 @@
 export const translations = {
   nl: {
+    // Navigation
     nav_about: "Over Ons",
     nav_services: "Systemen",
     nav_senmar: "Technologie",
@@ -8,17 +9,114 @@ export const translations = {
     nav_why_us: "Waarom Ons",
     nav_contact: "Contact",
     
+    // Hero Section
     hero_title: "De toekomst van bouwen",
     hero_subtitle: "Hoogwaardige passieve systemen met Senmar technologie.",
     hero_cta: "Bekijk Systemen",
+    hero_slogan: "Nuchter bouwen. Slim wonen.",
+    hero_main_title: "Duurzame woningen op maat",
+    hero_main_subtitle: "Passieve houtskeletbouw met industriële precisie uit Portugal",
+    hero_cta_primary: "Bekijk Projecten",
+    hero_cta_secondary: "Meer Informatie",
     
+    // About Section
     about_title: "Technische Perfectie",
     about_subtitle: "In samenwerking met Senmar Portugal",
     about_mission_title: "Onze Missie",
     about_mission_text: "Duurzame, hoogwaardige woningbouw toegankelijk maken door geavanceerde prefabricage.",
     
+    // Services Section
+    services_title: "Wat Wij Bouwen",
+    services_subtitle: "Van concept tot sleutelklaar",
+    services_houses: "Woningen",
+    services_houses_desc: "Energiezuinige gezinswoningen op maat",
+    services_offices: "Kantoren",
+    services_offices_desc: "Duurzame werkruimtes",
+    services_extensions: "Uitbreidingen",
+    services_extensions_desc: "Naadloze toevoegingen aan bestaande woningen",
+    services_renovations: "Renovaties",
+    services_renovations_desc: "Modernisering met passieve standaarden",
+    services_advice: "Advies",
+    services_advice_desc: "Technische consultancy en projectbegeleiding",
+    services_development: "Development",
+    services_development_desc: "Van grond tot sleutelklaar project",
+    
+    // Senmar Section
     senmar_title: "Technologie van Senmar Portugal",
-
+    senmar_subtitle: "Industriële precisie ontmoet ambachtelijke kwaliteit",
+    senmar_factory: "4.000 m² fabriek in Coija, Portugal",
+    senmar_capacity: "Capaciteit 200 woningen per jaar",
+    senmar_precision: "CNC-precisie met 1mm tolerantie",
+    senmar_certified: "FSC & CE gecertificeerd",
+    senmar_link: "Bezoek Senmar.pt",
+    
+    // Principles Section
+    principles_title: "Onze Principes",
+    principles_subtitle: "Waarom kiezen voor Groenvastbouw",
+    principles_precision: "Precisie",
+    principles_precision_desc: "CNC-technologie garandeert millimeterprecisie",
+    principles_speed: "Snelheid",
+    principles_speed_desc: "50-70% sneller dan traditionele bouw",
+    principles_sustainability: "Duurzaamheid",
+    principles_sustainability_desc: "Carbon-negatief bouwen met FSC-hout",
+    principles_quality: "Kwaliteit",
+    principles_quality_desc: "Fabriekscontrole elimineert bouwfouten",
+    principles_comfort: "Comfort",
+    principles_comfort_desc: "Passivhaus-standaard voor optimaal binnenklimaat",
+    
+    // Pricing Section
+    pricing_title: "Wat zijn de kosten?",
+    pricing_subtitle: "Transparante prijzen voor structuur",
+    pricing_shell: "Casco (Structuur)",
+    pricing_shell_desc: "Draagconstructie + ramen + dak",
+    pricing_optimal: "Optimal",
+    pricing_optimal_desc: "Goede balans voor gematigd klimaat",
+    pricing_passive: "Passive ⭐ Onze Standaard",
+    pricing_passive_desc: "Aanzienlijke besparing, bewezen ROI",
+    pricing_super: "Super Passive",
+    pricing_super_desc: "Passivhaus gecertificeerd - 75% minder energie",
+    pricing_note: "* Prijzen alleen voor structuur. Fundaties, transport en montage worden apart berekend.",
+    pricing_turnkey_note: "Afwerking (turnkey) is maatwerk en wordt apart geoffreerd op basis van uw wensen.",
+    
+    // Energy Comparison Section
+    energy_comparison_title: "Wat Betekent 86% Besparing?",
+    energy_comparison_subtitle: "Concrete cijfers voor een 150m² woning",
+    energy_comparison_ratio: "Passieve Huizen = 1 Gemiddeld Huis",
+    energy_comparison_ratio_desc: "7 gezinnen in onze Passieve huizen verbruiken dezelfde energie als 1 gezin in een gemiddeld Nederlands huis",
+    energy_comparison_average: "Gemiddeld Nederlands Huis",
+    energy_comparison_groenvastbouw: "Groenvastbouw Passief",
+    energy_comparison_per_year: "per jaar",
+    energy_comparison_heating: "verwarmingskosten/jaar",
+    energy_comparison_savings_annual: "besparing per jaar",
+    energy_comparison_savings_30y: "over 30 jaar",
+    energy_comparison_includes: "Dit zijn verwarmingskosten (per jaar):",
+    energy_comparison_space: "Ruimteverwarming",
+    energy_comparison_water: "Warm water",
+    energy_comparison_ventilation: "Ventilatie",
+    energy_comparison_cooling: "Koeling (zomer)",
+    energy_comparison_embodied: "Bonus: Lagere Bouw-impact",
+    energy_comparison_embodied_desc: "Houtskeletbouw (Senmar) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.",
+    
+    // FAQ Section
+    faq_title: "Veelgestelde Vragen",
+    faq_timeline_q: "Hoe lang duurt het bouwproces?",
+    faq_timeline_a: "Productie in fabriek: 6-8 weken. Montage ter plaatse: 7-10 dagen voor structuur. Totale bouwtijd inclusief afwerking: 4-6 maanden (50-70% sneller dan traditioneel).",
+    faq_price_q: "Wat zijn de kosten per m²?",
+    faq_price_a: "Structuurprijzen variëren van €1.100/m² (Optimal) tot €1.300/m² (Super Passive). Dit is alleen voor de draagconstructie. Fundaties, transport, montage en afwerking worden apart berekend op basis van uw project.",
+    faq_energy_q: "Hoeveel bespaar ik op energie?",
+    faq_energy_a: "Een Passivhaus verbruikt 60-90% minder energie dan een gemiddelde Nederlandse woning. Voor een 150m² woning betekent dit een besparing van €4.000+ per jaar, oftewel €120.000+ over 30 jaar.",
+    faq_design_q: "Kan ik mijn eigen ontwerp realiseren?",
+    faq_design_a: "Absoluut. Ons modulair systeem biedt volledige architecturale vrijheid. Elk project is uniek - alleen de productie is gestandaardiseerd, niet het ontwerp.",
+    faq_certification_q: "Welke certificeringen hebben jullie?",
+    faq_certification_a: "Onze woningen behalen EPC label A++ of A+++. Senmar is FSC en CE gecertificeerd. Op aanvraag kunnen we Passivhaus-certificering regelen.",
+    faq_warranty_q: "Wat is de garantie?",
+    faq_warranty_a: "10 jaar garantie op de structuur. Fabrieksproductie betekent superieure kwaliteitscontrole en nul weerschade tijdens bouw.",
+    faq_location_q: "Waar bouwen jullie?",
+    faq_location_a: "Wij bouwen door heel Nederland. Transport vanuit Portugal is efficiënt en duurzaam dankzij geoptimaliseerde logistiek.",
+    faq_foundation_q: "Regelen jullie ook de fundering?",
+    faq_foundation_a: "Ja, wij kunnen het volledige project coördineren inclusief fundering, of samenwerken met uw eigen aannemer.",
+    
+    // Contact Section
     contact_title: "Project Analyse",
     contact_subtitle: "Bespreek uw specificaties",
     contact_name: "Naam",
@@ -27,13 +125,28 @@ export const translations = {
     contact_message: "Vertel ons over uw project",
     contact_submit: "Aanvraag Versturen",
     contact_info_title: "Contactgegevens",
+    contact_success: "Bedankt! We nemen zo snel mogelijk contact met u op.",
+    contact_error: "Er is iets misgegaan. Probeer het opnieuw of bel ons direct.",
     
+    // Footer
     footer_links: "Index",
     footer_contact: "Contact",
     footer_rights: "Alle rechten voorbehouden",
+    footer_about: "Over Groenvastbouw",
+    footer_about_text: "Duurzame, energiezuinige woningbouw met Senmar technologie uit Portugal.",
+    
+    // Projects Page
+    projects_title: "Onze Projecten",
+    projects_subtitle: "Gerealiseerde passieve woningen",
+    projects_view: "Bekijk Project",
+    
+    // Why Us Page
+    whyus_title: "Waarom Groenvastbouw",
+    whyus_subtitle: "Industriële precisie ontmoet duurzaamheid",
   },
   
   en: {
+    // Navigation
     nav_about: "About Us",
     nav_services: "Systems",
     nav_senmar: "Technology",
@@ -42,17 +155,114 @@ export const translations = {
     nav_why_us: "Why Us",
     nav_contact: "Contact",
     
+    // Hero Section
     hero_title: "The future of building",
     hero_subtitle: "High-performance passive systems with Senmar technology.",
     hero_cta: "View Systems",
+    hero_slogan: "Sober building. Smart living.",
+    hero_main_title: "Sustainable custom homes",
+    hero_main_subtitle: "Passive timber frame construction with industrial precision from Portugal",
+    hero_cta_primary: "View Projects",
+    hero_cta_secondary: "More Information",
     
+    // About Section
     about_title: "Technical Perfection",
     about_subtitle: "In partnership with Senmar Portugal",
     about_mission_title: "Our Mission",
     about_mission_text: "Making sustainable, high-performance housing accessible through advanced prefabrication.",
     
-    senmar_title: "Technology from Senmar Portugal",
+    // Services Section
+    services_title: "What We Build",
+    services_subtitle: "From concept to turnkey",
+    services_houses: "Houses",
+    services_houses_desc: "Energy-efficient custom family homes",
+    services_offices: "Offices",
+    services_offices_desc: "Sustainable workspaces",
+    services_extensions: "Extensions",
+    services_extensions_desc: "Seamless additions to existing homes",
+    services_renovations: "Renovations",
+    services_renovations_desc: "Modernization with passive standards",
+    services_advice: "Consulting",
+    services_advice_desc: "Technical consultancy and project guidance",
+    services_development: "Development",
+    services_development_desc: "From land to turnkey project",
     
+    // Senmar Section
+    senmar_title: "Technology from Senmar Portugal",
+    senmar_subtitle: "Industrial precision meets artisan quality",
+    senmar_factory: "4,000 m² factory in Coija, Portugal",
+    senmar_capacity: "Capacity 200 homes per year",
+    senmar_precision: "CNC precision with 1mm tolerance",
+    senmar_certified: "FSC & CE certified",
+    senmar_link: "Visit Senmar.pt",
+    
+    // Principles Section
+    principles_title: "Our Principles",
+    principles_subtitle: "Why choose Groenvastbouw",
+    principles_precision: "Precision",
+    principles_precision_desc: "CNC technology guarantees millimeter precision",
+    principles_speed: "Speed",
+    principles_speed_desc: "50-70% faster than traditional construction",
+    principles_sustainability: "Sustainability",
+    principles_sustainability_desc: "Carbon-negative building with FSC timber",
+    principles_quality: "Quality",
+    principles_quality_desc: "Factory control eliminates construction errors",
+    principles_comfort: "Comfort",
+    principles_comfort_desc: "Passive House standard for optimal indoor climate",
+    
+    // Pricing Section
+    pricing_title: "What are the costs?",
+    pricing_subtitle: "Transparent prices for structure",
+    pricing_shell: "Shell (Structure)",
+    pricing_shell_desc: "Load-bearing structure + windows + roof",
+    pricing_optimal: "Optimal",
+    pricing_optimal_desc: "Good balance for moderate climate",
+    pricing_passive: "Passive ⭐ Our Standard",
+    pricing_passive_desc: "Significant savings, proven ROI",
+    pricing_super: "Super Passive",
+    pricing_super_desc: "Passive House certified - 75% less energy",
+    pricing_note: "* Prices for structure only. Foundations, transport and assembly are calculated separately.",
+    pricing_turnkey_note: "Finishing (turnkey) is custom and quoted separately based on your preferences.",
+    
+    // Energy Comparison Section
+    energy_comparison_title: "What Does 86% Savings Mean?",
+    energy_comparison_subtitle: "Concrete numbers for a 150m² home",
+    energy_comparison_ratio: "Passive Houses = 1 Average House",
+    energy_comparison_ratio_desc: "7 families in our Passive houses consume the same energy as 1 family in an average Dutch house",
+    energy_comparison_average: "Average Dutch House",
+    energy_comparison_groenvastbouw: "Groenvastbouw Passive",
+    energy_comparison_per_year: "per year",
+    energy_comparison_heating: "heating costs/year",
+    energy_comparison_savings_annual: "savings per year",
+    energy_comparison_savings_30y: "over 30 years",
+    energy_comparison_includes: "These are heating costs (per year):",
+    energy_comparison_space: "Space heating",
+    energy_comparison_water: "Hot water",
+    energy_comparison_ventilation: "Ventilation",
+    energy_comparison_cooling: "Cooling (summer)",
+    energy_comparison_embodied: "Bonus: Lower Construction Impact",
+    energy_comparison_embodied_desc: "Timber frame construction (Senmar) uses 50% less energy during production than concrete construction. After ~4 years, the house has paid back its construction investment and becomes carbon-positive for 50+ years.",
+    
+    // FAQ Section
+    faq_title: "Frequently Asked Questions",
+    faq_timeline_q: "How long does the construction process take?",
+    faq_timeline_a: "Factory production: 6-8 weeks. On-site assembly: 7-10 days for structure. Total construction time including finishing: 4-6 months (50-70% faster than traditional).",
+    faq_price_q: "What are the costs per m²?",
+    faq_price_a: "Structure prices range from €1,100/m² (Optimal) to €1,300/m² (Super Passive). This is for the load-bearing structure only. Foundations, transport, assembly and finishing are calculated separately based on your project.",
+    faq_energy_q: "How much do I save on energy?",
+    faq_energy_a: "A Passive House consumes 60-90% less energy than an average Dutch home. For a 150m² house, this means savings of €4,000+ per year, or €120,000+ over 30 years.",
+    faq_design_q: "Can I realize my own design?",
+    faq_design_a: "Absolutely. Our modular system offers complete architectural freedom. Every project is unique - only production is standardized, not the design.",
+    faq_certification_q: "What certifications do you have?",
+    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Senmar is FSC and CE certified. Upon request, we can arrange Passive House certification.",
+    faq_warranty_q: "What is the warranty?",
+    faq_warranty_a: "10-year warranty on the structure. Factory production means superior quality control and zero weather damage during construction.",
+    faq_location_q: "Where do you build?",
+    faq_location_a: "We build throughout the Netherlands. Transport from Portugal is efficient and sustainable thanks to optimized logistics.",
+    faq_foundation_q: "Do you also arrange the foundation?",
+    faq_foundation_a: "Yes, we can coordinate the entire project including foundation, or work with your own contractor.",
+    
+    // Contact Section
     contact_title: "Project Analysis",
     contact_subtitle: "Discuss your specifications",
     contact_name: "Name",
@@ -61,10 +271,24 @@ export const translations = {
     contact_message: "Tell us about your project",
     contact_submit: "Send Inquiry",
     contact_info_title: "Contact Details",
+    contact_success: "Thank you! We will contact you as soon as possible.",
+    contact_error: "Something went wrong. Please try again or call us directly.",
     
+    // Footer
     footer_links: "Index",
     footer_contact: "Contact",
     footer_rights: "All rights reserved",
+    footer_about: "About Groenvastbouw",
+    footer_about_text: "Sustainable, energy-efficient housing with Senmar technology from Portugal.",
+    
+    // Projects Page
+    projects_title: "Our Projects",
+    projects_subtitle: "Realized passive homes",
+    projects_view: "View Project",
+    
+    // Why Us Page
+    whyus_title: "Why Groenvastbouw",
+    whyus_subtitle: "Industrial precision meets sustainability",
   }
 };
 

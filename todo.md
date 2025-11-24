@@ -311,3 +311,10 @@
 - [x] Include real savings example (€4,275/year for 150m² house)
 - [x] Add embodied energy payback explanation
 - [x] Show concrete kWh numbers for 150m² house comparison
+
+## English Translation
+
+- [x] Check existing translation system
+- [x] Add English translations for all content sections
+- [ ] Ensure language toggle works properly on all pages
+- [ ] Test all pages in both Dutch and English
