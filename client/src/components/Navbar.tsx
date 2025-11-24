@@ -82,6 +82,9 @@ export default function Navbar() {
             <Link href="/projecten" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
+            <Link href="/why-us" className="text-white/90 hover:text-green-400 transition-colors text-sm">
+              {language === 'nl' ? 'Waarom Ons' : 'Why Us'}
+            </Link>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm">
               {t('nav_contact')}
             </a>
@@ -123,6 +126,9 @@ export default function Navbar() {
               </a>
               <Link href="/projecten" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}
+              </Link>
+              <Link href="/why-us" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Waarom Ons' : 'Why Us'}
               </Link>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center">
                 {t('nav_contact')}

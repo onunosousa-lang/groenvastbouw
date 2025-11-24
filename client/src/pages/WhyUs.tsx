@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
-import { TrendingUp, Leaf, ShieldCheck, Ruler, Zap, Clock, Factory, BarChart3 } from 'lucide-react';
+import { TrendingUp, Leaf, ShieldCheck, Ruler, Zap, Clock, Factory, BarChart3, CheckCircle, Building2, Wrench } from 'lucide-react';
 
 export default function WhyUs() {
   const { language } = useLanguage();
@@ -12,9 +12,12 @@ export default function WhyUs() {
       <SEO title={language === 'nl' ? "Waarom Groenvastbouw - Technische & Economische Analyse" : "Why Groenvastbouw - Technical & Economic Analysis"} />
       <Navbar />
       
-      {/* Scientific Header */}
-      <section className="pt-32 pb-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
+      {/* Hero Section with Senmar Image */}
+      <section className="relative pt-32 pb-20 bg-gray-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img src="/senmar/002.webp" alt="Senmar Factory" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative container mx-auto px-4 text-center max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-600/20 text-green-400 border border-green-600/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
             <BarChart3 size={16} />
             {language === 'nl' ? 'Markt & Technologie Analyse' : 'Market & Technology Analysis'}
@@ -22,7 +25,7 @@ export default function WhyUs() {
           <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
             {language === 'nl' ? 'De Logica van Systeembouw.' : 'The Logic of System Construction.'}
           </h1>
-          <p className="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
             {language === 'nl' 
               ? 'Een diepgaande analyse van de economische voordelen, technische superioriteit en ecologische noodzaak van Senmar MOD technologie.' 
               : 'A deep dive into the economic benefits, technical superiority, and ecological necessity of Senmar MOD technology.'}
@@ -30,8 +33,41 @@ export default function WhyUs() {
         </div>
       </section>
 
+      {/* Groenvastbouw + Senmar Partnership */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div>
+              <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+                {language === 'nl' ? 'Exclusief Partnerschap' : 'Exclusive Partnership'}
+              </div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                {language === 'nl' ? 'Groenvastbouw × Senmar' : 'Groenvastbouw × Senmar'}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                {language === 'nl' 
+                  ? 'Groenvastbouw is de exclusieve partner van Senmar in Nederland. Senmar, gevestigd in Coija, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 200 woningen, combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
+                  : 'Groenvastbouw is the exclusive partner of Senmar in the Netherlands. Senmar, based in Coija, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 200 homes, Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
+              </p>
+              <a 
+                href="https://senmar.pt" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-lg group"
+              >
+                {language === 'nl' ? 'Bezoek Senmar.pt' : 'Visit Senmar.pt'}
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+            <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+              <img src="/senmar/005.webp" alt="Senmar Services" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Analytical Content */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           
           {/* 1. ECONOMIC INCENTIVE */}
@@ -83,6 +119,12 @@ export default function WhyUs() {
                   ? 'Een bouwplaats is een chaotische omgeving blootgesteld aan regen en wind. Een fabriek is een gecontroleerd laboratorium. Dit fundamentele verschil leidt tot meetbaar betere prestaties van de gebouwschil.'
                   : 'A construction site is a chaotic environment exposed to rain and wind. A factory is a controlled laboratory. This fundamental difference leads to measurably better performance of the building envelope.'}
               </p>
+              
+              {/* Senmar Production Image */}
+              <div className="my-10 rounded-xl overflow-hidden shadow-xl">
+                <img src="/senmar/003.webp" alt="Senmar Production Facilities" className="w-full h-auto" />
+              </div>
+
               <ul className="space-y-6 list-none pl-0 mt-8">
                 <li className="flex gap-5 items-start">
                   <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-gray-700" size={20} /></div>
@@ -111,23 +153,130 @@ export default function WhyUs() {
 
           <hr className="border-gray-200 my-16" />
 
-          {/* 3. ECOLOGICAL IMPACT */}
+          {/* 3. SENMAR CONSTRUCTION METHODS */}
+          <div className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="p-4 bg-purple-100 rounded-xl text-purple-700"><Building2 size={32} /></div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '3. Senmar Bouwmethoden' : '3. Senmar Construction Methods'}</h2>
+                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Twee principes, maximale flexibiliteit' : 'Two principles, maximum flexibility'}</p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mt-10">
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-none">
+                <div className="h-64 overflow-hidden">
+                  <img src="/senmar/006.webp" alt="Panelized Construction" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
+                <CardContent className="p-8 bg-gray-50">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {language === 'nl' ? 'Gepaneeliseerde Constructie' : 'Panelized Construction'}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {language === 'nl' 
+                      ? 'Muren en panelen worden off-site in een gecontroleerde omgeving gefabriceerd, getransporteerd en als bouwblokken op locatie gemonteerd. Snellere bouwtijden, superieure kwaliteitscontrole en minder afval.'
+                      : 'Walls and panels are fabricated off-site in a controlled environment, transported, and assembled like building blocks on-site. Faster construction times, superior quality control, and reduced waste.'}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-none">
+                <div className="h-64 overflow-hidden">
+                  <img src="/senmar/006.webp" alt="Modular Construction" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
+                <CardContent className="p-8 bg-gray-50">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {language === 'nl' ? 'Modulaire Constructie' : 'Modular Construction'}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {language === 'nl' 
+                      ? 'Complete secties inclusief elektrische en sanitaire installaties worden in de fabriek gebouwd. Op locatie worden deze modules als puzzelstukken samengevoegd tot een volledig geïntegreerd gebouw.'
+                      : 'Complete sections including electrical, plumbing, and finishes are built in the factory. On-site, these modules are assembled like puzzle pieces into a fully integrated building.'}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <hr className="border-gray-200 my-16" />
+
+          {/* 4. ENERGY EFFICIENCY & SAVINGS */}
+          <div className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="p-4 bg-orange-100 rounded-xl text-orange-700"><Wrench size={32} /></div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '4. Energie-efficiëntie & Besparingen' : '4. Energy Efficiency & Savings'}</h2>
+                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Van Optimal tot Super Passive' : 'From Optimal to Super Passive'}</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-10 rounded-2xl text-white mb-8">
+              <h3 className="text-2xl font-bold mb-6">{language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white/10 p-6 rounded-lg border border-white/20">
+                  <div className="text-3xl font-bold text-green-400 mb-2">R-5.7</div>
+                  <h4 className="font-bold mb-2">Optimal</h4>
+                  <p className="text-sm text-gray-300">
+                    {language === 'nl' ? 'Perfecte balans tussen investering en prestatie. Overtreft ruimschoots standaard bouweisen.' : 'Perfect balance between investment and performance. Far exceeds standard building requirements.'}
+                  </p>
+                </div>
+                <div className="bg-green-600 p-6 rounded-lg border-2 border-green-400 transform scale-105 shadow-xl">
+                  <div className="text-3xl font-bold text-white mb-2">R-8.5</div>
+                  <h4 className="font-bold mb-2">Passive</h4>
+                  <p className="text-sm text-gray-100">
+                    {language === 'nl' ? 'Onze standaard voor zeer energiezuinig wonen. Substantiële besparingen op lange termijn.' : 'Our standard for highly energy-efficient living. Substantial long-term savings.'}
+                  </p>
+                  <div className="mt-3 inline-block bg-green-700 px-3 py-1 rounded-full text-xs font-bold">
+                    {language === 'nl' ? 'Meest Gekozen' : 'Most Popular'}
+                  </div>
+                </div>
+                <div className="bg-white/10 p-6 rounded-lg border border-white/20">
+                  <div className="text-3xl font-bold text-green-400 mb-2">R-10.5</div>
+                  <h4 className="font-bold mb-2">Super Passive</h4>
+                  <p className="text-sm text-gray-300">
+                    {language === 'nl' ? 'Passivhaus-normen. Tot 75% minder energieverbruik vs standaardbouw.' : 'Passivhaus standards. Up to 75% less energy consumption vs standard construction.'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg">
+              <p className="text-gray-800 font-semibold mb-2">
+                💡 {language === 'nl' ? 'Besparingen over de levensduur' : 'Lifetime Savings'}
+              </p>
+              <p className="text-gray-700">
+                {language === 'nl' 
+                  ? 'Hoewel we geen exacte prijzen tonen, levert elke upgrade in isolatieniveau een exponentieel hogere besparing op uw energierekening op gedurende de levensduur van het gebouw (30+ jaar).'
+                  : 'While we do not show exact prices, each upgrade in insulation level provides an exponentially higher saving on your energy bill over the lifetime of the building (30+ years).'}
+              </p>
+            </div>
+          </div>
+
+          <hr className="border-gray-200 my-16" />
+
+          {/* 5. ECOLOGICAL IMPACT */}
           <div className="mb-10">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-green-100 rounded-xl text-green-700"><Leaf size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '3. Ecologische Impact' : '3. Ecological Impact'}</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '5. Ecologische Impact' : '5. Ecological Impact'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
               </div>
             </div>
+            
+            {/* Senmar Mission Image */}
+            <div className="mb-10 rounded-xl overflow-hidden shadow-xl">
+              <img src="/senmar/004.webp" alt="Senmar Mission" className="w-full h-auto" />
+            </div>
+
             <div className="bg-green-50 p-10 rounded-2xl border border-green-100 shadow-inner">
                <h3 className="text-2xl font-bold text-green-900 mb-4">Carbon Negative Bouwen</h3>
                <p className="text-green-800 mb-6 text-lg leading-relaxed">
                  {language === 'nl' 
-                   ? 'De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur.' 
-                   : 'The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure.'}
+                   ? 'De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. Senmar gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.' 
+                   : 'The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. Senmar uses exclusively FSC-certified wood and strives for a fully carbon-negative production chain.'}
                </p>
-               <div className="grid md:grid-cols-2 gap-6">
+               <div className="grid md:grid-cols-3 gap-6">
                  <div className="bg-white/60 p-4 rounded-lg">
                    <span className="block font-bold text-green-900 mb-1">Stikstof reductie</span>
                    <span className="text-sm text-green-800">{language === 'nl' ? '80% minder transportbewegingen naar de bouwplaats.' : '80% fewer transport movements to the site.'}</span>
@@ -136,10 +285,34 @@ export default function WhyUs() {
                    <span className="block font-bold text-green-900 mb-1">Circulair</span>
                    <span className="text-sm text-green-800">{language === 'nl' ? 'Materialen zijn demontabel en recyclebaar.' : 'Materials are demountable and recyclable.'}</span>
                  </div>
+                 <div className="bg-white/60 p-4 rounded-lg">
+                   <span className="block font-bold text-green-900 mb-1">FSC Gecertificeerd</span>
+                   <span className="text-sm text-green-800">{language === 'nl' ? '100% duurzaam geproduceerd hout.' : '100% sustainably sourced timber.'}</span>
+                 </div>
                </div>
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-4xl font-bold mb-6">
+            {language === 'nl' ? 'Klaar om de toekomst te bouwen?' : 'Ready to build the future?'}
+          </h2>
+          <p className="text-xl mb-10 text-green-100">
+            {language === 'nl' 
+              ? 'Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en Senmar uw project kunnen transformeren.'
+              : 'Contact us today for a no-obligation consultation and discover how Groenvastbouw and Senmar can transform your project.'}
+          </p>
+          <a 
+            href="#contact" 
+            className="inline-block bg-white text-green-600 px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+          >
+            {language === 'nl' ? 'Neem Contact Op' : 'Contact Us'}
+          </a>
         </div>
       </section>
     </div>
