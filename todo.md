@@ -304,3 +304,10 @@
 - [x] Push para GitHub - aguardando deploy Vercel
 - [ ] Testar em produção
 - [ ] Remover debug mode após confirmar funcionamento
+
+## Energy Comparison Update
+
+- [x] Add detailed energy comparison section with 7:1 ratio
+- [x] Include real savings example (€4,275/year for 150m² house)
+- [x] Add embodied energy payback explanation
+- [x] Show concrete kWh numbers for 150m² house comparison

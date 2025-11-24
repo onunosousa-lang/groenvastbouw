@@ -272,6 +272,107 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 4.5 Energy Comparison - Real Savings */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'Wat Betekent 86% Energiebesparing?' : 'What Does 86% Energy Savings Mean?'}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {language === 'nl' ? 'Concrete cijfers voor een 150m² woning' : 'Concrete numbers for a 150m² home'}
+            </p>
+          </div>
+
+          {/* 7:1 Ratio Card */}
+          <div className="bg-gradient-to-br from-green-500 to-green-600 text-white p-8 rounded-2xl mb-8 text-center shadow-2xl">
+            <div className="text-7xl font-black mb-4">7:1</div>
+            <p className="text-2xl font-semibold mb-2">
+              {language === 'nl' ? 'Passieve Huizen = 1 Gemiddeld Huis' : 'Passive Houses = 1 Average House'}
+            </p>
+            <p className="text-green-100 text-lg">
+              {language === 'nl' 
+                ? '7 gezinnen in onze Passieve huizen verbruiken dezelfde energie als 1 gezin in een gemiddeld Nederlands huis'
+                : '7 families in our Passive houses consume the same energy as 1 family in an average Dutch house'}
+            </p>
+          </div>
+
+          {/* Comparison Cards */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl">
+              <div className="text-sm text-gray-500 mb-2">
+                {language === 'nl' ? 'Gemiddeld Nederlands Huis' : 'Average Dutch House'}
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">16.500 kWh</div>
+              <div className="text-sm text-gray-500 mb-4">{language === 'nl' ? 'per jaar' : 'per year'}</div>
+              <div className="text-4xl font-black text-orange-500">€4.950</div>
+              <div className="text-sm text-gray-500">{language === 'nl' ? 'verwarmingskosten/jaar' : 'heating costs/year'}</div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-500/10 to-green-500/5 border-2 border-green-500 p-6 rounded-xl">
+              <div className="text-sm text-green-600 font-semibold mb-2">
+                {language === 'nl' ? 'Groenvastbouw Passief' : 'Groenvastbouw Passive'}
+              </div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">2.250 kWh</div>
+              <div className="text-sm text-gray-500 mb-4">{language === 'nl' ? 'per jaar' : 'per year'}</div>
+              <div className="text-4xl font-black text-green-600">€675</div>
+              <div className="text-sm text-gray-500">{language === 'nl' ? 'verwarmingskosten/jaar' : 'heating costs/year'}</div>
+            </div>
+          </div>
+
+          {/* Savings Highlight */}
+          <div className="bg-green-500 text-white p-8 rounded-xl mb-8 text-center">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <div className="text-5xl font-black mb-2">€4.275</div>
+                <div className="text-green-100 text-lg">{language === 'nl' ? 'besparing per jaar' : 'savings per year'}</div>
+              </div>
+              <div>
+                <div className="text-5xl font-black mb-2">€128.000</div>
+                <div className="text-green-100 text-lg">{language === 'nl' ? 'over 30 jaar' : 'over 30 years'}</div>
+              </div>
+            </div>
+          </div>
+
+          {/* What's Included */}
+          <div className="bg-white border border-gray-200 p-6 rounded-xl mb-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'Dit zijn verwarmingskosten (per jaar):' : 'These are heating costs (per year):'}
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-center gap-2">
+                <Zap className="h-5 w-5 text-green-500" />
+                <span className="text-gray-700">{language === 'nl' ? 'Ruimteverwarming' : 'Space heating'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Zap className="h-5 w-5 text-green-500" />
+                <span className="text-gray-700">{language === 'nl' ? 'Warm water' : 'Hot water'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Zap className="h-5 w-5 text-green-500" />
+                <span className="text-gray-700">{language === 'nl' ? 'Ventilatie' : 'Ventilation'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Zap className="h-5 w-5 text-green-500" />
+                <span className="text-gray-700">{language === 'nl' ? 'Koeling (zomer)' : 'Cooling (summer)'}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Embodied Energy Bonus */}
+          <div className="bg-blue-50 border border-blue-200 p-6 rounded-xl">
+            <h3 className="text-lg font-bold text-blue-900 mb-3">
+              {language === 'nl' ? 'Bonus: Lagere Bouw-impact' : 'Bonus: Lower Construction Impact'}
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              {language === 'nl'
+                ? 'Houtskeletbouw (Senmar) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.'
+                : 'Timber frame construction (Senmar) uses 50% less energy during production than concrete construction. After ~4 years, the house has paid back its construction investment and becomes carbon-positive for 50+ years.'}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 5. FAQ (Mapped to #faq) */}
       <section id="faq" className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-3xl">
