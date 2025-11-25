@@ -143,6 +143,26 @@ export const translations = {
     // Why Us Page
     whyus_title: "Waarom Groenvastbouw",
     whyus_subtitle: "Industriële precisie ontmoet duurzaamheid",
+    
+    // Problem & Solution Section
+    problem_title: "Het Probleem",
+    problem_subtitle: "De Nederlandse bouwsector staat voor ongekende uitdagingen",
+    problem_labor: "Tekort aan geschoolde arbeidskrachten",
+    problem_time: "Bouwprojecten lopen 12-18 maanden",
+    problem_cost: "Onvoorspelbare kosten en vertragingen",
+    problem_quality: "Kwaliteitsproblemen door weersomstandigheden",
+    problem_energy: "Hoge energiekosten voor bewoners",
+    
+    solution_title: "Onze Oplossing",
+    solution_subtitle: "Industriële precisie + Passivhaus standaard",
+    solution_speed: "70% Sneller",
+    solution_speed_desc: "Montage in 7-10 dagen. Totale bouwtijd 4-6 maanden.",
+    solution_energy: "90% Energiebesparing",
+    solution_energy_desc: "€4.000+ besparing per jaar voor een gemiddeld gezin.",
+    solution_quality: "Fabriekscontrole",
+    solution_quality_desc: "CNC-precisie 1mm. Geen weerschade. 10 jaar garantie.",
+    solution_future: "Toekomstbestendig",
+    solution_future_desc: "Carbon-negatief. Passivhaus gecertificeerd. 50+ jaar levensduur.",
   },
   
   en: {
@@ -289,6 +309,26 @@ export const translations = {
     // Why Us Page
     whyus_title: "Why Groenvastbouw",
     whyus_subtitle: "Industrial precision meets sustainability",
+    
+    // Problem & Solution Section
+    problem_title: "The Problem",
+    problem_subtitle: "The Dutch construction sector faces unprecedented challenges",
+    problem_labor: "Shortage of skilled labor",
+    problem_time: "Construction projects take 12-18 months",
+    problem_cost: "Unpredictable costs and delays",
+    problem_quality: "Quality issues due to weather conditions",
+    problem_energy: "High energy costs for residents",
+    
+    solution_title: "Our Solution",
+    solution_subtitle: "Industrial precision + Passive House standard",
+    solution_speed: "70% Faster",
+    solution_speed_desc: "Assembly in 7-10 days. Total construction time 4-6 months.",
+    solution_energy: "90% Energy Savings",
+    solution_energy_desc: "€4,000+ savings per year for an average family.",
+    solution_quality: "Factory Control",
+    solution_quality_desc: "CNC precision 1mm. No weather damage. 10-year warranty.",
+    solution_future: "Future-Proof",
+    solution_future_desc: "Carbon-negative. Passive House certified. 50+ year lifespan.",
   }
 };
 

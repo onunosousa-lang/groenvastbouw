@@ -316,5 +316,14 @@
 
 - [x] Check existing translation system
 - [x] Add English translations for all content sections
-- [ ] Ensure language toggle works properly on all pages
-- [ ] Test all pages in both Dutch and English
+- [x] Ensure language toggle works properly on all pages
+- [x] Test all pages in both Dutch and English
+
+## Mobile Language Toggle & Homepage Enhancements
+
+- [x] Add language toggle button to mobile navbar (NL/EN)
+- [x] Hide Projects link from header navigation
+- [x] Add problem/solution narrative to homepage
+- [x] Emphasize speed, energy efficiency, future-proof, high quality
+- [ ] Test language toggle on mobile
+- [ ] Deploy changes to production
