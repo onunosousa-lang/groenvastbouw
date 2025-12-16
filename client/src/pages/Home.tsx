@@ -366,15 +366,16 @@ export default function Home() {
             <div>
               <div className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">Senmar Partnership</div>
               <h2 className="text-4xl font-bold text-gray-900 mb-4">{language === 'nl' ? 'Technologie & Innovatie' : 'Technology & Innovation'}</h2>
-              <p className="text-xl text-gray-600 mb-6">{language === 'nl' ? 'De nieuwe standaard in systeembouw.' : 'The new standard in system construction.'}</p>
+              <p className="text-xl text-gray-600 mb-6">{language === 'nl' ? 'De Nieuwe Standaard in Systeembouw' : 'The New Standard in System Construction'}</p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                {language === 'nl' ? 'Groenvastbouw is de exclusieve partner van Senmar. Wij werken met de revolutionaire MOD (Modular On Demand) technologie. CNC-precisie elimineert fouten en garandeert kwaliteit.' : 'Groenvastbouw is the exclusive partner of Senmar. We work with MOD (Modular On Demand) technology. CNC precision eliminates errors and guarantees quality.'}
+                {language === 'nl' ? 'Groenvastbouw werkt samen met Senmar om geavanceerde bouwoplossingen naar Nederland te brengen. Wij combineren state-of-the-art technologie met vakmanschap. CNC-precisie elimineert fouten en garandeert consistente kwaliteit in elk project.' : 'Groenvastbouw partners with Senmar to bring cutting edge building solutions to the Netherlands. We combine state of the art technology with expert craftsmanship. CNC precision eliminates errors and guarantees consistent quality in every project.'}
               </p>
+              <p className="text-lg font-semibold text-gray-800 mb-4">{language === 'nl' ? 'Bewezen Prestaties. Echte Resultaten.' : 'Proven Performance. Real Results.'}</p>
               <ul className="space-y-3 mb-8">
                 {[
-                  language === 'nl' ? '70% Snellere bouwtijd op locatie' : '70% Faster construction time on site',
-                  language === 'nl' ? 'Geen koudebruggen (Thermal Bridge Free)' : 'No thermal bridges (Thermal Bridge Free)',
-                  language === 'nl' ? 'Isolatiewaarden tot R-10 (Passivhaus)' : 'Insulation values up to R-10 (Passive House)'
+                  language === 'nl' ? '70% snellere bouwtijd op locatie' : '70% faster construction time on site',
+                  language === 'nl' ? 'Thermal Bridge Free constructie voor superieure efficiëntie' : 'Thermal Bridge Free construction for superior efficiency',
+                  language === 'nl' ? 'Isolatiewaarden tot R-10 conform Passivhaus standaarden' : 'Insulation values up to R-10 meeting Passive House standards'
                 ].map((item, i) => <li key={i} className="flex items-start"><span className="text-green-600 mr-2 font-bold">✓</span><span className="text-gray-700">{item}</span></li>)}
               </ul>
               <a href="https://senmar.pt/en" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg transition-colors">
