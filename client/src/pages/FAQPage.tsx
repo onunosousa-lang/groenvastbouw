@@ -1,129 +1,155 @@
 import { useState } from 'react';
 import { ChevronDown, ArrowLeft, MessageCircle, Mail } from 'lucide-react';
 import { Link } from 'wouter';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function FAQPage() {
+  const { language } = useLanguage();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const faqSections = [
     {
-      title: "Passive House Basics",
+      title_en: "Passive House Basics",
+      title_nl: "Basisprincipes Passief Huis",
       questions: [
         {
-          question: "What is a passive house?",
-          answer: "A passive house is a rigorous building standard for very energy-efficient buildings, focused on low energy use, high comfort and excellent indoor air quality. It is a performance standard that can be applied to many building types, not a single product."
+          question_en: "What is a passive house?",
+          question_nl: "Wat is een passief huis?",
+          answer_en: "A passive house is a rigorous building standard for very energy-efficient buildings, focused on low energy use, high comfort and excellent indoor air quality. It is a performance standard that can be applied to many building types, not a single product.",
+          answer_nl: "Een passief huis is een strenge bouwstandaard voor zeer energiezuinige gebouwen, gericht op laag energieverbruik, hoog comfort en uitstekende binnenluchtkwaliteit. Het is een prestatiestandaard die op veel gebouwtypen kan worden toegepast, niet een enkel product."
         },
         {
-          question: "How does a passive house work?",
-          answer: "Passive houses minimise energy demand through a highly insulated, airtight building envelope with minimal thermal bridges. They use balanced ventilation with heat recovery and passive solar gains so that only a small heating and cooling system is needed."
+          question_en: "How does a passive house work?",
+          question_nl: "Hoe werkt een passief huis?",
+          answer_en: "Passive houses minimise energy demand through a highly insulated, airtight building envelope with minimal thermal bridges. They use balanced ventilation with heat recovery and passive solar gains so that only a small heating and cooling system is needed.",
+          answer_nl: "Passieve huizen minimaliseren de energievraag door een zeer goed geïsoleerde, luchtdichte gebouwschil met minimale koudebruggen. Ze gebruiken gebalanceerde ventilatie met warmteterugwinning en passieve zonnewinst, zodat slechts een klein verwarmings- en koelsysteem nodig is."
         },
         {
-          question: "How much energy can a passive house save?",
-          answer: "Passive houses typically use about 75% less energy than an average new-build house and up to around 90% less than conventional older buildings. This can lead to very significant reductions in energy bills over the lifetime of the building."
+          question_en: "How much energy can a passive house save?",
+          question_nl: "Hoeveel energie kan een passief huis besparen?",
+          answer_en: "Passive houses typically use about 75% less energy than an average new-build house and up to around 90% less than conventional older buildings. This can lead to very significant reductions in energy bills over the lifetime of the building.",
+          answer_nl: "Passieve huizen gebruiken doorgaans ongeveer 75% minder energie dan een gemiddelde nieuwbouwwoning en tot ongeveer 90% minder dan conventionele oudere gebouwen. Dit kan leiden tot zeer aanzienlijke verlagingen van de energierekening gedurende de levensduur van het gebouw."
         }
       ]
     },
     {
-      title: "Groenvastbouw & Senmar",
+      title_en: "Planning, Timing and Scope",
+      title_nl: "Planning, Timing en Scope",
       questions: [
         {
-          question: "What does Groenvastbouw build with Senmar?",
-          answer: "Groenvastbouw offers high-performance timber frame passive houses and other buildings in cooperation with the Senmar prefab system. The focus is on energy-efficient, sustainable and cost-effective homes for the Dutch market."
+          question_en: "What is the lead time from order to mounted structure?",
+          question_nl: "Wat is de levertijd van bestelling tot gemonteerde constructie?",
+          answer_en: "For standard projects, an indicative lead time of about 3 months from order to mounting of the structural shell on site is realistic, subject to engineering, permits and factory planning. On site, assembly of the main structure normally takes around one to two weeks, depending on size and complexity.",
+          answer_nl: "Voor standaard projecten is een indicatieve levertijd van ongeveer 3 maanden van bestelling tot montage van de constructieve schil op locatie realistisch, afhankelijk van engineering, vergunningen en fabrieksplanning. Op locatie duurt de montage van de hoofdconstructie normaal gesproken één tot twee weken, afhankelijk van grootte en complexiteit."
         },
         {
-          question: "What is the Senmar prefab passive house system?",
-          answer: "Senmar produces prefabricated timber frame elements in a controlled factory environment, engineered for high insulation, airtightness and minimal thermal bridges. These elements are transported to site and typically assembled into a weather-tight structure within days, depending on project size and logistics."
+          question_en: "Do you deliver shell only or fully finished?",
+          question_nl: "Leveren jullie alleen casco of volledig afgewerkt?",
+          answer_en: "Groenvastbouw can supply just the structural shell with preparation for façade cladding, or include cladding as part of the package, depending on the agreement. Roofs can be prepared for tiles (with battens) or delivered with other finishes such as flat-roof membranes.",
+          answer_nl: "Groenvastbouw kan alleen de constructieve schil leveren met voorbereiding voor gevelbekleding, of bekleding als onderdeel van het pakket opnemen, afhankelijk van de overeenkomst. Daken kunnen worden voorbereid voor dakpannen (met panlatten) of geleverd met andere afwerkingen zoals plat dak membranen."
         },
         {
-          question: "Why combine Groenvastbouw with Senmar?",
-          answer: "Senmar delivers advanced prefab timber structures; Groenvastbouw combines these with Dutch regulations, local partners and project management. This combination provides a fast, high-quality route to passive houses that fit the Dutch market."
+          question_en: "What interior and installation options are possible?",
+          question_nl: "Welke interieur- en installatieopties zijn mogelijk?",
+          answer_en: "Depending on the chosen package and local partners, the prefab structure can be combined with windows and doors, interior drywall, timber finishes and internal doors. Preparation for electrical points and plumbing is possible, and a fully fitted kitchen and bathroom can be arranged, but the exact scope is always project-specific.",
+          answer_nl: "Afhankelijk van het gekozen pakket en lokale partners kan de prefab constructie worden gecombineerd met ramen en deuren, gipsplaten interieur, houtafwerkingen en binnendeuren. Voorbereiding voor elektrische punten en leidingwerk is mogelijk, en een volledig ingerichte keuken en badkamer kan worden geregeld, maar de exacte scope is altijd projectspecifiek."
         }
       ]
     },
     {
-      title: "Planning, Timing and Scope",
+      title_en: "Prices and Budgets",
+      title_nl: "Prijzen en Budgetten",
       questions: [
         {
-          question: "What is the lead time from order to mounted structure?",
-          answer: "For standard projects, an indicative lead time of about 3 months from order to mounting of the structural shell on site is realistic, subject to engineering, permits and factory planning. On site, assembly of the main structure normally takes around one to two weeks, depending on size and complexity."
+          question_en: "What are the price indications per m²?",
+          question_nl: "Wat zijn de prijsindicaties per m²?",
+          answer_en: "Groenvastbouw communicates starting prices from about €1,100 per m² for the structural part of a passive house as an indication. Total project costs depend on design, finishes, installations, groundworks and other local factors, so a project-specific analysis is always needed.",
+          answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.100 per m² voor het constructieve deel van een passief huis als indicatie. Totale projectkosten zijn afhankelijk van ontwerp, afwerkingen, installaties, grondwerk en andere lokale factoren, dus een projectspecifieke analyse is altijd nodig."
         },
         {
-          question: "Do you deliver shell only or fully finished?",
-          answer: "Groenvastbouw can supply just the structural shell with preparation for façade cladding, or include cladding as part of the package, depending on the agreement. Roofs can be prepared for tiles (with battens) or delivered with other finishes such as flat-roof membranes."
-        },
-        {
-          question: "What interior and installation options are possible?",
-          answer: "Depending on the chosen package and local partners, the prefab structure can be combined with windows and doors, interior drywall, timber finishes and internal doors. Preparation for electrical points and plumbing is possible, and a fully fitted kitchen and bathroom can be arranged, but the exact scope is always project-specific."
+          question_en: "What factors influence the final cost?",
+          question_nl: "Welke factoren beïnvloeden de uiteindelijke kosten?",
+          answer_en: "Key factors are building size and shape, insulation level, façade and roof finishes, choice of windows and doors, installations and level of prefabrication. Local costs for foundations, utilities and landscaping also play an important role.",
+          answer_nl: "Belangrijke factoren zijn gebouwgrootte en -vorm, isolatieniveau, gevel- en dakafwerkingen, keuze van ramen en deuren, installaties en mate van prefabricage. Lokale kosten voor funderingen, nutsvoorzieningen en landschapsinrichting spelen ook een belangrijke rol."
         }
       ]
     },
     {
-      title: "Prices and Budgets",
+      title_en: "For Developers, Investors and Architects",
+      title_nl: "Voor Ontwikkelaars, Investeerders en Architecten",
       questions: [
         {
-          question: "What are the price indications per m²?",
-          answer: "Groenvastbouw communicates starting prices from about €1,100 per m² for the structural part of a passive house as an indication. Total project costs depend on design, finishes, installations, groundworks and other local factors, so a project-specific analysis is always needed."
+          question_en: "What is the realistic production capacity for Dutch projects?",
+          question_nl: "Wat is de realistische productiecapaciteit voor Nederlandse projecten?",
+          answer_en: "The current factory capacity for our projects is in the order of around 100 m² of elements per production day, with an annual capacity in the range of roughly 20,000–25,000 m², and the possibility to scale further when needed. Capacity can be allocated flexibly between Portugal and export markets, with priority for larger or long-term projects.",
+          answer_nl: "De huidige fabriekscapaciteit voor onze projecten ligt in de orde van ongeveer 100 m² elementen per productiedag, met een jaarlijkse capaciteit van ruwweg 20.000–25.000 m², en de mogelijkheid om verder op te schalen indien nodig. Capaciteit kan flexibel worden toegewezen tussen Portugal en exportmarkten, met prioriteit voor grotere of langetermijnprojecten."
         },
         {
-          question: "What factors influence the final cost?",
-          answer: "Key factors are building size and shape, insulation level, façade and roof finishes, choice of windows and doors, installations and level of prefabrication. Local costs for foundations, utilities and landscaping also play an important role."
+          question_en: "How are large projects (20–50 units) managed?",
+          question_nl: "Hoe worden grote projecten (20–50 eenheden) beheerd?",
+          answer_en: "For multi-unit projects, houses or modules are produced in sequence and transported as each unit is completed, then mounted one after another on site. This phased approach enables a controlled workflow and efficient use of cranes and assembly teams.",
+          answer_nl: "Voor projecten met meerdere eenheden worden huizen of modules in volgorde geproduceerd en getransporteerd zodra elke eenheid is voltooid, en vervolgens één voor één op locatie gemonteerd. Deze gefaseerde aanpak maakt een gecontroleerde workflow en efficiënt gebruik van kranen en montageteams mogelijk."
+        },
+        {
+          question_en: "What is the maximum building height?",
+          question_nl: "Wat is de maximale bouwhoogte?",
+          answer_en: "As a standard guideline, the prefab timber frame system is used for buildings up to three storeys high, for structural and safety reasons. Higher buildings would require a separate structural concept and project-specific engineering.",
+          answer_nl: "Als standaard richtlijn wordt het prefab houtskelet systeem gebruikt voor gebouwen tot drie verdiepingen hoog, om structurele en veiligheidsredenen. Hogere gebouwen zouden een apart constructief concept en projectspecifieke engineering vereisen."
         }
       ]
     },
     {
-      title: "For Developers, Investors and Architects",
+      title_en: "Regulations, Warranty and Service",
+      title_nl: "Regelgeving, Garantie en Service",
       questions: [
         {
-          question: "What is the realistic production capacity for Dutch projects?",
-          answer: "The current factory capacity for our projects is in the order of around 100 m² of elements per production day, with an annual capacity in the range of roughly 20,000–25,000 m², and the possibility to scale further when needed. Capacity can be allocated flexibly between Portugal and export markets, with priority for larger or long-term projects."
+          question_en: "Do the buildings comply with Eurocodes and Dutch regulations (Bouwbesluit/BENG)?",
+          question_nl: "Voldoen de gebouwen aan Eurocodes en Nederlandse regelgeving (Bouwbesluit/BENG)?",
+          answer_en: "Buildings are engineered to meet the structural and energy requirements of the destination country, including Eurocodes and the relevant national regulations. In the Netherlands, BENG calculations and any additional certifications can be carried out based on the final design.",
+          answer_nl: "Gebouwen worden ontworpen om te voldoen aan de constructieve en energie-eisen van het bestemmingsland, inclusief Eurocodes en de relevante nationale regelgeving. In Nederland kunnen BENG-berekeningen en eventuele aanvullende certificeringen worden uitgevoerd op basis van het definitieve ontwerp."
         },
         {
-          question: "How are large projects (20–50 units) managed?",
-          answer: "For multi-unit projects, houses or modules are produced in sequence and transported as each unit is completed, then mounted one after another on site. This phased approach enables a controlled workflow and efficient use of cranes and assembly teams."
+          question_en: "What is the structural warranty period?",
+          question_nl: "Wat is de structurele garantieperiode?",
+          answer_en: "Groenvastbouw works with a typical structural warranty period of around 10 years, in line with common European construction practice. For specific components such as windows, roofing and installations, the manufacturer's warranties apply.",
+          answer_nl: "Groenvastbouw werkt met een typische structurele garantieperiode van ongeveer 10 jaar, in lijn met gangbare Europese bouwpraktijk. Voor specifieke componenten zoals ramen, dakbedekking en installaties gelden de garanties van de fabrikant."
         },
         {
-          question: "What is the maximum building height?",
-          answer: "As a standard guideline, the prefab timber frame system is used for buildings up to three storeys high, for structural and safety reasons. Higher buildings would require a separate structural concept and project-specific engineering."
-        },
-        {
-          question: "Can a local Dutch team be trained?",
-          answer: "Yes, once there is a stable flow of projects, a local Dutch assembly team can be trained and certified to work with the system. Initial projects are normally assembled by the experienced Senmar team to ensure quality and knowledge transfer."
-        },
-        {
-          question: "Can you use wood fibre insulation and other sustainable materials?",
-          answer: "Yes, wood fibre insulation can be used in the wall and roof build-up as an option, in addition to more standard mineral wool. This generally has a higher material cost but offers ecological and comfort benefits."
+          question_en: "How are complaints and defects handled?",
+          question_nl: "Hoe worden klachten en gebreken afgehandeld?",
+          answer_en: "In case of defects after assembly, clients can contact Groenvastbouw directly as the Dutch contact point for assessment and follow-up. Critical issues are treated with priority to minimise impact on the building's use and comfort.",
+          answer_nl: "Bij gebreken na montage kunnen klanten rechtstreeks contact opnemen met Groenvastbouw als Nederlands contactpunt voor beoordeling en opvolging. Kritieke problemen worden met prioriteit behandeld om de impact op het gebruik en comfort van het gebouw te minimaliseren."
         }
       ]
     },
     {
-      title: "Regulations, Warranty and Service",
+      title_en: "Next Steps",
+      title_nl: "Volgende Stappen",
       questions: [
         {
-          question: "Do the buildings comply with Eurocodes and Dutch regulations (Bouwbesluit/BENG)?",
-          answer: "Buildings are engineered to meet the structural and energy requirements of the destination country, including Eurocodes and the relevant national regulations. In the Netherlands, BENG calculations and any additional certifications can be carried out based on the final design."
-        },
-        {
-          question: "What is the structural warranty period?",
-          answer: "Groenvastbouw works with a typical structural warranty period of around 10 years, in line with common European construction practice. For specific components such as windows, roofing and installations, the manufacturer's warranties apply."
-        },
-        {
-          question: "How are complaints and defects handled?",
-          answer: "In case of defects after assembly, clients can contact Groenvastbouw directly as the Dutch contact point for assessment and follow-up. Critical issues are treated with priority to minimise impact on the building's use and comfort."
-        }
-      ]
-    },
-    {
-      title: "Next Steps",
-      questions: [
-        {
-          question: "How do I start a project with Groenvastbouw?",
-          answer: "You start by sharing your plot, wishes and budget via the contact options on the Groenvastbouw website. Together, the feasibility, preferred performance level and an indicative planning and budget are worked out for your project."
+          question_en: "How do I start a project with Groenvastbouw?",
+          question_nl: "Hoe start ik een project met Groenvastbouw?",
+          answer_en: "You start by sharing your plot, wishes and budget via the contact options on the Groenvastbouw website. Together, the feasibility, preferred performance level and an indicative planning and budget are worked out for your project.",
+          answer_nl: "U begint met het delen van uw kavel, wensen en budget via de contactopties op de Groenvastbouw website. Samen worden de haalbaarheid, het gewenste prestatieniveau en een indicatieve planning en budget voor uw project uitgewerkt."
         }
       ]
     }
   ];
 
   let questionIndex = 0;
+
+  const content = {
+    title: language === 'nl' ? 'FAQ – Passieve Huizen & Senmar Systeem' : 'FAQ – Passive Houses & Senmar System',
+    intro: language === 'nl' 
+      ? 'Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het Senmar prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.'
+      : 'Groenvastbouw offers high-performance timber frame passive houses in cooperation with the Senmar prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.',
+    backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
+    contactUs: language === 'nl' ? 'Neem Contact Op' : 'Contact Us',
+    chatWhatsApp: language === 'nl' ? 'Chat via WhatsApp' : 'Chat via WhatsApp',
+    readyTitle: language === 'nl' ? 'Klaar om Uw Project te Starten?' : 'Ready to Start Your Project?',
+    readyText: language === 'nl' ? 'Neem contact met ons op om uw passief huis project te bespreken.' : 'Get in touch with us to discuss your passive house project.',
+    footer: language === 'nl' ? '© 2024 Groenvastbouw. Alle rechten voorbehouden.' : '© 2024 Groenvastbouw. All rights reserved.'
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -132,7 +158,7 @@ export default function FAQPage() {
         <div className="container mx-auto px-4">
           <Link href="/" className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors w-fit">
             <ArrowLeft size={20} />
-            <span>Back to Home</span>
+            <span>{content.backToHome}</span>
           </Link>
         </div>
       </header>
@@ -142,10 +168,10 @@ export default function FAQPage() {
         {/* Page Title */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            FAQ – Passive Houses & Senmar System
+            {content.title}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Groenvastbouw offers high-performance timber frame passive houses in cooperation with the Senmar prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.
+            {content.intro}
           </p>
         </div>
 
@@ -156,7 +182,7 @@ export default function FAQPage() {
             className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors"
           >
             <Mail size={20} />
-            Contact Us
+            {content.contactUs}
           </a>
           <a 
             href="https://wa.me/31629841297" 
@@ -165,7 +191,7 @@ export default function FAQPage() {
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#128C7E] transition-colors"
           >
             <MessageCircle size={20} />
-            Chat via WhatsApp
+            {content.chatWhatsApp}
           </a>
         </div>
 
@@ -174,7 +200,7 @@ export default function FAQPage() {
           {faqSections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-green-500">
-                Section {sectionIndex + 1} – {section.title}
+                {language === 'nl' ? section.title_nl : section.title_en}
               </h2>
               <div className="space-y-3">
                 {section.questions.map((faq) => {
@@ -189,7 +215,7 @@ export default function FAQPage() {
                         onClick={() => setOpenFaq(openFaq === currentIndex ? null : currentIndex)}
                       >
                         <span className="font-semibold text-gray-900 pr-4">
-                          Q{currentIndex + 1}. {faq.question}
+                          {language === 'nl' ? faq.question_nl : faq.question_en}
                         </span>
                         <ChevronDown 
                           size={20} 
@@ -199,7 +225,7 @@ export default function FAQPage() {
                       {openFaq === currentIndex && (
                         <div className="px-5 pb-5 border-t border-gray-100">
                           <p className="text-gray-600 leading-relaxed pt-4">
-                            {faq.answer}
+                            {language === 'nl' ? faq.answer_nl : faq.answer_en}
                           </p>
                         </div>
                       )}
@@ -214,10 +240,10 @@ export default function FAQPage() {
         {/* Bottom Contact Buttons */}
         <div className="mt-16 bg-green-50 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Ready to Start Your Project?
+            {content.readyTitle}
           </h2>
           <p className="text-gray-600 mb-6">
-            Get in touch with us to discuss your passive house project.
+            {content.readyText}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -225,7 +251,7 @@ export default function FAQPage() {
               className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors"
             >
               <Mail size={20} />
-              Contact Us
+              {content.contactUs}
             </a>
             <a 
               href="https://wa.me/31629841297" 
@@ -234,7 +260,7 @@ export default function FAQPage() {
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#128C7E] transition-colors"
             >
               <MessageCircle size={20} />
-              Chat via WhatsApp
+              {content.chatWhatsApp}
             </a>
           </div>
         </div>
@@ -243,7 +269,7 @@ export default function FAQPage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">© 2024 Groenvastbouw. All rights reserved.</p>
+          <p className="text-gray-400">{content.footer}</p>
         </div>
       </footer>
     </div>
