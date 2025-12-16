@@ -45,14 +45,14 @@ export default function FAQPage() {
         {
           question_en: "Do you deliver shell only or fully finished?",
           question_nl: "Leveren jullie alleen casco of volledig afgewerkt?",
-          answer_en: "Groenvastbouw can supply just the structural shell with preparation for façade cladding, or include cladding as part of the package, depending on the agreement. Roofs can be prepared for tiles (with battens) or delivered with other finishes such as flat-roof membranes.",
-          answer_nl: "Groenvastbouw kan alleen de constructieve schil leveren met voorbereiding voor gevelbekleding, of bekleding als onderdeel van het pakket opnemen, afhankelijk van de overeenkomst. Daken kunnen worden voorbereid voor dakpannen (met panlatten) of geleverd met andere afwerkingen zoals plat dak membranen."
+          answer_en: "Groenvastbouw offers four configuration levels: Basic, Optimal, Passive, and Super Passive. We can supply the structural shell with preparation for façade cladding, or include cladding as part of the package. Windows and doors are typically installed on-site (not factory-installed) to minimize transport damage risk. For modular solutions, we can also deliver fully finished units (excluding movable furniture).",
+          answer_nl: "Groenvastbouw biedt vier configuratieniveaus: Basic, Optimal, Passive en Super Passive. Wij kunnen de constructieve schil leveren met voorbereiding voor gevelbekleding, of bekleding als onderdeel van het pakket opnemen. Ramen en deuren worden doorgaans op locatie geïnstalleerd (niet in de fabriek) om transportschade te minimaliseren. Voor modulaire oplossingen kunnen we ook volledig afgewerkte units leveren (exclusief los meubilair)."
         },
         {
           question_en: "What interior and installation options are possible?",
           question_nl: "Welke interieur- en installatieopties zijn mogelijk?",
-          answer_en: "Depending on the chosen package and local partners, the prefab structure can be combined with windows and doors, interior drywall, timber finishes and internal doors. Preparation for electrical points and plumbing is possible, and a fully fitted kitchen and bathroom can be arranged, but the exact scope is always project-specific.",
-          answer_nl: "Afhankelijk van het gekozen pakket en lokale partners kan de prefab constructie worden gecombineerd met ramen en deuren, gipsplaten interieur, houtafwerkingen en binnendeuren. Voorbereiding voor elektrische punten en leidingwerk is mogelijk, en een volledig ingerichte keuken en badkamer kan worden geregeld, maar de exacte scope is altijd projectspecifiek."
+          answer_en: "For panelized construction, electrical conduits and plumbing are installed on-site by local contractors. For modular solutions, electrical conduits can be pre-installed at the factory. Interior options include drywall, timber finishes, and internal doors. A fully fitted kitchen and bathroom can be arranged through our local partners. Full design flexibility is available for projects over 150 m².",
+          answer_nl: "Voor gepaneliseerde constructie worden elektrische leidingen en sanitair op locatie geïnstalleerd door lokale aannemers. Voor modulaire oplossingen kunnen elektrische leidingen in de fabriek worden voorgeïnstalleerd. Interieuropties omvatten gipsplaten, houtafwerkingen en binnendeuren. Een volledig ingerichte keuken en badkamer kan worden geregeld via onze lokale partners. Volledige ontwerpvrijheid is beschikbaar voor projecten groter dan 150 m²."
         }
       ]
     },
@@ -81,8 +81,8 @@ export default function FAQPage() {
         {
           question_en: "What is the realistic production capacity for Dutch projects?",
           question_nl: "Wat is de realistische productiecapaciteit voor Nederlandse projecten?",
-          answer_en: "The current factory capacity for our projects is in the order of around 100 m² of elements per production day, with an annual capacity in the range of roughly 20,000–25,000 m², and the possibility to scale further when needed. Capacity can be allocated flexibly between Portugal and export markets, with priority for larger or long-term projects.",
-          answer_nl: "De huidige fabriekscapaciteit voor onze projecten ligt in de orde van ongeveer 100 m² elementen per productiedag, met een jaarlijkse capaciteit van ruwweg 20.000–25.000 m², en de mogelijkheid om verder op te schalen indien nodig. Capaciteit kan flexibel worden toegewezen tussen Portugal en exportmarkten, met prioriteit voor grotere of langetermijnprojecten."
+          answer_en: "Senmar's total annual production capacity is approximately 19,000 m² of modular houses. Currently operating one shift, production can be scaled up to three shifts daily when needed. Capacity is allocated project by project, typically on a first-come basis, though project importance may influence scheduling. Transport is optimized with up to 70 m² per conventional truck.",
+          answer_nl: "De totale jaarlijkse productiecapaciteit van Senmar is ongeveer 19.000 m² modulaire woningen. Momenteel wordt er in één ploeg gewerkt, maar de productie kan indien nodig worden opgeschaald naar drie ploegen per dag. Capaciteit wordt project per project toegewezen, doorgaans op volgorde van binnenkomst, hoewel projectbelang de planning kan beïnvloeden. Transport wordt geoptimaliseerd met tot 70 m² per conventionele vrachtwagen."
         },
         {
           question_en: "How are large projects (20–50 units) managed?",
@@ -93,8 +93,8 @@ export default function FAQPage() {
         {
           question_en: "What is the maximum building height?",
           question_nl: "Wat is de maximale bouwhoogte?",
-          answer_en: "As a standard guideline, the prefab timber frame system is used for buildings up to three storeys high, for structural and safety reasons. Higher buildings would require a separate structural concept and project-specific engineering.",
-          answer_nl: "Als standaard richtlijn wordt het prefab houtskelet systeem gebruikt voor gebouwen tot drie verdiepingen hoog, om structurele en veiligheidsredenen. Hogere gebouwen zouden een apart constructief concept en projectspecifieke engineering vereisen."
+          answer_en: "We can build up to 3 floors above ground, plus a concrete basement garage (floor -1) if needed. This covers most residential and small commercial projects. Higher buildings would require a separate structural concept and project-specific engineering.",
+          answer_nl: "Wij kunnen tot 3 verdiepingen bovengronds bouwen, plus een betonnen parkeergarage (souterrain) indien gewenst. Dit dekt de meeste residentiële en kleine commerciële projecten. Hogere gebouwen zouden een apart constructief concept en projectspecifieke engineering vereisen."
         }
       ]
     },
@@ -105,14 +105,14 @@ export default function FAQPage() {
         {
           question_en: "Do the buildings comply with Eurocodes and Dutch regulations (Bouwbesluit/BENG)?",
           question_nl: "Voldoen de gebouwen aan Eurocodes en Nederlandse regelgeving (Bouwbesluit/BENG)?",
-          answer_en: "Buildings are engineered to meet the structural and energy requirements of the destination country, including Eurocodes and the relevant national regulations. In the Netherlands, BENG calculations and any additional certifications can be carried out based on the final design.",
-          answer_nl: "Gebouwen worden ontworpen om te voldoen aan de constructieve en energie-eisen van het bestemmingsland, inclusief Eurocodes en de relevante nationale regelgeving. In Nederland kunnen BENG-berekeningen en eventuele aanvullende certificeringen worden uitgevoerd op basis van het definitieve ontwerp."
+          answer_en: "All Senmar materials have CE certification and designs follow Eurocodes. Groenvastbouw handles Dutch-specific compliance including BENG calculations and Bouwbesluit requirements. We ensure your project meets all local regulations through our local expertise and network of certified professionals.",
+          answer_nl: "Alle Senmar materialen hebben CE-certificering en ontwerpen volgen Eurocodes. Groenvastbouw verzorgt de Nederlandse compliance inclusief BENG-berekeningen en Bouwbesluit-eisen. Wij zorgen ervoor dat uw project aan alle lokale regelgeving voldoet via onze lokale expertise en netwerk van gecertificeerde professionals."
         },
         {
           question_en: "What is the structural warranty period?",
           question_nl: "Wat is de structurele garantieperiode?",
-          answer_en: "Groenvastbouw works with a typical structural warranty period of around 10 years, in line with common European construction practice. For specific components such as windows, roofing and installations, the manufacturer's warranties apply.",
-          answer_nl: "Groenvastbouw werkt met een typische structurele garantieperiode van ongeveer 10 jaar, in lijn met gangbare Europese bouwpraktijk. Voor specifieke componenten zoals ramen, dakbedekking en installaties gelden de garanties van de fabrikant."
+          answer_en: "Groenvastbouw provides a 10-year structural warranty on the timber frame construction. For specific components such as windows, roofing and installations, warranties of 4-6 years apply according to manufacturer standards. Average response time for warranty claims is approximately 1 week.",
+          answer_nl: "Groenvastbouw biedt 10 jaar structurele garantie op de houtskeletconstructie. Voor specifieke componenten zoals ramen, dakbedekking en installaties gelden garanties van 4-6 jaar volgens fabrikantstandaarden. De gemiddelde reactietijd voor garantieclaims is ongeveer 1 week."
         },
         {
           question_en: "How are complaints and defects handled?",

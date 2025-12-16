@@ -46,8 +46,8 @@ export default function WhyUs() {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {language === 'nl' 
-                  ? 'Groenvastbouw is partner van Senmar in Nederland. Senmar, gevestigd in Coija, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 200 woningen, combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
-                  : 'Groenvastbouw is a partner of Senmar in the Netherlands. Senmar, based in Coija, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 200 homes, Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
+                  ? 'Groenvastbouw is partner van Senmar in Nederland. Senmar, gevestigd in Coija, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
+                  : 'Groenvastbouw is a partner of Senmar in the Netherlands. Senmar, based in Coija, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
               </p>
               <a 
                 href="https://senmar.pt" 
