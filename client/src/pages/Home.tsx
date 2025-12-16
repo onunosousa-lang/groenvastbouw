@@ -22,7 +22,7 @@ export default function Home() {
     phone: '',
     message: ''
   });
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -62,57 +62,6 @@ export default function Home() {
   };
 
   // --- CONTENT (Senmar MOD & Price Analysis) ---
-
-  const faqs = [
-    {
-      question_nl: "Wat bouwt Groenvastbouw?",
-      question_en: "What does Groenvastbouw build?",
-      answer_nl: "Groenvastbouw biedt hoogwaardige houtskelet passieve huizen en andere gebouwen in samenwerking met het Senmar prefab systeem. De focus ligt op energiezuinige, duurzame en kosteneffectieve woningen voor de Nederlandse markt.",
-      answer_en: "Groenvastbouw offers high-performance timber frame passive houses and other buildings in cooperation with the Senmar prefab system. The focus is on energy-efficient, sustainable and cost-effective homes for the Dutch market."
-    },
-    {
-      question_nl: "Wat is het Senmar Passive House systeem?",
-      question_en: "What is the Senmar Passive House system?",
-      answer_nl: "Senmar produceert geprefabriceerde houtskelet elementen in een gecontroleerde fabrieksomgeving, ontworpen voor hoge isolatie, luchtdichtheid en minimale koudebruggen. Deze elementen worden naar de bouwplaats getransporteerd en doorgaans binnen dagen gemonteerd tot een wind- en waterdichte constructie, afhankelijk van projectomvang en logistiek.",
-      answer_en: "Senmar produces prefabricated timber frame elements in a controlled factory environment, engineered for high insulation, airtightness and minimal thermal bridges. These elements are transported to site and typically assembled into a weather-tight structure within days, depending on project size and logistics."
-    },
-    {
-      question_nl: "Hoe energiezuinig zijn deze woningen?",
-      question_en: "How energy efficient are these homes?",
-      answer_nl: "Passief huis concepten zoals het Senmar systeem kunnen de warmtevraag met ongeveer 75-90% verminderen vergeleken met conventionele huizen, mits correct ontworpen en uitgevoerd. Een passief huis van 150 m² met zeer lage energievraag kan tienduizenden euro's aan energiekosten besparen over 30 jaar vergeleken met een gemiddeld bestaand huis, maar exacte besparingen hangen af van ontwerp, gebruikersgedrag en energieprijzen.",
-      answer_en: "Passive house concepts like the Senmar system can reduce heating energy demand by roughly 75-90% compared to conventional houses, if designed and executed correctly. A 150 m² passive house example with very low energy demand can save tens of thousands of euros in energy costs over 30 years compared to a typical existing house, but exact savings depend on design, user behaviour and energy prices."
-    },
-    {
-      question_nl: "Wat is de levertijd van bestelling tot montage?",
-      question_en: "What is the lead time from order to mounted structure?",
-      answer_nl: "Voor standaard projecten is een indicatieve levertijd van ongeveer 3 maanden van bestelling tot montage van de constructieve schil op locatie realistisch, afhankelijk van engineering, vergunningen en fabrieksplanning. Eenmaal op locatie duurt de montage van de hoofdconstructie normaal gesproken één tot twee weken, afhankelijk van grootte en complexiteit.",
-      answer_en: "For standard projects, an indicative lead time of about 3 months from order to mounting of the structural shell on site is realistic, subject to engineering, permits and factory planning. Once on site, assembly of the main structure normally takes around one to two weeks, depending on size and complexity."
-    },
-    {
-      question_nl: "Leveren jullie alleen casco of volledig afgewerkt?",
-      question_en: "Do you deliver shell only or fully finished?",
-      answer_nl: "Groenvastbouw kan alleen de constructieve schil leveren met voorbereiding voor gevelbekleding, of bekleding als onderdeel van het pakket opnemen, afhankelijk van de overeenkomst. Daken kunnen worden voorbereid voor dakpannen (met panlatten) of geleverd met andere afwerkingen zoals plat dak membranen, in lijn met Senmar's prefab dakoplossingen.",
-      answer_en: "Groenvastbouw can supply just the structural shell with preparation for façade cladding, or include cladding as part of the package, depending on the agreement. Roofs can be prepared for tiles (with battens) or delivered with other finishes such as flat-roof membranes, in line with Senmar's prefab roof solutions."
-    },
-    {
-      question_nl: "Welke interieur- en installatieopties zijn mogelijk?",
-      question_en: "What interior and installation options are possible?",
-      answer_nl: "Afhankelijk van het gekozen pakket en lokale partners, kan de prefab constructie worden gecombineerd met ramen en deuren, gipsplaten interieur, houtafwerkingen en binnendeuren. Voorbereiding voor elektrische punten en leidingwerk is mogelijk en een volledig ingerichte keuken en badkamer kan worden geregeld via Groenvastbouw en/of lokale aannemers, maar de exacte scope is projectspecifiek.",
-      answer_en: "Depending on the chosen package and local partners, the prefab structure can be combined with windows and doors, interior drywall, timber finishes and internal doors. Preparation for electrical points and plumbing is possible and a fully fitted kitchen and bathroom can be arranged via Groenvastbouw and/or local contractors, but the exact scope is project-specific."
-    },
-    {
-      question_nl: "Wat zijn de prijsindicaties per m²?",
-      question_en: "What are the price indications per m²?",
-      answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.100 per m² voor het constructieve deel van een passief huis als indicatie, met totale projectkosten afhankelijk van ontwerp, afwerkingen, installaties en grondwerk. Een projectspecifieke analyse is altijd nodig voor een concrete kostenraming en planning, wij garanderen nauwkeurige kostenbeheersing zonder verborgen verrassingen.",
-      answer_en: "Groenvastbouw communicates starting prices from about €1,100 per m² for the structural part of a passive house as an indication, with total project costs depending on design, finishes, installations and groundworks. A project-specific analysis is always needed to give a concrete cost estimate and planning, we guarantee precise cost control without hidden surprises."
-    },
-    {
-      question_nl: "Hoe start ik een project?",
-      question_en: "How do I start a project?",
-      answer_nl: "Neem gewoon contact met ons op! Scroll naar beneden naar het contactformulier of bel ons direct.",
-      answer_en: "Just get in touch! Scroll down to the contact form or call us directly."
-    }
-  ];
 
   const systems = [
     {
@@ -578,23 +527,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. FAQ (Mapped to #faq) */}
+      {/* 5. FAQ Link Section (Mapped to #faq) */}
       <section id="faq" className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <div className="text-center mb-12"><h2 className="text-4xl font-bold text-gray-900">FAQ</h2></div>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg p-6 hover:bg-gray-50 cursor-pointer transition-colors" onClick={() => setOpenFaq(openFaq === index ? null : index)}>
-                <div className="flex justify-between items-center font-semibold text-gray-900 text-lg"><span>{language === 'nl' ? faq.question_nl : faq.question_en}</span><ChevronDown size={20} /></div>
-                {openFaq === index && <p className="mt-4 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">{language === 'nl' ? faq.answer_nl : faq.answer_en}</p>}
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <a href="/faq" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold transition-colors">
-              {language === 'nl' ? 'Lees meer over passieve huizen en het Senmar systeem →' : 'Read more about passive houses and the Senmar system →'}
-            </a>
-          </div>
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">FAQ</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            {language === 'nl' 
+              ? 'Vind antwoorden op veelgestelde vragen over passieve huizen en het Senmar systeem.'
+              : 'Find answers to frequently asked questions about passive houses and the Senmar system.'}
+          </p>
+          <a 
+            href="/faq" 
+            className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl"
+          >
+            {language === 'nl' ? 'FAQ – Veelgestelde Vragen' : 'FAQ – Frequently Asked Questions'}
+            <ChevronDown size={20} className="rotate-[-90deg]" />
+          </a>
         </div>
       </section>
 
