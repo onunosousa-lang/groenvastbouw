@@ -40,102 +40,129 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Senmar Brand Font */
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
-/* Modern Eco Palette */
+/* Senmar Brand Palette */
 :root {
-  /* Primary Brand - Deep Teal/Green (#0F766E) */
-  --primary: 15 118 110;
+  /* Primary Brand - Garden Green (#7FB956) */
+  --primary: 127 185 86;
   --primary-foreground: 255 255 255;
   
-  /* Light Background - Warm Off-White (#F4F5F3) */
-  --background: 244 245 243;
+  /* Light Background - Soft Mist (#D7D7D6) lighter variant */
+  --background: 248 248 247;
   
   /* Surface / Cards - Pure White (#FFFFFF) */
   --card: 255 255 255;
-  --card-foreground: 31 41 51;
+  --card-foreground: 42 52 57;
   
-  /* Dark Text - Charcoal (#1F2933) */
-  --foreground: 31 41 51;
+  /* Dark Text - Deep Slate (#2A3439) */
+  --foreground: 42 52 57;
   
-  /* Accent - Terracotta/Coral (#E76F51) */
-  --accent: 231 111 81;
+  /* Accent - Clay Red (#EA4924) */
+  --accent: 234 73 36;
   --accent-foreground: 255 255 255;
   
-  /* Soft Secondary - Desaturated Sage (#CBD5C0) */
-  --secondary: 203 213 192;
-  --secondary-foreground: 31 41 51;
+  /* Soft Secondary - Leaf Green (#8EB564) */
+  --secondary: 142 181 100;
+  --secondary-foreground: 255 255 255;
   
-  /* Muted variants */
-  --muted: 203 213 192;
-  --muted-foreground: 31 41 51;
+  /* Muted variants - Steel Gray (#8C9194) */
+  --muted: 215 215 214;
+  --muted-foreground: 140 145 148;
   
   /* Popover */
   --popover: 255 255 255;
-  --popover-foreground: 31 41 51;
+  --popover-foreground: 42 52 57;
   
-  /* Destructive */
-  --destructive: 220 38 38;
+  /* Destructive - Clay Red */
+  --destructive: 234 73 36;
   --destructive-foreground: 255 255 255;
   
-  /* Border & Input */
-  --border: 203 213 192;
-  --input: 203 213 192;
-  --ring: 15 118 110;
+  /* Border & Input - Soft Mist */
+  --border: 215 215 214;
+  --input: 215 215 214;
+  --ring: 127 185 86;
   
-  /* Sidebar */
-  --sidebar: 255 255 255;
-  --sidebar-foreground: 31 41 51;
-  --sidebar-primary: 15 118 110;
+  /* Sidebar - Deep Slate */
+  --sidebar: 42 52 57;
+  --sidebar-foreground: 255 255 255;
+  --sidebar-primary: 127 185 86;
   --sidebar-primary-foreground: 255 255 255;
-  --sidebar-accent: 203 213 192;
-  --sidebar-accent-foreground: 31 41 51;
-  --sidebar-border: 203 213 192;
-  --sidebar-ring: 15 118 110;
+  --sidebar-accent: 142 181 100;
+  --sidebar-accent-foreground: 255 255 255;
+  --sidebar-border: 52 62 67;
+  --sidebar-ring: 127 185 86;
   
-  /* Charts */
-  --chart-1: 15 118 110;
-  --chart-2: 231 111 81;
-  --chart-3: 203 213 192;
-  --chart-4: 31 41 51;
-  --chart-5: 244 245 243;
+  /* Charts - Senmar Palette */
+  --chart-1: 127 185 86;
+  --chart-2: 234 73 36;
+  --chart-3: 142 181 100;
+  --chart-4: 42 52 57;
+  --chart-5: 140 145 148;
   
   --radius: 0.65rem;
+  
+  /* Senmar Brand Colors as CSS Custom Properties */
+  --senmar-garden-green: #7FB956;
+  --senmar-deep-slate: #2A3439;
+  --senmar-clay-red: #EA4924;
+  --senmar-soft-mist: #D7D7D6;
+  --senmar-leaf-green: #8EB564;
+  --senmar-steel-gray: #8C9194;
 }
 
 .dark {
-  --primary: 15 118 110;
+  /* Primary Brand - Garden Green */
+  --primary: 127 185 86;
   --primary-foreground: 255 255 255;
-  --sidebar-primary: 15 118 110;
+  --sidebar-primary: 127 185 86;
   --sidebar-primary-foreground: 255 255 255;
-  --background: 31 41 51;
-  --foreground: 244 245 243;
-  --card: 41 51 61;
-  --card-foreground: 244 245 243;
-  --popover: 41 51 61;
-  --popover-foreground: 244 245 243;
-  --secondary: 51 61 71;
-  --secondary-foreground: 244 245 243;
-  --muted: 51 61 71;
-  --muted-foreground: 203 213 192;
-  --accent: 231 111 81;
+  
+  /* Dark Background - Deep Slate (#2A3439) */
+  --background: 42 52 57;
+  --foreground: 248 248 247;
+  
+  /* Cards - Slightly lighter than background */
+  --card: 52 62 67;
+  --card-foreground: 248 248 247;
+  
+  --popover: 52 62 67;
+  --popover-foreground: 248 248 247;
+  
+  /* Secondary - Leaf Green */
+  --secondary: 62 72 77;
+  --secondary-foreground: 248 248 247;
+  
+  --muted: 62 72 77;
+  --muted-foreground: 140 145 148;
+  
+  /* Accent - Clay Red */
+  --accent: 234 73 36;
   --accent-foreground: 255 255 255;
-  --destructive: 220 38 38;
+  
+  --destructive: 234 73 36;
   --destructive-foreground: 255 255 255;
-  --border: 51 61 71;
-  --input: 51 61 71;
-  --ring: 15 118 110;
-  --chart-1: 15 118 110;
-  --chart-2: 231 111 81;
-  --chart-3: 203 213 192;
-  --chart-4: 244 245 243;
+  
+  --border: 62 72 77;
+  --input: 62 72 77;
+  --ring: 127 185 86;
+  
+  --chart-1: 127 185 86;
+  --chart-2: 234 73 36;
+  --chart-3: 142 181 100;
+  --chart-4: 248 248 247;
   --chart-5: 255 255 255;
-  --sidebar: 41 51 61;
-  --sidebar-foreground: 244 245 243;
-  --sidebar-accent: 51 61 71;
+  
+  --sidebar: 42 52 57;
+  --sidebar-foreground: 248 248 247;
+  --sidebar-accent: 62 72 77;
   --sidebar-accent-foreground: 255 255 255;
-  --sidebar-border: 51 61 71;
-  --sidebar-ring: 15 118 110;
+  --sidebar-border: 62 72 77;
+  --sidebar-ring: 127 185 86;
 }
 
 @layer base {
@@ -144,6 +171,11 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -161,22 +193,12 @@
 @layer components {
   /**
    * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
    */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -187,16 +209,45 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
+  }
+  
+  /* Senmar Brand Utility Classes */
+  .text-senmar-green {
+    color: var(--senmar-garden-green);
+  }
+  
+  .bg-senmar-green {
+    background-color: var(--senmar-garden-green);
+  }
+  
+  .text-senmar-slate {
+    color: var(--senmar-deep-slate);
+  }
+  
+  .bg-senmar-slate {
+    background-color: var(--senmar-deep-slate);
+  }
+  
+  .text-senmar-red {
+    color: var(--senmar-clay-red);
+  }
+  
+  .bg-senmar-red {
+    background-color: var(--senmar-clay-red);
+  }
+  
+  .border-senmar-green {
+    border-color: var(--senmar-garden-green);
   }
 }
