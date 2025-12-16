@@ -39,15 +39,15 @@ export default function WhyUs() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
               <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
-                {language === 'nl' ? 'Exclusief Partnerschap' : 'Exclusive Partnership'}
+                {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 {language === 'nl' ? 'Groenvastbouw × Senmar' : 'Groenvastbouw × Senmar'}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {language === 'nl' 
-                  ? 'Groenvastbouw is de exclusieve partner van Senmar in Nederland. Senmar, gevestigd in Coija, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 200 woningen, combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
-                  : 'Groenvastbouw is the exclusive partner of Senmar in the Netherlands. Senmar, based in Coija, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 200 homes, Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
+                  ? 'Groenvastbouw is partner van Senmar in Nederland. Senmar, gevestigd in Coija, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 200 woningen, combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
+                  : 'Groenvastbouw is a partner of Senmar in the Netherlands. Senmar, based in Coija, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 200 homes, Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
               </p>
               <a 
                 href="https://senmar.pt" 
@@ -227,7 +227,7 @@ export default function WhyUs() {
                <p className="text-green-800 mb-6 text-lg leading-relaxed">
                  {language === 'nl' 
                    ? 'De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. Senmar gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.' 
-                   : 'The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. Senmar uses exclusively FSC-certified wood and strives for a fully carbon-negative production chain.'}
+                   : 'The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. Senmar uses only FSC-certified wood and strives for a fully carbon-negative production chain.'}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
                  <div className="bg-white/60 p-4 rounded-lg">

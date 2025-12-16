@@ -3,12 +3,12 @@ export const whyUsContent = {
     title: "Waarom Groenvastbouw?",
     hero: {
       title: "De Toekomst van Bouwen, Vandaag.",
-      subtitle: "Groenvastbouw is de exclusieve partner van Senmar in Nederland. Samen herdefiniëren we de bouwsector met innovatieve, duurzame en efficiënte modulaire technologie.",
+      subtitle: "Groenvastbouw is partner van Senmar in Nederland. Samen herdefiniëren we de bouwsector met innovatieve, duurzame en efficiënte modulaire technologie.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "Het Groenvastbouw Verschil: Meer dan een Bouwer",
-      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Onze exclusieve samenwerking met Senmar, een pionier in geprefabriceerde bouwtechnologie, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
+      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Onze samenwerking met Senmar, een pionier in geprefabriceerde bouwtechnologie, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
@@ -83,12 +83,12 @@ export const whyUsContent = {
     title: "Why Groenvastbouw?",
     hero: {
       title: "The Future of Construction, Today.",
-      subtitle: "Groenvastbouw is the exclusive partner of Senmar in the Netherlands. Together, we are redefining the construction industry with innovative, sustainable, and efficient modular technology.",
+      subtitle: "Groenvastbouw is a partner of Senmar in the Netherlands. Together, we are redefining the construction industry with innovative, sustainable, and efficient modular technology.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "The Groenvastbouw Difference: More than a Builder",
-      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. Our exclusive partnership with Senmar, a pioneer in prefabricated construction technology, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final delivery, we manage the entire process, ensuring a seamless and worry-free experience.",
+      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. Our partnership with Senmar, a pioneer in prefabricated construction technology, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final delivery, we manage the entire process, ensuring a seamless and worry-free experience.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
@@ -125,7 +125,7 @@ export const whyUsContent = {
         },
         {
           title: "Sustainability as a Standard",
-          content: "We exclusively use sustainably sourced, CE and FSC certified wood. Our process minimizes waste and has a significantly lower CO2 footprint than traditional construction."
+          content: "We use only sustainably sourced, CE and FSC certified wood. Our process minimizes waste and has a significantly lower CO2 footprint than traditional construction."
         }
       ]
     },
