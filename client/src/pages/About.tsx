@@ -99,14 +99,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-2xl shadow-xl overflow-hidden"
           >
-            <div className="grid md:grid-cols-2">
-              <div className="relative h-96 md:h-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="flex items-center justify-center p-8 bg-gray-50">
                 <img
                   src="/nuno-sousa-profile.jpg"
                   alt="Nuno Machado e Sousa"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden"></div>
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <div className="inline-block px-3 py-1 bg-[#7FB956]/10 text-[#7FB956] rounded-full text-sm font-bold mb-6 w-fit">
