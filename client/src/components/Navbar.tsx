@@ -76,9 +76,9 @@ export default function Navbar() {
               {t('nav_benefits')}
             </a>
             {/* Pricing Removed Here */}
-            <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
+            <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
-            </a>
+            </Link>
             {/* Projects link hidden per user request */}
             <Link href="/why-us" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {language === 'nl' ? 'Waarom Ons' : 'Why Us'}
@@ -119,9 +119,9 @@ export default function Navbar() {
               <a href="#markets" onClick={(e) => { e.preventDefault(); scrollToSection('markets'); }} className="text-white/90 hover:text-green-400">
                 {t('nav_benefits')}
               </a>
-              <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }} className="text-white/90 hover:text-green-400">
+              <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
-              </a>
+              </Link>
               {/* Projects link hidden per user request */}
               <Link href="/why-us" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Waarom Ons' : 'Why Us'}
