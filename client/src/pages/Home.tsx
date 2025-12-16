@@ -169,8 +169,8 @@ export default function Home() {
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg max-w-2xl">
               {language === 'nl' 
-                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a> leveren wij toonaangevende duurzame bouwtechnologie. Hoogwaardige passieve huizen en renovaties die echte duurzaamheid combineren met maximale efficiëntie en kostenbeheersing voor Nederlandse gezinnen.</>
-                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, we deliver leading sustainable building technology. High-quality passive houses and renovations that combine real sustainability with maximum efficiency and cost control for Dutch families.</>
+                ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energiezuinig, duurzaam en betaalbaar.'
+                : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'
               }
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -188,7 +188,21 @@ export default function Home() {
         </button>
       </section>
 
-      {/* 1.5 PROBLEM & SOLUTION - NEW PITCH NARRATIVE */}
+      {/* 1.5 SENMAR PARTNERSHIP INTRO */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl md:text-2xl leading-relaxed">
+              {language === 'nl' 
+                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, een bedrijf dat toonaangevend is in duurzame bouwtechnologie, leveren wij echte oplossingen voor Nederlandse gezinnen. Hoogwaardige passieve huizen die echte duurzaamheid combineren met maximale efficiëntie, kostenbeheersing en comfort dat je voelt.</>
+                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, a company leading sustainable building technology, we deliver real solutions for Dutch families. High quality passive houses that combine genuine sustainability with maximum efficiency, cost control, and comfort you can feel.</>
+              }
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 1.6 PROBLEM & SOLUTION - NEW PITCH NARRATIVE */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           
