@@ -142,7 +142,7 @@ export default function Home() {
       <Navbar />
 
       {/* 1. HERO - ORIGINAL DESIGN */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/new/hero-bg.jpg" 
@@ -168,7 +168,10 @@ export default function Home() {
               {language === 'nl' ? 'Duurzame woningen op maat' : 'Sustainable Homes Tailored to You'}
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">
-              {language === 'nl' ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energie-efficiënt, duurzaam en betaalbaar.' : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'}
+              {language === 'nl' 
+                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">Senmar</a>, toonaangevend in duurzame bouwtechnologie, leveren wij hoogwaardige passieve huizen, kantoren en renovaties die echte duurzaamheid combineren met maximale efficiëntie en kostenbeheersing. Energieslimme oplossingen op maat voor Nederlandse gezinnen—gecontroleerde kosten, toekomstbestendig en gebouwd om te blijven.</>
+                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">Senmar</a>, leading sustainable building technology, we deliver high-quality passive houses, offices, and renovations that combine real sustainability with maximum efficiency and cost control. Energy-smart solutions tailored to the needs of Dutch families—controlled costs, future proof, and built to last.</>
+              }
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/31629841297" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
