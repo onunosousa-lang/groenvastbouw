@@ -140,8 +140,8 @@ export default function Home() {
         <div className="container mx-auto px-4 z-10 pt-24">
           <div className="max-w-3xl lg:mx-0 mx-auto">
             <div className="mb-6">
-              <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>
-              <p className="text-xl md:text-2xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
+              <h2 className="text-xl md:text-2xl font-bold text-[#7FB956] mb-2">Groenvastbouw</h2>
+              <p className="text-lg md:text-xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
               {language === 'nl' ? 'Duurzame woningen op maat' : 'Sustainable Homes Tailored to You'}
@@ -173,8 +173,8 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
               {language === 'nl' 
-                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, een bedrijf dat toonaangevend is in duurzame bouwtechnologie, leveren wij echte oplossingen voor Nederlandse gezinnen. Hoogwaardige passieve huizen die echte duurzaamheid combineren met maximale efficiëntie, kostenbeheersing en comfort dat je voelt.</>
-                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, a company leading sustainable building technology, we deliver real solutions for Dutch families. High quality passive houses that combine genuine sustainability with maximum efficiency, cost control, and comfort you can feel.</>
+                ? <>Samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, een leider in duurzame bouwtechnologie, creëren wij woningen die werken voor Nederlandse gezinnen. Hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
+                : <>Together with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, a leader in sustainable building technology, we create homes that work for Dutch families. High quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
               }
             </p>
           </div>
@@ -528,17 +528,11 @@ export default function Home() {
       </section>
 
       {/* 5. FAQ Link Section (Mapped to #faq) */}
-      <section id="faq" className="py-20 bg-white">
+      <section id="faq" className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">FAQ</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            {language === 'nl' 
-              ? 'Vind antwoorden op veelgestelde vragen over passieve huizen en het Senmar systeem.'
-              : 'Find answers to frequently asked questions about passive houses and the Senmar system.'}
-          </p>
           <a 
             href="/faq" 
-            className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-[#7FB956] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#6da545] transition-colors shadow-lg hover:shadow-xl"
           >
             {language === 'nl' ? 'FAQ – Veelgestelde Vragen' : 'FAQ – Frequently Asked Questions'}
             <ChevronDown size={20} className="rotate-[-90deg]" />
