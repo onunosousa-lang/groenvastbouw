@@ -141,8 +141,8 @@ export default function Home() {
       <SEO />
       <Navbar />
 
-      {/* 1. HERO - ORIGINAL DESIGN */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* 1. HERO - OPTIMIZED LAYOUT */}
+      <section id="hero" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/new/hero-bg.jpg" 
@@ -158,26 +158,26 @@ export default function Home() {
             <div className="text-gray-700">€2,5M Verzekerd</div>
           </div>
         </div>
-        <div className="container mx-auto px-4 z-10">
-          <div className="max-w-4xl lg:mx-0 mx-auto">
-            <div className="mb-4 hidden lg:block">
+        <div className="container mx-auto px-4 z-10 pt-24">
+          <div className="max-w-3xl lg:mx-0 mx-auto">
+            <div className="mb-6">
               <h2 className="text-3xl md:text-4xl font-light text-green-400 mb-2">Groenvastbouw</h2>
               <p className="text-xl md:text-2xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
               {language === 'nl' ? 'Duurzame woningen op maat' : 'Sustainable Homes Tailored to You'}
             </h1>
-            <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg">
+            <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg max-w-2xl">
               {language === 'nl' 
-                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">Senmar</a>, toonaangevend in duurzame bouwtechnologie, leveren wij hoogwaardige passieve huizen, kantoren en renovaties die echte duurzaamheid combineren met maximale efficiëntie en kostenbeheersing. Energieslimme oplossingen op maat voor Nederlandse gezinnen—gecontroleerde kosten, toekomstbestendig en gebouwd om te blijven.</>
-                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">Senmar</a>, leading sustainable building technology, we deliver high-quality passive houses, offices, and renovations that combine real sustainability with maximum efficiency and cost control. Energy-smart solutions tailored to the needs of Dutch families—controlled costs, future proof, and built to last.</>
+                ? <>In samenwerking met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a> leveren wij toonaangevende duurzame bouwtechnologie. Hoogwaardige passieve huizen en renovaties die echte duurzaamheid combineren met maximale efficiëntie en kostenbeheersing voor Nederlandse gezinnen.</>
+                : <>In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-semibold">Senmar</a>, we deliver leading sustainable building technology. High-quality passive houses and renovations that combine real sustainability with maximum efficiency and cost control for Dutch families.</>
               }
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/31629841297" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <a href="https://wa.me/31629841297" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
                 💬 WhatsApp Nuno Direct
               </a>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-6 backdrop-blur-sm" onClick={() => scrollToSection('services')}>
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-5 backdrop-blur-sm" onClick={() => scrollToSection('services')}>
                 {language === 'nl' ? 'Onze diensten' : 'Our services'}
               </Button>
             </div>
