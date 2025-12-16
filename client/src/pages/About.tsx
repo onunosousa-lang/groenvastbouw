@@ -169,7 +169,7 @@ export default function About() {
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">
-                {language === 'nl' ? 'Fabriek Unit 1 | Coija, Portugal' : 'Factory Unit 1 | Coija, Portugal'}
+                {language === 'nl' ? 'Fabriek Unit 1 | Coja, Portugal' : 'Factory Unit 1 | Coja, Portugal'}
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ export const translations = {
     // Senmar Section
     senmar_title: "Technologie van Senmar Portugal",
     senmar_subtitle: "Industriële precisie ontmoet ambachtelijke kwaliteit",
-    senmar_factory: "4.000 m² fabriek in Coija, Portugal",
+    senmar_factory: "4.000 m² fabriek in Coja, Portugal",
     senmar_capacity: "Capaciteit 19.000 m² per jaar",
     senmar_precision: "CNC-precisie met 1mm tolerantie",
     senmar_certified: "FSC & CE gecertificeerd",
@@ -210,7 +210,7 @@ export const translations = {
     // Senmar Section
     senmar_title: "Technology from Senmar Portugal",
     senmar_subtitle: "Industrial precision meets artisan quality",
-    senmar_factory: "4,000 m² factory in Coija, Portugal",
+    senmar_factory: "4,000 m² factory in Coja, Portugal",
     senmar_capacity: "Capacity 19,000 m² per year",
     senmar_precision: "CNC precision with 1mm tolerance",
     senmar_certified: "FSC & CE certified",
