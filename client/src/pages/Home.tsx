@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* 2. TECHNOLOGY (Mapped to #senmar) */}
-      <section id="senmar" className="relative py-20 overflow-hidden bg-white">
+      <section id="technology" className="relative py-20 overflow-hidden bg-white">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -369,7 +369,7 @@ export default function Home() {
       </section>
 
       {/* 3. MARKETS (Mapped to #benefits) */}
-      <section id="benefits" className="py-20 bg-gray-50">
+      <section id="markets" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{language === 'nl' ? 'Oplossingen op Maat' : 'Tailored Solutions'}</h2>
@@ -404,7 +404,7 @@ export default function Home() {
       </section>
 
       {/* 4. SYSTEMS (Mapped to #services) */}
-      <section id="services" className="py-20 bg-gray-900 text-white">
+      <section id="systems" className="py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">{language === 'nl' ? 'Geavanceerde Bouwsystemen' : 'Advanced Construction Systems'}</h2>
