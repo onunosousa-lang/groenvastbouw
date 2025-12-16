@@ -362,7 +362,7 @@ export default function Home() {
               </a>
             </div>
             <div className="relative">
-              <img src="/images/new/tech-frame.jpg" alt="Senmar CNC Timber Frame" className="rounded-lg shadow-2xl" onError={(e) => { e.currentTarget.src = "/images/construction_1.jpg" }} />
+              <img src="/senmar-photos/factory_senmar(4).jpg" alt="Senmar CNC Timber Frame" className="rounded-lg shadow-2xl" />
             </div>
           </div>
         </div>
@@ -378,7 +378,7 @@ export default function Home() {
             {/* B2C */}
             <Card className="border-none shadow-xl overflow-hidden">
               <div className="h-64 overflow-hidden relative">
-                <img src="/images/new/b2c-luxury.jpg" alt="Private Luxury Home" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = "/images/vista_interior.jpg" }} />
+                <img src="/senmar-photos/senmar_montage(5).jpg" alt="Private Luxury Home" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">Particulier</div>
               </div>
               <CardContent className="p-8">
@@ -390,7 +390,7 @@ export default function Home() {
             {/* B2B */}
             <Card className="border-none shadow-xl overflow-hidden">
               <div className="h-64 overflow-hidden relative">
-                <img src="/images/new/b2b-project.jpg" alt="Business Development" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = "/images/construction_2.jpg" }} />
+                <img src="/senmar-photos/senmar_montage(22).jpg" alt="Business Development" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-gray-900 text-white px-3 py-1 rounded-full text-sm font-bold">Zakelijk</div>
               </div>
               <CardContent className="p-8">

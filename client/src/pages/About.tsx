@@ -164,10 +164,9 @@ export default function About() {
             </div>
             <div className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/senmar/002.webp" 
+                src="/senmar-photos/factory_senmar(12).jpg" 
                 alt="Senmar CNC Factory Production" 
                 className="absolute inset-0 w-full h-full object-cover"
-                onError={(e) => { e.currentTarget.src = "/images/senmar-factory.jpg" }}
               />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">
                 {language === 'nl' ? 'Fabriek Unit 1 | Coija, Portugal' : 'Factory Unit 1 | Coija, Portugal'}
