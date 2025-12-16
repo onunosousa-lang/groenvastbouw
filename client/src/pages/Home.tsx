@@ -347,7 +347,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-gray-900 mb-4">{language === 'nl' ? 'Technologie & Innovatie' : 'Technology & Innovation'}</h2>
               <p className="text-xl text-gray-600 mb-6">{language === 'nl' ? 'De Nieuwe Standaard in Systeembouw' : 'The New Standard in System Construction'}</p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                {language === 'nl' ? 'Groenvastbouw werkt samen met Senmar om geavanceerde bouwoplossingen naar Nederland te brengen. Wij combineren state-of-the-art technologie met vakmanschap. CNC-precisie elimineert fouten en garandeert consistente kwaliteit in elk project.' : 'Groenvastbouw partners with Senmar to bring cutting edge building solutions to the Netherlands. We combine state of the art technology with expert craftsmanship. CNC precision eliminates errors and guarantees consistent quality in every project.'}
+                {language === 'nl' ? <>Groenvastbouw werkt samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> om geavanceerde bouwoplossingen naar Nederland te brengen. Wij combineren state-of-the-art technologie met vakmanschap. CNC-precisie elimineert fouten en garandeert consistente kwaliteit in elk project.</> : <>Groenvastbouw partners with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> to bring cutting edge building solutions to the Netherlands. We combine state of the art technology with expert craftsmanship. CNC precision eliminates errors and guarantees consistent quality in every project.</>}
               </p>
               <p className="text-lg font-semibold text-gray-800 mb-4">{language === 'nl' ? 'Bewezen Prestaties. Echte Resultaten.' : 'Proven Performance. Real Results.'}</p>
               <ul className="space-y-3 mb-8">
@@ -520,8 +520,8 @@ export default function Home() {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               {language === 'nl'
-                ? 'Houtskeletbouw (Senmar) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.'
-                : 'Timber frame construction (Senmar) uses 50% less energy during production than concrete construction. After ~4 years, the house has paid back its construction investment and becomes carbon-positive for 50+ years.'}
+                ? <>Houtskeletbouw (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a>) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.</>
+                : <>Timber frame construction (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a>) uses 50% less energy during production than concrete construction. After ~4 years, the house has paid back its construction investment and becomes carbon-positive for 50+ years.</>}
             </p>
           </div>
         </div>

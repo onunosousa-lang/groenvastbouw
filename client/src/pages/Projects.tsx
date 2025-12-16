@@ -117,8 +117,8 @@ export default function Projects() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   {language === 'nl'
-                    ? 'Een modern passief kantoorgebouw gebouwd met Senmar technologie. Dit project toont onze expertise in commerciële constructie met focus op duurzaamheid en energie-efficiëntie.'
-                    : 'A modern passive office building constructed with Senmar technology. This project showcases our expertise in commercial construction with a focus on sustainability and energy efficiency.'}
+                    ? <>Een modern passief kantoorgebouw gebouwd met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> technologie. Dit project toont onze expertise in commerciële constructie met focus op duurzaamheid en energie-efficiëntie.</>
+                    : <>A modern passive office building constructed with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> technology. This project showcases our expertise in commercial construction with a focus on sustainability and energy efficiency.</>}
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   {language === 'nl'

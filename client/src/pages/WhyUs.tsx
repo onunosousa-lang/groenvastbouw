@@ -42,12 +42,12 @@ export default function WhyUs() {
                 {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                {language === 'nl' ? 'Groenvastbouw × Senmar' : 'Groenvastbouw × Senmar'}
+                {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Senmar</a></>}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {language === 'nl' 
-                  ? 'Groenvastbouw is partner van Senmar in Nederland. Senmar, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert Senmar Portugese vakmanschap met geavanceerde CNC-automatisering.'
-                  : 'Groenvastbouw is a partner of Senmar in the Netherlands. Senmar, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², Senmar combines Portuguese craftsmanship with advanced CNC automation.'}
+                  ? <>Groenvastbouw is partner van <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> in Nederland. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a>, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> Portugese vakmanschap met geavanceerde CNC-automatisering.</>
+                  : <>Groenvastbouw is a partner of <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> in the Netherlands. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a>, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> combines Portuguese craftsmanship with advanced CNC automation.</>}
               </p>
               <a 
                 href="https://senmar.pt" 
@@ -226,8 +226,8 @@ export default function WhyUs() {
                <h3 className="text-2xl font-bold text-green-900 mb-4">Carbon Negative Bouwen</h3>
                <p className="text-green-800 mb-6 text-lg leading-relaxed">
                  {language === 'nl' 
-                   ? 'De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. Senmar gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.' 
-                   : 'The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. Senmar uses only FSC-certified wood and strives for a fully carbon-negative production chain.'}
+                   ? <>De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.</> 
+                   : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
                  <div className="bg-white/60 p-4 rounded-lg">
@@ -257,8 +257,8 @@ export default function WhyUs() {
           </h2>
           <p className="text-xl mb-10 text-green-100">
             {language === 'nl' 
-              ? 'Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en Senmar uw project kunnen transformeren.'
-              : 'Contact us today for a no-obligation consultation and discover how Groenvastbouw and Senmar can transform your project.'}
+              ? <>Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> uw project kunnen transformeren.</>
+              : <>Contact us today for a no-obligation consultation and discover how Groenvastbouw and <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> can transform your project.</>}
           </p>
           <a 
             href="#contact" 

@@ -139,10 +139,10 @@ export default function FAQPage() {
   let questionIndex = 0;
 
   const content = {
-    title: language === 'nl' ? 'FAQ – Passieve Huizen & Senmar Systeem' : 'FAQ – Passive Houses & Senmar System',
+    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Senmar</a> System</>,
     intro: language === 'nl' 
-      ? 'Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het Senmar prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.'
-      : 'Groenvastbouw offers high-performance timber frame passive houses in cooperation with the Senmar prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.',
+      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
+      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline font-semibold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Neem Contact Op' : 'Contact Us',
     chatWhatsApp: language === 'nl' ? 'Chat via WhatsApp' : 'Chat via WhatsApp',
