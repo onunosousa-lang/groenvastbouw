@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import WhyUs from "./pages/WhyUs";
+import ExtendedFAQ from "./pages/ExtendedFAQ";
 import SchemaMarkup from "./components/SchemaMarkup";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/projecten" component={Projects} />
       <Route path="/about" component={About} />
       <Route path="/why-us" component={WhyUs} />
+      <Route path="/faq" component={ExtendedFAQ} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

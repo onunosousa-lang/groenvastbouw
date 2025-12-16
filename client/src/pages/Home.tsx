@@ -65,22 +65,52 @@ export default function Home() {
 
   const faqs = [
     {
-      question_nl: "Wat is Senmar MOD technologie?",
-      question_en: "What is Senmar MOD technology?",
-      answer_nl: "Senmar MOD (Modular On Demand) is een geïndustrialiseerd bouwproces. Door elementen in een geconditioneerde fabriek te produceren met CNC-precisie, elimineren we weersinvloeden en menselijke fouten.",
-      answer_en: "Senmar MOD (Modular On Demand) is an industrialized construction process. By producing elements in a conditioned factory with CNC precision, we eliminate weather influences and human errors."
+      question_nl: "Wat bouwt Groenvastbouw?",
+      question_en: "What does Groenvastbouw build?",
+      answer_nl: "Groenvastbouw biedt hoogwaardige houtskelet passieve huizen en andere gebouwen in samenwerking met het Senmar prefab systeem. De focus ligt op energiezuinige, duurzame en kosteneffectieve woningen voor de Nederlandse markt.",
+      answer_en: "Groenvastbouw offers high-performance timber frame passive houses and other buildings in cooperation with the Senmar prefab system. The focus is on energy-efficient, sustainable and cost-effective homes for the Dutch market."
+    },
+    {
+      question_nl: "Wat is het Senmar Passive House systeem?",
+      question_en: "What is the Senmar Passive House system?",
+      answer_nl: "Senmar produceert geprefabriceerde houtskelet elementen in een gecontroleerde fabrieksomgeving, ontworpen voor hoge isolatie, luchtdichtheid en minimale koudebruggen. Deze elementen worden naar de bouwplaats getransporteerd en doorgaans binnen dagen gemonteerd tot een wind- en waterdichte constructie, afhankelijk van projectomvang en logistiek.",
+      answer_en: "Senmar produces prefabricated timber frame elements in a controlled factory environment, engineered for high insulation, airtightness and minimal thermal bridges. These elements are transported to site and typically assembled into a weather-tight structure within days, depending on project size and logistics."
     },
     {
       question_nl: "Hoe energiezuinig zijn deze woningen?",
       question_en: "How energy efficient are these homes?",
-      answer_nl: "Onze woningen besparen tot 90% op energie. Met isolatiewaarden tot R-10 en luchtdichte constructie voldoen we aan de strengste Passivhaus-normen.",
-      answer_en: "Our homes save up to 90% on energy. With insulation values up to R-10 and airtight construction, we meet the strictest Passive House standards."
+      answer_nl: "Passief huis concepten zoals het Senmar systeem kunnen de warmtevraag met ongeveer 75-90% verminderen vergeleken met conventionele huizen, mits correct ontworpen en uitgevoerd. Een passief huis van 150 m² met zeer lage energievraag kan tienduizenden euro's aan energiekosten besparen over 30 jaar vergeleken met een gemiddeld bestaand huis, maar exacte besparingen hangen af van ontwerp, gebruikersgedrag en energieprijzen.",
+      answer_en: "Passive house concepts like the Senmar system can reduce heating energy demand by roughly 75-90% compared to conventional houses, if designed and executed correctly. A 150 m² passive house example with very low energy demand can save tens of thousands of euros in energy costs over 30 years compared to a typical existing house, but exact savings depend on design, user behaviour and energy prices."
     },
     {
-      question_nl: "Wat is de levertijd?",
-      question_en: "What is the delivery time?",
-      answer_nl: "Dankzij onze geoptimaliseerde productielijn kunnen we een casco woning wind- en waterdicht opleveren in slechts 7-10 dagen op locatie.",
-      answer_en: "Thanks to our optimized production line, we can deliver a shell home wind and watertight in just 7-10 days on site."
+      question_nl: "Wat is de levertijd van bestelling tot montage?",
+      question_en: "What is the lead time from order to mounted structure?",
+      answer_nl: "Voor standaard projecten is een indicatieve levertijd van ongeveer 3 maanden van bestelling tot montage van de constructieve schil op locatie realistisch, afhankelijk van engineering, vergunningen en fabrieksplanning. Eenmaal op locatie duurt de montage van de hoofdconstructie normaal gesproken één tot twee weken, afhankelijk van grootte en complexiteit.",
+      answer_en: "For standard projects, an indicative lead time of about 3 months from order to mounting of the structural shell on site is realistic, subject to engineering, permits and factory planning. Once on site, assembly of the main structure normally takes around one to two weeks, depending on size and complexity."
+    },
+    {
+      question_nl: "Leveren jullie alleen casco of volledig afgewerkt?",
+      question_en: "Do you deliver shell only or fully finished?",
+      answer_nl: "Groenvastbouw kan alleen de constructieve schil leveren met voorbereiding voor gevelbekleding, of bekleding als onderdeel van het pakket opnemen, afhankelijk van de overeenkomst. Daken kunnen worden voorbereid voor dakpannen (met panlatten) of geleverd met andere afwerkingen zoals plat dak membranen, in lijn met Senmar's prefab dakoplossingen.",
+      answer_en: "Groenvastbouw can supply just the structural shell with preparation for façade cladding, or include cladding as part of the package, depending on the agreement. Roofs can be prepared for tiles (with battens) or delivered with other finishes such as flat-roof membranes, in line with Senmar's prefab roof solutions."
+    },
+    {
+      question_nl: "Welke interieur- en installatieopties zijn mogelijk?",
+      question_en: "What interior and installation options are possible?",
+      answer_nl: "Afhankelijk van het gekozen pakket en lokale partners, kan de prefab constructie worden gecombineerd met ramen en deuren, gipsplaten interieur, houtafwerkingen en binnendeuren. Voorbereiding voor elektrische punten en leidingwerk is mogelijk en een volledig ingerichte keuken en badkamer kan worden geregeld via Groenvastbouw en/of lokale aannemers, maar de exacte scope is projectspecifiek.",
+      answer_en: "Depending on the chosen package and local partners, the prefab structure can be combined with windows and doors, interior drywall, timber finishes and internal doors. Preparation for electrical points and plumbing is possible and a fully fitted kitchen and bathroom can be arranged via Groenvastbouw and/or local contractors, but the exact scope is project-specific."
+    },
+    {
+      question_nl: "Wat zijn de prijsindicaties per m²?",
+      question_en: "What are the price indications per m²?",
+      answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.100 per m² voor het constructieve deel van een passief huis als indicatie, met totale projectkosten afhankelijk van ontwerp, afwerkingen, installaties en grondwerk. Een projectspecifieke analyse is altijd nodig voor een concrete kostenraming en planning, wij garanderen nauwkeurige kostenbeheersing zonder verborgen verrassingen.",
+      answer_en: "Groenvastbouw communicates starting prices from about €1,100 per m² for the structural part of a passive house as an indication, with total project costs depending on design, finishes, installations and groundworks. A project-specific analysis is always needed to give a concrete cost estimate and planning, we guarantee precise cost control without hidden surprises."
+    },
+    {
+      question_nl: "Hoe start ik een project?",
+      question_en: "How do I start a project?",
+      answer_nl: "Neem gewoon contact met ons op! Scroll naar beneden naar het contactformulier of bel ons direct.",
+      answer_en: "Just get in touch! Scroll down to the contact form or call us directly."
     }
   ];
 
@@ -559,6 +589,11 @@ export default function Home() {
                 {openFaq === index && <p className="mt-4 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">{language === 'nl' ? faq.answer_nl : faq.answer_en}</p>}
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <a href="/faq" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold transition-colors">
+              {language === 'nl' ? 'Lees meer over passieve huizen en het Senmar systeem →' : 'Read more about passive houses and the Senmar system →'}
+            </a>
           </div>
         </div>
       </section>
