@@ -142,6 +142,9 @@ export default function Projects() {
                         src={image} 
                         alt={`Chocolate Makers project ${index + 1}`}
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                        loading="lazy"
+                        width="400"
+                        height="400"
                       />
                     </div>
                   ))}

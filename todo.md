@@ -1,329 +1,39 @@
-# Groenvastbouw Website TODO - Redesign
+# Groenvastbouw Optimization Checklist
 
-## Alterações Solicitadas
+## 1. High Priority (Performance & User Experience)
 
-- [x] Remover todos os preços específicos
-- [x] Adicionar logo da Groenvastbouw
-- [x] Adicionar mais fotos ao site
-- [x] Implementar backgrounds dinâmicos com imagens
-- [x] Adicionar transparências e overlays
-- [x] Criar seção de Serviços (casas, escritórios, extensões, renovações)
-- [x] Enfatizar serviços turnkey vs. apenas estrutura
-- [x] Melhorar seção Senmar com link externo e mais detalhes
-- [x] Criar seção FAQ detalhada
-- [x] Mover informação do fundador para o final
-- [x] Atualizar email para info@groenvastbouw.nl
-- [x] Atualizar telefone para 0629841297
-- [x] Reduzir espaços brancos
-- [x] Adicionar mais elementos visuais
-- [x] Implementar estilo carousel/slider
-- [x] Focar em qualidade de vida e materiais de alta qualidade
-- [x] Destacar eficiência energética e especificações passivas
+### App.tsx
+- [x] **Implement Lazy Loading:** Replace static imports for pages with `React.lazy` and wrap routes in `<Suspense>`.
 
-## Novas Alterações Solicitadas
+### Projects.tsx
+- [x] **Optimize Gallery Images:** Add `loading="lazy"` to `<img>` tags.
+- [x] **Prevent CLS:** Ensure `width` and `height` or aspect-ratio classes are correctly applied.
 
-- [x] Redesenhar header inspirado no Senmar (navegação horizontal limpa)
-- [x] Usar logo apenas com símbolo (sem texto)
-- [x] Adicionar tagline "Nuchter bouwen. Slim wonen."
-- [x] Adicionar preços por m² para estrutura
-- [x] Atualizar timeline: 3 meses estrutura + 3 meses acabamentos
-- [x] Clarificar que turnkey depende de acabamentos individuais
-- [x] Adicionar botão flutuante WhatsApp
-- [x] Corrigir informação sobre anos de experiência da Senmar
-- [x] Criar seção de preços com 3 níveis (Optimal, Passive, Super Passive)
-- [x] Adicionar preços turnkey e estrutura separados
+### Navbar.tsx
+- [x] **Throttle Scroll Event:** Wrap `setIsScrolled` in a throttle function.
+- [x] **Fix "Scroll to Section" Logic:** Replace `setTimeout` with a more robust solution.
 
-## Correções e Melhorias Finais
+### Home.tsx (Video)
+- [x] **Lazy Load Video:** Refactor video element to use `IntersectionObserver`.
 
-- [x] Trocar logo para versão com fundo transparente
-- [x] Corrigir problema do header (barra preta no lado direito)
-- [x] Gerar imagem AI de floresta de pinheiros com casas prefabricadas para header
-- [x] Substituir botão WhatsApp por widget de chat integrado
-- [x] Adicionar assistente AI/chatbot para responder perguntas
+## 2. Medium Priority (Code Structure & Maintenance)
 
-## Novas Secções a Adicionar
+### Home.tsx (Refactoring)
+- [x] **Extract Components:**
+    - [x] `HeroSection.tsx`
+    - [x] `ProblemSolution.tsx`
+    - [x] `SenmarVideo.tsx`
+    - [x] `TechnologySection.tsx`
+    - [x] `MarketsSection.tsx`
+    - [x] `SystemsSection.tsx`
+    - [x] `EnergyComparison.tsx`
+    - [x] `ContactForm.tsx`
+- [x] **Refactor Forms:** Use `react-hook-form` and `zod`.
 
-- [x] Adicionar secção "Princípios" com ilustrações
-- [x] Adicionar secção "O que construímos" com diferentes tipos de projetos
-- [x] Gerar imagens ilustrativas para cada princípio (usando ícones)
-- [x] Adicionar cards para cada tipo de construção
+### Translations
+- [x] **Centralize Translations:** Move content arrays from `Home.tsx` to `translations.ts`.
 
-## Correção de Header
+## 3. Low Priority (Polish)
 
-- [ ] Verificar e corrigir display do header no preview
-- [ ] Garantir que menu horizontal aparece corretamente em desktop
-
-## Correções Finais
-
-- [x] Corrigir textos em português na versão holandesa
-- [ ] Combinar chatbot AI + WhatsApp num único widget
-- [x] Ativar formulário de contacto funcional (enviar para info@groenvastbouw.nl)
-- [x] Remover "key in hand" da tabela de preços
-- [x] Adicionar asterisco (*) aos preços
-- [x] Adicionar nota: "Preços indicativos, não incluem trabalhos de fundação"
-
-- [x] Ajustar preços para refletir apenas estrutura Senmar (sem transporte/montagem)
-- [x] Verificar precisão dos preços nos documentos fornecidos
-- [x] Atualizar nota: "Preços apenas para estrutura. Fundações, transporte e montagem calculados separadamente"
-
-## Novas Funcionalidades
-
-- [x] Criar página separada "/projecten" para portfolio
-- [x] Adicionar projeto Chocolate Makers na página de projecten
-- [x] Expandir secção de serviços (adicionar Advies, Development)
-- [x] Otimizar SEO completo (meta tags, schema.org, alt text)
-- [x] Adicionar sitemap e robots.txt
-- [x] Combinar chatbot AI + WhatsApp num único widget
-- [x] Ativar formulário de contacto funcional
-
-## Correção do Chatbot
-
-- [x] Reduzir altura do chatbot para garantir que botão de fechar seja visível (600px → 500px + max-h-80vh)
-- [x] Ajustar posicionamento para ficar mais baixo na tela
-- [x] Testar em diferentes resoluções
-
-## Correção de Navegação entre Páginas
-
-- [x] Corrigir Navbar para usar Link do wouter em vez de âncoras (#)
-- [x] Atualizar navegação para funcionar entre Home e Projecten
-- [x] Adicionar lógica para navegar para home antes de scroll to section
-
-## Correções Adicionais Urgentes
-
-- [x] Corrigir altura do chatbot na página Projecten (ainda muito alto, impossível fechar)
-- [x] Configurar formulário de contacto para enviar emails corretamente
-- [x] Testar formulário de contacto
-
-## Novas Melhorias
-
-- [x] Adicionar favicon ao website
-- [x] Otimizar SEO completo (meta tags, Open Graph, Twitter Cards)
-- [x] Aplicar nova paleta de cores "Modern Eco" ao CSS
-
-## Correção de Fontes
-
-- [x] Reverter fontes para versão original (remover Inter + Playfair Display)
-
-## Remoção de Preços Turnkey e Melhorias
-
-- [x] Remover preços turnkey da secção "Wat zijn de kosten?"
-- [x] Manter apenas preços de estrutura
-- [x] Atualizar textos para focar em estrutura + parceiros para afwerking
-
-## Atualização de Favicon
-
-- [x] Criar favicon com logo oficial da Groenvastbouw
-- [x] Gerar múltiplos tamanhos (16x16, 32x32, 180x180)
-- [x] Atualizar referências no HTML
-
-## Melhorias Mobile e SEO
-
-- [x] Ajustar header mobile: logo centrado, 10% maior
-- [x] Adicionar nome "Groenvastbouw" no header mobile
-- [x] Mostrar slogan no header mobile
-- [x] Implementar Schema.org markup (Organization, LocalBusiness, Service)
-- [x] Criar sitemap.xml melhorado
-- [x] Criar robots.txt
-- [x] Adicionar meta tags adicionais para SEO local (geo tags, keywords expandidas)
-
-## Rebalanceamento Layout Mobile
-
-- [x] Header mobile: logo + "Groenvastbouw" centrados e totalmente visíveis
-- [x] Remover slogan verde pequeno do header
-- [x] Remover "Groenvastbouw" grande verde da hero section (mobile only)
-- [x] Mover slogan branco para logo abaixo do header (centrado, fixed)
-- [x] Subir texto "Duurzame Woningen op Maat" para balancear (-mt-16)
-
-## Redesign Mobile Estilo Senmar
-
-- [x] Header transparente sem cor de fundo (mobile)
-- [x] Apenas logo no header (canto superior esquerdo, h-12)
-- [x] Remover barra fixa do slogan abaixo do header
-- [x] Slogan grande e centrado sobre a imagem hero (text-4xl + text-3xl)
-- [x] Layout minimalista e limpo
-
-## Atualização Final - Logo Verde-Limão e Nova Imagem
-
-- [x] Usar novo logo verde-limão (melhor contraste)
-- [x] Mobile: "Nuchter bouwen. Slim wonen." numa só linha (text-3xl italic)
-- [x] Remover "Slim wonen" separado de baixo
-- [x] Adicionar "Groenvastbouw" centrado ao lado do logo no topo (text-xl)
-- [x] Balancear texto principal
-- [x] Gerar nova imagem hero com prompt fornecido (casa passiva golden hour)
-- [x] Substituir imagem de fundo atual (hero-groenvastbouw.jpg)
-
-## Ajuste Final Layout Mobile
-
-- [x] Logo transparente à esquerda (h-12)
-- [x] Texto "Groenvastbouw" centrado na tela (text-lg bold)
-- [x] Slogan "Nuchter bouwen. Slim wonen." numa linha, fonte normal (text-xl font-normal italic)
-- [x] Reduzir gap entre slogan e texto principal (mb-12 → mb-6)
-- [x] Subir resto do conteúdo hero
-
-## Bugs a Corrigir Urgente
-
-- [x] Logo transparente verificado e cache buster adicionado (?v=2)
-- [x] "Groenvastbouw" restaurado no header mobile (text-lg bold centrado)
-- [x] Texto hero subido (-mt-20 para slogan, -mt-12 para conteúdo)
-- [x] Desktop protegido com classes lg:mt-0 (não afetado)
-
-## Correções Finais Header e Slogan
-
-- [x] Logo ao lado de "Groenvastbouw" (juntos com gap-2)
-- [x] Texto "Groenvastbouw" centrado no header (logo posicionado à esquerda dele)
-- [x] Slogan muito mais alto (-mt-32, -mt-16 para conteúdo)
-
-## Bugs Críticos a Corrigir
-
-- [ ] Texto sobreposto - "Groenvastbouw" e slogan em cima um do outro
-- [ ] Logo ainda tem fundo branco (não é transparente)
-- [ ] Verificar se logo correto foi copiado
-
-## Bugs Críticos a Corrigir AGORA
-
-- [x] Texto sobreposto corrigido - removido posicionamento absoluto problemático
-- [x] Slogan e corpo separados - flex-col com justify-center no container
-- [x] Logo transparente RGBA copiado corretamente
-- [x] Cache buster atualizado para v=4
-
-## Ajustes Finais de Espaçamento e Balanço
-
-- [x] Logo e texto lado a lado com gap-2 (sem sobreposição)
-- [x] Slogan mais perto do topo (-mt-24, mb-16 para balanço)
-- [x] Separação adequada entre slogan e corpo (mb-16)
-- [x] Removido posicionamento absoluto (sem sobreposições)
-
-## Correção de Texto
-
-- [x] Corrigido "Duurzame Woningen op Maat" para "Duurzame woningen op maat"
-
-## Melhorias de Credibilidade e Profissionalismo
-
-### Pesquisa e Dados
-- [x] Pesquisar especificações técnicas Senmar (certificações, valores U, etc.)
-- [x] Encontrar/calcular certificação energética (EPC label A++/A+++)
-- [x] Pesquisar benefícios fiscais NL para construção passiva (ISDE)
-- [x] Comparar tempo de construção: 50-70% mais rápido
-- [x] Comparar consumo energético: 60-90% menos energia
-
-### Conteúdo
-- [x] Reescrever secção "Sobre mim" - experiência ampla, projeto Amsterdam
-- [x] Adicionar preços de referência leves na FAQ (€270-340/m² com asterisco)
-- [x] Adicionar nova FAQ sobre vantagens técnicas e energia
-- [x] Adicionar dados de certificação energética (EPC A++/A+++)
-- [x] Manter design limpo e não sobrecarregado
-
-## Integração DeepSeek API no Chatbot
-
-- [x] Criar router tRPC para DeepSeek chat
-- [x] Criar system prompt personalizado com info Groenvastbouw
-- [x] Adicionar constraints para manter foco em construção sustentável
-- [x] Implementar histórico de conversação
-- [x] Atualizar componente AIChat frontend
-- [x] Adicionar DEEPSEEK_API_KEY via webdev_request_secrets
-- [x] Verificar que chatbot está funcionando (sem erros TypeScript/build)
-
-## Melhoria System Prompt Chatbot
-
-- [x] Extrair dados-chave dos documentos fornecidos
-- [x] Adicionar comparações de mercado ao system prompt
-- [x] Reescrever tom mais conversacional e humano
-- [x] Remover formatação Markdown (asteriscos, hífens)
-- [x] Adicionar resposta específica "Porquê Groenvastbouw?"
-- [x] Testar chatbot com perguntas reais
-
-## Bug Chatbot Mobile
-
-- [x] Investigar: chatbot mobile dá respostas curtas e genéricas
-- [x] Comparar com chatbot Manus (funciona bem)
-- [x] Verificar se histórico de conversação está a ser enviado corretamente
-- [x] Verificar se max_tokens está a limitar respostas
-- [x] Testar e corrigir - RESOLVIDO: max_tokens aumentado de 1000 para 2000
-
-## Google Search Console
-
-- [x] Adicionar ficheiro de verificação google354ff5512fe97ed9.html
-- [x] Copiar para client/public/
-- [x] Verificar que está acessível na raiz do site
-
-## Meta Tags Verificação Google
-
-- [x] Adicionar meta tag Google Search Console ao index.html
-- [x] Preparar placeholders para Google Analytics (aguardando ID)
-- [x] Preparar placeholders para Google Tag Manager (aguardando ID)
-- [x] Instruir sobre deploy no Vercel - Guia criado em VERCEL_DEPLOY_GUIDE.md
-
-## Deploy GitHub → Vercel
-
-- [x] Verificar estado do repositório Git
-- [x] Fazer push de 4 commits para GitHub (a0189b7 → 80b10de)
-- [x] Aguardar deploy automático no Vercel
-- [ ] Confirmar que novo deployment está em produção
-- [ ] Validar ficheiro Google Search Console em produção
-
-## Bug Chatbot Produção
-
-- [x] Chatbot dá erro "cannot respond" no mobile (produção)
-- [x] Verificar se DEEPSEEK_API_KEY está configurada no Vercel
-- [x] Criar guia para configurar environment variables no Vercel - VERCEL_SECRETS_GUIDE.md
-- [ ] Usuário: Adicionar DEEPSEEK_API_KEY no Vercel
-- [ ] Usuário: Fazer redeploy
-- [ ] Testar após configuração
-
-## Logs Detalhados Chatbot
-
-- [x] Adicionar logs para verificar se API key está presente
-- [x] Adicionar logs para erros específicos (401, 429, 500)
-- [x] Melhorar mensagens de erro para usuário
-- [ ] Fazer push e redeploy
-- [ ] Verificar logs no Vercel após testar chatbot
-
-## Debug Mode Chatbot
-
-- [x] Modificar AIChat.tsx para mostrar erros completos no browser
-- [x] Adicionar modo debug temporário
-- [x] Deploy e testar - push feito, aguardando Vercel
-- [ ] Identificar erro exato - aguardando teste do usuário
-- [ ] Remover debug mode após corrigir
-
-## Problema Identificado: Backend não funciona no Vercel
-
-- [x] Erro identificado: "The page c... is not valid JSON"
-- [x] Causa: Vercel retorna HTML em vez de JSON nas rotas API
-- [ ] Verificar vercel.json e configuração de rotas
-- [ ] Verificar se servidor está sendo deployado corretamente
-- [ ] Corrigir configuração
-- [ ] Testar em produção
-
-## Adaptar Backend para Vercel Serverless
-
-- [x] Criar pasta api/ com handler serverless
-- [x] Criar api/trpc.ts para processar chamadas tRPC
-- [x] Configurar vercel.json com rewrites corretos
-- [x] Instalar @vercel/node
-- [x] Push para GitHub - aguardando deploy Vercel
-- [ ] Testar em produção
-- [ ] Remover debug mode após confirmar funcionamento
-
-## Energy Comparison Update
-
-- [x] Add detailed energy comparison section with 7:1 ratio
-- [x] Include real savings example (€4,275/year for 150m² house)
-- [x] Add embodied energy payback explanation
-- [x] Show concrete kWh numbers for 150m² house comparison
-
-## English Translation
-
-- [x] Check existing translation system
-- [x] Add English translations for all content sections
-- [x] Ensure language toggle works properly on all pages
-- [x] Test all pages in both Dutch and English
-
-## Mobile Language Toggle & Homepage Enhancements
-
-- [x] Add language toggle button to mobile navbar (NL/EN)
-- [x] Hide Projects link from header navigation
-- [x] Add problem/solution narrative to homepage
-- [x] Emphasize speed, energy efficiency, future-proof, high quality
-- [ ] Test language toggle on mobile
-- [ ] Deploy changes to production
+### UI
+- [x] **Pause/Play Button:** Add toggle button for the "Senmar Solution" video.

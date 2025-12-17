@@ -163,6 +163,46 @@ export const translations = {
     solution_quality_desc: "CNC-precisie 1mm. Geen weerschade. 10 jaar garantie.",
     solution_future: "Toekomstbestendig",
     solution_future_desc: "Carbon-negatief. Passivhaus gecertificeerd. 50+ jaar levensduur.",
+
+    // Systems Array
+    systems_array: [
+      {
+        name: "Optimal",
+        r_value: "5.7",
+        insulation: "200mm",
+        desc: "De ideale balans tussen investering en prestatie. Overtreft standaard bouwbesluit-eisen ruimschoots.",
+        features: ["200mm Minerale Wol", "Dampopen constructie", "Rc > 5.0"]
+      },
+      {
+        name: "Passive",
+        r_value: "8.5",
+        insulation: "300mm",
+        desc: "Onze standaard voor energiezuinig wonen. Elimineert koudebruggen voor maximaal comfort.",
+        features: ["Dubbele isolatielaag", "Superieure luchtdichtheid", "Rc > 8.0"],
+        highlight: true
+      },
+      {
+        name: "Super Passive",
+        r_value: "10.5",
+        insulation: "350mm",
+        desc: "Ontworpen voor Passivhaus-certificering. De ultieme keuze voor nul-op-de-meter ambities.",
+        features: ["Drievoudige isolatielaag", "Passivhaus Certificeerbaar", "Rc > 10.0"]
+      }
+    ],
+
+    // Markets Array
+    markets_array: [
+      {
+        title: "Particulier & Wonen",
+        desc: "Realiseer uw droomhuis zonder bouwzorgen. Wij garanderen een vaste prijs, een vaste opleverdatum en een woning die klaar is voor de toekomst.",
+        benefits: ["Energiebesparing tot 90%", "Gezond binnenklimaat", "Sleutelklaar mogelijk"]
+      },
+      {
+        title: "Zakelijk & Ontwikkeling",
+        desc: "Schaalbare oplossingen voor projectontwikkelaars en woningcorporaties. Maximaliseer ROI door snelle bouwtijden en lage faalkosten.",
+        benefits: ["70% Sneller dan traditioneel", "Prefabricage in fabriek", "Voorspelbare kosten"]
+      }
+    ]
   },
   
   en: {
@@ -240,13 +280,13 @@ export const translations = {
     pricing_passive: "Passive ⭐ Our Standard",
     pricing_passive_desc: "Significant savings, proven ROI",
     pricing_super: "Super Passive",
-    pricing_super_desc: "Passive House certified - 75% less energy",
-    pricing_note: "* Prices for structure only. Foundations, transport and assembly are calculated separately.",
-    pricing_turnkey_note: "Finishing (turnkey) is custom and quoted separately based on your preferences.",
+    pricing_super_desc: "Passivhaus certified - 75% less energy",
+    pricing_note: "* Prices for structure only. Foundations, transport, and assembly are calculated separately.",
+    pricing_turnkey_note: "Finishing (turnkey) is custom work and quoted separately based on your wishes.",
     
     // Energy Comparison Section
     energy_comparison_title: "What Does 86% Savings Mean?",
-    energy_comparison_subtitle: "Concrete numbers for a 150m² home",
+    energy_comparison_subtitle: "Concrete figures for a 150m² home",
     energy_comparison_ratio: "Passive Houses = 1 Average House",
     energy_comparison_ratio_desc: "7 families in our Passive houses consume the same energy as 1 family in an average Dutch house",
     energy_comparison_average: "Average Dutch House",
@@ -261,25 +301,25 @@ export const translations = {
     energy_comparison_ventilation: "Ventilation",
     energy_comparison_cooling: "Cooling (summer)",
     energy_comparison_embodied: "Bonus: Lower Construction Impact",
-    energy_comparison_embodied_desc: "Timber frame construction (Senmar) uses 50% less energy during production than concrete construction. After ~4 years, the house has paid back its construction investment and becomes carbon-positive for 50+ years.",
+    energy_comparison_embodied_desc: "Timber frame construction (Senmar) uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.",
     
     // FAQ Section
     faq_title: "Frequently Asked Questions",
-    faq_timeline_q: "How long does the construction process take?",
+    faq_timeline_q: "How long does the building process take?",
     faq_timeline_a: "Factory production: 6-8 weeks. On-site assembly: 7-10 days for structure. Total construction time including finishing: 4-6 months (50-70% faster than traditional).",
     faq_price_q: "What are the costs per m²?",
-    faq_price_a: "Structure prices range from €1,100/m² (Optimal) to €1,300/m² (Super Passive). This is for the load-bearing structure only. Foundations, transport, assembly and finishing are calculated separately based on your project.",
+    faq_price_a: "Structure prices range from €1,100/m² (Optimal) to €1,300/m² (Super Passive). This is for the load-bearing structure only. Foundations, transport, assembly, and finishing are calculated separately based on your project.",
     faq_energy_q: "How much do I save on energy?",
-    faq_energy_a: "A Passive House consumes 60-90% less energy than an average Dutch home. For a 150m² house, this means savings of €4,000+ per year, or €120,000+ over 30 years.",
+    faq_energy_a: "A Passivhaus consumes 60-90% less energy than an average Dutch home. For a 150m² home, this means savings of €4,000+ per year, or €120,000+ over 30 years.",
     faq_design_q: "Can I realize my own design?",
-    faq_design_a: "Absolutely. Our modular system offers complete architectural freedom. Every project is unique - only production is standardized, not the design.",
+    faq_design_a: "Absolutely. Our modular system offers complete architectural freedom. Every project is unique - only the production is standardized, not the design.",
     faq_certification_q: "What certifications do you have?",
-    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Senmar is FSC and CE certified. Upon request, we can arrange Passive House certification.",
+    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Senmar is FSC and CE certified. We can arrange Passivhaus certification on request.",
     faq_warranty_q: "What is the warranty?",
     faq_warranty_a: "10-year warranty on the structure. Factory production means superior quality control and zero weather damage during construction.",
     faq_location_q: "Where do you build?",
     faq_location_a: "We build throughout the Netherlands. Transport from Portugal is efficient and sustainable thanks to optimized logistics.",
-    faq_foundation_q: "Do you also arrange the foundation?",
+    faq_foundation_q: "Do you also handle the foundation?",
     faq_foundation_a: "Yes, we can coordinate the entire project including foundation, or work with your own contractor.",
     
     // Contact Section
@@ -289,9 +329,9 @@ export const translations = {
     contact_email: "Email",
     contact_phone: "Phone",
     contact_message: "Tell us about your project",
-    contact_submit: "Send Inquiry",
+    contact_submit: "Send Request",
     contact_info_title: "Contact Details",
-    contact_success: "Thank you! We will contact you as soon as possible.",
+    contact_success: "Thanks! We will contact you as soon as possible.",
     contact_error: "Something went wrong. Please try again or call us directly.",
     
     // Footer
@@ -320,17 +360,54 @@ export const translations = {
     problem_energy: "High energy costs for residents",
     
     solution_title: "Our Solution",
-    solution_subtitle: "Industrial precision + Passive House standard",
+    solution_subtitle: "Industrial precision + Passivhaus standard",
     solution_speed: "70% Faster",
     solution_speed_desc: "Assembly in 7-10 days. Total construction time 4-6 months.",
     solution_energy: "90% Energy Savings",
     solution_energy_desc: "€4,000+ savings per year for an average family.",
     solution_quality: "Factory Control",
     solution_quality_desc: "CNC precision 1mm. No weather damage. 10-year warranty.",
-    solution_future: "Future-Proof",
-    solution_future_desc: "Carbon-negative. Passive House certified. 50+ year lifespan.",
+    solution_future: "Future Proof",
+    solution_future_desc: "Carbon-negative. Passivhaus certified. 50+ year lifespan.",
+
+    // Systems Array
+    systems_array: [
+      {
+        name: "Optimal",
+        r_value: "5.7",
+        insulation: "200mm",
+        desc: "The ideal balance between investment and performance. Far exceeds standard building code requirements.",
+        features: ["200mm Mineral Wool", "Breathable construction", "R-value > 5.0"]
+      },
+      {
+        name: "Passive",
+        r_value: "8.5",
+        insulation: "300mm",
+        desc: "Our standard for energy-efficient living. Eliminates thermal bridges for maximum comfort.",
+        features: ["Double insulation layer", "Superior airtightness", "R-value > 8.0"],
+        highlight: true
+      },
+      {
+        name: "Super Passive",
+        r_value: "10.5",
+        insulation: "350mm",
+        desc: "Designed for Passivhaus certification. The ultimate choice for net-zero ambitions.",
+        features: ["Triple insulation layer", "Passivhaus Certifiable", "R-value > 10.0"]
+      }
+    ],
+
+    // Markets Array
+    markets_array: [
+      {
+        title: "Private & Residential",
+        desc: "Realize your dream home without construction worries. We guarantee a fixed price, a fixed delivery date, and a home that is ready for the future.",
+        benefits: ["Energy savings up to 90%", "Healthy indoor climate", "Turnkey options available"]
+      },
+      {
+        title: "Business & Development",
+        desc: "Scalable solutions for developers and housing corporations. Maximize ROI through rapid construction times and low failure costs.",
+        benefits: ["70% Faster than traditional", "Factory prefabrication", "Predictable costs"]
+      }
+    ]
   }
 };
-
-export type Language = 'nl' | 'en';
-export type TranslationKey = keyof typeof translations.nl;

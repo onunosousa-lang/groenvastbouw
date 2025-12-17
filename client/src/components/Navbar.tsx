@@ -1,7 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
+
+// Simple throttle implementation
+function throttle<T extends (...args: any[]) => any>(func: T, limit: number): (...args: Parameters<T>) => void {
+  let inThrottle: boolean;
+  return function(this: any, ...args: Parameters<T>) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
+}
 
 export default function Navbar() {
   const { t, language, setLanguage } = useLanguage();
@@ -10,30 +22,48 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       setIsScrolled(window.scrollY > 20);
-    };
+    }, 100);
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    if (location !== '/') {
-      setLocation('/');
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
+  const scrollToSection = useCallback((id: string) => {
+    const scrollToElement = () => {
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const headerOffset = 80; // Height of fixed header
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       }
+    };
+
+    if (location !== '/') {
+      setLocation('/');
+      // Wait for navigation to complete and DOM to update
+      // Using a small timeout is still necessary when switching routes,
+      // but we can make it more robust by checking for element existence
+      const checkAndScroll = (attempts = 0) => {
+        const element = document.getElementById(id);
+        if (element) {
+          scrollToElement();
+        } else if (attempts < 10) {
+          setTimeout(() => checkAndScroll(attempts + 1), 50);
+        }
+      };
+      setTimeout(() => checkAndScroll(), 100);
+    } else {
+      scrollToElement();
     }
     setIsMobileMenuOpen(false);
-  };
+  }, [location, setLocation]);
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
