@@ -278,8 +278,8 @@ export const translations = {
     principles_comfort_desc: "Passive House standard for optimal indoor climate",
     
     // Pricing Section
-    pricing_title: "What are the costs?",
-    pricing_subtitle: "Transparent prices for structure",
+    pricing_title: "Technical Solutions",
+    pricing_subtitle: "Four configurations for every project",
     pricing_shell: "Shell (Structure)",
     pricing_shell_desc: "Load-bearing structure + windows + roof",
     pricing_optimal: "Optimal",
@@ -380,26 +380,33 @@ export const translations = {
     // Systems Array
     systems_array: [
       {
+        name: "Basic",
+        r_value: "N/A",
+        insulation: "0mm",
+        desc: "Simple solution for the shell. Prefab structure that you can finish yourself. Ideal for cost savings and self-builders.",
+        features: ["195x45mm Timber Frame", "12mm OSB-3 Sheathing", "Breathable construction"]
+      },
+      {
         name: "Optimal",
         r_value: "5.7",
         insulation: "200mm",
-        desc: "The ideal balance between investment and performance. Far exceeds standard building code requirements.",
-        features: ["200mm Mineral Wool", "Breathable construction", "R-value > 5.0"]
+        desc: "Designed for moderate climates. Timber frame construction with 200mm insulation and internal vapor barrier.",
+        features: ["200mm Mineral Wool", "R-value = 5.7 W/m²K", "Ideal for mild winters"]
       },
       {
         name: "Passive",
         r_value: "8.5",
         insulation: "300mm",
-        desc: "Our standard for energy-efficient living. Eliminates thermal bridges for maximum comfort.",
-        features: ["Double insulation layer", "Superior airtightness", "R-value > 8.0"],
+        desc: "Extra external insulation for improved thermal protection. Significantly reduces energy consumption for heating and cooling.",
+        features: ["200mm + External Insulation", "R-value = 8.5 W/m²K", "Cooler in summer"],
         highlight: true
       },
       {
         name: "Super Passive",
         r_value: "10.5",
         insulation: "350mm",
-        desc: "Designed for Passivhaus certification. The ultimate choice for net-zero ambitions.",
-        features: ["Triple insulation layer", "Passivhaus Certifiable", "R-value > 10.0"]
+        desc: "Meets strict Passivhaus standards. Triple insulation layer for maximum comfort and up to 75% energy savings.",
+        features: ["350mm Total Insulation", "R-value = 10.5 W/m²K", "Passivhaus Certifiable"]
       }
     ],
 
