@@ -75,8 +75,8 @@ export const translations = {
     pricing_passive_desc: "Aanzienlijke besparing, bewezen ROI",
     pricing_super: "Super Passive",
     pricing_super_desc: "Passivhaus gecertificeerd - 75% minder energie",
-    pricing_note: "* Prijzen alleen voor structuur. Fundaties, transport en montage worden apart berekend.",
-    pricing_turnkey_note: "Afwerking (turnkey) is maatwerk en wordt apart geoffreerd op basis van uw wensen.",
+    pricing_note: "",
+    pricing_turnkey_note: "",
     
     // Energy Comparison Section
     energy_comparison_title: "Wat Betekent 86% Besparing?",
@@ -288,8 +288,8 @@ export const translations = {
     pricing_passive_desc: "Significant savings, proven ROI",
     pricing_super: "Super Passive",
     pricing_super_desc: "Passivhaus certified - 75% less energy",
-    pricing_note: "* Prices for structure only. Foundations, transport, and assembly are calculated separately.",
-    pricing_turnkey_note: "Finishing (turnkey) is custom work and quoted separately based on your wishes.",
+    pricing_note: "",
+    pricing_turnkey_note: "",
     
     // Energy Comparison Section
     energy_comparison_title: "What Does 86% Savings Mean?",
