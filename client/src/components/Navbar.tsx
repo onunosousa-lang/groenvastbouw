@@ -1,6 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Link, useLocation } from 'wouter';
 
 // Simple throttle implementation
@@ -96,21 +102,36 @@ export default function Navbar() {
             <Link href="/about" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {t('nav_about')}
             </Link>
-            <a href="#systems" onClick={(e) => { e.preventDefault(); scrollToSection('systems'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              {t('nav_services')}
-            </a>
-            <a href="#technology" onClick={(e) => { e.preventDefault(); scrollToSection('technology'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              {t('nav_senmar')}
-            </a>
+
+            {/* Our System Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-white/90 hover:text-green-400 transition-colors text-sm outline-none">
+                {language === 'nl' ? 'Ons Systeem' : 'Our System'} <ChevronDown size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-gray-900 border-gray-800 text-white">
+                <DropdownMenuItem className="focus:bg-gray-800 focus:text-green-400 cursor-pointer">
+                  <a href="#technology" onClick={(e) => { e.preventDefault(); scrollToSection('technology'); }} className="w-full">
+                    {t('nav_senmar')}
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="focus:bg-gray-800 focus:text-green-400 cursor-pointer">
+                  <a href="#systems" onClick={(e) => { e.preventDefault(); scrollToSection('systems'); }} className="w-full">
+                    {t('nav_services')}
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="focus:bg-gray-800 focus:text-green-400 cursor-pointer">
+                  <Link href="/prefab-benefits" className="w-full block">
+                    {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <a href="#markets" onClick={(e) => { e.preventDefault(); scrollToSection('markets'); }} className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {t('nav_benefits')}
             </a>
-            {/* Pricing Removed Here */}
             <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
-            </Link>
-            <Link href="/prefab-benefits" className="text-white/90 hover:text-green-400 transition-colors text-sm">
-              {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
             </Link>
             {/* Projects link hidden per user request */}
             <Link href="/why-us" className="text-white/90 hover:text-green-400 transition-colors text-sm">
@@ -143,20 +164,27 @@ export default function Navbar() {
               <Link href="/about" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 {t('nav_about')}
               </Link>
-              <a href="#systems" onClick={(e) => { e.preventDefault(); scrollToSection('systems'); }} className="text-white/90 hover:text-green-400">
-                {t('nav_services')}
-              </a>
-              <a href="#technology" onClick={(e) => { e.preventDefault(); scrollToSection('technology'); }} className="text-white/90 hover:text-green-400">
-                {t('nav_senmar')}
-              </a>
+              {/* Mobile Menu Items */}
+              <div className="pl-4 border-l-2 border-gray-700 space-y-3 my-2">
+                <div className="text-gray-400 text-xs uppercase font-semibold tracking-wider mb-2">
+                  {language === 'nl' ? 'Ons Systeem' : 'Our System'}
+                </div>
+                <a href="#technology" onClick={(e) => { e.preventDefault(); scrollToSection('technology'); }} className="block text-white/90 hover:text-green-400">
+                  {t('nav_senmar')}
+                </a>
+                <a href="#systems" onClick={(e) => { e.preventDefault(); scrollToSection('systems'); }} className="block text-white/90 hover:text-green-400">
+                  {t('nav_services')}
+                </a>
+                <Link href="/prefab-benefits" className="block text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
+                  {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
+                </Link>
+              </div>
+
               <a href="#markets" onClick={(e) => { e.preventDefault(); scrollToSection('markets'); }} className="text-white/90 hover:text-green-400">
                 {t('nav_benefits')}
               </a>
               <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
-              </Link>
-              <Link href="/prefab-benefits" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
               </Link>
               {/* Projects link hidden per user request */}
               <Link href="/why-us" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
