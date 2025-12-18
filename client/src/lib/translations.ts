@@ -196,6 +196,57 @@ export const translations = {
       }
     ],
 
+    // Prefab Benefits Page
+    prefab_title: "Prefab Benefits",
+    prefab_subtitle: "Why Choose Groenvastbouw & Senmar?",
+    prefab_intro: "Prefab wooden houses offer an exceptional blend of speed, cost efficiency, energy efficiency, and high-quality construction. Their rapid assembly, combined with the cost savings from minimized waste and labor, makes them an affordable and smart investment.",
+    prefab_intro_2: "The superior insulation properties of wood provide excellent thermal performance, leading to lower energy bills and a comfortable living environment year-round. With a focus on sustainability, these houses are built using renewable resources and environmentally friendly processes, ensuring a smaller carbon footprint.",
+    
+    prefab_rapid_title: "Rapid Construction",
+    prefab_rapid_desc: "Prefab wooden houses are assembled quickly, as the components are pre-manufactured in a factory. This significantly reduces on-site construction time, allowing homeowners to move in sooner compared to traditional building methods.",
+    
+    prefab_cost_title: "Cost Efficiency",
+    prefab_cost_desc: "The prefabrication process minimizes material waste and lowers labor costs due to the streamlined assembly. This results in a more cost-effective construction process, making prefab wooden houses an affordable option.",
+    
+    prefab_energy_title: "Energy Efficiency",
+    prefab_energy_desc: "Wooden houses provide excellent insulation, helping to maintain consistent indoor temperatures. This energy efficiency leads to lower heating and cooling costs and a smaller environmental footprint.",
+    
+    prefab_quality_title: "High Quality and Consistency",
+    prefab_quality_desc: "Prefabricated components are produced in a controlled factory environment, ensuring high quality and consistency. This reduces the risk of construction errors and enhances overall durability.",
+    
+    prefab_sustainability_title: "Environmental Sustainability",
+    prefab_sustainability_desc: "Wood is a renewable resource, and the prefabrication process generates less waste. Additionally, the energy-efficient properties contribute to a reduced carbon footprint.",
+    
+    prefab_design_title: "Design Flexibility",
+    prefab_design_desc: "Prefab wooden houses offer a high degree of customization, allowing for various architectural styles and interior layouts. This enables homeowners to create a house that suits their personal tastes.",
+    
+    prefab_aesthetic_title: "Aesthetic Appeal",
+    prefab_aesthetic_desc: "Wooden houses exude a natural warmth and charm. The use of wood as a primary material creates a cozy, inviting atmosphere both inside and out.",
+    
+    prefab_thermal_title: "Improved Thermal Performance",
+    prefab_thermal_desc: "Wooden structures provide superior thermal insulation, keeping houses warm in the winter and cool in the summer, enhancing comfort and reducing energy consumption.",
+    
+    prefab_sound_title: "Sound Insulation",
+    prefab_sound_desc: "Wood has natural sound-absorbing qualities, providing better acoustics and reducing noise transmission, leading to a quieter and more peaceful living environment.",
+    
+    prefab_disruption_title: "Reduced On-Site Disruption",
+    prefab_disruption_desc: "Since much of the construction work is done off-site, there is less noise, waste, and disturbance at the building site. This benefits both the construction team and the surrounding community.",
+    
+    prefab_health_title: "Health Benefits",
+    prefab_health_desc: "Wood is a natural material that helps regulate indoor humidity levels, creating a healthier living environment. It can also reduce the presence of harmful chemicals.",
+    
+    prefab_durability_title: "Durability",
+    prefab_durability_desc: "Modern prefabricated wooden houses are built to last, with robust construction methods and high-quality materials ensuring long-term durability and resistance to environmental factors.",
+    
+    prefab_seismic_title: "Seismic Resilience",
+    prefab_seismic_desc: "Wooden frame structures can flex under stress, making them more resistant to earthquakes compared to rigid building materials like concrete or steel.",
+    
+    prefab_lightweight_title: "Lightweight Construction",
+    prefab_lightweight_desc: "Wooden frames are lighter than other building materials, making them easier to transport and handle. This can also reduce the load on the foundation and lower costs.",
+    
+    prefab_manufacturing_title: "Sustainable Manufacturing",
+    prefab_manufacturing_desc: "The prefabrication process uses sustainably sourced wood and efficient manufacturing techniques, further enhancing the environmental benefits of prefab wooden houses.",
+
     // Markets Array
     markets_array: [
       {
@@ -407,6 +458,57 @@ export const translations = {
         features: ["350mm Total Insulation", "R-value = 10.5 W/m²K", "Passivhaus Certifiable"]
       }
     ],
+
+    // Prefab Benefits Page
+    prefab_title: "Prefab Benefits",
+    prefab_subtitle: "Why Choose Groenvastbouw & Senmar?",
+    prefab_intro: "Prefab wooden houses offer an exceptional blend of speed, cost efficiency, energy efficiency, and high-quality construction. Their rapid assembly, combined with the cost savings from minimized waste and labor, makes them an affordable and smart investment.",
+    prefab_intro_2: "The superior insulation properties of wood provide excellent thermal performance, leading to lower energy bills and a comfortable living environment year-round. With a focus on sustainability, these houses are built using renewable resources and environmentally friendly processes, ensuring a smaller carbon footprint.",
+    
+    prefab_rapid_title: "Rapid Construction",
+    prefab_rapid_desc: "Prefab wooden houses are assembled quickly, as the components are pre-manufactured in a factory. This significantly reduces on-site construction time, allowing homeowners to move in sooner compared to traditional building methods.",
+    
+    prefab_cost_title: "Cost Efficiency",
+    prefab_cost_desc: "The prefabrication process minimizes material waste and lowers labor costs due to the streamlined assembly. This results in a more cost-effective construction process, making prefab wooden houses an affordable option.",
+    
+    prefab_energy_title: "Energy Efficiency",
+    prefab_energy_desc: "Wooden houses provide excellent insulation, helping to maintain consistent indoor temperatures. This energy efficiency leads to lower heating and cooling costs and a smaller environmental footprint.",
+    
+    prefab_quality_title: "High Quality and Consistency",
+    prefab_quality_desc: "Prefabricated components are produced in a controlled factory environment, ensuring high quality and consistency. This reduces the risk of construction errors and enhances overall durability.",
+    
+    prefab_sustainability_title: "Environmental Sustainability",
+    prefab_sustainability_desc: "Wood is a renewable resource, and the prefabrication process generates less waste. Additionally, the energy-efficient properties contribute to a reduced carbon footprint.",
+    
+    prefab_design_title: "Design Flexibility",
+    prefab_design_desc: "Prefab wooden houses offer a high degree of customization, allowing for various architectural styles and interior layouts. This enables homeowners to create a house that suits their personal tastes.",
+    
+    prefab_aesthetic_title: "Aesthetic Appeal",
+    prefab_aesthetic_desc: "Wooden houses exude a natural warmth and charm. The use of wood as a primary material creates a cozy, inviting atmosphere both inside and out.",
+    
+    prefab_thermal_title: "Improved Thermal Performance",
+    prefab_thermal_desc: "Wooden structures provide superior thermal insulation, keeping houses warm in the winter and cool in the summer, enhancing comfort and reducing energy consumption.",
+    
+    prefab_sound_title: "Sound Insulation",
+    prefab_sound_desc: "Wood has natural sound-absorbing qualities, providing better acoustics and reducing noise transmission, leading to a quieter and more peaceful living environment.",
+    
+    prefab_disruption_title: "Reduced On-Site Disruption",
+    prefab_disruption_desc: "Since much of the construction work is done off-site, there is less noise, waste, and disturbance at the building site. This benefits both the construction team and the surrounding community.",
+    
+    prefab_health_title: "Health Benefits",
+    prefab_health_desc: "Wood is a natural material that helps regulate indoor humidity levels, creating a healthier living environment. It can also reduce the presence of harmful chemicals.",
+    
+    prefab_durability_title: "Durability",
+    prefab_durability_desc: "Modern prefabricated wooden houses are built to last, with robust construction methods and high-quality materials ensuring long-term durability and resistance to environmental factors.",
+    
+    prefab_seismic_title: "Seismic Resilience",
+    prefab_seismic_desc: "Wooden frame structures can flex under stress, making them more resistant to earthquakes compared to rigid building materials like concrete or steel.",
+    
+    prefab_lightweight_title: "Lightweight Construction",
+    prefab_lightweight_desc: "Wooden frames are lighter than other building materials, making them easier to transport and handle. This can also reduce the load on the foundation and lower costs.",
+    
+    prefab_manufacturing_title: "Sustainable Manufacturing",
+    prefab_manufacturing_desc: "The prefabrication process uses sustainably sourced wood and efficient manufacturing techniques, further enhancing the environmental benefits of prefab wooden houses.",
 
     // Markets Array
     markets_array: [

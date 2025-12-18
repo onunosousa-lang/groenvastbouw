@@ -109,6 +109,9 @@ export default function Navbar() {
             <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
             </Link>
+            <Link href="/prefab-benefits" className="text-white/90 hover:text-green-400 transition-colors text-sm">
+              {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
+            </Link>
             {/* Projects link hidden per user request */}
             <Link href="/why-us" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {language === 'nl' ? 'Waarom Ons' : 'Why Us'}
@@ -151,6 +154,9 @@ export default function Navbar() {
               </a>
               <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
+              </Link>
+              <Link href="/prefab-benefits" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Prefab Voordelen' : 'Prefab Benefits'}
               </Link>
               {/* Projects link hidden per user request */}
               <Link href="/why-us" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
