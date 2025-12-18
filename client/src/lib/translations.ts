@@ -65,8 +65,8 @@ export const translations = {
     principles_comfort_desc: "Passivhaus-standaard voor optimaal binnenklimaat",
     
     // Pricing Section
-    pricing_title: "Wat zijn de kosten?",
-    pricing_subtitle: "Transparante prijzen voor structuur",
+    pricing_title: "Technische Oplossingen",
+    pricing_subtitle: "Vier configuraties voor elk project",
     pricing_shell: "Casco (Structuur)",
     pricing_shell_desc: "Draagconstructie + ramen + dak",
     pricing_optimal: "Optimal",
@@ -167,26 +167,33 @@ export const translations = {
     // Systems Array
     systems_array: [
       {
+        name: "Basic",
+        r_value: "N/A",
+        insulation: "0mm",
+        desc: "Eenvoudige oplossing voor het skelet. Prefab structuur die u zelf kunt afwerken. Ideaal voor kostenbesparing en zelfbouwers.",
+        features: ["195x45mm Houten Frame", "12mm OSB-3 Beplating", "Dampopen constructie"]
+      },
+      {
         name: "Optimal",
         r_value: "5.7",
         insulation: "200mm",
-        desc: "De ideale balans tussen investering en prestatie. Overtreft standaard bouwbesluit-eisen ruimschoots.",
-        features: ["200mm Minerale Wol", "Dampopen constructie", "Rc > 5.0"]
+        desc: "Ontworpen voor gematigde klimaten. Skeletconstructie met 200mm isolatie en interne dampremmende laag.",
+        features: ["200mm Minerale Wol", "Rc-waarde = 5.7 W/m²K", "Ideaal voor milde winters"]
       },
       {
         name: "Passive",
         r_value: "8.5",
         insulation: "300mm",
-        desc: "Onze standaard voor energiezuinig wonen. Elimineert koudebruggen voor maximaal comfort.",
-        features: ["Dubbele isolatielaag", "Superieure luchtdichtheid", "Rc > 8.0"],
+        desc: "Extra externe isolatie voor verbeterde thermische bescherming. Verlaagt energieverbruik voor verwarming en koeling aanzienlijk.",
+        features: ["200mm + Externe Isolatie", "Rc-waarde = 8.5 W/m²K", "Koeler in de zomer"],
         highlight: true
       },
       {
         name: "Super Passive",
         r_value: "10.5",
         insulation: "350mm",
-        desc: "Ontworpen voor Passivhaus-certificering. De ultieme keuze voor nul-op-de-meter ambities.",
-        features: ["Drievoudige isolatielaag", "Passivhaus Certificeerbaar", "Rc > 10.0"]
+        desc: "Voldoet aan strenge Passivhaus-normen. Drievoudige isolatielaag voor maximaal comfort en tot 75% energiebesparing.",
+        features: ["350mm Totale Isolatie", "Rc-waarde = 10.5 W/m²K", "Passivhaus Certificeerbaar"]
       }
     ],
 

@@ -37,3 +37,9 @@
 
 ### UI
 - [x] **Pause/Play Button:** Add toggle button for the "Senmar Solution" video.
+
+### Content Updates
+- [ ] **Update Systems Section:**
+    - [ ] Rename title to "Technical Solutions" / "Technische Oplossingen".
+    - [ ] Add "Basic" solution from Senmar website.
+    - [ ] Update existing solutions (Optimal, Passive, Super Passive) with correct data.

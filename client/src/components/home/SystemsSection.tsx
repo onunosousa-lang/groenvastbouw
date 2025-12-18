@@ -15,7 +15,7 @@ export default function SystemsSection() {
           <p className="text-xl text-gray-600">{t('pricing_subtitle')}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {systems.map((system, index) => (
             <Card 
               key={index} 
