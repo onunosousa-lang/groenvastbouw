@@ -8,6 +8,7 @@ import MarketsSection from '@/components/home/MarketsSection';
 import SystemsSection from '@/components/home/SystemsSection';
 import EnergyComparison from '@/components/home/EnergyComparison';
 import ContactForm from '@/components/home/ContactForm';
+import FAQSection from '@/components/home/FAQSection';
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -28,6 +29,7 @@ export default function Home() {
       <MarketsSection />
       <SystemsSection />
       <EnergyComparison />
+      <FAQSection />
       <ContactForm />
     </div>
   );
