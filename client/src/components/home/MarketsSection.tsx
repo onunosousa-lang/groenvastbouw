@@ -26,7 +26,7 @@ export default function MarketsSection() {
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
               <div className="h-48 overflow-hidden relative">
                 <img 
-                  src={index === 0 ? "/senmar_montage(5).jpg" : "/senmar_montage(22).jpg"} 
+                  src={index === 0 ? "/senmar-photos/senmar_montage_5.jpg" : "/senmar-photos/senmar_montage_22.jpg"} 
                   alt={market.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

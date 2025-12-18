@@ -15,7 +15,7 @@ export default function WhyUs() {
       {/* Hero Section with Senmar Image */}
       <section className="relative pt-32 pb-20 bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="/senmar-photos/factory_senmar(2).jpg" alt="Senmar Factory" className="w-full h-full object-cover" />
+          <img src="/senmar-photos/factory_senmar_2.jpg" alt="Senmar Factory" className="w-full h-full object-cover" />
         </div>
         <div className="relative container mx-auto px-4 text-center max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-600/20 text-green-400 border border-green-600/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
@@ -60,7 +60,7 @@ export default function WhyUs() {
               </a>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
-              <img src="/senmar-photos/Senmar_delivery(4).jpg" alt="Senmar Services" className="w-full h-full object-cover" />
+              <img src="/senmar-photos/senmar_delivery_4.jpg" alt="Senmar Services" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function WhyUs() {
               
               {/* Senmar Production Image */}
               <div className="my-10 rounded-xl overflow-hidden shadow-xl">
-                <img src="/senmar-photos/factory_senmar(7).jpg" alt="Senmar Production Facilities" className="w-full h-auto" />
+                <img src="/senmar-photos/factory_senmar_7.jpg" alt="Senmar Production Facilities" className="w-full h-auto" />
               </div>
 
               <ul className="space-y-6 list-none pl-0 mt-8">
@@ -219,7 +219,7 @@ export default function WhyUs() {
             
             {/* Senmar Mission Image */}
             <div className="mb-10 rounded-xl overflow-hidden shadow-xl">
-              <img src="/senmar-photos/senmar_montage(11).jpg" alt="Senmar Mission" className="w-full h-auto" />
+              <img src="/senmar-photos/senmar_montage_11.jpg" alt="Senmar Mission" className="w-full h-auto" />
             </div>
 
             <div className="bg-green-50 p-10 rounded-2xl border border-green-100 shadow-inner">

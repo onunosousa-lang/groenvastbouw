@@ -164,7 +164,7 @@ export default function About() {
             </div>
             <div className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/senmar-photos/factory_senmar(12).jpg" 
+                src="/senmar-photos/factory_senmar_12.jpg" 
                 alt="Senmar CNC Factory Production" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
