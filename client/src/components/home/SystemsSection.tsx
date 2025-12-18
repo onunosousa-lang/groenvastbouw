@@ -61,14 +61,7 @@ export default function SystemsSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center bg-blue-50 p-6 rounded-xl max-w-3xl mx-auto border border-blue-100">
-          <p className="text-blue-800 font-medium">
-            {t('pricing_note')}
-          </p>
-          <p className="text-blue-600 text-sm mt-2">
-            {t('pricing_turnkey_note')}
-          </p>
-        </div>
+
       </div>
     </section>
   );
