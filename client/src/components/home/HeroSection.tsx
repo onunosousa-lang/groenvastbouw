@@ -43,7 +43,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://wa.me/31629841297" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
-              💬 WhatsApp Nuno Direct
+              💬 Get in touch on WhatsApp
             </a>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-5 backdrop-blur-sm" onClick={() => scrollToSection('services')}>
               {language === 'nl' ? 'Onze diensten' : 'Our services'}

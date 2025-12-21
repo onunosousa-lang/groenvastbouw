@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
     >
       <MessageCircle size={28} />
       <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap">
-        WhatsApp
+        Get in touch on WhatsApp
       </span>
     </button>
   );

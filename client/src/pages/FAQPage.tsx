@@ -129,8 +129,34 @@ export default function FAQPage() {
         {
           question_en: "How do I start a project with Groenvastbouw?",
           question_nl: "Hoe start ik een project met Groenvastbouw?",
-          answer_en: "You start by sharing your plot, wishes and budget via the contact options on the Groenvastbouw website. Together, the feasibility, preferred performance level and an indicative planning and budget are worked out for your project.",
-          answer_nl: "U begint met het delen van uw kavel, wensen en budget via de contactopties op de Groenvastbouw website. Samen worden de haalbaarheid, het gewenste prestatieniveau en een indicatieve planning en budget voor uw project uitgewerkt."
+          answer_en: (
+            <div className="space-y-4">
+              <p>Ready to realize your sustainable dream home? Contact us directly and we will guide you through every step of the process.</p>
+              <a 
+                href="https://wa.me/31628358556" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                <MessageCircle size={20} />
+                Get in touch on WhatsApp
+              </a>
+            </div>
+          ),
+          answer_nl: (
+            <div className="space-y-4">
+              <p>Klaar om uw duurzame droomhuis te realiseren? Neem direct contact met ons op en wij begeleiden u door elke stap van het proces.</p>
+              <a 
+                href="https://wa.me/31628358556" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                <MessageCircle size={20} />
+                Get in touch on WhatsApp
+              </a>
+            </div>
+          )
         }
       ]
     }

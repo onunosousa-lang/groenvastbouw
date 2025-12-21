@@ -83,7 +83,7 @@ export default function ContactForm() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
                   <a href="https://wa.me/31629841297" className="text-green-600 hover:underline">
-                    +31 6 2984 1297
+                    Get in touch on WhatsApp
                   </a>
                 </div>
                 <div>
