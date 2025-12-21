@@ -153,7 +153,7 @@ export default function FAQPage() {
                 className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <MessageCircle size={20} />
-                Get in touch on WhatsApp
+                Neem contact op via WhatsApp
               </a>
             </div>
           )
@@ -171,7 +171,7 @@ export default function FAQPage() {
       : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Neem Contact Op' : 'Contact Us',
-    chatWhatsApp: language === 'nl' ? 'Chat via WhatsApp' : 'Chat via WhatsApp',
+    chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',
     readyTitle: language === 'nl' ? 'Klaar om Uw Project te Starten?' : 'Ready to Start Your Project?',
     readyText: language === 'nl' ? 'Neem contact met ons op om uw passief huis project te bespreken.' : 'Get in touch with us to discuss your passive house project.',
     footer: language === 'nl' ? '© 2024 Groenvastbouw. Alle rechten voorbehouden.' : '© 2024 Groenvastbouw. All rights reserved.'

@@ -127,6 +127,10 @@ export const translations = {
     contact_success: "Bedankt! We nemen zo snel mogelijk contact met u op.",
     contact_error: "Er is iets misgegaan. Probeer het opnieuw of bel ons direct.",
     
+    // WhatsApp & CTA
+    whatsapp_button: "Neem contact op via WhatsApp",
+    faq_cta_text: "Klaar om uw duurzame droomhuis te realiseren? Neem direct contact met ons op en wij begeleiden u door elke stap van het proces.",
+
     // Footer
     footer_links: "Index",
     footer_contact: "Contact",
@@ -388,9 +392,13 @@ export const translations = {
     contact_submit: "Send Request",
     contact_info_title: "Contact Details",
     contact_success: "Thanks! We will contact you as soon as possible.",
-    contact_error: "Something went wrong. Please try again or call us directly.",
+    contact_error: "An error occurred. Please try again or call us directly.",
     
-    // Footer
+    // WhatsApp & CTA
+    whatsapp_button: "Get in touch on WhatsApp",
+    faq_cta_text: "Ready to realize your sustainable dream home? Contact us directly and we will guide you through every step of the process.",
+
+    // Footerter
     footer_links: "Index",
     footer_contact: "Contact",
     footer_rights: "All rights reserved",
