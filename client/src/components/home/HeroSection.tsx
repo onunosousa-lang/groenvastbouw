@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface HeroSectionProps {
@@ -8,6 +8,18 @@ interface HeroSectionProps {
 
 export default function HeroSection({ scrollToSection }: HeroSectionProps) {
   const { language } = useLanguage();
+
+  const content = {
+    headline: language === 'nl' ? 'Jouw Passiefhuis Structuur in 3 Maanden' : 'Your Passive House Structure in 3 Months',
+    subheadline: language === 'nl' 
+      ? 'Prefab passiefhuizen vanaf €1.550/m². Structuur geleverd of volledig turn-key.'
+      : 'Prefab passive houses from €1,550/m². Structure delivered or full turn-key.',
+    ctaPrimary: language === 'nl' ? 'Bekijk Ons Aanbod' : 'View Our Offer',
+    ctaSecondary: language === 'nl' ? 'Plan Gratis Consult' : 'Schedule Free Consultation',
+    points: language === 'nl' 
+      ? ['90% lagere energiekosten', '3 maanden structuur', 'Turn-key optie beschikbaar']
+      : ['90% lower energy costs', '3-month structure', 'Turn-key option available']
+  };
 
   return (
     <section id="hero" className="relative h-screen flex items-center overflow-hidden">
@@ -33,25 +45,40 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             <p className="text-lg md:text-xl text-white/90 italic">Nuchter bouwen. Slim wonen.</p>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
-            {language === 'nl' ? 'Duurzame woningen op maat' : 'Sustainable Homes Tailored to You'}
+            {content.headline}
           </h1>
           <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg max-w-2xl">
-            {language === 'nl' 
-              ? 'Hoogwaardige passieve huizen, kantoren en renovaties. Energiezuinig, duurzaam en betaalbaar.'
-              : 'High-quality passive houses, offices and renovations. Energy-efficient, sustainable and affordable.'
-            }
+            {content.subheadline}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/31629841297" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg font-bold px-8 py-5 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105">
-              💬 {language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp'}
-            </a>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-5 backdrop-blur-sm" onClick={() => scrollToSection('services')}>
-              {language === 'nl' ? 'Onze diensten' : 'Our services'}
+          
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <Button 
+              onClick={() => scrollToSection('offer')}
+              className="bg-[#7FB956] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              {content.ctaPrimary}
+              <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              variant="outline" 
+              className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-6 backdrop-blur-sm"
+            >
+              {content.ctaSecondary}
+            </Button>
+          </div>
+
+          <div className="flex flex-wrap gap-4 md:gap-6 text-white/90 text-sm md:text-base font-medium">
+            {content.points.map((point, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#7FB956]" />
+                {point}
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <button onClick={() => scrollToSection('senmar')} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-10">
+      <button onClick={() => scrollToSection('offer')} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-10">
         <ChevronDown size={40} />
       </button>
     </section>

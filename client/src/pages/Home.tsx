@@ -1,12 +1,11 @@
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 import HeroSection from '@/components/home/HeroSection';
-import ProblemSolution from '@/components/home/ProblemSolution';
+import OfferSection from '@/components/home/OfferSection';
+import HowItWorks from '@/components/home/HowItWorks';
+import PerformanceLevels from '@/components/home/PerformanceLevels';
 import SenmarVideo from '@/components/home/SenmarVideo';
-import TechnologySection from '@/components/home/TechnologySection';
-import MarketsSection from '@/components/home/MarketsSection';
-import SystemsSection from '@/components/home/SystemsSection';
-import EnergyComparison from '@/components/home/EnergyComparison';
+import FeaturedProjects from '@/components/home/FeaturedProjects';
 import ContactForm from '@/components/home/ContactForm';
 import FAQSection from '@/components/home/FAQSection';
 
@@ -14,7 +13,10 @@ export default function Home() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   };
 
@@ -23,14 +25,13 @@ export default function Home() {
       <SEO />
       <Navbar />
       <HeroSection scrollToSection={scrollToSection} />
-      <ProblemSolution />
+      <OfferSection />
+      <HowItWorks />
+      <PerformanceLevels />
       <SenmarVideo />
-      <TechnologySection />
-      <MarketsSection />
-      <SystemsSection />
-      <EnergyComparison />
-      <FAQSection />
+      <FeaturedProjects />
       <ContactForm />
+      <FAQSection />
     </div>
   );
 }
