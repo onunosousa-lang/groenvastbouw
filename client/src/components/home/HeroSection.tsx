@@ -30,7 +30,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           className="w-full h-full object-cover"
           onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
       </div>
       <div className="absolute top-24 right-4 z-20 hidden lg:block">
         <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg text-xs space-y-1">
@@ -78,7 +79,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </div>
         </div>
       </div>
-      <button onClick={() => scrollToSection('offer')} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-10">
+      <button onClick={() => scrollToSection('offer')} className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white/80 hover:text-white transition-colors animate-bounce z-20">
         <ChevronDown size={40} />
       </button>
     </section>

@@ -70,11 +70,22 @@ export default function OfferSection() {
   };
 
   return (
-    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 bg-gray-50 scroll-mt-20">
-      <div className="container mx-auto px-4">
+    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/images/new/offer-bg.jpg" 
+          alt="Construction Background" 
+          className="w-full h-full object-cover"
+          onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
+        />
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-sm"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-xl text-gray-600">{content.subheadline}</p>
+          <p className="text-xl text-gray-700 font-medium">{content.subheadline}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -84,7 +95,7 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col"
+            className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
@@ -128,7 +139,7 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col"
+            className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
@@ -163,8 +174,8 @@ export default function OfferSection() {
           </motion.div>
         </div>
 
-        <div className="mt-12 text-center max-w-3xl mx-auto p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
-          <p className="text-gray-700 font-medium">
+        <div className="mt-12 text-center max-w-3xl mx-auto p-6 bg-white/60 backdrop-blur-md rounded-xl border border-white/50 shadow-sm">
+          <p className="text-gray-800 font-semibold">
             {content.bottomNote}
           </p>
         </div>
