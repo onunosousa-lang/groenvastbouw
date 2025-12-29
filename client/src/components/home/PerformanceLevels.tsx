@@ -1,6 +1,9 @@
+'use client';
+
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
-import { Shield, Zap, Leaf, Check } from 'lucide-react';
+import { Shield, Zap, Leaf, Check, Hammer2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function PerformanceLevels() {
   const { language } = useLanguage();
@@ -10,6 +13,25 @@ export default function PerformanceLevels() {
     subheadline: language === 'nl' ? 'Kies het isolatieniveau dat bij jouw wensen past' : 'Choose the insulation level that fits your needs',
     
     levels: [
+      {
+        title: 'BASIC',
+        badge: language === 'nl' ? 'Budgetvriendelijk' : 'Budget-Friendly',
+        rValue: 'Rc 3.5 - 4.5',
+        desc: language === 'nl' ? 'Solide isolatie, bouwbesluit compliant.' : 'Solid insulation, building code compliant.',
+        features: language === 'nl' ? [
+          'Wanden: 180mm isolatie',
+          'Dak: 220mm isolatie',
+          'Dubbel glas (U=0.8)',
+          'Luchtdichtheid: < 2.0'
+        ] : [
+          'Walls: 180mm insulation',
+          'Roof: 220mm insulation',
+          'Double glazing (U=0.8)',
+          'Airtightness: < 2.0'
+        ],
+        icon: Shield,
+        color: 'gray'
+      },
       {
         title: 'OPTIMAL',
         badge: language === 'nl' ? 'Beste Prijs-Kwaliteit' : 'Best Value',
@@ -78,12 +100,20 @@ export default function PerformanceLevels() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-xl text-gray-600">{content.subheadline}</p>
+          <p className="text-xl text-gray-600 mb-8">{content.subheadline}</p>
+          <a
+            href="https://www.senmar.pt/en/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
+          >
+            {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
+          </a>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {content.levels.map((level, index) => (
             <motion.div
               key={index}
@@ -101,30 +131,36 @@ export default function PerformanceLevels() {
                 </div>
               )}
               
-              <div className={`p-8 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${
+              <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
                   level.color === 'green' ? 'bg-green-100 text-green-600' : 
-                  level.color === 'blue' ? 'bg-blue-100 text-blue-600' : 'bg-purple-100 text-purple-600'
+                  level.color === 'blue' ? 'bg-blue-100 text-blue-600' : 
+                  level.color === 'purple' ? 'bg-purple-100 text-purple-600' :
+                  'bg-gray-100 text-gray-600'
                 }`}>
                   <level.icon className="w-6 h-6" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-1">{level.title}</h3>
-                <div className={`text-lg font-bold mb-4 ${
+                <h3 className="text-xl font-bold text-gray-900 mb-1">{level.title}</h3>
+                <div className={`text-lg font-bold mb-3 ${
                   level.color === 'green' ? 'text-green-600' : 
-                  level.color === 'blue' ? 'text-blue-600' : 'text-purple-600'
+                  level.color === 'blue' ? 'text-blue-600' : 
+                  level.color === 'purple' ? 'text-purple-600' :
+                  'text-gray-600'
                 }`}>
                   {level.rValue}
                 </div>
                 
-                <p className="text-gray-600 mb-6 text-sm">{level.desc}</p>
+                <p className="text-gray-600 mb-4 text-sm">{level.desc}</p>
                 
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {level.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
+                    <li key={idx} className="flex items-start gap-2 text-xs text-gray-700">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         level.color === 'green' ? 'text-green-500' : 
-                        level.color === 'blue' ? 'text-blue-500' : 'text-purple-500'
+                        level.color === 'blue' ? 'text-blue-500' : 
+                        level.color === 'purple' ? 'text-purple-500' :
+                        'text-gray-500'
                       }`} />
                       <span>{feature}</span>
                     </li>

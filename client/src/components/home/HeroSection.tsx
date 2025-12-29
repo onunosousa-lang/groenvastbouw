@@ -22,7 +22,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
   };
 
   return (
-    <section id="hero" className="relative h-screen flex items-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           src="/images/new/hero-bg.jpg" 
@@ -31,7 +31,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/50 to-transparent z-10"></div>
       </div>
       <div className="absolute top-24 right-4 z-20 hidden lg:block">
         <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg text-xs space-y-1">
@@ -39,7 +39,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           <div className="text-gray-700">€2,5M Verzekerd</div>
         </div>
       </div>
-      <div className="container mx-auto px-4 z-10 pt-24">
+      <div className="container mx-auto px-4 z-10 pt-24 pb-32">
         <div className="max-w-3xl lg:mx-0 mx-auto">
           <div className="mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-[#7FB956] mb-2">Groenvastbouw</h2>

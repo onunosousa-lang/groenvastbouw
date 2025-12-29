@@ -13,6 +13,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const About = lazy(() => import("./pages/About"));
 const WhyUs = lazy(() => import("./pages/WhyUs"));
+const WhatWeOffer = lazy(() => import("./pages/WhatWeOffer"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const PrefabBenefits = lazy(() => import("./pages/PrefabBenefits"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
@@ -33,6 +34,7 @@ function Router() {
         <Route path="/projecten" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/why-us" component={WhyUs} />
+        <Route path="/what-we-offer" component={WhatWeOffer} />
         <Route path="/faq" component={FAQPage} />
         <Route path="/prefab-benefits" component={PrefabBenefits} />
         <Route path={"/404"} component={NotFound} />

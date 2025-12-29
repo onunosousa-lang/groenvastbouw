@@ -41,6 +41,12 @@ export default function HowItWorks() {
         desc: language === 'nl' ? 'De volledige prefab structuur wordt op uw locatie geleverd, klaar voor montage.' : 'The complete prefab structure is delivered to your location, ready for assembly.',
         duration: language === 'nl' ? 'Einde maand 3' : 'End of month 3',
         icon: Construction
+      },
+      {
+        title: language === 'nl' ? 'Volledige Montage' : 'Full Assembly',
+        desc: language === 'nl' ? 'Volledige montage van de prefab structuur op uw locatie. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.' : 'Complete assembly of the prefab structure at your location. Foundation and groundwork prepared in advance by you or by us upon request.',
+        duration: language === 'nl' ? 'Optioneel' : 'Optional',
+        icon: Construction
       }
     ],
 
@@ -84,9 +90,13 @@ export default function HowItWorks() {
     ],
 
     totalTimeline: {
-      structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden' : 'Total timeline: 3 months',
+      structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden*' : 'Total timeline: 3 months*',
       turnkey: language === 'nl' ? 'Totale doorlooptijd: 4-6 maanden (afhankelijk van afwerking)' : 'Total timeline: 4-6 months (depending on finishing)'
     },
+
+    asteriskNote: language === 'nl' 
+      ? '* Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.'
+      : '* Foundation and groundwork are prepared in advance by you or by us upon request.',
 
     cta: {
       text: language === 'nl' ? 'Wil je meer weten over het proces?' : 'Want to know more about the process?',
@@ -193,9 +203,12 @@ export default function HowItWorks() {
           </AnimatePresence>
 
           <div className="mt-12 text-center">
-            <p className="text-xl font-bold text-gray-800 mb-8">
+            <p className="text-xl font-bold text-gray-800 mb-2">
               {activeTab === 'structure' ? content.totalTimeline.structure : content.totalTimeline.turnkey}
             </p>
+            {activeTab === 'structure' && (
+              <p className="text-sm text-gray-600 mb-8">{content.asteriskNote}</p>
+            )}
             
             <div className="flex flex-col items-center gap-4">
               <p className="text-gray-600">{content.cta.text}</p>
