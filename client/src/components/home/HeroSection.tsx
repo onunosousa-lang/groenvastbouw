@@ -12,6 +12,9 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
   const content = {
     company: 'Groenvastbouw',
     tagline: language === 'nl' ? 'Nuchter bouwen. Slim wonen.' : 'Smart building. Smart living.',
+    partnership: language === 'nl'
+      ? 'In partnerschap met Senmar — innovatief bedrijf uit Portugal, gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.'
+      : 'In partnership with Senmar — cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.',
     headline: language === 'nl' 
       ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
       : 'Your Passive House. Built in 3 Months.',
@@ -72,8 +75,11 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             <h2 className="text-xl md:text-2xl font-bold text-[#7FB956] mb-2">
               {content.company}
             </h2>
-            <p className="text-lg md:text-xl text-white/90 italic">
+            <p className="text-lg md:text-xl text-white/90 italic mb-3">
               {content.tagline}
+            </p>
+            <p className="text-sm md:text-base text-white/80 max-w-2xl">
+              {content.partnership}
             </p>
           </div>
 

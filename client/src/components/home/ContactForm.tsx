@@ -34,18 +34,19 @@ export default function ContactForm() {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: values.name,
-          email: values.email,
-          phone: values.phone || 'Niet opgegeven',
-          message: values.message,
-        }),
-      });
-      if (!response.ok) throw new Error('Failed to send email');
-      toast.success(language === 'nl' ? 'Bericht verzonden! We nemen spoedig contact met u op.' : 'Message sent! We will contact you soon.');
+      // Create mailto link with form data
+      const subject = encodeURIComponent(language === 'nl' ? 'Contactaanvraag van ' + values.name : 'Contact Request from ' + values.name);
+      const body = encodeURIComponent(
+        `${language === 'nl' ? 'Naam' : 'Name'}: ${values.name}\n` +
+        `${language === 'nl' ? 'Email' : 'Email'}: ${values.email}\n` +
+        `${language === 'nl' ? 'Telefoon' : 'Phone'}: ${values.phone || (language === 'nl' ? 'Niet opgegeven' : 'Not provided')}\n\n` +
+        `${language === 'nl' ? 'Bericht' : 'Message'}:\n${values.message}`
+      );
+      
+      // Open email client
+      window.location.href = `mailto:contact@groenvastbouw.nl?subject=${subject}&body=${body}`;
+      
+      toast.success(language === 'nl' ? 'Email client geopend. Stuur uw bericht.' : 'Email client opened. Send your message.');
       form.reset();
     } catch (error) {
       console.error('Contact form error:', error);
@@ -157,7 +158,7 @@ export default function ContactForm() {
                   disabled={isSubmitting}
                 >
                   {isSubmitting 
-                    ? (language === 'nl' ? 'Verzenden...' : 'Sending...') 
+                    ? (language === 'nl' ? 'Email openen...' : 'Opening email...') 
                     : t('contact_submit')
                   }
                 </Button>

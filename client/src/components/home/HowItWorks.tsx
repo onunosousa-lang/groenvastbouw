@@ -25,20 +25,14 @@ export default function HowItWorks() {
         icon: Ruler
       },
       {
-        title: language === 'nl' ? 'Productie in Portugal' : 'Production in Portugal',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in een gecontroleerde fabriek in Portugal.' : 'The complete prefab structure is produced in a controlled factory in Portugal.',
+        title: language === 'nl' ? 'Productie in Senmar Fabriek' : 'Production in Senmar Factory',
+        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in onze gecontroleerde fabriek in Portugal, gebouwd met Senmar technologie voor maximale efficiëntie.' : 'The complete prefab structure is produced in our controlled factory in Portugal, built with Senmar technology for maximum efficiency.',
         duration: language === 'nl' ? '8-12 weken' : '8-12 weeks',
         icon: Factory
       },
       {
-        title: language === 'nl' ? 'Transport naar Nederland' : 'Transport to Netherlands',
-        desc: language === 'nl' ? 'De structuur wordt naar Nederland getransporteerd.' : 'The structure is transported to the Netherlands.',
-        duration: language === 'nl' ? 'Inbegrepen' : 'Included',
-        icon: Truck
-      },
-      {
         title: language === 'nl' ? 'Levering Structuur' : 'Structure Delivery',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt op uw locatie geleverd, klaar voor montage.' : 'The complete prefab structure is delivered to your location, ready for assembly.',
+        desc: language === 'nl' ? 'De volledige prefab structuur wordt op uw locatie geleverd, klaar voor montage. Transport naar Nederland inbegrepen.' : 'The complete prefab structure is delivered to your location, ready for assembly. Transport to Netherlands included.',
         duration: language === 'nl' ? 'Einde maand 3' : 'End of month 3',
         icon: Construction
       },
