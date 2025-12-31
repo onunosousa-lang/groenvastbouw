@@ -2,8 +2,9 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
-import { Shield, Zap, Leaf, Check, Hammer2 } from 'lucide-react';
+import { Shield, Zap, Leaf, Check, Hammer2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'wouter';
 
 export default function PerformanceLevels() {
   const { language } = useLanguage();
@@ -153,7 +154,7 @@ export default function PerformanceLevels() {
                 
                 <p className="text-gray-600 mb-4 text-sm">{level.desc}</p>
                 
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {level.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-xs text-gray-700">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
@@ -166,6 +167,17 @@ export default function PerformanceLevels() {
                     </li>
                   ))}
                 </ul>
+                <Link href="/our-technology" className="w-full">
+                  <Button className={`w-full ${
+                    level.color === 'green' ? 'bg-green-600 hover:bg-green-700' : 
+                    level.color === 'blue' ? 'bg-blue-600 hover:bg-blue-700' : 
+                    level.color === 'purple' ? 'bg-purple-600 hover:bg-purple-700' :
+                    'bg-gray-600 hover:bg-gray-700'
+                  } text-white font-semibold text-sm group`}>
+                    {language === 'nl' ? 'Meer Informatie' : 'Learn More'}
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -63,8 +63,8 @@ export default function FAQPage() {
         {
           question_en: "What are the price indications per m²?",
           question_nl: "Wat zijn de prijsindicaties per m²?",
-          answer_en: "Groenvastbouw communicates starting prices from about €1,100 per m² for the structural part of a passive house as an indication. Total project costs depend on design, finishes, installations, groundworks and other local factors, so a project-specific analysis is always needed.",
-          answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.100 per m² voor het constructieve deel van een passief huis als indicatie. Totale projectkosten zijn afhankelijk van ontwerp, afwerkingen, installaties, grondwerk en andere lokale factoren, dus een projectspecifieke analyse is altijd nodig."
+          answer_en: "Groenvastbouw communicates starting prices from about €1,550 per m² for the structural part of a passive house as an indication. Total project costs depend on design, finishes, installations, groundworks and other local factors, so a project-specific analysis is always needed.",
+          answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.550 per m² voor het constructieve deel van een passief huis als indicatie. Totale projectkosten zijn afhankelijk van ontwerp, afwerkingen, installaties, grondwerk en andere lokale factoren, dus een projectspecifieke analyse is altijd nodig."
         },
         {
           question_en: "What factors influence the final cost?",
@@ -165,10 +165,10 @@ export default function FAQPage() {
   let questionIndex = 0;
 
   const content = {
-    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">Senmar</a> System</>,
+    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold">Senmar</a> System</>,
     intro: language === 'nl' 
-      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
-      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
+      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
+      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Neem Contact Op' : 'Contact Us',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',

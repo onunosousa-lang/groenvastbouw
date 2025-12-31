@@ -70,21 +70,10 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       
       <div className="container mx-auto px-4 z-10 pt-24 pb-32">
         <div className="max-w-3xl lg:mx-0 mx-auto">
-          {/* Brand Section */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-[#7FB956] mb-2">
-              {content.company}
-            </h2>
-            <p className="text-lg md:text-xl text-white/90 italic mb-3">
-              {content.tagline}
-            </p>
-            <p className="text-sm md:text-base text-white/80 max-w-2xl">
-              {content.partnership}
-            </p>
-          </div>
+          {/* Brand Section - Removed */}
 
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
             {content.headline}
           </h1>
 

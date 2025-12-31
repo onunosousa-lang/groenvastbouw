@@ -243,17 +243,8 @@ export default function OfferSection() {
         <div className="mt-12 text-center max-w-4xl mx-auto p-6 bg-white/60 backdrop-blur-md rounded-xl border border-white/50 shadow-sm">
           <p className="text-gray-800 text-sm leading-relaxed">
             {language === 'nl'
-              ? 'In partnerschap met Senmar, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.'
-              : 'In partnership with Senmar, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.'}
-            {' '}
-            <a 
-              href="https://senmar.pt" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-green-600 hover:text-green-700 font-semibold underline"
-            >
-              Senmar.pt
-            </a>
+              ? <>In partnerschap met <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold underline">Senmar</a>, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.</>
+              : <>In partnership with <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold underline">Senmar</a>, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.</>}
           </p>
         </div>
       </div>

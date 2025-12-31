@@ -13,22 +13,46 @@ export default function FeaturedProjects() {
     
     projects: [
       {
-        title: 'Modern Villa',
-        location: 'Utrecht',
-        image: '/images/project1.jpg',
-        tag: 'Passive House'
+        title: language === 'nl' ? 'Horta Spanje - Passief Huis' : 'Horta Spain - Passive House',
+        location: language === 'nl' ? 'Spanje' : 'Spain',
+        image: '/images/horhespain(13).jpg',
+        tag: 'Passive House',
+        description: language === 'nl' ? 'Luxe passiefhuis met panoramisch uitzicht' : 'Luxury passive house with panoramic views'
       },
       {
-        title: 'Eco Office',
-        location: 'Amsterdam',
-        image: '/images/project2.jpg',
-        tag: 'Office'
+        title: language === 'nl' ? 'Rav Zweden - Moderne Extensie' : 'Rav Sweden - Modern Extension',
+        location: language === 'nl' ? 'Zweden' : 'Sweden',
+        image: '/images/rav_sweden(3).jpg',
+        tag: 'Residential',
+        description: language === 'nl' ? 'Moderne uitbreiding met Senmar technologie' : 'Modern extension with Senmar technology'
       },
       {
-        title: 'Family Home',
-        location: 'Rotterdam',
-        image: '/images/project3.jpg',
-        tag: 'Residential'
+        title: language === 'nl' ? 'Sky Chalet Extensie' : 'Sky Chalet Extension',
+        location: language === 'nl' ? 'Alpen' : 'Alps',
+        image: '/images/Sky_shaletextension(17).jpg',
+        tag: 'Residential',
+        description: language === 'nl' ? 'Bergchalet extensie met extreme isolatie' : 'Mountain chalet extension with extreme insulation'
+      },
+      {
+        title: language === 'nl' ? 'Les Arcs Chalet Extensie' : 'Les Arcs Chalet Extension',
+        location: language === 'nl' ? 'Frankrijk' : 'France',
+        image: '/images/Les_arcs_shalet_extension(22).jpg',
+        tag: 'Residential',
+        description: language === 'nl' ? 'Luxe chalet met passiefhuis standaard' : 'Luxury chalet with passive house standard'
+      },
+      {
+        title: language === 'nl' ? 'Pier Nederland - Waterkant Woning' : 'Pier Netherlands - Waterfront Home',
+        location: language === 'nl' ? 'Nederland' : 'Netherlands',
+        image: '/images/nl_Pier(2).jpg',
+        tag: 'Residential',
+        description: language === 'nl' ? 'Waterkant woning met thermisch comfort' : 'Waterfront home with thermal comfort'
+      },
+      {
+        title: language === 'nl' ? 'Rav Zweden - Bouwfase' : 'Rav Sweden - Construction Phase',
+        location: language === 'nl' ? 'Zweden' : 'Sweden',
+        image: '/images/rav_sweden(1).png',
+        tag: 'Construction',
+        description: language === 'nl' ? 'Bouwproces van Senmar prefab structuur' : 'Construction process of Senmar prefab structure'
       }
     ]
   };
@@ -57,10 +81,13 @@ export default function FeaturedProjects() {
               className="group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-2xl aspect-[4/3] mb-4">
-                <div className="absolute inset-0 bg-gray-200 animate-pulse" /> {/* Placeholder until image loads */}
-                {/* In a real implementation, we would use actual images here. 
-                    For now, we'll use a colored placeholder if image is missing */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 opacity-10 group-hover:opacity-0 transition-opacity duration-500" />
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onError={(e) => { e.currentTarget.src = '/images/hero-groenvastbouw.jpg' }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/30 group-hover:from-gray-800/10 group-hover:to-gray-900/10 transition-all duration-500" />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-900">
                   {project.tag}
                 </div>
@@ -69,6 +96,7 @@ export default function FeaturedProjects() {
               <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-green-600 transition-colors">
                 {project.title}
               </h3>
+              <p className="text-gray-600 text-sm mb-2">{project.description}</p>
               <div className="flex items-center text-gray-500 text-sm">
                 <MapPin className="w-4 h-4 mr-1" />
                 {project.location}
