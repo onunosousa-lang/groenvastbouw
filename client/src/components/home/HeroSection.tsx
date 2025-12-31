@@ -19,8 +19,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
       : 'Your Passive House. Built in 3 Months.',
     subheadline: language === 'nl'
-      ? 'Prefab passiefhuizen vanaf €1.550/m²* — volledige structuur geleverd en gemonteerd op locatie.'
-      : 'Prefab passive houses starting from €1,550/m²* — full structure delivered and mounted on site.',
+      ? <>Prefab passiefhuizen vanaf €1.550/m²* — volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] font-bold hover:underline">SENMAR</a></>
+      : <>Prefab passive houses starting from €1,550/m²* — full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] font-bold hover:underline">SENMAR</a></>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie — gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production — controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -73,7 +73,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           {/* Brand Section - Removed */}
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#7FB956] mb-6 drop-shadow-2xl leading-tight">
             {content.headline}
           </h1>
 
