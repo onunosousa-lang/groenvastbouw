@@ -106,6 +106,9 @@ export default function Navbar() {
             <Link href="/projects" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
+            <Link href="/about" className="text-white/90 hover:text-green-400 transition-colors text-sm">
+              {language === 'nl' ? 'Over Ons' : 'About Us'}
+            </Link>
             <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
             </Link>
@@ -141,6 +144,9 @@ export default function Navbar() {
               </a>
               <Link href="/projects" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}
+              </Link>
+              <Link href="/about" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Over Ons' : 'About Us'}
               </Link>
               <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
