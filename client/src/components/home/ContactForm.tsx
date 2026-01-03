@@ -82,53 +82,64 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-24 bg-gradient-to-br from-white via-[#F8F8F7] to-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('contact_title')}</h2>
-            <p className="text-xl text-gray-600">{t('contact_subtitle')}</p>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#2A3439] mb-6 leading-tight">{t('contact_title')}</h2>
+            <p className="text-xl text-[#2A3439]/80 font-medium leading-relaxed">{t('contact_subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg border-none bg-gray-50">
-              <CardHeader>
-                <CardTitle>{t('contact_info_title')}</CardTitle>
+            <Card className="shadow-xl border-2 border-[#7FB956]/20 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all">
+              <CardHeader className="bg-gradient-to-br from-[#7FB956]/5 to-transparent pb-6">
+                <CardTitle className="text-2xl text-[#2A3439]">{t('contact_info_title')}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 pt-6">
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Groenvastbouw</h3>
-                  <p className="text-gray-600">Amsterdam, Nederland</p>
+                  <h3 className="font-bold text-[#2A3439] mb-2 text-lg">Groenvastbouw</h3>
+                  <p className="text-[#8C9194]">Amsterdam, Nederland</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:info@groenvastbouw.nl" className="text-green-600 hover:underline">
+                  <h3 className="font-bold text-[#2A3439] mb-2">Email</h3>
+                  <a href="mailto:info@groenvastbouw.nl" className="text-[#7FB956] hover:text-[#6da04a] font-medium hover:underline transition-colors">
                     info@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
-                  <a href="https://wa.me/31629841297" className="text-green-600 hover:underline">
+                  <h3 className="font-bold text-[#2A3439] mb-2">WhatsApp</h3>
+                  <a href="https://wa.me/31629841297" className="text-[#7FB956] hover:text-[#6da04a] font-medium hover:underline transition-colors">
                     {t('whatsapp_button')}
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">KvK</h3>
-                  <p className="text-gray-600">75308045</p>
+                  <h3 className="font-bold text-[#2A3439] mb-2">KvK</h3>
+                  <p className="text-[#8C9194] font-mono">75308045</p>
+                </div>
+                <div className="pt-4 border-t border-[#7FB956]/20">
+                  <p className="text-sm text-[#8C9194] leading-relaxed">
+                    {language === 'nl'
+                      ? '€2,5M verzekerd | 10 jaar garantie'
+                      : '€2.5M insured | 10 year warranty'}
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-white/90 p-8 rounded-2xl shadow-xl border-2 border-[#7FB956]/10">
                 <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_name')} *</FormLabel>
+                      <FormLabel className="text-[#2A3439] font-semibold">{t('contact_name')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-gray-50" />
+                        <Input
+                          placeholder={language === 'nl' ? "Uw naam" : "Your name"}
+                          {...field}
+                          className="bg-white border-2 border-[#D7D7D6] focus:border-[#7FB956] transition-colors h-12"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -139,9 +150,14 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_email')} *</FormLabel>
+                      <FormLabel className="text-[#2A3439] font-semibold">{t('contact_email')} *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-gray-50" />
+                        <Input
+                          type="email"
+                          placeholder="naam@voorbeeld.nl"
+                          {...field}
+                          className="bg-white border-2 border-[#D7D7D6] focus:border-[#7FB956] transition-colors h-12"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -152,9 +168,14 @@ export default function ContactForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_phone')}</FormLabel>
+                      <FormLabel className="text-[#2A3439] font-semibold">{t('contact_phone')}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-gray-50" />
+                        <Input
+                          type="tel"
+                          placeholder="+31 6 12345678"
+                          {...field}
+                          className="bg-white border-2 border-[#D7D7D6] focus:border-[#7FB956] transition-colors h-12"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -165,12 +186,12 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_message')} *</FormLabel>
+                      <FormLabel className="text-[#2A3439] font-semibold">{t('contact_message')} *</FormLabel>
                       <FormControl>
-                        <Textarea 
-                          placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[150px] bg-gray-50" 
-                          {...field} 
+                        <Textarea
+                          placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."}
+                          className="min-h-[150px] bg-white border-2 border-[#D7D7D6] focus:border-[#7FB956] transition-colors resize-none"
+                          {...field}
                         />
                       </FormControl>
                       <FormMessage />
@@ -179,12 +200,12 @@ export default function ContactForm() {
                 />
                 <Button
                   type="submit"
-                  className="w-full bg-green-600 hover:bg-green-700 text-lg py-6"
+                  className="w-full bg-[#7FB956] hover:bg-[#6da04a] text-white text-xl font-bold py-7 shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.02]"
                   disabled={sendMessage.isPending}
                 >
                   {sendMessage.isPending ? (
                     <>
-                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      <Loader2 className="mr-2 h-6 w-6 animate-spin" />
                       {language === 'nl' ? 'Verzenden...' : 'Sending...'}
                     </>
                   ) : (
@@ -192,10 +213,11 @@ export default function ContactForm() {
                   )}
                 </Button>
                 {getSavedFormData() && !sendMessage.isPending && (
-                  <p className="text-xs text-gray-500 text-center mt-2">
+                  <p className="text-xs text-[#8C9194] text-center mt-2 flex items-center justify-center gap-2">
+                    <span className="text-[#7FB956]">💾</span>
                     {language === 'nl'
-                      ? '💾 Uw gegevens zijn automatisch opgeslagen'
-                      : '💾 Your data has been auto-saved'}
+                      ? 'Uw gegevens zijn automatisch opgeslagen'
+                      : 'Your data has been auto-saved'}
                   </p>
                 )}
               </form>

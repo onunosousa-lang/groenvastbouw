@@ -107,130 +107,135 @@ export default function OfferSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-lg text-gray-700 font-medium">{content.subheadline}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2A3439] mb-6 leading-tight">{content.headline}</h2>
+          <p className="text-xl text-[#2A3439]/80 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Three Column Grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
           {/* Prefab Models Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border-2 border-[#7FB956]/20 flex flex-col hover:shadow-2xl hover:border-[#7FB956]/40 transition-all duration-300"
           >
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                <Home className="text-green-600 w-6 h-6" />
+              <div className="w-14 h-14 bg-[#7FB956]/10 rounded-xl flex items-center justify-center mb-6 ring-2 ring-[#7FB956]/20">
+                <Home className="text-[#7FB956] w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.prefab.title}</h3>
-              <p className="text-sm font-semibold text-green-700 mb-3">{content.prefab.subtitle}</p>
-              <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
-              
-              <ul className="space-y-2.5 mb-8">
+              <h3 className="text-2xl font-bold text-[#2A3439] mb-2">{content.prefab.title}</h3>
+              <p className="text-sm font-bold text-[#7FB956] mb-4">{content.prefab.subtitle}</p>
+              <p className="text-[#2A3439]/80 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
+
+              <ul className="space-y-3 mb-8">
                 {content.prefab.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0" />
+                  <li key={index} className="flex items-start gap-3 text-[#2A3439]/80 text-sm">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-[#7FB956] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-green-700 mb-6">{content.prefab.price}</p>
+              <p className="text-2xl font-bold text-[#7FB956] mb-6">{content.prefab.price}</p>
             </div>
-            
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
-              <a 
-                href="https://senmar.pt/en/projects#" 
-                target="_blank" 
+
+            <div className="p-8 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100">
+              <a
+                href="https://senmar.pt/en/projects#"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white h-12 text-base font-semibold group">
+                <Button className="w-full bg-[#7FB956] hover:bg-[#6da04a] text-white h-12 text-base font-bold group shadow-lg hover:shadow-xl transition-all">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-[#8C9194] space-y-1 text-center whitespace-pre-line leading-relaxed">
                 <p>{content.prefab.priceNote}</p>
               </div>
             </div>
           </motion.div>
 
-          {/* Custom Project Card */}
-          <motion.div 
+          {/* Custom Project Card - HIGHLIGHTED */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border-2 border-[#8EB564]/30 flex flex-col hover:shadow-2xl hover:border-[#8EB564]/50 transition-all duration-300 relative"
           >
+            {/* Popular badge */}
+            <div className="absolute top-4 right-4 bg-[#EA4924] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
+              {language === 'nl' ? 'POPULAIR' : 'POPULAR'}
+            </div>
+
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <Pencil className="text-blue-600 w-6 h-6" />
+              <div className="w-14 h-14 bg-[#8EB564]/15 rounded-xl flex items-center justify-center mb-6 ring-2 ring-[#8EB564]/30">
+                <Pencil className="text-[#8EB564] w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.custom.title}</h3>
-              <p className="text-sm font-semibold text-blue-700 mb-3">{content.custom.subtitle}</p>
-              <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
-              
-              <ul className="space-y-2.5 mb-8">
+              <h3 className="text-2xl font-bold text-[#2A3439] mb-2">{content.custom.title}</h3>
+              <p className="text-sm font-bold text-[#8EB564] mb-4">{content.custom.subtitle}</p>
+              <p className="text-[#2A3439]/80 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
+
+              <ul className="space-y-3 mb-8">
                 {content.custom.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+                  <li key={index} className="flex items-start gap-3 text-[#2A3439]/80 text-sm">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-[#8EB564] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-blue-700 mb-6">{content.custom.price}</p>
+              <p className="text-2xl font-bold text-[#8EB564] mb-6">{content.custom.price}</p>
             </div>
-            
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
-              <Button 
+
+            <div className="p-8 bg-gradient-to-br from-[#8EB564]/5 to-white border-t border-[#8EB564]/20">
+              <Button
                 onClick={scrollToContact}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white h-12 text-base font-semibold group"
+                className="w-full bg-[#8EB564] hover:bg-[#7da355] text-white h-12 text-base font-bold group shadow-lg hover:shadow-xl transition-all"
               >
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-[#8C9194] space-y-1 text-center whitespace-pre-line leading-relaxed">
                 <p>{content.custom.priceNote}</p>
               </div>
             </div>
           </motion.div>
 
           {/* B2B Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border-2 border-[#2A3439]/20 flex flex-col hover:shadow-2xl hover:border-[#2A3439]/40 transition-all duration-300"
           >
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-                <Building2 className="text-purple-600 w-6 h-6" />
+              <div className="w-14 h-14 bg-[#2A3439]/10 rounded-xl flex items-center justify-center mb-6 ring-2 ring-[#2A3439]/20">
+                <Building2 className="text-[#2A3439] w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.b2b.title}</h3>
-              <p className="text-sm font-semibold text-purple-700 mb-3">{content.b2b.subtitle}</p>
-              <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
-              
-              <ul className="space-y-2.5 mb-8">
+              <h3 className="text-2xl font-bold text-[#2A3439] mb-2">{content.b2b.title}</h3>
+              <p className="text-sm font-bold text-[#2A3439]/70 mb-4">{content.b2b.subtitle}</p>
+              <p className="text-[#2A3439]/80 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
+
+              <ul className="space-y-3 mb-8">
                 {content.b2b.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0" />
+                  <li key={index} className="flex items-start gap-3 text-[#2A3439]/80 text-sm">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-[#2A3439] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
-              <Button 
+
+            <div className="p-8 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100">
+              <Button
                 onClick={scrollToContact}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white h-12 text-base font-semibold group"
+                className="w-full bg-[#2A3439] hover:bg-[#1a2024] text-white h-12 text-base font-bold group shadow-lg hover:shadow-xl transition-all"
               >
                 {content.b2b.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -240,11 +245,11 @@ export default function OfferSection() {
         </div>
 
         {/* Bottom Info */}
-        <div className="mt-12 text-center max-w-4xl mx-auto p-6 bg-white/60 backdrop-blur-md rounded-xl border border-white/50 shadow-sm">
-          <p className="text-gray-800 text-sm leading-relaxed">
+        <div className="mt-16 text-center max-w-4xl mx-auto p-8 bg-white/80 backdrop-blur-md rounded-2xl border-2 border-[#7FB956]/20 shadow-lg">
+          <p className="text-[#2A3439] text-base leading-relaxed">
             {language === 'nl'
-              ? <>In partnerschap met <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold underline">Senmar</a>, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.</>
-              : <>In partnership with <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-bold underline">Senmar</a>, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.</>}
+              ? <>In partnerschap met <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:text-[#6da04a] font-bold underline decoration-2 underline-offset-4">SENMAR</a>, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.</>
+              : <>In partnership with <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:text-[#6da04a] font-bold underline decoration-2 underline-offset-4">SENMAR</a>, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.</>}
           </p>
         </div>
       </div>

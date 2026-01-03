@@ -122,30 +122,30 @@ export default function HowItWorks() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-xl text-gray-700 font-medium">{content.subheadline}</p>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2A3439] mb-6 leading-tight">{content.headline}</h2>
+          <p className="text-xl text-[#2A3439]/80 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="bg-gray-100 p-1 rounded-xl inline-flex">
+          <div className="bg-[#D7D7D6]/40 p-1.5 rounded-xl inline-flex shadow-inner">
             <button
               onClick={() => setActiveTab('structure')}
-              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
-                activeTab === 'structure' 
-                  ? 'bg-white text-green-600 shadow-sm' 
-                  : 'text-gray-500 hover:text-gray-700'
+              className={`px-8 py-4 rounded-lg text-sm font-bold transition-all duration-300 ${
+                activeTab === 'structure'
+                  ? 'bg-white text-[#7FB956] shadow-lg scale-105'
+                  : 'text-[#8C9194] hover:text-[#2A3439]'
               }`}
             >
               {content.tabs.structure}
             </button>
             <button
               onClick={() => setActiveTab('turnkey')}
-              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
-                activeTab === 'turnkey' 
-                  ? 'bg-white text-blue-600 shadow-sm' 
-                  : 'text-gray-500 hover:text-gray-700'
+              className={`px-8 py-4 rounded-lg text-sm font-bold transition-all duration-300 ${
+                activeTab === 'turnkey'
+                  ? 'bg-white text-[#8EB564] shadow-lg scale-105'
+                  : 'text-[#8C9194] hover:text-[#2A3439]'
               }`}
             >
               {content.tabs.turnkey}
@@ -168,25 +168,37 @@ export default function HowItWorks() {
                 <div key={index} className="relative group">
                   {/* Connecting Line (Desktop) */}
                   {index < (activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200 -z-10" />
+                    <div className={`hidden lg:block absolute top-10 left-1/2 w-full h-1 -z-10 ${
+                      activeTab === 'structure' ? 'bg-[#7FB956]/20' : 'bg-[#8EB564]/20'
+                    }`} />
                   )}
-                  
-                  <div className="bg-white/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-green-50 text-green-600' : 'bg-blue-50 text-blue-600'
+
+                  <div className={`bg-white/90 backdrop-blur-md p-8 rounded-2xl border-2 shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10 ${
+                    activeTab === 'structure'
+                      ? 'border-[#7FB956]/20 hover:border-[#7FB956]/40'
+                      : 'border-[#8EB564]/20 hover:border-[#8EB564]/40'
+                  }`}>
+                    <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-6 ring-2 ${
+                      activeTab === 'structure'
+                        ? 'bg-[#7FB956]/10 text-[#7FB956] ring-[#7FB956]/30'
+                        : 'bg-[#8EB564]/10 text-[#8EB564] ring-[#8EB564]/30'
                     }`}>
-                      <step.icon className="w-8 h-8" />
+                      <step.icon className="w-10 h-10" />
                     </div>
-                    
-                    <div className="absolute top-6 right-6 text-xs font-bold text-gray-300">
+
+                    <div className={`absolute top-6 right-6 text-lg font-bold ${
+                      activeTab === 'structure' ? 'text-[#7FB956]/30' : 'text-[#8EB564]/30'
+                    }`}>
                       {index + 1}
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                    <p className="text-sm text-gray-500 mb-4 flex-grow">{step.desc}</p>
-                    
-                    <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
+                    <h3 className="text-lg font-bold text-[#2A3439] mb-3">{step.title}</h3>
+                    <p className="text-sm text-[#2A3439]/70 mb-6 flex-grow leading-relaxed">{step.desc}</p>
+
+                    <div className={`inline-block px-4 py-2 rounded-lg text-xs font-bold shadow-sm ${
+                      activeTab === 'structure'
+                        ? 'bg-[#7FB956]/15 text-[#7FB956] ring-1 ring-[#7FB956]/30'
+                        : 'bg-[#8EB564]/15 text-[#8EB564] ring-1 ring-[#8EB564]/30'
                     }`}>
                       {step.duration}
                     </div>
@@ -196,22 +208,22 @@ export default function HowItWorks() {
             </motion.div>
           </AnimatePresence>
 
-          <div className="mt-12 text-center">
-            <p className="text-xl font-bold text-gray-800 mb-2">
+          <div className="mt-16 text-center">
+            <p className="text-2xl font-bold text-[#2A3439] mb-3">
               {activeTab === 'structure' ? content.totalTimeline.structure : content.totalTimeline.turnkey}
             </p>
             {activeTab === 'structure' && (
-              <p className="text-sm text-gray-600 mb-8">{content.asteriskNote}</p>
+              <p className="text-sm text-[#8C9194] mb-10 leading-relaxed">{content.asteriskNote}</p>
             )}
-            
-            <div className="flex flex-col items-center gap-4">
-              <p className="text-gray-600">{content.cta.text}</p>
-              <Button 
+
+            <div className="flex flex-col items-center gap-6 mt-8">
+              <p className="text-lg text-[#2A3439]/80 font-medium">{content.cta.text}</p>
+              <Button
                 onClick={scrollToContact}
-                className={`px-8 py-6 text-lg font-semibold text-white ${
-                  activeTab === 'structure' 
-                    ? 'bg-green-600 hover:bg-green-700' 
-                    : 'bg-blue-600 hover:bg-blue-700'
+                className={`px-10 py-7 text-xl font-bold text-white shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 ${
+                  activeTab === 'structure'
+                    ? 'bg-[#7FB956] hover:bg-[#6da04a]'
+                    : 'bg-[#8EB564] hover:bg-[#7da355]'
                 }`}
               >
                 {content.cta.button}
