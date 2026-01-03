@@ -5,6 +5,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import SchemaMarkup from "./components/SchemaMarkup";
+import WhatsAppButton from "./components/WhatsAppButton";
 import { Suspense, lazy } from "react";
 import { Loader2 } from "lucide-react";
 
@@ -54,6 +55,7 @@ function App() {
           <TooltipProvider>
             <SchemaMarkup />
             <Toaster />
+            <WhatsAppButton />
             <Router />
           </TooltipProvider>
         </LanguageProvider>

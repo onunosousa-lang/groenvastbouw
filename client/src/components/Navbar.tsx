@@ -25,11 +25,15 @@ export default function Navbar() {
   const { t, language, setLanguage } = useLanguage();
   const [location, setLocation] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showStickyCTA, setShowStickyCTA] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = throttle(() => {
-      setIsScrolled(window.scrollY > 20);
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY > 20);
+      // Show sticky CTA after scrolling past hero (roughly 100vh = 800px)
+      setShowStickyCTA(scrollY > 800);
     }, 100);
 
     window.addEventListener('scroll', handleScroll);
@@ -112,9 +116,21 @@ export default function Navbar() {
             <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
             </Link>
-            <button onClick={() => scrollToSection('contact')} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm cursor-pointer">
-              {t('nav_contact')}
-            </button>
+
+            {/* Sticky CTA - appears after scrolling */}
+            {showStickyCTA ? (
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-[#7FB956] hover:bg-[#6da04a] text-white px-6 py-2.5 rounded-lg font-bold text-sm cursor-pointer shadow-lg animate-in slide-in-from-top-5 duration-300"
+              >
+                {language === 'nl' ? '🚀 Gratis Offerte' : '🚀 Free Quote'}
+              </button>
+            ) : (
+              <button onClick={() => scrollToSection('contact')} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-sm cursor-pointer">
+                {t('nav_contact')}
+              </button>
+            )}
+
             <button
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
               className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition-colors text-sm font-semibold"
@@ -151,9 +167,18 @@ export default function Navbar() {
               <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
-              <button onClick={() => scrollToSection('contact')} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center cursor-pointer w-full">
-                {t('nav_contact')}
+
+              {/* Enhanced CTA for mobile */}
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-[#7FB956] hover:bg-[#6da04a] text-white px-6 py-3 rounded-lg transition-colors text-center cursor-pointer w-full font-bold text-lg shadow-lg"
+              >
+                {showStickyCTA
+                  ? (language === 'nl' ? '🚀 Gratis Offerte' : '🚀 Free Quote')
+                  : t('nav_contact')
+                }
               </button>
+
               <button
                 onClick={() => { setLanguage(language === 'nl' ? 'en' : 'nl'); setIsMobileMenuOpen(false); }}
                 className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition-colors text-center font-semibold uppercase"

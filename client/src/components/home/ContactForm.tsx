@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,6 +9,8 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { trpc } from '@/lib/trpc';
+import { Loader2 } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -17,13 +19,24 @@ const formSchema = z.object({
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
+const FORM_STORAGE_KEY = 'groenvastbouw_contact_form';
+
 export default function ContactForm() {
   const { t, language } = useLanguage();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Load saved form data from localStorage
+  const getSavedFormData = () => {
+    try {
+      const saved = localStorage.getItem(FORM_STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  };
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
+    defaultValues: getSavedFormData() || {
       name: "",
       email: "",
       phone: "",
@@ -31,29 +44,41 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    setIsSubmitting(true);
-    try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(language === 'nl' ? 'Contactaanvraag van ' + values.name : 'Contact Request from ' + values.name);
-      const body = encodeURIComponent(
-        `${language === 'nl' ? 'Naam' : 'Name'}: ${values.name}\n` +
-        `${language === 'nl' ? 'Email' : 'Email'}: ${values.email}\n` +
-        `${language === 'nl' ? 'Telefoon' : 'Phone'}: ${values.phone || (language === 'nl' ? 'Niet opgegeven' : 'Not provided')}\n\n` +
-        `${language === 'nl' ? 'Bericht' : 'Message'}:\n${values.message}`
+  // tRPC mutation for sending contact form
+  const sendMessage = trpc.contact.sendMessage.useMutation({
+    onSuccess: () => {
+      toast.success(
+        language === 'nl'
+          ? '✅ Bericht succesvol verzonden! We nemen zo spoedig mogelijk contact met u op.'
+          : '✅ Message sent successfully! We will contact you as soon as possible.'
       );
-      
-      // Open email client
-      window.location.href = `mailto:contact@groenvastbouw.nl?subject=${subject}&body=${body}`;
-      
-      toast.success(language === 'nl' ? 'Email client geopend. Stuur uw bericht.' : 'Email client opened. Send your message.');
       form.reset();
-    } catch (error) {
+      localStorage.removeItem(FORM_STORAGE_KEY);
+    },
+    onError: (error) => {
       console.error('Contact form error:', error);
-      toast.error(language === 'nl' ? 'Er is een fout opgetreden.' : 'An error occurred.');
-    } finally {
-      setIsSubmitting(false);
-    }
+      toast.error(
+        language === 'nl'
+          ? '❌ Er is een fout opgetreden. Probeer het opnieuw of neem contact op via WhatsApp.'
+          : '❌ An error occurred. Please try again or contact us via WhatsApp.'
+      );
+    },
+  });
+
+  // Auto-save form data to localStorage
+  useEffect(() => {
+    const subscription = form.watch((value) => {
+      try {
+        localStorage.setItem(FORM_STORAGE_KEY, JSON.stringify(value));
+      } catch (error) {
+        console.error('Failed to save form data:', error);
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, [form]);
+
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    sendMessage.mutate(values);
   };
 
   return (
@@ -152,16 +177,27 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="w-full bg-green-600 hover:bg-green-700 text-lg py-6"
-                  disabled={isSubmitting}
+                  disabled={sendMessage.isPending}
                 >
-                  {isSubmitting 
-                    ? (language === 'nl' ? 'Email openen...' : 'Opening email...') 
-                    : t('contact_submit')
-                  }
+                  {sendMessage.isPending ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      {language === 'nl' ? 'Verzenden...' : 'Sending...'}
+                    </>
+                  ) : (
+                    t('contact_submit')
+                  )}
                 </Button>
+                {getSavedFormData() && !sendMessage.isPending && (
+                  <p className="text-xs text-gray-500 text-center mt-2">
+                    {language === 'nl'
+                      ? '💾 Uw gegevens zijn automatisch opgeslagen'
+                      : '💾 Your data has been auto-saved'}
+                  </p>
+                )}
               </form>
             </Form>
           </div>

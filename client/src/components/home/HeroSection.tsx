@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import OptimizedImage from '@/components/OptimizedImage';
 
 interface HeroSectionProps {
   scrollToSection: (id: string) => void;
@@ -51,10 +52,11 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/new/hero-bg.jpg" 
-          alt="Senmar Passive House Structure" 
+        <OptimizedImage
+          src="/images/new/hero-bg.jpg"
+          alt="Senmar Passive House Structure"
           className="w-full h-full object-cover"
+          priority={true}
           onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/92 via-gray-900/75 to-transparent"></div>
@@ -100,21 +102,35 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <Button 
+          <div className="flex flex-col gap-4 mb-10">
+            <Button
               onClick={() => scrollToSection('offer')}
-              className="bg-[#7FB956] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-[#7FB956] hover:bg-[#6da04a] text-white text-xl font-bold px-10 py-8 rounded-lg shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-green-500/50 w-full sm:w-auto"
             >
               {content.ctaPrimary}
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
-            <Button 
+            <Button
               onClick={() => scrollToSection('contact')}
-              variant="outline" 
-              className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-6 backdrop-blur-sm font-semibold"
+              className="bg-[#7FB956]/20 border-2 border-[#7FB956] text-[#7FB956] hover:bg-[#7FB956] hover:text-white text-xl px-10 py-8 backdrop-blur-sm font-bold transition-all duration-300 w-full sm:w-auto"
             >
               {content.ctaSecondary}
             </Button>
+            {/* Urgency & Trust Micro-copy */}
+            <div className="flex flex-wrap gap-4 text-white/90 text-sm mt-2">
+              <span className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-[#7FB956]" />
+                {language === 'nl' ? 'Vrijblijvend' : 'No obligation'}
+              </span>
+              <span className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-[#7FB956]" />
+                {language === 'nl' ? '15 minuten consult' : '15 minute consultation'}
+              </span>
+              <span className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-[#7FB956]" />
+                {language === 'nl' ? 'Direct antwoorden' : 'Immediate answers'}
+              </span>
+            </div>
           </div>
 
           {/* Footnotes */}
