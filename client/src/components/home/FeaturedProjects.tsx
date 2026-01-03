@@ -63,9 +63,9 @@ export default function FeaturedProjects() {
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-            <p className="text-xl text-gray-600">{content.subheadline}</p>
+            <p className="text-lg text-gray-600 leading-relaxed">{content.subheadline}</p>
           </div>
-          <Link href="/projects" className="hidden md:flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors">
+          <Link href="/projects" className="hidden md:flex items-center text-[#7FB956] font-semibold hover:text-[#6fa84a] transition-colors">
             {content.cta} <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
@@ -93,10 +93,10 @@ export default function FeaturedProjects() {
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-green-600 transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#7FB956] transition-colors">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-2">{project.description}</p>
+              <p className="text-gray-600 text-sm mb-2 leading-relaxed">{project.description}</p>
               <div className="flex items-center text-gray-500 text-sm">
                 <MapPin className="w-4 h-4 mr-1" />
                 {project.location}
@@ -106,7 +106,7 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="mt-12 text-center md:hidden">
-          <Link href="/projects" className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors">
+          <Link href="/projects" className="inline-flex items-center text-[#7FB956] font-semibold hover:text-[#6fa84a] transition-colors">
             {content.cta} <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>

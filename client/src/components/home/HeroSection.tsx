@@ -78,12 +78,12 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </h1>
 
           {/* Primary Subheadline */}
-          <p className="text-lg md:text-xl text-white/95 mb-4 drop-shadow-lg max-w-2xl font-semibold">
+          <p className="text-lg md:text-xl text-white mb-6 drop-shadow-lg max-w-2xl font-semibold leading-relaxed">
             {content.subheadline}
           </p>
 
           {/* Description Paragraph */}
-          <p className="text-base md:text-lg text-white/90 mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-gray-100 mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
             {content.description}
           </p>
 
@@ -92,7 +92,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             {content.points.map((point, index) => (
               <div key={index} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[#7FB956] flex-shrink-0 mt-1" />
-                <span className="text-white/95 text-base md:text-lg">
+                <span className="text-white text-base md:text-lg font-medium">
                   {point}
                 </span>
               </div>

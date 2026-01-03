@@ -103,12 +103,12 @@ export default function PerformanceLevels() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-xl text-gray-600 mb-8">{content.subheadline}</p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">{content.subheadline}</p>
           <a
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
+            className="inline-block px-6 py-3 bg-[#7FB956] text-white font-semibold rounded-lg hover:bg-[#6fa84a] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
@@ -144,7 +144,7 @@ export default function PerformanceLevels() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{level.title}</h3>
                 <div className={`text-lg font-bold mb-3 ${
-                  level.color === 'green' ? 'text-green-600' : 
+                  level.color === 'green' ? 'text-[#7FB956]' : 
                   level.color === 'blue' ? 'text-blue-600' : 
                   level.color === 'purple' ? 'text-purple-600' :
                   'text-gray-600'
@@ -152,13 +152,13 @@ export default function PerformanceLevels() {
                   {level.rValue}
                 </div>
                 
-                <p className="text-gray-600 mb-4 text-sm">{level.desc}</p>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{level.desc}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {level.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-xs text-gray-700">
+                    <li key={idx} className="flex items-start gap-2 text-xs text-gray-700 leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        level.color === 'green' ? 'text-green-500' : 
+                        level.color === 'green' ? 'text-[#7FB956]' : 
                         level.color === 'blue' ? 'text-blue-500' : 
                         level.color === 'purple' ? 'text-purple-500' :
                         'text-gray-500'

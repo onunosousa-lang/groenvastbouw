@@ -145,7 +145,7 @@ export default function OurTechnology() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               {content.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 font-light">
+            <p className="text-xl md:text-2xl text-gray-200 font-light leading-relaxed">
               {content.heroSubtitle}
             </p>
           </motion.div>
@@ -156,7 +156,7 @@ export default function OurTechnology() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{content.passiveHousingTitle}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">{content.passiveHousingTitle}</h2>
             <p className="text-lg text-gray-600 leading-relaxed text-center mb-8">
               {content.passiveHousingDesc}
             </p>
@@ -168,8 +168,8 @@ export default function OurTechnology() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{content.comparisonTitle}</h2>
-            <p className="text-lg text-gray-600 text-center">{content.comparisonSubtitle}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">{content.comparisonTitle}</h2>
+            <p className="text-lg text-gray-600 text-center leading-relaxed">{content.comparisonSubtitle}</p>
           </motion.div>
 
           <motion.div {...fadeInUp} className="overflow-x-auto">

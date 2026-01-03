@@ -108,7 +108,7 @@ export default function OfferSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-lg text-gray-700 font-medium">{content.subheadline}</p>
+          <p className="text-lg text-gray-600 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Three Column Grid */}
@@ -126,7 +126,7 @@ export default function OfferSection() {
                 <Home className="text-green-600 w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.prefab.title}</h3>
-              <p className="text-sm font-semibold text-green-700 mb-3">{content.prefab.subtitle}</p>
+              <p className="text-sm font-semibold text-[#7FB956] mb-3">{content.prefab.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
               <ul className="space-y-2.5 mb-8">
@@ -138,7 +138,7 @@ export default function OfferSection() {
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-green-700 mb-6">{content.prefab.price}</p>
+              <p className="text-lg font-bold text-[#7FB956] mb-6">{content.prefab.price}</p>
             </div>
             
             <div className="p-8 bg-gray-50 border-t border-gray-100">
@@ -172,7 +172,7 @@ export default function OfferSection() {
                 <Pencil className="text-blue-600 w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.custom.title}</h3>
-              <p className="text-sm font-semibold text-blue-700 mb-3">{content.custom.subtitle}</p>
+              <p className="text-sm font-semibold text-blue-600 mb-3">{content.custom.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
               <ul className="space-y-2.5 mb-8">
@@ -184,7 +184,7 @@ export default function OfferSection() {
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-blue-700 mb-6">{content.custom.price}</p>
+              <p className="text-lg font-bold text-blue-600 mb-6">{content.custom.price}</p>
             </div>
             
             <div className="p-8 bg-gray-50 border-t border-gray-100">
@@ -214,7 +214,7 @@ export default function OfferSection() {
                 <Building2 className="text-purple-600 w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.b2b.title}</h3>
-              <p className="text-sm font-semibold text-purple-700 mb-3">{content.b2b.subtitle}</p>
+              <p className="text-sm font-semibold text-purple-600 mb-3">{content.b2b.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
               <ul className="space-y-2.5 mb-8">

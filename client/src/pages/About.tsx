@@ -143,7 +143,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">{content.engineTitle}</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 leading-relaxed">
                     {language === 'nl' 
                       ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving—beschermd tegen regen en wind—resulterend in nul afval en perfecte structurele integriteit.</>
                       : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment—safe from rain and wind—resulting in zero waste and perfect structural integrity.</>
@@ -158,7 +158,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">{content.driverTitle}</h3>
-                  <p className="text-gray-600">{content.driverDesc}</p>
+                  <p className="text-gray-600 leading-relaxed">{content.driverDesc}</p>
                 </div>
               </div>
             </div>

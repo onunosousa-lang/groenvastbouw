@@ -124,7 +124,7 @@ export default function HowItWorks() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-xl text-gray-700 font-medium">{content.subheadline}</p>
+          <p className="text-lg text-gray-600 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Tabs */}
@@ -134,7 +134,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-white text-green-600 shadow-sm' 
+                  ? 'bg-white text-[#7FB956] shadow-sm' 
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
