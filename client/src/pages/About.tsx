@@ -22,14 +22,14 @@ export default function About() {
     founderStory3: language === 'nl'
       ? 'In tegenstelling tot een typische ontwikkelaar die op kantoor blijft, is Nuno vaak op de bouwplaats te vinden ("Boots on the Ground"). Hij coördineert de kraan, het montageteam en de afwerkingsaannemers. Hij lost problemen in real-time op en zorgt ervoor dat de theorie van de fabriek naadloos aansluit op de praktijk van de bouwplaats.'
       : 'Unlike a typical developer who stays in the office, Nuno is often found on-site ("Boots on the Ground"). He coordinates the crane, the assembly team, and the finishing contractors. He solves problems in real-time, ensuring that the theory of the factory seamlessly integrates with the reality of the construction site.',
-    partnershipTitle: language === 'nl' ? <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">Senmar</a></> : <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">Senmar</a></>,
+    partnershipTitle: language === 'nl' ? <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428]">Senmar</a></> : <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428]">Senmar</a></>,
     partnershipSubtitle: language === 'nl' 
       ? 'Alleen kan een vakman één huis per jaar bouwen. Samen met technologie kunnen we een wijk bouwen.'
       : 'Alone, a craftsman can build one house a year. Together with technology, we can build a neighborhood.',
     engineTitle: language === 'nl' ? 'Industriële Precisie (De Motor)' : 'Industrial Precision (The Engine)',
     engineDesc: language === 'nl'
-      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving—beschermd tegen regen en wind—resulterend in nul afval en perfecte structurele integriteit.</>
-      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment—safe from rain and wind—resulting in zero waste and perfect structural integrity.</>,
+      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving—beschermd tegen regen en wind—resulterend in nul afval en perfecte structurele integriteit.</>
+      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment—safe from rain and wind—resulting in zero waste and perfect structural integrity.</>,
     driverTitle: language === 'nl' ? 'Lokale Expertise (De Bestuurder)' : 'Local Expertise (The Driver)',
     driverDesc: language === 'nl'
       ? 'Groenvastbouw brengt deze technologie naar Nederlandse bodem. Wij navigeren lokale regelgeving (BENG-normen), beheren funderingen en afwerking, en zorgen dat het project perfect past binnen het Nederlandse landschap.'
@@ -67,7 +67,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-[#7FB956] hover:text-white font-semibold transition-colors group"
+            className="inline-flex items-center text-[#9abb32] hover:text-white font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -108,7 +108,7 @@ export default function About() {
                 />
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <div className="inline-block px-3 py-1 bg-[#7FB956]/10 text-[#7FB956] rounded-full text-sm font-bold mb-6 w-fit">
+                <div className="inline-block px-3 py-1 bg-[#9abb32]/10 text-[#9abb32] rounded-full text-sm font-bold mb-6 w-fit">
                   {content.founderTag}
                 </div>
                 <h2 className="text-3xl font-bold mb-4">{content.founderTitle}</h2>
@@ -138,15 +138,15 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-8">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#7FB956]/10 flex items-center justify-center">
-                  <Zap className="text-[#7FB956]" size={24} />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#9abb32]/10 flex items-center justify-center">
+                  <Zap className="text-[#9abb32]" size={24} />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">{content.engineTitle}</h3>
                   <p className="text-gray-600 leading-relaxed">
                     {language === 'nl' 
-                      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving—beschermd tegen regen en wind—resulterend in nul afval en perfecte structurele integriteit.</>
-                      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#7FB956] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment—safe from rain and wind—resulting in zero waste and perfect structural integrity.</>
+                      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving—beschermd tegen regen en wind—resulterend in nul afval en perfecte structurele integriteit.</>
+                      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment—safe from rain and wind—resulting in zero waste and perfect structural integrity.</>
                     }
                   </p>
                 </div>
@@ -177,7 +177,7 @@ export default function About() {
       </section>
 
       {/* 4. MISSION */}
-      <section className="py-20 bg-[#7FB956] text-white text-center">
+      <section className="py-20 bg-[#9abb32] text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <Leaf className="mx-auto mb-6 w-16 h-16 text-white/80" />
           <h2 className="text-3xl md:text-5xl font-bold mb-8">{content.missionTitle}</h2>
@@ -197,19 +197,19 @@ export default function About() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
-              <Hammer className="text-[#7FB956] mb-4 w-10 h-10" />
+              <Hammer className="text-[#9abb32] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3">{content.bootsTitle}</h3>
               <p className="text-gray-600">{content.bootsDesc}</p>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
-              <ShieldCheck className="text-[#7FB956] mb-4 w-10 h-10" />
+              <ShieldCheck className="text-[#9abb32] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3">{content.certifiedTitle}</h3>
               <p className="text-gray-600">{content.certifiedDesc}</p>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
-              <Globe className="text-[#7FB956] mb-4 w-10 h-10" />
+              <Globe className="text-[#9abb32] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3">{content.multilingualTitle}</h3>
               <p className="text-gray-600">{content.multilingualDesc}</p>
             </div>
@@ -223,7 +223,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
           <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#7FB956] hover:bg-[#6da545] text-white px-8 py-6 text-lg" onClick={() => window.location.href = '/#contact'}>
+            <Button size="lg" className="bg-[#9abb32] hover:bg-[#6da545] text-white px-8 py-6 text-lg" onClick={() => window.location.href = '/#contact'}>
               {content.contactNuno}
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#2A3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>

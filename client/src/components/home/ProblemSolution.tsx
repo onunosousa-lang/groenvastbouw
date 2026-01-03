@@ -90,7 +90,7 @@ export default function ProblemSolution() {
           {/* Solution */}
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
+              <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
                 {t('solution_title')}
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -100,37 +100,37 @@ export default function ProblemSolution() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-                    <Clock className="text-green-600" size={32} />
+                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                    <Clock className="text-[#9abb32]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-green-600 mb-2">{t('solution_speed')}</h3>
+                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_speed')}</h3>
                   <p className="text-gray-700">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-                    <Zap className="text-green-600" size={32} />
+                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                    <Zap className="text-[#9abb32]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-green-600 mb-2">{t('solution_energy')}</h3>
+                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_energy')}</h3>
                   <p className="text-gray-700">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-                    <ShieldCheck className="text-green-600" size={32} />
+                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                    <ShieldCheck className="text-[#9abb32]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-green-600 mb-2">{t('solution_quality')}</h3>
+                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_quality')}</h3>
                   <p className="text-gray-700">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-                    <Leaf className="text-green-600" size={32} />
+                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                    <Leaf className="text-[#9abb32]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-green-600 mb-2">{t('solution_future')}</h3>
+                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_future')}</h3>
                   <p className="text-gray-700">{t('solution_future_desc')}</p>
                 </CardContent>
               </Card>

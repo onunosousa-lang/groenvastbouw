@@ -188,8 +188,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('structure')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
-                  ? 'bg-green-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-green-600'
+                  ? 'bg-[#9abb32] text-white shadow-lg'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#9abb32]'
               }`}
             >
               {content.structureDelivery}
@@ -198,8 +198,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-600'
+                  ? 'bg-[#118443] text-white shadow-lg'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#118443]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -224,13 +224,13 @@ export default function WhatWeOffer() {
                 <Card className="border-2 border-green-200 bg-green-50">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-green-900 mb-6 flex items-center gap-2">
-                      <CheckCircle2 className="text-green-600" />
+                      <CheckCircle2 className="text-[#9abb32]" />
                       {content.structureIncludes}
                     </h3>
                     <ul className="space-y-3">
                       {content.structureIncludesItems.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-700">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-[#9abb32] font-bold mt-1">✓</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -268,13 +268,13 @@ export default function WhatWeOffer() {
               <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
-                    <CheckCircle2 className="text-blue-600" />
+                    <CheckCircle2 className="text-[#118443]" />
                     {content.turnkeyIncludes}
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {content.turnkeyIncludesItems.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-gray-700">
-                        <span className="text-blue-600 font-bold mt-1">✓</span>
+                        <span className="text-[#118443] font-bold mt-1">✓</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -300,7 +300,7 @@ export default function WhatWeOffer() {
                 >
                   <Card className="border-2 border-green-200 h-full hover:shadow-xl transition-shadow">
                     <CardContent className="p-8">
-                      <h3 className="text-2xl font-bold text-green-700 mb-4">{benefit.title}</h3>
+                      <h3 className="text-2xl font-bold text-[#7a9428] mb-4">{benefit.title}</h3>
                       <p className="text-gray-700 text-lg">{benefit.desc}</p>
                     </CardContent>
                   </Card>
@@ -315,7 +315,7 @@ export default function WhatWeOffer() {
             <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
             <Button
               onClick={scrollToContact}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg font-semibold"
+              className="bg-[#9abb32] hover:bg-[#7a9428] text-white px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}
             </Button>

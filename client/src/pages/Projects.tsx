@@ -37,13 +37,13 @@ export default function Projects() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-green-900 to-green-700">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-green-900 to-[#7a9428]">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               {language === 'nl' ? 'Onze Projecten' : 'Our Projects'}
             </h1>
-            <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-[#f0f7e8] max-w-3xl mx-auto">
               {language === 'nl' 
                 ? 'Ontdek onze gerealiseerde projecten en zie de kwaliteit van ons werk' 
                 : 'Discover our completed projects and see the quality of our work'}
@@ -56,12 +56,12 @@ export default function Projects() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Card className="overflow-hidden shadow-2xl">
-            <div className="bg-gradient-to-r from-green-600 to-green-700 p-8 text-white">
+            <div className="bg-gradient-to-r from-[#9abb32] to-[#7a9428] p-8 text-white">
               <div className="flex items-center gap-4 mb-4">
                 <Building2 size={40} />
                 <h2 className="text-4xl font-bold">Chocolate Makers</h2>
               </div>
-              <p className="text-xl text-green-100">
+              <p className="text-xl text-[#f0f7e8]">
                 {language === 'nl' 
                   ? 'Passief kantoorgebouw met hoogwaardige afwerking' 
                   : 'Passive office building with high-quality finishing'}
@@ -72,8 +72,8 @@ export default function Projects() {
               {/* Project Details */}
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <div className="flex items-start gap-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
-                    <Home className="text-green-700" size={24} />
+                  <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                    <Home className="text-[#7a9428]" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
@@ -86,8 +86,8 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
-                    <Calendar className="text-green-700" size={24} />
+                  <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                    <Calendar className="text-[#7a9428]" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
@@ -98,8 +98,8 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
-                    <MapPin className="text-green-700" size={24} />
+                  <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                    <MapPin className="text-[#7a9428]" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
@@ -117,8 +117,8 @@ export default function Projects() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   {language === 'nl'
-                    ? <>Een modern passief kantoorgebouw gebouwd met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a> technologie. Dit project toont onze expertise in commerciële constructie met focus op duurzaamheid en energie-efficiëntie.</>
-                    : <>A modern passive office building constructed with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-semibold">Senmar</a> technology. This project showcases our expertise in commercial construction with a focus on sustainability and energy efficiency.</>}
+                    ? <>Een modern passief kantoorgebouw gebouwd met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> technologie. Dit project toont onze expertise in commerciële constructie met focus op duurzaamheid en energie-efficiëntie.</>
+                    : <>A modern passive office building constructed with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> technology. This project showcases our expertise in commercial construction with a focus on sustainability and energy efficiency.</>}
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   {language === 'nl'
@@ -165,7 +165,7 @@ export default function Projects() {
             </p>
             <a 
               href="/#contact" 
-              className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
+              className="inline-block bg-[#9abb32] hover:bg-[#7a9428] text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
             >
               {language === 'nl' ? 'Neem Contact Op' : 'Get In Touch'}
             </a>

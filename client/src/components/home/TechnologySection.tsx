@@ -10,7 +10,7 @@ export default function TechnologySection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
               {t('senmar_title')}
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -24,8 +24,8 @@ export default function TechnologySection() {
             
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
-                <div className="bg-green-100 p-3 rounded-lg">
-                  <Factory className="text-green-600" size={24} />
+                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                  <Factory className="text-[#9abb32]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_factory')}</h3>
@@ -33,8 +33,8 @@ export default function TechnologySection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-green-100 p-3 rounded-lg">
-                  <Ruler className="text-green-600" size={24} />
+                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                  <Ruler className="text-[#9abb32]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_precision')}</h3>
@@ -42,8 +42,8 @@ export default function TechnologySection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-green-100 p-3 rounded-lg">
-                  <Award className="text-green-600" size={24} />
+                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                  <Award className="text-[#9abb32]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_certified')}</h3>
@@ -53,7 +53,7 @@ export default function TechnologySection() {
             </div>
 
             <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="gap-2 border-green-600 text-green-600 hover:bg-green-50">
+              <Button variant="outline" className="gap-2 border-[#9abb32] text-[#9abb32] hover:bg-green-50">
                 {t('senmar_link')} <ExternalLink size={16} />
               </Button>
             </a>
