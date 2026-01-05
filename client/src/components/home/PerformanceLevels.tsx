@@ -97,7 +97,7 @@ export default function PerformanceLevels() {
     <section id="systems" className="py-20 bg-gray-50 scroll-mt-20 relative overflow-hidden">
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#9abb32 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#90dc35 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -108,7 +108,7 @@ export default function PerformanceLevels() {
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#9abb32] text-white font-semibold rounded-lg hover:bg-[#7a9428] transition-colors"
+            className="inline-block px-6 py-3 bg-[#90dc35] text-white font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
@@ -123,18 +123,18 @@ export default function PerformanceLevels() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bg-white rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
-                level.color === 'green' ? 'border-[#9abb32] transform md:-translate-y-4' : 'border-transparent'
+                level.color === 'green' ? 'border-[#90dc35] transform md:-translate-y-4' : 'border-transparent'
               }`}
             >
               {level.color === 'green' && (
-                <div className="absolute top-0 left-0 right-0 bg-[#9abb32] text-white text-center py-1 text-sm font-bold uppercase tracking-wide">
+                <div className="absolute top-0 left-0 right-0 bg-[#90dc35] text-white text-center py-1 text-sm font-bold uppercase tracking-wide">
                   {level.badge}
                 </div>
               )}
               
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#9abb32]' : 
+                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#90dc35]' : 
                   level.color === 'blue' ? 'bg-[#e8f5f0] text-[#118443]' : 
                   level.color === 'purple' ? 'bg-[#e8f5f0] text-[#118443]' :
                   'bg-gray-100 text-gray-600'
@@ -144,7 +144,7 @@ export default function PerformanceLevels() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{level.title}</h3>
                 <div className={`text-lg font-bold mb-3 ${
-                  level.color === 'green' ? 'text-[#9abb32]' : 
+                  level.color === 'green' ? 'text-[#90dc35]' : 
                   level.color === 'blue' ? 'text-[#118443]' : 
                   level.color === 'purple' ? 'text-[#118443]' :
                   'text-gray-600'
@@ -158,7 +158,7 @@ export default function PerformanceLevels() {
                   {level.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-xs text-gray-700 leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        level.color === 'green' ? 'text-[#9abb32]' : 
+                        level.color === 'green' ? 'text-[#90dc35]' : 
                         level.color === 'blue' ? 'text-blue-500' : 
                         level.color === 'purple' ? 'text-purple-500' :
                         'text-gray-500'
@@ -169,7 +169,7 @@ export default function PerformanceLevels() {
                 </ul>
                 <Link href="/our-technology" className="w-full">
                   <Button className={`w-full ${
-                    level.color === 'green' ? 'bg-[#9abb32] hover:bg-[#7a9428]' : 
+                    level.color === 'green' ? 'bg-[#90dc35] hover:bg-[#6fb820]' : 
                     level.color === 'blue' ? 'bg-[#118443] hover:bg-blue-700' : 
                     level.color === 'purple' ? 'bg-[#118443] hover:bg-purple-700' :
                     'bg-gray-600 hover:bg-gray-700'

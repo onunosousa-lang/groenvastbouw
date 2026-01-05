@@ -41,7 +41,7 @@ export default function MarketsSection() {
                 <ul className="space-y-3">
                   {market.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-700">
-                      <CheckCircle2 className="text-[#9abb32] flex-shrink-0" size={20} />
+                      <CheckCircle2 className="text-[#90dc35] flex-shrink-0" size={20} />
                       <span>{benefit}</span>
                     </li>
                   ))}

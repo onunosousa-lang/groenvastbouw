@@ -131,7 +131,7 @@ export default function OurTechnology() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 bg-[#2A3439] text-white">
         <div className="max-w-6xl mx-auto mb-8">
-          <Link href="/" className="inline-flex items-center text-[#9abb32] hover:text-white font-semibold transition-colors group">
+          <Link href="/" className="inline-flex items-center text-[#90dc35] hover:text-white font-semibold transition-colors group">
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
           </Link>
@@ -179,33 +179,33 @@ export default function OurTechnology() {
                   <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Metriek' : 'Metric'}</th>
                   <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Passief Huis' : 'Passive House'}</th>
                   <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Nederlands Standaard' : 'Dutch Standard'}</th>
-                  <th className="px-6 py-4 text-left font-semibold text-[#9abb32]">{language === 'nl' ? 'Voordeel' : 'Advantage'}</th>
+                  <th className="px-6 py-4 text-left font-semibold text-[#90dc35]">{language === 'nl' ? 'Voordeel' : 'Advantage'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-semibold">{content.metric1Label}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric1Passive}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric1Passive}</td>
                   <td className="px-6 py-4 text-gray-600">{content.metric1Dutch}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric1Ratio}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric1Ratio}</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-semibold">{content.metric2Label}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric2Passive}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric2Passive}</td>
                   <td className="px-6 py-4 text-gray-600">{content.metric2Dutch}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric2Ratio}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric2Ratio}</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-semibold">{content.metric3Label}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric3Passive}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric3Passive}</td>
                   <td className="px-6 py-4 text-gray-600">{content.metric3Dutch}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric3Ratio}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric3Ratio}</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-semibold">{content.metric4Label}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric4Passive}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric4Passive}</td>
                   <td className="px-6 py-4 text-gray-600">{content.metric4Dutch}</td>
-                  <td className="px-6 py-4 text-[#9abb32] font-bold">{content.metric4Ratio}</td>
+                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric4Ratio}</td>
                 </tr>
               </tbody>
             </table>
@@ -238,8 +238,8 @@ export default function OurTechnology() {
                   className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#9abb32]/10 flex items-center justify-center">
-                      <Icon className="text-[#9abb32]" size={24} />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#90dc35]/10 flex items-center justify-center">
+                      <Icon className="text-[#90dc35]" size={24} />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-2">{component.title}</h3>
@@ -275,7 +275,7 @@ export default function OurTechnology() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-xl font-bold mb-3 text-[#9abb32]">{benefit.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#90dc35]">{benefit.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{benefit.desc}</p>
               </motion.div>
             ))}
@@ -302,7 +302,7 @@ export default function OurTechnology() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
             <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
             <Link href="/">
-              <Button className="bg-[#9abb32] hover:bg-[#6fa844] text-white px-8 py-3 rounded-lg font-semibold text-lg">
+              <Button className="bg-[#90dc35] hover:bg-[#6fa844] text-white px-8 py-3 rounded-lg font-semibold text-lg">
                 {content.contactButton}
               </Button>
             </Link>

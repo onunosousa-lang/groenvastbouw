@@ -123,22 +123,22 @@ export default function OfferSection() {
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
-                <Home className="text-[#9abb32] w-6 h-6" />
+                <Home className="text-[#90dc35] w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.prefab.title}</h3>
-              <p className="text-sm font-semibold text-[#9abb32] mb-3">{content.prefab.subtitle}</p>
+              <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.prefab.points.map((point, index) => (
                   <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#9abb32] flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-[#9abb32] mb-6">{content.prefab.price}</p>
+              <p className="text-lg font-bold text-[#90dc35] mb-6">{content.prefab.price}</p>
             </div>
             
             <div className="p-8 bg-gray-50 border-t border-gray-100">
@@ -148,7 +148,7 @@ export default function OfferSection() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-[#9abb32] hover:bg-[#7a9428] text-white h-12 text-base font-semibold group">
+                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-white h-12 text-base font-semibold group">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -243,8 +243,8 @@ export default function OfferSection() {
         <div className="mt-12 text-center max-w-4xl mx-auto p-6 bg-white/60 backdrop-blur-md rounded-xl border border-white/50 shadow-sm">
           <p className="text-gray-800 text-sm leading-relaxed">
             {language === 'nl'
-              ? <>In partnerschap met <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-bold underline">Senmar</a>, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.</>
-              : <>In partnership with <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-bold underline">Senmar</a>, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.</>}
+              ? <>In partnerschap met <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold underline">Senmar</a>, een innovatief bedrijf uit Portugal gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.</>
+              : <>In partnership with <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold underline">Senmar</a>, a cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.</>}
           </p>
         </div>
       </div>

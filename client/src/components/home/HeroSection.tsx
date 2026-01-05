@@ -19,8 +19,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
       : 'Your Passive House. Built in 3 Months.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen vanaf €1.550/m²* — volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] font-bold hover:underline">SENMAR</a></>
-      : <>Prefab passive houses starting from €1,550/m²* — full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] font-bold hover:underline">SENMAR</a></>,
+      ? <>Prefab passiefhuizen vanaf €1.550/m²* — volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>
+      : <>Prefab passive houses starting from €1,550/m²* — full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie — gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production — controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -73,7 +73,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           {/* Brand Section - Removed */}
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#9abb32] mb-6 drop-shadow-2xl leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#90dc35] mb-6 drop-shadow-2xl leading-tight">
             {content.headline}
           </h1>
 
@@ -91,7 +91,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           <div className="space-y-3 mb-10">
             {content.points.map((point, index) => (
               <div key={index} className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[#9abb32] flex-shrink-0 mt-1" />
+                <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-1" />
                 <span className="text-white text-base md:text-lg font-medium">
                   {point}
                 </span>
@@ -103,7 +103,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <Button 
               onClick={() => scrollToSection('offer')}
-              className="bg-[#9abb32] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-[#90dc35] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               {content.ctaPrimary}
               <ArrowRight className="ml-2 w-5 h-5" />

@@ -134,7 +134,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-white text-[#9abb32] shadow-sm' 
+                  ? 'bg-white text-[#90dc35] shadow-sm' 
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -173,7 +173,7 @@ export default function HowItWorks() {
                   
                   <div className="bg-white/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-green-50 text-[#9abb32]' : 'bg-blue-50 text-[#118443]'
+                      activeTab === 'structure' ? 'bg-green-50 text-[#90dc35]' : 'bg-blue-50 text-[#118443]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -186,7 +186,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-gray-500 mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#7a9428]' : 'bg-[#e8f5f0] text-blue-700'
+                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#6fb820]' : 'bg-[#e8f5f0] text-blue-700'
                     }`}>
                       {step.duration}
                     </div>
@@ -210,7 +210,7 @@ export default function HowItWorks() {
                 onClick={scrollToContact}
                 className={`px-8 py-6 text-lg font-semibold text-white ${
                   activeTab === 'structure' 
-                    ? 'bg-[#9abb32] hover:bg-[#7a9428]' 
+                    ? 'bg-[#90dc35] hover:bg-[#6fb820]' 
                     : 'bg-[#118443] hover:bg-blue-700'
                 }`}
               >

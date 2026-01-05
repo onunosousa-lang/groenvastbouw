@@ -18,7 +18,7 @@ export default function WhyUs() {
           <img src="/senmar-photos/factory_senmar_2.jpg" alt="Senmar Factory" className="w-full h-full object-cover" />
         </div>
         <div className="relative container mx-auto px-4 text-center max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#9abb32]/20 text-green-400 border border-[#9abb32]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#90dc35]/20 text-green-400 border border-[#90dc35]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
             <BarChart3 size={16} />
             {language === 'nl' ? 'Markt & Technologie Analyse' : 'Market & Technology Analysis'}
           </div>
@@ -38,22 +38,22 @@ export default function WhyUs() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
-              <div className="inline-block bg-[#9abb32] text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+              <div className="inline-block bg-[#90dc35] text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
                 {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428]">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428]">Senmar</a></>}
+                {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820]">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820]">Senmar</a></>}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {language === 'nl' 
-                  ? <>Groenvastbouw is partner van <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> in Nederland. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a>, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> Portugese vakmanschap met geavanceerde CNC-automatisering.</>
-                  : <>Groenvastbouw is a partner of <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> in the Netherlands. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a>, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> combines Portuguese craftsmanship with advanced CNC automation.</>}
+                  ? <>Groenvastbouw is partner van <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> in Nederland. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a>, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> Portugese vakmanschap met geavanceerde CNC-automatisering.</>
+                  : <>Groenvastbouw is a partner of <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> in the Netherlands. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a>, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> combines Portuguese craftsmanship with advanced CNC automation.</>}
               </p>
               <a 
                 href="https://senmar.pt" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#9abb32] hover:text-[#7a9428] font-semibold text-lg group"
+                className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold text-lg group"
               >
                 {language === 'nl' ? 'Bezoek Senmar.pt' : 'Visit Senmar.pt'}
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -73,7 +73,7 @@ export default function WhyUs() {
           {/* 1. ECONOMIC INCENTIVE */}
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#7a9428]"><TrendingUp size={32} /></div>
+              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#6fb820]"><TrendingUp size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '1. Het Economische Perspectief' : '1. The Economic Perspective'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
@@ -173,13 +173,13 @@ export default function WhyUs() {
                     {language === 'nl' ? 'Perfecte balans tussen investering en prestatie. Overtreft ruimschoots standaard bouweisen.' : 'Perfect balance between investment and performance. Far exceeds standard building requirements.'}
                   </p>
                 </div>
-                <div className="bg-[#9abb32] p-6 rounded-lg border-2 border-green-400 transform scale-105 shadow-xl">
+                <div className="bg-[#90dc35] p-6 rounded-lg border-2 border-green-400 transform scale-105 shadow-xl">
                   <div className="text-3xl font-bold text-white mb-2">R-8.5</div>
                   <h4 className="font-bold mb-2">Passive</h4>
                   <p className="text-sm text-gray-100">
                     {language === 'nl' ? 'Onze standaard voor zeer energiezuinig wonen. Substantiële besparingen op lange termijn.' : 'Our standard for highly energy-efficient living. Substantial long-term savings.'}
                   </p>
-                  <div className="mt-3 inline-block bg-[#7a9428] px-3 py-1 rounded-full text-xs font-bold">
+                  <div className="mt-3 inline-block bg-[#6fb820] px-3 py-1 rounded-full text-xs font-bold">
                     {language === 'nl' ? 'Meest Gekozen' : 'Most Popular'}
                   </div>
                 </div>
@@ -193,7 +193,7 @@ export default function WhyUs() {
               </div>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-[#9abb32] p-6 rounded-r-lg">
+            <div className="bg-green-50 border-l-4 border-[#90dc35] p-6 rounded-r-lg">
               <p className="text-gray-800 font-semibold mb-2">
                 💡 {language === 'nl' ? 'Besparingen over de levensduur' : 'Lifetime Savings'}
               </p>
@@ -210,7 +210,7 @@ export default function WhyUs() {
           {/* 4. ECOLOGICAL IMPACT */}
           <div className="mb-10">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#7a9428]"><Leaf size={32} /></div>
+              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#6fb820]"><Leaf size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
@@ -226,8 +226,8 @@ export default function WhyUs() {
                <h3 className="text-2xl font-bold text-green-900 mb-4">Carbon Negative Bouwen</h3>
                <p className="text-green-800 mb-6 text-lg leading-relaxed">
                  {language === 'nl' 
-                   ? <>De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.</> 
-                   : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
+                   ? <>De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.</> 
+                   : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
                  <div className="bg-white/60 p-4 rounded-lg">
@@ -250,19 +250,19 @@ export default function WhyUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-[#9abb32] to-[#7a9428] text-white">
+      <section className="py-20 bg-gradient-to-r from-[#90dc35] to-[#6fb820] text-white">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-4xl font-bold mb-6">
             {language === 'nl' ? 'Klaar om de toekomst te bouwen?' : 'Ready to build the future?'}
           </h2>
           <p className="text-xl mb-10 text-[#f0f7e8]">
             {language === 'nl' 
-              ? <>Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> uw project kunnen transformeren.</>
-              : <>Contact us today for a no-obligation consultation and discover how Groenvastbouw and <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#9abb32] hover:text-[#7a9428] font-semibold">Senmar</a> can transform your project.</>}
+              ? <>Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> uw project kunnen transformeren.</>
+              : <>Contact us today for a no-obligation consultation and discover how Groenvastbouw and <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-semibold">Senmar</a> can transform your project.</>}
           </p>
           <a 
             href="#contact" 
-            className="inline-block bg-white text-[#9abb32] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-block bg-white text-[#90dc35] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
           >
             {language === 'nl' ? 'Neem Contact Op' : 'Contact Us'}
           </a>

@@ -107,13 +107,13 @@
   --radius: 0.65rem;
   
   /* Senmar Brand Colors as CSS Custom Properties */
-  --senmar-garden-green: #9abb32;
-  --senmar-lime-green: #9abb32;
+  --senmar-garden-green: #90dc35;
+  --senmar-lime-green: #90dc35;
   --senmar-teal-green: #118443;
   --senmar-deep-slate: #2A3439;
   --senmar-clay-red: #EA4924;
   --senmar-soft-mist: #D7D7D6;
-  --senmar-leaf-green: #9abb32;
+  --senmar-leaf-green: #90dc35;
   --senmar-steel-gray: #8C9194;
 }
 

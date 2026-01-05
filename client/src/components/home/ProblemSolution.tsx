@@ -101,36 +101,36 @@ export default function ProblemSolution() {
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Clock className="text-[#9abb32]" size={32} />
+                    <Clock className="text-[#90dc35]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_speed')}</h3>
+                  <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_speed')}</h3>
                   <p className="text-gray-700">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Zap className="text-[#9abb32]" size={32} />
+                    <Zap className="text-[#90dc35]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_energy')}</h3>
+                  <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_energy')}</h3>
                   <p className="text-gray-700">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <ShieldCheck className="text-[#9abb32]" size={32} />
+                    <ShieldCheck className="text-[#90dc35]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_quality')}</h3>
+                  <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_quality')}</h3>
                   <p className="text-gray-700">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Leaf className="text-[#9abb32]" size={32} />
+                    <Leaf className="text-[#90dc35]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#9abb32] mb-2">{t('solution_future')}</h3>
+                  <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_future')}</h3>
                   <p className="text-gray-700">{t('solution_future_desc')}</p>
                 </CardContent>
               </Card>

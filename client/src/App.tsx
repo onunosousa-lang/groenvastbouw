@@ -22,7 +22,7 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 function LoadingSpinner() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white">
-      <Loader2 className="h-12 w-12 animate-spin text-[#9abb32]" />
+      <Loader2 className="h-12 w-12 animate-spin text-[#90dc35]" />
     </div>
   );
 }

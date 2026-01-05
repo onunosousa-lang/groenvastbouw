@@ -82,7 +82,7 @@ export default function Navbar() {
               <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
             </a>
             <div>
-              <div className="text-[#9abb32] font-bold text-xl">Groenvastbouw</div>
+              <div className="text-[#90dc35] font-bold text-xl">Groenvastbouw</div>
               <div className="text-white/80 text-xs italic">Nuchter bouwen. Slim wonen.</div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
           <div className="flex lg:hidden flex-1 justify-center items-center gap-2">
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center gap-2">
               <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
-              <span className="text-[#9abb32] font-bold text-lg">Groenvastbouw</span>
+              <span className="text-[#90dc35] font-bold text-lg">Groenvastbouw</span>
             </a>
           </div>
 
@@ -112,12 +112,12 @@ export default function Navbar() {
             <Link href="/faq" className="text-white/90 hover:text-green-400 transition-colors text-sm">
               FAQ
             </Link>
-            <button onClick={() => scrollToSection('contact')} className="bg-[#9abb32] hover:bg-[#9abb32] text-white px-6 py-2 rounded transition-colors text-sm cursor-pointer">
+            <button onClick={() => scrollToSection('contact')} className="bg-[#90dc35] hover:bg-[#90dc35] text-white px-6 py-2 rounded transition-colors text-sm cursor-pointer">
               {t('nav_contact')}
             </button>
             <button
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
-              className="bg-[#9abb32] hover:bg-[#9abb32] text-white px-4 py-2 rounded transition-colors text-sm font-semibold"
+              className="bg-[#90dc35] hover:bg-[#90dc35] text-white px-4 py-2 rounded transition-colors text-sm font-semibold"
             >
               {language === 'nl' ? 'en' : 'nl'}
             </button>
@@ -151,12 +151,12 @@ export default function Navbar() {
               <Link href="/faq" className="text-white/90 hover:text-green-400" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
-              <button onClick={() => scrollToSection('contact')} className="bg-[#9abb32] hover:bg-[#9abb32] text-white px-6 py-2 rounded transition-colors text-center cursor-pointer w-full">
+              <button onClick={() => scrollToSection('contact')} className="bg-[#90dc35] hover:bg-[#90dc35] text-white px-6 py-2 rounded transition-colors text-center cursor-pointer w-full">
                 {t('nav_contact')}
               </button>
               <button
                 onClick={() => { setLanguage(language === 'nl' ? 'en' : 'nl'); setIsMobileMenuOpen(false); }}
-                className="bg-[#9abb32] hover:bg-[#9abb32] text-white px-6 py-2 rounded transition-colors text-center font-semibold uppercase"
+                className="bg-[#90dc35] hover:bg-[#90dc35] text-white px-6 py-2 rounded transition-colors text-center font-semibold uppercase"
               >
                 {language === 'nl' ? 'EN' : 'NL'}
               </button>
