@@ -101,13 +101,15 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <Button 
-              onClick={() => scrollToSection('offer')}
-              className="bg-[#90dc35] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105"
+            <a 
+              href="https://wa.me/31629841298"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#90dc35] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
             >
-              {content.ctaPrimary}
+              WhatsApp
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            </a>
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline" 
