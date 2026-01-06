@@ -69,122 +69,161 @@ export default function OurOffer() {
         </div>
       </section>
 
-      {/* What We Offer */}
+      {/* Groenvastbouw × Senmar Partnership */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="text-center mb-16">
+        <div className="max-w-4xl mx-auto">
+          <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === 'nl' ? 'Wat Bieden We' : 'What We Offer'}
+              {language === 'nl' ? 'Groenvastbouw × Senmar — Passieve Bouwsystemen' : 'Groenvastbouw × Senmar — Passive Building Systems'}
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
               {language === 'nl'
-                ? 'Groenvastbouw biedt ontworpen passiefhuisschalen op basis van het bewezen prefabbouwsysteem van Senmar, afgestemd op particuliere klanten, architecten en ontwikkelaars.'
-                : 'Groenvastbouw provides engineered passive-house shells based on Senmar\'s proven prefab system, tailored for private clients, architects and developers.'}
+                ? 'Groenvastbouw werkt in partnerschap met Senmar, een geavanceerd bouwbedrijf gevestigd in Portugal, gespecialiseerd in hoogperformante passiefhuisstructuren.'
+                : 'Groenvastbouw works in partnership with Senmar, a cutting-edge construction company based in Portugal, specialized in high-performance passive building structures.'}
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              {language === 'nl'
+                ? 'Senmar richt zich op echte duurzaamheid en lange termijn duurzaamheid. Door geavanceerde off-site fabricage en CNC-gecontroleerde productie worden bouwcomponenten met millimeternauwkeurigheid geproduceerd, wat constructieafval aanzienlijk vermindert. Dit gecontroleerde proces garandeert maximale kwaliteit tegen voorspelbare en gecontroleerde kosten.'
+                : 'Senmar focuses on true sustainability and long-term durability. Through advanced off-site manufacturing and CNC-controlled production, building components are produced with millimetre precision, significantly reducing construction waste. This controlled process ensures maximum quality at predictable and controlled costs.'}
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              {language === 'nl'
+                ? 'Samen leveren we hoogperformante passiefhuisstructuren die in de fabriek worden gebouwd en efficiënt ter plaatse worden gemonteerd. Afhankelijk van het project kunnen oplossingen variëren van alleen-structuursystemen tot volledig gecoördineerde, turn-key ontwikkelingen.'
+                : 'Together, we deliver high-performance passive building structures that are factory-built and assembled efficiently on site. Depending on the project, solutions can range from structure-only systems to fully coordinated, turnkey developments.'}
             </p>
           </motion.div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Prefab Models Card */}
-            <motion.div
-              {...fadeInUp}
-              className="bg-gray-50 rounded-2xl p-8 border border-gray-200"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {language === 'nl' ? 'Prefab Modellen' : 'Prefab Models'}
-              </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {language === 'nl'
-                  ? 'Bewezen ontwerpen. Voorspelbare resultaten. Kies uit geteste passiefhuisontwerpen van Senmar, ontworpen voor efficiëntie en klaar voor levering.'
-                  : 'Proven designs. Predictable results. Choose from Senmar\'s tested passive house designs, engineered for efficiency and ready for delivery.'}
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  language === 'nl' ? 'Meerdere modellen beschikbaar' : 'Multiple models available',
-                  language === 'nl' ? '3 prestatieniveaus: Optimaal / Passief / Super Passief' : '3 performance levels: Optimal / Passive / Super Passive',
-                  language === 'nl' ? 'Volledige structuur geleverd in 3 maanden' : 'Complete structure delivered in 3 months',
-                  language === 'nl' ? 'Turn-key afwerking beschikbaar' : 'Turn-key finishing available'
-                ].map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-sm font-semibold text-[#90dc35]">
-                {language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*'}
-              </p>
-            </motion.div>
+      {/* Built for the Future */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <motion.div {...fadeInUp}>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              {language === 'nl' ? 'Gebouwd voor de Toekomst van Wonen en Verder' : 'Built for the Future of Housing and Beyond'}
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              {language === 'nl'
+                ? 'We geloven dat dit bouwsysteem de toekomst vertegenwoordigt van:'
+                : 'We believe this building system represents the future of:'}
+            </p>
+            <ul className="space-y-4 mb-12">
+              {[
+                language === 'nl' ? 'Woningbouw en buurtontikkelingen' : 'Residential housing and neighbourhood developments',
+                language === 'nl' ? 'Verzorgingstehuizen en ondersteunde woonvoorzieningen' : 'Retirement homes and assisted living facilities',
+                language === 'nl' ? 'Scholen en onderwijsgebouwen' : 'Schools and educational buildings',
+                language === 'nl' ? 'Kantoorgebouwen en werkruimten' : 'Office buildings and workspaces',
+                language === 'nl' ? 'Commerciële en openbare gebouwen' : 'Commercial and public buildings'
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              {language === 'nl'
+                ? 'Het systeem is vooral geschikt voor herhaalbare, schaalbare ontwikkelingen waar snelheid, kostenbeheer en lange termijn prestaties essentieel zijn.'
+                : 'The system is especially suitable for repeatable, scalable developments where speed, cost control and long-term performance are essential.'}
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-            {/* Fully Custom Card */}
-            <motion.div
-              {...fadeInUp}
-              className="bg-gray-50 rounded-2xl p-8 border border-gray-200"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {language === 'nl' ? 'Volledig Op Maat' : 'Fully Custom'}
-              </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {language === 'nl'
-                  ? 'Uw visie. Onze precisie. Een huis volledig naar uw specificaties met dezelfde fabrieksgecontroleerde kwaliteit en snelle levering.'
-                  : 'Your vision. Our precision. A home designed entirely to your specifications with the same factory-controlled quality and fast delivery.'}
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  language === 'nl' ? 'Ontwerp op basis van uw wensen' : 'Design based on your requirements',
-                  language === 'nl' ? 'Passivhaus-certificering mogelijk' : 'Passivhaus certification possible',
-                  language === 'nl' ? 'Volledige structuur geleverd in 3 maanden' : 'Complete structure delivered in 3 months',
-                  language === 'nl' ? 'Turn-key afwerking beschikbaar' : 'Turn-key finishing available'
-                ].map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-sm font-semibold text-[#90dc35]">
-                {language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*'}
-              </p>
-            </motion.div>
+      {/* Dutch Housing Challenge */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <motion.div {...fadeInUp}>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              {language === 'nl' ? 'Een Oplossing voor de Nederlandse Woninguitdaging' : 'A Solution to the Dutch Housing Challenge'}
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              {language === 'nl'
+                ? 'Nederland staat voor een groeiende woninguitdaging:'
+                : 'The Netherlands faces a growing housing challenge:'}
+            </p>
+            <ul className="space-y-4 mb-12">
+              {[
+                language === 'nl' ? 'Ernstige woningtekorten' : 'Severe housing shortages',
+                language === 'nl' ? 'Stijgende en onvoorspelbare bouwkosten' : 'Rising and unpredictable construction costs',
+                language === 'nl' ? 'Lange en onzekere bouwtijden' : 'Long and uncertain build times',
+                language === 'nl' ? 'Toenemende duurzaamheids- en energieeisen' : 'Increasing sustainability and energy requirements',
+                language === 'nl' ? 'Arbeidstekorten in traditioneel bouwen' : 'Labour shortages in traditional construction'
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed font-semibold">
+              {language === 'nl'
+                ? 'Onze aanpak spreekt deze problemen rechtstreeks aan.'
+                : 'Our approach directly addresses these issues.'}
+            </p>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              {language === 'nl'
+                ? 'Door het merendeel van de constructie naar een gecontroleerde fabrieksomgeving te verplaatsen, verminderen we de afhankelijkheid van arbeid ter plaatse, verkorten we de bouwtijdlijnen en elimineren we veel kostonzekerheden die gepaard gaan met traditionele bouwmethoden.'
+                : 'By shifting the majority of construction to a controlled factory environment, we reduce on-site labour dependency, shorten construction timelines, and eliminate many cost uncertainties associated with traditional building methods.'}
+            </p>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              {language === 'nl'
+                ? 'Het resultaat:'
+                : 'The result:'}
+            </p>
+            <ul className="space-y-4 mb-12">
+              {[
+                language === 'nl' ? 'Snellere levering' : 'Faster delivery',
+                language === 'nl' ? 'Voorspelbare kosten' : 'Predictable costs',
+                language === 'nl' ? 'Consistente, hoogwaardige uitvoering' : 'Consistent, high-quality execution',
+                language === 'nl' ? 'Toekomstbestendige energieprestaties' : 'Future-proof energy performance'
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-4">
+                  <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+      </section>
 
-            {/* B2B Card */}
-            <motion.div
-              {...fadeInUp}
-              className="bg-gray-50 rounded-2xl p-8 border border-gray-200"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {language === 'nl' ? 'B2B & Projectontwikkelaars' : 'B2B & Project Developers'}
-              </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {language === 'nl'
-                  ? 'Schaal met vertrouwen. Onze productiefaciliteit levert tot 19.000 m² modulaire passiefhuizen per jaar. Ideaal voor ontwikkelaars, woningcorporaties en grootschalige projecten.'
-                  : 'Scale with confidence. Our production facility delivers up to 19,000 m² of modular passive houses per year. Ideal for developers, housing corporations and large-scale projects.'}
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  language === 'nl' ? 'Serieproductiecapaciteit' : 'Series production capacity',
-                  language === 'nl' ? 'Consistente kwaliteit op schaal' : 'Consistent quality at scale',
-                  language === 'nl' ? 'Toegewezen projectcoördinatie' : 'Dedicated project coordination',
-                  language === 'nl' ? 'Flexibele afleveringsplanning' : 'Flexible delivery scheduling'
-                ].map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-
-          <motion.p {...fadeInUp} className="text-center text-sm text-gray-500">
-            {language === 'nl'
-              ? '*Startprijs voor basisstructuur, exclusief transport en BTW. Turn-key levering inclusief fundering, afwerking en installaties en heeft een langere levertijd.'
-              : '*Starting price for basic structure, excluding transport and VAT. Turn-key delivery includes foundation, finishing and installations and has a longer delivery time.'}
-          </motion.p>
+      {/* Development-Ready System */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <motion.div {...fadeInUp}>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              {language === 'nl' ? 'Een Ontwikkelings-Klaar Bouwsysteem' : 'A Development-Ready Building System'}
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              {language === 'nl'
+                ? 'Dit is geen experimenteel concept, maar een ontwikkelings-klaar bouwsysteem ontworpen ter ondersteuning van:'
+                : 'This is not an experimental concept, but a development-ready building system designed to support:'}
+            </p>
+            <ul className="space-y-4 mb-12">
+              {[
+                language === 'nl' ? 'Woningontwikkelaars' : 'Housing developers',
+                language === 'nl' ? 'Investeerders' : 'Investors',
+                language === 'nl' ? 'Woningcorporaties' : 'Housing corporations',
+                language === 'nl' ? 'Gemeentelijke en publieke projecten' : 'Municipal and public-sector projects'
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              {language === 'nl'
+                ? 'We geloven stellig dat deze aanpak een betekenisvolle rol kan spelen in het oplossen van huidige en toekomstige bouwuitdagingen in Nederland. Niet alleen voor woningbouw, maar voor de bredere gebouwde omgeving.'
+                : 'We strongly believe that this approach can play a meaningful role in solving current and future building challenges in the Netherlands — not only for housing, but for the broader built environment.'}
+            </p>
+          </motion.div>
         </div>
       </section>
 
       {/* The Product */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -218,7 +257,7 @@ export default function OurOffer() {
       </section>
 
       {/* CNC Production & Quality - with Factory Images */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -309,7 +348,7 @@ export default function OurOffer() {
       </section>
 
       {/* Real Sustainability */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -343,7 +382,7 @@ export default function OurOffer() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -408,7 +447,7 @@ export default function OurOffer() {
       </section>
 
       {/* Is This For You */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -445,7 +484,7 @@ export default function OurOffer() {
               <motion.div
                 key={idx}
                 {...fadeInUp}
-                className="bg-white rounded-xl p-8 shadow-sm border border-gray-200"
+                className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
@@ -456,7 +495,7 @@ export default function OurOffer() {
       </section>
 
       {/* Realized Projects */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
