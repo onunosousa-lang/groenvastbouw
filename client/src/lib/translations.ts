@@ -116,8 +116,8 @@ export const translations = {
     faq_foundation_a: "Ja, wij kunnen het volledige project coördineren inclusief fundering, of samenwerken met uw eigen aannemer.",
     
     // Contact Section
-    contact_title: "Project Analyse",
-    contact_subtitle: "Bespreek uw specificaties",
+    contact_title: "Contact",
+    contact_subtitle: "Contact",
     contact_name: "Naam",
     contact_email: "E-mail",
     contact_phone: "Telefoon",
