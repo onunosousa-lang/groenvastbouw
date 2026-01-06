@@ -31,7 +31,7 @@ export default function OurOffer() {
       <section 
         className="py-24 px-4 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/factory_senmar(2).jpg)',
+          backgroundImage: 'url(/images/factory_senmar_2.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -67,7 +67,7 @@ export default function OurOffer() {
       <section 
         className="py-24 px-4 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/factory_senmar(3).jpg)',
+          backgroundImage: 'url(/images/factory_senmar_3.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -113,7 +113,7 @@ export default function OurOffer() {
       <section 
         className="py-24 px-4 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/factory_senmar(4).jpg)',
+          backgroundImage: 'url(/images/factory_senmar_4.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -181,7 +181,7 @@ export default function OurOffer() {
       <section 
         className="py-24 px-4 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/factory_senmar(7).jpg)',
+          backgroundImage: 'url(/images/factory_senmar_7.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -259,7 +259,7 @@ export default function OurOffer() {
       <section 
         className="py-24 px-4 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/factory_senmar(6).jpg)',
+          backgroundImage: 'url(/images/factory_senmar_6.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
