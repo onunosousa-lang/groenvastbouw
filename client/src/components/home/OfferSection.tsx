@@ -9,15 +9,15 @@ export default function OfferSection() {
   const content = {
     headline: language === 'nl' ? 'Ons Aanbod' : 'Our Offer',
     subheadline: language === 'nl' 
-      ? 'Jouw passiefhuis, jouw manier. Kies uit bewezen prefab modellen of volledig op maat. Structuur geleverd in 3 maanden — turn-key opties beschikbaar.'
-      : 'Your passive house, your way. Choose proven prefab models or go fully custom. Structure delivered in 3 months — turn-key options available.',
+      ? 'Jouw passiefhuis, jouw manier. Kies uit bewezen prefab modellen of volledig op maat. Structuur geleverd in 3 maanden. turn-key opties beschikbaar.'
+      : 'Your passive house, your way. Choose proven prefab models or go fully custom. Structure delivered in 3 months. turn-key options available.',
     
     prefab: {
       title: language === 'nl' ? 'Prefab Modellen' : 'Prefab Models',
       subtitle: language === 'nl' ? 'Bewezen ontwerpen. Voorspelbare resultaten.' : 'Proven designs. Predictable results.',
       description: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van Senmar — ontworpen voor efficiëntie, klaar voor levering.'
-        : 'Choose from Senmar\'s tested passive house designs — engineered for efficiency, ready for delivery.',
+        ? 'Kies uit geteste passiefhuisontwerpen van Senmar. ontworpen voor efficiëntie, klaar voor levering.'
+        : 'Choose from Senmar\'s tested passive house designs. engineered for efficiency, ready for delivery.',
       points: language === 'nl' ? [
         'Meerdere modellen beschikbaar',
         '3 prestatie-niveaus: Optimal / Passive / Super Passive',
@@ -32,16 +32,16 @@ export default function OfferSection() {
       price: language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*',
       cta: language === 'nl' ? 'Bekijk Senmar Modellen' : 'View Senmar Models',
       priceNote: language === 'nl' 
-        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties — langere levertijd.'
-        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations — longer delivery time applies.'
+        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties. langere levertijd.'
+        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations. longer delivery time applies.'
     },
 
     custom: {
       title: language === 'nl' ? 'Volledig Op Maat' : 'Fully Custom',
       subtitle: language === 'nl' ? 'Jouw visie. Onze precisie.' : 'Your vision. Our precision.',
       description: language === 'nl'
-        ? 'Een woning volledig naar jouw wensen ontworpen — dezelfde fabrieksgecontroleerde kwaliteit, dezelfde snelle levering.'
-        : 'A home designed entirely to your specifications — same factory-controlled quality, same fast delivery.',
+        ? 'Een woning volledig naar jouw wensen ontworpen. dezelfde fabrieksgecontroleerde kwaliteit, dezelfde snelle levering.'
+        : 'A home designed entirely to your specifications. same factory-controlled quality, same fast delivery.',
       points: language === 'nl' ? [
         'Ontwerp op basis van jouw eisen',
         'Passivhaus certificering mogelijk',
@@ -56,16 +56,16 @@ export default function OfferSection() {
       price: language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*',
       cta: language === 'nl' ? 'Start Op Maat Project' : 'Start Your Custom Project',
       priceNote: language === 'nl' 
-        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties — langere levertijd.'
-        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations — longer delivery time applies.'
+        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties. langere levertijd.'
+        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations. longer delivery time applies.'
     },
 
     b2b: {
       title: language === 'nl' ? 'B2B & Projectontwikkelaars' : 'B2B & Project Developers',
       subtitle: language === 'nl' ? 'Schaal met vertrouwen.' : 'Scale with confidence.',
       description: language === 'nl'
-        ? 'Heb je volume nodig? Onze productiefaciliteit levert tot 19.000m² modulaire passiefhuizen per jaar — ideaal voor ontwikkelaars, woningcorporaties en grootschalige projecten.'
-        : 'Need volume? Our production facility delivers up to 19,000m² of modular passive houses per year — ideal for developers, housing corporations, and large-scale projects.',
+        ? 'Heb je volume nodig? Onze productiefaciliteit levert tot 19.000m² modulaire passiefhuizen per jaar. ideaal voor ontwikkelaars, woningcorporaties en grootschalige projecten.'
+        : 'Need volume? Our production facility delivers up to 19,000m² of modular passive houses per year. ideal for developers, housing corporations, and large-scale projects.',
       points: language === 'nl' ? [
         'Serieproductiecapaciteit',
         'Consistente kwaliteit op schaal',

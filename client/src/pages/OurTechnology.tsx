@@ -47,13 +47,13 @@ export default function OurTechnology() {
     
     component1Title: language === 'nl' ? 'Geavanceerde Isolatie' : 'Advanced Insulation',
     component1Desc: language === 'nl'
-      ? 'Wij gebruiken 300-400mm isolatie in muren en 400-500mm in daken—veel meer dan Nederlandse standaarden. Dit creëert een thermische schil die warmte vasthoudt in de winter en koelte in de zomer.'
-      : 'We use 300-400mm insulation in walls and 400-500mm in roofs—far exceeding Dutch standards. This creates a thermal envelope that retains heat in winter and coolness in summer.',
+      ? 'Wij gebruiken 300-400mm isolatie in muren en 400-500mm in daken.veel meer dan Nederlandse standaarden. Dit creëert een thermische schil die warmte vasthoudt in de winter en koelte in de zomer.'
+      : 'We use 300-400mm insulation in walls and 400-500mm in roofs.far exceeding Dutch standards. This creates a thermal envelope that retains heat in winter and coolness in summer.',
     
     component2Title: language === 'nl' ? 'Luchtdichte Constructie' : 'Airtight Construction',
     component2Desc: language === 'nl'
-      ? 'Onze CNC-gesneden houten frames en membranen zorgen ervoor dat geen warme lucht ongewild ontsnapt. Dit is essentieel voor passieve huizen—een klein gat kan het hele systeem ondergraven.'
-      : 'Our CNC-cut timber frames and membranes ensure no warm air escapes unintentionally. This is critical for passive houses—a small gap can undermine the entire system.',
+      ? 'Onze CNC-gesneden houten frames en membranen zorgen ervoor dat geen warme lucht ongewild ontsnapt. Dit is essentieel voor passieve huizen.een klein gat kan het hele systeem ondergraven.'
+      : 'Our CNC-cut timber frames and membranes ensure no warm air escapes unintentionally. This is critical for passive houses.a small gap can undermine the entire system.',
     
     component3Title: language === 'nl' ? 'Warmteterugwinning' : 'Heat Recovery Ventilation',
     component3Desc: language === 'nl'
@@ -72,15 +72,15 @@ export default function OurTechnology() {
     
     component6Title: language === 'nl' ? 'Kwaliteitscontrole via Blower Door Test' : 'Quality Control via Blower Door Test',
     component6Desc: language === 'nl'
-      ? 'Elk huis wordt getest met een "blower door" om luchtdichtheid te verifiëren. Dit is geen optie—het is een vereiste. Geen huis verlaat onze site zonder certificering.'
-      : 'Every house is tested with a "blower door" to verify airtightness. This is not optional—it is required. No house leaves our site without certification.',
+      ? 'Elk huis wordt getest met een "blower door" om luchtdichtheid te verifiëren. Dit is geen optie.het is een vereiste. Geen huis verlaat onze site zonder certificering.'
+      : 'Every house is tested with a "blower door" to verify airtightness. This is not optional.it is required. No house leaves our site without certification.',
 
     benefitsTitle: language === 'nl' ? 'Voordelen van Passieve Huizen' : 'Benefits of Passive Houses',
     
     benefit1Title: language === 'nl' ? 'Drastisch Lagere Energierekeningen' : 'Drastically Lower Energy Bills',
     benefit1Desc: language === 'nl'
-      ? 'Gemiddeld besparen huiseigenaren €2,000-3,000 per jaar op verwarmings- en koelingskosten. Over 30 jaar is dat €60,000-90,000—geld in uw zak.'
-      : 'On average, homeowners save €2,000-3,000 per year on heating and cooling costs. Over 30 years, that is €60,000-90,000—money in your pocket.',
+      ? 'Gemiddeld besparen huiseigenaren €2,000-3,000 per jaar op verwarmings- en koelingskosten. Over 30 jaar is dat €60,000-90,000.geld in uw zak.'
+      : 'On average, homeowners save €2,000-3,000 per year on heating and cooling costs. Over 30 years, that is €60,000-90,000.money in your pocket.',
     
     benefit2Title: language === 'nl' ? 'Verbeterde Binnenluchtcondities' : 'Improved Indoor Air Quality',
     benefit2Desc: language === 'nl'
@@ -109,8 +109,8 @@ export default function OurTechnology() {
 
     standardsTitle: language === 'nl' ? 'Certificering & Standaarden' : 'Certification & Standards',
     standardsDesc: language === 'nl'
-      ? 'Onze huizen voldoen aan internationale Passive House Institute (PHI) standaarden en Nederlandse BENG-eisen. Dit is niet alleen een label—het is een garantie voor prestaties.'
-      : 'Our homes meet international Passive House Institute (PHI) standards and Dutch BENG requirements. This is not just a label—it is a performance guarantee.',
+      ? 'Onze huizen voldoen aan internationale Passive House Institute (PHI) standaarden en Nederlandse BENG-eisen. Dit is niet alleen een label.het is een garantie voor prestaties.'
+      : 'Our homes meet international Passive House Institute (PHI) standards and Dutch BENG requirements. This is not just a label.it is a performance guarantee.',
 
     ctaTitle: language === 'nl' ? 'Klaar voor Passieve Huisbouw?' : 'Ready for Passive House Living?',
     ctaText: language === 'nl'

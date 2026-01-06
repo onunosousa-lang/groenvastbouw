@@ -13,27 +13,27 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     company: 'Groenvastbouw',
     tagline: language === 'nl' ? 'Nuchter bouwen. Slim wonen.' : 'Smart building. Smart living.',
     partnership: language === 'nl'
-      ? 'In partnerschap met Senmar — innovatief bedrijf uit Portugal, gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.'
-      : 'In partnership with Senmar — cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.',
+      ? 'In partnerschap met Senmar. innovatief bedrijf uit Portugal, gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.'
+      : 'In partnership with Senmar. cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.',
     headline: language === 'nl' 
       ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
       : 'Your Passive House. Built in 3 Months.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen vanaf €1.550/m²* — volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>
-      : <>Prefab passive houses starting from €1,550/m²* — full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>,
+      ? <>Prefab passiefhuizen vanaf €1.550/m²*. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>
+      : <>Prefab passive houses starting from €1,550/m²*. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] font-bold hover:underline">SENMAR</a></>,
     description: language === 'nl'
-      ? 'Onze technologie zorgt voor maximale efficiëntie in productie — gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
-      : 'Our technology allows for maximum efficiency in production — controlled costs without surprises, minimum waste, future-proof comfort.',
+      ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
+      : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
     ctaPrimary: language === 'nl' ? 'Bekijk Ons Aanbod' : 'See Our Offer',
     ctaSecondary: language === 'nl' ? 'Gratis Consult' : 'Free Consultation',
     points: language === 'nl' 
       ? [
-          '90% lagere energierekeningen — voor het leven',
+          '90% lagere energierekeningen. voor het leven',
           '3 maanden van bestelling tot gemonteerde structuur',
           'Maximale kwaliteit, gebouwd om te duren'
         ]
       : [
-          '90% lower energy bills — for life',
+          '90% lower energy bills. for life',
           '3 months from order to mounted structure',
           'Maximum quality, built to last'
         ],
