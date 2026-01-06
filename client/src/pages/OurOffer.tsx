@@ -488,14 +488,11 @@ export default function OurOffer() {
                 onClick={scrollToContact}
                 className="px-8 py-4 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
               >
-                {language === 'nl' ? 'Plan Gratis Consult' : 'Schedule Free Consultation'}
+                {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
               </button>
-              <button
-                onClick={scrollToContact}
-                className="px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border border-white/30"
-              >
-                {language === 'nl' ? 'Stuur Uw Plannen' : 'Send Your Plans'}
-              </button>
+              <Link href="/" className="px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border border-white/30 flex items-center justify-center">
+                {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
+              </Link>
             </div>
           </motion.div>
         </div>

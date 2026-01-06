@@ -25,7 +25,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
     ctaPrimary: language === 'nl' ? 'Bekijk Ons Aanbod' : 'See Our Offer',
-    ctaSecondary: language === 'nl' ? 'Gratis Consult' : 'Free Consultation',
+    ctaSecondary: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     points: language === 'nl' 
       ? [
           '90% lagere energierekeningen. voor het leven',

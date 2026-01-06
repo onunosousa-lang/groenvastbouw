@@ -264,7 +264,7 @@ export default function WhyUs() {
             href="#contact" 
             className="inline-block bg-white text-[#90dc35] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
           >
-            {language === 'nl' ? 'Neem Contact Op' : 'Contact Us'}
+            {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
           </a>
         </div>
       </section>

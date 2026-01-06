@@ -135,7 +135,7 @@ export default function WhatWeOffer() {
     ctaText: language === 'nl'
       ? 'Neem contact op voor een gratis consult en offerte.'
       : 'Contact us for a free consultation and quote.',
-    contactButton: language === 'nl' ? 'Plan Gratis Consult' : 'Schedule Free Consultation',
+    contactButton: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
   };
 
   const scrollToContact = () => {

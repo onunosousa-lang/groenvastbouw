@@ -116,7 +116,7 @@ export default function OurTechnology() {
     ctaText: language === 'nl'
       ? 'Ontdek hoe onze technologie uw energierekeningen kan halveren en uw wooncomfort kan transformeren.'
       : 'Discover how our technology can halve your energy bills and transform your living comfort.',
-    contactButton: language === 'nl' ? 'Contact Ons' : 'Contact Us',
+    contactButton: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
   };
 
   const fadeInUp = {

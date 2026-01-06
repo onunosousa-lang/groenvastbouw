@@ -170,7 +170,7 @@ export default function FAQPage() {
       ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
       : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
-    contactUs: language === 'nl' ? 'Neem Contact Op' : 'Contact Us',
+    contactUs: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',
     readyTitle: language === 'nl' ? 'Klaar om Uw Project te Starten?' : 'Ready to Start Your Project?',
     readyText: language === 'nl' ? 'Neem contact met ons op om uw passief huis project te bespreken.' : 'Get in touch with us to discuss your passive house project.',

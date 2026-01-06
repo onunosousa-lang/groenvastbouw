@@ -167,7 +167,7 @@ export default function Projects() {
               href="/#contact" 
               className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
             >
-              {language === 'nl' ? 'Neem Contact Op' : 'Get In Touch'}
+              {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
             </a>
           </div>
         </div>
