@@ -8,6 +8,7 @@ export const translations = {
     nav_projects: "Projecten",
     nav_why_us: "Waarom Ons",
     nav_contact: "Request an intro call",
+    nav_contact_page: "Contact",
     
     // Hero Section
     hero_title: "De toekomst van bouwen",
@@ -275,6 +276,7 @@ export const translations = {
     nav_projects: "Projects",
     nav_why_us: "Why Us",
     nav_contact: "Request an intro call",
+    nav_contact_page: "Contact",
     
     // Hero Section
     hero_title: "The future of building",
