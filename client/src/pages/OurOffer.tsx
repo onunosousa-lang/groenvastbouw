@@ -482,14 +482,14 @@ export default function OurOffer() {
                 ? 'Deel uw plannen of kies een model en ontvang een duidelijke offerte en tijdlijn voor uw passiefhuisstructuur.'
                 : 'Share your plans or choose a model, and receive a clear offer and timeline for your passive house structure.'}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl">
               <button
                 onClick={scrollToContact}
-                className="px-8 py-4 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
+                className="flex-1 px-8 py-4 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
               >
                 {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
               </button>
-              <Link href="/" className="px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border border-white/30 flex items-center justify-center">
+              <Link href="/" className="flex-1 px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border border-white/30 flex items-center justify-center">
                 {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
               </Link>
             </div>
