@@ -471,29 +471,6 @@ export default function OurOffer() {
         </div>
       </section>
 
-      {/* Realized Projects */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {language === 'nl' ? 'Gerealiseerde Projecten' : 'Realized Projects'}
-            </h2>
-            <p className="text-lg text-gray-600">
-              {language === 'nl'
-                ? 'Zie hoe de Senmar passiefhuisoplossing in echte projecten in heel Europa presteert.'
-                : 'See how the Senmar passive solution performs in real projects across Europe.'}
-            </p>
-          </motion.div>
-
-          <motion.div {...fadeInUp} className="text-center">
-            <Link href="/projects" className="inline-flex items-center px-8 py-4 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors">
-              {language === 'nl' ? 'Bekijk Alle Projecten' : 'View All Projects'}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#2A3439] to-[#1a1f23] text-white">
         <div className="max-w-4xl mx-auto text-center">
