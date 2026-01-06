@@ -167,17 +167,22 @@ export default function PerformanceLevels() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/our-technology" className="w-full">
-                  <Button className={`w-full ${
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      window.location.href = '/#contact';
+                    }
+                  }}
+                  className={`w-full px-4 py-2 ${
                     level.color === 'green' ? 'bg-[#90dc35] hover:bg-[#6fb820]' : 
-                    level.color === 'blue' ? 'bg-[#118443] hover:bg-blue-700' : 
-                    level.color === 'purple' ? 'bg-[#118443] hover:bg-purple-700' :
+                    level.color === 'blue' ? 'bg-[#118443] hover:bg-[#0d5c34]' : 
+                    level.color === 'purple' ? 'bg-[#118443] hover:bg-[#0d5c34]' :
                     'bg-gray-600 hover:bg-gray-700'
-                  } text-white font-semibold text-sm group`}>
-                    {language === 'nl' ? 'Meer Informatie' : 'Learn More'}
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
+                  } text-white font-semibold text-sm rounded-lg transition-colors flex items-center justify-center gap-2`}>
+                    {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
               </div>
             </motion.div>
           ))}

@@ -458,13 +458,18 @@ export default function OurOffer() {
                 className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <p className="text-gray-600 leading-relaxed mb-6">{item.desc}</p>
+                <button
+                  onClick={scrollToContact}
+                  className="w-full px-6 py-3 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
+                >
+                  {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
+                </button>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
-
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#2A3439] to-[#1a1f23] text-white">
         <div className="max-w-4xl mx-auto text-center">
