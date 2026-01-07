@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 import HeroSection from '@/components/home/HeroSection';
 import OfferSection from '@/components/home/OfferSection';
-import TechnicalSolutions from '@/components/home/TechnicalSolutions';
+
 import HowItWorks from '@/components/home/HowItWorks';
 
 import PerformanceLevels from '@/components/home/PerformanceLevels';
@@ -28,7 +28,6 @@ export default function Home() {
       <Navbar />
       <HeroSection scrollToSection={scrollToSection} />
       <OfferSection />
-      <TechnicalSolutions />
       <HowItWorks />
 
       <PerformanceLevels />

@@ -100,6 +100,9 @@ export default function Navbar() {
             <Link href="/our-offer" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
               {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
             </Link>
+            <Link href="/solutions" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
+              {language === 'nl' ? 'Oplossingen' : 'Solutions'}
+            </Link>
             <a href="#process" onClick={(e) => { e.preventDefault(); scrollToSection('process'); }} className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
               {language === 'nl' ? 'Hoe Het Werkt' : 'How It Works'}
             </a>
@@ -138,6 +141,9 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4 px-4">
               <Link href="/our-offer" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
+              </Link>
+              <Link href="/solutions" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Oplossingen' : 'Solutions'}
               </Link>
               <a href="#process" onClick={(e) => { e.preventDefault(); scrollToSection('process'); }} className="text-white/90 hover:text-[#90dc35]">
                 {language === 'nl' ? 'Hoe Het Werkt' : 'How It Works'}
