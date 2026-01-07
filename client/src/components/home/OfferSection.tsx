@@ -1,3 +1,4 @@
+// Rebuild trigger - Technical Solutions integrated
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { Home, Pencil, Building2, ExternalLink, ArrowRight } from 'lucide-react';
