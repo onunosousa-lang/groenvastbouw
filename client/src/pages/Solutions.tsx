@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import Navbar from '@/components/Navbar';
 
@@ -105,7 +104,7 @@ export default function Solutions() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
@@ -128,14 +127,8 @@ export default function Solutions() {
         <div className="container mx-auto px-4">
           {/* Accordion Tiers */}
           <div className="max-w-4xl mx-auto space-y-3">
-            {tiers.map((tier, index) => (
-              <motion.div
-                key={tier.id}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-              >
+            {tiers.map((tier) => (
+              <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
                   className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#90dc35] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
@@ -156,50 +149,40 @@ export default function Solutions() {
                 </button>
 
                 {/* Expanded Content */}
-                <AnimatePresence>
-                  {expandedTier === tier.id && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
-                        {/* Description */}
-                        <p className="text-gray-700 text-lg leading-relaxed">
-                          {language === 'nl' ? tier.descNl : tier.descEn}
-                        </p>
+                {expandedTier === tier.id && (
+                  <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
+                    {/* Description */}
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      {language === 'nl' ? tier.descNl : tier.descEn}
+                    </p>
 
-                        {/* Specifications */}
-                        <div>
-                          <h4 className="font-bold text-gray-900 mb-4 text-lg">
-                            {language === 'nl' ? 'Kenmerken:' : 'Features:'}
-                          </h4>
-                          <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
-                              <li key={idx} className="flex items-start gap-3 text-gray-700">
-                                <span className="mt-1.5 w-3 h-3 rounded-full bg-[#90dc35] flex-shrink-0" />
-                                <span className="font-medium">{spec}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                    {/* Specifications */}
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-4 text-lg">
+                        {language === 'nl' ? 'Kenmerken:' : 'Features:'}
+                      </h4>
+                      <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
+                          <li key={idx} className="flex items-start gap-3 text-gray-700">
+                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#90dc35] flex-shrink-0" />
+                            <span className="font-medium">{spec}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                        {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                          <a href="/#contact" className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
-                            {language === 'nl' ? 'Aanvraag indienen' : 'Submit Request'}
-                          </a>
-                          <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#90dc35] text-[#90dc35] hover:bg-[#90dc35] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
-                            {language === 'nl' ? 'Bekijk op Senmar.pt' : 'View on Senmar.pt'}
-                          </a>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                      <a href="/#contact" className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                        {language === 'nl' ? 'Aanvraag indienen' : 'Submit Request'}
+                      </a>
+                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#90dc35] text-[#90dc35] hover:bg-[#90dc35] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                        {language === 'nl' ? 'Bekijk op Senmar.pt' : 'View on Senmar.pt'}
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -234,4 +217,3 @@ export default function Solutions() {
     </div>
   );
 }
-
