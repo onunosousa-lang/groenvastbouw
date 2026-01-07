@@ -19,6 +19,7 @@ const PrefabBenefits = lazy(() => import("./pages/PrefabBenefits"));
 const OurTechnology = lazy(() => import("./pages/OurTechnology"));
 const OurOffer = lazy(() => import("./pages/OurOffer"));
 const Solutions = lazy(() => import("./pages/Solutions"));
+const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -44,6 +45,7 @@ function Router() {
         <Route path="/our-technology" component={OurTechnology} />
         <Route path="/our-offer" component={OurOffer} />
         <Route path="/solutions" component={Solutions} />
+        <Route path="/how-it-works" component={HowItWorks} />
         <Route path="/contact" component={Contact} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
