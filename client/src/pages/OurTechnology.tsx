@@ -1,312 +1,253 @@
-import { motion } from 'framer-motion';
-import { ArrowLeft, Zap, Leaf, Home, TrendingUp, Shield, Lightbulb } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import { ArrowLeft, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'wouter';
+import Navbar from '@/components/Navbar';
 
 export default function OurTechnology() {
   const { language } = useLanguage();
-  
-  const content = {
-    backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
-    heroTitle: language === 'nl' ? 'Onze Technologie' : 'Our Technology',
-    heroSubtitle: language === 'nl' 
-      ? 'Hoe Passieve Huizen de Toekomst van Duurzaam Wonen Definiëren'
-      : 'How Passive Houses Define the Future of Sustainable Living',
-    passiveHousingTitle: language === 'nl' ? 'Wat is Passieve Huisbouw?' : 'What is Passive House Construction?',
-    passiveHousingDesc: language === 'nl'
-      ? 'Passieve huizen zijn gebouwen die extreme thermische efficiëntie bereiken door geavanceerde isolatie, luchtdichtheid en warmteterugwinning. In plaats van afhankelijk te zijn van traditionele verwarmings- en koelsystemen, behouden passieve huizen hun interne temperatuur door intelligente ontwerp en materiaalgebruik.'
-      : 'Passive houses are buildings that achieve extreme thermal efficiency through advanced insulation, airtightness, and heat recovery. Rather than relying on traditional heating and cooling systems, passive houses maintain their internal temperature through intelligent design and material use.',
-    
-    comparisonTitle: language === 'nl' ? 'Passief Huis vs. Nederlands Standaard' : 'Passive House vs. Dutch Standard',
-    comparisonSubtitle: language === 'nl'
-      ? 'Hoe onze technologie Nederlandse bouwstandaarden overtreft'
-      : 'How our technology exceeds Dutch building standards',
-    
-    metric1Label: language === 'nl' ? 'Energieverbruik' : 'Energy Consumption',
-    metric1Passive: language === 'nl' ? '15 kWh/m²/jaar' : '15 kWh/m²/year',
-    metric1Dutch: language === 'nl' ? '120 kWh/m²/jaar' : '120 kWh/m²/year',
-    metric1Ratio: '8x efficiënter',
-    
-    metric2Label: language === 'nl' ? 'Verwarmingsbehoefte' : 'Heating Demand',
-    metric2Passive: language === 'nl' ? '10 kWh/m²/jaar' : '10 kWh/m²/year',
-    metric2Dutch: language === 'nl' ? '80 kWh/m²/jaar' : '80 kWh/m²/year',
-    metric2Ratio: '8x lager',
-    
-    metric3Label: language === 'nl' ? 'Luchtdichtheid' : 'Airtightness',
-    metric3Passive: language === 'nl' ? '0,6 ACH @ 50Pa' : '0.6 ACH @ 50Pa',
-    metric3Dutch: language === 'nl' ? '3-5 ACH @ 50Pa' : '3-5 ACH @ 50Pa',
-    metric3Ratio: '5-8x beter',
-    
-    metric4Label: language === 'nl' ? 'Jaarlijkse Verwarmingskosten' : 'Annual Heating Costs',
-    metric4Passive: language === 'nl' ? '€300-500' : '€300-500',
-    metric4Dutch: language === 'nl' ? '€2,500-4,000' : '€2,500-4,000',
-    metric4Ratio: '8-10x goedkoper',
+  const [expandedTier, setExpandedTier] = useState<string>('optimal');
 
-    technologyTitle: language === 'nl' ? 'Kerncomponenten van Onze Technologie' : 'Core Components of Our Technology',
-    
-    component1Title: language === 'nl' ? 'Geavanceerde Isolatie' : 'Advanced Insulation',
-    component1Desc: language === 'nl'
-      ? 'Wij gebruiken 300-400mm isolatie in muren en 400-500mm in daken.veel meer dan Nederlandse standaarden. Dit creëert een thermische schil die warmte vasthoudt in de winter en koelte in de zomer.'
-      : 'We use 300-400mm insulation in walls and 400-500mm in roofs.far exceeding Dutch standards. This creates a thermal envelope that retains heat in winter and coolness in summer.',
-    
-    component2Title: language === 'nl' ? 'Luchtdichte Constructie' : 'Airtight Construction',
-    component2Desc: language === 'nl'
-      ? 'Onze CNC-gesneden houten frames en membranen zorgen ervoor dat geen warme lucht ongewild ontsnapt. Dit is essentieel voor passieve huizen.een klein gat kan het hele systeem ondergraven.'
-      : 'Our CNC-cut timber frames and membranes ensure no warm air escapes unintentionally. This is critical for passive houses.a small gap can undermine the entire system.',
-    
-    component3Title: language === 'nl' ? 'Warmteterugwinning' : 'Heat Recovery Ventilation',
-    component3Desc: language === 'nl'
-      ? 'Onze HRV-systemen (Warmteterugwinning Ventilatie) halen 90% van de warmte uit uitgaande lucht en gebruiken deze om inkomende lucht te verwarmen. Frisse lucht, zonder energieverlies.'
-      : 'Our HRV (Heat Recovery Ventilation) systems extract 90% of heat from outgoing air and use it to warm incoming air. Fresh air, with no energy loss.',
-    
-    component4Title: language === 'nl' ? 'Thermische Bruggen Minimaliseren' : 'Minimize Thermal Bridges',
-    component4Desc: language === 'nl'
-      ? 'Traditionele huizen hebben thermische bruggen (waar warmte ontsnapt via staal of beton). Onze ontwerpen elimineren deze zwakke punten door isolatie door te trekken en kritische verbindingen te isoleren.'
-      : 'Traditional homes have thermal bridges (where heat escapes via steel or concrete). Our designs eliminate these weak points by running insulation continuously and isolating critical connections.',
-    
-    component5Title: language === 'nl' ? 'Passieve Zonnewarmte' : 'Passive Solar Gain',
-    component5Desc: language === 'nl'
-      ? 'Zuidgericht ramen met laag-emissie glas vangen zonnewarmte op in de winter. Zomerse overkoepeling voorkomt oververhitting. Dit is gratis verwarming en koeling.'
-      : 'South-facing windows with low-emissivity glass capture solar heat in winter. Summer overhangs prevent overheating. This is free heating and cooling.',
-    
-    component6Title: language === 'nl' ? 'Kwaliteitscontrole via Blower Door Test' : 'Quality Control via Blower Door Test',
-    component6Desc: language === 'nl'
-      ? 'Elk huis wordt getest met een "blower door" om luchtdichtheid te verifiëren. Dit is geen optie.het is een vereiste. Geen huis verlaat onze site zonder certificering.'
-      : 'Every house is tested with a "blower door" to verify airtightness. This is not optional.it is required. No house leaves our site without certification.',
+  const tiers = [
+    {
+      id: 'basic',
+      titleNl: 'Basis Structuur',
+      titleEn: 'Basic Structure',
+      priceNl: 'Vanaf €190/m²',
+      priceEn: 'Starting from €190/m²',
+      descNl: 'Onze basis preset levert een fundamentele oplossing voor het bouwframe, waarmee je een geprefabriceerde structuur krijgt die je vervolgens kunt aanpassen en afmaken. Het is een geweldige keuze voor degenen die kosten willen besparen en die de expertise hebben om de constructie zelf af te maken.',
+      descEn: 'Our basic preset delivers a foundational solution for the building frame, giving you a prefabricated structure that you can then customize and complete. It\'s a great choice for those looking to reduce costs and who have the expertise to complete the construction themselves.',
+      componentsNl: [
+        'Externe OSB plaat (12mm)',
+        'Houten framestructuur (195x45mm)',
+        'Joist beam (390x45mm)',
+        'Dakconstructie met purlins'
+      ],
+      componentsEn: [
+        'External OSB plate (12mm)',
+        'Timber frame structure (195x45mm)',
+        'Joist beam (390x45mm)',
+        'Roof construction with purlins'
+      ]
+    },
+    {
+      id: 'optimal',
+      titleNl: 'Optimale Structuur',
+      titleEn: 'Optimal Structure',
+      priceNl: 'Vanaf €270/m²',
+      priceEn: 'Starting from €270/m²',
+      descNl: 'De optimale preset is ontworpen voor gematigde klimaten, met een bouwframe dat 200 millimeter isolatie en een interne dampremmende laag bevat. Deze opstelling garandeert een comfortabel microklimaat en ondersteunt de structurele integriteit en levensduur van het gebouw. Deze oplossing is perfect voor comfortabel wonen het hele jaar door in regio\'s met milde winteromstandigheden.',
+      descEn: 'The optimal preset is designed for moderate climates, with a building frame that includes 200 millimeters of insulation and an internal vapor barrier. This setup guarantees a comfortable microclimate and supports the structural integrity and longevity of the building. This solution is perfect for comfortable year-round living in regions with mild winter conditions.',
+      componentsNl: [
+        'Zachte minerale wol isolatie (200mm)',
+        'U-waarde = 0.035 W/mK',
+        'Dampremmende membraan',
+        'Interne en externe OSB platen',
+        'Volledige vloer- en dakconstructie'
+      ],
+      componentsEn: [
+        'Soft mineral wool insulation (200mm)',
+        'U-value = 0.035 W/mK',
+        'Vapor barrier membrane',
+        'Internal and external OSB plates',
+        'Complete floor and roof construction'
+      ]
+    },
+    {
+      id: 'passive',
+      titleNl: 'Passieve Structuur',
+      titleEn: 'Passive Structure',
+      priceNl: 'Vanaf €320/m²',
+      priceEn: 'Starting from €320/m²',
+      descNl: 'Deze preset bevat aanvullende externe isolatie voor het bouwframe, met dikte aangepast aan lokale klimaatomstandigheden. Het primaire voordeel van deze oplossing is verbeterde thermische bescherming, wat resulteert in een koeler huis in de zomer en verminderd energieverbruik voor verwarming in de winter. Over het volgende decennium zal deze passieve isolatie leiden tot aanzienlijke besparingen op zowel verwarmings- als koelkosten. Deze oplossing is zeer geschikt voor regio\'s met strenge winters en zeer hete klimaten.',
+      descEn: 'This preset features additional external insulation for the building frame, with thickness adjusted according to local climate conditions. The primary benefit of this solution is enhanced thermal protection, resulting in a cooler home during the summer and reduced energy consumption for heating in the winter. Over the next decade, this passive insulation will lead to substantial savings on both heating and cooling costs. This solution is well-suited for regions with harsh winters as well as very hot climates.',
+      componentsNl: [
+        'Harde minerale wol externe isolatie',
+        'Zachte minerale wol (200mm)',
+        'Verticale houten latten (120x45mm)',
+        'Dampremmende membraan',
+        'Verbeterde thermische bescherming'
+      ],
+      componentsEn: [
+        'Hard mineral wool external insulation',
+        'Soft mineral wool (200mm)',
+        'Vertical timber battens (120x45mm)',
+        'Vapor barrier membrane',
+        'Enhanced thermal protection'
+      ]
+    },
+    {
+      id: 'superpassive',
+      titleNl: 'Super Passieve Structuur',
+      titleEn: 'Super Passive Structure',
+      priceNl: 'Vanaf €340/m²',
+      priceEn: 'Starting from €340/m²',
+      descNl: 'Onze SuperPassive Preset voldoet aan Passivhaus-normen en biedt een uitzonderlijke oplossing voor energiezuinige, comfortabele huizen. Deze geprefabriceerde presets beschikken over geavanceerde isolatie die het hele jaar door een stabiele interne temperatuur handhaaft, waardoor het energieverbruik met tot 75% wordt verminderd in vergelijking met standaardbouw. Dit voorkomt ook tocht, koude plekken, schimmel en condensatie, wat een gezondere leefomgeving bevordert. Ontworpen met een "fabric first"-benadering en ondersteund door uitgebreid onderzoek, leveren onze SuperPassive muren blijvende kwaliteit en prestaties voor zowel comfort als duurzaamheid.',
+      descEn: 'Our SuperPassive Preset meets Passivhaus standards, providing an exceptional solution for energy-efficient, comfortable homes. These prefab preset feature advanced insulation that maintains a steady internal temperature year-round, reducing energy use by up to 75% compared to standard builds. That also prevents draughts, cold spots, mold, and condensation, promoting a healthier living environment. Designed with a "fabric first" approach and backed by extensive research, our SuperPassive walls deliver lasting quality and performance for both comfort and sustainability.',
+      componentsNl: [
+        'Maximale isolatie (400mm+)',
+        'Passivhaus certificering',
+        'Interne en externe isolatie',
+        'Geavanceerde dampremmende systemen',
+        'Optimale luchtdichtheid'
+      ],
+      componentsEn: [
+        'Maximum insulation (400mm+)',
+        'Passivhaus certification',
+        'Internal and external insulation',
+        'Advanced vapor barrier systems',
+        'Optimal airtightness'
+      ]
+    }
+  ];
 
-    benefitsTitle: language === 'nl' ? 'Voordelen van Passieve Huizen' : 'Benefits of Passive Houses',
-    
-    benefit1Title: language === 'nl' ? 'Drastisch Lagere Energierekeningen' : 'Drastically Lower Energy Bills',
-    benefit1Desc: language === 'nl'
-      ? 'Gemiddeld besparen huiseigenaren €2,000-3,000 per jaar op verwarmings- en koelingskosten. Over 30 jaar is dat €60,000-90,000.geld in uw zak.'
-      : 'On average, homeowners save €2,000-3,000 per year on heating and cooling costs. Over 30 years, that is €60,000-90,000.money in your pocket.',
-    
-    benefit2Title: language === 'nl' ? 'Verbeterde Binnenluchtcondities' : 'Improved Indoor Air Quality',
-    benefit2Desc: language === 'nl'
-      ? 'Voortdurende ventilatie met gefilterde lucht betekent minder stof, pollen en vervuiling. Ideaal voor mensen met allergieën of ademhalingsproblemen.'
-      : 'Continuous ventilation with filtered air means less dust, pollen, and pollution. Ideal for people with allergies or respiratory issues.',
-    
-    benefit3Title: language === 'nl' ? 'Thermisch Comfort' : 'Thermal Comfort',
-    benefit3Desc: language === 'nl'
-      ? 'Geen koude hoeken, geen tocht, geen grote temperatuurverschillen. Elk vertrek voelt prettig aan, het hele jaar door.'
-      : 'No cold corners, no drafts, no large temperature differences. Every room feels comfortable, year-round.',
-    
-    benefit4Title: language === 'nl' ? 'Koolstofnegatief' : 'Carbon-Negative',
-    benefit4Desc: language === 'nl'
-      ? 'De energiebesparing over de levensduur van het huis compenseert meer dan de koolstof die nodig is om het te bouwen. Dit is echte duurzaamheid.'
-      : 'The energy savings over the house\'s lifetime more than compensate for the carbon needed to build it. This is true sustainability.',
-    
-    benefit5Title: language === 'nl' ? 'Toekomstige Waarde' : 'Future-Proof Value',
-    benefit5Desc: language === 'nl'
-      ? 'Naarmate energiekosten stijgen en regelgeving aanscherpt, worden passieve huizen steeds waardevoller. U investeert in de toekomst.'
-      : 'As energy costs rise and regulations tighten, passive houses become increasingly valuable. You are investing in the future.',
-    
-    benefit6Title: language === 'nl' ? 'Geluid Isolatie' : 'Sound Insulation',
-    benefit6Desc: language === 'nl'
-      ? 'De dichte constructie betekent ook uitstekende geluidsisolatie. Minder straatlawaai, meer rust.'
-      : 'The airtight construction also means excellent sound insulation. Less street noise, more peace.',
+  const constructionMethods = [
+    {
+      titleNl: 'Gepaneliseerde Constructie',
+      titleEn: 'Panelized Construction',
+      descNl: 'Bij deze methode worden gebouwen geconstrueerd met behulp van vooraf vervaardigde wanden en panelen, die in een gecontroleerde omgeving off-site worden gefabriceerd. Deze panelen worden vervolgens naar de bouwplaats getransporteerd en als bouwstenen in elkaar gezet, wat snellere bouwtijden, verbeterde kwaliteitscontrole en minder afval mogelijk maakt.',
+      descEn: 'In this method, buildings are constructed using pre-manufactured walls and panels, which are fabricated off-site in a controlled environment. These panels are then transported to the construction site and assembled like building blocks, allowing for faster construction times, improved quality control, and reduced waste.'
+    },
+    {
+      titleNl: 'Modulaire Constructie',
+      titleEn: 'Modular Construction',
+      descNl: 'Deze benadering gaat geprefabricatie een stap verder door volledige secties of modules van een gebouw off-site te creëren. Deze modules, die volledige kamers of secties van een structuur kunnen bevatten, zijn volledig uitgerust met elektriciteit, leidingwerk en binnenafwerking voordat ze naar de plaats worden vervoerd. Eenmaal ter plaatse worden de modules als grote puzzelstukken in elkaar gezet, wat resulteert in een volledig geïntegreerd gebouw.',
+      descEn: 'This approach takes prefabrication a step further by creating entire sections or modules of a building off-site. These modules, which can include entire rooms or sections of a structure, are fully outfitted with electrical, plumbing, and interior finishes before being transported to the site. Once on-site, the modules are assembled like large-scale puzzle pieces, resulting in a fully integrated building.'
+    }
+  ];
 
-    standardsTitle: language === 'nl' ? 'Certificering & Standaarden' : 'Certification & Standards',
-    standardsDesc: language === 'nl'
-      ? 'Onze huizen voldoen aan internationale Passive House Institute (PHI) standaarden en Nederlandse BENG-eisen. Dit is niet alleen een label.het is een garantie voor prestaties.'
-      : 'Our homes meet international Passive House Institute (PHI) standards and Dutch BENG requirements. This is not just a label.it is a performance guarantee.',
-
-    ctaTitle: language === 'nl' ? 'Klaar voor Passieve Huisbouw?' : 'Ready for Passive House Living?',
-    ctaText: language === 'nl'
-      ? 'Ontdek hoe onze technologie uw energierekeningen kan halveren en uw wooncomfort kan transformeren.'
-      : 'Discover how our technology can halve your energy bills and transform your living comfort.',
-    contactButton: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
-  };
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true },
-    transition: { duration: 0.6 }
+  const toggleTier = (tierId: string) => {
+    setExpandedTier(expandedTier === tierId ? '' : tierId);
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#2A3439]">
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-[#2A3439] text-white">
-        <div className="max-w-6xl mx-auto mb-8">
-          <Link href="/" className="inline-flex items-center text-[#90dc35] hover:text-white font-semibold transition-colors group">
-            <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            {content.backToHome}
+      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
+        <div className="container mx-auto px-4">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
+            <ArrowLeft className="w-5 h-5" />
+            {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
-        </div>
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              {content.heroTitle}
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-200 font-light leading-relaxed">
-              {content.heroSubtitle}
-            </p>
-          </motion.div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            {language === 'nl' ? 'Onze Technologie' : 'Our Technology'}
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl">
+            {language === 'nl'
+              ? 'Vier technische presets ontworpen voor verschillende klimaten en behoeften. Kies het isolatieniveau dat bij jouw project past.'
+              : 'Four technical presets designed for different climates and needs. Choose the insulation level that fits your project.'}
+          </p>
         </div>
       </section>
 
-      {/* What is Passive Housing */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">{content.passiveHousingTitle}</h2>
-            <p className="text-lg text-gray-600 leading-relaxed text-center mb-8">
-              {content.passiveHousingDesc}
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">{content.comparisonTitle}</h2>
-            <p className="text-lg text-gray-600 text-center leading-relaxed">{content.comparisonSubtitle}</p>
-          </motion.div>
-
-          <motion.div {...fadeInUp} className="overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-[#2A3439] text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Metriek' : 'Metric'}</th>
-                  <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Passief Huis' : 'Passive House'}</th>
-                  <th className="px-6 py-4 text-left font-semibold">{language === 'nl' ? 'Nederlands Standaard' : 'Dutch Standard'}</th>
-                  <th className="px-6 py-4 text-left font-semibold text-[#90dc35]">{language === 'nl' ? 'Voordeel' : 'Advantage'}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                <tr className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-semibold">{content.metric1Label}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric1Passive}</td>
-                  <td className="px-6 py-4 text-gray-600">{content.metric1Dutch}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric1Ratio}</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-semibold">{content.metric2Label}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric2Passive}</td>
-                  <td className="px-6 py-4 text-gray-600">{content.metric2Dutch}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric2Ratio}</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-semibold">{content.metric3Label}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric3Passive}</td>
-                  <td className="px-6 py-4 text-gray-600">{content.metric3Dutch}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric3Ratio}</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-semibold">{content.metric4Label}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric4Passive}</td>
-                  <td className="px-6 py-4 text-gray-600">{content.metric4Dutch}</td>
-                  <td className="px-6 py-4 text-[#90dc35] font-bold">{content.metric4Ratio}</td>
-                </tr>
-              </tbody>
-            </table>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Core Components */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{content.technologyTitle}</h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { title: content.component1Title, desc: content.component1Desc, icon: Zap },
-              { title: content.component2Title, desc: content.component2Desc, icon: Shield },
-              { title: content.component3Title, desc: content.component3Desc, icon: Lightbulb },
-              { title: content.component4Title, desc: content.component4Desc, icon: TrendingUp },
-              { title: content.component5Title, desc: content.component5Desc, icon: Home },
-              { title: content.component6Title, desc: content.component6Desc, icon: Leaf },
-            ].map((component, idx) => {
-              const Icon = component.icon;
-              return (
-                <motion.div
-                  key={idx}
-                  {...fadeInUp}
-                  transition={{ duration: 0.6, delay: idx * 0.1 }}
-                  className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#90dc35]/10 flex items-center justify-center">
-                      <Icon className="text-[#90dc35]" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">{component.title}</h3>
-                      <p className="text-gray-600 leading-relaxed">{component.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{content.benefitsTitle}</h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { title: content.benefit1Title, desc: content.benefit1Desc },
-              { title: content.benefit2Title, desc: content.benefit2Desc },
-              { title: content.benefit3Title, desc: content.benefit3Desc },
-              { title: content.benefit4Title, desc: content.benefit4Desc },
-              { title: content.benefit5Title, desc: content.benefit5Desc },
-              { title: content.benefit6Title, desc: content.benefit6Desc },
-            ].map((benefit, idx) => (
-              <motion.div
-                key={idx}
-                {...fadeInUp}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-xl font-bold mb-3 text-[#90dc35]">{benefit.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{benefit.desc}</p>
-              </motion.div>
+      {/* Construction Methods */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            {language === 'nl' ? 'Onze Constructiemethoden' : 'Our Construction Methods'}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {constructionMethods.map((method, idx) => (
+              <div key={idx} className="bg-white rounded-lg border-2 border-gray-200 p-8 hover:border-[#90dc35] transition-colors">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-[#90dc35]">
+                  {language === 'nl' ? method.titleNl : method.titleEn}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {language === 'nl' ? method.descNl : method.descEn}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Standards Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.standardsTitle}</h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              {content.standardsDesc}
-            </p>
-          </motion.div>
+      {/* Technical Tiers */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            {language === 'nl' ? 'Onze Technische Presets' : 'Our Technical Presets'}
+          </h2>
+
+          <div className="max-w-4xl mx-auto space-y-3">
+            {tiers.map((tier) => (
+              <div key={tier.id}>
+                <button
+                  onClick={() => toggleTier(tier.id)}
+                  className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#90dc35] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#90dc35] transition-colors">
+                        {language === 'nl' ? tier.titleNl : tier.titleEn}
+                      </h3>
+                      <p className="text-lg font-semibold text-[#90dc35]">
+                        {language === 'nl' ? tier.priceNl : tier.priceEn}
+                      </p>
+                    </div>
+                    <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`}>
+                      <ChevronDown className="w-6 h-6 text-[#90dc35]" />
+                    </div>
+                  </div>
+                </button>
+
+                {/* Expanded Content */}
+                {expandedTier === tier.id && (
+                  <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
+                    {/* Description */}
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      {language === 'nl' ? tier.descNl : tier.descEn}
+                    </p>
+
+                    {/* Components */}
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-4 text-lg">
+                        {language === 'nl' ? 'Componenten:' : 'Components:'}
+                      </h4>
+                      <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {(language === 'nl' ? tier.componentsNl : tier.componentsEn).map((comp, idx) => (
+                          <li key={idx} className="flex items-start gap-3 text-gray-700">
+                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#90dc35] flex-shrink-0" />
+                            <span className="font-medium">{comp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                      <a href="/#contact" className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                        {language === 'nl' ? 'Offerte aanvragen' : 'Request Quote'}
+                      </a>
+                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#90dc35] text-[#90dc35] hover:bg-[#90dc35] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                        {language === 'nl' ? 'Meer info op Senmar' : 'More info on Senmar'}
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-[#2A3439] text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
-            <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
-            <Link href="/">
-              <Button className="bg-[#90dc35] hover:bg-[#6fa844] text-white px-8 py-3 rounded-lg font-semibold text-lg">
-                {content.contactButton}
-              </Button>
-            </Link>
-          </motion.div>
+      {/* Bottom CTA */}
+      <section className="py-16 bg-gradient-to-br from-[#90dc35] to-[#6fb820]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-[#2A3439] mb-6">
+            {language === 'nl' ? 'Klaar om uw project te starten?' : 'Ready to start your project?'}
+          </h2>
+          <p className="text-[#2A3439] text-lg mb-8 max-w-2xl mx-auto">
+            {language === 'nl'
+              ? 'Neem contact met ons op voor een gratis consult en ontdek welke technische preset het beste bij uw behoeften past.'
+              : 'Contact us for a free consultation and discover which technical preset best fits your needs.'}
+          </p>
+          <a href="/#contact" className="inline-block bg-[#2A3439] hover:bg-black text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
+            {language === 'nl' ? 'Neem contact op' : 'Get in Touch'}
+          </a>
         </div>
       </section>
     </div>
