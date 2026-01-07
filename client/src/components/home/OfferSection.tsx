@@ -148,7 +148,7 @@ export default function OfferSection() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-white h-12 text-base font-semibold group">
+                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -190,7 +190,7 @@ export default function OfferSection() {
             <div className="p-8 bg-gray-50 border-t border-gray-100">
               <Button 
                 onClick={scrollToContact}
-                className="w-full bg-[#118443] hover:bg-blue-700 text-white h-12 text-base font-semibold group"
+                className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -230,7 +230,7 @@ export default function OfferSection() {
             <div className="p-8 bg-gray-50 border-t border-gray-100">
               <Button 
                 onClick={scrollToContact}
-                className="w-full bg-[#118443] hover:bg-purple-700 text-white h-12 text-base font-semibold group"
+                className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.b2b.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -114,7 +114,7 @@ export default function PerformanceLevels() {
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#90dc35] text-white font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
+            className="inline-block px-6 py-3 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
