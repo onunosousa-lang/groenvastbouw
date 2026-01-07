@@ -95,6 +95,12 @@ export default function PerformanceLevels() {
 
   return (
     <section id="systems" className="py-20 bg-gray-50 scroll-mt-20 relative overflow-hidden">
+      {/* Background Images with Opacity */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-0 right-0 w-96 h-96" style={{ backgroundImage: 'url(/images/factory_senmar_3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80" style={{ backgroundImage: 'url(/images/factory_senmar_4.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+      </div>
+      
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#90dc35 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
@@ -167,25 +173,23 @@ export default function PerformanceLevels() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById('contact');
-                    if (element) {
-                      window.location.href = '/#contact';
-                    }
-                  }}
-                  className={`w-full px-4 py-2 ${
-                    level.color === 'green' ? 'bg-[#90dc35] hover:bg-[#6fb820]' : 
-                    level.color === 'blue' ? 'bg-[#118443] hover:bg-[#0d5c34]' : 
-                    level.color === 'purple' ? 'bg-[#118443] hover:bg-[#0d5c34]' :
-                    'bg-gray-600 hover:bg-gray-700'
-                  } text-white font-semibold text-sm rounded-lg transition-colors flex items-center justify-center gap-2`}>
-                    {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Single CTA Button Below */}
+        <div className="mt-16 text-center">
+          <button
+            onClick={() => {
+              window.location.href = '/#contact';
+            }}
+            className="px-8 py-4 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
+          >
+            {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>
