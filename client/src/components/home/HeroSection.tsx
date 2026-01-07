@@ -105,15 +105,14 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
               href="https://wa.me/31629841298"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-[#90dc35] hover:bg-[#6da04a] text-white text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              className="flex-1 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2"
             >
               WhatsApp
               <ArrowRight className="w-5 h-5" />
             </a>
             <Button 
               onClick={() => scrollToSection('contact')}
-              variant="outline" 
-              className="flex-1 bg-white/10 border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-6 backdrop-blur-sm font-semibold"
+              className="flex-1 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
             >
               {content.ctaSecondary}
             </Button>
