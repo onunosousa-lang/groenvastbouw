@@ -239,6 +239,82 @@ export default function OfferSection() {
           </motion.div>
         </div>
 
+        {/* Technical Solutions */}
+        <div className="mt-20 pt-20 border-t border-gray-200">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
+            </h3>
+            <p className="text-lg text-gray-600 font-medium">
+              {language === 'nl'
+                ? 'Vier presets. Eén doel: maximale efficiëntie en kwaliteit.'
+                : 'Four presets. One goal: maximum efficiency and quality.'}
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-4">
+            {/* Basic */}
+            <div className="bg-white/85 backdrop-blur-md rounded-xl shadow-md border border-white/50 p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
+                {language === 'nl' ? 'Basis Structuur' : 'Basic Structure'}
+              </h4>
+              <p className="text-lg font-semibold text-[#90dc35] mb-3">
+                {language === 'nl' ? 'Vanaf €190/m²' : 'Starting from €190/m²'}
+              </p>
+              <p className="text-gray-600 mb-4">
+                {language === 'nl'
+                  ? 'Een fundamentele oplossing voor het bouwframe. Ideaal voor degenen die kosten willen verlagen.'
+                  : 'A foundational solution for the building frame. Great for those looking to reduce costs.'}
+              </p>
+            </div>
+
+            {/* Optimal */}
+            <div className="bg-white/85 backdrop-blur-md rounded-xl shadow-md border border-white/50 p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
+                {language === 'nl' ? 'Optimale Structuur' : 'Optimal Structure'}
+              </h4>
+              <p className="text-lg font-semibold text-[#90dc35] mb-3">
+                {language === 'nl' ? 'Vanaf €270/m²' : 'Starting from €270/m²'}
+              </p>
+              <p className="text-gray-600 mb-4">
+                {language === 'nl'
+                  ? 'Ontworpen voor gematigde klimaten met 200mm isolatie en interne dampremmende laag.'
+                  : 'Designed for moderate climates with 200mm of insulation and internal vapor barrier.'}
+              </p>
+            </div>
+
+            {/* Passive */}
+            <div className="bg-white/85 backdrop-blur-md rounded-xl shadow-md border border-white/50 p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
+                {language === 'nl' ? 'Passieve Structuur' : 'Passive Structure'}
+              </h4>
+              <p className="text-lg font-semibold text-[#90dc35] mb-3">
+                {language === 'nl' ? 'Vanaf €320/m²' : 'Starting from €320/m²'}
+              </p>
+              <p className="text-gray-600 mb-4">
+                {language === 'nl'
+                  ? 'Met aanvullende externe isolatie. Verbeterde thermische bescherming resulteert in lagere energiekosten.'
+                  : 'With additional external insulation. Enhanced thermal protection results in lower energy costs.'}
+              </p>
+            </div>
+
+            {/* Super Passive */}
+            <div className="bg-white/85 backdrop-blur-md rounded-xl shadow-md border border-white/50 p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
+                {language === 'nl' ? 'Super Passieve Structuur' : 'Super Passive Structure'}
+              </h4>
+              <p className="text-lg font-semibold text-[#90dc35] mb-3">
+                {language === 'nl' ? 'Vanaf €400/m²' : 'Starting from €400/m²'}
+              </p>
+              <p className="text-gray-600 mb-4">
+                {language === 'nl'
+                  ? 'Maximale isolatie voor off-grid ambities en extreme klimaten. Passivhaus gecertificeerd.'
+                  : 'Maximum insulation for off-grid ambitions and extreme climates. Passivhaus certified.'}
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Info */}
         <div className="mt-12 text-center max-w-4xl mx-auto p-6 bg-white/60 backdrop-blur-md rounded-xl border border-white/50 shadow-sm">
           <p className="text-gray-800 text-sm leading-relaxed">

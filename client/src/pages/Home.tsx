@@ -3,7 +3,7 @@ import SEO from '@/components/SEO';
 import HeroSection from '@/components/home/HeroSection';
 import OfferSection from '@/components/home/OfferSection';
 import HowItWorks from '@/components/home/HowItWorks';
-// import SolutionsSection from '@/components/home/SolutionsSection';
+
 import PerformanceLevels from '@/components/home/PerformanceLevels';
 import SenmarVideo from '@/components/home/SenmarVideo';
 import FeaturedProjects from '@/components/home/FeaturedProjects';
@@ -28,7 +28,7 @@ export default function Home() {
       <HeroSection scrollToSection={scrollToSection} />
       <OfferSection />
       <HowItWorks />
-      {/* <SolutionsSection /> */}
+
       <PerformanceLevels />
       <SenmarVideo />
       <FeaturedProjects />
