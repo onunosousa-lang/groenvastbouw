@@ -21,6 +21,13 @@ export default function OurOffer() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Return Home Button */}
+      <div className="bg-[#2A3439] px-4 py-4 flex justify-center">
+        <Link href="/" className="text-[#90dc35] hover:text-[#6fb820] font-semibold transition-colors">
+          ← {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
+        </Link>
+      </div>
+
       {/* Groenvastbouw × Senmar Partnership - with Background Image */}
       <section 
         className="py-24 px-4 relative overflow-hidden"
