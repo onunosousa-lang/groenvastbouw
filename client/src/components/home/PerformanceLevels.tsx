@@ -119,7 +119,7 @@ export default function PerformanceLevels() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">{content.subheadline}</p>
+          <p className="text-lg text-white mb-8 leading-relaxed">{content.subheadline}</p>
           <a
             href="https://www.senmar.pt/en/projects"
             target="_blank"
@@ -153,7 +153,7 @@ export default function PerformanceLevels() {
                   level.color === 'green' ? 'bg-[#f0f7e8] text-[#90dc35]' : 
                   level.color === 'blue' ? 'bg-[#e8f5f0] text-[#118443]' : 
                   level.color === 'purple' ? 'bg-[#e8f5f0] text-[#118443]' :
-                  'bg-gray-100 text-gray-600'
+                  'bg-white text-white'
                 }`}>
                   <level.icon className="w-6 h-6" />
                 </div>
@@ -163,16 +163,16 @@ export default function PerformanceLevels() {
                   level.color === 'green' ? 'text-[#90dc35]' : 
                   level.color === 'blue' ? 'text-[#118443]' : 
                   level.color === 'purple' ? 'text-[#118443]' :
-                  'text-gray-600'
+                  'text-white'
                 }`}>
                   {level.rValue}
                 </div>
                 
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{level.desc}</p>
+                <p className="text-white mb-4 text-sm leading-relaxed">{level.desc}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {level.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-xs text-gray-700 leading-relaxed">
+                    <li key={idx} className="flex items-start gap-2 text-xs text-white leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         level.color === 'green' ? 'text-[#90dc35]' : 
                         level.color === 'blue' ? 'text-blue-500' : 

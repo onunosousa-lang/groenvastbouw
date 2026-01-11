@@ -12,7 +12,7 @@ export default function SystemsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">{t('pricing_title')}</h2>
-          <p className="text-xl text-gray-600">{t('pricing_subtitle')}</p>
+          <p className="text-xl text-white">{t('pricing_subtitle')}</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
@@ -41,9 +41,9 @@ export default function SystemsSection() {
               </CardHeader>
               <CardContent className="p-6">
                 <div className="text-center mb-6">
-                  <span className="text-gray-600 font-medium">Isolatie: {system.insulation}</span>
+                  <span className="text-white font-medium">Isolatie: {system.insulation}</span>
                 </div>
-                <p className="text-gray-600 text-center mb-8 text-sm min-h-[3rem]">
+                <p className="text-white text-center mb-8 text-sm min-h-[3rem]">
                   {system.desc}
                 </p>
                 <ul className="space-y-4">
@@ -52,7 +52,7 @@ export default function SystemsSection() {
                       <div className="mt-1 bg-[#f0f7e8] rounded-full p-1">
                         <Check className="text-[#90dc35] w-3 h-3" />
                       </div>
-                      <span className="text-sm text-gray-700">{feature}</span>
+                      <span className="text-sm text-white">{feature}</span>
                     </li>
                   ))}
                 </ul>

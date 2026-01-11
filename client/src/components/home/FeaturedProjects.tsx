@@ -63,7 +63,7 @@ export default function FeaturedProjects() {
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">{content.subheadline}</p>
+            <p className="text-lg text-white leading-relaxed">{content.subheadline}</p>
           </div>
           <Link href="/projects" className="hidden md:flex items-center text-[#90dc35] font-semibold hover:text-[#6fb820] transition-colors">
             {content.cta} <ArrowRight className="ml-2 w-5 h-5" />
@@ -96,7 +96,7 @@ export default function FeaturedProjects() {
               <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#90dc35] transition-colors">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-2 leading-relaxed">{project.description}</p>
+              <p className="text-white text-sm mb-2 leading-relaxed">{project.description}</p>
               <div className="flex items-center text-gray-500 text-sm">
                 <MapPin className="w-4 h-4 mr-1" />
                 {project.location}

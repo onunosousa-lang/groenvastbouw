@@ -14,7 +14,7 @@ export default function MarketsSection() {
           <h2 className="text-4xl font-bold text-white mb-4">
             {language === 'nl' ? 'Oplossingen op Maat' : 'Tailored Solutions'}
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             {language === 'nl' 
               ? 'Of u nu een particulier bent of een ontwikkelaar, wij hebben het juiste proces voor uw project.'
               : 'Whether you are a private individual or a developer, we have the right process for your project.'}
@@ -35,12 +35,12 @@ export default function MarketsSection() {
                 </div>
               </div>
               <CardContent className="p-8">
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                <p className="text-white mb-6 text-lg leading-relaxed">
                   {market.desc}
                 </p>
                 <ul className="space-y-3">
                   {market.benefits.map((benefit, i) => (
-                    <li key={i} className="flex items-center gap-3 text-gray-700">
+                    <li key={i} className="flex items-center gap-3 text-white">
                       <CheckCircle2 className="text-[#90dc35] flex-shrink-0" size={20} />
                       <span>{benefit}</span>
                     </li>

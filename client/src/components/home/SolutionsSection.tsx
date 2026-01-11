@@ -6,7 +6,7 @@ export default function SolutionsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Onze Technische Oplossingen
           </h2>
-          <p className="text-lg text-gray-600 font-medium">
+          <p className="text-lg text-white font-medium">
             Twee bouwmethoden. Vier presets. Eén doel: maximale efficiëntie en kwaliteit.
           </p>
         </div>
@@ -15,7 +15,7 @@ export default function SolutionsSection() {
           <div className="bg-gray-900 rounded-lg shadow-md border border-gray-200 p-6">
             <h3 className="text-xl font-bold text-white mb-2">Basis Structuur</h3>
             <p className="text-lg font-semibold text-[#90dc35] mb-2">Vanaf €190/m²</p>
-            <p className="text-gray-600">
+            <p className="text-white">
               Een fundamentele oplossing voor het bouwframe.
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function SolutionsSection() {
           <div className="bg-gray-900 rounded-lg shadow-md border border-gray-200 p-6">
             <h3 className="text-xl font-bold text-white mb-2">Optimale Structuur</h3>
             <p className="text-lg font-semibold text-[#90dc35] mb-2">Vanaf €270/m²</p>
-            <p className="text-gray-600">
+            <p className="text-white">
               Ontworpen voor gematigde klimaten met 200mm isolatie.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function SolutionsSection() {
           <div className="bg-gray-900 rounded-lg shadow-md border border-gray-200 p-6">
             <h3 className="text-xl font-bold text-white mb-2">Passieve Structuur</h3>
             <p className="text-lg font-semibold text-[#90dc35] mb-2">Vanaf €320/m²</p>
-            <p className="text-gray-600">
+            <p className="text-white">
               Met aanvullende externe isolatie voor maximale efficiëntie.
             </p>
           </div>

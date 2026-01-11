@@ -49,7 +49,7 @@ export default function FAQSection() {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">{t('faq_title')}</h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-white">
             Antwoorden op veelgestelde vragen over onze technische oplossingen
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function FAQSection() {
               <AccordionTrigger className="text-lg font-medium text-white hover:text-[#90dc35] hover:no-underline py-6">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-white text-base pb-6 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

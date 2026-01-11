@@ -104,7 +104,7 @@ export default function ProblemSolution() {
                     <Clock className="text-[#90dc35]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_speed')}</h3>
-                  <p className="text-gray-700">{t('solution_speed_desc')}</p>
+                  <p className="text-white">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
@@ -113,7 +113,7 @@ export default function ProblemSolution() {
                     <Zap className="text-[#90dc35]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_energy')}</h3>
-                  <p className="text-gray-700">{t('solution_energy_desc')}</p>
+                  <p className="text-white">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
@@ -122,7 +122,7 @@ export default function ProblemSolution() {
                     <ShieldCheck className="text-[#90dc35]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_quality')}</h3>
-                  <p className="text-gray-700">{t('solution_quality_desc')}</p>
+                  <p className="text-white">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
@@ -131,7 +131,7 @@ export default function ProblemSolution() {
                     <Leaf className="text-[#90dc35]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#90dc35] mb-2">{t('solution_future')}</h3>
-                  <p className="text-gray-700">{t('solution_future_desc')}</p>
+                  <p className="text-white">{t('solution_future_desc')}</p>
                 </CardContent>
               </Card>
             </div>

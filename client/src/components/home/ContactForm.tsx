@@ -67,7 +67,7 @@ export default function ContactForm() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">{t('contact_title')}</h2>
-            <p className="text-xl text-gray-600">{t('contact_subtitle')}</p>
+            <p className="text-xl text-white">{t('contact_subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -78,7 +78,7 @@ export default function ContactForm() {
               <CardContent className="space-y-6">
                 <div>
                   <h3 className="font-bold text-white mb-1">Groenvastbouw</h3>
-                  <p className="text-gray-600">Amsterdam, Nederland</p>
+                  <p className="text-white">Amsterdam, Nederland</p>
                 </div>
                 <div>
                   <h3 className="font-bold text-white mb-1">Email</h3>
@@ -94,7 +94,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-bold text-white mb-1">KvK</h3>
-                  <p className="text-gray-600">75308045</p>
+                  <p className="text-white">75308045</p>
                 </div>
               </CardContent>
             </Card>

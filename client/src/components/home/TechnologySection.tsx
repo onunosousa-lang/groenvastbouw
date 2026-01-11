@@ -16,7 +16,7 @@ export default function TechnologySection() {
             <h2 className="text-4xl font-bold text-white mb-6">
               {t('senmar_subtitle')}
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-white mb-8 leading-relaxed">
               {language === 'nl' 
                 ? 'Groenvastbouw werkt samen met Senmar om geavanceerde bouwoplossingen naar Nederland te brengen. Wij combineren state-of-the-art technologie met vakmanschap. CNC-precisie elimineert fouten en garandeert consistente kwaliteit in elk project.'
                 : 'Groenvastbouw partners with Senmar to bring advanced building solutions to the Netherlands. We combine state-of-the-art technology with craftsmanship. CNC precision eliminates errors and guarantees consistent quality in every project.'}
@@ -29,7 +29,7 @@ export default function TechnologySection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_factory')}</h3>
-                  <p className="text-gray-600">{t('senmar_capacity')}</p>
+                  <p className="text-white">{t('senmar_capacity')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -38,7 +38,7 @@ export default function TechnologySection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_precision')}</h3>
-                  <p className="text-gray-600">100% {t('principles_quality')}</p>
+                  <p className="text-white">100% {t('principles_quality')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -47,7 +47,7 @@ export default function TechnologySection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_certified')}</h3>
-                  <p className="text-gray-600">ISO 9001, Passivhaus Institut</p>
+                  <p className="text-white">ISO 9001, Passivhaus Institut</p>
                 </div>
               </div>
             </div>
