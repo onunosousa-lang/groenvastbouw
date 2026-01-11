@@ -6,14 +6,14 @@ export default function TechnologySection() {
   const { t, language } = useLanguage();
 
   return (
-    <section id="technology" className="py-20 bg-white">
+    <section id="technology" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
               {t('senmar_title')}
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               {t('senmar_subtitle')}
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">

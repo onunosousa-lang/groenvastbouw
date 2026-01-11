@@ -58,11 +58,11 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
             <p className="text-lg text-gray-600 leading-relaxed">{content.subheadline}</p>
           </div>
           <Link href="/projects" className="hidden md:flex items-center text-[#90dc35] font-semibold hover:text-[#6fb820] transition-colors">
@@ -88,12 +88,12 @@ export default function FeaturedProjects() {
                   onError={(e) => { e.currentTarget.src = '/images/hero-groenvastbouw.jpg' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-900/30 group-hover:from-gray-800/10 group-hover:to-gray-900/10 transition-all duration-500" />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-900">
+                <div className="absolute top-4 left-4 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-white">
                   {project.tag}
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#90dc35] transition-colors">
+              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#90dc35] transition-colors">
                 {project.title}
               </h3>
               <p className="text-gray-600 text-sm mb-2 leading-relaxed">{project.description}</p>

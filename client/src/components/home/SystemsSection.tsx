@@ -8,10 +8,10 @@ export default function SystemsSection() {
   const systems = translations[language].systems_array;
 
   return (
-    <section id="systems" className="py-20 bg-white">
+    <section id="systems" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('pricing_title')}</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">{t('pricing_title')}</h2>
           <p className="text-xl text-gray-600">{t('pricing_subtitle')}</p>
         </div>
 
@@ -30,8 +30,8 @@ export default function SystemsSection() {
                   Meest Gekozen
                 </div>
               )}
-              <CardHeader className={`${system.highlight ? 'bg-green-50' : 'bg-gray-50'} border-b border-gray-100`}>
-                <CardTitle className="text-2xl font-bold text-center text-gray-900">
+              <CardHeader className={`${system.highlight ? 'bg-green-50' : 'bg-gray-800'} border-b border-gray-100`}>
+                <CardTitle className="text-2xl font-bold text-center text-white">
                   {system.name}
                 </CardTitle>
                 <div className="text-center mt-2">

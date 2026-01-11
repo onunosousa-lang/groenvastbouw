@@ -149,13 +149,13 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-gray-900/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Home className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.prefab.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">{content.prefab.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
@@ -171,7 +171,7 @@ export default function OfferSection() {
               <p className="text-lg font-bold text-[#90dc35] mb-6">{content.prefab.price}</p>
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
+            <div className="p-8 bg-gray-800 border-t border-gray-100">
               <a 
                 href="https://senmar.pt/en/projects#" 
                 target="_blank" 
@@ -195,13 +195,13 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-gray-900/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#e8f5f0] rounded-xl flex items-center justify-center mb-6">
                 <Pencil className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.custom.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">{content.custom.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
@@ -235,7 +235,7 @@ export default function OfferSection() {
         {/* Technical Solutions */}
         <div className="mt-20 pt-20 border-t border-gray-200">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
             </h3>
             <p className="text-lg text-gray-600 font-medium">

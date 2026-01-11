@@ -106,12 +106,12 @@ export default function HowItWorks() {
           className="w-full h-full object-cover"
           onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
         />
-        <div className="absolute inset-0 bg-white/95 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-gray-900/95 backdrop-blur-sm"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
           <p className="text-lg text-gray-600 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
@@ -122,7 +122,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-white text-[#90dc35] shadow-sm' 
+                  ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -132,7 +132,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-white text-[#90dc35] shadow-sm' 
+                  ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -163,7 +163,7 @@ export default function HowItWorks() {
                     <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200 -z-10" />
                   )}
                   
-                  <div className="bg-white/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-gray-900/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
                       activeTab === 'structure' ? 'bg-green-50 text-[#90dc35]' : 'bg-green-50 text-[#90dc35]'
                     }`}>
@@ -174,7 +174,7 @@ export default function HowItWorks() {
                       {index + 1}
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
                     <p className="text-sm text-gray-500 mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${

@@ -8,10 +8,10 @@ export default function MarketsSection() {
   const markets = translations[language].markets_array;
 
   return (
-    <section id="markets" className="py-20 bg-gray-50">
+    <section id="markets" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             {language === 'nl' ? 'Oplossingen op Maat' : 'Tailored Solutions'}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

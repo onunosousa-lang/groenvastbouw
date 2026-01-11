@@ -31,55 +31,55 @@ export default function ProblemSolution() {
               <div className="inline-block px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-4">
                 {t('problem_title')}
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 {t('problem_subtitle')}
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-red-200 bg-white/80 backdrop-blur">
+              <Card className="border-red-200 bg-gray-900/80 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
                       <Users className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{t('problem_labor')}</h3>
+                      <h3 className="font-semibold text-white mb-2">{t('problem_labor')}</h3>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-white/80 backdrop-blur">
+              <Card className="border-red-200 bg-gray-900/80 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
                       <Clock className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{t('problem_time')}</h3>
+                      <h3 className="font-semibold text-white mb-2">{t('problem_time')}</h3>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-white/80 backdrop-blur">
+              <Card className="border-red-200 bg-gray-900/80 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
                       <TrendingUp className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{t('problem_cost')}</h3>
+                      <h3 className="font-semibold text-white mb-2">{t('problem_cost')}</h3>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-white/80 backdrop-blur">
+              <Card className="border-red-200 bg-gray-900/80 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
                       <ShieldCheck className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{t('problem_quality')}</h3>
+                      <h3 className="font-semibold text-white mb-2">{t('problem_quality')}</h3>
                     </div>
                   </div>
                 </CardContent>
@@ -93,7 +93,7 @@ export default function ProblemSolution() {
               <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
                 {t('solution_title')}
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 {t('solution_subtitle')}
               </h2>
             </div>
