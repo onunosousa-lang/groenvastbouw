@@ -49,17 +49,7 @@ export default function OurOffer() {
       subtitleEn: 'Four Phases: Design → Production → Transport → Assembly',
       phasesNl: [
         {
-          title: 'Fase 1: Ontwerp & Vergunningen',
-          items: [
-            'Architectuur, indeling en esthetiek',
-            'Structuur-engineering volgens Eurocodes',
-            'BENG energie-berekening',
-            'Bouwbesluit-toetsing',
-            'Vergunningsaanvraag en -behandeling'
-          ]
-        },
-        {
-          title: 'Fase 2: CNC Prefabricage (Portugal)',
+          title: 'Fase 1: CNC Prefabricage (Portugal)',
           items: [
             'CNC gesneden C24 Nordic Pine hout',
             'Tolerantie ±1mm voor architecturale nauwkeurigheid',
@@ -76,7 +66,7 @@ export default function OurOffer() {
           ]
         },
         {
-          title: 'Fase 3: Transport & Montage (Nederland)',
+          title: 'Fase 2: Transport & Montage (Nederland)',
           items: [
             'Transport per TIR-vrachtwagen',
             'Kraanwerk ter plaatse',
@@ -86,7 +76,7 @@ export default function OurOffer() {
           ]
         },
         {
-          title: 'Fase 4: Installaties & Afwerking (Nederland)',
+          title: 'Fase 3: Installaties & Afwerking (Nederland)',
           items: [
             'Ramen worden altijd ter plaatse gemonteerd',
             'Elektriciteit en water aansluitingen',
@@ -99,17 +89,7 @@ export default function OurOffer() {
       ],
       phasesEn: [
         {
-          title: 'Phase 1: Design & Permits',
-          items: [
-            'Architecture, layout and aesthetics',
-            'Structural engineering to Eurocodes',
-            'BENG energy calculation',
-            'Building code compliance review',
-            'Permit application and processing'
-          ]
-        },
-        {
-          title: 'Phase 2: CNC Prefabrication (Portugal)',
+          title: 'Phase 1: CNC Prefabrication (Portugal)',
           items: [
             'CNC-cut C24 Nordic Pine timber',
             'Tolerance ±1mm for architectural accuracy',
@@ -126,7 +106,7 @@ export default function OurOffer() {
           ]
         },
         {
-          title: 'Phase 3: Transport & Assembly (Netherlands)',
+          title: 'Phase 2: Transport & Assembly (Netherlands)',
           items: [
             'Transport by TIR truck',
             'Crane work on-site',
@@ -136,7 +116,7 @@ export default function OurOffer() {
           ]
         },
         {
-          title: 'Phase 4: Installations & Finishing (Netherlands)',
+          title: 'Phase 3: Installations & Finishing (Netherlands)',
           items: [
             'Windows always installed on-site',
             'Electrical and water connections',
@@ -151,36 +131,30 @@ export default function OurOffer() {
 
     // SECTION 3: What's Included
     scope: {
-      titleNl: 'Wat Is Inbegrepen?',
-      titleEn: 'What\'s Included?',
-      factoryNl: 'Geprefabriceerde Productie (in Fabriek)',
-      factoryEn: 'Prefabricated Production (in Factory)',
+      titleNl: 'Wat Komt Klaar Voor Je?',
+      titleEn: 'What Comes Ready For You?',
+      introNl: 'Afhankelijk van je bestelling. Bij onze prefab modellen en bij bestellingen van meerdere identieke gebouwen kunnen we het volgende includeren:',
+      introEn: 'Depending on your order. With our prefab models and when ordering multiple identical buildings, we can include:',
+      factoryNl: 'In de Fabriek Voorbereide Componenten',
+      factoryEn: 'Factory-Prepared Components',
       factoryItemsNl: [
-        'C24 dragende structuur',
         'Binnenwanden',
-        'Minerale wol isolatie (Optimal/Passive/Super Passive)',
         'Luchtdichte en dampremmende membranen',
         'Buitenbekleding (hout of vezelcement)',
-        'Dakwaterdichting (of pannen-klaar)',
-        'CNC-verwerking met ±1mm tolerantie',
-        'Bijna nul-afval productie',
-        'Optionele badkamermodule (volledig afgewerkt)',
-        'Optionele keukenmodule',
-        'Ventilatievoorbereiding',
+        'Dakwaterdichting (PVC of pannen-klaar)',
+        'Afgewerkte badkamermodule',
+        'Afgewerkte en uitgeruste keukenmodule',
+        'Elektriciteit en verlichting',
         'Warmwatervoorziening (bij modulaire levering)'
       ],
       factoryItemsEn: [
-        'C24 load-bearing structure',
         'Interior partitions',
-        'Mineral wool insulation (Optimal/Passive/Super Passive)',
         'Airtight and vapor barrier membranes',
         'Exterior cladding (timber or fiber cement)',
-        'Roof waterproofing (or tile-ready)',
-        'CNC processing with ±1mm tolerance',
-        'Near zero-waste production',
-        'Optional finished bathroom module',
-        'Optional kitchen module',
-        'Ventilation preparation',
+        'Roof waterproofing (PVC or tile-ready)',
+        'Finished bathroom module',
+        'Finished equipped kitchen module',
+        'Electricity and lighting',
         'Hot water provision (with modular delivery)'
       ],
       onsiteNl: 'Ter Plaatse in Nederland',
@@ -190,18 +164,14 @@ export default function OurOffer() {
         'Kraan en assemblage',
         'Ramen altijd op locatie gemonteerd',
         'Aansluitingen water, riool en elektra',
-        'Warmtepomp of HVAC-systeem',
-        'Binnenafwerking',
-        'Eindcontrole en oplevering'
+        'Warmtepomp of HVAC-systeem'
       ],
       onsiteItemsEn: [
         'Foundation and groundwork',
         'Crane and assembly',
         'Windows always installed on-site',
         'Water, sewer and electrical connections',
-        'Heat pump or HVAC system',
-        'Interior finishing',
-        'Final inspection and handover'
+        'Heat pump or HVAC system'
       ]
     },
 
@@ -234,7 +204,6 @@ export default function OurOffer() {
       itemsNl: [
         'CNC-productie met ±1mm precisie voor architecturale nauwkeurigheid',
         'Gesloten-lus fabriek met minimale fouten',
-        'BENG-klaar (Bijna Energie Neutraal Gebouw)',
         'Passief-klaar met geavanceerde isolatie',
         'Luchtdichte bouwschil voor maximale efficiëntie',
         'Triple glas (PVC-ramen, Aluplast Ideal 7000)',
@@ -242,13 +211,11 @@ export default function OurOffer() {
         'Akoestische isolatie en comfort binnen',
         'CO₂-reductie (materiaal + operationeel verbruik)',
         'Minder bouwafval (bijna nul-afval)',
-        'Minerale wol isolatiewaarden: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)',
-        'Eurocode-gecertificeerde materialen en CE-markering'
+        'Lokaal vervaardigde minerale wol isolatie: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)'
       ],
       itemsEn: [
         'CNC production with ±1mm precision for architectural accuracy',
         'Closed-loop factory with minimal errors',
-        'BENG-ready (Nearly Energy Neutral Building)',
         'Passive-ready with advanced insulation',
         'Airtight building envelope for maximum efficiency',
         'Triple glazing (PVC windows, Aluplast Ideal 7000)',
@@ -256,8 +223,7 @@ export default function OurOffer() {
         'Acoustic insulation and indoor comfort',
         'CO₂ reduction (material + operational consumption)',
         'Reduced construction waste (near zero-waste)',
-        'Mineral wool insulation values: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)',
-        'Eurocode-certified materials and CE-marking'
+        'Locally manufactured mineral wool insulation: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)'
       ]
     },
 
@@ -337,31 +303,7 @@ export default function OurOffer() {
       ]
     },
 
-    // SECTION 9: Sustainability
-    sustainability: {
-      titleNl: 'Milieu & Duurzaamheid',
-      titleEn: 'Environment & Sustainability',
-      itemsNl: [
-        'CO₂-opslag in hout (koolstofnegatief potentieel)',
-        'Lage embodied energy (productie-energie)',
-        'Lage operationele energie (BENG/Passief)',
-        'Minder bouwafval (bijna nul-afval)',
-        'Minder transportbewegingen (efficiënt)',
-        'Passief potentieel voor toekomstige energie-neutraliteit',
-        'Gezond binnenklimaat (geen schadelijke stoffen)',
-        'Duurzaam hout (C24 Nordic Pine)'
-      ],
-      itemsEn: [
-        'CO₂ storage in timber (carbon-negative potential)',
-        'Low embodied energy (production energy)',
-        'Low operational energy (BENG/Passive)',
-        'Reduced construction waste (near zero-waste)',
-        'Fewer transport movements (efficient)',
-        'Passive potential for future energy neutrality',
-        'Healthy indoor climate (no harmful substances)',
-        'Sustainable timber (C24 Nordic Pine)'
-      ]
-    },
+
 
     // CTA
     cta: {
@@ -459,9 +401,12 @@ export default function OurOffer() {
       {/* Scope of Delivery */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
           </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            {language === 'nl' ? content.scope.introNl : content.scope.introEn}
+          </p>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Factory */}
@@ -472,7 +417,7 @@ export default function OurOffer() {
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.factoryItemsNl : content.scope.factoryItemsEn).map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-gray-700">
-                    <Factory className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -487,7 +432,7 @@ export default function OurOffer() {
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.onsiteItemsNl : content.scope.onsiteItemsEn).map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-gray-700">
-                    <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -533,10 +478,10 @@ export default function OurOffer() {
             {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
-                <Zap className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-[#90dc35] font-bold flex-shrink-0 mt-0.5">•</span>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}
@@ -600,23 +545,7 @@ export default function OurOffer() {
         </div>
       </section>
 
-      {/* Sustainability */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            {language === 'nl' ? content.sustainability.titleNl : content.sustainability.titleEn}
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-4">
-            {(language === 'nl' ? content.sustainability.itemsNl : content.sustainability.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
-                <Leaf className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-[#90dc35] to-[#6fb820]">
