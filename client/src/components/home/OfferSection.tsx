@@ -118,7 +118,7 @@ export default function OfferSection() {
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Building2 className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.b2b.title}</h3>
+              <h3 className="text-2xl font-bold text-green-600 mb-2">{content.b2b.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
               <p className="text-white mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
@@ -155,7 +155,7 @@ export default function OfferSection() {
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Home className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.prefab.title}</h3>
+              <h3 className="text-2xl font-bold text-green-600 mb-2">{content.prefab.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
               <p className="text-white mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
@@ -201,7 +201,7 @@ export default function OfferSection() {
               <div className="w-12 h-12 bg-[#e8f5f0] rounded-xl flex items-center justify-center mb-6">
                 <Pencil className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.custom.title}</h3>
+              <h3 className="text-2xl font-bold text-green-600 mb-2">{content.custom.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
               <p className="text-white mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
