@@ -1,506 +1,638 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion } from 'framer-motion';
-import { ArrowRight, Check, Zap, Leaf, Factory, TrendingUp, Building2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowLeft, Check, Factory, Zap, Leaf, Shield, Clock, Building2, ChevronDown } from 'lucide-react';
 import { Link } from 'wouter';
+import Navbar from '@/components/Navbar';
 
 export default function OurOffer() {
   const { language } = useLanguage();
+  const [expandedSection, setExpandedSection] = useState<string>('intro');
 
   const scrollToContact = () => {
     window.location.href = '/#contact';
   };
 
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true },
-    transition: { duration: 0.6 }
+  const content = {
+    backHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
+    
+    // SECTION 1: Intro
+    intro: {
+      titleNl: 'Wat Wij Aanbieden',
+      titleEn: 'What We Offer',
+      subtitleNl: 'Hoogperformante Geprefabriceerde Timmerhuizen voor Nederland',
+      subtitleEn: 'High-Performance Prefabricated Timber Homes for the Netherlands',
+      descNl: 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
+      descEn: 'Groenvastbouw delivers high-performance prefabricated timber homes using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
+      featuresNl: [
+        'Duurzame geprefabriceerde timmerconstructie (C24)',
+        'Passief-klare isolatie en luchtdichtheid',
+        'CNC-precisie ±1mm tolerantie',
+        'Bijna nul-afval productie',
+        'Ontworpen voor Nederlands klimaat en energiewetten (BENG/Bouwbesluit/EPC)',
+        'Sneller, schoner en voorspelbaar bouwen'
+      ],
+      featuresEn: [
+        'Sustainable prefabricated timber construction (C24)',
+        'Passive-ready insulation and airtightness',
+        'CNC precision ±1mm tolerance',
+        'Near zero-waste production',
+        'Designed for Dutch climate and energy laws (BENG/Bouwbesluit/EPC)',
+        'Faster, cleaner, and predictable construction'
+      ]
+    },
+
+    // SECTION 2: How We Do It
+    method: {
+      titleNl: 'Hoe We Het Doen',
+      titleEn: 'How We Do It',
+      subtitleNl: 'Vier Fasen: Ontwerp → Productie → Transport → Montage',
+      subtitleEn: 'Four Phases: Design → Production → Transport → Assembly',
+      phasesNl: [
+        {
+          title: 'Fase 1: Ontwerp & Vergunningen',
+          items: [
+            'Architectuur, indeling en esthetiek',
+            'Structuur-engineering volgens Eurocodes',
+            'BENG energie-berekening',
+            'Bouwbesluit-toetsing',
+            'Vergunningsaanvraag en -behandeling'
+          ]
+        },
+        {
+          title: 'Fase 2: CNC Prefabricage (Portugal)',
+          items: [
+            'CNC gesneden C24 Nordic Pine hout',
+            'Tolerantie ±1mm voor architecturale nauwkeurigheid',
+            'Bijna nul-afval via geoptimaliseerde nesting-algoritmen',
+            'Buitenwanden, binnenwanden, vloeren, dakstructuur',
+            'Minerale wol isolatie (Optimal/Passive/Super Passive)',
+            'Lucht- en dampmembranen',
+            'Buitenbekleding (hout of vezelcement)',
+            'Dakwaterdichting (PVC/EPDM) of pannen-klaar',
+            'Optionele badkamermodules (volledig afgewerkt)',
+            'Optionele keukenmodules',
+            'Warmwatervoorziening (indien modulair)',
+            'Voorbereiding ventilatie (VMC of decentraal)'
+          ]
+        },
+        {
+          title: 'Fase 3: Transport & Montage (Nederland)',
+          items: [
+            'Transport per TIR-vrachtwagen',
+            'Kraanwerk ter plaatse',
+            'Assemblage tot waterdicht casco',
+            'Montage doorgaans in 1–3 weken',
+            'Montage-crew: 3–4 gespecialiseerde installers'
+          ]
+        },
+        {
+          title: 'Fase 4: Installaties & Afwerking (Nederland)',
+          items: [
+            'Ramen worden altijd ter plaatse gemonteerd',
+            'Elektriciteit en water aansluitingen',
+            'Warmtepomp of HVAC-systeem',
+            'Ventilatie (VMC of decentraal)',
+            'Binnenafwerking',
+            'Eindcontrole en oplevering met documentatie'
+          ]
+        }
+      ],
+      phasesEn: [
+        {
+          title: 'Phase 1: Design & Permits',
+          items: [
+            'Architecture, layout and aesthetics',
+            'Structural engineering to Eurocodes',
+            'BENG energy calculation',
+            'Building code compliance review',
+            'Permit application and processing'
+          ]
+        },
+        {
+          title: 'Phase 2: CNC Prefabrication (Portugal)',
+          items: [
+            'CNC-cut C24 Nordic Pine timber',
+            'Tolerance ±1mm for architectural accuracy',
+            'Near zero-waste via optimized nesting algorithms',
+            'Exterior walls, interior partitions, floors, roof structure',
+            'Mineral wool insulation (Optimal/Passive/Super Passive)',
+            'Air and vapor membranes',
+            'Exterior cladding (timber or fiber cement)',
+            'Roof waterproofing (PVC/EPDM) or tile-ready',
+            'Optional finished bathroom modules',
+            'Optional kitchen modules',
+            'Hot water provision (if modular)',
+            'Ventilation preparation (VMC or decentralized)'
+          ]
+        },
+        {
+          title: 'Phase 3: Transport & Assembly (Netherlands)',
+          items: [
+            'Transport by TIR truck',
+            'Crane work on-site',
+            'Assembly to weathertight shell',
+            'Assembly typically in 1–3 weeks',
+            'Assembly crew: 3–4 specialized installers'
+          ]
+        },
+        {
+          title: 'Phase 4: Installations & Finishing (Netherlands)',
+          items: [
+            'Windows always installed on-site',
+            'Electrical and water connections',
+            'Heat pump or HVAC system',
+            'Ventilation (VMC or decentralized)',
+            'Interior finishing',
+            'Final inspection and handover with documentation'
+          ]
+        }
+      ]
+    },
+
+    // SECTION 3: What's Included
+    scope: {
+      titleNl: 'Wat Is Inbegrepen?',
+      titleEn: 'What\'s Included?',
+      factoryNl: 'Geprefabriceerde Productie (in Fabriek)',
+      factoryEn: 'Prefabricated Production (in Factory)',
+      factoryItemsNl: [
+        'C24 dragende structuur',
+        'Binnenwanden',
+        'Minerale wol isolatie (Optimal/Passive/Super Passive)',
+        'Luchtdichte en dampremmende membranen',
+        'Buitenbekleding (hout of vezelcement)',
+        'Dakwaterdichting (of pannen-klaar)',
+        'CNC-verwerking met ±1mm tolerantie',
+        'Bijna nul-afval productie',
+        'Optionele badkamermodule (volledig afgewerkt)',
+        'Optionele keukenmodule',
+        'Ventilatievoorbereiding',
+        'Warmwatervoorziening (bij modulaire levering)'
+      ],
+      factoryItemsEn: [
+        'C24 load-bearing structure',
+        'Interior partitions',
+        'Mineral wool insulation (Optimal/Passive/Super Passive)',
+        'Airtight and vapor barrier membranes',
+        'Exterior cladding (timber or fiber cement)',
+        'Roof waterproofing (or tile-ready)',
+        'CNC processing with ±1mm tolerance',
+        'Near zero-waste production',
+        'Optional finished bathroom module',
+        'Optional kitchen module',
+        'Ventilation preparation',
+        'Hot water provision (with modular delivery)'
+      ],
+      onsiteNl: 'Ter Plaatse in Nederland',
+      onsiteEn: 'On-Site in the Netherlands',
+      onsiteItemsNl: [
+        'Fundering en grondwerk',
+        'Kraan en assemblage',
+        'Ramen altijd op locatie gemonteerd',
+        'Aansluitingen water, riool en elektra',
+        'Warmtepomp of HVAC-systeem',
+        'Binnenafwerking',
+        'Eindcontrole en oplevering'
+      ],
+      onsiteItemsEn: [
+        'Foundation and groundwork',
+        'Crane and assembly',
+        'Windows always installed on-site',
+        'Water, sewer and electrical connections',
+        'Heat pump or HVAC system',
+        'Interior finishing',
+        'Final inspection and handover'
+      ]
+    },
+
+    // SECTION 4: Timeline
+    timeline: {
+      titleNl: 'Hoe Lang Duurt Het?',
+      titleEn: 'How Long Does It Take?',
+      phasesNl: [
+        { phase: 'Ontwerp & Vergunning', duration: '± 4–8 weken' },
+        { phase: 'CNC Productie', duration: '± 6–8 weken' },
+        { phase: 'Transport', duration: '± 1 week' },
+        { phase: 'Montage', duration: '± 1–3 weken' }
+      ],
+      phasesEn: [
+        { phase: 'Design & Permits', duration: '± 4–8 weeks' },
+        { phase: 'CNC Production', duration: '± 6–8 weeks' },
+        { phase: 'Transport', duration: '± 1 week' },
+        { phase: 'Assembly', duration: '± 1–3 weeks' }
+      ],
+      totalNl: 'Totale tijd van bestelling tot gemonteerd casco: ca. 3 maanden',
+      totalEn: 'Total time from order to mounted structure: approx. 3 months',
+      noteNl: 'Na montage worden ramen, installaties en binnenafwerkingen uitgevoerd ter plaatse.',
+      noteEn: 'After assembly, windows, installations and interior finishing are completed on-site.'
+    },
+
+    // SECTION 5: Technology & Energy
+    technology: {
+      titleNl: 'Technologie, Energie & Comfort',
+      titleEn: 'Technology, Energy & Comfort',
+      itemsNl: [
+        'CNC-productie met ±1mm precisie voor architecturale nauwkeurigheid',
+        'Gesloten-lus fabriek met minimale fouten',
+        'BENG-klaar (Bijna Energie Neutraal Gebouw)',
+        'Passief-klaar met geavanceerde isolatie',
+        'Luchtdichte bouwschil voor maximale efficiëntie',
+        'Triple glas (PVC-ramen, Aluplast Ideal 7000)',
+        'Lagere energievraag voor verwarmen en koelen',
+        'Akoestische isolatie en comfort binnen',
+        'CO₂-reductie (materiaal + operationeel verbruik)',
+        'Minder bouwafval (bijna nul-afval)',
+        'Minerale wol isolatiewaarden: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)',
+        'Eurocode-gecertificeerde materialen en CE-markering'
+      ],
+      itemsEn: [
+        'CNC production with ±1mm precision for architectural accuracy',
+        'Closed-loop factory with minimal errors',
+        'BENG-ready (Nearly Energy Neutral Building)',
+        'Passive-ready with advanced insulation',
+        'Airtight building envelope for maximum efficiency',
+        'Triple glazing (PVC windows, Aluplast Ideal 7000)',
+        'Lower energy demand for heating and cooling',
+        'Acoustic insulation and indoor comfort',
+        'CO₂ reduction (material + operational consumption)',
+        'Reduced construction waste (near zero-waste)',
+        'Mineral wool insulation values: Optimal (R 5.7), Passive (R 8.5–9.9), Super Passive (R 11.4)',
+        'Eurocode-certified materials and CE-marking'
+      ]
+    },
+
+    // SECTION 6: Use Cases
+    usecases: {
+      titleNl: 'Geschikt Voor',
+      titleEn: 'Suitable For',
+      itemsNl: [
+        'Particulieren op bouwkavel',
+        'CPO-groepen (5–20 huishoudens)',
+        'Projectontwikkelaars',
+        'Zorg- en seniorenhuisvesting',
+        'Recreatie- en vakantieparken',
+        'Woningcorporaties (sociale woningbouw)',
+        'Scholen en onderwijsgebouwen',
+        'Kantoor- en werkruimten'
+      ],
+      itemsEn: [
+        'Individual homeowners on building plots',
+        'CPO groups (5–20 households)',
+        'Property developers',
+        'Care and senior housing',
+        'Recreation and holiday parks',
+        'Housing associations (social housing)',
+        'Schools and educational buildings',
+        'Office and workspace buildings'
+      ]
+    },
+
+    // SECTION 7: Compliance
+    compliance: {
+      titleNl: 'Naleving & Normen',
+      titleEn: 'Compliance & Standards',
+      itemsNl: [
+        'BENG-verplichting (Bijna Energie Neutraal)',
+        'Bouwbesluit compliance',
+        'EPC-waarden en energieprestatie',
+        'Eurocodes voor structurele veiligheid',
+        'CE-markering van materialen',
+        'Isolatiewaarden volgens NEN-normen',
+        'Brandveiligheid via gips en membranen',
+        'Geluidsnormen (akoestische isolatie)',
+        'Ventilatienormen (CO₂-controle)',
+        'Geschikt voor Nederlands klimaat'
+      ],
+      itemsEn: [
+        'BENG compliance (Nearly Energy Neutral Building)',
+        'Building code compliance',
+        'EPC values and energy performance',
+        'Eurocodes for structural safety',
+        'CE-marking of materials',
+        'Insulation values per NEN standards',
+        'Fire safety via gypsum and membranes',
+        'Acoustic standards (sound insulation)',
+        'Ventilation standards (CO₂ control)',
+        'Suitable for Dutch climate'
+      ]
+    },
+
+    // SECTION 8: Warranty
+    warranty: {
+      titleNl: 'Garantie & Betrouwbaarheid',
+      titleEn: 'Warranty & Reliability',
+      itemsNl: [
+        'Constructiegarantie: 10 jaar',
+        'Componenten (ramen, dak, installaties): 4–6 jaar',
+        'Ondersteuning bij oplevering',
+        'Volledige documentatie en gebruikshandleidingen',
+        'Responstijd: ca. 1 week'
+      ],
+      itemsEn: [
+        'Structural warranty: 10 years',
+        'Components (windows, roof, installations): 4–6 years',
+        'Support at handover',
+        'Complete documentation and user manuals',
+        'Response time: approx. 1 week'
+      ]
+    },
+
+    // SECTION 9: Sustainability
+    sustainability: {
+      titleNl: 'Milieu & Duurzaamheid',
+      titleEn: 'Environment & Sustainability',
+      itemsNl: [
+        'CO₂-opslag in hout (koolstofnegatief potentieel)',
+        'Lage embodied energy (productie-energie)',
+        'Lage operationele energie (BENG/Passief)',
+        'Minder bouwafval (bijna nul-afval)',
+        'Minder transportbewegingen (efficiënt)',
+        'Passief potentieel voor toekomstige energie-neutraliteit',
+        'Gezond binnenklimaat (geen schadelijke stoffen)',
+        'Duurzaam hout (C24 Nordic Pine)'
+      ],
+      itemsEn: [
+        'CO₂ storage in timber (carbon-negative potential)',
+        'Low embodied energy (production energy)',
+        'Low operational energy (BENG/Passive)',
+        'Reduced construction waste (near zero-waste)',
+        'Fewer transport movements (efficient)',
+        'Passive potential for future energy neutrality',
+        'Healthy indoor climate (no harmful substances)',
+        'Sustainable timber (C24 Nordic Pine)'
+      ]
+    },
+
+    // CTA
+    cta: {
+      titleNl: 'Klaar om Te Beginnen?',
+      titleEn: 'Ready to Get Started?',
+      descNl: 'Benieuwd of jouw kavel of project geschikt is? Neem contact op voor een vrijblijvende verkenning.',
+      descEn: 'Curious if your plot or project is suitable? Contact us for a no-obligation exploration.',
+      buttonNl: 'Neem Contact Op',
+      buttonEn: 'Get in Touch'
+    }
+  };
+
+  const toggleSection = (section: string) => {
+    setExpandedSection(expandedSection === section ? '' : section);
   };
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Return Home Button */}
-      <div className="bg-[#2A3439] px-4 py-4 flex justify-center">
-        <Link href="/" className="text-[#90dc35] hover:text-[#6fb820] font-semibold transition-colors">
-          ← {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
-        </Link>
-      </div>
-
-      {/* Groenvastbouw × Senmar Partnership - with Background Image */}
-      <section 
-        className="py-24 px-4 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(/images/factory_senmar_2.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay with transparency */}
-        <div className="absolute inset-0 bg-black/60" />
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div {...fadeInUp}>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-              {language === 'nl' ? 'Groenvastbouw × Senmar' : 'Groenvastbouw × Senmar'}
-            </h1>
-            <p className="text-xl text-gray-100 leading-relaxed mb-6">
-              {language === 'nl'
-                ? 'Groenvastbouw werkt in partnerschap met Senmar, een geavanceerd bouwbedrijf gevestigd in Portugal, gespecialiseerd in hoogperformante passiefhuisstructuren.'
-                : 'Groenvastbouw works in partnership with Senmar, a cutting-edge construction company based in Portugal, specialized in high-performance passive building structures.'}
-            </p>
-            <p className="text-lg text-gray-100 leading-relaxed mb-6">
-              {language === 'nl'
-                ? 'Senmar richt zich op echte duurzaamheid en lange termijn duurzaamheid. Door geavanceerde off-site fabricage en CNC-gecontroleerde productie worden bouwcomponenten met millimeternauwkeurigheid geproduceerd, wat constructieafval aanzienlijk vermindert. Dit gecontroleerde proces garandeert maximale kwaliteit tegen voorspelbare en gecontroleerde kosten.'
-                : 'Senmar focuses on true sustainability and long-term durability. Through advanced off-site manufacturing and CNC-controlled production, building components are produced with millimetre precision, significantly reducing construction waste. This controlled process ensures maximum quality at predictable and controlled costs.'}
-            </p>
-            <p className="text-lg text-gray-100 leading-relaxed">
-              {language === 'nl'
-                ? 'Samen leveren we hoogperformante passiefhuisstructuren die in de fabriek worden gebouwd en efficiënt ter plaatse worden gemonteerd. Afhankelijk van het project kunnen oplossingen variëren van alleen-structuursystemen tot volledig gecoördineerde, turn-key ontwikkelingen.'
-                : 'Together, we deliver high-performance passive building structures that are factory-built and assembled efficiently on site. Depending on the project, solutions can range from structure-only systems to fully coordinated, turnkey developments.'}
-            </p>
-          </motion.div>
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
+        <div className="container mx-auto px-4">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
+            <ArrowLeft className="w-5 h-5" />
+            {content.backHome}
+          </Link>
+          
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            {language === 'nl' ? content.intro.titleNl : content.intro.titleEn}
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl">
+            {language === 'nl' ? content.intro.subtitleNl : content.intro.subtitleEn}
+          </p>
         </div>
       </section>
 
-      {/* Built for the Future - with Background Image */}
-      <section 
-        className="py-24 px-4 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(/images/factory_senmar_3.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay with transparency */}
-        <div className="absolute inset-0 bg-black/65" />
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
-              {language === 'nl' ? 'Gebouwd voor de Toekomst' : 'Built for the Future'}
-            </h2>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'We geloven dat dit bouwsysteem de toekomst vertegenwoordigt van:'
-                : 'We believe this building system represents the future of:'}
-            </p>
-            <ul className="space-y-4 mb-8">
-              {[
-                language === 'nl' ? 'Woningbouw en buurtontikkelingen' : 'Residential housing and neighbourhood developments',
-                language === 'nl' ? 'Verzorgingstehuizen en ondersteunde woonvoorzieningen' : 'Retirement homes and assisted living facilities',
-                language === 'nl' ? 'Scholen en onderwijsgebouwen' : 'Schools and educational buildings',
-                language === 'nl' ? 'Kantoorgebouwen en werkruimten' : 'Office buildings and workspaces',
-                language === 'nl' ? 'Commerciële en openbare gebouwen' : 'Commercial and public buildings',
-                language === 'nl' ? 'Meervoudig verdiepingen gebouwen tot 8 verdiepingen' : 'Multi-story buildings up to 8 storeys'
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
-                  <span className="text-gray-100 text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-lg text-gray-100 leading-relaxed">
-              {language === 'nl'
-                ? 'Het systeem is vooral geschikt voor herhaalbare, schaalbare ontwikkelingen waar snelheid, kostenbeheer en lange termijn prestaties essentieel zijn.'
-                : 'The system is especially suitable for repeatable, scalable developments where speed, cost control and long-term performance are essential.'}
-            </p>
-          </motion.div>
+      {/* Intro Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            {language === 'nl' ? content.intro.descNl : content.intro.descEn}
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
+              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+                <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{feature}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Dutch Housing Challenge - with Background Image */}
-      <section 
-        className="py-24 px-4 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(/images/factory_senmar_4.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay with transparency */}
-        <div className="absolute inset-0 bg-black/70" />
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
-              {language === 'nl' ? 'Een Oplossing voor de Nederlandse Woninguitdaging' : 'A Solution to the Dutch Housing Challenge'}
-            </h2>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Nederland staat voor een groeiende woninguitdaging:'
-                : 'The Netherlands faces a growing housing challenge:'}
-            </p>
-            <ul className="space-y-4 mb-12">
-              {[
-                language === 'nl' ? 'Ernstige woningtekorten' : 'Severe housing shortages',
-                language === 'nl' ? 'Stijgende en onvoorspelbare bouwkosten' : 'Rising and unpredictable construction costs',
-                language === 'nl' ? 'Lange en onzekere bouwtijden' : 'Long and uncertain build times',
-                language === 'nl' ? 'Toenemende duurzaamheids- en energieeisen' : 'Increasing sustainability and energy requirements',
-                language === 'nl' ? 'Arbeidstekorten in traditioneel bouwen' : 'Labour shortages in traditional construction'
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
-                  <span className="text-gray-100 text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed font-semibold">
-              {language === 'nl'
-                ? 'Onze aanpak spreekt deze problemen rechtstreeks aan.'
-                : 'Our approach directly addresses these issues.'}
-            </p>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Door het merendeel van de constructie naar een gecontroleerde fabrieksomgeving te verplaatsen, verminderen we de afhankelijkheid van arbeid ter plaatse, verkorten we de bouwtijdlijnen en elimineren we veel kostonzekerheden die gepaard gaan met traditionele bouwmethoden.'
-                : 'By shifting the majority of construction to a controlled factory environment, we reduce on-site labour dependency, shorten construction timelines, and eliminate many cost uncertainties associated with traditional building methods.'}
-            </p>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Het resultaat:'
-                : 'The result:'}
-            </p>
-            <ul className="space-y-4">
-              {[
-                language === 'nl' ? 'Snellere levering' : 'Faster delivery',
-                language === 'nl' ? 'Voorspelbare kosten' : 'Predictable costs',
-                language === 'nl' ? 'Consistente, hoogwaardige uitvoering' : 'Consistent, high-quality execution',
-                language === 'nl' ? 'Toekomstbestendige energieprestaties' : 'Future-proof energy performance'
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-100 text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+      {/* How We Do It */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            {language === 'nl' ? content.method.titleNl : content.method.titleEn}
+          </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            {language === 'nl' ? content.method.subtitleNl : content.method.subtitleEn}
+          </p>
+          
+          <div className="space-y-4">
+            {(language === 'nl' ? content.method.phasesNl : content.method.phasesEn).map((phase, idx) => (
+              <div key={idx} className="border-2 border-gray-200 rounded-lg overflow-hidden hover:border-[#90dc35] transition-colors">
+                <button
+                  onClick={() => toggleSection(`phase-${idx}`)}
+                  className="w-full p-6 bg-white hover:bg-gray-50 flex items-center justify-between text-left"
+                >
+                  <h3 className="text-xl font-bold text-gray-900">{phase.title}</h3>
+                  <ChevronDown className={`w-5 h-5 text-[#90dc35] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {expandedSection === `phase-${idx}` && (
+                  <div className="bg-[#f0f7e8] p-6 border-t-2 border-gray-200">
+                    <ul className="space-y-2">
+                      {phase.items.map((item, itemIdx) => (
+                        <li key={itemIdx} className="flex items-start gap-3 text-gray-700">
+                          <span className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Development-Ready System - with Background Image */}
-      <section 
-        className="py-24 px-4 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(/images/factory_senmar_7.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay with transparency */}
-        <div className="absolute inset-0 bg-black/60" />
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
-              {language === 'nl' ? 'Een Ontwikkelings-Klaar Bouwsysteem' : 'A Development-Ready Building System'}
-            </h2>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Dit is geen experimenteel concept, maar een ontwikkelings-klaar bouwsysteem ontworpen ter ondersteuning van:'
-                : 'This is not an experimental concept, but a development-ready building system designed to support:'}
-            </p>
-            <ul className="space-y-4 mb-12">
-              {[
-                language === 'nl' ? 'Woningontwikkelaars' : 'Housing developers',
-                language === 'nl' ? 'Investeerders' : 'Investors',
-                language === 'nl' ? 'Woningcorporaties' : 'Housing corporations',
-                language === 'nl' ? 'Gemeentelijke en publieke projecten' : 'Municipal and public-sector projects'
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
-                  <span className="text-gray-100 text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-lg text-gray-100 leading-relaxed">
-              {language === 'nl'
-                ? 'We geloven stellig dat deze aanpak een betekenisvolle rol kan spelen in het oplossen van huidige en toekomstige bouwuitdagingen in Nederland. Niet alleen voor woningbouw, maar voor de bredere gebouwde omgeving.'
-                : 'We strongly believe that this approach can play a meaningful role in solving current and future building challenges in the Netherlands — not only for housing, but for the broader built environment.'}
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* The Product */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === 'nl' ? 'Het Product: Passiefhuisstructuur' : 'The Product: Passive House Structure'}
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Ons kernproduct is de structurele schil van uw huis: voorgefabriceerde muren, vloeren en daken die een luchtdichte, thermische-brugvrije passiefhuisomhulling vormen.'
-                : 'Our core product is the structural shell of your house: prefabricated walls, floors and roofs that form an airtight, thermal-bridge-free passive envelope.'}
-            </p>
-            <ul className="space-y-4">
-              {[
-                language === 'nl'
-                  ? 'CNC-gesneden structuurelementen met ongeveer 1 mm tolerantie voor naadloze verbindingen en details.'
-                  : 'CNC-cut structural elements with approximately 1 mm tolerance for seamless joints and details.',
-                language === 'nl'
-                  ? 'Geïntegreerde isolatie en luchtdichte lagen ontworpen om passiefhuisprestaties te bereiken in combinatie met de juiste installaties.'
-                  : 'Integrated insulation and airtight layers designed to reach passive-house performance when combined with the right installations.',
-                language === 'nl'
-                  ? 'Vooruitgesneden openingen voor ramen, deuren en sleutelinstallaties om fouten en tijd ter plaatse te minimaliseren.'
-                  : 'Pre-cut openings for windows, doors and key installations to minimise errors and time on site.'
-              ].map((bullet, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
-                  <span className="text-gray-700 leading-relaxed">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CNC Production & Quality - with Background Image */}
-      <section 
-        className="py-24 px-4 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(/images/factory_senmar_6.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay with transparency */}
-        <div className="absolute inset-0 bg-black/65" />
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              {language === 'nl' ? 'CNC Productie & Kwaliteit' : 'CNC Production & Quality'}
-            </h2>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Elk element wordt in een gecontroleerde fabrieksomgeving in Portugal geproduceerd met behulp van een volledig digitale workflow van 3D-model tot CNC-machine.'
-                : 'Every element is produced in a controlled factory environment in Portugal using a fully digital workflow from 3D model to CNC machine.'}
-            </p>
-            <ul className="space-y-4 mb-8">
-              {[
-                language === 'nl'
-                  ? '1 mm precisie zorgt voor schone verbindingen, hoge luchtdichtheid en voorspelbare montage ter plaatse.'
-                  : '1 mm precision ensures clean connections, high airtightness and a predictable on-site assembly.',
-                language === 'nl'
-                  ? 'Droge, binnenproductie voorkomt vochtproblemen en levert consistente, herhaalbare kwaliteit.'
-                  : 'Dry, indoor production avoids moisture problems and delivers consistent, repeatable quality.',
-                language === 'nl'
-                  ? 'Bewezen details voor luchtdichtheid en thermische prestaties verminderen warmteverlies en ongewenste tochten.'
-                  : 'Proven details for airtightness and thermal performance reduce heat loss and unwanted drafts.'
-              ].map((bullet, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
-                  <span className="text-gray-100 leading-relaxed text-lg">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Why 1mm Precision Matters */}
-            <div className="bg-[#90dc35]/20 backdrop-blur-sm rounded-2xl p-8 border border-[#90dc35]/30 mt-8">
-              <h3 className="text-2xl font-bold text-white mb-6">
-                {language === 'nl' ? 'Waarom 1 mm Precisie Belangrijk Is' : 'Why 1 mm Precision Matters'}
+      {/* Scope of Delivery */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Factory */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-[#90dc35]">
+                {language === 'nl' ? content.scope.factoryNl : content.scope.factoryEn}
               </h3>
-              <ul className="space-y-4">
-                {[
-                  language === 'nl'
-                    ? 'Minder correcties ter plaatse en snellere montage.'
-                    : 'Fewer on-site corrections and faster assembly.',
-                  language === 'nl'
-                    ? 'Betere luchtdichtheid en thermische prestaties.'
-                    : 'Better airtightness and thermal performance.',
-                  language === 'nl'
-                    ? 'Schonere integratie met ramen, daken en installaties.'
-                    : 'Cleaner integration with windows, roofs and installations.'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-100">{item}</span>
+              <ul className="space-y-3">
+                {(language === 'nl' ? content.scope.factoryItemsNl : content.scope.factoryItemsEn).map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-gray-700">
+                    <Factory className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </motion.div>
+            
+            {/* On-Site */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-[#90dc35]">
+                {language === 'nl' ? content.scope.onsiteNl : content.scope.onsiteEn}
+              </h3>
+              <ul className="space-y-3">
+                {(language === 'nl' ? content.scope.onsiteItemsNl : content.scope.onsiteItemsEn).map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-gray-700">
+                    <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Real Sustainability */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === 'nl' ? 'Echte Duurzaamheid, Geen Greenwashing' : 'Real Sustainability, Not Greenwashing'}
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Echte duurzaamheid is ingebouwd in de structuur, niet alleen als label toegevoegd.'
-                : 'Real sustainability is built into the structure, not just added as a label.'}
-            </p>
+      {/* Timeline */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
+          </h2>
+          
+          <div className="bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg p-8 border-2 border-[#90dc35] mb-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
+                <div key={idx} className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200">
+                  <span className="font-semibold text-gray-900">{item.phase}</span>
+                  <span className="text-[#90dc35] font-bold">{item.duration}</span>
+                </div>
+              ))}
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg border-2 border-[#90dc35]">
+              <p className="text-lg font-bold text-gray-900 mb-4">
+                {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
+              </p>
+              <p className="text-gray-700">
+                {language === 'nl' ? content.timeline.noteNl : content.timeline.noteEn}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+                <Zap className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.usecases.titleNl : content.usecases.titleEn}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {(language === 'nl' ? content.usecases.itemsNl : content.usecases.itemsEn).map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 p-4 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border border-[#90dc35]">
+                <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Compliance */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.compliance.titleNl : content.compliance.titleEn}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+                <Shield className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Warranty */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}
+          </h2>
+          
+          <div className="bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg p-8 border-2 border-[#90dc35]">
             <ul className="space-y-4">
-              {[
-                language === 'nl'
-                  ? 'Een zeer geisoleerde, luchtdichte omhulling vermindert de verwarmings- en koelbehoefte drastisch gedurende de levensduur van het gebouw.'
-                  : 'A highly insulated, airtight envelope cuts heating and cooling demand dramatically over the lifetime of the building.',
-                language === 'nl'
-                  ? 'Nauwkeurige fabrieksproductie vermindert afval, optimaliseert materiaalgebruik en beperkt onnodige transportbewegingen.'
-                  : 'Precise factory production reduces waste, optimises material use and limits unnecessary transport movements.',
-                language === 'nl'
-                  ? 'Het systeem is ontworpen om naadloos met hernieuwbare energiesystemen te werken en moderne energieregels te bereiken of te overtreffen in combinatie met geschikte installaties.'
-                  : 'The system is designed to work seamlessly with renewable energy systems and to meet or exceed modern energy regulations when combined with suitable installations.'
-              ].map((bullet, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <Leaf className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700 leading-relaxed">{bullet}</span>
+              {(language === 'nl' ? content.warranty.itemsNl : content.warranty.itemsEn).map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-gray-700">
+                  <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                  <span className="font-medium">{item}</span>
                 </li>
               ))}
             </ul>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {language === 'nl' ? 'Hoe Het Werkt' : 'How It Works'}
-            </h2>
-            <p className="text-lg text-gray-600">
-              {language === 'nl' ? 'Van ontwerp tot geleverde structuur in 3 maanden' : 'From design to delivered structure in 3 months'}
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                number: '1',
-                title: language === 'nl' ? 'Ontwerp & Offerte' : 'Design & Quote',
-                desc: language === 'nl'
-                  ? 'Kies een prefab model of bespreek uw aangepaste ontwerp. Ontvang een vaste prijsofferte.'
-                  : 'Choose a prefab model or discuss your custom design. Receive a fixed price quote.'
-              },
-              {
-                number: '2',
-                title: language === 'nl' ? 'Productie in Senmar Fabriek' : 'Production in Senmar Factory',
-                desc: language === 'nl'
-                  ? 'De volledige prefab structuur wordt in onze gecontroleerde fabriek in Portugal geproduceerd.'
-                  : 'The complete prefab structure is produced in our controlled factory in Portugal.'
-              },
-              {
-                number: '3',
-                title: language === 'nl' ? 'Structuur Levering' : 'Structure Delivery',
-                desc: language === 'nl'
-                  ? 'De volledige prefab structuur wordt op uw locatie geleverd, klaar voor montage. Transport naar Nederland inbegrepen.'
-                  : 'The complete prefab structure is delivered to your location, ready for assembly. Transport to the Netherlands included.'
-              },
-              {
-                number: '4',
-                title: language === 'nl' ? 'Volledige Montage' : 'Full Assembly',
-                desc: language === 'nl'
-                  ? 'Volledige montage van de prefab structuur op uw locatie. Fundering en grondwerk voorbereid van tevoren.'
-                  : 'Complete assembly of the prefab structure at your location. Foundation and groundwork prepared in advance.'
-              }
-            ].map((step, idx) => (
-              <motion.div
-                key={idx}
-                {...fadeInUp}
-                className="text-center"
-              >
-                <div className="w-12 h-12 rounded-full bg-[#90dc35] text-[#2A3439] font-bold flex items-center justify-center mx-auto mb-4 text-lg">
-                  {step.number}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
-              </motion.div>
-            ))}
           </div>
-
-          <motion.p {...fadeInUp} className="text-center text-sm text-gray-500 mt-12">
-            {language === 'nl'
-              ? 'Totale tijdlijn: ongeveer 3 maanden voor de structuur. Fundering en grondwerk worden van tevoren voorbereid.'
-              : 'Total timeline: approximately 3 months for the structure. Foundation and groundwork are prepared in advance.'}
-          </motion.p>
         </div>
       </section>
 
-      {/* Is This For You */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === 'nl' ? 'Is Dit Voor U?' : 'Is This For You?'}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              {language === 'nl'
-                ? 'Dit aanbod is ideaal voor klanten die hoog comfort, zeer laag energieverbruik en een voorspelbaar bouwproces willen.'
-                : 'This offer is ideal for clients who want high comfort, very low energy use and a predictable building process.'}
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: language === 'nl' ? 'Particuliere Klanten' : 'Private Clients',
-                desc: language === 'nl'
-                  ? 'Voor degenen die een gezond, comfortabel huis willen zonder greenwashing.'
-                  : 'For those who want a healthy, comfortable home without greenwashing.'
-              },
-              {
-                title: language === 'nl' ? 'Architecten' : 'Architects',
-                desc: language === 'nl'
-                  ? 'Voor ontwerpers die een betrouwbare passiefhuisstructuur partner nodig hebben.'
-                  : 'For designers who need a reliable passive-house structure partner.'
-              },
-              {
-                title: language === 'nl' ? 'Ontwikkelaars & Investeerders' : 'Developers & Investors',
-                desc: language === 'nl'
-                  ? 'Voor schaalbare, herhaalbare, energiezuinige woningconcepten.'
-                  : 'For scalable, repeatable, energy-efficient housing concepts.'
-              }
-            ].map((item, idx) => (
-              <motion.div
-                key={idx}
-                {...fadeInUp}
-                className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{item.desc}</p>
-                <button
-                  onClick={scrollToContact}
-                  className="w-full px-6 py-3 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
-                >
-                  {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
-                </button>
-              </motion.div>
+      {/* Sustainability */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            {language === 'nl' ? content.sustainability.titleNl : content.sustainability.titleEn}
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {(language === 'nl' ? content.sustainability.itemsNl : content.sustainability.itemsEn).map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+                <Leaf className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{item}</span>
+              </div>
             ))}
           </div>
         </div>
       </section>
-      {/* Final CTA */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#2A3439] to-[#1a1f23] text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div {...fadeInUp}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {language === 'nl' ? 'Klaar om uw project te bespreken?' : 'Ready to discuss your project?'}
-            </h2>
-            <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              {language === 'nl'
-                ? 'Deel uw plannen of kies een model en ontvang een duidelijke offerte en tijdlijn voor uw passiefhuisstructuur.'
-                : 'Share your plans or choose a model, and receive a clear offer and timeline for your passive house structure.'}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl">
-              <button
-                onClick={scrollToContact}
-                className="flex-1 px-8 py-4 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
-              >
-                {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
-              </button>
-              <Link href="/" className="flex-1 px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border border-white/30 flex items-center justify-center">
-                {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
-              </Link>
-            </div>
-          </motion.div>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-[#90dc35] to-[#6fb820]">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
+          <h2 className="text-3xl font-bold text-[#2A3439] mb-6">
+            {language === 'nl' ? content.cta.titleNl : content.cta.titleEn}
+          </h2>
+          <p className="text-[#2A3439] text-lg mb-8">
+            {language === 'nl' ? content.cta.descNl : content.cta.descEn}
+          </p>
+          <button
+            onClick={scrollToContact}
+            className="inline-block bg-[#2A3439] hover:bg-black text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+          >
+            {language === 'nl' ? content.cta.buttonNl : content.cta.buttonEn}
+          </button>
         </div>
       </section>
     </div>
