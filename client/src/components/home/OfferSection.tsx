@@ -101,7 +101,7 @@ export default function OfferSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-          <p className="text-lg text-gray-300 font-medium leading-relaxed">{content.subheadline}</p>
+          <p className="text-lg text-white font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Three Column Grid - REORGANIZED ORDER */}
@@ -112,19 +112,19 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-gray-800/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-gray-700/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Building2 className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.b2b.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.b2b.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
-              <p className="text-gray-300 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
+              <p className="text-gray-700 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.b2b.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-300 text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -132,7 +132,7 @@ export default function OfferSection() {
               </ul>
             </div>
             
-            <div className="p-8 bg-gray-700/50 border-t border-gray-700">
+            <div className="p-8 bg-gray-50 border-t border-gray-200">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
@@ -149,19 +149,19 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-gray-900/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Home className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.prefab.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.prefab.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
-              <p className="text-white mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
+              <p className="text-gray-700 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.prefab.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -171,7 +171,7 @@ export default function OfferSection() {
               <p className="text-lg font-bold text-[#90dc35] mb-6">{content.prefab.price}</p>
             </div>
             
-            <div className="p-8 bg-gray-800 border-t border-gray-100">
+            <div className="p-8 bg-gray-50 border-t border-gray-200">
               <a 
                 href="https://senmar.pt/en/projects#" 
                 target="_blank" 
@@ -183,7 +183,7 @@ export default function OfferSection() {
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <div className="mt-4 text-xs text-gray-400 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
                 <p>{content.prefab.priceNote}</p>
               </div>
             </div>
@@ -195,19 +195,19 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-gray-900/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#e8f5f0] rounded-xl flex items-center justify-center mb-6">
                 <Pencil className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">{content.custom.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.custom.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
-              <p className="text-white mb-6 text-sm leading-relaxed">{content.custom.description}</p>
+              <p className="text-gray-700 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.custom.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -217,7 +217,7 @@ export default function OfferSection() {
               <p className="text-lg font-bold text-[#90dc35] mb-6">{content.custom.price}</p>
             </div>
             
-            <div className="p-8 bg-gray-700/50 border-t border-gray-700">
+            <div className="p-8 bg-gray-50 border-t border-gray-200">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
@@ -225,7 +225,7 @@ export default function OfferSection() {
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <div className="mt-4 text-xs text-gray-400 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
                 <p>{content.custom.priceNote}</p>
               </div>
             </div>
