@@ -1,10 +1,12 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { motion } from 'framer-motion';
 import { Home, Pencil, Building2, ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function OfferSection() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
 
   const content = {
     headline: language === 'nl' ? 'Ons Aanbod' : 'Our Offer',
@@ -81,15 +83,7 @@ export default function OfferSection() {
     }
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-    }
-  };
+
 
   return (
     <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden">
@@ -141,7 +135,7 @@ export default function OfferSection() {
             
             <div className="p-8 bg-gray-50 border-t border-gray-100">
               <Button 
-                onClick={scrollToContact}
+                onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.b2b.cta}
@@ -226,7 +220,7 @@ export default function OfferSection() {
             
             <div className="p-8 bg-gray-50 border-t border-gray-100">
               <Button 
-                onClick={scrollToContact}
+                onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.custom.cta}

@@ -5,8 +5,18 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import SchemaMarkup from "./components/SchemaMarkup";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState, createContext, useContext } from "react";
 import { Loader2 } from "lucide-react";
+import ContactFormModal from "./components/ContactFormModal";
+
+// Create context for contact form modal
+export const ContactModalContext = createContext<{
+  isOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+}>({ isOpen: false, openModal: () => {}, closeModal: () => {} });
+
+export const useContactModal = () => useContext(ContactModalContext);
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -55,15 +65,27 @@ function Router() {
 }
 
 function App() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <LanguageProvider>
-          <TooltipProvider>
-            <SchemaMarkup />
-            <Toaster />
-            <Router />
-          </TooltipProvider>
+          <ContactModalContext.Provider value={{
+            isOpen: isContactModalOpen,
+            openModal: () => setIsContactModalOpen(true),
+            closeModal: () => setIsContactModalOpen(false),
+          }}>
+            <TooltipProvider>
+              <SchemaMarkup />
+              <Toaster />
+              <Router />
+              <ContactFormModal 
+                isOpen={isContactModalOpen} 
+                onClose={() => setIsContactModalOpen(false)}
+              />
+            </TooltipProvider>
+          </ContactModalContext.Provider>
         </LanguageProvider>
       </ThemeProvider>
     </ErrorBoundary>

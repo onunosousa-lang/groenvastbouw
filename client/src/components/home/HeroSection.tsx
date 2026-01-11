@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 
 interface HeroSectionProps {
   scrollToSection: (id: string) => void;
@@ -8,6 +9,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ scrollToSection }: HeroSectionProps) {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
 
   const content = {
     company: 'Groenvastbouw',
@@ -110,7 +112,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
               WhatsApp
             </a>
             <Button 
-              onClick={() => scrollToSection('contact')}
+              onClick={openModal}
               className="flex-1 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
             >
               {content.ctaSecondary}
