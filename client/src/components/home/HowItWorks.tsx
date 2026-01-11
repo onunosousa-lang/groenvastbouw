@@ -31,15 +31,9 @@ export default function HowItWorks() {
         icon: Factory
       },
       {
-        title: language === 'nl' ? 'Levering Structuur' : 'Structure Delivery',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt op uw locatie geleverd, klaar voor montage. Transport naar Nederland inbegrepen.' : 'The complete prefab structure is delivered to your location, ready for assembly. Transport to Netherlands included.',
-        duration: language === 'nl' ? 'Einde maand 3' : 'End of month 3',
-        icon: Construction
-      },
-      {
-        title: language === 'nl' ? 'Volledige Montage' : 'Full Assembly',
-        desc: language === 'nl' ? 'Volledige montage van de prefab structuur op uw locatie. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.' : 'Complete assembly of the prefab structure at your location. Foundation and groundwork prepared in advance by you or by us upon request.',
-        duration: language === 'nl' ? 'Optioneel' : 'Optional',
+        title: language === 'nl' ? 'Transport & Volledige Montage' : 'Transport & Full Assembly',
+        desc: language === 'nl' ? 'De volledige prefab structuur wordt op uw locatie geleverd en gemonteerd door ons team. Transport naar Nederland en volledige montage zijn inbegrepen. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.' : 'The complete prefab structure is delivered to your location and assembled by our team. Transport to the Netherlands and full assembly are included. Foundation and groundwork are prepared in advance by you or by us upon request.',
+        duration: language === 'nl' ? 'Maand 3' : 'Month 3',
         icon: Construction
       }
     ],
@@ -84,13 +78,13 @@ export default function HowItWorks() {
     ],
 
     totalTimeline: {
-      structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden*' : 'Total timeline: 3 months*',
+      structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden (inclusief volledige montage)' : 'Total timeline: 3 months (including full assembly)',
       turnkey: language === 'nl' ? 'Totale doorlooptijd: 4-6 maanden (afhankelijk van afwerking)' : 'Total timeline: 4-6 months (depending on finishing)'
     },
 
     asteriskNote: language === 'nl' 
-      ? '* Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.'
-      : '* Foundation and groundwork are prepared in advance by you or by us upon request.',
+      ? 'Volledige montage door ons team is inbegrepen in de 3-maanden timeline. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.'
+      : 'Full assembly by our team is included in the 3-month timeline. Foundation and groundwork are prepared in advance by you or by us upon request.',
 
     cta: {
       text: language === 'nl' ? 'Wil je meer weten over het proces?' : 'Want to know more about the process?',
@@ -162,7 +156,11 @@ export default function HowItWorks() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+              className={`grid gap-8 ${
+                activeTab === 'structure' 
+                  ? 'md:grid-cols-2 lg:grid-cols-3' 
+                  : 'md:grid-cols-2 lg:grid-cols-3'
+              }`}
             >
               {(activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).map((step, index) => (
                 <div key={index} className="relative group">
