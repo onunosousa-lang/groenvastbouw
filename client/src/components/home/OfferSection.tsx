@@ -87,15 +87,19 @@ export default function OfferSection() {
 
   return (
     <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Images with Transparency */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/new/offer-bg.jpg" 
-          alt="Construction Background" 
-          className="w-full h-full object-cover"
-          onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
+          src="/images/Giulio(1).png" 
+          alt="" 
+          className="absolute top-0 left-0 w-1/3 h-auto opacity-5 object-cover"
         />
-        <div className="absolute inset-0 bg-white/90 backdrop-blur-sm"></div>
+        <img 
+          src="/images/Les_arcs_shalet_extension(4).jpg" 
+          alt="" 
+          className="absolute bottom-0 right-0 w-1/3 h-auto opacity-5 object-cover"
+        />
+        <div className="absolute inset-0 bg-white/95 backdrop-blur-sm"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

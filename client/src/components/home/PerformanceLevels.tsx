@@ -97,10 +97,18 @@ export default function PerformanceLevels() {
 
   return (
     <section id="systems" className="py-20 bg-gray-50 scroll-mt-20 relative overflow-hidden">
-      {/* Background Images with Opacity */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96" style={{ backgroundImage: 'url(/images/factory_senmar_3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80" style={{ backgroundImage: 'url(/images/factory_senmar_4.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+      {/* Background Images with Transparency */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img 
+          src="/images/nl_Pier(2).jpg" 
+          alt="" 
+          className="absolute top-0 left-0 w-1/3 h-auto opacity-5 object-cover"
+        />
+        <img 
+          src="/images/Les_arcs_shalet_extension(6)(1).jpg" 
+          alt="" 
+          className="absolute bottom-0 right-0 w-1/3 h-auto opacity-5 object-cover"
+        />
       </div>
       
       {/* Subtle Pattern Background */}
