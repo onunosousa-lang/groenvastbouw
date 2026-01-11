@@ -175,9 +175,9 @@ export default function PerformanceLevels() {
                     <li key={idx} className="flex items-start gap-2 text-xs text-white leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         level.color === 'green' ? 'text-[#90dc35]' : 
-                        level.color === 'blue' ? 'text-blue-500' : 
+                        level.color === 'blue' ? 'text-green-500' : 
                         level.color === 'purple' ? 'text-purple-500' :
-                        'text-gray-500'
+                        'text-white'
                       }`} />
                       <span>{feature}</span>
                     </li>

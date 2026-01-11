@@ -10,7 +10,7 @@ export default function EnergyComparison() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('energy_comparison_title')}</h2>
-          <p className="text-xl text-gray-400">{t('energy_comparison_subtitle')}</p>
+          <p className="text-xl text-white">{t('energy_comparison_subtitle')}</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -19,7 +19,7 @@ export default function EnergyComparison() {
             <div className="space-y-8">
               {/* Average House Bar */}
               <div>
-                <div className="flex justify-between text-sm mb-2 text-gray-400">
+                <div className="flex justify-between text-sm mb-2 text-white">
                   <span>{t('energy_comparison_average')}</span>
                   <span>150 kWh/m²/jr</span>
                 </div>
@@ -28,7 +28,7 @@ export default function EnergyComparison() {
                     €4.500 {t('energy_comparison_per_year')}
                   </div>
                 </div>
-                <div className="text-xs text-gray-500 mt-1 text-right">
+                <div className="text-xs text-white mt-1 text-right">
                   {t('energy_comparison_heating')}
                 </div>
               </div>
@@ -54,11 +54,11 @@ export default function EnergyComparison() {
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-gray-900/50 p-4 rounded-xl">
                   <div className="text-3xl font-bold text-green-400 mb-1">€4.050</div>
-                  <div className="text-sm text-gray-400">{t('energy_comparison_savings_annual')}</div>
+                  <div className="text-sm text-white">{t('energy_comparison_savings_annual')}</div>
                 </div>
                 <div className="bg-gray-900/50 p-4 rounded-xl border border-[#90dc35]/20">
                   <div className="text-3xl font-bold text-green-400 mb-1">€121.500</div>
-                  <div className="text-sm text-gray-400">{t('energy_comparison_savings_30y')}</div>
+                  <div className="text-sm text-white">{t('energy_comparison_savings_30y')}</div>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function EnergyComparison() {
               <h3 className="text-2xl font-bold text-green-400 mb-2">
                 {t('energy_comparison_ratio')}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 {t('energy_comparison_ratio_desc')}
               </p>
             </div>
@@ -78,19 +78,19 @@ export default function EnergyComparison() {
             <div>
               <h4 className="font-bold text-white mb-4">{t('energy_comparison_includes')}</h4>
               <ul className="grid grid-cols-2 gap-3">
-                <li className="flex items-center gap-2 text-gray-300">
+                <li className="flex items-center gap-2 text-white">
                   <div className="w-2 h-2 bg-[#90dc35] rounded-full"></div>
                   {t('energy_comparison_space')}
                 </li>
-                <li className="flex items-center gap-2 text-gray-300">
+                <li className="flex items-center gap-2 text-white">
                   <div className="w-2 h-2 bg-[#90dc35] rounded-full"></div>
                   {t('energy_comparison_water')}
                 </li>
-                <li className="flex items-center gap-2 text-gray-300">
+                <li className="flex items-center gap-2 text-white">
                   <div className="w-2 h-2 bg-[#90dc35] rounded-full"></div>
                   {t('energy_comparison_ventilation')}
                 </li>
-                <li className="flex items-center gap-2 text-gray-300">
+                <li className="flex items-center gap-2 text-white">
                   <div className="w-2 h-2 bg-[#90dc35] rounded-full"></div>
                   {t('energy_comparison_cooling')}
                 </li>
@@ -105,7 +105,7 @@ export default function EnergyComparison() {
                   </div>
                   <div>
                     <h4 className="font-bold text-white mb-2">{t('energy_comparison_embodied')}</h4>
-                    <p className="text-sm text-gray-400 leading-relaxed">
+                    <p className="text-sm text-white leading-relaxed">
                       {language === 'nl' 
                         ? <>Houtskeletbouw (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 font-semibold">Senmar</a>) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.</>
                         : <>Timber frame construction (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 font-semibold">Senmar</a>) uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.</>

@@ -97,7 +97,7 @@ export default function FeaturedProjects() {
                 {project.title}
               </h3>
               <p className="text-white text-sm mb-2 leading-relaxed">{project.description}</p>
-              <div className="flex items-center text-gray-500 text-sm">
+              <div className="flex items-center text-white text-sm">
                 <MapPin className="w-4 h-4 mr-1" />
                 {project.location}
               </div>

@@ -123,7 +123,7 @@ export default function HowItWorks() {
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
                   ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
-                  : 'text-gray-500 hover:text-white'
+                  : 'text-white hover:text-white'
               }`}
             >
               {content.tabs.structure}
@@ -133,7 +133,7 @@ export default function HowItWorks() {
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
                   ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
-                  : 'text-gray-500 hover:text-white'
+                  : 'text-white hover:text-white'
               }`}
             >
               {content.tabs.turnkey}
@@ -170,12 +170,12 @@ export default function HowItWorks() {
                       <step.icon className="w-8 h-8" />
                     </div>
                     
-                    <div className="absolute top-6 right-6 text-xs font-bold text-gray-300">
+                    <div className="absolute top-6 right-6 text-xs font-bold text-white">
                       {index + 1}
                     </div>
 
                     <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
-                    <p className="text-sm text-gray-500 mb-4 flex-grow">{step.desc}</p>
+                    <p className="text-sm text-white mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
                       activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#6fb820]' : 'bg-[#f0f7e8] text-[#6fb820]'

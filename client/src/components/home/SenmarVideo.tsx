@@ -15,7 +15,7 @@ export default function SenmarVideo() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {language === 'nl' ? 'Senmar Passieve Oplossing' : 'Senmar Passive Solution'}
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-white">
               {language === 'nl' ? 'Industriële precisie ontmoet duurzaam bouwen' : 'Industrial precision meets sustainable construction'}
             </p>
           </div>

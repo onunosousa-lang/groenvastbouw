@@ -35,7 +35,7 @@ export default function SystemsSection() {
                   {system.name}
                 </CardTitle>
                 <div className="text-center mt-2">
-                  <span className="text-sm text-gray-500">Rc-waarde</span>
+                  <span className="text-sm text-white">Rc-waarde</span>
                   <div className="text-3xl font-bold text-[#90dc35]">{system.r_value}</div>
                 </div>
               </CardHeader>

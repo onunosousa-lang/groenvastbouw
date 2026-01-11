@@ -79,7 +79,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </p>
 
           {/* Description Paragraph */}
-          <p className="text-base md:text-lg text-gray-100 mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-white mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
             {content.description}
           </p>
 
