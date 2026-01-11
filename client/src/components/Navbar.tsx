@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import {
   DropdownMenu,
@@ -23,6 +24,7 @@ function throttle<T extends (...args: any[]) => any>(func: T, limit: number): (.
 
 export default function Navbar() {
   const { t, language, setLanguage } = useLanguage();
+  const { openModal } = useContactModal();
   const [location, setLocation] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -112,7 +114,7 @@ export default function Navbar() {
             <Link href="/faq" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
               FAQ
             </Link>
-            <button onClick={() => scrollToSection('contact')} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
+            <button onClick={() => openModal()} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
               {t('nav_contact')}
             </button>
             <button
@@ -151,7 +153,7 @@ export default function Navbar() {
               <Link href="/faq" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
-              <button onClick={() => scrollToSection('contact')} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
+              <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
                 {t('nav_contact')}
               </button>
               <button

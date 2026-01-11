@@ -9,7 +9,6 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { trpc } from '@/lib/trpc';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -32,17 +31,27 @@ export default function ContactForm() {
     },
   });
 
-  const sendContactMutation = trpc.contact.sendEmail.useMutation();
+  const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/wewmi0xjhhmk2cz8iyciyekopxej7jpi';
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
     try {
-      await sendContactMutation.mutateAsync({
-        name: values.name,
-        email: values.email,
-        phone: values.phone || '',
-        message: values.message,
+      const response = await fetch(MAKE_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone || '',
+          message: values.message,
+        }),
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
       
       toast.success(language === 'nl' ? 'Uw bericht is verzonden!' : 'Your message has been sent!');
       form.reset();
@@ -75,8 +84,8 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:onunosousa@gmail.com" className="text-[#90dc35] hover:underline">
-                    onunosousa@gmail.com
+                  <a href="mailto:info@groenvastbouw.nl" className="text-[#90dc35] hover:underline">
+                    info@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
@@ -153,9 +162,9 @@ export default function ContactForm() {
                 <Button 
                   type="submit" 
                   className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-lg py-6"
-                  disabled={isSubmitting || sendContactMutation.isPending}
+                  disabled={isSubmitting}
                 >
-                  {isSubmitting || sendContactMutation.isPending
+                  {isSubmitting
                     ? (language === 'nl' ? 'Verzenden...' : 'Sending...') 
                     : t('contact_submit')
                   }

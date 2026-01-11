@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -36,24 +37,31 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     },
   });
 
+  const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/wewmi0xjhhmk2cz8iyciyekopxej7jpi';
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(language === 'nl' ? 'Contactaanvraag van ' + values.name : 'Contact Request from ' + values.name);
-      const body = encodeURIComponent(
-        `${language === 'nl' ? 'Naam' : 'Name'}: ${values.name}\n` +
-        `${language === 'nl' ? 'Email' : 'Email'}: ${values.email}\n` +
-        `${language === 'nl' ? 'Telefoon' : 'Phone'}: ${values.phone || (language === 'nl' ? 'Niet opgegeven' : 'Not provided')}\n\n` +
-        `${language === 'nl' ? 'Bericht' : 'Message'}:\n${values.message}`
-      );
+      const response = await fetch(MAKE_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone || '',
+          message: values.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
       
-      // Open email client
-      window.location.href = `mailto:contact@groenvastbouw.nl?subject=${subject}&body=${body}`;
-      
-      toast.success(language === 'nl' ? 'Email client geopend. Stuur uw bericht.' : 'Email client opened. Send your message.');
+      toast.success(language === 'nl' ? 'Uw bericht is verzonden!' : 'Your message has been sent!');
       form.reset();
-      setTimeout(() => onClose(), 500);
+      onClose();
     } catch (error) {
       console.error('Contact form error:', error);
       toast.error(language === 'nl' ? 'Er is een fout opgetreden.' : 'An error occurred.');
@@ -213,8 +221,8 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
           <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 rounded-b-2xl">
             <p className="text-xs text-gray-600 text-center">
               {language === 'nl' 
-                ? '📧 contact@groenvastbouw.nl' 
-                : '📧 contact@groenvastbouw.nl'}
+                ? '📧 info@groenvastbouw.nl' 
+                : '📧 info@groenvastbouw.nl'}
             </p>
           </div>
         </div>

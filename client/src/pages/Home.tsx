@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gray-900 font-sans">
       <SEO />
       <Navbar />
       <HeroSection scrollToSection={scrollToSection} />

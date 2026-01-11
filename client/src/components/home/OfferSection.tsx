@@ -86,7 +86,7 @@ export default function OfferSection() {
 
 
   return (
-    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background Images with Transparency */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -94,14 +94,14 @@ export default function OfferSection() {
           alt="" 
           className="absolute top-0 right-0 w-1/2 h-auto opacity-8 object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-gray-900/70"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content.headline}</h2>
-          <p className="text-lg text-gray-600 font-medium leading-relaxed">{content.subheadline}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
+          <p className="text-lg text-gray-300 font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Three Column Grid - REORGANIZED ORDER */}
@@ -112,19 +112,19 @@ export default function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-white/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-white/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            className="bg-gray-800/85 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-gray-700/50 flex flex-col hover:shadow-2xl transition-shadow duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
                 <Building2 className="text-[#90dc35] w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.b2b.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">{content.b2b.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
-              <p className="text-gray-600 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
+              <p className="text-gray-300 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.b2b.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-300 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -132,7 +132,7 @@ export default function OfferSection() {
               </ul>
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
+            <div className="p-8 bg-gray-700/50 border-t border-gray-700">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
@@ -183,7 +183,7 @@ export default function OfferSection() {
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-gray-400 space-y-1 text-center whitespace-pre-line">
                 <p>{content.prefab.priceNote}</p>
               </div>
             </div>
@@ -217,7 +217,7 @@ export default function OfferSection() {
               <p className="text-lg font-bold text-[#90dc35] mb-6">{content.custom.price}</p>
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-100">
+            <div className="p-8 bg-gray-700/50 border-t border-gray-700">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
@@ -225,7 +225,7 @@ export default function OfferSection() {
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <div className="mt-4 text-xs text-gray-600 space-y-1 text-center whitespace-pre-line">
+              <div className="mt-4 text-xs text-gray-400 space-y-1 text-center whitespace-pre-line">
                 <p>{content.custom.priceNote}</p>
               </div>
             </div>
