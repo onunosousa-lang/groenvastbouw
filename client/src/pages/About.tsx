@@ -2,9 +2,11 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Hammer, Globe, ShieldCheck, Leaf, Zap, HardHat } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 
 export default function About() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
   
   const content = {
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
@@ -223,7 +225,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
           <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#90dc35] hover:bg-[#6da545] text-white px-8 py-6 text-lg" onClick={() => window.location.href = '/#contact'}>
+            <Button size="lg" className="bg-[#90dc35] hover:bg-[#6da545] text-white px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#2A3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>

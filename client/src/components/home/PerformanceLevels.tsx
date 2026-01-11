@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { motion } from 'framer-motion';
 import { Shield, Zap, Leaf, Check, Hammer2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,7 @@ import { Link } from 'wouter';
 
 export default function PerformanceLevels() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
 
   const content = {
     headline: language === 'nl' ? 'Prestatie Niveaus' : 'Performance Levels',
@@ -182,9 +184,7 @@ export default function PerformanceLevels() {
         {/* Single CTA Button Below */}
         <div className="mt-16 text-center">
           <button
-            onClick={() => {
-              window.location.href = '/#contact';
-            }}
+            onClick={openModal}
             className="px-8 py-4 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}

@@ -6,11 +6,13 @@ import { ArrowLeft, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 
 export default function WhatWeOffer() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
   const [activeTab, setActiveTab] = useState<'structure' | 'turnkey'>('structure');
 
   const content = {
@@ -138,15 +140,7 @@ export default function WhatWeOffer() {
     contactButton: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -314,7 +308,7 @@ export default function WhatWeOffer() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{content.ctaTitle}</h2>
             <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
             <Button
-              onClick={scrollToContact}
+              onClick={openModal}
               className="bg-[#90dc35] hover:bg-[#6fb820] text-white px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}

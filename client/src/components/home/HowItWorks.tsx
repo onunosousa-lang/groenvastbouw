@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Ruler, Factory, Truck, Construction, Plug, Key, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function HowItWorks() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
   const [activeTab, setActiveTab] = useState<'structure' | 'turnkey'>('structure');
 
   const content = {
@@ -92,15 +94,7 @@ export default function HowItWorks() {
     }
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-    }
-  };
+
 
   return (
     <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden">
@@ -205,7 +199,7 @@ export default function HowItWorks() {
             <div className="flex flex-col items-center gap-4">
               <p className="text-gray-600">{content.cta.text}</p>
               <Button 
-                onClick={scrollToContact}
+                onClick={openModal}
                 className={`px-8 py-6 text-lg font-semibold text-[#2A3439] ${
                   activeTab === 'structure' 
                     ? 'bg-[#90dc35] hover:bg-[#6fb820]' 

@@ -1,16 +1,14 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContactModal } from '@/App';
 import { ArrowLeft, Check, Factory, Zap, Leaf, Shield, Clock, Building2, ChevronDown } from 'lucide-react';
 import { Link } from 'wouter';
 import Navbar from '@/components/Navbar';
 
 export default function OurOffer() {
   const { language } = useLanguage();
+  const { openModal } = useContactModal();
   const [expandedSection, setExpandedSection] = useState<string>('intro');
-
-  const scrollToContact = () => {
-    window.location.href = '/#contact';
-  };
 
   const content = {
     backHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
@@ -557,7 +555,7 @@ export default function OurOffer() {
             {language === 'nl' ? content.cta.descNl : content.cta.descEn}
           </p>
           <button
-            onClick={scrollToContact}
+            onClick={openModal}
             className="inline-block bg-[#2A3439] hover:bg-black text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? content.cta.buttonNl : content.cta.buttonEn}

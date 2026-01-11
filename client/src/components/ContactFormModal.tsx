@@ -53,7 +53,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
       
       toast.success(language === 'nl' ? 'Email client geopend. Stuur uw bericht.' : 'Email client opened. Send your message.');
       form.reset();
-      onClose();
+      setTimeout(() => onClose(), 500);
     } catch (error) {
       console.error('Contact form error:', error);
       toast.error(language === 'nl' ? 'Er is een fout opgetreden.' : 'An error occurred.');
@@ -68,117 +68,135 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-black/50 z-40 transition-opacity"
+        className="fixed inset-0 bg-black/40 z-40 transition-opacity duration-300"
         onClick={onClose}
       />
       
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
-          {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900">
-              {language === 'nl' ? 'Contacteer Ons' : 'Contact Us'}
-            </h2>
+        <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-300">
+          {/* Header with Close Button */}
+          <div className="flex items-start justify-between p-6 border-b border-gray-100">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">
+                {language === 'nl' ? 'Contacteer Ons' : 'Contact Us'}
+              </h2>
+              <p className="text-sm text-gray-600 mt-1">
+                {language === 'nl' ? 'Vul het formulier in en we nemen snel contact op.' : 'Fill out the form and we\'ll get back to you soon.'}
+              </p>
+            </div>
             <button
               onClick={onClose}
-              className="p-1 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-1 hover:bg-gray-100 rounded-lg transition-colors flex-shrink-0 ml-4"
               aria-label="Close"
             >
-              <X className="w-6 h-6 text-gray-600" />
+              <X className="w-5 h-5 text-gray-600" />
             </button>
           </div>
 
           {/* Form */}
           <div className="p-6">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                {/* Name Field */}
                 <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_name')} *</FormLabel>
+                      <FormLabel className="text-sm font-semibold text-gray-900">
+                        {t('contact_name')} <span className="text-[#90dc35]">*</span>
+                      </FormLabel>
                       <FormControl>
                         <Input 
                           placeholder={language === 'nl' ? "Uw naam" : "Your name"} 
                           {...field} 
-                          className="bg-gray-50"
+                          className="bg-gray-50 border-gray-200 focus:border-[#90dc35] focus:ring-[#90dc35] placeholder:text-gray-400"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs" />
                     </FormItem>
                   )}
                 />
 
+                {/* Email Field */}
                 <FormField
                   control={form.control}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_email')} *</FormLabel>
+                      <FormLabel className="text-sm font-semibold text-gray-900">
+                        {t('contact_email')} <span className="text-[#90dc35]">*</span>
+                      </FormLabel>
                       <FormControl>
                         <Input 
                           type="email" 
                           placeholder="naam@voorbeeld.nl" 
                           {...field} 
-                          className="bg-gray-50"
+                          className="bg-gray-50 border-gray-200 focus:border-[#90dc35] focus:ring-[#90dc35] placeholder:text-gray-400"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs" />
                     </FormItem>
                   )}
                 />
 
+                {/* Phone Field */}
                 <FormField
                   control={form.control}
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_phone')}</FormLabel>
+                      <FormLabel className="text-sm font-semibold text-gray-900">
+                        {t('contact_phone')}
+                      </FormLabel>
                       <FormControl>
                         <Input 
                           type="tel" 
                           placeholder="+31 6 12345678" 
                           {...field} 
-                          className="bg-gray-50"
+                          className="bg-gray-50 border-gray-200 focus:border-[#90dc35] focus:ring-[#90dc35] placeholder:text-gray-400"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs" />
                     </FormItem>
                   )}
                 />
 
+                {/* Message Field */}
                 <FormField
                   control={form.control}
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_message')} *</FormLabel>
+                      <FormLabel className="text-sm font-semibold text-gray-900">
+                        {t('contact_message')} <span className="text-[#90dc35]">*</span>
+                      </FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[120px] bg-gray-50 resize-none"
+                          className="min-h-[100px] bg-gray-50 border-gray-200 focus:border-[#90dc35] focus:ring-[#90dc35] placeholder:text-gray-400 resize-none"
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs" />
                     </FormItem>
                   )}
                 />
 
+                {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
                   <Button 
                     type="button"
                     variant="outline"
-                    className="flex-1"
+                    className="flex-1 border-gray-200 text-gray-900 hover:bg-gray-50"
                     onClick={onClose}
                   >
                     {language === 'nl' ? 'Annuleren' : 'Cancel'}
                   </Button>
                   <Button 
                     type="submit" 
-                    className="flex-1 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439]"
+                    className="flex-1 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-semibold transition-all duration-200"
                     disabled={isSubmitting}
                   >
                     {isSubmitting 
@@ -189,6 +207,15 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                 </div>
               </form>
             </Form>
+          </div>
+
+          {/* Footer Info */}
+          <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 rounded-b-2xl">
+            <p className="text-xs text-gray-600 text-center">
+              {language === 'nl' 
+                ? '📧 contact@groenvastbouw.nl' 
+                : '📧 contact@groenvastbouw.nl'}
+            </p>
           </div>
         </div>
       </div>
