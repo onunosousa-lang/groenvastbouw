@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { trpc } from '@/lib/trpc';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -31,22 +32,19 @@ export default function ContactForm() {
     },
   });
 
+  const sendContactMutation = trpc.contact.sendEmail.useMutation();
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(language === 'nl' ? 'Contactaanvraag van ' + values.name : 'Contact Request from ' + values.name);
-      const body = encodeURIComponent(
-        `${language === 'nl' ? 'Naam' : 'Name'}: ${values.name}\n` +
-        `${language === 'nl' ? 'Email' : 'Email'}: ${values.email}\n` +
-        `${language === 'nl' ? 'Telefoon' : 'Phone'}: ${values.phone || (language === 'nl' ? 'Niet opgegeven' : 'Not provided')}\n\n` +
-        `${language === 'nl' ? 'Bericht' : 'Message'}:\n${values.message}`
-      );
+      await sendContactMutation.mutateAsync({
+        name: values.name,
+        email: values.email,
+        phone: values.phone || '',
+        message: values.message,
+      });
       
-      // Open email client
-      window.location.href = `mailto:contact@groenvastbouw.nl?subject=${subject}&body=${body}`;
-      
-      toast.success(language === 'nl' ? 'Email client geopend. Stuur uw bericht.' : 'Email client opened. Send your message.');
+      toast.success(language === 'nl' ? 'Uw bericht is verzonden!' : 'Your message has been sent!');
       form.reset();
     } catch (error) {
       console.error('Contact form error:', error);
@@ -77,8 +75,8 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:info@groenvastbouw.nl" className="text-[#90dc35] hover:underline">
-                    info@groenvastbouw.nl
+                  <a href="mailto:onunosousa@gmail.com" className="text-[#90dc35] hover:underline">
+                    onunosousa@gmail.com
                   </a>
                 </div>
                 <div>
@@ -155,10 +153,10 @@ export default function ContactForm() {
                 <Button 
                   type="submit" 
                   className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-lg py-6"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || sendContactMutation.isPending}
                 >
-                  {isSubmitting 
-                    ? (language === 'nl' ? 'Email openen...' : 'Opening email...') 
+                  {isSubmitting || sendContactMutation.isPending
+                    ? (language === 'nl' ? 'Verzenden...' : 'Sending...') 
                     : t('contact_submit')
                   }
                 </Button>

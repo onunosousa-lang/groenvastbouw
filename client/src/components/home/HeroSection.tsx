@@ -54,10 +54,9 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/new/hero-bg.jpg" 
+          src="/hero-background.jpg" 
           alt="Senmar Passive House Structure" 
           className="w-full h-full object-cover"
-          onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/92 via-gray-900/75 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/50 to-transparent z-10"></div>

@@ -86,20 +86,15 @@ export default function OfferSection() {
 
 
   return (
-    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden">
+    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-50">
       {/* Background Images with Transparency */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/Giulio(1).png" 
+          src="/features-background.jpg" 
           alt="" 
-          className="absolute top-0 left-0 w-1/3 h-auto opacity-5 object-cover"
+          className="absolute top-0 right-0 w-1/2 h-auto opacity-8 object-cover"
         />
-        <img 
-          src="/images/Les_arcs_shalet_extension(4).jpg" 
-          alt="" 
-          className="absolute bottom-0 right-0 w-1/3 h-auto opacity-5 object-cover"
-        />
-        <div className="absolute inset-0 bg-white/95 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/70"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
