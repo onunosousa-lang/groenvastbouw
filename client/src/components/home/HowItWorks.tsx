@@ -81,7 +81,7 @@ export default function HowItWorks() {
 
     totalTimeline: {
       structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden (inclusief volledige montage)' : 'Total timeline: 3 months (including full assembly)',
-      turnkey: language === 'nl' ? 'Totale doorlooptijd: 4-6 maanden (afhankelijk van afwerking)' : 'Total timeline: 4-6 months (depending on finishing)'
+      turnkey: language === 'nl' ? 'Totale doorlooptijd: 3 maanden (van bestelling tot volledig gemonteerde structuur)' : 'Total timeline: 3 months (from order to fully mounted structure)'
     },
 
     asteriskNote: language === 'nl' 
@@ -157,7 +157,7 @@ export default function HowItWorks() {
               }`}
             >
               {(activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).map((step, index) => (
-                <div key={index} className="relative group">
+                <div key={`${activeTab}-step-${index}`} className="relative group">
                   {/* Connecting Line (Desktop) */}
                   {index < (activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).length - 1 && (
                     <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-white -z-10" />
