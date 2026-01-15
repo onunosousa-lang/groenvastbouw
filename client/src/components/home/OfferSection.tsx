@@ -120,11 +120,11 @@ export default function OfferSection() {
               </div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.b2b.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
-              <p className="text-white mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
+              <p className="text-gray-800 mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.b2b.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-800 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -157,11 +157,11 @@ export default function OfferSection() {
               </div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.prefab.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
-              <p className="text-white mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
+              <p className="text-gray-800 mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.prefab.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-800 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -203,11 +203,11 @@ export default function OfferSection() {
               </div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.custom.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
-              <p className="text-white mb-6 text-sm leading-relaxed">{content.custom.description}</p>
+              <p className="text-gray-800 mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.custom.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white text-sm">
+                  <li key={index} className="flex items-start gap-3 text-gray-800 text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
