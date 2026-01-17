@@ -108,7 +108,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>{t('contact_name')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-gray-800" />
+                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-gray-800 text-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -121,7 +121,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>{t('contact_email')} *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-gray-800" />
+                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-gray-800 text-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -134,7 +134,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>{t('contact_phone')}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-gray-800" />
+                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-gray-800 text-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -149,7 +149,7 @@ export default function ContactForm() {
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[150px] bg-gray-800" 
+                          className="min-h-[150px] bg-gray-800 text-white" 
                           {...field} 
                         />
                       </FormControl>
