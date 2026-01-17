@@ -73,7 +73,7 @@ export default function ContactForm() {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="shadow-lg border-none bg-gray-800">
               <CardHeader>
-                <CardTitle>{t('contact_info_title')}</CardTitle>
+                <CardTitle className="text-white">{t('contact_info_title')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
