@@ -12,6 +12,11 @@ const outDir = path.resolve(configDir, "dist/public");
 export default defineConfig({
   root: clientRoot,
   plugins: [react(), tailwindcss()],
+  server: {
+    host: '0.0.0.0',
+    port: 3001,
+    strictPort: false,
+  },
   build: {
     outDir,
     emptyOutDir: true,

@@ -108,11 +108,12 @@ export default function OfferSection() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
           {/* B2B Card - FIRST */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
@@ -145,11 +146,12 @@ export default function OfferSection() {
 
           {/* Prefab Models Card - SECOND */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
@@ -191,11 +193,12 @@ export default function OfferSection() {
 
           {/* Custom Project Card - THIRD */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-shadow duration-300"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <div className="w-12 h-12 bg-[#e8f5f0] rounded-xl flex items-center justify-center mb-6">
