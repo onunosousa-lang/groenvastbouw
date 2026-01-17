@@ -58,7 +58,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           alt="Senmar Passive House Structure" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/92 via-gray-900/75 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 via-[#1a2e1a]/60 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/50 to-transparent z-10"></div>
       </div>
       

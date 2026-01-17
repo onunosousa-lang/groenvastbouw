@@ -113,12 +113,16 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
+            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
-                <Building2 className="text-[#90dc35] w-6 h-6" />
-              </div>
+              <motion.div 
+                className="w-16 h-16 bg-gradient-to-br from-[#f0f7e8] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Building2 className="text-[#90dc35] w-8 h-8" />
+              </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.b2b.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
@@ -151,12 +155,16 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
+            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-[#f0f7e8] rounded-xl flex items-center justify-center mb-6">
-                <Home className="text-[#90dc35] w-6 h-6" />
-              </div>
+              <motion.div 
+                className="w-16 h-16 bg-gradient-to-br from-[#f0f7e8] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Home className="text-[#90dc35] w-8 h-8" />
+              </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.prefab.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
@@ -180,7 +188,7 @@ export default function OfferSection() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group">
+                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -198,12 +206,16 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 flex flex-col hover:shadow-2xl transition-all duration-300"
+            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
-              <div className="w-12 h-12 bg-[#e8f5f0] rounded-xl flex items-center justify-center mb-6">
-                <Pencil className="text-[#90dc35] w-6 h-6" />
-              </div>
+              <motion.div 
+                className="w-16 h-16 bg-gradient-to-br from-[#e8f5f0] to-[#d0ebe0] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Pencil className="text-[#90dc35] w-8 h-8" />
+              </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.custom.title}</h3>
               <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.custom.description}</p>
