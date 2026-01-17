@@ -106,7 +106,7 @@ export default function ContactForm() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_name')} *</FormLabel>
+                      <FormLabel className="text-white">{t('contact_name')} *</FormLabel>
                       <FormControl>
                         <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-gray-800 text-white" />
                       </FormControl>
@@ -119,7 +119,7 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_email')} *</FormLabel>
+                      <FormLabel className="text-white">{t('contact_email')} *</FormLabel>
                       <FormControl>
                         <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-gray-800 text-white" />
                       </FormControl>
@@ -132,7 +132,7 @@ export default function ContactForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_phone')}</FormLabel>
+                      <FormLabel className="text-white">{t('contact_phone')}</FormLabel>
                       <FormControl>
                         <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-gray-800 text-white" />
                       </FormControl>
@@ -145,7 +145,7 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact_message')} *</FormLabel>
+                      <FormLabel className="text-white">{t('contact_message')} *</FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
