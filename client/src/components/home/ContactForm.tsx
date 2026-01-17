@@ -72,9 +72,7 @@ export default function ContactForm() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="shadow-lg border-none bg-gray-800">
-              <CardHeader>
-                <CardTitle className="text-white">{t('contact_info_title')}</CardTitle>
-              </CardHeader>
+
               <CardContent className="space-y-6">
                 <div>
                   <h3 className="font-bold text-white mb-1">Groenvastbouw</h3>
