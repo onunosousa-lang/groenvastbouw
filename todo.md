@@ -57,3 +57,8 @@
 - [x] Change Our Offer page background color to match homepage (gray-900/dark)
 - [x] Add transparent background photos throughout Our Offer page sections
 - [x] Ensure text remains readable with proper contrast on dark background
+
+- [x] Rename factory production images with SEO-optimized Dutch names
+- [x] Create rolling gallery component with auto-scroll animation
+- [x] Add factory production rolling galleries to Our Offer page
+- [x] Ensure galleries work smoothly on mobile and desktop
