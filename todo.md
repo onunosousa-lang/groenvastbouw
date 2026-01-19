@@ -43,3 +43,8 @@
     - [ ] Rename title to "Technical Solutions" / "Technische Oplossingen".
     - [ ] Add "Basic" solution from Senmar website.
     - [ ] Update existing solutions (Optimal, Passive, Super Passive) with correct data.
+
+- [x] Add SEO-optimized images to Ons Aanbod page
+- [x] Rename all uploaded images with descriptive Portuguese names for SEO
+- [x] Add relevant images to other pages (excluding About Me page)
+- [x] Include proper alt tags for all images for SEO optimization
