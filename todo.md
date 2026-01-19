@@ -77,3 +77,12 @@
 - [x] Make "Groenvastbouw" a clickable link that opens contact form popup
 - [x] Make "Senmar" a hyperlink to official Senmar website
 - [x] Apply proper styling to hyperlinks (green color, hover effects)
+
+- [x] Rename 42 project images with SEO-optimized Dutch names
+- [x] Replace homepage FeaturedProjects section with rolling gallery
+- [x] Remove "How It Works" from navigation menu and header
+- [x] Create new Projects page with dark background and transparent images
+- [x] Add "Completed Projects" rolling gallery to Projects page
+- [x] Add "Under Construction" rolling gallery to Projects page
+- [x] Update App.tsx routing to include new Projects page
+- [x] Ensure Projects page matches homepage styling (gray-900 background)
