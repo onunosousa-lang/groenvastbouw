@@ -58,8 +58,14 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <section className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gray-900 relative overflow-hidden">
+      {/* Background Image with Transparency */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
+      />
+      <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>

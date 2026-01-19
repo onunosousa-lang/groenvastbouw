@@ -67,3 +67,8 @@
 - [x] Make second gallery full width like the first one
 - [x] Distribute 10 unique images across 3 galleries without repetition
 - [x] Add third rolling gallery further down the page
+
+- [x] Add transparent background images to homepage sections
+- [x] Ensure consistency with Our Offer page styling
+- [x] Maintain dark theme (gray-900) across all homepage sections
+- [x] Verify text readability on all background images

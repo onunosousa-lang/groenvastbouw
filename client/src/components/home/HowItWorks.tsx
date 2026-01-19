@@ -98,16 +98,12 @@ export default function HowItWorks() {
 
   return (
     <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/new/process-bg.jpg" 
-          alt="Process Background" 
-          className="w-full h-full object-cover"
-          onError={(e) => { e.currentTarget.src = "/images/hero-groenvastbouw.jpg" }}
-        />
-        <div className="absolute inset-0 bg-gray-900/95 backdrop-blur-sm"></div>
-      </div>
+      {/* Background Image with Transparency */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: 'url(/fabriek-productie-prefab-wand-constructie.jpg)' }}
+      />
+      <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
