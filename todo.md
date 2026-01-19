@@ -72,3 +72,8 @@
 - [x] Ensure consistency with Our Offer page styling
 - [x] Maintain dark theme (gray-900) across all homepage sections
 - [x] Verify text readability on all background images
+
+- [x] Add "in partnership with Senmar, Portugal" text to Our Offer intro
+- [x] Make "Groenvastbouw" a clickable link that opens contact form popup
+- [x] Make "Senmar" a hyperlink to official Senmar website
+- [x] Apply proper styling to hyperlinks (green color, hover effects)

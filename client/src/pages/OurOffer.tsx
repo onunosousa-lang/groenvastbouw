@@ -20,8 +20,8 @@ export default function OurOffer() {
       titleEn: 'What We Offer',
       subtitleNl: 'Hoogperformante Geprefabriceerde Timmerhuizen voor Nederland',
       subtitleEn: 'High-Performance Prefabricated Timber Homes for the Netherlands',
-      descNl: 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
-      descEn: 'Groenvastbouw delivers high-performance prefabricated timber homes using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
+      descNl: 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen in samenwerking met Senmar, Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
+      descEn: 'Groenvastbouw delivers high-performance prefabricated timber homes in partnership with Senmar, Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
       featuresNl: [
         'Duurzame geprefabriceerde timmerconstructie (C24)',
         'Passief-klare isolatie en luchtdichtheid',
@@ -359,7 +359,45 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-            {language === 'nl' ? content.intro.descNl : content.intro.descEn}
+            {language === 'nl' ? (
+              <>
+                <button 
+                  onClick={openModal}
+                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors cursor-pointer"
+                >
+                  Groenvastbouw
+                </button>
+                {' '}levert hoogperformante geprefabriceerde timmerhuizen in samenwerking met{' '}
+                <a 
+                  href="https://www.senmar.pt" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors"
+                >
+                  Senmar
+                </a>
+                , Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.
+              </>
+            ) : (
+              <>
+                <button 
+                  onClick={openModal}
+                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors cursor-pointer"
+                >
+                  Groenvastbouw
+                </button>
+                {' '}delivers high-performance prefabricated timber homes in partnership with{' '}
+                <a 
+                  href="https://www.senmar.pt" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors"
+                >
+                  Senmar
+                </a>
+                , Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.
+              </>
+            )}
           </p>
           
           <div className="grid md:grid-cols-2 gap-4">
