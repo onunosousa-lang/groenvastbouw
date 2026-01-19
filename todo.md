@@ -62,3 +62,8 @@
 - [x] Create rolling gallery component with auto-scroll animation
 - [x] Add factory production rolling galleries to Our Offer page
 - [x] Ensure galleries work smoothly on mobile and desktop
+
+- [x] Remove "Our Production Facility" title from first gallery
+- [x] Make second gallery full width like the first one
+- [x] Distribute 10 unique images across 3 galleries without repetition
+- [x] Add third rolling gallery further down the page

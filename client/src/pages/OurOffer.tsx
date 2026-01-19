@@ -416,18 +416,13 @@ export default function OurOffer() {
             ))}
           </div>
           
-          {/* Production Process Gallery */}
+          {/* Production Process Gallery 1 */}
           <div className="mt-12">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">
-              {language === 'nl' ? 'Onze Productie Faciliteit' : 'Our Production Facility'}
-            </h3>
             <RollingGallery
               images={[
-                { src: '/fabriek-productie-prefab-panelen-opslag.jpg', alt: 'Fabriek productie - prefab panelen opslag' },
-                { src: '/fabriek-productie-houten-balken-bewerking.jpg', alt: 'Fabriek productie - houten balken bewerking' },
-                { src: '/fabriek-productie-wand-assemblage-lijn.jpg', alt: 'Fabriek productie - wand assemblage lijn' },
-                { src: '/fabriek-productie-prefab-module-constructie.jpg', alt: 'Fabriek productie - prefab module constructie' },
-                { src: '/fabriek-productie-houten-frame-assemblage.jpg', alt: 'Fabriek productie - houten frame assemblage' },
+                { src: '/fabriek-productie-houten-wanden-assemblage.jpg', alt: 'Fabriek productie - houten wanden assemblage' },
+                { src: '/fabriek-productie-prefab-wand-constructie.jpg', alt: 'Fabriek productie - prefab wand constructie' },
+                { src: '/fabriek-productie-houten-frame-detail.jpg', alt: 'Fabriek productie - houten frame detail' },
               ]}
               speed={30}
               height="300px"
@@ -465,21 +460,6 @@ export default function OurOffer() {
                   </li>
                 ))}
               </ul>
-              
-              {/* Factory Production Gallery */}
-              <div className="mt-8">
-                <RollingGallery
-                  images={[
-                    { src: '/fabriek-productie-houten-wanden-assemblage.jpg', alt: 'Fabriek productie - houten wanden assemblage' },
-                    { src: '/fabriek-productie-prefab-wand-constructie.jpg', alt: 'Fabriek productie - prefab wand constructie' },
-                    { src: '/fabriek-productie-houten-frame-detail.jpg', alt: 'Fabriek productie - houten frame detail' },
-                    { src: '/fabriek-productie-wand-isolatie-plaatsing.jpg', alt: 'Fabriek productie - wand isolatie plaatsing' },
-                    { src: '/fabriek-productie-houten-structuur-montage.jpg', alt: 'Fabriek productie - houten structuur montage' },
-                  ]}
-                  speed={25}
-                  height="250px"
-                />
-              </div>
             </div>
             
             {/* On-Site */}
@@ -496,6 +476,20 @@ export default function OurOffer() {
                 ))}
               </ul>
             </div>
+          </div>
+          
+          {/* Production Process Gallery 2 */}
+          <div className="mt-12">
+            <RollingGallery
+              images={[
+                { src: '/fabriek-productie-wand-isolatie-plaatsing.jpg', alt: 'Fabriek productie - wand isolatie plaatsing' },
+                { src: '/fabriek-productie-houten-structuur-montage.jpg', alt: 'Fabriek productie - houten structuur montage' },
+                { src: '/fabriek-productie-prefab-panelen-opslag.jpg', alt: 'Fabriek productie - prefab panelen opslag' },
+                { src: '/fabriek-productie-houten-balken-bewerking.jpg', alt: 'Fabriek productie - houten balken bewerking' },
+              ]}
+              speed={30}
+              height="300px"
+            />
           </div>
         </div>
       </section>
@@ -587,6 +581,19 @@ export default function OurOffer() {
                 <span className="text-gray-300">{item}</span>
               </div>
             ))}
+          </div>
+          
+          {/* Production Process Gallery 3 */}
+          <div className="mt-12">
+            <RollingGallery
+              images={[
+                { src: '/fabriek-productie-wand-assemblage-lijn.jpg', alt: 'Fabriek productie - wand assemblage lijn' },
+                { src: '/fabriek-productie-prefab-module-constructie.jpg', alt: 'Fabriek productie - prefab module constructie' },
+                { src: '/fabriek-productie-houten-frame-assemblage.jpg', alt: 'Fabriek productie - houten frame assemblage' },
+              ]}
+              speed={30}
+              height="300px"
+            />
           </div>
         </div>
       </section>
