@@ -48,3 +48,8 @@
 - [x] Rename all uploaded images with descriptive Portuguese names for SEO
 - [x] Add relevant images to other pages (excluding About Me page)
 - [x] Include proper alt tags for all images for SEO optimization
+
+- [x] Remove image gallery sections from OurOffer and Projects pages
+- [x] Add hero background image with transparency overlay to Our Offer page
+- [x] Add background images with transparency to other pages (not About Me)
+- [x] Ensure all background images have proper opacity/transparency for readability

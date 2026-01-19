@@ -180,9 +180,17 @@ export default function HowItWorks() {
       />
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
-        <div className="container mx-auto px-4">
+      {/* Hero Section with Background */}
+      <section className="relative text-white py-16 md:py-24 mt-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/passief-huis-isolatie-binnenkant.jpg)' }}
+        />
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2A3439]/95 to-[#1a1f24]/90" />
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}

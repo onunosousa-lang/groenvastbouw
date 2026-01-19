@@ -322,9 +322,17 @@ export default function OurOffer() {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
-        <div className="container mx-auto px-4">
+      {/* Hero Section with Background Image */}
+      <section className="relative text-white py-16 md:py-24 mt-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/passief-huis-zonnepanelen-buitenkant.png)' }}
+        />
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2A3439]/95 to-[#1a1f24]/90" />
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {content.backHome}
@@ -357,100 +365,6 @@ export default function OurOffer() {
         </div>
       </section>
 
-      {/* Image Gallery */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            {language === 'nl' ? 'Onze Projecten in Beeld' : 'Our Projects in Pictures'}
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Exterior renders */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/passief-huis-zonnepanelen-buitenkant.png" 
-                alt="Modern passief huis met zonnepanelen en houten gevelbekleding" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Passief Huis Ontwerp' : 'Passive House Design'}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Interior living room */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/moderne-woonkamer-open-keuken-passief-huis.png" 
-                alt="Moderne woonkamer met open keuken in passief huis" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Moderne Woonruimte' : 'Modern Living Space'}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bathroom */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/moderne-badkamer-passief-huis.png" 
-                alt="Moderne badkamer met natuurlijke materialen in passief huis" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Moderne Badkamer' : 'Modern Bathroom'}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Construction workers */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/houtbouw-constructie-arbeiders.jpg" 
-                alt="Vakbekwame bouwvakkers tijdens houtbouw constructie" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Vakmanschap' : 'Craftsmanship'}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Prefab wall placement */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/prefab-wand-plaatsing-bouwplaats.jpg" 
-                alt="Plaatsing van geprefabriceerde wanden op bouwplaats" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Prefab Montage' : 'Prefab Assembly'}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Interior with wooden beams */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-              <img 
-                src="/passief-huis-interieur-houten-balken.jpg" 
-                alt="Passief huis interieur met zichtbare houten balken en grote ramen" 
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                  <p className="font-semibold">{language === 'nl' ? 'Houten Architectuur' : 'Timber Architecture'}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* How We Do It */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-white">

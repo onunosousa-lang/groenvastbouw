@@ -36,9 +36,17 @@ export default function Projects() {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-green-900 to-[#6fb820]">
-        <div className="container mx-auto px-4">
+      {/* Hero Section with Background */}
+      <section className="relative pt-32 pb-16 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/houtbouw-constructie-arbeiders.jpg)' }}
+        />
+        {/* Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-green-900/90 to-[#6fb820]/85" />
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               {language === 'nl' ? 'Onze Projecten' : 'Our Projects'}
@@ -148,118 +156,6 @@ export default function Projects() {
                       />
                     </div>
                   ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Construction Process Gallery */}
-          <Card className="overflow-hidden shadow-2xl mt-16">
-            <div className="bg-gradient-to-r from-[#2A3439] to-[#1a1f24] p-8 text-white">
-              <div className="flex items-center gap-4 mb-4">
-                <Building2 size={40} />
-                <h2 className="text-4xl font-bold">
-                  {language === 'nl' ? 'Ons Bouwproces' : 'Our Construction Process'}
-                </h2>
-              </div>
-              <p className="text-xl text-gray-300">
-                {language === 'nl' 
-                  ? 'Van prefabricatie tot montage - zie hoe we werken' 
-                  : 'From prefabrication to assembly - see how we work'}
-              </p>
-            </div>
-
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/houten-frame-constructie-kraan.jpg" 
-                    alt="Houten frame constructie met kraan voor prefab huis" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Frame Constructie' : 'Frame Construction'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/bouwplaats-montage-houten-frame.jpg" 
-                    alt="Montage van houten frame op bouwplaats" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Bouwplaats Montage' : 'On-Site Assembly'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/houten-balk-plaatsing-kraan.jpg" 
-                    alt="Plaatsing van houten balken met kraan" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Balk Plaatsing' : 'Beam Placement'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/dakconstructie-houten-balken-detail.jpg" 
-                    alt="Detail van dakconstructie met houten balken" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Dakconstructie' : 'Roof Construction'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/passief-huis-isolatie-binnenkant.jpg" 
-                    alt="Isolatie binnenkant van passief huis" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Isolatie Werk' : 'Insulation Work'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/bouwvakkers-installatie-ramen.jpg" 
-                    alt="Bouwvakkers tijdens installatie van ramen" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Raam Installatie' : 'Window Installation'}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                  <img 
-                    src="/passief-huis-bouw-voortgang.jpg" 
-                    alt="Voortgang van passief huis bouw" 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="font-semibold">{language === 'nl' ? 'Bouw Voortgang' : 'Construction Progress'}</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </CardContent>
