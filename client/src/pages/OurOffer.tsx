@@ -319,7 +319,7 @@ export default function OurOffer() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
       
       {/* Hero Section with Background Image */}
@@ -348,17 +348,24 @@ export default function OurOffer() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+      <section className="relative py-16 overflow-hidden">
+        {/* Background Image with Transparency */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: 'url(/moderne-woonkamer-open-keuken-passief-huis.png)' }}
+        />
+        {/* Dark Background */}
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             {language === 'nl' ? content.intro.descNl : content.intro.descEn}
           </p>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{feature}</span>
+                <span className="text-gray-200">{feature}</span>
               </div>
             ))}
           </div>
@@ -367,31 +374,36 @@ export default function OurOffer() {
 
 
       {/* How We Do It */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="relative py-16 overflow-hidden">
+        {/* Background Image with Transparency */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: 'url(/houten-frame-constructie-kraan.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {language === 'nl' ? content.method.titleNl : content.method.titleEn}
           </h2>
-          <p className="text-lg text-gray-600 mb-12">
+          <p className="text-lg text-gray-300 mb-12">
             {language === 'nl' ? content.method.subtitleNl : content.method.subtitleEn}
           </p>
           
           <div className="space-y-4">
             {(language === 'nl' ? content.method.phasesNl : content.method.phasesEn).map((phase, idx) => (
-              <div key={idx} className="border-2 border-gray-200 rounded-lg overflow-hidden hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="border-2 border-gray-700 rounded-lg overflow-hidden hover:border-[#90dc35] transition-colors">
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
-                  className="w-full p-6 bg-white hover:bg-gray-50 flex items-center justify-between text-left"
-                >
-                  <h3 className="text-xl font-bold text-gray-900">{phase.title}</h3>
+                  className="w-full p-6 bg-gray-800/50 backdrop-blur-sm hover:bg-gray-800/70 flex items-center justify-between text-left">
+                  <h3 className="text-xl font-bold text-white">{phase.title}</h3>
                   <ChevronDown className={`w-5 h-5 text-[#90dc35] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
                 </button>
                 
                 {expandedSection === `phase-${idx}` && (
-                  <div className="bg-[#f0f7e8] p-6 border-t-2 border-gray-200">
+                  <div className="bg-gray-800/30 backdrop-blur-sm p-6 border-t-2 border-gray-700">
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
-                        <li key={itemIdx} className="flex items-start gap-3 text-gray-700">
+                        <li key={itemIdx} className="flex items-start gap-3 text-gray-300">
                           <span className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
                           <span>{item}</span>
                         </li>
@@ -406,24 +418,29 @@ export default function OurOffer() {
       </section>
 
       {/* Scope of Delivery */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="relative py-16 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
           </h2>
-          <p className="text-lg text-gray-600 mb-12">
+          <p className="text-lg text-gray-300 mb-12">
             {language === 'nl' ? content.scope.introNl : content.scope.introEn}
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Factory */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-white mb-6 text-[#90dc35]">
                 {language === 'nl' ? content.scope.factoryNl : content.scope.factoryEn}
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.factoryItemsNl : content.scope.factoryItemsEn).map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-700">
+                  <li key={idx} className="flex items-start gap-3 text-gray-300">
                     <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
@@ -433,12 +450,12 @@ export default function OurOffer() {
             
             {/* On-Site */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-white mb-6 text-[#90dc35]">
                 {language === 'nl' ? content.scope.onsiteNl : content.scope.onsiteEn}
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.onsiteItemsNl : content.scope.onsiteItemsEn).map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-700">
+                  <li key={idx} className="flex items-start gap-3 text-gray-300">
                     <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
@@ -450,27 +467,29 @@ export default function OurOffer() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-12">
             {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
           </h2>
           
-          <div className="bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg p-8 border-2 border-[#90dc35] mb-8">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35] mb-8">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
-                <div key={idx} className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200">
-                  <span className="font-semibold text-gray-900">{item.phase}</span>
+                <div key={idx} className="flex items-center justify-between p-4 bg-gray-700/50 rounded-lg border border-gray-600">
+                  <span className="font-semibold text-white">{item.phase}</span>
                   <span className="text-[#90dc35] font-bold">{item.duration}</span>
                 </div>
               ))}
             </div>
             
-            <div className="bg-white p-6 rounded-lg border-2 border-[#90dc35]">
-              <p className="text-lg font-bold text-gray-900 mb-4">
+            <div className="bg-gray-700/50 p-6 rounded-lg border-2 border-[#90dc35]">
+              <p className="text-lg font-bold text-white mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-300">
                 {language === 'nl' ? content.timeline.noteNl : content.timeline.noteEn}
               </p>
             </div>
@@ -479,17 +498,19 @@ export default function OurOffer() {
       </section>
 
       {/* Technology */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-12">
             {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
           </h2>
           
           <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <span className="text-[#90dc35] font-bold flex-shrink-0 mt-0.5">•</span>
-                <span className="text-gray-700">{item}</span>
+                <span className="text-gray-300">{item}</span>
               </div>
             ))}
           </div>
@@ -497,17 +518,19 @@ export default function OurOffer() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-12">
             {language === 'nl' ? content.usecases.titleNl : content.usecases.titleEn}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.usecases.itemsNl : content.usecases.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border border-[#90dc35]">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-[#90dc35]">
                 <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{item}</span>
+                <span className="text-gray-300">{item}</span>
               </div>
             ))}
           </div>
@@ -515,17 +538,19 @@ export default function OurOffer() {
       </section>
 
       {/* Compliance */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-12">
             {language === 'nl' ? content.compliance.titleNl : content.compliance.titleEn}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <Shield className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{item}</span>
+                <span className="text-gray-300">{item}</span>
               </div>
             ))}
           </div>
@@ -533,16 +558,18 @@ export default function OurOffer() {
       </section>
 
       {/* Warranty */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
+        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold text-white mb-12">
             {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}
           </h2>
           
-          <div className="bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg p-8 border-2 border-[#90dc35]">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35]">
             <ul className="space-y-4">
               {(language === 'nl' ? content.warranty.itemsNl : content.warranty.itemsEn).map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-gray-700">
+                <li key={idx} className="flex items-start gap-3 text-gray-300">
                   <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                   <span className="font-medium">{item}</span>
                 </li>

@@ -53,3 +53,7 @@
 - [x] Add hero background image with transparency overlay to Our Offer page
 - [x] Add background images with transparency to other pages (not About Me)
 - [x] Ensure all background images have proper opacity/transparency for readability
+
+- [x] Change Our Offer page background color to match homepage (gray-900/dark)
+- [x] Add transparent background photos throughout Our Offer page sections
+- [x] Ensure text remains readable with proper contrast on dark background

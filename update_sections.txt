@@ -1,0 +1,28 @@
+Sections to update in OurOffer.tsx:
+
+1. Scope of Delivery (line ~421) - bg-gradient-to-br from-gray-50 to-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: bouwplaats-montage-houten-frame.jpg with opacity-10
+   - Update text colors: gray-900 -> white, gray-600 -> gray-300, gray-700 -> gray-300
+
+2. Timeline (line ~465) - bg-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: dakconstructie-houten-balken-detail.jpg with opacity-10
+   - Update all text and card colors for dark theme
+
+3. Technology (line ~494) - bg-gradient-to-br from-gray-50 to-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: passief-huis-interieur-houten-balken.jpg with opacity-10
+   - Update text and card colors
+
+4. Use Cases (line ~507) - bg-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: moderne-badkamer-passief-huis.png with opacity-10
+
+5. Compliance (line ~525) - bg-gradient-to-br from-gray-50 to-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: prefab-wand-plaatsing-bouwplaats.jpg with opacity-10
+
+6. Warranty (line ~543) - bg-white
+   - Change to: relative py-16 overflow-hidden
+   - Add background image: houten-balk-plaatsing-kraan.jpg with opacity-10
