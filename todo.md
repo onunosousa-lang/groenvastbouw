@@ -86,3 +86,8 @@
 - [x] Add "Under Construction" rolling gallery to Projects page
 - [x] Update App.tsx routing to include new Projects page
 - [x] Ensure Projects page matches homepage styling (gray-900 background)
+
+- [x] Fix Projects button routing in App.tsx
+- [x] Verify Projects page is properly imported and routed
+- [x] Change About Us page background to gray-900
+- [x] Add transparent background images to About Us page

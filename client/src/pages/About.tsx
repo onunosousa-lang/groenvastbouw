@@ -63,7 +63,7 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-[#2A3439]">
+    <div className="min-h-screen bg-gray-900 font-sans text-white">
       {/* 1. HERO SECTION */}
       <section className="pt-32 pb-16 px-4 bg-[#2A3439] text-white">
         <div className="max-w-6xl mx-auto mb-8">
@@ -92,17 +92,17 @@ export default function About() {
       </section>
 
       {/* 2. FOUNDER STORY */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden"
+            className="bg-gray-800 rounded-2xl shadow-xl overflow-hidden"
           >
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="flex items-center justify-center p-8 bg-gray-50">
+              <div className="flex items-center justify-center p-8 bg-gray-700">
                 <img
                   src="/nuno-sousa-profile.jpg"
                   alt="Nuno Machado e Sousa"
@@ -113,10 +113,10 @@ export default function About() {
                 <div className="inline-block px-3 py-1 bg-[#90dc35]/10 text-[#90dc35] rounded-full text-sm font-bold mb-6 w-fit">
                   {content.founderTag}
                 </div>
-                <h2 className="text-3xl font-bold mb-4">{content.founderTitle}</h2>
-                <h3 className="text-xl text-gray-500 mb-6">{content.founderName}</h3>
+                <h2 className="text-3xl font-bold mb-4 text-white">{content.founderTitle}</h2>
+                <h3 className="text-xl text-gray-300 mb-6">{content.founderName}</h3>
                 
-                <div className="space-y-4 text-gray-600 leading-relaxed">
+                <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p>{content.founderStory1}</p>
                   <p>{content.founderStory2}</p>
                   <p>{content.founderStory3}</p>
@@ -128,11 +128,11 @@ export default function About() {
       </section>
 
       {/* 3. SENMAR PARTNERSHIP */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-800">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">{content.partnershipTitle}</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               {content.partnershipSubtitle}
             </p>
           </div>
@@ -144,8 +144,8 @@ export default function About() {
                   <Zap className="text-[#90dc35]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{content.engineTitle}</h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <h3 className="text-xl font-bold mb-2 text-white">{content.engineTitle}</h3>
+                  <p className="text-gray-300 leading-relaxed">
                     {language === 'nl' 
                       ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
                       : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>
@@ -159,8 +159,8 @@ export default function About() {
                   <HardHat className="text-[#2A3439]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{content.driverTitle}</h3>
-                  <p className="text-gray-600 leading-relaxed">{content.driverDesc}</p>
+                  <h3 className="text-xl font-bold mb-2 text-white">{content.driverTitle}</h3>
+                  <p className="text-gray-300 leading-relaxed">{content.driverDesc}</p>
                 </div>
               </div>
             </div>
@@ -190,30 +190,30 @@ export default function About() {
       </section>
 
       {/* 5. WHY US */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">{content.whyUsTitle}</h2>
-            <p className="text-gray-600">{content.whyUsSubtitle}</p>
+            <p className="text-gray-300">{content.whyUsSubtitle}</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Hammer className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3">{content.bootsTitle}</h3>
-              <p className="text-gray-600">{content.bootsDesc}</p>
+              <h3 className="text-xl font-bold mb-3 text-white">{content.bootsTitle}</h3>
+              <p className="text-gray-300">{content.bootsDesc}</p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <ShieldCheck className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3">{content.certifiedTitle}</h3>
-              <p className="text-gray-600">{content.certifiedDesc}</p>
+              <h3 className="text-xl font-bold mb-3 text-white">{content.certifiedTitle}</h3>
+              <p className="text-gray-300">{content.certifiedDesc}</p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Globe className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3">{content.multilingualTitle}</h3>
-              <p className="text-gray-600">{content.multilingualDesc}</p>
+              <h3 className="text-xl font-bold mb-3 text-white">{content.multilingualTitle}</h3>
+              <p className="text-gray-300">{content.multilingualDesc}</p>
             </div>
           </div>
         </div>
