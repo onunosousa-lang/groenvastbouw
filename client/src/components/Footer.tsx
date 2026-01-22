@@ -12,7 +12,7 @@ export default function Footer() {
       phone: '+31 6 29841298',
       kvk: 'KvK: 75308045',
       insurance: '€2,5M Verzekerd',
-      rights: '© 2024 Groenvastbouw. Alle rechten voorbehouden.',
+      rights: '© 2026 Groenvastbouw. Alle rechten voorbehouden.',
       privacy: 'Privacybeleid',
       terms: 'Gebruiksvoorwaarden',
     },
@@ -24,7 +24,7 @@ export default function Footer() {
       phone: '+31 6 29841298',
       kvk: 'KvK: 75308045',
       insurance: '€2.5M Insured',
-      rights: '© 2024 Groenvastbouw. All rights reserved.',
+      rights: '© 2026 Groenvastbouw. All rights reserved.',
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
     }
