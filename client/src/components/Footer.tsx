@@ -1,7 +1,8 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'wouter';
 
 export default function Footer() {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const content = {
     nl: {
@@ -63,24 +64,24 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="font-semibold text-[#90dc35] mb-3">Legal</h4>
+            <h4 className="font-semibold text-[#90dc35] mb-3">{t('footer_legal')}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <a href="#" className="text-gray-300 hover:text-[#90dc35] transition-colors">
+                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#90dc35] transition-colors">
                   {currentContent.privacy}
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#" className="text-gray-300 hover:text-[#90dc35] transition-colors">
+                <Link href="/terms-of-service" className="text-gray-300 hover:text-[#90dc35] transition-colors">
                   {currentContent.terms}
-                </a>
+                </Link>
               </p>
             </div>
           </div>
 
           {/* Credentials */}
           <div>
-            <h4 className="font-semibold text-[#90dc35] mb-3">Credentials</h4>
+            <h4 className="font-semibold text-[#90dc35] mb-3">{t('footer_credentials')}</h4>
             <div className="space-y-2 text-sm">
               <p className="text-gray-300">{currentContent.kvk}</p>
               <p className="text-gray-300">{currentContent.insurance}</p>

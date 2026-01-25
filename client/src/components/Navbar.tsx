@@ -85,7 +85,7 @@ export default function Navbar() {
             </a>
             <div>
               <div className="text-[#90dc35] font-bold text-xl">Groenvastbouw</div>
-              <div className="text-white/80 text-xs italic">Nuchter bouwen. Slim wonen.</div>
+              <div className="text-white/80 text-xs italic">{t('nav_slogan')}</div>
             </div>
           </div>
 

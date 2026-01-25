@@ -138,6 +138,11 @@ export const translations = {
     footer_rights: "Alle rechten voorbehouden",
     footer_about: "Over Groenvastbouw",
     footer_about_text: "Duurzame, energiezuinige woningbouw met Senmar technologie uit Portugal.",
+    footer_legal: "Juridisch",
+    footer_credentials: "Gegevens",
+    
+    // Navbar
+    nav_slogan: "Nuchter bouwen. Slim wonen.",
     
     // Projects Page
     projects_title: "Onze Projecten",
@@ -400,12 +405,17 @@ export const translations = {
     whatsapp_button: "Get in touch on WhatsApp",
     faq_cta_text: "Ready to realize your sustainable dream home? Contact us directly and we will guide you through every step of the process.",
 
-    // Footerter
+    // Footer
     footer_links: "Index",
     footer_contact: "Contact",
     footer_rights: "All rights reserved",
     footer_about: "About Groenvastbouw",
     footer_about_text: "Sustainable, energy-efficient housing with Senmar technology from Portugal.",
+    footer_legal: "Legal",
+    footer_credentials: "Credentials",
+    
+    // Navbar
+    nav_slogan: "Sober building. Smart living.",
     
     // Projects Page
     projects_title: "Our Projects",

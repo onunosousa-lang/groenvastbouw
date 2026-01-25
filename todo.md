@@ -91,3 +91,12 @@
 - [x] Verify Projects page is properly imported and routed
 - [x] Change About Us page background to gray-900
 - [x] Add transparent background images to About Us page
+
+## Translation Issues to Fix
+
+- [x] Footer: Translate "Legal" heading to NL/EN
+- [x] Footer: Translate "Credentials" heading to NL/EN
+- [x] Footer: Fix privacy policy and terms links to use proper routes (/privacy-policy and /terms-of-service)
+- [x] Navbar: Translate hardcoded slogan "Nuchter bouwen. Slim wonen." to switch with language
+- [x] Add translation keys for missing texts to translations.ts
+- [ ] Verify all buttons and content switch properly between NL and EN
