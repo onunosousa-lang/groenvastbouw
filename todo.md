@@ -99,4 +99,4 @@
 - [x] Footer: Fix privacy policy and terms links to use proper routes (/privacy-policy and /terms-of-service)
 - [x] Navbar: Translate hardcoded slogan "Nuchter bouwen. Slim wonen." to switch with language
 - [x] Add translation keys for missing texts to translations.ts
-- [ ] Verify all buttons and content switch properly between NL and EN
+- [x] Verify all buttons and content switch properly between NL and EN
