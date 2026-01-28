@@ -10,7 +10,7 @@ interface SEOProps {
 
 export default function SEO({
   title = 'Groenvastbouw - Duurzame Passieve Huizen | Nuchter bouwen. Slim wonen.',
-  description = 'Groenvastbouw bouwt energiezuinige passieve huizen met Senmar technologie. Vanaf €1,100/m². Turnkey service of alleen structuur. Duurzaam, betaalbaar en hoogwaardig.',
+  description = 'Groenvastbouw bouwt energiezuinige passieve huizen met Senmar technologie. Turnkey service of alleen structuur. Duurzaam, betaalbaar en hoogwaardig.',
   keywords = 'passieve huizen, passiefhuis, energiezuinig bouwen, duurzame woningen, Senmar, prefab huizen, houtbouw, Nederland, groenvastbouw, passive house, energiebesparing',
   ogImage = '/logo-transparent.png',
   url = 'https://groenvastbouw.nl'

@@ -34,8 +34,6 @@ export default function HowItWorks() {
         id: 'basic',
         titleNl: 'Basis Structuur',
         titleEn: 'Basic Structure',
-        priceNl: 'vanaf €190/m²',
-        priceEn: 'starting from €190/m²',
         descNl: 'Onze basis preset levert een fundamentele oplossing voor het bouwframe en geeft u een geprefabriceerde structuur die u vervolgens kunt aanpassen en voltooien. Het is een geweldige keuze voor degenen die kosten willen verlagen en die de expertise hebben om de constructie zelf af te maken.',
         descEn: 'Our basic preset delivers a foundational solution for the building frame, giving you a prefabricated structure that you can then customize and complete. It\'s a great choice for those looking to reduce costs and who have the expertise to complete the construction themselves.',
         components: {
@@ -57,8 +55,6 @@ export default function HowItWorks() {
         id: 'optimal',
         titleNl: 'Optimale Structuur',
         titleEn: 'Optimal Structure',
-        priceNl: 'vanaf €270/m²',
-        priceEn: 'starting from €270/m²',
         descNl: 'De optimale preset is ontworpen voor gematigde klimaten, met een bouwframe dat 200 millimeter isolatie en een interne dampremmer bevat. Deze opstelling garandeert een comfortabel microklimaat en ondersteunt de structurele integriteit en levensduur van het gebouw. Deze oplossing is perfect voor comfortabel wonen het hele jaar door in regio\'s met milde winteromstandigheden.',
         descEn: 'The optimal preset is designed for moderate climates, with a building frame that includes 200 millimeters of insulation and an internal vapor barrier. This setup guarantees a comfortable microclimate and supports the structural integrity and longevity of the building. This solution is perfect for comfortable year-round living in regions with mild winter conditions.',
         components: {
@@ -92,8 +88,6 @@ export default function HowItWorks() {
         id: 'passive',
         titleNl: 'Passieve Structuur',
         titleEn: 'Passive Structure',
-        priceNl: 'vanaf €320/m²',
-        priceEn: 'starting from €320/m²',
         descNl: 'Deze preset bevat aanvullende externe isolatie voor het bouwframe, met dikte aangepast aan de lokale klimaatomstandigheden. Het primaire voordeel van deze oplossing is verbeterde thermische bescherming, wat resulteert in een koeler huis tijdens de zomer en verminderd energieverbruik voor verwarming in de winter. In het komende decennium zal deze passieve isolatie leiden tot aanzienlijke besparingen op zowel verwarmings- als koelingskosten. Deze oplossing is zeer geschikt voor regio\'s met strenge winters en zeer warme klimaten.',
         descEn: 'This preset features additional external insulation for the building frame, with thickness adjusted according to local climate conditions. The primary benefit of this solution is enhanced thermal protection, resulting in a cooler home during the summer and reduced energy consumption for heating in the winter. Over the next decade, this passive insulation will lead to substantial savings on both heating and cooling costs. This solution is well-suited for regions with harsh winters as well as very hot climates.',
         components: {
@@ -130,8 +124,6 @@ export default function HowItWorks() {
         id: 'superpassive',
         titleNl: 'Super Passieve Structuur',
         titleEn: 'Super Passive Structure',
-        priceNl: 'vanaf €340/m²',
-        priceEn: 'starting from €340/m²',
         descNl: 'Onze SuperPassive Preset voldoet aan Passivhaus-normen en biedt een uitzonderlijke oplossing voor energie-efficiënte, comfortabele woningen. Deze geprefabriceerde preset beschikt over geavanceerde isolatie die het hele jaar door een stabiele binnentemperatuur handhaaft, waardoor het energieverbruik met maximaal 75% wordt verminderd in vergelijking met standaard bouwwerken. Dit voorkomt ook tocht, koude plekken, schimmel en condensatie, wat een gezondere leefomgeving bevordert. Ontworpen met een \'fabric first\' benadering en ondersteund door uitgebreid onderzoek, leveren onze SuperPassive wanden blijvende kwaliteit en prestaties voor zowel comfort als duurzaamheid.',
         descEn: 'Our SuperPassive Preset meets Passivhaus standards, providing an exceptional solution for energy-efficient, comfortable homes. These prefab preset feature advanced insulation that maintains a steady internal temperature year-round, reducing energy use by up to 75% compared to standard builds. That also prevents draughts, cold spots, mold, and condensation, promoting a healthier living environment. Designed with a \'fabric first\' approach and backed by extensive research, our SuperPassive walls deliver lasting quality and performance for both comfort and sustainability.',
         components: {

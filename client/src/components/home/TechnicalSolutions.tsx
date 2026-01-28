@@ -12,8 +12,7 @@ export default function TechnicalSolutions() {
       id: 'basic',
       titleNl: 'Basis Structuur',
       titleEn: 'Basic Structure',
-      priceNl: 'Vanaf €190/m²',
-      priceEn: 'Starting from €190/m²',
+
       descNl: 'Een fundamentele oplossing voor het bouwframe. Ideaal voor degenen die kosten willen verlagen en de expertise hebben om de constructie zelf af te maken.',
       descEn: 'A foundational solution for the building frame. Great for those looking to reduce costs and who have the expertise to complete the construction themselves.',
       specsNl: [
@@ -33,8 +32,7 @@ export default function TechnicalSolutions() {
       id: 'optimal',
       titleNl: 'Optimale Structuur',
       titleEn: 'Optimal Structure',
-      priceNl: 'Vanaf €270/m²',
-      priceEn: 'Starting from €270/m²',
+
       descNl: 'Ontworpen voor gematigde klimaten met 200mm isolatie. De perfecte balans tussen efficiëntie en kostenbesparing.',
       descEn: 'Designed for moderate climates with 200mm of insulation. The perfect balance between efficiency and cost savings.',
       specsNl: [
@@ -54,8 +52,7 @@ export default function TechnicalSolutions() {
       id: 'passive',
       titleNl: 'Passieve Structuur',
       titleEn: 'Passive Structure',
-      priceNl: 'Vanaf €320/m²',
-      priceEn: 'Starting from €320/m²',
+
       descNl: 'Met aanvullende externe isolatie. Verbeterde thermische bescherming resulteert in veel lagere energiekosten.',
       descEn: 'With additional external insulation. Enhanced thermal protection results in significantly lower energy costs.',
       specsNl: [
@@ -75,8 +72,7 @@ export default function TechnicalSolutions() {
       id: 'superpassive',
       titleNl: 'Super Passieve Structuur',
       titleEn: 'Super Passive Structure',
-      priceNl: 'Vanaf €400/m²',
-      priceEn: 'Starting from €400/m²',
+
       descNl: 'Maximale isolatie voor off-grid ambities en extreme klimaten. Passivhaus gecertificeerd voor optimale prestatie.',
       descEn: 'Maximum insulation for off-grid ambitions and extreme climates. Passivhaus certified for optimal performance.',
       specsNl: [
@@ -132,9 +128,7 @@ export default function TechnicalSolutions() {
                     <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#90dc35] transition-colors">
                       {language === 'nl' ? tier.titleNl : tier.titleEn}
                     </h3>
-                    <p className="text-lg font-semibold text-[#90dc35]">
-                      {language === 'nl' ? tier.priceNl : tier.priceEn}
-                    </p>
+
                   </div>
                   <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`}>
                     <ChevronDown className="w-6 h-6 text-[#90dc35]" />
@@ -187,14 +181,7 @@ export default function TechnicalSolutions() {
           ))}
         </div>
 
-        {/* Bottom Note */}
-        <div className="mt-12 text-center max-w-3xl mx-auto p-6 bg-gray-900 rounded-lg border border-gray-200 shadow-sm">
-          <p className="text-white text-sm leading-relaxed">
-            {language === 'nl'
-              ? 'Alle prijzen zijn startprijzen voor de basisstructuur, exclusief transport en BTW. Turn-key oplevering inclusief fundering, afwerking en installaties is beschikbaar.'
-              : 'All prices are starting prices for the basic structure, excluding transport and VAT. Turn-key delivery including foundation, finishing, and installations is available.'}
-          </p>
-        </div>
+
       </div>
     </section>
   );

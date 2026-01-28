@@ -61,10 +61,10 @@ export default function FAQPage() {
       title_nl: "Prijzen en Budgetten",
       questions: [
         {
-          question_en: "What are the price indications per m²?",
-          question_nl: "Wat zijn de prijsindicaties per m²?",
-          answer_en: "Groenvastbouw communicates starting prices from about €1,550 per m² for the structural part of a passive house as an indication. Total project costs depend on design, finishes, installations, groundworks and other local factors, so a project-specific analysis is always needed.",
-          answer_nl: "Groenvastbouw communiceert startprijzen vanaf ongeveer €1.550 per m² voor het constructieve deel van een passief huis als indicatie. Totale projectkosten zijn afhankelijk van ontwerp, afwerkingen, installaties, grondwerk en andere lokale factoren, dus een projectspecifieke analyse is altijd nodig."
+          question_en: "How does pricing work?",
+          question_nl: "Hoe werkt de prijsopbouw?",
+          answer_en: "Pricing depends on the chosen performance level and project specifications. Foundations, transport, assembly, and finishing are calculated separately based on your project. Contact us for a customized quote.",
+          answer_nl: "De prijs is afhankelijk van het gekozen prestatieniveau en projectspecificaties. Fundaties, transport, montage en afwerking worden apart berekend op basis van uw project. Neem contact op voor een offerte op maat."
         },
         {
           question_en: "What factors influence the final cost?",

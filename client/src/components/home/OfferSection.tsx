@@ -31,11 +31,7 @@ export default function OfferSection() {
         'Complete structure delivered in 3 months',
         'Turn-key finishing available'
       ],
-      price: language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*',
-      cta: language === 'nl' ? 'Bekijk Senmar Modellen' : 'View Senmar Models',
-      priceNote: language === 'nl' 
-        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties. langere levertijd.'
-        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations. longer delivery time applies.'
+      cta: language === 'nl' ? 'Bekijk Senmar Modellen' : 'View Senmar Models'
     },
 
     custom: {
@@ -55,11 +51,7 @@ export default function OfferSection() {
         'Complete structure delivered in 3 months',
         'Turn-key finishing available'
       ],
-      price: language === 'nl' ? 'Vanaf €1.550/m²*' : 'Starting from €1,550/m²*',
-      cta: language === 'nl' ? 'Start Op Maat Project' : 'Start Your Custom Project',
-      priceNote: language === 'nl' 
-        ? '*Startprijs voor basisstructuur, exclusief transport en BTW.\nTurn-key oplevering inclusief fundering, afwerking en installaties. langere levertijd.'
-        : '*Starting price for basic structure, excluding transport and VAT.\nTurn-key delivery includes foundation, finishing, and installations. longer delivery time applies.'
+      cta: language === 'nl' ? 'Start Op Maat Project' : 'Start Your Custom Project'
     },
 
     b2b: {
@@ -175,7 +167,7 @@ export default function OfferSection() {
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-[#90dc35] mb-6">{content.prefab.price}</p>
+
             </div>
             
             <div className="p-8 bg-gray-50 border-t border-gray-200">
@@ -190,9 +182,7 @@ export default function OfferSection() {
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <div className="mt-4 text-xs text-white space-y-1 text-center whitespace-pre-line">
-                <p>{content.prefab.priceNote}</p>
-              </div>
+
             </div>
           </motion.div>
 
@@ -226,7 +216,7 @@ export default function OfferSection() {
                 ))}
               </ul>
 
-              <p className="text-lg font-bold text-[#90dc35] mb-6">{content.custom.price}</p>
+
             </div>
             
             <div className="p-8 bg-gray-50 border-t border-gray-200">
@@ -237,9 +227,7 @@ export default function OfferSection() {
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <div className="mt-4 text-xs text-white space-y-1 text-center whitespace-pre-line">
-                <p>{content.custom.priceNote}</p>
-              </div>
+
             </div>
           </motion.div>
         </div>

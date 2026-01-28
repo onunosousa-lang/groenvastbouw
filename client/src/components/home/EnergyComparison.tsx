@@ -25,7 +25,7 @@ export default function EnergyComparison() {
                 </div>
                 <div className="h-12 bg-gray-700 rounded-full overflow-hidden relative">
                   <div className="absolute top-0 left-0 h-full bg-red-500 w-full flex items-center justify-end px-4 font-bold">
-                    €4.500 {t('energy_comparison_per_year')}
+                    {t('energy_comparison_per_year')}
                   </div>
                 </div>
                 <div className="text-xs text-white mt-1 text-right">
@@ -41,7 +41,7 @@ export default function EnergyComparison() {
                 </div>
                 <div className="h-12 bg-gray-700 rounded-full overflow-hidden relative">
                   <div className="absolute top-0 left-0 h-full bg-[#90dc35] w-[10%] flex items-center justify-start px-4 font-bold whitespace-nowrap shadow-[0_0_20px_rgba(34,197,94,0.5)]">
-                    €450
+                    90% {language === 'nl' ? 'minder' : 'less'}
                   </div>
                 </div>
                 <div className="text-xs text-green-400/70 mt-1">
@@ -53,11 +53,11 @@ export default function EnergyComparison() {
             <div className="mt-12 pt-8 border-t border-gray-700">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-gray-900/50 p-4 rounded-xl">
-                  <div className="text-3xl font-bold text-green-400 mb-1">€4.050</div>
+                  <div className="text-3xl font-bold text-green-400 mb-1">90%</div>
                   <div className="text-sm text-white">{t('energy_comparison_savings_annual')}</div>
                 </div>
                 <div className="bg-gray-900/50 p-4 rounded-xl border border-[#90dc35]/20">
-                  <div className="text-3xl font-bold text-green-400 mb-1">€121.500</div>
+                  <div className="text-3xl font-bold text-green-400 mb-1">{language === 'nl' ? 'Aanzienlijk' : 'Significant'}</div>
                   <div className="text-sm text-white">{t('energy_comparison_savings_30y')}</div>
                 </div>
               </div>

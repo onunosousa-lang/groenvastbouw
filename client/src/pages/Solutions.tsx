@@ -13,8 +13,6 @@ export default function Solutions() {
       id: 'basic',
       titleNl: 'Basis Structuur',
       titleEn: 'Basic Structure',
-      priceNl: 'Vanaf €190/m²',
-      priceEn: 'Starting from €190/m²',
       descNl: 'Een fundamentele oplossing voor het bouwframe. Ideaal voor degenen die kosten willen verlagen en de expertise hebben om de constructie zelf af te maken.',
       descEn: 'A foundational solution for the building frame. Great for those looking to reduce costs and who have the expertise to complete the construction themselves.',
       specsNl: [
@@ -34,8 +32,6 @@ export default function Solutions() {
       id: 'optimal',
       titleNl: 'Optimale Structuur',
       titleEn: 'Optimal Structure',
-      priceNl: 'Vanaf €270/m²',
-      priceEn: 'Starting from €270/m²',
       descNl: 'Ontworpen voor gematigde klimaten met 200mm isolatie. De perfecte balans tussen efficiëntie en kostenbesparing.',
       descEn: 'Designed for moderate climates with 200mm of insulation. The perfect balance between efficiency and cost savings.',
       specsNl: [
@@ -55,8 +51,6 @@ export default function Solutions() {
       id: 'passive',
       titleNl: 'Passieve Structuur',
       titleEn: 'Passive Structure',
-      priceNl: 'Vanaf €320/m²',
-      priceEn: 'Starting from €320/m²',
       descNl: 'Met aanvullende externe isolatie. Verbeterde thermische bescherming resulteert in veel lagere energiekosten.',
       descEn: 'With additional external insulation. Enhanced thermal protection results in significantly lower energy costs.',
       specsNl: [
@@ -76,8 +70,6 @@ export default function Solutions() {
       id: 'superpassive',
       titleNl: 'Super Passieve Structuur',
       titleEn: 'Super Passive Structure',
-      priceNl: 'Vanaf €400/m²',
-      priceEn: 'Starting from €400/m²',
       descNl: 'Maximale isolatie voor off-grid ambities en extreme klimaten. Passivhaus gecertificeerd voor optimale prestatie.',
       descEn: 'Maximum insulation for off-grid ambitions and extreme climates. Passivhaus certified for optimal performance.',
       specsNl: [
