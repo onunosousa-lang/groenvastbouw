@@ -18,7 +18,7 @@ export default function WhyUs() {
           <img src="/senmar-photos/factory_senmar_2.jpg" alt="Senmar Factory" className="w-full h-full object-cover" />
         </div>
         <div className="relative container mx-auto px-4 text-center max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8eb564]/20 text-green-400 border border-[#8eb564]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8eb564]/20 text-[#8eb564] border border-[#8eb564]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
             <BarChart3 size={16} />
             {language === 'nl' ? 'Markt & Technologie Analyse' : 'Market & Technology Analysis'}
           </div>
@@ -163,17 +163,17 @@ export default function WhyUs() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-10 rounded-2xl text-foreground mb-8">
+            <div className="bg-card p-10 rounded-2xl text-foreground mb-8">
               <h3 className="text-2xl font-bold mb-6">{language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white/10 p-6 rounded-lg border border-white/20">
-                  <div className="text-3xl font-bold text-green-400 mb-2">R-5.7</div>
+                  <div className="text-3xl font-bold text-[#8eb564] mb-2">R-5.7</div>
                   <h4 className="font-bold mb-2">Optimal</h4>
                   <p className="text-sm text-gray-300">
                     {language === 'nl' ? 'Perfecte balans tussen investering en prestatie. Overtreft ruimschoots standaard bouweisen.' : 'Perfect balance between investment and performance. Far exceeds standard building requirements.'}
                   </p>
                 </div>
-                <div className="bg-[#8eb564] p-6 rounded-lg border-2 border-green-400 transform scale-105 shadow-xl">
+                <div className="bg-[#8eb564] p-6 rounded-lg border-2 border-[#8eb564] transform scale-105 shadow-xl">
                   <div className="text-3xl font-bold text-foreground mb-2">R-8.5</div>
                   <h4 className="font-bold mb-2">Passive</h4>
                   <p className="text-sm text-gray-100">
@@ -184,7 +184,7 @@ export default function WhyUs() {
                   </div>
                 </div>
                 <div className="bg-white/10 p-6 rounded-lg border border-white/20">
-                  <div className="text-3xl font-bold text-green-400 mb-2">R-10.5</div>
+                  <div className="text-3xl font-bold text-[#8eb564] mb-2">R-10.5</div>
                   <h4 className="font-bold mb-2">Super Passive</h4>
                   <p className="text-sm text-gray-300">
                     {language === 'nl' ? 'Passivhaus-normen. Tot 75% minder energieverbruik vs standaardbouw.' : 'Passivhaus standards. Up to 75% less energy consumption vs standard construction.'}

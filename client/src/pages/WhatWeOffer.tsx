@@ -148,11 +148,11 @@ export default function WhatWeOffer() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-foreground">
+      <section className="pt-32 pb-16 px-4 bg-background text-foreground">
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-green-400 hover:text-foreground font-semibold transition-colors group"
+            className="inline-flex items-center text-[#8eb564] hover:text-foreground font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -192,8 +192,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
-                  ? 'bg-[#118443] text-foreground shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#118443]'
+                  ? 'bg-[#8eb564] text-foreground shadow-lg'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#8eb564]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -262,13 +262,13 @@ export default function WhatWeOffer() {
               <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
-                    <CheckCircle2 className="text-[#118443]" />
+                    <CheckCircle2 className="text-[#8eb564]" />
                     {content.turnkeyIncludes}
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {content.turnkeyIncludesItems.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-gray-700">
-                        <span className="text-[#118443] font-bold mt-1">✓</span>
+                        <span className="text-[#8eb564] font-bold mt-1">✓</span>
                         <span>{item}</span>
                       </li>
                     ))}

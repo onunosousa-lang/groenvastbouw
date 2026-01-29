@@ -182,7 +182,7 @@ export default function FAQPage() {
       {/* Header */}
       <header className="bg-background text-foreground py-4">
         <div className="container mx-auto px-4">
-          <Link href="/" className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors w-fit">
+          <Link href="/" className="flex items-center gap-2 text-[#8eb564] hover:text-green-300 transition-colors w-fit">
             <ArrowLeft size={20} />
             <span>{content.backToHome}</span>
           </Link>

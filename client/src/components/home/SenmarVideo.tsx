@@ -9,7 +9,7 @@ export default function SenmarVideo() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-[#8eb564]/20 text-green-400 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-[#8eb564]/20 text-[#8eb564] rounded-full text-sm font-semibold mb-4">
               {language === 'nl' ? 'Zie het in actie' : 'See it in action'}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

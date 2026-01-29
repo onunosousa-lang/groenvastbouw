@@ -144,8 +144,8 @@ export default function PerformanceLevels() {
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
                   level.color === 'green' ? 'bg-[#f0f7e8] text-[#8eb564]' : 
-                  level.color === 'blue' ? 'bg-[#e8f5f0] text-[#118443]' : 
-                  level.color === 'purple' ? 'bg-[#e8f5f0] text-[#118443]' :
+                  level.color === 'blue' ? 'bg-[#e8f5f0] text-[#8eb564]' : 
+                  level.color === 'purple' ? 'bg-[#e8f5f0] text-[#8eb564]' :
                   'bg-gray-200 text-[#2a3439]'
                 }`}>
                   <level.icon className="w-6 h-6" />
@@ -154,8 +154,8 @@ export default function PerformanceLevels() {
                 <h3 className="text-xl font-bold text-foreground mb-1">{level.title}</h3>
                 <div className={`text-lg font-bold mb-3 ${
                   level.color === 'green' ? 'text-[#8eb564]' : 
-                  level.color === 'blue' ? 'text-[#118443]' : 
-                  level.color === 'purple' ? 'text-[#118443]' :
+                  level.color === 'blue' ? 'text-[#8eb564]' : 
+                  level.color === 'purple' ? 'text-[#8eb564]' :
                   'text-foreground'
                 }`}>
                   {level.rValue}
@@ -168,7 +168,7 @@ export default function PerformanceLevels() {
                     <li key={idx} className="flex items-start gap-2 text-xs text-foreground leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         level.color === 'green' ? 'text-[#8eb564]' : 
-                        level.color === 'blue' ? 'text-green-500' : 
+                        level.color === 'blue' ? 'text-[#8eb564]' : 
                         level.color === 'purple' ? 'text-purple-500' :
                         'text-foreground'
                       }`} />
