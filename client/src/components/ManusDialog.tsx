@@ -52,9 +52,9 @@ export function ManusDialog({
       open={onOpenChange ? open : internalOpen}
       onOpenChange={handleOpenChange}
     >
-      <DialogContent className="py-5 bg-[#dcdcdc] rounded-[20px] w-[400px] shadow-[0px_4px_11px_0px_rgba(0,0,0,0.08)] border border-[rgba(0,0,0,0.08)] backdrop-blur-2xl p-0 gap-0 text-center">
+      <DialogContent className="py-5 bg-[#dcdcdc] rounded-[20px] w-[400px] shadow-[0px_4px_11px_0px_rgba(42,52,57,0.08)] border border-[rgba(42,52,57,0.08)] backdrop-blur-2xl p-0 gap-0 text-center">
         <div className="flex flex-col items-center gap-2 p-5 pt-12">
-          <div className="w-16 h-16 bg-white rounded-xl border border-[rgba(0,0,0,0.08)] flex items-center justify-center">
+          <div className="w-16 h-16 bg-white rounded-xl border border-[rgba(42,52,57,0.08)] flex items-center justify-center">
             <img src={logo} alt="App icon" className="w-10 h-10 rounded-md" />
           </div>
 
