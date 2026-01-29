@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#2a3439] to-[#1a1f23] text-foreground py-16 px-4">
+      <div className="bg-gradient-to-r from-[#2a3439] to-[#2a3439] text-foreground py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp}>
             <Link href="/" className="inline-flex items-center gap-2 text-[#8eb564] hover:text-foreground mb-6 transition-colors">
