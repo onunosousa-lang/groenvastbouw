@@ -359,3 +359,8 @@
 .card-shadow-hover:hover {
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.08), 0 4px 10px 0 rgba(0, 0, 0, 0.05);
 }
+
+/* Force all headings to be green #8eb564 */
+h1, h2, h3, h4, h5, h6 {
+  color: #8eb564 !important;
+}

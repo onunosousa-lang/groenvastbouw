@@ -138,14 +138,14 @@ export default function OurTechnology() {
       {/* Construction Methods */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Constructiemethoden' : 'Our Construction Methods'}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {constructionMethods.map((method, idx) => (
               <div key={idx} className="bg-white rounded-lg border-2 border-gray-200 p-8 hover:border-[#8eb564] transition-colors">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-[#8eb564]">
+                <h3 className="text-2xl font-bold text-[#2a3439] mb-4 text-[#8eb564]">
                   {language === 'nl' ? method.titleNl : method.titleEn}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -160,7 +160,7 @@ export default function OurTechnology() {
       {/* Technical Tiers */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Technische Presets' : 'Our Technical Presets'}
           </h2>
 
@@ -173,7 +173,7 @@ export default function OurTechnology() {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#8eb564] transition-colors">
+                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#8eb564] transition-colors">
                         {language === 'nl' ? tier.titleNl : tier.titleEn}
                       </h3>
                       <p className="text-lg font-semibold text-[#8eb564]">
@@ -196,7 +196,7 @@ export default function OurTechnology() {
 
                     {/* Components */}
                     <div>
-                      <h4 className="font-bold text-gray-900 mb-4 text-lg">
+                      <h4 className="font-bold text-[#2a3439] mb-4 text-lg">
                         {language === 'nl' ? 'Componenten:' : 'Components:'}
                       </h4>
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">

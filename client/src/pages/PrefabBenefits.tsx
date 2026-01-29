@@ -112,7 +112,7 @@ export default function PrefabBenefits() {
       
       <div className="pt-24 pb-12 bg-green-50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-6">
             {t('prefab_title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -134,7 +134,7 @@ export default function PrefabBenefits() {
                 <div className="mb-4 p-3 bg-green-50 rounded-full">
                   {benefit.icon}
                 </div>
-                <CardTitle className="text-xl font-bold text-gray-900">
+                <CardTitle className="text-xl font-bold text-[#2a3439]">
                   {benefit.title}
                 </CardTitle>
               </CardHeader>

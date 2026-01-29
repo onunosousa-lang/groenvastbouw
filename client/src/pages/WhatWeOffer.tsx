@@ -211,7 +211,7 @@ export default function WhatWeOffer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">{content.structureTitle}</h2>
+              <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.structureTitle}</h2>
               <p className="text-xl text-gray-600 mb-12">{content.structureDesc}</p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -234,7 +234,7 @@ export default function WhatWeOffer() {
 
                 <Card className="border-2 border-gray-300 bg-gray-50">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                       <AlertCircle className="text-gray-600" />
                       {content.structureNotIncluded}
                     </h3>
@@ -256,7 +256,7 @@ export default function WhatWeOffer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">{content.turnkeyTitle}</h2>
+              <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.turnkeyTitle}</h2>
               <p className="text-xl text-gray-600 mb-12">{content.turnkeyDesc}</p>
 
               <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
@@ -280,7 +280,7 @@ export default function WhatWeOffer() {
 
           {/* MODULAR & MULTIPLE ORDERS */}
           <div className="mt-24 pt-16 border-t-2 border-gray-200">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">{content.modularTitle}</h2>
+            <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.modularTitle}</h2>
             <p className="text-xl text-gray-600 mb-12">{content.modularDesc}</p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -305,7 +305,7 @@ export default function WhatWeOffer() {
 
           {/* CTA */}
           <div className="mt-24 pt-16 border-t-2 border-gray-200 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">{content.ctaTitle}</h2>
+            <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.ctaTitle}</h2>
             <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}

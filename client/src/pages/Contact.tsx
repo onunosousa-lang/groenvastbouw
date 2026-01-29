@@ -49,18 +49,18 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp} className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
                 {language === 'nl' ? 'Contactgegevens' : 'Contact Information'}
               </h3>
               <div className="space-y-4 text-gray-600">
                 <div>
-                  <p className="font-semibold text-gray-900">{language === 'nl' ? 'Email' : 'Email'}</p>
+                  <p className="font-semibold text-[#2a3439]">{language === 'nl' ? 'Email' : 'Email'}</p>
                   <a href="mailto:contact@groenvastbouw.nl" className="text-[#8eb564] hover:text-[#8eb564]">
                     contact@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">{language === 'nl' ? 'WhatsApp' : 'WhatsApp'}</p>
+                  <p className="font-semibold text-[#2a3439]">{language === 'nl' ? 'WhatsApp' : 'WhatsApp'}</p>
                   <a href="https://wa.me/31629841298" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">
                     +31 6 29841298
                   </a>
@@ -68,7 +68,7 @@ export default function Contact() {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
                 {language === 'nl' ? 'Wat u kunt verwachten' : 'What to Expect'}
               </h3>
               <ul className="space-y-3 text-gray-600">

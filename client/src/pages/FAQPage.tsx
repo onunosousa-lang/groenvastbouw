@@ -193,7 +193,7 @@ export default function FAQPage() {
       <main className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Page Title */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-[#2a3439] mb-4">
             {content.title}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -225,7 +225,7 @@ export default function FAQPage() {
         <div className="space-y-10">
           {faqSections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-[#8eb564]">
+              <h2 className="text-2xl font-bold text-[#2a3439] mb-4 pb-2 border-b-2 border-[#8eb564]">
                 {language === 'nl' ? section.title_nl : section.title_en}
               </h2>
               <div className="space-y-3">
@@ -240,7 +240,7 @@ export default function FAQPage() {
                         className="w-full p-5 text-left flex justify-between items-center"
                         onClick={() => setOpenFaq(openFaq === currentIndex ? null : currentIndex)}
                       >
-                        <span className="font-semibold text-gray-900 pr-4">
+                        <span className="font-semibold text-[#2a3439] pr-4">
                           {language === 'nl' ? faq.question_nl : faq.question_en}
                         </span>
                         <ChevronDown 
@@ -265,7 +265,7 @@ export default function FAQPage() {
 
         {/* Bottom Contact Buttons */}
         <div className="mt-16 bg-green-50 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-[#2a3439] mb-4">
             {content.readyTitle}
           </h2>
           <p className="text-gray-600 mb-6">

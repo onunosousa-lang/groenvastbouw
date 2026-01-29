@@ -1,28 +1,35 @@
-# Groenvastbouw - Fix Remaining Color Issues
+# Groenvastbouw - FINAL COLOR FIX
 
-## CRITICAL ISSUES REPORTED:
-1. Dark blue background still visible below hero section
-2. Multiple shades of green visible (should be ONLY #8eb564)
+## ABSOLUTE RULES (NO EXCEPTIONS):
+1. Headers/Titles/Icons: #8eb564 (green)
+2. ALL content text: #2a3439 (NEVER black)
+3. Button text ONLY: WHITE
+4. NO BLACK TEXT ANYWHERE
 
-## Phase 1: Verify Live Site
-- [x] Check groenvastbouw.nl for dark blue backgrounds
-- [x] Identify all sections with dark blue ("Ons Aanbod" section)
-- [x] Check for different green shades (multiple found)
-- [x] Document all color issues (see color_issues_found.md)
+## Phase 1: Remove ALL Black Text
+- [x] Find text-gray-900 (replace with text-[#2a3439])
+- [x] Find text-black (replace with text-[#2a3439])
+- [x] Find #000000 (replace with #2a3439)
+- [x] Find #000 (replace with #2a3439)
+- [x] Verify 0 black text remains (53 → 0)
 
-## Phase 2: Remove Dark Blue Below Hero
-- [x] Find component/section below hero with dark blue background (OfferSection.tsx line 81)
-- [x] Replace with bg-background (#dcdcdc) or bg-white
-- [x] Verify no other dark blue backgrounds exist (fixed WhatWeOffer.tsx and WhyUs.tsx)
+## Phase 2: Headers/Titles GREEN
+- [x] All h1, h2, h3, h4 should be text-[#8eb564] (CSS !important rule added)
+- [x] All section titles should be text-[#8eb564]
+- [x] All icons should be text-[#8eb564]
 
-## Phase 3: Ensure ONLY #8eb564 Green
-- [x] Search for ALL green color codes in codebase (30 found)
-- [x] Replace rgb(142, 181, 100) variations
-- [x] Replace #118443, #7da453, green-400/500/600
-- [x] Verify ONLY #8eb564 exists (0 other greens remaining)
+## Phase 3: Content Text #2a3439
+- [x] All paragraph text: text-[#2a3439] (replaced text-gray-900/text-black)
+- [x] All descriptions: text-[#2a3439]
+- [x] All list items: text-[#2a3439]
+- [x] All body text: text-[#2a3439]
 
-## Phase 4: Deploy & Verify
-- [ ] Build without errors
-- [ ] Commit and push
-- [ ] Wait for Vercel deployment
-- [ ] Verify fixes are live on groenvastbouw.nl
+## Phase 4: Button Text WHITE
+- [x] Verify all buttons have text-white (text-primary-foreground = white)
+- [x] No colored text on buttons
+
+## Phase 5: Deploy
+- [ ] Build
+- [ ] Commit
+- [ ] Push
+- [ ] Verify live

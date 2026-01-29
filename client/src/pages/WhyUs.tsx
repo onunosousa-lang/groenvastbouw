@@ -41,7 +41,7 @@ export default function WhyUs() {
               <div className="inline-block bg-[#8eb564] text-foreground px-4 py-2 rounded-full text-sm font-bold mb-6">
                 {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-[#2a3439] mb-6">
                 {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></>}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -75,7 +75,7 @@ export default function WhyUs() {
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8eb564]"><TrendingUp size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '1. Het Economische Perspectief' : '1. The Economic Perspective'}</h2>
+                <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '1. Het Economische Perspectief' : '1. The Economic Perspective'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
               </div>
             </div>
@@ -88,13 +88,13 @@ export default function WhyUs() {
               <div className="grid md:grid-cols-2 gap-8 my-10">
                 <Card className="bg-gray-50 border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
-                    <h4 className="font-bold text-gray-900 mb-3 text-xl">{language === 'nl' ? 'Versnelde Cashflow' : 'Accelerated Cashflow'}</h4>
+                    <h4 className="font-bold text-[#2a3439] mb-3 text-xl">{language === 'nl' ? 'Versnelde Cashflow' : 'Accelerated Cashflow'}</h4>
                     <p className="text-base">{language === 'nl' ? 'Een bouwtijdverkorting van 70% betekent dat uw kapitaal 6-9 maanden eerder vrijkomt. Voor verhuurders betekent dit directe inkomsten in plaats van renteverlies tijdens de bouw.' : 'A 70% reduction in construction time means your capital is released 6-9 months earlier. For landlords, this means immediate income instead of interest loss during construction.'}</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-gray-50 border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
-                    <h4 className="font-bold text-gray-900 mb-3 text-xl">{language === 'nl' ? 'Financiële Zekerheid' : 'Financial Certainty'}</h4>
+                    <h4 className="font-bold text-[#2a3439] mb-3 text-xl">{language === 'nl' ? 'Financiële Zekerheid' : 'Financial Certainty'}</h4>
                     <p className="text-base">{language === 'nl' ? 'Geen onverwacht meerwerk. Geen faalkosten door weerverlet. De kosten zijn tot op de euro nauwkeurig vastgesteld voordat de productie start.' : 'No unexpected extra costs. No failure costs due to weather delays. Costs are fixed down to the euro before production starts.'}</p>
                   </CardContent>
                 </Card>
@@ -109,7 +109,7 @@ export default function WhyUs() {
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-[#e8f5f0] rounded-xl text-blue-700"><Factory size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '2. Technische Superioriteit' : '2. Technical Superiority'}</h2>
+                <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '2. Technische Superioriteit' : '2. Technical Superiority'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
               </div>
             </div>
@@ -129,21 +129,21 @@ export default function WhyUs() {
                 <li className="flex gap-5 items-start">
                   <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-gray-700" size={20} /></div>
                   <div>
-                    <strong className="text-gray-900 block mb-1">1mm Tolerantie</strong>
+                    <strong className="text-[#2a3439] block mb-1">1mm Tolerantie</strong>
                     {language === 'nl' ? 'CNC-machines frezen het hout met een precisie die op de bouwplaats onmogelijk is. Dit garandeert naadloze aansluitingen en superieure luchtdichtheid.' : 'CNC machines mill the timber with a precision impossible on a construction site. This guarantees seamless connections and superior airtightness.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
                   <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-gray-700" size={20} /></div>
                   <div>
-                    <strong className="text-gray-900 block mb-1">Thermal Bridge Free</strong>
+                    <strong className="text-[#2a3439] block mb-1">Thermal Bridge Free</strong>
                     {language === 'nl' ? 'Doordat isolatie machinaal en onder ideale omstandigheden wordt aangebracht, ontstaan er geen "gaps" of koudebruggen. Dit is essentieel voor het behalen van de Passiefhuis-standaard.' : 'Because insulation is applied mechanically under ideal conditions, there are no gaps or thermal bridges. This is essential for achieving the Passive House standard.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
                   <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-gray-700" size={20} /></div>
                   <div>
-                    <strong className="text-gray-900 block mb-1">Geen Bouwvocht</strong>
+                    <strong className="text-[#2a3439] block mb-1">Geen Bouwvocht</strong>
                     {language === 'nl' ? 'Traditionele bouw sluit duizenden liters water in (beton, regen). Onze droogbouw methode elimineert schimmelrisico en zorgt voor een direct gezond binnenklimaat.' : 'Traditional construction traps thousands of liters of water (concrete, rain). Our dry construction method eliminates mold risk and ensures an immediately healthy indoor climate.'}
                   </div>
                 </li>
@@ -158,7 +158,7 @@ export default function WhyUs() {
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-orange-100 rounded-xl text-orange-700"><Wrench size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '3. Energie-efficiëntie & Besparingen' : '3. Energy Efficiency & Savings'}</h2>
+                <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '3. Energie-efficiëntie & Besparingen' : '3. Energy Efficiency & Savings'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Van Optimal tot Super Passive' : 'From Optimal to Super Passive'}</p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function WhyUs() {
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8eb564]"><Leaf size={32} /></div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
+                <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
               </div>
             </div>

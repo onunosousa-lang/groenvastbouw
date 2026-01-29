@@ -127,7 +127,7 @@ export default function Solutions() {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#8eb564] transition-colors">
+                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#8eb564] transition-colors">
                         {language === 'nl' ? tier.titleNl : tier.titleEn}
                       </h3>
                       <p className="text-lg font-semibold text-[#8eb564]">
@@ -150,7 +150,7 @@ export default function Solutions() {
 
                     {/* Specifications */}
                     <div>
-                      <h4 className="font-bold text-gray-900 mb-4 text-lg">
+                      <h4 className="font-bold text-[#2a3439] mb-4 text-lg">
                         {language === 'nl' ? 'Kenmerken:' : 'Features:'}
                       </h4>
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -180,7 +180,7 @@ export default function Solutions() {
 
           {/* Bottom Info */}
           <div className="mt-16 max-w-4xl mx-auto p-8 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border-2 border-[#8eb564] shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Informatie over prijzen' : 'Pricing Information'}
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -197,7 +197,7 @@ export default function Solutions() {
 
           {/* CTA Section */}
           <div className="mt-16 text-center">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            <h3 className="text-3xl font-bold text-[#2a3439] mb-6">
               {language === 'nl' ? 'Klaar om te beginnen?' : 'Ready to get started?'}
             </h3>
             <a href="/#contact" className="inline-block bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">

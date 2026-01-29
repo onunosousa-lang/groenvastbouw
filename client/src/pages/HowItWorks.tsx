@@ -206,7 +206,7 @@ export default function HowItWorks() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#8eb564]/30">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.panelizedTitleNl : content.hero.panelizedTitleEn}
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -215,7 +215,7 @@ export default function HowItWorks() {
             </div>
 
             <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#8eb564]/30">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.modularTitleNl : content.hero.modularTitleEn}
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -243,7 +243,7 @@ export default function HowItWorks() {
                   className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeTier === tier.id
                       ? 'bg-[#8eb564] text-[#2a3439] shadow-md'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                      : 'text-gray-600 hover:text-[#2a3439] hover:bg-gray-50'
                   }`}
                 >
                   {language === 'nl' ? tier.titleNl : tier.titleEn}
@@ -277,7 +277,7 @@ export default function HowItWorks() {
                     className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                       activeView === view
                         ? 'bg-[#8eb564] text-[#2a3439] shadow-md'
-                        : 'bg-white text-gray-600 hover:text-gray-900 hover:shadow-sm'
+                        : 'bg-white text-gray-600 hover:text-[#2a3439] hover:shadow-sm'
                     }`}
                   >
                     {view === 'wall' && (language === 'nl' ? 'Wand' : 'Wall')}
@@ -289,7 +289,7 @@ export default function HowItWorks() {
 
               {/* Components List */}
               <div className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">
+                <h3 className="text-xl font-bold text-[#2a3439] mb-6">
                   {language === 'nl' ? 'Componenten:' : 'Components:'}
                 </h3>
                 <div className="space-y-4">
@@ -300,7 +300,7 @@ export default function HowItWorks() {
                           {idx + 1}
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-bold text-gray-900 mb-1">
+                          <h4 className="font-bold text-[#2a3439] mb-1">
                             {language === 'nl' ? component.labelNl : component.labelEn}
                           </h4>
                           <p className="text-sm text-gray-600">
@@ -342,14 +342,14 @@ export default function HowItWorks() {
 
           {/* Additional Info */}
           <div className="mt-16 max-w-4xl mx-auto p-8 bg-white rounded-xl border-2 border-[#8eb564] shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Waarom Kiezen Voor Senmar Technologie?' : 'Why Choose Senmar Technology?'}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-[#8eb564] flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">
+                  <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Gecontroleerde Productie' : 'Controlled Production'}
                   </h4>
                   <p className="text-gray-600 text-sm">
@@ -362,7 +362,7 @@ export default function HowItWorks() {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-[#8eb564] flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">
+                  <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Snelle Levering' : 'Fast Delivery'}
                   </h4>
                   <p className="text-gray-600 text-sm">
@@ -375,7 +375,7 @@ export default function HowItWorks() {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-[#8eb564] flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">
+                  <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Energie-efficiënt' : 'Energy Efficient'}
                   </h4>
                   <p className="text-gray-600 text-sm">
@@ -388,7 +388,7 @@ export default function HowItWorks() {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-[#8eb564] flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">
+                  <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Duurzaam' : 'Sustainable'}
                   </h4>
                   <p className="text-gray-600 text-sm">
@@ -406,7 +406,7 @@ export default function HowItWorks() {
       {/* Final CTA */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+          <h3 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? 'Klaar om te beginnen?' : 'Ready to get started?'}
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">

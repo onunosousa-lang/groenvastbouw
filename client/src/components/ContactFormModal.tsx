@@ -84,7 +84,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
           {/* Header with Close Button */}
           <div className="flex items-start justify-between p-6 border-b border-gray-100">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-2xl font-bold text-[#2a3439]">
                 {language === 'nl' ? 'Contacteer Ons' : 'Contact Us'}
               </h2>
               <p className="text-sm text-gray-600 mt-1">
@@ -110,7 +110,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-semibold text-gray-900">
+                      <FormLabel className="text-sm font-semibold text-[#2a3439]">
                         {t('contact_name')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
@@ -131,7 +131,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-semibold text-gray-900">
+                      <FormLabel className="text-sm font-semibold text-[#2a3439]">
                         {t('contact_email')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
@@ -153,7 +153,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-semibold text-gray-900">
+                      <FormLabel className="text-sm font-semibold text-[#2a3439]">
                         {t('contact_phone')}
                       </FormLabel>
                       <FormControl>
@@ -175,7 +175,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-semibold text-gray-900">
+                      <FormLabel className="text-sm font-semibold text-[#2a3439]">
                         {t('contact_message')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
@@ -195,7 +195,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   <Button 
                     type="button"
                     variant="outline"
-                    className="flex-1 border-gray-200 text-gray-900 hover:bg-gray-50"
+                    className="flex-1 border-gray-200 text-[#2a3439] hover:bg-gray-50"
                     onClick={onClose}
                   >
                     {language === 'nl' ? 'Annuleren' : 'Cancel'}
