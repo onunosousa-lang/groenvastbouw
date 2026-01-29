@@ -66,8 +66,8 @@
   --accent: 142 181 100;
   --accent-foreground: 255 255 255;
   
-  /* Secondary - Green Hover (darker #8eb564) */
-  --secondary: 126 163 90;
+  /* Secondary - Green Hover (#7aa050) */
+  --secondary: 122 160 80;
   --secondary-foreground: 255 255 255;
   
   /* Muted variants - (#dcdcdc) */

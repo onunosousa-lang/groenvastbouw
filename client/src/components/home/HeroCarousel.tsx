@@ -213,8 +213,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
           alt="Groenvastbouw Passive House"
           className="w-full h-full object-cover"
         />
-        {/* Light overlay for better text contrast - Senmar style */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2a3439]/20 via-transparent to-transparent"></div>
+        {/* No overlay - photos fully visible */}
       </div>
 
       {/* Text Content Carousel - ONLY THIS SLIDES */}
