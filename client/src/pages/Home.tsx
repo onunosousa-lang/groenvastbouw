@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
-import HeroSection from '@/components/home/HeroSection';
+import HeroCarousel from '@/components/home/HeroCarousel';
 import OfferSection from '@/components/home/OfferSection';
 import HowItWorks from '@/components/home/HowItWorks';
 import PerformanceLevels from '@/components/home/PerformanceLevels';
@@ -25,7 +25,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 font-sans">
       <SEO />
       <Navbar />
-      <HeroSection scrollToSection={scrollToSection} />
+      <HeroCarousel scrollToSection={scrollToSection} />
       <OfferSection />
       <HowItWorks />
       <PerformanceLevels />
