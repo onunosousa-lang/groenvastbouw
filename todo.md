@@ -1,27 +1,19 @@
-# Groenvastbouw - Add About Us Section
+# Groenvastbouw - Simplify AboutUs Section
 
-## Phase 1: Create AboutUs Component
-- [x] Create AboutUs.tsx component
-- [x] Add provided text content
-- [x] Highlight keywords in green #8eb564
-- [x] Make "Senmar" a hyperlink to senmar.pt
-- [x] Rest of text in #2a3439
-- [x] Background: solid #dcdcdc
-- [x] Proper spacing and layout
+## Phase 1: Remove Green Highlights
+- [x] Remove ALL green highlights from keywords
+- [x] Keep ONLY title "About Us" in green #8eb564
+- [x] Keep ONLY last line in green #8eb564
+- [x] ALL other text in #2a3439
 
-## Phase 2: Add to Home Page
-- [x] Import AboutUs component in Home.tsx
-- [x] Place directly below HeroCarousel
-- [x] Ensure proper integration
+## Phase 2: Add Translations
+- [x] Add useLanguage hook
+- [x] Add Dutch (NL) translation for all text
+- [x] Add English (EN) translation for all text
+- [x] Ensure translations switch properly
+- [x] Senmar link kept but in text color #2a3439
 
-## Phase 3: Verify Color Scheme
-- [x] Check entire website uses ONLY 3 colors
-- [x] Green #8eb564: headers, titles, keywords, icons (CSS !important for h1-h6)
-- [x] Text #2a3439: ALL content text (0 black text)
-- [x] Background #dcdcdc: sections
-- [x] Button text: WHITE only (text-primary-foreground)
-
-## Phase 4: Deploy
+## Phase 3: Deploy
 - [ ] Build
 - [ ] Commit
 - [ ] Push

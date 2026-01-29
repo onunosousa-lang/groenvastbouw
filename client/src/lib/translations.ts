@@ -254,9 +254,17 @@ export const translations = {
     prefab_lightweight_title: "Lightweight Construction",
     prefab_lightweight_desc: "Wooden frames are lighter than other building materials, making them easier to transport and handle. This can also reduce the load on the foundation and lower costs.",
     
-    prefab_manufacturing_title: "Sustainable Manufacturing",
+     prefab_manufacturing_title: "Sustainable Manufacturing",
     prefab_manufacturing_desc: "The prefabrication process uses sustainably sourced wood and efficient manufacturing techniques, further enhancing the environmental benefits of prefab wooden houses.",
-
+    
+    // About Us Section
+    aboutus_title: "About Us",
+    aboutus_p1: "We build sustainable, high-performance timber frame buildings designed to be truly future-proof.",
+    aboutus_p2: "With over 15 years of experience in timber construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial manufacturing through our partnership with Senmar in Portugal.",
+    aboutus_p3: "Our commitment is to real sustainability and real performance, never compromising on materials, build quality, or long-term efficiency. By producing precision timber structures in controlled factory conditions, we reduce waste, control costs, and deliver buildings that can save up to 90% of heating energy while providing a healthy and comfortable indoor environment.",
+    aboutus_p4: "We offer solutions from structural shell to fully turnkey buildings and can coordinate the entire process, from foundations to energy systems, working alongside trusted local partners when needed.",
+    aboutus_tagline: "Build better. Build sustainably. Build for the future.",
+    
     // Markets Array
     markets_array: [
       {
@@ -269,7 +277,15 @@ export const translations = {
         desc: "Schaalbare oplossingen voor projectontwikkelaars en woningcorporaties. Maximaliseer ROI door snelle bouwtijden en lage faalkosten.",
         benefits: ["70% Sneller dan traditioneel", "Prefabricage in fabriek", "Voorspelbare kosten"]
       }
-    ]
+    ],
+
+    // About Us Section
+    aboutus_title: "Over Ons",
+    aboutus_p1: "Wij bouwen duurzame, hoogwaardige houtskeletbouwconstructies die ontworpen zijn om echt toekomstbestendig te zijn.",
+    aboutus_p2: "Met meer dan 15 jaar ervaring in houtbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productie via onze samenwerking met Senmar in Portugal.",
+    aboutus_p3: "Onze toewijding is aan echte duurzaamheid en echte prestaties, zonder compromissen op materialen, bouwkwaliteit of langetermijnefficiëntie. Door precisie houtconstructies te produceren in gecontroleerde fabrieksomstandigheden, verminderen we afval, beheersen we kosten en leveren we gebouwen die tot 90% van de verwarmingsenergie kunnen besparen, terwijl ze een gezonde en comfortabele binnenomgeving bieden.",
+    aboutus_p4: "Wij bieden oplossingen van structurele schil tot volledig sleutelklare gebouwen en kunnen het hele proces coördineren, van funderingen tot energiesystemen, waarbij we indien nodig samenwerken met vertrouwde lokale partners.",
+    aboutus_tagline: "Beter bouwen. Duurzaam bouwen. Bouwen voor de toekomst."
   },
   
   en: {
