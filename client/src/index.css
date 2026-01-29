@@ -48,9 +48,9 @@
 
 /* Senmar Brand Palette */
 :root {
-  /* Primary Brand - Garden Green (#7FB956) */
-  --primary: 127 185 86;
-  --primary-foreground: 255 255 255;
+  /* Primary Brand - Senmar Lime Green (#A4D65E) */
+  --primary: 164 214 94;
+  --primary-foreground: 42 52 57;
   
   /* Light Background - Soft Mist (#D7D7D6) lighter variant */
   --background: 248 248 247;
@@ -62,13 +62,13 @@
   /* Dark Text - Deep Slate (#2A3439) */
   --foreground: 42 52 57;
   
-  /* Accent - Clay Red (#EA4924) */
-  --accent: 234 73 36;
-  --accent-foreground: 255 255 255;
+  /* Accent - Senmar Lime Green (#A4D65E) */
+  --accent: 164 214 94;
+  --accent-foreground: 42 52 57;
   
-  /* Soft Secondary - Leaf Green (#8EB564) */
-  --secondary: 142 181 100;
-  --secondary-foreground: 255 255 255;
+  /* Soft Secondary - Senmar Green Hover (#8BC34A) */
+  --secondary: 139 195 74;
+  --secondary-foreground: 42 52 57;
   
   /* Muted variants - Steel Gray (#8C9194) */
   --muted: 215 215 214;
@@ -85,17 +85,17 @@
   /* Border & Input - Soft Mist */
   --border: 215 215 214;
   --input: 215 215 214;
-  --ring: 127 185 86;
+  --ring: 164 214 94;
   
   /* Sidebar - Deep Slate */
   --sidebar: 42 52 57;
   --sidebar-foreground: 255 255 255;
-  --sidebar-primary: 127 185 86;
+  --sidebar-primary: 164 214 94;
   --sidebar-primary-foreground: 255 255 255;
-  --sidebar-accent: 142 181 100;
+  --sidebar-accent: 164 214 94;
   --sidebar-accent-foreground: 255 255 255;
   --sidebar-border: 52 62 67;
-  --sidebar-ring: 127 185 86;
+  --sidebar-ring: 164 214 94;
   
   /* Charts - Senmar Palette */
   --chart-1: 127 185 86;
@@ -107,13 +107,13 @@
   --radius: 0.65rem;
   
   /* Senmar Brand Colors as CSS Custom Properties */
-  --senmar-garden-green: #90dc35;
-  --senmar-lime-green: #90dc35;
+  --senmar-garden-green: #A4D65E;
+  --senmar-lime-green: #A4D65E;
   --senmar-teal-green: #118443;
   --senmar-deep-slate: #2A3439;
   --senmar-clay-red: #EA4924;
   --senmar-soft-mist: #D7D7D6;
-  --senmar-leaf-green: #90dc35;
+  --senmar-leaf-green: #A4D65E;
   --senmar-steel-gray: #8C9194;
 }
 
@@ -121,7 +121,7 @@
   /* Primary Brand - Garden Green */
   --primary: 127 185 86;
   --primary-foreground: 255 255 255;
-  --sidebar-primary: 127 185 86;
+  --sidebar-primary: 164 214 94;
   --sidebar-primary-foreground: 255 255 255;
   
   /* Dark Background - Deep Slate (#2A3439) */
@@ -151,7 +151,7 @@
   
   --border: 62 72 77;
   --input: 62 72 77;
-  --ring: 127 185 86;
+  --ring: 164 214 94;
   
   --chart-1: 127 185 86;
   --chart-2: 234 73 36;
@@ -164,7 +164,7 @@
   --sidebar-accent: 62 72 77;
   --sidebar-accent-foreground: 255 255 255;
   --sidebar-border: 62 72 77;
-  --sidebar-ring: 127 185 86;
+  --sidebar-ring: 164 214 94;
 }
 
 @layer base {
@@ -257,7 +257,7 @@
 /* Senmar-inspired dashed border button style */
 .btn-dashed {
   position: relative;
-  background: #90dc35;
+  background: #A4D65E;
   color: #2A3439;
   padding: 1.5rem 2rem;
   font-weight: 700;
@@ -281,7 +281,7 @@
 }
 
 .btn-dashed:hover {
-  background: #6fb820;
+  background: #8BC34A;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(144, 220, 53, 0.3);
 }
@@ -292,8 +292,8 @@
   inset: -2px;
   background: repeating-linear-gradient(
     90deg,
-    #90dc35 0px,
-    #90dc35 8px,
+    #A4D65E 0px,
+    #A4D65E 8px,
     transparent 8px,
     transparent 16px
   );
@@ -318,7 +318,7 @@
 /* Simplified zigzag border for smaller elements */
 .border-zigzag {
   position: relative;
-  border: 2px dashed #90dc35;
+  border: 2px dashed #A4D65E;
   border-radius: 0.5rem;
 }
 
@@ -326,7 +326,7 @@
   content: '';
   position: absolute;
   inset: -3px;
-  border: 2px dashed #90dc35;
+  border: 2px dashed #A4D65E;
   border-radius: 0.5rem;
   opacity: 0.3;
   pointer-events: none;

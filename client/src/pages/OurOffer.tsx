@@ -334,7 +334,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#2A3439]/95 to-[#1a1f24]/90" />
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#A4D65E] hover:text-[#8BC34A] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {content.backHome}
           </Link>
@@ -363,7 +363,7 @@ export default function OurOffer() {
               <>
                 <button 
                   onClick={openModal}
-                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors cursor-pointer"
+                  className="text-[#A4D65E] hover:text-[#8BC34A] font-semibold underline decoration-[#A4D65E] underline-offset-2 transition-colors cursor-pointer"
                 >
                   Groenvastbouw
                 </button>
@@ -372,7 +372,7 @@ export default function OurOffer() {
                   href="https://www.senmar.pt" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors"
+                  className="text-[#A4D65E] hover:text-[#8BC34A] font-semibold underline decoration-[#A4D65E] underline-offset-2 transition-colors"
                 >
                   Senmar
                 </a>
@@ -382,7 +382,7 @@ export default function OurOffer() {
               <>
                 <button 
                   onClick={openModal}
-                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors cursor-pointer"
+                  className="text-[#A4D65E] hover:text-[#8BC34A] font-semibold underline decoration-[#A4D65E] underline-offset-2 transition-colors cursor-pointer"
                 >
                   Groenvastbouw
                 </button>
@@ -391,7 +391,7 @@ export default function OurOffer() {
                   href="https://www.senmar.pt" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors"
+                  className="text-[#A4D65E] hover:text-[#8BC34A] font-semibold underline decoration-[#A4D65E] underline-offset-2 transition-colors"
                 >
                   Senmar
                 </a>
@@ -402,8 +402,8 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
-                <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#A4D65E] transition-colors">
+                <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-200">{feature}</span>
               </div>
             ))}
@@ -430,12 +430,12 @@ export default function OurOffer() {
           
           <div className="space-y-4">
             {(language === 'nl' ? content.method.phasesNl : content.method.phasesEn).map((phase, idx) => (
-              <div key={idx} className="border-2 border-gray-700 rounded-lg overflow-hidden hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="border-2 border-gray-700 rounded-lg overflow-hidden hover:border-[#A4D65E] transition-colors">
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
                   className="w-full p-6 bg-card/50 backdrop-blur-sm hover:bg-card/70 flex items-center justify-between text-left">
                   <h3 className="text-xl font-bold text-foreground">{phase.title}</h3>
-                  <ChevronDown className={`w-5 h-5 text-[#90dc35] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-5 h-5 text-[#A4D65E] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
                 </button>
                 
                 {expandedSection === `phase-${idx}` && (
@@ -443,7 +443,7 @@ export default function OurOffer() {
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
                         <li key={itemIdx} className="flex items-start gap-3 text-gray-300">
-                          <span className="w-2 h-2 rounded-full bg-[#90dc35] mt-2 flex-shrink-0" />
+                          <span className="w-2 h-2 rounded-full bg-[#A4D65E] mt-2 flex-shrink-0" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -487,13 +487,13 @@ export default function OurOffer() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Factory */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#A4D65E]">
                 {language === 'nl' ? content.scope.factoryNl : content.scope.factoryEn}
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.factoryItemsNl : content.scope.factoryItemsEn).map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-gray-300">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -502,13 +502,13 @@ export default function OurOffer() {
             
             {/* On-Site */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#A4D65E]">
                 {language === 'nl' ? content.scope.onsiteNl : content.scope.onsiteEn}
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.onsiteItemsNl : content.scope.onsiteItemsEn).map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-gray-300">
-                    <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -541,17 +541,17 @@ export default function OurOffer() {
             {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
           </h2>
           
-          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35] mb-8">
+          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#A4D65E] mb-8">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
                 <div key={idx} className="flex items-center justify-between p-4 bg-gray-700/50 rounded-lg border border-gray-600">
                   <span className="font-semibold text-foreground">{item.phase}</span>
-                  <span className="text-[#90dc35] font-bold">{item.duration}</span>
+                  <span className="text-[#A4D65E] font-bold">{item.duration}</span>
                 </div>
               ))}
             </div>
             
-            <div className="bg-gray-700/50 p-6 rounded-lg border-2 border-[#90dc35]">
+            <div className="bg-gray-700/50 p-6 rounded-lg border-2 border-[#A4D65E]">
               <p className="text-lg font-bold text-foreground mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
@@ -574,8 +574,8 @@ export default function OurOffer() {
           
           <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
-                <span className="text-[#90dc35] font-bold flex-shrink-0 mt-0.5">•</span>
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#A4D65E] transition-colors">
+                <span className="text-[#A4D65E] font-bold flex-shrink-0 mt-0.5">•</span>
                 <span className="text-gray-300">{item}</span>
               </div>
             ))}
@@ -594,8 +594,8 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.usecases.itemsNl : content.usecases.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#90dc35]">
-                <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#A4D65E]">
+                <Building2 className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">{item}</span>
               </div>
             ))}
@@ -614,8 +614,8 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
-                <Shield className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#A4D65E] transition-colors">
+                <Shield className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">{item}</span>
               </div>
             ))}
@@ -645,11 +645,11 @@ export default function OurOffer() {
             {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}
           </h2>
           
-          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35]">
+          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#A4D65E]">
             <ul className="space-y-4">
               {(language === 'nl' ? content.warranty.itemsNl : content.warranty.itemsEn).map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-gray-300">
-                  <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-0.5" />
                   <span className="font-medium">{item}</span>
                 </li>
               ))}
@@ -661,7 +661,7 @@ export default function OurOffer() {
 
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#90dc35] to-[#6fb820]">
+      <section className="py-16 bg-gradient-to-br from-[#A4D65E] to-[#8BC34A]">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl font-bold text-[#2A3439] mb-6">
             {language === 'nl' ? content.cta.titleNl : content.cta.titleEn}
@@ -671,7 +671,7 @@ export default function OurOffer() {
           </p>
           <button
             onClick={openModal}
-            className="inline-block bg-[#2A3439] hover:bg-background text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+            className="inline-block bg-[#2A3439] hover:bg-background text-[#A4D65E] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? content.cta.buttonNl : content.cta.buttonEn}
           </button>

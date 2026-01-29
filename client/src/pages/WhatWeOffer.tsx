@@ -182,8 +182,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('structure')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
-                  ? 'bg-[#90dc35] text-foreground shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#90dc35]'
+                  ? 'bg-[#A4D65E] text-foreground shadow-lg'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#A4D65E]'
               }`}
             >
               {content.structureDelivery}
@@ -218,13 +218,13 @@ export default function WhatWeOffer() {
                 <Card className="border-2 border-green-200 bg-green-50">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-green-900 mb-6 flex items-center gap-2">
-                      <CheckCircle2 className="text-[#90dc35]" />
+                      <CheckCircle2 className="text-[#A4D65E]" />
                       {content.structureIncludes}
                     </h3>
                     <ul className="space-y-3">
                       {content.structureIncludesItems.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-700">
-                          <span className="text-[#90dc35] font-bold mt-1">✓</span>
+                          <span className="text-[#A4D65E] font-bold mt-1">✓</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -294,7 +294,7 @@ export default function WhatWeOffer() {
                 >
                   <Card className="border-2 border-green-200 h-full hover:shadow-xl transition-shadow">
                     <CardContent className="p-8">
-                      <h3 className="text-2xl font-bold text-[#6fb820] mb-4">{benefit.title}</h3>
+                      <h3 className="text-2xl font-bold text-[#8BC34A] mb-4">{benefit.title}</h3>
                       <p className="text-gray-700 text-lg">{benefit.desc}</p>
                     </CardContent>
                   </Card>
@@ -309,7 +309,7 @@ export default function WhatWeOffer() {
             <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}
-              className="bg-[#90dc35] hover:bg-[#6fb820] text-foreground px-8 py-6 text-lg font-semibold"
+              className="bg-[#A4D65E] hover:bg-[#8BC34A] text-foreground px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}
             </Button>

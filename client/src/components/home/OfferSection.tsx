@@ -110,16 +110,16 @@ export default function OfferSection() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <Building2 className="text-[#90dc35] w-8 h-8" />
+                <Building2 className="text-[#A4D65E] w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.b2b.title}</h3>
-              <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.b2b.subtitle}</p>
+              <p className="text-sm font-semibold text-[#A4D65E] mb-3">{content.b2b.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.b2b.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.b2b.points.map((point, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#2A3439] text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#A4D65E] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
@@ -129,7 +129,7 @@ export default function OfferSection() {
             <div className="p-8 bg-gray-50 border-t border-gray-200">
               <Button 
                 onClick={openModal}
-                className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
+                className="w-full bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.b2b.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -152,16 +152,16 @@ export default function OfferSection() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <Home className="text-[#90dc35] w-8 h-8" />
+                <Home className="text-[#A4D65E] w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.prefab.title}</h3>
-              <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.prefab.subtitle}</p>
+              <p className="text-sm font-semibold text-[#A4D65E] mb-3">{content.prefab.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.prefab.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.prefab.points.map((point, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#2A3439] text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#A4D65E] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
@@ -177,7 +177,7 @@ export default function OfferSection() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
+                <Button className="w-full bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -201,16 +201,16 @@ export default function OfferSection() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <Pencil className="text-[#90dc35] w-8 h-8" />
+                <Pencil className="text-[#A4D65E] w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">{content.custom.title}</h3>
-              <p className="text-sm font-semibold text-[#90dc35] mb-3">{content.custom.subtitle}</p>
+              <p className="text-sm font-semibold text-[#A4D65E] mb-3">{content.custom.subtitle}</p>
               <p className="text-[#2A3439] mb-6 text-sm leading-relaxed">{content.custom.description}</p>
               
               <ul className="space-y-2.5 mb-8">
                 {content.custom.points.map((point, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#2A3439] text-sm">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#90dc35] flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#A4D65E] flex-shrink-0" />
                     <span>{point}</span>
                   </li>
                 ))}
@@ -222,7 +222,7 @@ export default function OfferSection() {
             <div className="p-8 bg-gray-50 border-t border-gray-200">
               <Button 
                 onClick={openModal}
-                className="w-full bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] h-12 text-base font-semibold group"
+                className="w-full bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] h-12 text-base font-semibold group"
               >
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

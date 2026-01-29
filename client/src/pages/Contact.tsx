@@ -19,7 +19,7 @@ export default function Contact() {
       <div className="bg-gradient-to-r from-[#2A3439] to-[#1a1f23] text-foreground py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp}>
-            <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-foreground mb-6 transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 text-[#A4D65E] hover:text-foreground mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4" />
               {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
             </Link>
@@ -55,13 +55,13 @@ export default function Contact() {
               <div className="space-y-4 text-gray-600">
                 <div>
                   <p className="font-semibold text-gray-900">{language === 'nl' ? 'Email' : 'Email'}</p>
-                  <a href="mailto:contact@groenvastbouw.nl" className="text-[#90dc35] hover:text-[#6fb820]">
+                  <a href="mailto:contact@groenvastbouw.nl" className="text-[#A4D65E] hover:text-[#8BC34A]">
                     contact@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">{language === 'nl' ? 'WhatsApp' : 'WhatsApp'}</p>
-                  <a href="https://wa.me/31629841298" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820]">
+                  <a href="https://wa.me/31629841298" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] hover:text-[#8BC34A]">
                     +31 6 29841298
                   </a>
                 </div>
@@ -73,15 +73,15 @@ export default function Contact() {
               </h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#90dc35] font-bold mt-1">✓</span>
+                  <span className="text-[#A4D65E] font-bold mt-1">✓</span>
                   <span>{language === 'nl' ? 'Snelle respons op uw aanvraag' : 'Quick response to your inquiry'}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#90dc35] font-bold mt-1">✓</span>
+                  <span className="text-[#A4D65E] font-bold mt-1">✓</span>
                   <span>{language === 'nl' ? 'Persoonlijk advies van experts' : 'Personal advice from experts'}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#90dc35] font-bold mt-1">✓</span>
+                  <span className="text-[#A4D65E] font-bold mt-1">✓</span>
                   <span>{language === 'nl' ? 'Geen verplichtingen' : 'No obligations'}</span>
                 </li>
               </ul>

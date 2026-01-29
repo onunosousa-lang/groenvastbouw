@@ -84,7 +84,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           {/* Back Button */}
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#90dc35] transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#A4D65E] transition-colors mb-8">
               <ArrowLeft className="w-5 h-5" />
               {content.backHome}
             </a>
@@ -116,7 +116,7 @@ export default function Projects() {
                 href="https://www.senmar.pt" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#90dc35] hover:text-[#6fb820] font-semibold underline decoration-[#90dc35] underline-offset-2 transition-colors"
+                className="text-[#A4D65E] hover:text-[#8BC34A] font-semibold underline decoration-[#A4D65E] underline-offset-2 transition-colors"
               >
                 Senmar
               </a>

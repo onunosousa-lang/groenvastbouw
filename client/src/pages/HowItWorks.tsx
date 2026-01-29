@@ -183,7 +183,7 @@ export default function HowItWorks() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#2A3439]/95 to-[#1a1f24]/90" />
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#A4D65E] hover:text-[#8BC34A] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
@@ -205,7 +205,7 @@ export default function HowItWorks() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#90dc35]/30">
+            <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#A4D65E]/30">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {language === 'nl' ? content.hero.panelizedTitleNl : content.hero.panelizedTitleEn}
               </h3>
@@ -214,7 +214,7 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#90dc35]/30">
+            <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-6 rounded-lg border-2 border-[#A4D65E]/30">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {language === 'nl' ? content.hero.modularTitleNl : content.hero.modularTitleEn}
               </h3>
@@ -242,7 +242,7 @@ export default function HowItWorks() {
                   onClick={() => setActiveTier(tier.id as any)}
                   className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeTier === tier.id
-                      ? 'bg-[#90dc35] text-[#2A3439] shadow-md'
+                      ? 'bg-[#A4D65E] text-[#2A3439] shadow-md'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                   }`}
                 >
@@ -257,7 +257,7 @@ export default function HowItWorks() {
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-gray-100">
               {/* Tier Header */}
               <div className="bg-gradient-to-br from-[#f0f7e8] to-white p-8 border-b-2 border-gray-100">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#90dc35] mb-2">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#A4D65E] mb-2">
                   {language === 'nl' ? currentTier.titleNl : currentTier.titleEn}
                 </h2>
                 <p className="text-2xl font-semibold text-gray-700 mb-4">
@@ -276,7 +276,7 @@ export default function HowItWorks() {
                     onClick={() => setActiveView(view)}
                     className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                       activeView === view
-                        ? 'bg-[#90dc35] text-[#2A3439] shadow-md'
+                        ? 'bg-[#A4D65E] text-[#2A3439] shadow-md'
                         : 'bg-white text-gray-600 hover:text-gray-900 hover:shadow-sm'
                     }`}
                   >
@@ -294,9 +294,9 @@ export default function HowItWorks() {
                 </h3>
                 <div className="space-y-4">
                   {currentComponents.map((component, idx) => (
-                    <div key={idx} className="bg-gradient-to-r from-[#f0f7e8] to-white p-5 rounded-lg border border-[#90dc35]/20 hover:border-[#90dc35]/50 transition-colors">
+                    <div key={idx} className="bg-gradient-to-r from-[#f0f7e8] to-white p-5 rounded-lg border border-[#A4D65E]/20 hover:border-[#A4D65E]/50 transition-colors">
                       <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#90dc35] text-[#2A3439] flex items-center justify-center font-bold">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#A4D65E] text-[#2A3439] flex items-center justify-center font-bold">
                           {idx + 1}
                         </div>
                         <div className="flex-1">
@@ -323,7 +323,7 @@ export default function HowItWorks() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
                     href="/#contact" 
-                    className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+                    className="inline-block bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
                   >
                     {language === 'nl' ? 'Vraag Offerte Aan' : 'Request Quote'}
                   </a>
@@ -331,7 +331,7 @@ export default function HowItWorks() {
                     href="https://senmar.pt/en/solutions" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="inline-block border-2 border-[#90dc35] text-[#90dc35] hover:bg-[#90dc35] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+                    className="inline-block border-2 border-[#A4D65E] text-[#A4D65E] hover:bg-[#A4D65E] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
                   >
                     {language === 'nl' ? 'Bekijk op Senmar' : 'View on Senmar'}
                   </a>
@@ -341,13 +341,13 @@ export default function HowItWorks() {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 bg-white rounded-xl border-2 border-[#90dc35] shadow-lg">
+          <div className="mt-16 max-w-4xl mx-auto p-8 bg-white rounded-xl border-2 border-[#A4D65E] shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               {language === 'nl' ? 'Waarom Kiezen Voor Senmar Technologie?' : 'Why Choose Senmar Technology?'}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#90dc35] flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-[#A4D65E] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">
                     {language === 'nl' ? 'Gecontroleerde Productie' : 'Controlled Production'}
@@ -360,7 +360,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#90dc35] flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-[#A4D65E] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">
                     {language === 'nl' ? 'Snelle Levering' : 'Fast Delivery'}
@@ -373,7 +373,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#90dc35] flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-[#A4D65E] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">
                     {language === 'nl' ? 'Energie-efficiënt' : 'Energy Efficient'}
@@ -386,7 +386,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#90dc35] flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-[#A4D65E] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">
                     {language === 'nl' ? 'Duurzaam' : 'Sustainable'}
@@ -416,7 +416,7 @@ export default function HowItWorks() {
           </p>
           <a 
             href="/#contact" 
-            className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+            className="inline-block bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? 'Plan een Gratis Consult' : 'Schedule a Free Consultation'}
           </a>

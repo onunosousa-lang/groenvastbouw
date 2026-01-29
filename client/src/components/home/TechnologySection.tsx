@@ -25,7 +25,7 @@ export default function TechnologySection() {
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
                 <div className="bg-[#f0f7e8] p-3 rounded-lg">
-                  <Factory className="text-[#90dc35]" size={24} />
+                  <Factory className="text-[#A4D65E]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_factory')}</h3>
@@ -34,7 +34,7 @@ export default function TechnologySection() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="bg-[#f0f7e8] p-3 rounded-lg">
-                  <Ruler className="text-[#90dc35]" size={24} />
+                  <Ruler className="text-[#A4D65E]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_precision')}</h3>
@@ -43,7 +43,7 @@ export default function TechnologySection() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="bg-[#f0f7e8] p-3 rounded-lg">
-                  <Award className="text-[#90dc35]" size={24} />
+                  <Award className="text-[#A4D65E]" size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{t('senmar_certified')}</h3>
@@ -53,7 +53,7 @@ export default function TechnologySection() {
             </div>
 
             <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="gap-2 border-[#90dc35] text-[#90dc35] hover:bg-green-50">
+              <Button variant="outline" className="gap-2 border-[#A4D65E] text-[#A4D65E] hover:bg-green-50">
                 {t('senmar_link')} <ExternalLink size={16} />
               </Button>
             </a>

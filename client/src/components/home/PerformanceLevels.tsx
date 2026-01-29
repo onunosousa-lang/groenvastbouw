@@ -106,7 +106,7 @@ export default function PerformanceLevels() {
       
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#90dc35 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#A4D65E 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -117,7 +117,7 @@ export default function PerformanceLevels() {
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#90dc35] text-[#2A3439] font-semibold rounded-lg hover:bg-[#6fb820] transition-colors"
+            className="inline-block px-6 py-3 bg-[#A4D65E] text-[#2A3439] font-semibold rounded-lg hover:bg-[#8BC34A] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
@@ -132,18 +132,18 @@ export default function PerformanceLevels() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bg-background rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
-                level.color === 'green' ? 'border-[#90dc35] transform md:-translate-y-4' : 'border-transparent'
+                level.color === 'green' ? 'border-[#A4D65E] transform md:-translate-y-4' : 'border-transparent'
               }`}
             >
               {level.color === 'green' && (
-                <div className="absolute top-0 left-0 right-0 bg-[#90dc35] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
+                <div className="absolute top-0 left-0 right-0 bg-[#A4D65E] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
                   {level.badge}
                 </div>
               )}
               
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#90dc35]' : 
+                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#A4D65E]' : 
                   level.color === 'blue' ? 'bg-[#e8f5f0] text-[#118443]' : 
                   level.color === 'purple' ? 'bg-[#e8f5f0] text-[#118443]' :
                   'bg-gray-200 text-[#2A3439]'
@@ -153,7 +153,7 @@ export default function PerformanceLevels() {
 
                 <h3 className="text-xl font-bold text-foreground mb-1">{level.title}</h3>
                 <div className={`text-lg font-bold mb-3 ${
-                  level.color === 'green' ? 'text-[#90dc35]' : 
+                  level.color === 'green' ? 'text-[#A4D65E]' : 
                   level.color === 'blue' ? 'text-[#118443]' : 
                   level.color === 'purple' ? 'text-[#118443]' :
                   'text-foreground'
@@ -167,7 +167,7 @@ export default function PerformanceLevels() {
                   {level.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-xs text-foreground leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        level.color === 'green' ? 'text-[#90dc35]' : 
+                        level.color === 'green' ? 'text-[#A4D65E]' : 
                         level.color === 'blue' ? 'text-green-500' : 
                         level.color === 'purple' ? 'text-purple-500' :
                         'text-foreground'
@@ -186,7 +186,7 @@ export default function PerformanceLevels() {
         <div className="mt-16 text-center">
           <button
             onClick={openModal}
-            className="px-8 py-4 bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
+            className="px-8 py-4 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
             <ArrowRight className="w-5 h-5" />

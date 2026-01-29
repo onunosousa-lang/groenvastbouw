@@ -119,7 +119,7 @@ export default function OurTechnology() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-foreground py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#A4D65E] hover:text-[#8BC34A] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
@@ -144,8 +144,8 @@ export default function OurTechnology() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {constructionMethods.map((method, idx) => (
-              <div key={idx} className="bg-white rounded-lg border-2 border-gray-200 p-8 hover:border-[#90dc35] transition-colors">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-[#90dc35]">
+              <div key={idx} className="bg-white rounded-lg border-2 border-gray-200 p-8 hover:border-[#A4D65E] transition-colors">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-[#A4D65E]">
                   {language === 'nl' ? method.titleNl : method.titleEn}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -169,19 +169,19 @@ export default function OurTechnology() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#90dc35] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#A4D65E] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#90dc35] transition-colors">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#A4D65E] transition-colors">
                         {language === 'nl' ? tier.titleNl : tier.titleEn}
                       </h3>
-                      <p className="text-lg font-semibold text-[#90dc35]">
+                      <p className="text-lg font-semibold text-[#A4D65E]">
                         {language === 'nl' ? tier.priceNl : tier.priceEn}
                       </p>
                     </div>
                     <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`}>
-                      <ChevronDown className="w-6 h-6 text-[#90dc35]" />
+                      <ChevronDown className="w-6 h-6 text-[#A4D65E]" />
                     </div>
                   </div>
                 </button>
@@ -202,7 +202,7 @@ export default function OurTechnology() {
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {(language === 'nl' ? tier.componentsNl : tier.componentsEn).map((comp, idx) => (
                           <li key={idx} className="flex items-start gap-3 text-gray-700">
-                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#90dc35] flex-shrink-0" />
+                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#A4D65E] flex-shrink-0" />
                             <span className="font-medium">{comp}</span>
                           </li>
                         ))}
@@ -211,10 +211,10 @@ export default function OurTechnology() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <a href="/#contact" className="inline-block bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="/#contact" className="inline-block bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Offerte aanvragen' : 'Request Quote'}
                       </a>
-                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#90dc35] text-[#90dc35] hover:bg-[#90dc35] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#A4D65E] text-[#A4D65E] hover:bg-[#A4D65E] hover:text-[#2A3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Meer info op Senmar' : 'More info on Senmar'}
                       </a>
                     </div>
@@ -227,7 +227,7 @@ export default function OurTechnology() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-gradient-to-br from-[#90dc35] to-[#6fb820]">
+      <section className="py-16 bg-gradient-to-br from-[#A4D65E] to-[#8BC34A]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-[#2A3439] mb-6">
             {language === 'nl' ? 'Klaar om uw project te starten?' : 'Ready to start your project?'}
@@ -237,7 +237,7 @@ export default function OurTechnology() {
               ? 'Neem contact met ons op voor een gratis consult en ontdek welke technische preset het beste bij uw behoeften past.'
               : 'Contact us for a free consultation and discover which technical preset best fits your needs.'}
           </p>
-          <a href="/#contact" className="inline-block bg-[#2A3439] hover:bg-background text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
+          <a href="/#contact" className="inline-block bg-[#2A3439] hover:bg-background text-[#A4D65E] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
             {language === 'nl' ? 'Neem contact op' : 'Get in Touch'}
           </a>
         </div>

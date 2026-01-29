@@ -165,10 +165,10 @@ export default function FAQPage() {
   let questionIndex = 0;
 
   const content = {
-    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> System</>,
+    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] hover:text-[#8BC34A] font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] hover:text-[#8BC34A] font-bold">Senmar</a> System</>,
     intro: language === 'nl' 
-      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
-      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:text-[#6fb820] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
+      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] hover:text-[#8BC34A] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
+      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] hover:text-[#8BC34A] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',
@@ -205,7 +205,7 @@ export default function FAQPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a 
             href="/#contact" 
-            className="inline-flex items-center justify-center gap-2 bg-[#90dc35] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#90dc35] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[#A4D65E] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#A4D65E] transition-colors"
           >
             <Mail size={20} />
             {content.contactUs}
@@ -225,7 +225,7 @@ export default function FAQPage() {
         <div className="space-y-10">
           {faqSections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-[#90dc35]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-[#A4D65E]">
                 {language === 'nl' ? section.title_nl : section.title_en}
               </h2>
               <div className="space-y-3">
@@ -274,7 +274,7 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/#contact" 
-              className="inline-flex items-center justify-center gap-2 bg-[#90dc35] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#90dc35] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#A4D65E] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#A4D65E] transition-colors"
             >
               <Mail size={20} />
               {content.contactUs}

@@ -84,7 +84,7 @@ export default function Navbar() {
               <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
             </a>
             <div>
-              <div className="text-[#90dc35] font-bold text-xl">Groenvastbouw</div>
+              <div className="text-[#A4D65E] font-bold text-xl">Groenvastbouw</div>
               <div className="text-foreground/80 text-xs italic">{t('nav_slogan')}</div>
             </div>
           </div>
@@ -93,30 +93,30 @@ export default function Navbar() {
           <div className="flex lg:hidden flex-1 justify-center items-center gap-2">
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center gap-2">
               <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
-              <span className="text-[#90dc35] font-bold text-lg">Groenvastbouw</span>
+              <span className="text-[#A4D65E] font-bold text-lg">Groenvastbouw</span>
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            <Link href="/our-offer" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/our-offer" className="text-foreground/90 hover:text-[#A4D65E] transition-colors text-sm">
               {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
             </Link>
-            <Link href="/projects" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/projects" className="text-foreground/90 hover:text-[#A4D65E] transition-colors text-sm">
               {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
-            <Link href="/about" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/about" className="text-foreground/90 hover:text-[#A4D65E] transition-colors text-sm">
               {language === 'nl' ? 'Over Ons' : 'About Us'}
             </Link>
-            <Link href="/faq" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/faq" className="text-foreground/90 hover:text-[#A4D65E] transition-colors text-sm">
               FAQ
             </Link>
-            <button onClick={() => openModal()} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
+            <button onClick={() => openModal()} className="bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
               {t('nav_contact')}
             </button>
             <button
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
-              className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-4 py-2 rounded transition-colors text-sm font-semibold"
+              className="bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] px-4 py-2 rounded transition-colors text-sm font-semibold"
             >
               {language === 'nl' ? 'en' : 'nl'}
             </button>
@@ -135,24 +135,24 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-white/10 bg-background">
             <div className="flex flex-col space-y-4 px-4">
-              <Link href="/our-offer" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/our-offer" className="text-foreground/90 hover:text-[#A4D65E]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
               </Link>
-              <Link href="/projects" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/projects" className="text-foreground/90 hover:text-[#A4D65E]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}
               </Link>
-              <Link href="/about" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/about" className="text-foreground/90 hover:text-[#A4D65E]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Over Ons' : 'About Us'}
               </Link>
-              <Link href="/faq" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/faq" className="text-foreground/90 hover:text-[#A4D65E]" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
-              <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
+              <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
                 {t('nav_contact')}
               </button>
               <button
                 onClick={() => { setLanguage(language === 'nl' ? 'en' : 'nl'); setIsMobileMenuOpen(false); }}
-                className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-center font-semibold uppercase"
+                className="bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] px-6 py-2 rounded transition-colors text-center font-semibold uppercase"
               >
                 {language === 'nl' ? 'EN' : 'NL'}
               </button>
