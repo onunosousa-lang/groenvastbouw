@@ -102,7 +102,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 
@@ -144,7 +144,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 
@@ -193,7 +193,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-white rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 

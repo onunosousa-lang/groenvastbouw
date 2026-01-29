@@ -143,7 +143,7 @@ export default function WhatWeOffer() {
 
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-[#dcdcdc] font-sans">
       <SEO title={content.heroTitle} />
       <Navbar />
 
@@ -183,7 +183,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
                   ? 'bg-[#8eb564] text-foreground shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#8eb564]'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8eb564]'
               }`}
             >
               {content.structureDelivery}
@@ -193,7 +193,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
                   ? 'bg-[#8eb564] text-foreground shadow-lg'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#8eb564]'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8eb564]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -212,7 +212,7 @@ export default function WhatWeOffer() {
               transition={{ duration: 0.3 }}
             >
               <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.structureTitle}</h2>
-              <p className="text-xl text-gray-600 mb-12">{content.structureDesc}</p>
+              <p className="text-xl text-[#2a3439] mb-12">{content.structureDesc}</p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-16">
                 <Card className="border-2 border-green-200 bg-green-50">
@@ -223,7 +223,7 @@ export default function WhatWeOffer() {
                     </h3>
                     <ul className="space-y-3">
                       {content.structureIncludesItems.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-gray-700">
+                        <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                           <span className="text-[#8eb564] font-bold mt-1">✓</span>
                           <span>{item}</span>
                         </li>
@@ -235,12 +235,12 @@ export default function WhatWeOffer() {
                 <Card className="border-2 border-gray-300 bg-gray-50">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
-                      <AlertCircle className="text-gray-600" />
+                      <AlertCircle className="text-[#2a3439]" />
                       {content.structureNotIncluded}
                     </h3>
                     <ul className="space-y-3">
                       {content.structureNotIncludedItems.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-gray-700">
+                        <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                           <span className="text-gray-400 font-bold mt-1">−</span>
                           <span>{item}</span>
                         </li>
@@ -257,7 +257,7 @@ export default function WhatWeOffer() {
               transition={{ duration: 0.3 }}
             >
               <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.turnkeyTitle}</h2>
-              <p className="text-xl text-gray-600 mb-12">{content.turnkeyDesc}</p>
+              <p className="text-xl text-[#2a3439] mb-12">{content.turnkeyDesc}</p>
 
               <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
                 <CardContent className="p-8">
@@ -267,7 +267,7 @@ export default function WhatWeOffer() {
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {content.turnkeyIncludesItems.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-700">
+                      <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                         <span className="text-[#8eb564] font-bold mt-1">✓</span>
                         <span>{item}</span>
                       </li>
@@ -281,7 +281,7 @@ export default function WhatWeOffer() {
           {/* MODULAR & MULTIPLE ORDERS */}
           <div className="mt-24 pt-16 border-t-2 border-gray-200">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.modularTitle}</h2>
-            <p className="text-xl text-gray-600 mb-12">{content.modularDesc}</p>
+            <p className="text-xl text-[#2a3439] mb-12">{content.modularDesc}</p>
 
             <div className="grid md:grid-cols-2 gap-8">
               {content.modularBenefits.map((benefit, idx) => (
@@ -295,7 +295,7 @@ export default function WhatWeOffer() {
                   <Card className="border-2 border-green-200 h-full hover:shadow-xl transition-shadow">
                     <CardContent className="p-8">
                       <h3 className="text-2xl font-bold text-[#8eb564] mb-4">{benefit.title}</h3>
-                      <p className="text-gray-700 text-lg">{benefit.desc}</p>
+                      <p className="text-[#2a3439] text-lg">{benefit.desc}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -306,7 +306,7 @@ export default function WhatWeOffer() {
           {/* CTA */}
           <div className="mt-24 pt-16 border-t-2 border-gray-200 text-center">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.ctaTitle}</h2>
-            <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
+            <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}
               className="bg-[#8eb564] hover:bg-[#8eb564] text-foreground px-8 py-6 text-lg font-semibold"

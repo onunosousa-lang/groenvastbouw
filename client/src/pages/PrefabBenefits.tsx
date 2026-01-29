@@ -103,7 +103,7 @@ export default function PrefabBenefits() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-[#dcdcdc] font-sans">
       <SEO 
         title={`${t('prefab_title')} | Groenvastbouw`}
         description={t('prefab_intro')}
@@ -115,14 +115,14 @@ export default function PrefabBenefits() {
           <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-6">
             {t('prefab_title')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#2a3439] max-w-3xl mx-auto">
             {t('prefab_subtitle')}
           </p>
         </div>
       </div>
 
       <div className="py-16 container mx-auto px-4">
-        <div className="max-w-4xl mx-auto mb-16 text-lg text-gray-700 leading-relaxed space-y-6">
+        <div className="max-w-4xl mx-auto mb-16 text-lg text-[#2a3439] leading-relaxed space-y-6">
           <p>{t('prefab_intro')}</p>
           <p>{t('prefab_intro_2')}</p>
         </div>
@@ -138,7 +138,7 @@ export default function PrefabBenefits() {
                   {benefit.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-center text-gray-600">
+              <CardContent className="text-center text-[#2a3439]">
                 {benefit.desc}
               </CardContent>
             </Card>

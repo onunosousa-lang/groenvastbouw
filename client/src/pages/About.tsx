@@ -170,7 +170,7 @@ export default function About() {
                 alt="Senmar CNC Factory Production" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">
+              <div className="absolute bottom-4 left-4 bg-[#dcdcdc]/90 backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">
                 {language === 'nl' ? 'Fabriek Unit 1 | Coja, Portugal' : 'Factory Unit 1 | Coja, Portugal'}
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function About() {
             <Button size="lg" className="bg-[#8eb564] hover:bg-[#6da545] text-foreground px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-foreground hover:bg-white hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
+            <Button size="lg" variant="outline" className="border-[#8eb564] text-foreground hover:bg-[#dcdcdc] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
               {content.exploreSystems}
             </Button>
           </div>

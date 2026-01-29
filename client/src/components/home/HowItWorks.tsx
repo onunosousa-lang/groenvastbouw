@@ -113,7 +113,7 @@ export default function HowItWorks() {
 
         {/* Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="bg-white p-1 rounded-xl inline-flex">
+          <div className="bg-[#dcdcdc] p-1 rounded-xl inline-flex">
             <button
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
@@ -156,10 +156,10 @@ export default function HowItWorks() {
                 <div key={`${activeTab}-step-${index}`} className="relative group">
                   {/* Connecting Line (Desktop) */}
                   {index < (activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-white -z-10" />
+                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#dcdcdc] -z-10" />
                   )}
                   
-                  <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-[#8eb564]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
                       activeTab === 'structure' ? 'bg-green-50 text-[#8eb564]' : 'bg-green-50 text-[#8eb564]'
                     }`}>

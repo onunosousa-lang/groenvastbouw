@@ -113,7 +113,7 @@ export default function OurTechnology() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#dcdcdc]">
       <Navbar />
       
       {/* Hero Section */}
@@ -144,11 +144,11 @@ export default function OurTechnology() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {constructionMethods.map((method, idx) => (
-              <div key={idx} className="bg-white rounded-lg border-2 border-gray-200 p-8 hover:border-[#8eb564] transition-colors">
+              <div key={idx} className="bg-[#dcdcdc] rounded-lg border-2 border-gray-200 p-8 hover:border-[#8eb564] transition-colors">
                 <h3 className="text-2xl font-bold text-[#2a3439] mb-4 text-[#8eb564]">
                   {language === 'nl' ? method.titleNl : method.titleEn}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-[#2a3439] leading-relaxed">
                   {language === 'nl' ? method.descNl : method.descEn}
                 </p>
               </div>
@@ -158,7 +158,7 @@ export default function OurTechnology() {
       </section>
 
       {/* Technical Tiers */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#dcdcdc]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Technische Presets' : 'Our Technical Presets'}
@@ -169,7 +169,7 @@ export default function OurTechnology() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#dcdcdc] border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
@@ -190,7 +190,7 @@ export default function OurTechnology() {
                 {expandedTier === tier.id && (
                   <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
                     {/* Description */}
-                    <p className="text-gray-700 text-lg leading-relaxed">
+                    <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}
                     </p>
 
@@ -201,7 +201,7 @@ export default function OurTechnology() {
                       </h4>
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {(language === 'nl' ? tier.componentsNl : tier.componentsEn).map((comp, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-gray-700">
+                          <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                             <span className="mt-1.5 w-3 h-3 rounded-full bg-[#8eb564] flex-shrink-0" />
                             <span className="font-medium">{comp}</span>
                           </li>

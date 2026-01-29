@@ -8,7 +8,7 @@ export default function WhyUs() {
   const { language } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-[#dcdcdc] font-sans">
       <SEO title={language === 'nl' ? "Waarom Groenvastbouw - Technische & Economische Analyse" : "Why Groenvastbouw - Technical & Economic Analysis"} />
       <Navbar />
       
@@ -44,7 +44,7 @@ export default function WhyUs() {
               <h2 className="text-4xl font-bold text-[#2a3439] mb-6">
                 {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></>}
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-[#2a3439] leading-relaxed mb-6">
                 {language === 'nl' 
                   ? <>Groenvastbouw is partner van <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> in Nederland. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a>, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> Portugese vakmanschap met geavanceerde CNC-automatisering.</>
                   : <>Groenvastbouw is a partner of <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> in the Netherlands. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a>, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> combines Portuguese craftsmanship with advanced CNC automation.</>}
@@ -67,7 +67,7 @@ export default function WhyUs() {
       </section>
 
       {/* Main Analytical Content */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#dcdcdc]">
         <div className="container mx-auto px-4 max-w-4xl">
           
           {/* 1. ECONOMIC INCENTIVE */}
@@ -79,7 +79,7 @@ export default function WhyUs() {
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
               </div>
             </div>
-            <div className="prose prose-lg text-gray-600 leading-relaxed">
+            <div className="prose prose-lg text-[#2a3439] leading-relaxed">
               <p className="mb-8">
                 {language === 'nl' 
                   ? 'De Nederlandse bouwsector kampt met een structureel tekort aan vakmensen en stijgende materiaalkosten. Traditionele bouw op locatie is hierdoor onvoorspelbaar en duur geworden. Onze geïndustrialiseerde aanpak biedt de enige schaalbare oplossing.'
@@ -113,7 +113,7 @@ export default function WhyUs() {
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
               </div>
             </div>
-            <div className="prose prose-lg text-gray-600 leading-relaxed">
+            <div className="prose prose-lg text-[#2a3439] leading-relaxed">
               <p className="mb-8">
                 {language === 'nl'
                   ? 'Een bouwplaats is een chaotische omgeving blootgesteld aan regen en wind. Een fabriek is een gecontroleerd laboratorium. Dit fundamentele verschil leidt tot meetbaar betere prestaties van de gebouwschil.'
@@ -127,21 +127,21 @@ export default function WhyUs() {
 
               <ul className="space-y-6 list-none pl-0 mt-8">
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">1mm Tolerantie</strong>
                     {language === 'nl' ? 'CNC-machines frezen het hout met een precisie die op de bouwplaats onmogelijk is. Dit garandeert naadloze aansluitingen en superieure luchtdichtheid.' : 'CNC machines mill the timber with a precision impossible on a construction site. This guarantees seamless connections and superior airtightness.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Thermal Bridge Free</strong>
                     {language === 'nl' ? 'Doordat isolatie machinaal en onder ideale omstandigheden wordt aangebracht, ontstaan er geen "gaps" of koudebruggen. Dit is essentieel voor het behalen van de Passiefhuis-standaard.' : 'Because insulation is applied mechanically under ideal conditions, there are no gaps or thermal bridges. This is essential for achieving the Passive House standard.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Geen Bouwvocht</strong>
                     {language === 'nl' ? 'Traditionele bouw sluit duizenden liters water in (beton, regen). Onze droogbouw methode elimineert schimmelrisico en zorgt voor een direct gezond binnenklimaat.' : 'Traditional construction traps thousands of liters of water (concrete, rain). Our dry construction method eliminates mold risk and ensures an immediately healthy indoor climate.'}
@@ -166,7 +166,7 @@ export default function WhyUs() {
             <div className="bg-card p-10 rounded-2xl text-foreground mb-8">
               <h3 className="text-2xl font-bold mb-6">{language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}</h3>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white/10 p-6 rounded-lg border border-white/20">
+                <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8eb564]/20">
                   <div className="text-3xl font-bold text-[#8eb564] mb-2">R-5.7</div>
                   <h4 className="font-bold mb-2">Optimal</h4>
                   <p className="text-sm text-gray-300">
@@ -183,7 +183,7 @@ export default function WhyUs() {
                     {language === 'nl' ? 'Meest Gekozen' : 'Most Popular'}
                   </div>
                 </div>
-                <div className="bg-white/10 p-6 rounded-lg border border-white/20">
+                <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8eb564]/20">
                   <div className="text-3xl font-bold text-[#8eb564] mb-2">R-10.5</div>
                   <h4 className="font-bold mb-2">Super Passive</h4>
                   <p className="text-sm text-gray-300">
@@ -194,10 +194,10 @@ export default function WhyUs() {
             </div>
 
             <div className="bg-green-50 border-l-4 border-[#8eb564] p-6 rounded-r-lg">
-              <p className="text-gray-800 font-semibold mb-2">
+              <p className="text-[#2a3439] font-semibold mb-2">
                 💡 {language === 'nl' ? 'Besparingen over de levensduur' : 'Lifetime Savings'}
               </p>
-              <p className="text-gray-700">
+              <p className="text-[#2a3439]">
                 {language === 'nl' 
                   ? 'Hoewel we geen exacte prijzen tonen, levert elke upgrade in isolatieniveau een exponentieel hogere besparing op uw energierekening op gedurende de levensduur van het gebouw (30+ jaar).'
                   : 'While we do not show exact prices, each upgrade in insulation level provides an exponentially higher saving on your energy bill over the lifetime of the building (30+ years).'}
@@ -230,15 +230,15 @@ export default function WhyUs() {
                    : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
-                 <div className="bg-white/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
                    <span className="block font-bold text-green-900 mb-1">Stikstof reductie</span>
                    <span className="text-sm text-green-800">{language === 'nl' ? '80% minder transportbewegingen naar de bouwplaats.' : '80% fewer transport movements to the site.'}</span>
                  </div>
-                 <div className="bg-white/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
                    <span className="block font-bold text-green-900 mb-1">Circulair</span>
                    <span className="text-sm text-green-800">{language === 'nl' ? 'Materialen zijn demontabel en recyclebaar.' : 'Materials are demountable and recyclable.'}</span>
                  </div>
-                 <div className="bg-white/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
                    <span className="block font-bold text-green-900 mb-1">FSC Gecertificeerd</span>
                    <span className="text-sm text-green-800">{language === 'nl' ? '100% duurzaam geproduceerd hout.' : '100% sustainably sourced timber.'}</span>
                  </div>
@@ -262,7 +262,7 @@ export default function WhyUs() {
           </p>
           <a 
             href="#contact" 
-            className="inline-block bg-white text-[#8eb564] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-block bg-[#dcdcdc] text-[#8eb564] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
           </a>

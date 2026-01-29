@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-gray-300">
+    <div className="min-h-screen bg-[#dcdcdc] text-[#2a3439]">
       {/* Hero Section */}
       <section className="relative py-20">
         <div className="container mx-auto px-4 max-w-4xl">

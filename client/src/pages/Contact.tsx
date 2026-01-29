@@ -14,7 +14,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#dcdcdc]">
       {/* Header */}
       <div className="bg-gradient-to-r from-[#2a3439] to-[#1a1f23] text-foreground py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -52,7 +52,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
                 {language === 'nl' ? 'Contactgegevens' : 'Contact Information'}
               </h3>
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-[#2a3439]">
                 <div>
                   <p className="font-semibold text-[#2a3439]">{language === 'nl' ? 'Email' : 'Email'}</p>
                   <a href="mailto:contact@groenvastbouw.nl" className="text-[#8eb564] hover:text-[#8eb564]">
@@ -71,7 +71,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
                 {language === 'nl' ? 'Wat u kunt verwachten' : 'What to Expect'}
               </h3>
-              <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-[#2a3439]">
                 <li className="flex items-start gap-3">
                   <span className="text-[#8eb564] font-bold mt-1">✓</span>
                   <span>{language === 'nl' ? 'Snelle respons op uw aanvraag' : 'Quick response to your inquiry'}</span>

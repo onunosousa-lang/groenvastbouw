@@ -92,7 +92,7 @@ export default function Solutions() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#dcdcdc]">
       <Navbar />
       
       {/* Hero Section */}
@@ -123,7 +123,7 @@ export default function Solutions() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#dcdcdc] border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
@@ -144,7 +144,7 @@ export default function Solutions() {
                 {expandedTier === tier.id && (
                   <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
                     {/* Description */}
-                    <p className="text-gray-700 text-lg leading-relaxed">
+                    <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}
                     </p>
 
@@ -155,7 +155,7 @@ export default function Solutions() {
                       </h4>
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-gray-700">
+                          <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                             <span className="mt-1.5 w-3 h-3 rounded-full bg-[#8eb564] flex-shrink-0" />
                             <span className="font-medium">{spec}</span>
                           </li>
@@ -183,12 +183,12 @@ export default function Solutions() {
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Informatie over prijzen' : 'Pricing Information'}
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-[#2a3439] leading-relaxed mb-4">
               {language === 'nl'
                 ? 'Alle prijzen zijn startprijzen voor de basisstructuur, exclusief transport en BTW. Turn-key oplevering inclusief fundering, afwerking en installaties is beschikbaar.'
                 : 'All prices are starting prices for the basic structure, excluding transport and VAT. Turn-key delivery including foundation, finishing, and installations is available.'}
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-[#2a3439] leading-relaxed">
               {language === 'nl'
                 ? 'Neem contact met ons op voor een gedetailleerde offerte op maat voor uw project.'
                 : 'Contact us for a detailed custom quote for your project.'}
