@@ -4,7 +4,7 @@
  * Primary (brand): #0F766E — deep teal/green, ecological but serious
  * Light background: #F4F5F3 — warm off-white, not hospital white
  * Surface / cards: #FFFFFF
- * Dark text: #1F2933 — charcoal, more elegant than black
+ * Dark text: #2a3439 — charcoal, more elegant than black
  * Accent (daring): #E76F51 — muted terracotta/coral, architectural, Mediterranean vibe
  * Soft secondary: #CBD5C0 — desaturated sage for sections/dividers
  */
@@ -20,7 +20,7 @@ export const colors = {
     white: '#FFFFFF',
   },
   text: {
-    DEFAULT: '#1F2933',
+    DEFAULT: '#2a3439',
     light: '#52606D',
     lighter: '#7B8794',
   },
@@ -52,7 +52,7 @@ export const tw = {
   },
   secondary: {
     bg: 'bg-[#CBD5C0]',
-    text: 'text-[#1F2933]',
+    text: 'text-[#2a3439]',
   },
   background: {
     light: 'bg-[#F4F5F3]',

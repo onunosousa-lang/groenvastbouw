@@ -196,7 +196,7 @@ export default function FAQPage() {
           <h1 className="text-4xl font-bold text-[#2a3439] mb-4">
             {content.title}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#2a3439] max-w-3xl mx-auto">
             {content.intro}
           </p>
         </div>
@@ -250,7 +250,7 @@ export default function FAQPage() {
                       </button>
                       {openFaq === currentIndex && (
                         <div className="px-5 pb-5 border-t border-gray-100">
-                          <p className="text-gray-600 leading-relaxed pt-4">
+                          <p className="text-[#2a3439] leading-relaxed pt-4">
                             {language === 'nl' ? faq.answer_nl : faq.answer_en}
                           </p>
                         </div>
@@ -268,7 +268,7 @@ export default function FAQPage() {
           <h2 className="text-2xl font-bold text-[#2a3439] mb-4">
             {content.readyTitle}
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-[#2a3439] mb-6">
             {content.readyText}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

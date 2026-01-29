@@ -154,7 +154,7 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Contact Section */}
-          <div className="mt-12 p-6 bg-card rounded-lg border border-gray-700">
+          <div className="mt-12 p-6 bg-card rounded-lg border border-[#2a3439]">
             <h3 className="text-xl font-bold text-foreground mb-4">
               {language === 'nl' ? 'Vragen over uw privacy?' : 'Questions about your privacy?'}
             </h3>

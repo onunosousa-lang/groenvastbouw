@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-700 pt-8">
+        <div className="border-t border-[#2a3439] pt-8">
           <p className="text-center text-gray-400 text-sm">
             {currentContent.rights}
           </p>

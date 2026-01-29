@@ -87,7 +87,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
               <h2 className="text-2xl font-bold text-[#2a3439]">
                 {language === 'nl' ? 'Contacteer Ons' : 'Contact Us'}
               </h2>
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-[#2a3439] mt-1">
                 {language === 'nl' ? 'Vul het formulier in en we nemen snel contact op.' : 'Fill out the form and we\'ll get back to you soon.'}
               </p>
             </div>
@@ -96,7 +96,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
               className="p-1 hover:bg-gray-100 rounded-lg transition-colors flex-shrink-0 ml-4"
               aria-label="Close"
             >
-              <X className="w-5 h-5 text-gray-600" />
+              <X className="w-5 h-5 text-[#2a3439]" />
             </button>
           </div>
 
@@ -217,7 +217,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
 
           {/* Footer Info */}
           <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 rounded-b-2xl">
-            <p className="text-xs text-gray-600 text-center">
+            <p className="text-xs text-[#2a3439] text-center">
               {language === 'nl' 
                 ? '📧 info@groenvastbouw.nl' 
                 : '📧 info@groenvastbouw.nl'}

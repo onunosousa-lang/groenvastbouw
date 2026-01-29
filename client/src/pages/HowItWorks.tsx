@@ -200,7 +200,7 @@ export default function HowItWorks() {
       {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+          <p className="text-lg text-[#2a3439] leading-relaxed mb-8">
             {language === 'nl' ? content.hero.introNl : content.hero.introEn}
           </p>
 
@@ -209,7 +209,7 @@ export default function HowItWorks() {
               <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.panelizedTitleNl : content.hero.panelizedTitleEn}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-[#2a3439] leading-relaxed">
                 {language === 'nl' ? content.hero.panelizedDescNl : content.hero.panelizedDescEn}
               </p>
             </div>
@@ -218,13 +218,13 @@ export default function HowItWorks() {
               <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.modularTitleNl : content.hero.modularTitleEn}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-[#2a3439] leading-relaxed">
                 {language === 'nl' ? content.hero.modularDescNl : content.hero.modularDescEn}
               </p>
             </div>
           </div>
 
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-[#2a3439] leading-relaxed">
             {language === 'nl' ? content.hero.closingNl : content.hero.closingEn}
           </p>
         </div>
@@ -243,7 +243,7 @@ export default function HowItWorks() {
                   className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeTier === tier.id
                       ? 'bg-[#8eb564] text-[#2a3439] shadow-md'
-                      : 'text-gray-600 hover:text-[#2a3439] hover:bg-gray-50'
+                      : 'text-[#2a3439] hover:text-[#2a3439] hover:bg-gray-50'
                   }`}
                 >
                   {language === 'nl' ? tier.titleNl : tier.titleEn}
@@ -260,10 +260,10 @@ export default function HowItWorks() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#8eb564] mb-2">
                   {language === 'nl' ? currentTier.titleNl : currentTier.titleEn}
                 </h2>
-                <p className="text-2xl font-semibold text-gray-700 mb-4">
+                <p className="text-2xl font-semibold text-[#2a3439] mb-4">
                   {language === 'nl' ? currentTier.priceNl : currentTier.priceEn}
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-[#2a3439] leading-relaxed">
                   {language === 'nl' ? currentTier.descNl : currentTier.descEn}
                 </p>
               </div>
@@ -277,7 +277,7 @@ export default function HowItWorks() {
                     className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                       activeView === view
                         ? 'bg-[#8eb564] text-[#2a3439] shadow-md'
-                        : 'bg-white text-gray-600 hover:text-[#2a3439] hover:shadow-sm'
+                        : 'bg-white text-[#2a3439] hover:text-[#2a3439] hover:shadow-sm'
                     }`}
                   >
                     {view === 'wall' && (language === 'nl' ? 'Wand' : 'Wall')}
@@ -303,7 +303,7 @@ export default function HowItWorks() {
                           <h4 className="font-bold text-[#2a3439] mb-1">
                             {language === 'nl' ? component.labelNl : component.labelEn}
                           </h4>
-                          <p className="text-sm text-gray-600">
+                          <p className="text-sm text-[#2a3439]">
                             {language === 'nl' ? component.specNl : component.specEn}
                           </p>
                         </div>
@@ -352,7 +352,7 @@ export default function HowItWorks() {
                   <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Gecontroleerde Productie' : 'Controlled Production'}
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-[#2a3439] text-sm">
                     {language === 'nl' 
                       ? 'Alle structuren worden geproduceerd in een gecontroleerde fabrieksomgeving voor maximale kwaliteit.' 
                       : 'All structures are produced in a controlled factory environment for maximum quality.'}
@@ -365,7 +365,7 @@ export default function HowItWorks() {
                   <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Snelle Levering' : 'Fast Delivery'}
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-[#2a3439] text-sm">
                     {language === 'nl' 
                       ? 'Van ontwerp tot geleverde structuur in slechts 3 maanden.' 
                       : 'From design to delivered structure in just 3 months.'}
@@ -378,7 +378,7 @@ export default function HowItWorks() {
                   <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Energie-efficiënt' : 'Energy Efficient'}
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-[#2a3439] text-sm">
                     {language === 'nl' 
                       ? 'Superieure isolatie resulteert in lagere energiekosten en een comfortabeler binnenklimaat.' 
                       : 'Superior insulation results in lower energy costs and a more comfortable indoor climate.'}
@@ -391,7 +391,7 @@ export default function HowItWorks() {
                   <h4 className="font-bold text-[#2a3439] mb-1">
                     {language === 'nl' ? 'Duurzaam' : 'Sustainable'}
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-[#2a3439] text-sm">
                     {language === 'nl' 
                       ? 'Geprefabriceerde constructie vermindert afval en heeft een lagere ecologische voetafdruk.' 
                       : 'Prefabricated construction reduces waste and has a lower ecological footprint.'}
@@ -409,7 +409,7 @@ export default function HowItWorks() {
           <h3 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? 'Klaar om te beginnen?' : 'Ready to get started?'}
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-[#2a3439] mb-8 max-w-2xl mx-auto">
             {language === 'nl'
               ? 'Neem contact met ons op voor een gedetailleerde offerte op maat voor uw project.'
               : 'Contact us for a detailed custom quote for your project.'}

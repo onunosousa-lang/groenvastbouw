@@ -44,7 +44,7 @@ export default function WhyUs() {
               <h2 className="text-4xl font-bold text-[#2a3439] mb-6">
                 {language === 'nl' ? <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></> : <>Groenvastbouw × <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564]">Senmar</a></>}
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-[#2a3439] leading-relaxed mb-6">
                 {language === 'nl' 
                   ? <>Groenvastbouw is partner van <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> in Nederland. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a>, gevestigd in Coja, Portugal, is een pionier in geprefabriceerde modulaire bouwtechnologie. Met een state-of-the-art fabriek van 4.000 m² en een jaarlijkse productiecapaciteit van 19.000 m², combineert <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> Portugese vakmanschap met geavanceerde CNC-automatisering.</>
                   : <>Groenvastbouw is a partner of <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> in the Netherlands. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a>, based in Coja, Portugal, is a pioneer in prefabricated modular construction technology. With a state-of-the-art 4,000 m² factory and an annual production capacity of 19,000 m², <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-[#8eb564] font-semibold">Senmar</a> combines Portuguese craftsmanship with advanced CNC automation.</>}
@@ -79,7 +79,7 @@ export default function WhyUs() {
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
               </div>
             </div>
-            <div className="prose prose-lg text-gray-600 leading-relaxed">
+            <div className="prose prose-lg text-[#2a3439] leading-relaxed">
               <p className="mb-8">
                 {language === 'nl' 
                   ? 'De Nederlandse bouwsector kampt met een structureel tekort aan vakmensen en stijgende materiaalkosten. Traditionele bouw op locatie is hierdoor onvoorspelbaar en duur geworden. Onze geïndustrialiseerde aanpak biedt de enige schaalbare oplossing.'
@@ -113,7 +113,7 @@ export default function WhyUs() {
                 <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
               </div>
             </div>
-            <div className="prose prose-lg text-gray-600 leading-relaxed">
+            <div className="prose prose-lg text-[#2a3439] leading-relaxed">
               <p className="mb-8">
                 {language === 'nl'
                   ? 'Een bouwplaats is een chaotische omgeving blootgesteld aan regen en wind. Een fabriek is een gecontroleerd laboratorium. Dit fundamentele verschil leidt tot meetbaar betere prestaties van de gebouwschil.'
@@ -127,21 +127,21 @@ export default function WhyUs() {
 
               <ul className="space-y-6 list-none pl-0 mt-8">
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">1mm Tolerantie</strong>
                     {language === 'nl' ? 'CNC-machines frezen het hout met een precisie die op de bouwplaats onmogelijk is. Dit garandeert naadloze aansluitingen en superieure luchtdichtheid.' : 'CNC machines mill the timber with a precision impossible on a construction site. This guarantees seamless connections and superior airtightness.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Thermal Bridge Free</strong>
                     {language === 'nl' ? 'Doordat isolatie machinaal en onder ideale omstandigheden wordt aangebracht, ontstaan er geen "gaps" of koudebruggen. Dit is essentieel voor het behalen van de Passiefhuis-standaard.' : 'Because insulation is applied mechanically under ideal conditions, there are no gaps or thermal bridges. This is essential for achieving the Passive House standard.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-gray-700" size={20} /></div>
+                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Geen Bouwvocht</strong>
                     {language === 'nl' ? 'Traditionele bouw sluit duizenden liters water in (beton, regen). Onze droogbouw methode elimineert schimmelrisico en zorgt voor een direct gezond binnenklimaat.' : 'Traditional construction traps thousands of liters of water (concrete, rain). Our dry construction method eliminates mold risk and ensures an immediately healthy indoor climate.'}
@@ -194,10 +194,10 @@ export default function WhyUs() {
             </div>
 
             <div className="bg-green-50 border-l-4 border-[#8eb564] p-6 rounded-r-lg">
-              <p className="text-gray-800 font-semibold mb-2">
+              <p className="text-[#2a3439] font-semibold mb-2">
                 💡 {language === 'nl' ? 'Besparingen over de levensduur' : 'Lifetime Savings'}
               </p>
-              <p className="text-gray-700">
+              <p className="text-[#2a3439]">
                 {language === 'nl' 
                   ? 'Hoewel we geen exacte prijzen tonen, levert elke upgrade in isolatieniveau een exponentieel hogere besparing op uw energierekening op gedurende de levensduur van het gebouw (30+ jaar).'
                   : 'While we do not show exact prices, each upgrade in insulation level provides an exponentially higher saving on your energy bill over the lifetime of the building (30+ years).'}

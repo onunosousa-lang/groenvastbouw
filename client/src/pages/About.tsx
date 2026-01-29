@@ -102,7 +102,7 @@ export default function About() {
             className="bg-card rounded-2xl shadow-xl overflow-hidden"
           >
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="flex items-center justify-center p-8 bg-gray-700">
+              <div className="flex items-center justify-center p-8 bg-[#2a3439]">
                 <img
                   src="/nuno-sousa-profile.jpg"
                   alt="Nuno Machado e Sousa"
@@ -198,19 +198,19 @@ export default function About() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#2a3439]">
               <Hammer className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.bootsTitle}</h3>
               <p className="text-gray-300">{content.bootsDesc}</p>
             </div>
             
-            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#2a3439]">
               <ShieldCheck className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.certifiedTitle}</h3>
               <p className="text-gray-300">{content.certifiedDesc}</p>
             </div>
             
-            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#2a3439]">
               <Globe className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.multilingualTitle}</h3>
               <p className="text-gray-300">{content.multilingualDesc}</p>
