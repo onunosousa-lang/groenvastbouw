@@ -99,10 +99,10 @@ export default function TechnicalSolutions() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
           </h2>
-          <p className="text-lg text-white font-medium">
+          <p className="text-lg text-foreground font-medium">
             {language === 'nl'
               ? 'Vier presets. Eén doel: maximale efficiëntie en kwaliteit.'
               : 'Four presets. One goal: maximum efficiency and quality.'}
@@ -121,11 +121,11 @@ export default function TechnicalSolutions() {
             >
               <button
                 onClick={() => toggleTier(tier.id)}
-                className="w-full bg-gray-900 border-2 border-gray-200 rounded-lg p-6 hover:border-[#90dc35] transition-all duration-300 text-left group"
+                className="w-full bg-background border-2 border-gray-200 rounded-lg p-6 hover:border-[#90dc35] transition-all duration-300 text-left group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#90dc35] transition-colors">
+                    <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-[#90dc35] transition-colors">
                       {language === 'nl' ? tier.titleNl : tier.titleEn}
                     </h3>
 
@@ -148,18 +148,18 @@ export default function TechnicalSolutions() {
                   >
                     <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-6 space-y-4">
                       {/* Description */}
-                      <p className="text-white leading-relaxed">
+                      <p className="text-foreground leading-relaxed">
                         {language === 'nl' ? tier.descNl : tier.descEn}
                       </p>
 
                       {/* Specifications */}
                       <div>
-                        <h4 className="font-semibold text-white mb-3">
+                        <h4 className="font-semibold text-foreground mb-3">
                           {language === 'nl' ? 'Kenmerken:' : 'Features:'}
                         </h4>
                         <ul className="space-y-2">
                           {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-white">
+                            <li key={idx} className="flex items-start gap-3 text-foreground">
                               <span className="mt-1.5 w-2 h-2 rounded-full bg-[#90dc35] flex-shrink-0" />
                               <span>{spec}</span>
                             </li>

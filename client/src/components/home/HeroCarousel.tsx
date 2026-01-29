@@ -225,12 +225,13 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                   alt={`Groenvastbouw Slide ${slide.id}`}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 via-[#1a2e1a]/60 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/50 to-transparent z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#2A3439]/75 via-[#2A3439]/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#F8F8F7] via-[#F8F8F7]/60 to-transparent z-10"></div>
               </div>
 
               {/* Content */}
-              <div className="container mx-auto px-4 z-10 pt-32 pb-32 relative h-full flex items-center">
+              <div className="container mx-auto px-4 z-10 relative h-full flex items-center">
+                <div className="w-full pt-24 pb-20">
                 <div className="max-w-3xl lg:mx-0 mx-auto">
                   {/* Headline */}
                   <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#90dc35] mb-6 drop-shadow-2xl leading-tight">
@@ -243,7 +244,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                   </p>
 
                   {/* Description */}
-                  <p className="text-base md:text-lg text-white mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
+                  <p className="text-base md:text-lg text-white/90 mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
                     {slide.description}
                   </p>
 
@@ -277,6 +278,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                     </Button>
                   </div>
                 </div>
+                </div>
               </div>
             </div>
           ))}
@@ -302,7 +304,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
       {/* Scroll Indicator */}
       <button 
         onClick={() => scrollToSection('offer')} 
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white/80 hover:text-white transition-colors animate-bounce z-20"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-[#2A3439]/80 hover:text-[#2A3439] transition-colors animate-bounce z-20"
       >
         <ChevronDown size={40} />
       </button>

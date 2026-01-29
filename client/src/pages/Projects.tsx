@@ -71,7 +71,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         {/* Background Image with Transparency */}
@@ -79,7 +79,7 @@ export default function Projects() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
         />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           {/* Back Button */}
@@ -91,7 +91,7 @@ export default function Projects() {
           </Link>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{content.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{content.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
             {content.subtitle}
           </p>
@@ -105,11 +105,11 @@ export default function Projects() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(/project-horta-spanje-passief-huis-voltooid.jpg)' }}
         />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-3">{content.completedTitle}</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-3">{content.completedTitle}</h2>
             <p className="text-lg text-gray-300">
               {content.completedDesc.split('Senmar')[0]}
               <a 
@@ -139,11 +139,11 @@ export default function Projects() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(/project-rav-zweden-constructie-fase-1.jpg)' }}
         />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-3">{content.constructionTitle}</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-3">{content.constructionTitle}</h2>
             <p className="text-lg text-gray-300">{content.constructionDesc}</p>
           </div>
           

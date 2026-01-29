@@ -72,12 +72,12 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </h1>
 
           {/* Primary Subheadline */}
-          <p className="text-lg md:text-xl text-white mb-6 drop-shadow-lg max-w-2xl font-semibold leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground mb-6 drop-shadow-lg max-w-2xl font-semibold leading-relaxed">
             {content.subheadline}
           </p>
 
           {/* Description Paragraph */}
-          <p className="text-base md:text-lg text-white mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-foreground mb-8 drop-shadow-lg max-w-2xl leading-relaxed">
             {content.description}
           </p>
 
@@ -86,7 +86,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             {content.points.map((point, index) => (
               <div key={index} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-1" />
-                <span className="text-white text-base md:text-lg font-medium">
+                <span className="text-foreground text-base md:text-lg font-medium">
                   {point}
                 </span>
               </div>
@@ -112,7 +112,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </div>
 
           {/* Footnotes */}
-          <div className="space-y-2 text-white/70 text-xs md:text-sm">
+          <div className="space-y-2 text-foreground/70 text-xs md:text-sm">
             {content.footnotes.map((note, index) => (
               <p key={index}>{note}</p>
             ))}
@@ -123,7 +123,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       {/* Scroll Indicator */}
       <button 
         onClick={() => scrollToSection('offer')} 
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white/80 hover:text-white transition-colors animate-bounce z-20"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-foreground/80 hover:text-foreground transition-colors animate-bounce z-20"
       >
         <ChevronDown size={40} />
       </button>

@@ -117,7 +117,7 @@ export default function OurTechnology() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
+      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-foreground py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
@@ -237,7 +237,7 @@ export default function OurTechnology() {
               ? 'Neem contact met ons op voor een gratis consult en ontdek welke technische preset het beste bij uw behoeften past.'
               : 'Contact us for a free consultation and discover which technical preset best fits your needs.'}
           </p>
-          <a href="/#contact" className="inline-block bg-[#2A3439] hover:bg-black text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
+          <a href="/#contact" className="inline-block bg-[#2A3439] hover:bg-background text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
             {language === 'nl' ? 'Neem contact op' : 'Get in Touch'}
           </a>
         </div>

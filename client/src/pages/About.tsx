@@ -63,13 +63,13 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 font-sans text-white">
+    <div className="min-h-screen bg-background font-sans text-foreground">
       {/* 1. HERO SECTION */}
-      <section className="pt-32 pb-16 px-4 bg-[#2A3439] text-white">
+      <section className="pt-32 pb-16 px-4 bg-[#2A3439] text-foreground">
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-[#90dc35] hover:text-white font-semibold transition-colors group"
+            className="inline-flex items-center text-[#90dc35] hover:text-foreground font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -92,14 +92,14 @@ export default function About() {
       </section>
 
       {/* 2. FOUNDER STORY */}
-      <section className="py-20 px-4 bg-gray-900">
+      <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-800 rounded-2xl shadow-xl overflow-hidden"
+            className="bg-card rounded-2xl shadow-xl overflow-hidden"
           >
             <div className="grid md:grid-cols-2 gap-8">
               <div className="flex items-center justify-center p-8 bg-gray-700">
@@ -113,7 +113,7 @@ export default function About() {
                 <div className="inline-block px-3 py-1 bg-[#90dc35]/10 text-[#90dc35] rounded-full text-sm font-bold mb-6 w-fit">
                   {content.founderTag}
                 </div>
-                <h2 className="text-3xl font-bold mb-4 text-white">{content.founderTitle}</h2>
+                <h2 className="text-3xl font-bold mb-4 text-foreground">{content.founderTitle}</h2>
                 <h3 className="text-xl text-gray-300 mb-6">{content.founderName}</h3>
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -128,7 +128,7 @@ export default function About() {
       </section>
 
       {/* 3. SENMAR PARTNERSHIP */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20 bg-card">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">{content.partnershipTitle}</h2>
@@ -144,7 +144,7 @@ export default function About() {
                   <Zap className="text-[#90dc35]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white">{content.engineTitle}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">{content.engineTitle}</h3>
                   <p className="text-gray-300 leading-relaxed">
                     {language === 'nl' 
                       ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#90dc35] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
@@ -159,7 +159,7 @@ export default function About() {
                   <HardHat className="text-[#2A3439]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white">{content.driverTitle}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">{content.driverTitle}</h3>
                   <p className="text-gray-300 leading-relaxed">{content.driverDesc}</p>
                 </div>
               </div>
@@ -179,9 +179,9 @@ export default function About() {
       </section>
 
       {/* 4. MISSION */}
-      <section className="py-20 bg-[#90dc35] text-white text-center">
+      <section className="py-20 bg-[#90dc35] text-foreground text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <Leaf className="mx-auto mb-6 w-16 h-16 text-white/80" />
+          <Leaf className="mx-auto mb-6 w-16 h-16 text-foreground/80" />
           <h2 className="text-3xl md:text-5xl font-bold mb-8">{content.missionTitle}</h2>
           <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
             {content.missionText}
@@ -190,7 +190,7 @@ export default function About() {
       </section>
 
       {/* 5. WHY US */}
-      <section className="py-20 px-4 bg-gray-900">
+      <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">{content.whyUsTitle}</h2>
@@ -198,21 +198,21 @@ export default function About() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Hammer className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-white">{content.bootsTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-foreground">{content.bootsTitle}</h3>
               <p className="text-gray-300">{content.bootsDesc}</p>
             </div>
             
-            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <ShieldCheck className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-white">{content.certifiedTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-foreground">{content.certifiedTitle}</h3>
               <p className="text-gray-300">{content.certifiedDesc}</p>
             </div>
             
-            <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
+            <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Globe className="text-[#90dc35] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-white">{content.multilingualTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-foreground">{content.multilingualTitle}</h3>
               <p className="text-gray-300">{content.multilingualDesc}</p>
             </div>
           </div>
@@ -220,15 +220,15 @@ export default function About() {
       </section>
 
       {/* 6. CTA */}
-      <section id="contact-cta" className="py-20 bg-[#2A3439] text-white text-center">
+      <section id="contact-cta" className="py-20 bg-[#2A3439] text-foreground text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
           <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#90dc35] hover:bg-[#6da545] text-white px-8 py-6 text-lg" onClick={openModal}>
+            <Button size="lg" className="bg-[#90dc35] hover:bg-[#6da545] text-foreground px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#2A3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
+            <Button size="lg" variant="outline" className="border-white text-foreground hover:bg-white hover:text-[#2A3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
               {content.exploreSystems}
             </Button>
           </div>

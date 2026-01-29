@@ -16,10 +16,10 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#2A3439] to-[#1a1f23] text-white py-16 px-4">
+      <div className="bg-gradient-to-r from-[#2A3439] to-[#1a1f23] text-foreground py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp}>
-            <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-white mb-6 transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-foreground mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4" />
               {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
             </Link>

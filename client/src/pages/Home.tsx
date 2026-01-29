@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 font-sans">
+    <div className="min-h-screen bg-background font-sans">
       <SEO />
       <Navbar />
       <HeroCarousel scrollToSection={scrollToSection} />

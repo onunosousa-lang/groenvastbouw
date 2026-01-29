@@ -103,12 +103,12 @@ export default function HowItWorks() {
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/fabriek-productie-prefab-wand-constructie.jpg)' }}
       />
-      <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-          <p className="text-lg text-white font-medium leading-relaxed">{content.subheadline}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
+          <p className="text-lg text-foreground font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Tabs */}
@@ -118,8 +118,8 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
-                  : 'text-white hover:text-white'
+                  ? 'bg-background text-[#90dc35] shadow-sm' 
+                  : 'text-foreground hover:text-foreground'
               }`}
             >
               {content.tabs.structure}
@@ -128,8 +128,8 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-gray-900 text-[#90dc35] shadow-sm' 
-                  : 'text-white hover:text-white'
+                  ? 'bg-background text-[#90dc35] shadow-sm' 
+                  : 'text-foreground hover:text-foreground'
               }`}
             >
               {content.tabs.turnkey}
@@ -159,19 +159,19 @@ export default function HowItWorks() {
                     <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-white -z-10" />
                   )}
                   
-                  <div className="bg-gray-900/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-background/80 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
                       activeTab === 'structure' ? 'bg-green-50 text-[#90dc35]' : 'bg-green-50 text-[#90dc35]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
                     
-                    <div className="absolute top-6 right-6 text-xs font-bold text-white">
+                    <div className="absolute top-6 right-6 text-xs font-bold text-foreground">
                       {index + 1}
                     </div>
 
-                    <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
-                    <p className="text-sm text-white mb-4 flex-grow">{step.desc}</p>
+                    <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
+                    <p className="text-sm text-foreground mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
                       activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#6fb820]' : 'bg-[#f0f7e8] text-[#6fb820]'
@@ -185,15 +185,15 @@ export default function HowItWorks() {
           </AnimatePresence>
 
           <div className="mt-12 text-center">
-            <p className="text-xl font-bold text-white mb-2">
+            <p className="text-xl font-bold text-foreground mb-2">
               {activeTab === 'structure' ? content.totalTimeline.structure : content.totalTimeline.turnkey}
             </p>
             {activeTab === 'structure' && (
-              <p className="text-sm text-white mb-8">{content.asteriskNote}</p>
+              <p className="text-sm text-foreground mb-8">{content.asteriskNote}</p>
             )}
             
             <div className="flex flex-col items-center gap-4">
-              <p className="text-white">{content.cta.text}</p>
+              <p className="text-foreground">{content.cta.text}</p>
               <Button 
                 onClick={openModal}
                 className={`px-8 py-6 text-lg font-semibold text-[#2A3439] ${

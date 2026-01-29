@@ -26,18 +26,18 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section className="py-20 bg-gray-900 relative overflow-hidden">
+    <section className="py-20 bg-background relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
       />
-      <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-            <p className="text-lg text-white leading-relaxed">{content.subheadline}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
+            <p className="text-lg text-foreground leading-relaxed">{content.subheadline}</p>
           </div>
           <Link href="/projects">
             <a className="inline-flex items-center gap-2 px-6 py-3 bg-[#90dc35] text-gray-900 rounded-lg font-semibold hover:bg-[#6fb820] transition-colors whitespace-nowrap">

@@ -96,13 +96,13 @@ export default function PerformanceLevels() {
   };
 
   return (
-    <section id="systems" className="py-20 bg-gray-800 scroll-mt-20 relative overflow-hidden">
+    <section id="systems" className="py-20 bg-card scroll-mt-20 relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/fabriek-productie-houten-frame-detail.jpg)' }}
       />
-      <div className="absolute inset-0 bg-gray-800" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-card" style={{ zIndex: -1 }} />
       
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
@@ -111,8 +111,8 @@ export default function PerformanceLevels() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{content.headline}</h2>
-          <p className="text-lg text-white mb-8 leading-relaxed">{content.subheadline}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
+          <p className="text-lg text-foreground mb-8 leading-relaxed">{content.subheadline}</p>
           <a
             href="https://www.senmar.pt/en/projects"
             target="_blank"
@@ -131,12 +131,12 @@ export default function PerformanceLevels() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-gray-900 rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
+              className={`bg-background rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
                 level.color === 'green' ? 'border-[#90dc35] transform md:-translate-y-4' : 'border-transparent'
               }`}
             >
               {level.color === 'green' && (
-                <div className="absolute top-0 left-0 right-0 bg-[#90dc35] text-white text-center py-1 text-sm font-bold uppercase tracking-wide">
+                <div className="absolute top-0 left-0 right-0 bg-[#90dc35] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
                   {level.badge}
                 </div>
               )}
@@ -151,26 +151,26 @@ export default function PerformanceLevels() {
                   <level.icon className="w-6 h-6" />
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-1">{level.title}</h3>
+                <h3 className="text-xl font-bold text-foreground mb-1">{level.title}</h3>
                 <div className={`text-lg font-bold mb-3 ${
                   level.color === 'green' ? 'text-[#90dc35]' : 
                   level.color === 'blue' ? 'text-[#118443]' : 
                   level.color === 'purple' ? 'text-[#118443]' :
-                  'text-white'
+                  'text-foreground'
                 }`}>
                   {level.rValue}
                 </div>
                 
-                <p className="text-white mb-4 text-sm leading-relaxed">{level.desc}</p>
+                <p className="text-foreground mb-4 text-sm leading-relaxed">{level.desc}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {level.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-xs text-white leading-relaxed">
+                    <li key={idx} className="flex items-start gap-2 text-xs text-foreground leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                         level.color === 'green' ? 'text-[#90dc35]' : 
                         level.color === 'blue' ? 'text-green-500' : 
                         level.color === 'purple' ? 'text-purple-500' :
-                        'text-white'
+                        'text-foreground'
                       }`} />
                       <span>{feature}</span>
                     </li>

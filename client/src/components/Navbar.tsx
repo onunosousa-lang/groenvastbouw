@@ -73,7 +73,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-gray-900/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-background/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 lg:h-20">
@@ -85,7 +85,7 @@ export default function Navbar() {
             </a>
             <div>
               <div className="text-[#90dc35] font-bold text-xl">Groenvastbouw</div>
-              <div className="text-white/80 text-xs italic">{t('nav_slogan')}</div>
+              <div className="text-foreground/80 text-xs italic">{t('nav_slogan')}</div>
             </div>
           </div>
 
@@ -99,16 +99,16 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            <Link href="/our-offer" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/our-offer" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
               {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
             </Link>
-            <Link href="/projects" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/projects" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
               {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
-            <Link href="/about" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/about" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
               {language === 'nl' ? 'Over Ons' : 'About Us'}
             </Link>
-            <Link href="/faq" className="text-white/90 hover:text-[#90dc35] transition-colors text-sm">
+            <Link href="/faq" className="text-foreground/90 hover:text-[#90dc35] transition-colors text-sm">
               FAQ
             </Link>
             <button onClick={() => openModal()} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
@@ -124,7 +124,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white absolute right-4 top-1/2 -translate-y-1/2"
+            className="lg:hidden text-foreground absolute right-4 top-1/2 -translate-y-1/2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -133,18 +133,18 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-white/10 bg-gray-900">
+          <div className="lg:hidden py-4 border-t border-white/10 bg-background">
             <div className="flex flex-col space-y-4 px-4">
-              <Link href="/our-offer" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/our-offer" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
               </Link>
-              <Link href="/projects" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/projects" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}
               </Link>
-              <Link href="/about" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/about" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Over Ons' : 'About Us'}
               </Link>
-              <Link href="/faq" className="text-white/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/faq" className="text-foreground/90 hover:text-[#90dc35]" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
               <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#90dc35] hover:bg-[#6fb820] text-[#2A3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">

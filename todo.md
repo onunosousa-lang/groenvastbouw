@@ -1,48 +1,47 @@
-# Groenvastbouw - Apply Senmar Design Style
+# Groenvastbouw - Complete Senmar Design Redesign
 
-## Design Changes to Implement
+## Phase 1: Deployment Check
+- [x] Check Vercel deployment status
+- [x] Verify if carousel changes are live
+- [x] Identify deployment issues (pnpm-lock.yaml outdated)
+- [x] Fix lockfile and redeploy
 
-### Header/Navigation
-- [x] Update Navbar to match Senmar style (transparent/semi-transparent background)
-- [ ] Ensure clean, minimal navigation with logo left, menu center-right
-- [ ] Add language selector styling to match Senmar (green button)
-- [ ] Implement smooth scroll behavior for navigation links
+## Phase 2: Apply Senmar Color Scheme
+- [x] Change main background from dark (gray-900) to light (off-white #F5F5F5)
+- [x] Update all section backgrounds to match Senmar (white cards, light backgrounds)
+- [x] Change text colors: dark text on light backgrounds
+- [x] Update card backgrounds to white (#FFFFFF)
+- [x] Ensure proper contrast for readability
+- [x] Update footer background to light
+- [x] Change navbar to light background (when not transparent)
+- [x] Fix HeroCarousel overlay and text colors for proper contrast
 
-### Hero Section - Carousel
-- [x] Implement hero carousel/slider with multiple slides (like Senmar's 7 slides)
-- [x] Create 5-7 different hero slides with different messaging
-- [x] Add slide navigation dots at bottom
-- [x] Keep existing Groenvastbouw images
-- [x] Add auto-play functionality with manual controls
-- [x] Ensure smooth transitions between slides
+## Phase 3: Apply Senmar Layout & Spacing
+- [x] Increase white space between sections
+- [x] Update section padding to be more generous
+- [x] Apply Senmar-style card layouts (clean, minimal)
+- [x] Update grid layouts to match Senmar spacing
+- [x] Add subtle shadows to cards (like Senmar)
+- [x] Update button styles with dashed borders throughout site
+- [x] Ensure consistent spacing in all components
 
-### Hero Content for Each Slide
-- [x] Slide 1: Main message - "Jouw Passiefhuis. Gebouwd in 3 Maanden."
-- [x] Slide 2: Environmental focus - sustainability message
-- [x] Slide 3: Technology/Innovation - Senmar partnership
-- [x] Slide 4: Energy efficiency - 90% savings
-- [x] Slide 5: Quality/Craftsmanship
-- [x] Slide 6: Custom solutions
-- [x] Slide 7: B2B/Scale message
+## Phase 4: Visual Polish
+- [ ] Update hover states to match Senmar
+- [ ] Ensure all icons are consistent style
+- [ ] Verify typography hierarchy matches Senmar
+- [ ] Test all pages for visual consistency
+- [ ] Ensure responsive behavior on mobile
 
-### Senmar-Inspired Styling
-- [x] Implement dashed/zigzag border style for CTA buttons
-- [x] Apply consistent lime green color (#90dc35) for accents
-- [x] Add generous white space and padding
-- [x] Update button hover states
-- [x] Ensure consistent typography hierarchy
-
-### Testing & Deployment
-- [x] Test carousel functionality (auto-play, manual navigation, pause on hover)
-- [ ] Test responsive behavior on mobile/tablet
-- [x] Verify all translations work in carousel
+## Phase 5: Testing & Deployment
 - [x] Build and test locally
+- [x] Fix hero carousel alignment (content visible below header)
+- [ ] Verify all pages look correct
+- [ ] Check translations work properly
 - [ ] Commit and push to GitHub
 - [ ] Verify Vercel deployment
 
-## Design Principles to Follow
-- Clean, minimal aesthetic (like Senmar)
-- Generous white space
-- Consistent use of lime green accent
-- Clear typography hierarchy
-- Professional yet approachable feel
+## Design Reference
+- Senmar.pt color scheme: Light backgrounds (#F5F5F5), white cards, lime green accents
+- Generous white space and padding
+- Clean, minimal aesthetic
+- Professional yet approachable

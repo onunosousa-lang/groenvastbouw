@@ -140,7 +140,7 @@ export default function TermsOfService() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-300">
+    <div className="min-h-screen bg-background text-gray-300">
       {/* Hero Section */}
       <section className="relative py-20">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -153,7 +153,7 @@ export default function TermsOfService() {
           </Link>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {content.title}
           </h1>
           <p className="text-sm text-gray-400 mb-8">{content.lastUpdated}</p>
@@ -167,7 +167,7 @@ export default function TermsOfService() {
           <div className="space-y-8">
             {content.sections.map((section, index) => (
               <div key={index} className="border-l-4 border-[#90dc35] pl-6">
-                <h2 className="text-2xl font-bold text-white mb-4">
+                <h2 className="text-2xl font-bold text-foreground mb-4">
                   {section.title}
                 </h2>
                 <p className="text-gray-300 leading-relaxed">
@@ -178,8 +178,8 @@ export default function TermsOfService() {
           </div>
 
           {/* Contact Section */}
-          <div className="mt-12 p-6 bg-gray-800 rounded-lg border border-gray-700">
-            <h3 className="text-xl font-bold text-white mb-4">
+          <div className="mt-12 p-6 bg-card rounded-lg border border-gray-700">
+            <h3 className="text-xl font-bold text-foreground mb-4">
               {language === 'nl' ? 'Vragen over deze voorwaarden?' : 'Questions about these terms?'}
             </h3>
             <p className="text-gray-300 mb-4">
@@ -189,13 +189,13 @@ export default function TermsOfService() {
             </p>
             <div className="space-y-2">
               <p className="text-gray-300">
-                <span className="font-semibold text-white">Email:</span>{' '}
+                <span className="font-semibold text-foreground">Email:</span>{' '}
                 <a href="mailto:info@groenvastbouw.nl" className="text-[#90dc35] hover:underline">
                   info@groenvastbouw.nl
                 </a>
               </p>
               <p className="text-gray-300">
-                <span className="font-semibold text-white">Telefoon:</span>{' '}
+                <span className="font-semibold text-foreground">Telefoon:</span>{' '}
                 <a href="tel:+31629841297" className="text-[#90dc35] hover:underline">
                   +31 6 2984 1297
                 </a>

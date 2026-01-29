@@ -96,7 +96,7 @@ export default function Solutions() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-white py-16 md:py-24 mt-20">
+      <section className="bg-gradient-to-br from-[#2A3439] to-[#1a1f24] text-foreground py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#90dc35] hover:text-[#6fb820] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />

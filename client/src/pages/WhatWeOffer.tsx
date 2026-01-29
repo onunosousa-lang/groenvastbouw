@@ -148,11 +148,11 @@ export default function WhatWeOffer() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-foreground">
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-green-400 hover:text-white font-semibold transition-colors group"
+            className="inline-flex items-center text-green-400 hover:text-foreground font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -182,7 +182,7 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('structure')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
-                  ? 'bg-[#90dc35] text-white shadow-lg'
+                  ? 'bg-[#90dc35] text-foreground shadow-lg'
                   : 'bg-white text-gray-700 border border-gray-300 hover:border-[#90dc35]'
               }`}
             >
@@ -192,7 +192,7 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
-                  ? 'bg-[#118443] text-white shadow-lg'
+                  ? 'bg-[#118443] text-foreground shadow-lg'
                   : 'bg-white text-gray-700 border border-gray-300 hover:border-[#118443]'
               }`}
             >
@@ -309,7 +309,7 @@ export default function WhatWeOffer() {
             <p className="text-xl text-gray-600 mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}
-              className="bg-[#90dc35] hover:bg-[#6fb820] text-white px-8 py-6 text-lg font-semibold"
+              className="bg-[#90dc35] hover:bg-[#6fb820] text-foreground px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}
             </Button>

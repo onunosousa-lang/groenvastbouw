@@ -62,43 +62,43 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-background relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/fabriek-productie-houten-structuur-montage.jpg)' }}
       />
-      <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">{t('contact_title')}</h2>
-            <p className="text-xl text-white">{t('contact_subtitle')}</p>
+            <h2 className="text-4xl font-bold text-foreground mb-4">{t('contact_title')}</h2>
+            <p className="text-xl text-foreground">{t('contact_subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg border-none bg-gray-800">
+            <Card className="shadow-lg border-none bg-card">
 
               <CardContent className="space-y-6">
                 <div>
-                  <h3 className="font-bold text-white mb-1">Groenvastbouw</h3>
-                  <p className="text-white">Amsterdam, Nederland</p>
+                  <h3 className="font-bold text-foreground mb-1">Groenvastbouw</h3>
+                  <p className="text-foreground">Amsterdam, Nederland</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-white mb-1">Email</h3>
+                  <h3 className="font-bold text-foreground mb-1">Email</h3>
                   <a href="mailto:info@groenvastbouw.nl" className="text-[#90dc35] hover:underline">
                     info@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-white mb-1">WhatsApp</h3>
+                  <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
                   <a href="https://wa.me/31629841297" className="text-[#90dc35] hover:underline">
                     {t('whatsapp_button')}
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-white mb-1">KvK</h3>
-                  <p className="text-white">75308045</p>
+                  <h3 className="font-bold text-foreground mb-1">KvK</h3>
+                  <p className="text-foreground">75308045</p>
                 </div>
               </CardContent>
             </Card>
@@ -110,9 +110,9 @@ export default function ContactForm() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white">{t('contact_name')} *</FormLabel>
+                      <FormLabel className="text-foreground">{t('contact_name')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-gray-800 text-white" />
+                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-card text-foreground" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -123,9 +123,9 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white">{t('contact_email')} *</FormLabel>
+                      <FormLabel className="text-foreground">{t('contact_email')} *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-gray-800 text-white" />
+                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-card text-foreground" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -136,9 +136,9 @@ export default function ContactForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white">{t('contact_phone')}</FormLabel>
+                      <FormLabel className="text-foreground">{t('contact_phone')}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-gray-800 text-white" />
+                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-card text-foreground" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -149,11 +149,11 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white">{t('contact_message')} *</FormLabel>
+                      <FormLabel className="text-foreground">{t('contact_message')} *</FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[150px] bg-gray-800 text-white" 
+                          className="min-h-[150px] bg-card text-foreground" 
                           {...field} 
                         />
                       </FormControl>

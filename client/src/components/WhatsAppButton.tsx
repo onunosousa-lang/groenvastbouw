@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-[#90dc35] hover:bg-[#90dc35] text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-2 group"
+      className="fixed bottom-6 right-6 z-50 bg-[#90dc35] hover:bg-[#90dc35] text-foreground p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-2 group"
       aria-label="Contact via WhatsApp"
     >
       <MessageCircle size={28} />

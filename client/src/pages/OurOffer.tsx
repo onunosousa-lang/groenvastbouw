@@ -320,11 +320,11 @@ export default function OurOffer() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-background">
       <Navbar />
       
       {/* Hero Section with Background Image */}
-      <section className="relative text-white py-16 md:py-24 mt-20 overflow-hidden">
+      <section className="relative text-foreground py-16 md:py-24 mt-20 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -356,7 +356,7 @@ export default function OurOffer() {
           style={{ backgroundImage: 'url(/moderne-woonkamer-open-keuken-passief-huis.png)' }}
         />
         {/* Dark Background */}
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             {language === 'nl' ? (
@@ -402,7 +402,7 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <Check className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-200">{feature}</span>
               </div>
@@ -419,9 +419,9 @@ export default function OurOffer() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(/houten-frame-constructie-kraan.jpg)' }}
         />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             {language === 'nl' ? content.method.titleNl : content.method.titleEn}
           </h2>
           <p className="text-lg text-gray-300 mb-12">
@@ -433,13 +433,13 @@ export default function OurOffer() {
               <div key={idx} className="border-2 border-gray-700 rounded-lg overflow-hidden hover:border-[#90dc35] transition-colors">
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
-                  className="w-full p-6 bg-gray-800/50 backdrop-blur-sm hover:bg-gray-800/70 flex items-center justify-between text-left">
-                  <h3 className="text-xl font-bold text-white">{phase.title}</h3>
+                  className="w-full p-6 bg-card/50 backdrop-blur-sm hover:bg-card/70 flex items-center justify-between text-left">
+                  <h3 className="text-xl font-bold text-foreground">{phase.title}</h3>
                   <ChevronDown className={`w-5 h-5 text-[#90dc35] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
                 </button>
                 
                 {expandedSection === `phase-${idx}` && (
-                  <div className="bg-gray-800/30 backdrop-blur-sm p-6 border-t-2 border-gray-700">
+                  <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-gray-700">
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
                         <li key={itemIdx} className="flex items-start gap-3 text-gray-300">
@@ -475,9 +475,9 @@ export default function OurOffer() {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
         />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
           </h2>
           <p className="text-lg text-gray-300 mb-12">
@@ -487,7 +487,7 @@ export default function OurOffer() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Factory */}
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#90dc35]">
                 {language === 'nl' ? content.scope.factoryNl : content.scope.factoryEn}
               </h3>
               <ul className="space-y-3">
@@ -502,7 +502,7 @@ export default function OurOffer() {
             
             {/* On-Site */}
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6 text-[#90dc35]">
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#90dc35]">
                 {language === 'nl' ? content.scope.onsiteNl : content.scope.onsiteEn}
               </h3>
               <ul className="space-y-3">
@@ -535,24 +535,24 @@ export default function OurOffer() {
       {/* Timeline */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-12">
             {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
           </h2>
           
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35] mb-8">
+          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35] mb-8">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
                 <div key={idx} className="flex items-center justify-between p-4 bg-gray-700/50 rounded-lg border border-gray-600">
-                  <span className="font-semibold text-white">{item.phase}</span>
+                  <span className="font-semibold text-foreground">{item.phase}</span>
                   <span className="text-[#90dc35] font-bold">{item.duration}</span>
                 </div>
               ))}
             </div>
             
             <div className="bg-gray-700/50 p-6 rounded-lg border-2 border-[#90dc35]">
-              <p className="text-lg font-bold text-white mb-4">
+              <p className="text-lg font-bold text-foreground mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
               <p className="text-gray-300">
@@ -566,15 +566,15 @@ export default function OurOffer() {
       {/* Technology */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-12">
             {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
           </h2>
           
           <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <span className="text-[#90dc35] font-bold flex-shrink-0 mt-0.5">•</span>
                 <span className="text-gray-300">{item}</span>
               </div>
@@ -586,15 +586,15 @@ export default function OurOffer() {
       {/* Use Cases */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-12">
             {language === 'nl' ? content.usecases.titleNl : content.usecases.titleEn}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.usecases.itemsNl : content.usecases.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-[#90dc35]">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#90dc35]">
                 <Building2 className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">{item}</span>
               </div>
@@ -606,15 +606,15 @@ export default function OurOffer() {
       {/* Compliance */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-12">
             {language === 'nl' ? content.compliance.titleNl : content.compliance.titleEn}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#90dc35] transition-colors">
                 <Shield className="w-5 h-5 text-[#90dc35] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">{item}</span>
               </div>
@@ -639,13 +639,13 @@ export default function OurOffer() {
       {/* Warranty */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
-        <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-12">
             {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}
           </h2>
           
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35]">
+          <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#90dc35]">
             <ul className="space-y-4">
               {(language === 'nl' ? content.warranty.itemsNl : content.warranty.itemsEn).map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-gray-300">
@@ -671,7 +671,7 @@ export default function OurOffer() {
           </p>
           <button
             onClick={openModal}
-            className="inline-block bg-[#2A3439] hover:bg-black text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+            className="inline-block bg-[#2A3439] hover:bg-background text-[#90dc35] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? content.cta.buttonNl : content.cta.buttonEn}
           </button>
