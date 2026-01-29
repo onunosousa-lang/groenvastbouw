@@ -34,12 +34,12 @@ export default function Footer() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <footer className="bg-[#2A3439] text-foreground py-12">
+    <footer className="bg-[#2a3439] text-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-[#A4D65E] mb-3">{currentContent.company}</h3>
+            <h3 className="text-xl font-bold text-[#8eb564] mb-3">{currentContent.company}</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               {currentContent.description}
             </p>
@@ -47,15 +47,15 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-[#A4D65E] mb-3">{currentContent.contact}</h4>
+            <h4 className="font-semibold text-[#8eb564] mb-3">{currentContent.contact}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <a href={`mailto:${currentContent.email}`} className="text-gray-300 hover:text-[#A4D65E] transition-colors">
+                <a href={`mailto:${currentContent.email}`} className="text-gray-300 hover:text-[#8eb564] transition-colors">
                   {currentContent.email}
                 </a>
               </p>
               <p>
-                <a href={`tel:${currentContent.phone}`} className="text-gray-300 hover:text-[#A4D65E] transition-colors">
+                <a href={`tel:${currentContent.phone}`} className="text-gray-300 hover:text-[#8eb564] transition-colors">
                   {currentContent.phone}
                 </a>
               </p>
@@ -64,15 +64,15 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="font-semibold text-[#A4D65E] mb-3">{t('footer_legal')}</h4>
+            <h4 className="font-semibold text-[#8eb564] mb-3">{t('footer_legal')}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#A4D65E] transition-colors">
+                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#8eb564] transition-colors">
                   {currentContent.privacy}
                 </Link>
               </p>
               <p>
-                <Link href="/terms-of-service" className="text-gray-300 hover:text-[#A4D65E] transition-colors">
+                <Link href="/terms-of-service" className="text-gray-300 hover:text-[#8eb564] transition-colors">
                   {currentContent.terms}
                 </Link>
               </p>
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Credentials */}
           <div>
-            <h4 className="font-semibold text-[#A4D65E] mb-3">{t('footer_credentials')}</h4>
+            <h4 className="font-semibold text-[#8eb564] mb-3">{t('footer_credentials')}</h4>
             <div className="space-y-2 text-sm">
               <p className="text-gray-300">{currentContent.kvk}</p>
               <p className="text-gray-300">{currentContent.insurance}</p>

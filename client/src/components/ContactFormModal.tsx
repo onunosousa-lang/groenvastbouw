@@ -111,13 +111,13 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold text-gray-900">
-                        {t('contact_name')} <span className="text-[#A4D65E]">*</span>
+                        {t('contact_name')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
                         <Input 
                           placeholder={language === 'nl' ? "Uw naam" : "Your name"} 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#A4D65E] focus:ring-[#A4D65E] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -132,14 +132,14 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold text-gray-900">
-                        {t('contact_email')} <span className="text-[#A4D65E]">*</span>
+                        {t('contact_email')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
                         <Input 
                           type="email" 
                           placeholder="naam@voorbeeld.nl" 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#A4D65E] focus:ring-[#A4D65E] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -161,7 +161,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                           type="tel" 
                           placeholder="+31 6 12345678" 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#A4D65E] focus:ring-[#A4D65E] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -176,12 +176,12 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-semibold text-gray-900">
-                        {t('contact_message')} <span className="text-[#A4D65E]">*</span>
+                        {t('contact_message')} <span className="text-[#8eb564]">*</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[100px] bg-gray-50 border-gray-200 focus:border-[#A4D65E] focus:ring-[#A4D65E] placeholder:text-gray-400 resize-none"
+                          className="min-h-[100px] bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400 resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -202,7 +202,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   </Button>
                   <Button 
                     type="submit" 
-                    className="flex-1 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] font-semibold transition-all duration-200"
+                    className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-semibold transition-all duration-200"
                     disabled={isSubmitting}
                   >
                     {isSubmitting 

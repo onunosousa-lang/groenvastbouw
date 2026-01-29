@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#A4D65E] transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#8eb564] transition-colors mb-8">
               <ArrowLeft className="w-5 h-5" />
               {content.backHome}
             </a>
@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
           {/* Sections */}
           <div className="space-y-8">
             {content.sections.map((section, index) => (
-              <div key={index} className="border-l-4 border-[#A4D65E] pl-6">
+              <div key={index} className="border-l-4 border-[#8eb564] pl-6">
                 <h2 className="text-2xl font-bold text-foreground mb-4">
                   {section.title}
                 </h2>
@@ -166,13 +166,13 @@ export default function PrivacyPolicy() {
             <div className="space-y-2">
               <p className="text-gray-300">
                 <span className="font-semibold text-foreground">Email:</span>{' '}
-                <a href="mailto:info@groenvastbouw.nl" className="text-[#A4D65E] hover:underline">
+                <a href="mailto:info@groenvastbouw.nl" className="text-[#8eb564] hover:underline">
                   info@groenvastbouw.nl
                 </a>
               </p>
               <p className="text-gray-300">
                 <span className="font-semibold text-foreground">Telefoon:</span>{' '}
-                <a href="tel:+31629841297" className="text-[#A4D65E] hover:underline">
+                <a href="tel:+31629841297" className="text-[#8eb564] hover:underline">
                   +31 6 2984 1297
                 </a>
               </p>

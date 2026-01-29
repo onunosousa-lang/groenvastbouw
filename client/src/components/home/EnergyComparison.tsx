@@ -40,7 +40,7 @@ export default function EnergyComparison() {
                   <span>15 kWh/m²/jr</span>
                 </div>
                 <div className="h-12 bg-gray-700 rounded-full overflow-hidden relative">
-                  <div className="absolute top-0 left-0 h-full bg-[#A4D65E] w-[10%] flex items-center justify-start px-4 font-bold whitespace-nowrap shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+                  <div className="absolute top-0 left-0 h-full bg-[#8eb564] w-[10%] flex items-center justify-start px-4 font-bold whitespace-nowrap shadow-[0_0_20px_rgba(34,197,94,0.5)]">
                     90% {language === 'nl' ? 'minder' : 'less'}
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function EnergyComparison() {
                   <div className="text-3xl font-bold text-green-400 mb-1">90%</div>
                   <div className="text-sm text-foreground">{t('energy_comparison_savings_annual')}</div>
                 </div>
-                <div className="bg-background/50 p-4 rounded-xl border border-[#A4D65E]/20">
+                <div className="bg-background/50 p-4 rounded-xl border border-[#8eb564]/20">
                   <div className="text-3xl font-bold text-green-400 mb-1">{language === 'nl' ? 'Aanzienlijk' : 'Significant'}</div>
                   <div className="text-sm text-foreground">{t('energy_comparison_savings_30y')}</div>
                 </div>
@@ -66,7 +66,7 @@ export default function EnergyComparison() {
 
           {/* Context & Info */}
           <div className="space-y-8">
-            <div className="bg-green-900/20 border border-[#A4D65E]/30 p-6 rounded-xl">
+            <div className="bg-green-900/20 border border-[#8eb564]/30 p-6 rounded-xl">
               <h3 className="text-2xl font-bold text-green-400 mb-2">
                 {t('energy_comparison_ratio')}
               </h3>
@@ -79,19 +79,19 @@ export default function EnergyComparison() {
               <h4 className="font-bold text-foreground mb-4">{t('energy_comparison_includes')}</h4>
               <ul className="grid grid-cols-2 gap-3">
                 <li className="flex items-center gap-2 text-foreground">
-                  <div className="w-2 h-2 bg-[#A4D65E] rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#8eb564] rounded-full"></div>
                   {t('energy_comparison_space')}
                 </li>
                 <li className="flex items-center gap-2 text-foreground">
-                  <div className="w-2 h-2 bg-[#A4D65E] rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#8eb564] rounded-full"></div>
                   {t('energy_comparison_water')}
                 </li>
                 <li className="flex items-center gap-2 text-foreground">
-                  <div className="w-2 h-2 bg-[#A4D65E] rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#8eb564] rounded-full"></div>
                   {t('energy_comparison_ventilation')}
                 </li>
                 <li className="flex items-center gap-2 text-foreground">
-                  <div className="w-2 h-2 bg-[#A4D65E] rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#8eb564] rounded-full"></div>
                   {t('energy_comparison_cooling')}
                 </li>
               </ul>

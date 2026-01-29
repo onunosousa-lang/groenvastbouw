@@ -47,8 +47,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
         ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
         : 'Your Passive House. Built in 3 Months.',
       subheadline: language === 'nl'
-        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] font-bold hover:underline">SENMAR</a></>
-        : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] font-bold hover:underline">SENMAR</a></>,
+        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>
+        : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>,
       description: language === 'nl'
         ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
         : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -214,7 +214,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
           className="w-full h-full object-cover"
         />
         {/* Light overlay for better text contrast - Senmar style */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2A3439]/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2a3439]/20 via-transparent to-transparent"></div>
       </div>
 
       {/* Text Content Carousel - ONLY THIS SLIDES */}
@@ -224,14 +224,14 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             {slides.map((slide) => (
               <div key={slide.id} className="embla__slide min-w-full">
                 {/* Text content with light gray background box for contrast - Senmar style */}
-                <div className="bg-[#D7D7D6]/90 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
+                <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
                   {/* Headline */}
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#A4D65E] mb-6 leading-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8eb564] mb-6 leading-tight">
                     {slide.headline}
                   </h1>
 
                   {/* Subheadline */}
-                  <p className="text-lg md:text-xl text-[#2A3439] mb-6 font-semibold leading-relaxed">
+                  <p className="text-lg md:text-xl text-[#2a3439] mb-6 font-semibold leading-relaxed">
                     {slide.subheadline}
                   </p>
 
@@ -244,8 +244,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                   <div className="space-y-3 mb-10">
                     {slide.points.map((point, index) => (
                       <div key={index} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-1" />
-                        <span className="text-[#2A3439] text-base md:text-lg font-medium">
+                        <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-1" />
+                        <span className="text-[#2a3439] text-base md:text-lg font-medium">
                           {point}
                         </span>
                       </div>
@@ -258,13 +258,13 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                       href="https://wa.me/31629841298"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#A4D65E]"
+                      className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#8eb564]"
                     >
                       WhatsApp
                     </a>
                     <Button 
                       onClick={openModal}
-                      className="flex-1 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#A4D65E]"
+                      className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#8eb564]"
                     >
                       {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
                     </Button>
@@ -284,8 +284,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             onClick={() => scrollTo(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === selectedIndex 
-                ? 'bg-[#A4D65E] w-8' 
-                : 'bg-[#2A3439]/40 hover:bg-[#2A3439]/60'
+                ? 'bg-[#8eb564] w-8' 
+                : 'bg-[#2a3439]/40 hover:bg-[#2a3439]/60'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -295,7 +295,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
       {/* Scroll Indicator */}
       <button 
         onClick={() => scrollToSection('offer')} 
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-[#2A3439] hover:text-[#A4D65E] transition-colors animate-bounce z-20"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-[#2a3439] hover:text-[#8eb564] transition-colors animate-bounce z-20"
       >
         <ChevronDown size={40} />
       </button>

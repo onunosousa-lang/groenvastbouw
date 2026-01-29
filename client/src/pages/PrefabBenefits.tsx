@@ -26,77 +26,77 @@ export default function PrefabBenefits() {
 
   const benefits = [
     {
-      icon: <Zap className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Zap className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_rapid_title'),
       desc: t('prefab_rapid_desc')
     },
     {
-      icon: <PiggyBank className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <PiggyBank className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_cost_title'),
       desc: t('prefab_cost_desc')
     },
     {
-      icon: <Leaf className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Leaf className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_energy_title'),
       desc: t('prefab_energy_desc')
     },
     {
-      icon: <Award className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Award className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_quality_title'),
       desc: t('prefab_quality_desc')
     },
     {
-      icon: <Recycle className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Recycle className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_sustainability_title'),
       desc: t('prefab_sustainability_desc')
     },
     {
-      icon: <PenTool className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <PenTool className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_design_title'),
       desc: t('prefab_design_desc')
     },
     {
-      icon: <Palette className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Palette className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_aesthetic_title'),
       desc: t('prefab_aesthetic_desc')
     },
     {
-      icon: <Thermometer className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Thermometer className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_thermal_title'),
       desc: t('prefab_thermal_desc')
     },
     {
-      icon: <VolumeX className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <VolumeX className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_sound_title'),
       desc: t('prefab_sound_desc')
     },
     {
-      icon: <HardHat className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <HardHat className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_disruption_title'),
       desc: t('prefab_disruption_desc')
     },
     {
-      icon: <Heart className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Heart className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_health_title'),
       desc: t('prefab_health_desc')
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <ShieldCheck className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_durability_title'),
       desc: t('prefab_durability_desc')
     },
     {
-      icon: <Activity className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Activity className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_seismic_title'),
       desc: t('prefab_seismic_desc')
     },
     {
-      icon: <Feather className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Feather className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_lightweight_title'),
       desc: t('prefab_lightweight_desc')
     },
     {
-      icon: <Factory className="w-10 h-10 text-[#A4D65E]" />,
+      icon: <Factory className="w-10 h-10 text-[#8eb564]" />,
       title: t('prefab_manufacturing_title'),
       desc: t('prefab_manufacturing_desc')
     }

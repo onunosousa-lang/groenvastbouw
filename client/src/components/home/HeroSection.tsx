@@ -21,8 +21,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
       : 'Your Passive House. Built in 3 Months.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] font-bold hover:underline">SENMAR</a></>
-      : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#A4D65E] font-bold hover:underline">SENMAR</a></>,
+      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>
+      : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -56,7 +56,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           alt="Senmar Passive House Structure" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2A3439]/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2a3439]/20 via-transparent to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/50 to-transparent z-10"></div>
       </div>
       
@@ -67,7 +67,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           {/* Brand Section - Removed */}
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#A4D65E] mb-6 drop-shadow-2xl leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#8eb564] mb-6 drop-shadow-2xl leading-tight">
             {content.headline}
           </h1>
 
@@ -85,7 +85,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           <div className="space-y-3 mb-10">
             {content.points.map((point, index) => (
               <div key={index} className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[#A4D65E] flex-shrink-0 mt-1" />
+                <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-1" />
                 <span className="text-foreground text-base md:text-lg font-medium">
                   {point}
                 </span>
@@ -99,13 +99,13 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
               href="https://wa.me/31629841298"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 flex items-center justify-center"
+              className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 flex items-center justify-center"
             >
               WhatsApp
             </a>
             <Button 
               onClick={openModal}
-              className="flex-1 bg-[#A4D65E] hover:bg-[#8BC34A] text-[#2A3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
+              className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
             >
               {content.ctaSecondary}
             </Button>

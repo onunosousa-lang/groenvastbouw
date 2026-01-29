@@ -118,7 +118,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-background text-[#A4D65E] shadow-sm' 
+                  ? 'bg-background text-[#8eb564] shadow-sm' 
                   : 'text-foreground hover:text-foreground'
               }`}
             >
@@ -128,7 +128,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-background text-[#A4D65E] shadow-sm' 
+                  ? 'bg-background text-[#8eb564] shadow-sm' 
                   : 'text-foreground hover:text-foreground'
               }`}
             >
@@ -161,7 +161,7 @@ export default function HowItWorks() {
                   
                   <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-white/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-green-50 text-[#A4D65E]' : 'bg-green-50 text-[#A4D65E]'
+                      activeTab === 'structure' ? 'bg-green-50 text-[#8eb564]' : 'bg-green-50 text-[#8eb564]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -174,7 +174,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-foreground mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#8BC34A]' : 'bg-[#f0f7e8] text-[#8BC34A]'
+                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#8eb564]' : 'bg-[#f0f7e8] text-[#8eb564]'
                     }`}>
                       {step.duration}
                     </div>
@@ -196,10 +196,10 @@ export default function HowItWorks() {
               <p className="text-foreground">{content.cta.text}</p>
               <Button 
                 onClick={openModal}
-                className={`px-8 py-6 text-lg font-semibold text-[#2A3439] ${
+                className={`px-8 py-6 text-lg font-semibold text-[#2a3439] ${
                   activeTab === 'structure' 
-                    ? 'bg-[#A4D65E] hover:bg-[#8BC34A]' 
-                    : 'bg-[#A4D65E] hover:bg-[#8BC34A]'
+                    ? 'bg-[#8eb564] hover:bg-[#8eb564]' 
+                    : 'bg-[#8eb564] hover:bg-[#8eb564]'
                 }`}
               >
                 {content.cta.button}

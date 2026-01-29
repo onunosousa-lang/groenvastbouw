@@ -48,12 +48,12 @@
 
 /* Senmar Brand Palette */
 :root {
-  /* Primary Brand - Senmar Lime Green (#A4D65E) */
-  --primary: 164 214 94;
-  --primary-foreground: 42 52 57;
+  /* Primary Brand - Green (#8eb564) */
+  --primary: 142 181 100;
+  --primary-foreground: 255 255 255;
   
-  /* Light Background - Soft Mist (#D7D7D6) lighter variant */
-  --background: 248 248 247;
+  /* Light Background - (#dcdcdc) */
+  --background: 220 220 220;
   
   /* Surface / Cards - Pure White (#FFFFFF) */
   --card: 255 255 255;
@@ -62,17 +62,17 @@
   /* Dark Text - Deep Slate (#2A3439) */
   --foreground: 42 52 57;
   
-  /* Accent - Senmar Lime Green (#A4D65E) */
-  --accent: 164 214 94;
-  --accent-foreground: 42 52 57;
+  /* Accent - Green (#8eb564) */
+  --accent: 142 181 100;
+  --accent-foreground: 255 255 255;
   
-  /* Soft Secondary - Senmar Green Hover (#8BC34A) */
-  --secondary: 139 195 74;
-  --secondary-foreground: 42 52 57;
+  /* Secondary - Green Hover (darker #8eb564) */
+  --secondary: 126 163 90;
+  --secondary-foreground: 255 255 255;
   
-  /* Muted variants - Steel Gray (#8C9194) */
-  --muted: 215 215 214;
-  --muted-foreground: 140 145 148;
+  /* Muted variants - (#dcdcdc) */
+  --muted: 220 220 220;
+  --muted-foreground: 42 52 57;
   
   /* Popover */
   --popover: 255 255 255;
@@ -82,46 +82,41 @@
   --destructive: 234 73 36;
   --destructive-foreground: 255 255 255;
   
-  /* Border & Input - Soft Mist */
-  --border: 215 215 214;
-  --input: 215 215 214;
-  --ring: 164 214 94;
+  /* Border & Input - (#dcdcdc) */
+  --border: 220 220 220;
+  --input: 220 220 220;
+  --ring: 142 181 100;
   
   /* Sidebar - Deep Slate */
   --sidebar: 42 52 57;
   --sidebar-foreground: 255 255 255;
-  --sidebar-primary: 164 214 94;
+  --sidebar-primary: 142 181 100;
   --sidebar-primary-foreground: 255 255 255;
-  --sidebar-accent: 164 214 94;
+  --sidebar-accent: 142 181 100;
   --sidebar-accent-foreground: 255 255 255;
   --sidebar-border: 52 62 67;
-  --sidebar-ring: 164 214 94;
+  --sidebar-ring: 142 181 100;
   
-  /* Charts - Senmar Palette */
-  --chart-1: 127 185 86;
-  --chart-2: 234 73 36;
-  --chart-3: 142 181 100;
-  --chart-4: 42 52 57;
-  --chart-5: 140 145 148;
+  /* Charts - 3-Color Palette */
+  --chart-1: 142 181 100;
+  --chart-2: 42 52 57;
+  --chart-3: 220 220 220;
+  --chart-4: 142 181 100;
+  --chart-5: 42 52 57;
   
   --radius: 0.65rem;
   
-  /* Senmar Brand Colors as CSS Custom Properties */
-  --senmar-garden-green: #A4D65E;
-  --senmar-lime-green: #A4D65E;
-  --senmar-teal-green: #118443;
-  --senmar-deep-slate: #2A3439;
-  --senmar-clay-red: #EA4924;
-  --senmar-soft-mist: #D7D7D6;
-  --senmar-leaf-green: #A4D65E;
-  --senmar-steel-gray: #8C9194;
+  /* 3-Color Scheme */
+  --color-green: #8eb564;
+  --color-text: #2a3439;
+  --color-background: #dcdcdc;
 }
 
 .dark {
   /* Primary Brand - Garden Green */
   --primary: 127 185 86;
   --primary-foreground: 255 255 255;
-  --sidebar-primary: 164 214 94;
+  --sidebar-primary: 142 181 100;
   --sidebar-primary-foreground: 255 255 255;
   
   /* Dark Background - Deep Slate (#2A3439) */
@@ -164,7 +159,7 @@
   --sidebar-accent: 62 72 77;
   --sidebar-accent-foreground: 255 255 255;
   --sidebar-border: 62 72 77;
-  --sidebar-ring: 164 214 94;
+  --sidebar-ring: 142 181 100;
 }
 
 @layer base {
@@ -257,7 +252,7 @@
 /* Senmar-inspired dashed border button style */
 .btn-dashed {
   position: relative;
-  background: #A4D65E;
+  background: #8eb564;
   color: #2A3439;
   padding: 1.5rem 2rem;
   font-weight: 700;
@@ -281,7 +276,7 @@
 }
 
 .btn-dashed:hover {
-  background: #8BC34A;
+  background: #8eb564;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(144, 220, 53, 0.3);
 }
@@ -292,8 +287,8 @@
   inset: -2px;
   background: repeating-linear-gradient(
     90deg,
-    #A4D65E 0px,
-    #A4D65E 8px,
+    #8eb564 0px,
+    #8eb564 8px,
     transparent 8px,
     transparent 16px
   );
@@ -318,7 +313,7 @@
 /* Simplified zigzag border for smaller elements */
 .border-zigzag {
   position: relative;
-  border: 2px dashed #A4D65E;
+  border: 2px dashed #8eb564;
   border-radius: 0.5rem;
 }
 
@@ -326,7 +321,7 @@
   content: '';
   position: absolute;
   inset: -3px;
-  border: 2px dashed #A4D65E;
+  border: 2px dashed #8eb564;
   border-radius: 0.5rem;
   opacity: 0.3;
   pointer-events: none;
