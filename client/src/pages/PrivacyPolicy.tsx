@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#8eb564] transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-[#2a3439] hover:text-[#8eb564] transition-colors mb-8">
               <ArrowLeft className="w-5 h-5" />
               {content.backHome}
             </a>
@@ -132,10 +132,10 @@ export default function PrivacyPolicy() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {content.title}
           </h1>
-          <p className="text-sm text-gray-400 mb-8">{content.lastUpdated}</p>
+          <p className="text-sm text-[#2a3439] mb-8">{content.lastUpdated}</p>
 
           {/* Introduction */}
-          <p className="text-lg text-gray-300 leading-relaxed mb-12">
+          <p className="text-lg text-[#2a3439] leading-relaxed mb-12">
             {content.intro}
           </p>
 
@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-foreground mb-4">
                   {section.title}
                 </h2>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-[#2a3439] leading-relaxed">
                   {section.content}
                 </p>
               </div>
@@ -158,19 +158,19 @@ export default function PrivacyPolicy() {
             <h3 className="text-xl font-bold text-foreground mb-4">
               {language === 'nl' ? 'Vragen over uw privacy?' : 'Questions about your privacy?'}
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-[#2a3439] mb-4">
               {language === 'nl'
                 ? 'Neem gerust contact met ons op als u vragen heeft over hoe wij uw gegevens verwerken.'
                 : 'Feel free to contact us if you have questions about how we process your data.'}
             </p>
             <div className="space-y-2">
-              <p className="text-gray-300">
+              <p className="text-[#2a3439]">
                 <span className="font-semibold text-foreground">Email:</span>{' '}
                 <a href="mailto:info@groenvastbouw.nl" className="text-[#8eb564] hover:underline">
                   info@groenvastbouw.nl
                 </a>
               </p>
-              <p className="text-gray-300">
+              <p className="text-[#2a3439]">
                 <span className="font-semibold text-foreground">Telefoon:</span>{' '}
                 <a href="tel:+31629841297" className="text-[#8eb564] hover:underline">
                   +31 6 2984 1297

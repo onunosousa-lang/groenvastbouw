@@ -26,7 +26,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {language === 'nl' ? 'Contact' : 'Contact'}
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed">
+            <p className="text-xl text-[#2a3439] leading-relaxed">
               {language === 'nl'
                 ? 'Neem contact met ons op om uw passiefhuisproject te bespreken. Wij helpen u graag verder.'
                 : 'Get in touch with us to discuss your passive house project. We are happy to help.'}

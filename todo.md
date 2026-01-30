@@ -68,3 +68,9 @@
 - [x] Replace hover:bg-white with hover:bg-[#7aa050]
 - [x] Fix NotFound page gradient background to solid #dcdcdc
 - [x] Fix PrivacyPolicy and TermsOfService backgrounds and text colors
+
+## REMAINING BLACK/GRAY TEXT ISSUES (2026-01-30):
+- [ ] NotFound.tsx: text-slate-900, text-slate-700, text-slate-600 (3 instances)
+- [ ] 70 instances of text-gray-* across multiple pages still remaining
+- [ ] Replace ALL text-gray-* with text-[#2a3439]
+- [ ] Replace ALL text-slate-* with text-[#2a3439]

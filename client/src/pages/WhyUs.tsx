@@ -25,7 +25,7 @@ export default function WhyUs() {
           <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
             {language === 'nl' ? 'De Logica van Systeembouw.' : 'The Logic of System Construction.'}
           </h1>
-          <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-[#2a3439] leading-relaxed max-w-2xl mx-auto">
             {language === 'nl' 
               ? 'Een diepgaande analyse van de economische voordelen, technische superioriteit en ecologische noodzaak van Senmar MOD technologie.' 
               : 'A deep dive into the economic benefits, technical superiority, and ecological necessity of Senmar MOD technology.'}
@@ -76,7 +76,7 @@ export default function WhyUs() {
               <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8eb564]"><TrendingUp size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '1. Het Economische Perspectief' : '1. The Economic Perspective'}</h2>
-                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
+                <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
               </div>
             </div>
             <div className="prose prose-lg text-[#2a3439] leading-relaxed">
@@ -110,7 +110,7 @@ export default function WhyUs() {
               <div className="p-4 bg-[#e8f5f0] rounded-xl text-blue-700"><Factory size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '2. Technische Superioriteit' : '2. Technical Superiority'}</h2>
-                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
+                <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
               </div>
             </div>
             <div className="prose prose-lg text-[#2a3439] leading-relaxed">
@@ -159,7 +159,7 @@ export default function WhyUs() {
               <div className="p-4 bg-orange-100 rounded-xl text-orange-700"><Wrench size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '3. Energie-efficiëntie & Besparingen' : '3. Energy Efficiency & Savings'}</h2>
-                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'Van Optimal tot Super Passive' : 'From Optimal to Super Passive'}</p>
+                <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'Van Optimal tot Super Passive' : 'From Optimal to Super Passive'}</p>
               </div>
             </div>
 
@@ -169,14 +169,14 @@ export default function WhyUs() {
                 <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8eb564]/20">
                   <div className="text-3xl font-bold text-[#8eb564] mb-2">R-5.7</div>
                   <h4 className="font-bold mb-2">Optimal</h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-[#2a3439]">
                     {language === 'nl' ? 'Perfecte balans tussen investering en prestatie. Overtreft ruimschoots standaard bouweisen.' : 'Perfect balance between investment and performance. Far exceeds standard building requirements.'}
                   </p>
                 </div>
                 <div className="bg-[#8eb564] p-6 rounded-lg border-2 border-[#8eb564] transform scale-105 shadow-xl">
                   <div className="text-3xl font-bold text-foreground mb-2">R-8.5</div>
                   <h4 className="font-bold mb-2">Passive</h4>
-                  <p className="text-sm text-gray-100">
+                  <p className="text-sm text-[#2a3439]">
                     {language === 'nl' ? 'Onze standaard voor zeer energiezuinig wonen. Substantiële besparingen op lange termijn.' : 'Our standard for highly energy-efficient living. Substantial long-term savings.'}
                   </p>
                   <div className="mt-3 inline-block bg-[#8eb564] px-3 py-1 rounded-full text-xs font-bold">
@@ -186,7 +186,7 @@ export default function WhyUs() {
                 <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8eb564]/20">
                   <div className="text-3xl font-bold text-[#8eb564] mb-2">R-10.5</div>
                   <h4 className="font-bold mb-2">Super Passive</h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-[#2a3439]">
                     {language === 'nl' ? 'Passivhaus-normen. Tot 75% minder energieverbruik vs standaardbouw.' : 'Passivhaus standards. Up to 75% less energy consumption vs standard construction.'}
                   </p>
                 </div>
@@ -213,7 +213,7 @@ export default function WhyUs() {
               <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8eb564]"><Leaf size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
-                <p className="text-gray-500 text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
+                <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
               </div>
             </div>
             

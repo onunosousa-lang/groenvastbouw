@@ -191,7 +191,7 @@ export default function HowItWorks() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {language === 'nl' ? content.hero.titleNl : content.hero.titleEn}
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-[#2a3439] max-w-2xl">
             {language === 'nl' ? content.hero.subtitleNl : content.hero.subtitleEn}
           </p>
         </div>

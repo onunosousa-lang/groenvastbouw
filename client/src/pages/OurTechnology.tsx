@@ -127,7 +127,7 @@ export default function OurTechnology() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {language === 'nl' ? 'Onze Technologie' : 'Our Technology'}
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-[#2a3439] max-w-2xl">
             {language === 'nl'
               ? 'Vier technische presets ontworpen voor verschillende klimaten en behoeften. Kies het isolatieniveau dat bij jouw project past.'
               : 'Four technical presets designed for different climates and needs. Choose the insulation level that fits your project.'}

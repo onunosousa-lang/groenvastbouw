@@ -245,7 +245,7 @@ export default function FAQPage() {
                         </span>
                         <ChevronDown 
                           size={20} 
-                          className={`text-gray-500 transition-transform flex-shrink-0 ${openFaq === currentIndex ? 'rotate-180' : ''}`}
+                          className={`text-[#2a3439] transition-transform flex-shrink-0 ${openFaq === currentIndex ? 'rotate-180' : ''}`}
                         />
                       </button>
                       {openFaq === currentIndex && (
@@ -295,7 +295,7 @@ export default function FAQPage() {
       {/* Footer */}
       <footer className="bg-background text-foreground py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">{content.footer}</p>
+          <p className="text-[#2a3439]">{content.footer}</p>
         </div>
       </footer>
     </div>

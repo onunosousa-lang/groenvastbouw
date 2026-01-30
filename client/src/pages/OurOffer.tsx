@@ -342,7 +342,7 @@ export default function OurOffer() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {language === 'nl' ? content.intro.titleNl : content.intro.titleEn}
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-[#2a3439] max-w-2xl">
             {language === 'nl' ? content.intro.subtitleNl : content.intro.subtitleEn}
           </p>
         </div>
@@ -358,7 +358,7 @@ export default function OurOffer() {
         {/* Dark Background */}
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+          <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">
             {language === 'nl' ? (
               <>
                 <button 
@@ -404,7 +404,7 @@ export default function OurOffer() {
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8eb564] transition-colors">
                 <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-200">{feature}</span>
+                <span className="text-[#2a3439]">{feature}</span>
               </div>
             ))}
           </div>
@@ -424,7 +424,7 @@ export default function OurOffer() {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             {language === 'nl' ? content.method.titleNl : content.method.titleEn}
           </h2>
-          <p className="text-lg text-gray-300 mb-12">
+          <p className="text-lg text-[#2a3439] mb-12">
             {language === 'nl' ? content.method.subtitleNl : content.method.subtitleEn}
           </p>
           
@@ -442,7 +442,7 @@ export default function OurOffer() {
                   <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-gray-700">
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
-                        <li key={itemIdx} className="flex items-start gap-3 text-gray-300">
+                        <li key={itemIdx} className="flex items-start gap-3 text-[#2a3439]">
                           <span className="w-2 h-2 rounded-full bg-[#8eb564] mt-2 flex-shrink-0" />
                           <span>{item}</span>
                         </li>
@@ -480,7 +480,7 @@ export default function OurOffer() {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
           </h2>
-          <p className="text-lg text-gray-300 mb-12">
+          <p className="text-lg text-[#2a3439] mb-12">
             {language === 'nl' ? content.scope.introNl : content.scope.introEn}
           </p>
           
@@ -492,7 +492,7 @@ export default function OurOffer() {
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.factoryItemsNl : content.scope.factoryItemsEn).map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-300">
+                  <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                     <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
@@ -507,7 +507,7 @@ export default function OurOffer() {
               </h3>
               <ul className="space-y-3">
                 {(language === 'nl' ? content.scope.onsiteItemsNl : content.scope.onsiteItemsEn).map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-300">
+                  <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                     <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
@@ -555,7 +555,7 @@ export default function OurOffer() {
               <p className="text-lg font-bold text-foreground mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
-              <p className="text-gray-300">
+              <p className="text-[#2a3439]">
                 {language === 'nl' ? content.timeline.noteNl : content.timeline.noteEn}
               </p>
             </div>
@@ -576,7 +576,7 @@ export default function OurOffer() {
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8eb564] transition-colors">
                 <span className="text-[#8eb564] font-bold flex-shrink-0 mt-0.5">•</span>
-                <span className="text-gray-300">{item}</span>
+                <span className="text-[#2a3439]">{item}</span>
               </div>
             ))}
           </div>
@@ -596,7 +596,7 @@ export default function OurOffer() {
             {(language === 'nl' ? content.usecases.itemsNl : content.usecases.itemsEn).map((item, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#8eb564]">
                 <Building2 className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">{item}</span>
+                <span className="text-[#2a3439]">{item}</span>
               </div>
             ))}
           </div>
@@ -616,7 +616,7 @@ export default function OurOffer() {
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8eb564] transition-colors">
                 <Shield className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">{item}</span>
+                <span className="text-[#2a3439]">{item}</span>
               </div>
             ))}
           </div>
@@ -648,7 +648,7 @@ export default function OurOffer() {
           <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#8eb564]">
             <ul className="space-y-4">
               {(language === 'nl' ? content.warranty.itemsNl : content.warranty.itemsEn).map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-gray-300">
+                <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                   <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-0.5" />
                   <span className="font-medium">{item}</span>
                 </li>

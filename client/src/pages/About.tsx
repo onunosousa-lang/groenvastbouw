@@ -84,7 +84,7 @@ export default function About() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               {content.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 font-light">
+            <p className="text-xl md:text-2xl text-[#2a3439] font-light">
               {content.heroSubtitle}
             </p>
           </motion.div>
@@ -114,9 +114,9 @@ export default function About() {
                   {content.founderTag}
                 </div>
                 <h2 className="text-3xl font-bold mb-4 text-foreground">{content.founderTitle}</h2>
-                <h3 className="text-xl text-gray-300 mb-6">{content.founderName}</h3>
+                <h3 className="text-xl text-[#2a3439] mb-6">{content.founderName}</h3>
                 
-                <div className="space-y-4 text-gray-300 leading-relaxed">
+                <div className="space-y-4 text-[#2a3439] leading-relaxed">
                   <p>{content.founderStory1}</p>
                   <p>{content.founderStory2}</p>
                   <p>{content.founderStory3}</p>
@@ -132,7 +132,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">{content.partnershipTitle}</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-[#2a3439] max-w-3xl mx-auto">
               {content.partnershipSubtitle}
             </p>
           </div>
@@ -145,7 +145,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-foreground">{content.engineTitle}</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-[#2a3439] leading-relaxed">
                     {language === 'nl' 
                       ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
                       : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>
@@ -160,7 +160,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-foreground">{content.driverTitle}</h3>
-                  <p className="text-gray-300 leading-relaxed">{content.driverDesc}</p>
+                  <p className="text-[#2a3439] leading-relaxed">{content.driverDesc}</p>
                 </div>
               </div>
             </div>
@@ -194,26 +194,26 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">{content.whyUsTitle}</h2>
-            <p className="text-gray-300">{content.whyUsSubtitle}</p>
+            <p className="text-[#2a3439]">{content.whyUsSubtitle}</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Hammer className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.bootsTitle}</h3>
-              <p className="text-gray-300">{content.bootsDesc}</p>
+              <p className="text-[#2a3439]">{content.bootsDesc}</p>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <ShieldCheck className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.certifiedTitle}</h3>
-              <p className="text-gray-300">{content.certifiedDesc}</p>
+              <p className="text-[#2a3439]">{content.certifiedDesc}</p>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-gray-700">
               <Globe className="text-[#8eb564] mb-4 w-10 h-10" />
               <h3 className="text-xl font-bold mb-3 text-foreground">{content.multilingualTitle}</h3>
-              <p className="text-gray-300">{content.multilingualDesc}</p>
+              <p className="text-[#2a3439]">{content.multilingualDesc}</p>
             </div>
           </div>
         </div>
@@ -223,7 +223,7 @@ export default function About() {
       <section id="contact-cta" className="py-20 bg-[#2a3439] text-foreground text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
-          <p className="text-xl text-gray-300 mb-8">{content.ctaText}</p>
+          <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-[#8eb564] hover:bg-[#6da545] text-foreground px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}

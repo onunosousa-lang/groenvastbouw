@@ -84,7 +84,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           {/* Back Button */}
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-gray-300 hover:text-[#8eb564] transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-[#2a3439] hover:text-[#8eb564] transition-colors mb-8">
               <ArrowLeft className="w-5 h-5" />
               {content.backHome}
             </a>
@@ -92,7 +92,7 @@ export default function Projects() {
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{content.title}</h1>
-          <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
+          <p className="text-xl text-[#2a3439] leading-relaxed max-w-3xl">
             {content.subtitle}
           </p>
         </div>
@@ -110,7 +110,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-foreground mb-3">{content.completedTitle}</h2>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-[#2a3439]">
               {content.completedDesc.split('Senmar')[0]}
               <a 
                 href="https://www.senmar.pt" 
@@ -144,7 +144,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-foreground mb-3">{content.constructionTitle}</h2>
-            <p className="text-lg text-gray-300">{content.constructionDesc}</p>
+            <p className="text-lg text-[#2a3439]">{content.constructionDesc}</p>
           </div>
           
           <RollingGallery

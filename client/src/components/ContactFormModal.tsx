@@ -117,7 +117,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                         <Input 
                           placeholder={language === 'nl' ? "Uw naam" : "Your name"} 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -139,7 +139,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                           type="email" 
                           placeholder="naam@voorbeeld.nl" 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -161,7 +161,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                           type="tel" 
                           placeholder="+31 6 12345678" 
                           {...field} 
-                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400"
+                          className="bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -181,7 +181,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[100px] bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-gray-400 resize-none"
+                          className="min-h-[100px] bg-gray-50 border-gray-200 focus:border-[#8eb564] focus:ring-[#8eb564] placeholder:text-[#2a3439] resize-none"
                           {...field}
                         />
                       </FormControl>

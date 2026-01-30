@@ -167,7 +167,7 @@ export default function WhatWeOffer() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               {content.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 font-light">
+            <p className="text-xl md:text-2xl text-[#2a3439] font-light">
               {content.heroSubtitle}
             </p>
           </motion.div>
@@ -241,7 +241,7 @@ export default function WhatWeOffer() {
                     <ul className="space-y-3">
                       {content.structureNotIncludedItems.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
-                          <span className="text-gray-400 font-bold mt-1">−</span>
+                          <span className="text-[#2a3439] font-bold mt-1">−</span>
                           <span>{item}</span>
                         </li>
                       ))}

@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold text-[#8eb564] mb-3">{currentContent.company}</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-[#2a3439] text-sm leading-relaxed">
               {currentContent.description}
             </p>
           </div>
@@ -50,12 +50,12 @@ export default function Footer() {
             <h4 className="font-semibold text-[#8eb564] mb-3">{currentContent.contact}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <a href={`mailto:${currentContent.email}`} className="text-gray-300 hover:text-[#8eb564] transition-colors">
+                <a href={`mailto:${currentContent.email}`} className="text-[#2a3439] hover:text-[#8eb564] transition-colors">
                   {currentContent.email}
                 </a>
               </p>
               <p>
-                <a href={`tel:${currentContent.phone}`} className="text-gray-300 hover:text-[#8eb564] transition-colors">
+                <a href={`tel:${currentContent.phone}`} className="text-[#2a3439] hover:text-[#8eb564] transition-colors">
                   {currentContent.phone}
                 </a>
               </p>
@@ -67,12 +67,12 @@ export default function Footer() {
             <h4 className="font-semibold text-[#8eb564] mb-3">{t('footer_legal')}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#8eb564] transition-colors">
+                <Link href="/privacy-policy" className="text-[#2a3439] hover:text-[#8eb564] transition-colors">
                   {currentContent.privacy}
                 </Link>
               </p>
               <p>
-                <Link href="/terms-of-service" className="text-gray-300 hover:text-[#8eb564] transition-colors">
+                <Link href="/terms-of-service" className="text-[#2a3439] hover:text-[#8eb564] transition-colors">
                   {currentContent.terms}
                 </Link>
               </p>
@@ -83,15 +83,15 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-[#8eb564] mb-3">{t('footer_credentials')}</h4>
             <div className="space-y-2 text-sm">
-              <p className="text-gray-300">{currentContent.kvk}</p>
-              <p className="text-gray-300">{currentContent.insurance}</p>
+              <p className="text-[#2a3439]">{currentContent.kvk}</p>
+              <p className="text-[#2a3439]">{currentContent.insurance}</p>
             </div>
           </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
-          <p className="text-center text-gray-400 text-sm">
+          <p className="text-center text-[#2a3439] text-sm">
             {currentContent.rights}
           </p>
         </div>

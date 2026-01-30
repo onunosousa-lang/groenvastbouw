@@ -106,7 +106,7 @@ export default function Solutions() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
+          <p className="text-xl text-[#2a3439] max-w-2xl">
             {language === 'nl'
               ? 'Vier presets ontworpen voor verschillende behoeften. Kies het isolatieniveau dat bij jouw wensen past.'
               : 'Four presets designed for different needs. Choose the insulation level that fits your requirements.'}
