@@ -235,7 +235,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                   </p>
 
                   {/* Description */}
-                  <p className="text-base md:text-lg text-[#666666] mb-8 leading-relaxed">
+                  <p className="text-base md:text-lg text-[#2a3439] mb-8 leading-relaxed">
                     {slide.description}
                   </p>
 
