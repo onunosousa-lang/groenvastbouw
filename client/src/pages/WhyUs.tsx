@@ -86,13 +86,13 @@ export default function WhyUs() {
                   : 'The Dutch construction sector faces a structural shortage of skilled labor and rising material costs. Traditional on-site construction has become unpredictable and expensive. Our industrialized approach offers the only scalable solution.'}
               </p>
               <div className="grid md:grid-cols-2 gap-8 my-10">
-                <Card className="bg-gray-50 border-none shadow-md hover:shadow-lg transition-shadow">
+                <Card className="bg-[#dcdcdc] border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
                     <h4 className="font-bold text-[#2a3439] mb-3 text-xl">{language === 'nl' ? 'Versnelde Cashflow' : 'Accelerated Cashflow'}</h4>
                     <p className="text-base">{language === 'nl' ? 'Een bouwtijdverkorting van 70% betekent dat uw kapitaal 6-9 maanden eerder vrijkomt. Voor verhuurders betekent dit directe inkomsten in plaats van renteverlies tijdens de bouw.' : 'A 70% reduction in construction time means your capital is released 6-9 months earlier. For landlords, this means immediate income instead of interest loss during construction.'}</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-gray-50 border-none shadow-md hover:shadow-lg transition-shadow">
+                <Card className="bg-[#dcdcdc] border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
                     <h4 className="font-bold text-[#2a3439] mb-3 text-xl">{language === 'nl' ? 'Financiële Zekerheid' : 'Financial Certainty'}</h4>
                     <p className="text-base">{language === 'nl' ? 'Geen onverwacht meerwerk. Geen faalkosten door weerverlet. De kosten zijn tot op de euro nauwkeurig vastgesteld voordat de productie start.' : 'No unexpected extra costs. No failure costs due to weather delays. Costs are fixed down to the euro before production starts.'}</p>
@@ -102,7 +102,7 @@ export default function WhyUs() {
             </div>
           </div>
 
-          <hr className="border-gray-200 my-16" />
+          <hr className="border-[#dcdcdc] my-16" />
 
           {/* 2. TECHNICAL SUPERIORITY */}
           <div className="mb-20">
@@ -127,21 +127,21 @@ export default function WhyUs() {
 
               <ul className="space-y-6 list-none pl-0 mt-8">
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Ruler className="text-[#2a3439]" size={20} /></div>
+                  <div className="mt-1 p-2 bg-[#dcdcdc] rounded-lg"><Ruler className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">1mm Tolerantie</strong>
                     {language === 'nl' ? 'CNC-machines frezen het hout met een precisie die op de bouwplaats onmogelijk is. Dit garandeert naadloze aansluitingen en superieure luchtdichtheid.' : 'CNC machines mill the timber with a precision impossible on a construction site. This guarantees seamless connections and superior airtightness.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><Zap className="text-[#2a3439]" size={20} /></div>
+                  <div className="mt-1 p-2 bg-[#dcdcdc] rounded-lg"><Zap className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Thermal Bridge Free</strong>
                     {language === 'nl' ? 'Doordat isolatie machinaal en onder ideale omstandigheden wordt aangebracht, ontstaan er geen "gaps" of koudebruggen. Dit is essentieel voor het behalen van de Passiefhuis-standaard.' : 'Because insulation is applied mechanically under ideal conditions, there are no gaps or thermal bridges. This is essential for achieving the Passive House standard.'}
                   </div>
                 </li>
                 <li className="flex gap-5 items-start">
-                  <div className="mt-1 p-2 bg-gray-100 rounded-lg"><ShieldCheck className="text-[#2a3439]" size={20} /></div>
+                  <div className="mt-1 p-2 bg-[#dcdcdc] rounded-lg"><ShieldCheck className="text-[#2a3439]" size={20} /></div>
                   <div>
                     <strong className="text-[#2a3439] block mb-1">Geen Bouwvocht</strong>
                     {language === 'nl' ? 'Traditionele bouw sluit duizenden liters water in (beton, regen). Onze droogbouw methode elimineert schimmelrisico en zorgt voor een direct gezond binnenklimaat.' : 'Traditional construction traps thousands of liters of water (concrete, rain). Our dry construction method eliminates mold risk and ensures an immediately healthy indoor climate.'}
@@ -151,7 +151,7 @@ export default function WhyUs() {
             </div>
           </div>
 
-          <hr className="border-gray-200 my-16" />
+          <hr className="border-[#dcdcdc] my-16" />
 
           {/* 3. ENERGY EFFICIENCY & SAVINGS */}
           <div className="mb-20">
@@ -205,7 +205,7 @@ export default function WhyUs() {
             </div>
           </div>
 
-          <hr className="border-gray-200 my-16" />
+          <hr className="border-[#dcdcdc] my-16" />
 
           {/* 4. ECOLOGICAL IMPACT */}
           <div className="mb-10">
@@ -262,7 +262,7 @@ export default function WhyUs() {
           </p>
           <a 
             href="#contact" 
-            className="inline-block bg-[#dcdcdc] text-[#8edb38] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-block bg-[#dcdcdc] text-[#8edb38] px-10 py-4 rounded-lg text-lg font-bold hover:bg-[#dcdcdc] transition-colors shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
           </a>

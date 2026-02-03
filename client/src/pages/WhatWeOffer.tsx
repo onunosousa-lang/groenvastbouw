@@ -175,7 +175,7 @@ export default function WhatWeOffer() {
       </section>
 
       {/* TABS */}
-      <section className="py-12 px-4 bg-gray-50 border-b border-gray-200">
+      <section className="py-12 px-4 bg-[#dcdcdc] border-b border-[#dcdcdc]">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center gap-4">
             <button
@@ -183,7 +183,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
                   ? 'bg-[#8edb38] text-foreground shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8edb38]'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-[#dcdcdc] hover:border-[#8edb38]'
               }`}
             >
               {content.structureDelivery}
@@ -193,7 +193,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
                   ? 'bg-[#8edb38] text-foreground shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8edb38]'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-[#dcdcdc] hover:border-[#8edb38]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -232,7 +232,7 @@ export default function WhatWeOffer() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 border-gray-300 bg-gray-50">
+                <Card className="border-2 border-[#dcdcdc] bg-[#dcdcdc]">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                       <AlertCircle className="text-[#2a3439]" />
@@ -279,7 +279,7 @@ export default function WhatWeOffer() {
           )}
 
           {/* MODULAR & MULTIPLE ORDERS */}
-          <div className="mt-24 pt-16 border-t-2 border-gray-200">
+          <div className="mt-24 pt-16 border-t-2 border-[#dcdcdc]">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.modularTitle}</h2>
             <p className="text-xl text-[#2a3439] mb-12">{content.modularDesc}</p>
 
@@ -304,7 +304,7 @@ export default function WhatWeOffer() {
           </div>
 
           {/* CTA */}
-          <div className="mt-24 pt-16 border-t-2 border-gray-200 text-center">
+          <div className="mt-24 pt-16 border-t-2 border-[#dcdcdc] text-center">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.ctaTitle}</h2>
             <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
             <Button

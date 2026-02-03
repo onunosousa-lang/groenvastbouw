@@ -185,3 +185,27 @@
   - ✅ 0 hex colors outside palette in pages
   - ✅ 0 hex colors outside palette in components (except external chart library)
   - ✅ CSS variables all correct
+- [x] Build successful
+- [x] Committed and pushed (commit 053f962)
+- [x] Wait for Vercel deployment
+- [x] Verify all fixes on live site - ALL VERIFIED
+  - ✅ About page header size reduced (pt-24/pb-12)
+  - ✅ About page title color: #8edb38 (green) - VISIBLE
+  - ✅ About page subtitle color: #ffffff (white) - VISIBLE on #2a3439 background
+  - ✅ All text has proper contrast
+  - ✅ No overlay on photos (already correct)
+  - ✅ Text boxes opaque (bg-[#dcdcdc]/90)
+
+
+## TEXT BOX COLOR AUDIT (2026-02-03):
+- [x] Audit ALL text boxes across entire website for grey colors - Found 29 instances
+- [x] Ensure ONLY #dcdcdc is used for text box backgrounds
+- [x] Find and replace ANY other grey colors:
+  - bg-gray-50 → bg-[#dcdcdc]
+  - bg-gray-100 → bg-[#dcdcdc]
+  - bg-gray-200 → bg-[#dcdcdc]
+  - bg-gray-700 → bg-[#2a3439] (dark backgrounds)
+  - border-gray-* → border-[#dcdcdc]
+- [x] Verify NO other grey colors exist - 0 instances remaining
+- [ ] Build and deploy fixes
+- [ ] Verify on live site

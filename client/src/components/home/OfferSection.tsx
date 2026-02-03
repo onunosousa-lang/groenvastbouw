@@ -102,7 +102,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-[#dcdcdc] flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 
@@ -126,7 +126,7 @@ export default function OfferSection() {
               </ul>
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-200">
+            <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] h-12 text-base font-semibold group"
@@ -144,7 +144,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-[#dcdcdc] flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 
@@ -170,7 +170,7 @@ export default function OfferSection() {
 
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-200">
+            <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
               <a 
                 href="https://senmar.pt/en/projects#" 
                 target="_blank" 
@@ -193,7 +193,7 @@ export default function OfferSection() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-gray-100 flex flex-col transition-all duration-300"
+            className="bg-[#dcdcdc] rounded-2xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(42,52,57,0.4)] overflow-hidden border border-[#dcdcdc] flex flex-col transition-all duration-300"
           >
             <div className="p-8 flex-grow">
               <motion.div 
@@ -219,7 +219,7 @@ export default function OfferSection() {
 
             </div>
             
-            <div className="p-8 bg-gray-50 border-t border-gray-200">
+            <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
               <Button 
                 onClick={openModal}
                 className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] h-12 text-base font-semibold group"
@@ -233,7 +233,7 @@ export default function OfferSection() {
         </div>
 
         {/* Technical Solutions */}
-        <div className="mt-20 pt-20 border-t border-gray-200">
+        <div className="mt-20 pt-20 border-t border-[#dcdcdc]">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}

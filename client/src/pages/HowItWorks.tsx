@@ -243,7 +243,7 @@ export default function HowItWorks() {
                   className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeTier === tier.id
                       ? 'bg-[#8edb38] text-[#2a3439] shadow-md'
-                      : 'text-[#2a3439] hover:text-[#2a3439] hover:bg-gray-50'
+                      : 'text-[#2a3439] hover:text-[#2a3439] hover:bg-[#dcdcdc]'
                   }`}
                 >
                   {language === 'nl' ? tier.titleNl : tier.titleEn}
@@ -254,9 +254,9 @@ export default function HowItWorks() {
 
           {/* Active Tier Content */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-[#dcdcdc] rounded-2xl shadow-xl overflow-hidden border-2 border-gray-100">
+            <div className="bg-[#dcdcdc] rounded-2xl shadow-xl overflow-hidden border-2 border-[#dcdcdc]">
               {/* Tier Header */}
-              <div className="bg-[#dcdcdc] p-8 border-b-2 border-gray-100">
+              <div className="bg-[#dcdcdc] p-8 border-b-2 border-[#dcdcdc]">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#8edb38] mb-2">
                   {language === 'nl' ? currentTier.titleNl : currentTier.titleEn}
                 </h2>
@@ -269,7 +269,7 @@ export default function HowItWorks() {
               </div>
 
               {/* View Tabs */}
-              <div className="flex justify-center gap-4 p-6 bg-gray-50 border-b-2 border-gray-100">
+              <div className="flex justify-center gap-4 p-6 bg-[#dcdcdc] border-b-2 border-[#dcdcdc]">
                 {(['wall', 'floor', 'roof'] as const).map((view) => (
                   <button
                     key={view}

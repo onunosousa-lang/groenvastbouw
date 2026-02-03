@@ -22,7 +22,7 @@ export default function SystemsSection() {
               className={`relative transition-all duration-300 hover:-translate-y-2 ${
                 system.highlight 
                   ? 'border-[#8edb38] shadow-2xl scale-105 z-10' 
-                  : 'border-gray-200 shadow-lg hover:shadow-xl'
+                  : 'border-[#dcdcdc] shadow-lg hover:shadow-xl'
               }`}
             >
               {system.highlight && (
@@ -30,7 +30,7 @@ export default function SystemsSection() {
                   Meest Gekozen
                 </div>
               )}
-              <CardHeader className={`${system.highlight ? 'bg-[#dcdcdc]' : 'bg-card'} border-b border-gray-100`}>
+              <CardHeader className={`${system.highlight ? 'bg-[#dcdcdc]' : 'bg-card'} border-b border-[#dcdcdc]`}>
                 <CardTitle className="text-2xl font-bold text-center text-foreground">
                   {system.name}
                 </CardTitle>

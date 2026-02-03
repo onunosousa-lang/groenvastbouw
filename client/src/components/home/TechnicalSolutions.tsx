@@ -121,7 +121,7 @@ export default function TechnicalSolutions() {
             >
               <button
                 onClick={() => toggleTier(tier.id)}
-                className="w-full bg-background border-2 border-gray-200 rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
+                className="w-full bg-background border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
@@ -146,7 +146,7 @@ export default function TechnicalSolutions() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-6 space-y-4">
+                    <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-6 space-y-4">
                       {/* Description */}
                       <p className="text-foreground leading-relaxed">
                         {language === 'nl' ? tier.descNl : tier.descEn}

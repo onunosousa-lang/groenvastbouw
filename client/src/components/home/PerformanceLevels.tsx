@@ -149,7 +149,7 @@ export default function PerformanceLevels() {
                   level.color === 'green' ? 'bg-[#dcdcdc] text-[#8edb38]' : 
                   level.color === 'blue' ? 'bg-[#e8f5f0] text-[#8edb38]' : 
                   level.color === 'purple' ? 'bg-[#e8f5f0] text-[#8edb38]' :
-                  'bg-gray-200 text-[#2a3439]'
+                  'bg-[#dcdcdc] text-[#2a3439]'
                 }`}>
                   <level.icon className="w-6 h-6" />
                 </div>

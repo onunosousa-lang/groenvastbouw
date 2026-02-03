@@ -15,7 +15,7 @@ export default function EnergyComparison() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Chart Visualization */}
-          <div className="bg-card p-8 rounded-2xl shadow-2xl border border-gray-700">
+          <div className="bg-card p-8 rounded-2xl shadow-2xl border border-[#dcdcdc]">
             <div className="space-y-8">
               {/* Average House Bar */}
               <div>
@@ -23,7 +23,7 @@ export default function EnergyComparison() {
                   <span>{t('energy_comparison_average')}</span>
                   <span>150 kWh/m²/jr</span>
                 </div>
-                <div className="h-12 bg-gray-700 rounded-full overflow-hidden relative">
+                <div className="h-12 bg-[#2a3439] rounded-full overflow-hidden relative">
                   <div className="absolute top-0 left-0 h-full bg-red-500 w-full flex items-center justify-end px-4 font-bold">
                     {t('energy_comparison_per_year')}
                   </div>
@@ -39,7 +39,7 @@ export default function EnergyComparison() {
                   <span>{t('energy_comparison_groenvastbouw')}</span>
                   <span>15 kWh/m²/jr</span>
                 </div>
-                <div className="h-12 bg-gray-700 rounded-full overflow-hidden relative">
+                <div className="h-12 bg-[#2a3439] rounded-full overflow-hidden relative">
                   <div className="absolute top-0 left-0 h-full bg-[#8edb38] w-[10%] flex items-center justify-start px-4 font-bold whitespace-nowrap shadow-[0_0_20px_rgba(34,197,94,0.5)]">
                     90% {language === 'nl' ? 'minder' : 'less'}
                   </div>
@@ -50,7 +50,7 @@ export default function EnergyComparison() {
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-700">
+            <div className="mt-12 pt-8 border-t border-[#dcdcdc]">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-background/50 p-4 rounded-xl">
                   <div className="text-3xl font-bold text-[#8edb38] mb-1">90%</div>
@@ -97,7 +97,7 @@ export default function EnergyComparison() {
               </ul>
             </div>
 
-            <Card className="bg-card border-gray-700">
+            <Card className="bg-card border-[#dcdcdc]">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-[#2a3439]/50 p-3 rounded-lg">

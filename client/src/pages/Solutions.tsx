@@ -123,7 +123,7 @@ export default function Solutions() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-[#dcdcdc] border-2 border-gray-200 rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#dcdcdc] border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
@@ -142,7 +142,7 @@ export default function Solutions() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
+                  <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}

@@ -12,7 +12,7 @@ export default function SolutionsSection() {
         </div>
 
         <div className="max-w-4xl mx-auto mt-12 space-y-4">
-          <div className="bg-background rounded-lg shadow-md border border-gray-200 p-6">
+          <div className="bg-background rounded-lg shadow-md border border-[#dcdcdc] p-6">
             <h3 className="text-xl font-bold text-foreground mb-2">Basis Structuur</h3>
 
             <p className="text-foreground">
@@ -20,7 +20,7 @@ export default function SolutionsSection() {
             </p>
           </div>
 
-          <div className="bg-background rounded-lg shadow-md border border-gray-200 p-6">
+          <div className="bg-background rounded-lg shadow-md border border-[#dcdcdc] p-6">
             <h3 className="text-xl font-bold text-foreground mb-2">Optimale Structuur</h3>
 
             <p className="text-foreground">
@@ -28,7 +28,7 @@ export default function SolutionsSection() {
             </p>
           </div>
 
-          <div className="bg-background rounded-lg shadow-md border border-gray-200 p-6">
+          <div className="bg-background rounded-lg shadow-md border border-[#dcdcdc] p-6">
             <h3 className="text-xl font-bold text-foreground mb-2">Passieve Structuur</h3>
 
             <p className="text-foreground">

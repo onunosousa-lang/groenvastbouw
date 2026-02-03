@@ -45,7 +45,7 @@ export default function Contact() {
       </div>
 
       {/* Quick Info Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-[#dcdcdc]">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp} className="grid md:grid-cols-2 gap-12">
             <div>

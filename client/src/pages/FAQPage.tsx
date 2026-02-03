@@ -178,7 +178,7 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#dcdcdc]">
       {/* Header */}
       <header className="bg-background text-foreground py-4">
         <div className="container mx-auto px-4">
@@ -234,7 +234,7 @@ export default function FAQPage() {
                   return (
                     <div 
                       key={currentIndex}
-                      className="bg-[#dcdcdc] border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-all"
+                      className="bg-[#dcdcdc] border border-[#dcdcdc] rounded-lg overflow-hidden hover:shadow-md transition-all"
                     >
                       <button
                         className="w-full p-5 text-left flex justify-between items-center"
@@ -249,7 +249,7 @@ export default function FAQPage() {
                         />
                       </button>
                       {openFaq === currentIndex && (
-                        <div className="px-5 pb-5 border-t border-gray-100">
+                        <div className="px-5 pb-5 border-t border-[#dcdcdc]">
                           <p className="text-[#2a3439] leading-relaxed pt-4">
                             {language === 'nl' ? faq.answer_nl : faq.answer_en}
                           </p>

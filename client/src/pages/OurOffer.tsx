@@ -402,7 +402,7 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
                 <Check className="w-5 h-5 text-[#8edb38] flex-shrink-0 mt-0.5" />
                 <span className="text-[#2a3439]">{feature}</span>
               </div>
@@ -430,7 +430,7 @@ export default function OurOffer() {
           
           <div className="space-y-4">
             {(language === 'nl' ? content.method.phasesNl : content.method.phasesEn).map((phase, idx) => (
-              <div key={idx} className="border-2 border-gray-700 rounded-lg overflow-hidden hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="border-2 border-[#dcdcdc] rounded-lg overflow-hidden hover:border-[#8edb38] transition-colors">
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
                   className="w-full p-6 bg-card/50 backdrop-blur-sm hover:bg-card/70 flex items-center justify-between text-left">
@@ -439,7 +439,7 @@ export default function OurOffer() {
                 </button>
                 
                 {expandedSection === `phase-${idx}` && (
-                  <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-gray-700">
+                  <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-[#dcdcdc]">
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
                         <li key={itemIdx} className="flex items-start gap-3 text-[#2a3439]">
@@ -544,14 +544,14 @@ export default function OurOffer() {
           <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#8edb38] mb-8">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
-                <div key={idx} className="flex items-center justify-between p-4 bg-gray-700/50 rounded-lg border border-gray-600">
+                <div key={idx} className="flex items-center justify-between p-4 bg-[#2a3439]/50 rounded-lg border border-[#dcdcdc]">
                   <span className="font-semibold text-foreground">{item.phase}</span>
                   <span className="text-[#8edb38] font-bold">{item.duration}</span>
                 </div>
               ))}
             </div>
             
-            <div className="bg-gray-700/50 p-6 rounded-lg border-2 border-[#8edb38]">
+            <div className="bg-[#2a3439]/50 p-6 rounded-lg border-2 border-[#8edb38]">
               <p className="text-lg font-bold text-foreground mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
@@ -574,7 +574,7 @@ export default function OurOffer() {
           
           <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
                 <span className="text-[#8edb38] font-bold flex-shrink-0 mt-0.5">•</span>
                 <span className="text-[#2a3439]">{item}</span>
               </div>
@@ -614,7 +614,7 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-gray-700 hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
                 <Shield className="w-5 h-5 text-[#8edb38] flex-shrink-0 mt-0.5" />
                 <span className="text-[#2a3439]">{item}</span>
               </div>
