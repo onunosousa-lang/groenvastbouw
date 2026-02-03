@@ -87,4 +87,19 @@
 - [x] Error occurs while scrolling down on the website
 - [x] Investigate component causing the error - Found #666666 color in HeroCarousel
 - [x] Fixed #666666 to #2a3439 in HeroCarousel.tsx line 238
-- [ ] Test fix on live site
+- [x] Build successful
+- [x] Committed and pushed (commit 2e58fc7)
+- [x] Test fix on live site after Vercel deployment
+- [x] Scrolled through entire homepage - NO DOM errors detected
+- [x] Site loads correctly with all colors from 5-color palette
+- [x] Error RESOLVED - #666666 was causing React DOM insertBefore issue
+
+
+## HEADER STYLING UPDATE (2026-01-30):
+- [x] Change GROENVASTBOUW brand name color to #8edb38 (brighter green) - Desktop & Mobile
+- [x] Change header button colors to #8edb38 (Request intro call, language switcher)
+- [x] Add #dcdcdc background with light opacity to header (80% when transparent, 95% when scrolled)
+- [x] Update all hover states to use #8edb38 for links
+- [x] Update button hover to #7aa050 (existing hover color)
+- [ ] Build and deploy changes
+- [ ] Verify on live site
