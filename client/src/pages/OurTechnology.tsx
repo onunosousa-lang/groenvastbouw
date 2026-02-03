@@ -136,7 +136,7 @@ export default function OurTechnology() {
       </section>
 
       {/* Construction Methods */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-16 bg-[#dcdcdc]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Constructiemethoden' : 'Our Construction Methods'}
@@ -188,7 +188,7 @@ export default function OurTechnology() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-8 space-y-6">
+                  <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}

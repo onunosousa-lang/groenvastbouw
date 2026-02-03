@@ -45,11 +45,11 @@ export default function FAQSection() {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-card">
+    <section id="faq" className="py-20 bg-[#dcdcdc]">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">{t('faq_title')}</h2>
-          <p className="text-xl text-foreground">
+          <h2 className="text-4xl font-bold text-[#8edb38] mb-4">{t('faq_title')}</h2>
+          <p className="text-xl text-[#2a3439]">
             Antwoorden op veelgestelde vragen over onze technische oplossingen
           </p>
         </div>
@@ -59,12 +59,12 @@ export default function FAQSection() {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-background border border-[#dcdcdc] rounded-lg px-6"
+              className="bg-[#dcdcdc] border border-[#2a3439] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-foreground hover:text-[#8edb38] hover:no-underline py-6">
+              <AccordionTrigger className="text-lg font-medium text-[#2a3439] hover:text-[#8edb38] hover:no-underline py-6">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-foreground text-base pb-6 leading-relaxed">
+              <AccordionContent className="text-[#2a3439] text-base pb-6 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

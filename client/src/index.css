@@ -55,8 +55,8 @@
   /* Light Background - (#dcdcdc) */
   --background: 220 220 220;
   
-  /* Surface / Cards - Pure White (#FFFFFF) */
-  --card: 255 255 255;
+  /* Surface / Cards - Light Grey (#dcdcdc) */
+  --card: 220 220 220;
   --card-foreground: 42 52 57;
   
   /* Dark Text - Deep Slate (#2A3439) */
@@ -75,7 +75,7 @@
   --muted-foreground: 42 52 57;
   
   /* Popover */
-  --popover: 255 255 255;
+  --popover: 220 220 220;
   --popover-foreground: 42 52 57;
   
   /* Destructive - Clay Red */

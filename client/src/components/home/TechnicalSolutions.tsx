@@ -95,7 +95,7 @@ export default function TechnicalSolutions() {
   };
 
   return (
-    <section id="technical-solutions" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="technical-solutions" className="py-20 bg-[#dcdcdc]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -146,7 +146,7 @@ export default function TechnicalSolutions() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-6 space-y-4">
+                    <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-6 space-y-4">
                       {/* Description */}
                       <p className="text-foreground leading-relaxed">
                         {language === 'nl' ? tier.descNl : tier.descEn}

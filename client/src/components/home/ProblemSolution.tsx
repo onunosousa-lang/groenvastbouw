@@ -22,7 +22,7 @@ export default function ProblemSolution() {
       </section>
 
       {/* PROBLEM & SOLUTION */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 bg-[#dcdcdc]">
         <div className="container mx-auto px-4">
           
           {/* Problem */}

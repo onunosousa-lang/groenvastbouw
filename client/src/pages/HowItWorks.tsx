@@ -231,7 +231,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-16 bg-[#dcdcdc]">
         <div className="container mx-auto px-4">
           {/* Tier Navigation */}
           <div className="flex justify-center mb-12 overflow-x-auto">
@@ -294,7 +294,7 @@ export default function HowItWorks() {
                 </h3>
                 <div className="space-y-4">
                   {currentComponents.map((component, idx) => (
-                    <div key={idx} className="bg-gradient-to-r from-[#dcdcdc] to-white p-5 rounded-lg border border-[#8edb38]/20 hover:border-[#8edb38]/50 transition-colors">
+                    <div key={idx} className="bg-[#dcdcdc] p-5 rounded-lg border border-[#8edb38]/20 hover:border-[#8edb38]/50 transition-colors">
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#8edb38] text-[#2a3439] flex items-center justify-center font-bold">
                           {idx + 1}

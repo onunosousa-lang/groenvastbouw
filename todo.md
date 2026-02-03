@@ -250,7 +250,9 @@
   - Bullet points "●" → changed to #2a3439
   - Additional costs icons and prices → changed to #2a3439
 - [x] ALL text INSIDE text boxes now #2a3439 ONLY (7 replacements made)
-- [ ] Build and deploy fixes
+- [x] Build successful
+- [x] Committed and pushed (commit e72e0f2)
+- [ ] Wait for Vercel deployment
 - [ ] Verify on live site
 
 ## PROJECTS PAGE TITLES (2026-02-03 - USER FEEDBACK):
@@ -259,3 +261,31 @@
   - "In Constructie" (Under Construction) - REMOVED
 - [x] Replace with simple title: "Enkele van onze projecten" (Some of our projects)
 - [x] Merged all pictures into single gallery (no separate categories)
+
+## CRITICAL COLOR ISSUES FOUND (2026-02-03 - USER FEEDBACK):
+
+### FOOTER ISSUES:
+- [x] Footer has bg-[#2a3439] (dark gray background) - CORRECT
+- [x] Fixed: text inside footer now uses text-[#ffffff] (white) for visibility
+- [x] All footer links and text now white with green hover
+
+### FAQ SECTION ISSUES:
+- [x] FAQ section now uses bg-[#dcdcdc] (explicit light gray)
+- [x] AccordionItem now uses bg-[#dcdcdc] with border-[#2a3439]
+- [x] All text uses explicit colors: #8edb38 for title, #2a3439 for body
+
+### CSS VARIABLE ISSUES IN index.css:
+- [x] Fixed: --card: 220 220 220 (#dcdcdc)
+- [x] Fixed: --popover: 220 220 220 (#dcdcdc)
+- [x] All CSS variables now use 5-color palette only
+
+### FILES FIXED:
+1. ✅ client/src/components/Footer.tsx - text colors changed to #ffffff
+2. ✅ client/src/components/home/FAQSection.tsx - bg-card changed to bg-[#dcdcdc]
+3. ✅ client/src/index.css - --card and --popover changed to 220 220 220
+
+### ADDITIONAL FIXES:
+- [x] Removed ALL white gradients (to-white, from-white, gray-50)
+- [x] Fixed: HowItWorks.tsx, OurTechnology.tsx, Solutions.tsx
+- [x] Fixed: ProblemSolution.tsx, SolutionsSection.tsx, TechnicalSolutions.tsx
+- [x] All gradients replaced with solid bg-[#dcdcdc]
