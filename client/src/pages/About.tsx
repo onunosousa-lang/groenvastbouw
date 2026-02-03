@@ -63,13 +63,13 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground">
+    <div className="min-h-screen bg-background font-sans text-[#2a3439]">
       {/* 1. HERO SECTION */}
       <section className="pt-24 pb-12 px-4 bg-[#2a3439]">
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-[#8edb38] hover:text-foreground font-semibold transition-colors group"
+            className="inline-flex items-center text-[#8edb38] hover:text-[#2a3439] font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -113,7 +113,7 @@ export default function About() {
                 <div className="inline-block px-3 py-1 bg-[#8edb38]/10 text-[#8edb38] rounded-full text-sm font-bold mb-6 w-fit">
                   {content.founderTag}
                 </div>
-                <h2 className="text-3xl font-bold mb-4 text-foreground">{content.founderTitle}</h2>
+                <h2 className="text-3xl font-bold mb-4 text-[#2a3439]">{content.founderTitle}</h2>
                 <h3 className="text-xl text-[#2a3439] mb-6">{content.founderName}</h3>
                 
                 <div className="space-y-4 text-[#2a3439] leading-relaxed">
@@ -144,7 +144,7 @@ export default function About() {
                   <Zap className="text-[#8edb38]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">{content.engineTitle}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-[#2a3439]">{content.engineTitle}</h3>
                   <p className="text-[#2a3439] leading-relaxed">
                     {language === 'nl' 
                       ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
@@ -159,7 +159,7 @@ export default function About() {
                   <HardHat className="text-[#2a3439]" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">{content.driverTitle}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-[#2a3439]">{content.driverTitle}</h3>
                   <p className="text-[#2a3439] leading-relaxed">{content.driverDesc}</p>
                 </div>
               </div>
@@ -179,9 +179,9 @@ export default function About() {
       </section>
 
       {/* 4. MISSION */}
-      <section className="py-20 bg-[#8edb38] text-foreground text-center">
+      <section className="py-20 bg-[#8edb38] text-[#2a3439] text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <Leaf className="mx-auto mb-6 w-16 h-16 text-foreground/80" />
+          <Leaf className="mx-auto mb-6 w-16 h-16 text-[#2a3439]/80" />
           <h2 className="text-3xl md:text-5xl font-bold mb-8">{content.missionTitle}</h2>
           <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
             {content.missionText}
@@ -200,19 +200,19 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#dcdcdc]">
               <Hammer className="text-[#8edb38] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">{content.bootsTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-[#2a3439]">{content.bootsTitle}</h3>
               <p className="text-[#2a3439]">{content.bootsDesc}</p>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#dcdcdc]">
               <ShieldCheck className="text-[#8edb38] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">{content.certifiedTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-[#2a3439]">{content.certifiedTitle}</h3>
               <p className="text-[#2a3439]">{content.certifiedDesc}</p>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-[#dcdcdc]">
               <Globe className="text-[#8edb38] mb-4 w-10 h-10" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">{content.multilingualTitle}</h3>
+              <h3 className="text-xl font-bold mb-3 text-[#2a3439]">{content.multilingualTitle}</h3>
               <p className="text-[#2a3439]">{content.multilingualDesc}</p>
             </div>
           </div>
@@ -220,15 +220,15 @@ export default function About() {
       </section>
 
       {/* 6. CTA */}
-      <section id="contact-cta" className="py-20 bg-[#2a3439] text-foreground text-center">
+      <section id="contact-cta" className="py-20 bg-[#2a3439] text-[#2a3439] text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
           <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-8 py-6 text-lg" onClick={openModal}>
+            <Button size="lg" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
-            <Button size="lg" variant="outline" className="border-[#8edb38] text-foreground hover:bg-[#dcdcdc] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
+            <Button size="lg" variant="outline" className="border-[#8edb38] text-[#2a3439] hover:bg-[#dcdcdc] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
               {content.exploreSystems}
             </Button>
           </div>

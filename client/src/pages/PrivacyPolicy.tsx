@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
           </Link>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">
             {content.title}
           </h1>
           <p className="text-sm text-[#2a3439] mb-8">{content.lastUpdated}</p>
@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
           <div className="space-y-8">
             {content.sections.map((section, index) => (
               <div key={index} className="border-l-4 border-[#8edb38] pl-6">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
+                <h2 className="text-2xl font-bold text-[#2a3439] mb-4">
                   {section.title}
                 </h2>
                 <p className="text-[#2a3439] leading-relaxed">
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
 
           {/* Contact Section */}
           <div className="mt-12 p-6 bg-card rounded-lg border border-[#dcdcdc]">
-            <h3 className="text-xl font-bold text-foreground mb-4">
+            <h3 className="text-xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Vragen over uw privacy?' : 'Questions about your privacy?'}
             </h3>
             <p className="text-[#2a3439] mb-4">
@@ -165,13 +165,13 @@ export default function PrivacyPolicy() {
             </p>
             <div className="space-y-2">
               <p className="text-[#2a3439]">
-                <span className="font-semibold text-foreground">Email:</span>{' '}
+                <span className="font-semibold text-[#2a3439]">Email:</span>{' '}
                 <a href="mailto:info@groenvastbouw.nl" className="text-[#8edb38] hover:underline">
                   info@groenvastbouw.nl
                 </a>
               </p>
               <p className="text-[#2a3439]">
-                <span className="font-semibold text-foreground">Telefoon:</span>{' '}
+                <span className="font-semibold text-[#2a3439]">Telefoon:</span>{' '}
                 <a href="tel:+31629841297" className="text-[#8edb38] hover:underline">
                   +31 6 2984 1297
                 </a>

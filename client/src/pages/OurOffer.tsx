@@ -324,7 +324,7 @@ export default function OurOffer() {
       <Navbar />
       
       {/* Hero Section with Background Image */}
-      <section className="relative text-foreground py-16 md:py-24 mt-20 overflow-hidden">
+      <section className="relative text-[#2a3439] py-16 md:py-24 mt-20 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -421,7 +421,7 @@ export default function OurOffer() {
         />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? content.method.titleNl : content.method.titleEn}
           </h2>
           <p className="text-lg text-[#2a3439] mb-12">
@@ -434,7 +434,7 @@ export default function OurOffer() {
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
                   className="w-full p-6 bg-card/50 backdrop-blur-sm hover:bg-card/70 flex items-center justify-between text-left">
-                  <h3 className="text-xl font-bold text-foreground">{phase.title}</h3>
+                  <h3 className="text-xl font-bold text-[#2a3439]">{phase.title}</h3>
                   <ChevronDown className={`w-5 h-5 text-[#8edb38] transition-transform ${expandedSection === `phase-${idx}` ? 'rotate-180' : ''}`} />
                 </button>
                 
@@ -477,7 +477,7 @@ export default function OurOffer() {
         />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
           </h2>
           <p className="text-lg text-[#2a3439] mb-12">
@@ -487,7 +487,7 @@ export default function OurOffer() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Factory */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#8edb38]">
+              <h3 className="text-2xl font-bold text-[#2a3439] mb-6 text-[#8edb38]">
                 {language === 'nl' ? content.scope.factoryNl : content.scope.factoryEn}
               </h3>
               <ul className="space-y-3">
@@ -502,7 +502,7 @@ export default function OurOffer() {
             
             {/* On-Site */}
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6 text-[#8edb38]">
+              <h3 className="text-2xl font-bold text-[#2a3439] mb-6 text-[#8edb38]">
                 {language === 'nl' ? content.scope.onsiteNl : content.scope.onsiteEn}
               </h3>
               <ul className="space-y-3">
@@ -537,7 +537,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-12">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
           </h2>
           
@@ -545,14 +545,14 @@ export default function OurOffer() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
                 <div key={idx} className="flex items-center justify-between p-4 bg-[#2a3439]/50 rounded-lg border border-[#dcdcdc]">
-                  <span className="font-semibold text-foreground">{item.phase}</span>
+                  <span className="font-semibold text-[#2a3439]">{item.phase}</span>
                   <span className="text-[#8edb38] font-bold">{item.duration}</span>
                 </div>
               ))}
             </div>
             
             <div className="bg-[#2a3439]/50 p-6 rounded-lg border-2 border-[#8edb38]">
-              <p className="text-lg font-bold text-foreground mb-4">
+              <p className="text-lg font-bold text-[#2a3439] mb-4">
                 {language === 'nl' ? content.timeline.totalNl : content.timeline.totalEn}
               </p>
               <p className="text-[#2a3439]">
@@ -568,7 +568,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-12">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
           </h2>
           
@@ -588,7 +588,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-12">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.usecases.titleNl : content.usecases.titleEn}
           </h2>
           
@@ -608,7 +608,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-12">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.compliance.titleNl : content.compliance.titleEn}
           </h2>
           
@@ -641,7 +641,7 @@ export default function OurOffer() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
         <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold text-foreground mb-12">
+          <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}
           </h2>
           

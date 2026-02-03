@@ -87,7 +87,7 @@ export default function Projects() {
           </Link>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{content.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">{content.title}</h1>
           <p className="text-xl text-[#2a3439] leading-relaxed max-w-3xl">
             {content.subtitle}
           </p>
@@ -105,7 +105,7 @@ export default function Projects() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-3">{content.projectsTitle}</h2>
+            <h2 className="text-3xl font-bold text-[#2a3439] mb-3">{content.projectsTitle}</h2>
             <p className="text-lg text-[#2a3439]">
               {content.projectsDesc.split('Senmar')[0]}
               <a 

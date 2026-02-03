@@ -13,7 +13,7 @@ export default function WhyUs() {
       <Navbar />
       
       {/* Hero Section with Senmar Image */}
-      <section className="relative pt-32 pb-20 bg-background text-foreground overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-background text-[#2a3439] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img src="/senmar-photos/factory_senmar_2.jpg" alt="Senmar Factory" className="w-full h-full object-cover" />
         </div>
@@ -38,7 +38,7 @@ export default function WhyUs() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
-              <div className="inline-block bg-[#8edb38] text-foreground px-4 py-2 rounded-full text-sm font-bold mb-6">
+              <div className="inline-block bg-[#8edb38] text-[#2a3439] px-4 py-2 rounded-full text-sm font-bold mb-6">
                 {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
               <h2 className="text-4xl font-bold text-[#2a3439] mb-6">
@@ -163,7 +163,7 @@ export default function WhyUs() {
               </div>
             </div>
 
-            <div className="bg-card p-10 rounded-2xl text-foreground mb-8">
+            <div className="bg-card p-10 rounded-2xl text-[#2a3439] mb-8">
               <h3 className="text-2xl font-bold mb-6">{language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-[#dcdcdc] p-6 rounded-lg border border-[#8edb38]/20">
@@ -174,7 +174,7 @@ export default function WhyUs() {
                   </p>
                 </div>
                 <div className="bg-[#8edb38] p-6 rounded-lg border-2 border-[#8edb38] transform scale-105 shadow-xl">
-                  <div className="text-3xl font-bold text-foreground mb-2">R-8.5</div>
+                  <div className="text-3xl font-bold text-[#2a3439] mb-2">R-8.5</div>
                   <h4 className="font-bold mb-2">Passive</h4>
                   <p className="text-sm text-[#2a3439]">
                     {language === 'nl' ? 'Onze standaard voor zeer energiezuinig wonen. Substantiële besparingen op lange termijn.' : 'Our standard for highly energy-efficient living. Substantial long-term savings.'}
@@ -250,7 +250,7 @@ export default function WhyUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-[#8edb38] to-[#8edb38] text-foreground">
+      <section className="py-20 bg-gradient-to-r from-[#8edb38] to-[#8edb38] text-[#2a3439]">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-4xl font-bold mb-6">
             {language === 'nl' ? 'Klaar om de toekomst te bouwen?' : 'Ready to build the future?'}

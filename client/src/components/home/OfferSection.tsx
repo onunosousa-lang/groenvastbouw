@@ -89,8 +89,8 @@ export default function OfferSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
-          <p className="text-lg text-foreground font-medium leading-relaxed">{content.subheadline}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.headline}</h2>
+          <p className="text-lg text-[#2a3439] font-medium leading-relaxed">{content.subheadline}</p>
         </div>
 
         {/* Three Column Grid - REORGANIZED ORDER */}
@@ -235,10 +235,10 @@ export default function OfferSection() {
         {/* Technical Solutions */}
         <div className="mt-20 pt-20 border-t border-[#dcdcdc]">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
             </h3>
-            <p className="text-lg text-foreground font-medium">
+            <p className="text-lg text-[#2a3439] font-medium">
               {language === 'nl'
                 ? 'Vier niveaus van passiefhuisvoorbereiding, van basis tot super-passief.'
                 : 'Four levels of passive house readiness, from basic to super-passive.'}

@@ -72,8 +72,8 @@ export default function ContactForm() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">{t('contact_title')}</h2>
-            <p className="text-xl text-foreground">{t('contact_subtitle')}</p>
+            <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{t('contact_title')}</h2>
+            <p className="text-xl text-[#2a3439]">{t('contact_subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -81,24 +81,24 @@ export default function ContactForm() {
 
               <CardContent className="space-y-6">
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">Groenvastbouw</h3>
-                  <p className="text-foreground">Amsterdam, Nederland</p>
+                  <h3 className="font-bold text-[#2a3439] mb-1">Groenvastbouw</h3>
+                  <p className="text-[#2a3439]">Amsterdam, Nederland</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">Email</h3>
+                  <h3 className="font-bold text-[#2a3439] mb-1">Email</h3>
                   <a href="mailto:info@groenvastbouw.nl" className="text-[#8edb38] hover:underline">
                     info@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
+                  <h3 className="font-bold text-[#2a3439] mb-1">WhatsApp</h3>
                   <a href="https://wa.me/31629841297" className="text-[#8edb38] hover:underline">
                     {t('whatsapp_button')}
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">KvK</h3>
-                  <p className="text-foreground">75308045</p>
+                  <h3 className="font-bold text-[#2a3439] mb-1">KvK</h3>
+                  <p className="text-[#2a3439]">75308045</p>
                 </div>
               </CardContent>
             </Card>
@@ -110,9 +110,9 @@ export default function ContactForm() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">{t('contact_name')} *</FormLabel>
+                      <FormLabel className="text-[#2a3439]">{t('contact_name')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-card text-foreground" />
+                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-card text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -123,9 +123,9 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">{t('contact_email')} *</FormLabel>
+                      <FormLabel className="text-[#2a3439]">{t('contact_email')} *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-card text-foreground" />
+                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-card text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -136,9 +136,9 @@ export default function ContactForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">{t('contact_phone')}</FormLabel>
+                      <FormLabel className="text-[#2a3439]">{t('contact_phone')}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-card text-foreground" />
+                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-card text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -149,11 +149,11 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">{t('contact_message')} *</FormLabel>
+                      <FormLabel className="text-[#2a3439]">{t('contact_message')} *</FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[150px] bg-card text-foreground" 
+                          className="min-h-[150px] bg-card text-[#2a3439]" 
                           {...field} 
                         />
                       </FormControl>

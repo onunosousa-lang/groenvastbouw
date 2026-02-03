@@ -99,10 +99,10 @@ export default function TechnicalSolutions() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}
           </h2>
-          <p className="text-lg text-foreground font-medium">
+          <p className="text-lg text-[#2a3439] font-medium">
             {language === 'nl'
               ? 'Vier presets. Eén doel: maximale efficiëntie en kwaliteit.'
               : 'Four presets. One goal: maximum efficiency and quality.'}
@@ -125,7 +125,7 @@ export default function TechnicalSolutions() {
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-[#8edb38] transition-colors">
+                    <h3 className="text-xl font-bold text-[#2a3439] mb-1 group-hover:text-[#8edb38] transition-colors">
                       {language === 'nl' ? tier.titleNl : tier.titleEn}
                     </h3>
 
@@ -148,18 +148,18 @@ export default function TechnicalSolutions() {
                   >
                     <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-6 space-y-4">
                       {/* Description */}
-                      <p className="text-foreground leading-relaxed">
+                      <p className="text-[#2a3439] leading-relaxed">
                         {language === 'nl' ? tier.descNl : tier.descEn}
                       </p>
 
                       {/* Specifications */}
                       <div>
-                        <h4 className="font-semibold text-foreground mb-3">
+                        <h4 className="font-semibold text-[#2a3439] mb-3">
                           {language === 'nl' ? 'Kenmerken:' : 'Features:'}
                         </h4>
                         <ul className="space-y-2">
                           {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-foreground">
+                            <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
                               <span className="mt-1.5 w-2 h-2 rounded-full bg-[#8edb38] flex-shrink-0" />
                               <span>{spec}</span>
                             </li>

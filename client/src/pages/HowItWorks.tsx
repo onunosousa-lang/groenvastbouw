@@ -173,7 +173,7 @@ export default function HowItWorks() {
       <Navbar />
       
       {/* Hero Section with Background */}
-      <section className="relative text-foreground py-16 md:py-24 mt-20 overflow-hidden">
+      <section className="relative text-[#2a3439] py-16 md:py-24 mt-20 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -315,7 +315,7 @@ export default function HowItWorks() {
 
               {/* CTA Section */}
               <div className="bg-gradient-to-br from-[#2a3439] to-[#2a3439] p-8 text-center">
-                <p className="text-foreground text-lg mb-4">
+                <p className="text-[#2a3439] text-lg mb-4">
                   {language === 'nl' 
                     ? 'Geïnteresseerd in deze oplossing?' 
                     : 'Interested in this solution?'}

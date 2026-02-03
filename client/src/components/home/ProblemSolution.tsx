@@ -8,7 +8,7 @@ export default function ProblemSolution() {
   return (
     <>
       {/* SENMAR PARTNERSHIP INTRO */}
-      <section className="py-16 bg-background text-foreground">
+      <section className="py-16 bg-background text-[#2a3439]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
@@ -31,7 +31,7 @@ export default function ProblemSolution() {
               <div className="inline-block px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold mb-4">
                 {t('problem_title')}
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">
                 {t('problem_subtitle')}
               </h2>
             </div>
@@ -43,7 +43,7 @@ export default function ProblemSolution() {
                       <Users className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">{t('problem_labor')}</h3>
+                      <h3 className="font-semibold text-[#2a3439] mb-2">{t('problem_labor')}</h3>
                     </div>
                   </div>
                 </CardContent>
@@ -55,7 +55,7 @@ export default function ProblemSolution() {
                       <Clock className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">{t('problem_time')}</h3>
+                      <h3 className="font-semibold text-[#2a3439] mb-2">{t('problem_time')}</h3>
                     </div>
                   </div>
                 </CardContent>
@@ -67,7 +67,7 @@ export default function ProblemSolution() {
                       <TrendingUp className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">{t('problem_cost')}</h3>
+                      <h3 className="font-semibold text-[#2a3439] mb-2">{t('problem_cost')}</h3>
                     </div>
                   </div>
                 </CardContent>
@@ -79,7 +79,7 @@ export default function ProblemSolution() {
                       <ShieldCheck className="text-red-600" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">{t('problem_quality')}</h3>
+                      <h3 className="font-semibold text-[#2a3439] mb-2">{t('problem_quality')}</h3>
                     </div>
                   </div>
                 </CardContent>
@@ -93,7 +93,7 @@ export default function ProblemSolution() {
               <div className="inline-block px-4 py-2 bg-[#dcdcdc] text-[#2a3439] rounded-full text-sm font-semibold mb-4">
                 {t('solution_title')}
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">
                 {t('solution_subtitle')}
               </h2>
             </div>
@@ -104,7 +104,7 @@ export default function ProblemSolution() {
                     <Clock className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_speed')}</h3>
-                  <p className="text-foreground">{t('solution_speed_desc')}</p>
+                  <p className="text-[#2a3439]">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
@@ -113,7 +113,7 @@ export default function ProblemSolution() {
                     <Zap className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_energy')}</h3>
-                  <p className="text-foreground">{t('solution_energy_desc')}</p>
+                  <p className="text-[#2a3439]">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
@@ -122,7 +122,7 @@ export default function ProblemSolution() {
                     <ShieldCheck className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_quality')}</h3>
-                  <p className="text-foreground">{t('solution_quality_desc')}</p>
+                  <p className="text-[#2a3439]">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
@@ -131,7 +131,7 @@ export default function ProblemSolution() {
                     <Leaf className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_future')}</h3>
-                  <p className="text-foreground">{t('solution_future_desc')}</p>
+                  <p className="text-[#2a3439]">{t('solution_future_desc')}</p>
                 </CardContent>
               </Card>
             </div>

@@ -36,8 +36,8 @@ export default function FeaturedProjects() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
-            <p className="text-lg text-foreground leading-relaxed">{content.subheadline}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.headline}</h2>
+            <p className="text-lg text-[#2a3439] leading-relaxed">{content.subheadline}</p>
           </div>
           <Link href="/projects">
             <a className="inline-flex items-center gap-2 px-6 py-3 bg-[#8edb38] text-[#2a3439] rounded-lg font-semibold hover:bg-[#8edb38] transition-colors whitespace-nowrap">

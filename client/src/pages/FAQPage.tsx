@@ -136,7 +136,7 @@ export default function FAQPage() {
                 href="https://wa.me/31628358556" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <MessageCircle size={20} />
                 Get in touch on WhatsApp
@@ -150,7 +150,7 @@ export default function FAQPage() {
                 href="https://wa.me/31628358556" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <MessageCircle size={20} />
                 Neem contact op via WhatsApp
@@ -180,7 +180,7 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-[#dcdcdc]">
       {/* Header */}
-      <header className="bg-background text-foreground py-4">
+      <header className="bg-background text-[#2a3439] py-4">
         <div className="container mx-auto px-4">
           <Link href="/" className="flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] transition-colors w-fit">
             <ArrowLeft size={20} />
@@ -205,7 +205,7 @@ export default function FAQPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a 
             href="/#contact" 
-            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
           >
             <Mail size={20} />
             {content.contactUs}
@@ -214,7 +214,7 @@ export default function FAQPage() {
             href="https://wa.me/31629841297" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
           >
             <MessageCircle size={20} />
             {content.chatWhatsApp}
@@ -274,7 +274,7 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/#contact" 
-              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
             >
               <Mail size={20} />
               {content.contactUs}
@@ -283,7 +283,7 @@ export default function FAQPage() {
               href="https://wa.me/31629841297" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
             >
               <MessageCircle size={20} />
               {content.chatWhatsApp}
@@ -293,7 +293,7 @@ export default function FAQPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-background text-foreground py-8 mt-16">
+      <footer className="bg-background text-[#2a3439] py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
           <p className="text-[#2a3439]">{content.footer}</p>
         </div>

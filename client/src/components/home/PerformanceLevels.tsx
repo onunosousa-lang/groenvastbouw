@@ -114,8 +114,8 @@ export default function PerformanceLevels() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{content.headline}</h2>
-          <p className="text-lg text-foreground mb-8 leading-relaxed">{content.subheadline}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.headline}</h2>
+          <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">{content.subheadline}</p>
           <a
             href="https://www.senmar.pt/en/projects"
             target="_blank"
@@ -139,7 +139,7 @@ export default function PerformanceLevels() {
               }`}
             >
               {level.color === 'green' && (
-                <div className="absolute top-0 left-0 right-0 bg-[#8edb38] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
+                <div className="absolute top-0 left-0 right-0 bg-[#8edb38] text-[#2a3439] text-center py-1 text-sm font-bold uppercase tracking-wide">
                   {level.badge}
                 </div>
               )}
@@ -154,32 +154,22 @@ export default function PerformanceLevels() {
                   <level.icon className="w-6 h-6" />
                 </div>
 
-                <h3 className="text-xl font-bold text-foreground mb-1">{level.title}</h3>
-                <div className={`text-lg font-bold mb-1 ${
-                  level.color === 'green' ? 'text-[#8edb38]' : 
-                  level.color === 'blue' ? 'text-[#8edb38]' : 
-                  level.color === 'purple' ? 'text-[#8edb38]' :
-                  'text-foreground'
-                }`}>
+                <h3 className="text-xl font-bold text-[#2a3439] mb-1">{level.title}</h3>
+                <div className="text-lg font-bold mb-1 text-[#2a3439]">
                   {level.rValue}
                 </div>
                 {level.savings && (
-                  <div className="text-sm font-semibold text-[#8edb38] mb-3">
+                  <div className="text-sm font-semibold text-[#2a3439] mb-3">
                     {language === 'nl' ? 'Energiebesparing: ' : 'Energy Savings: '}{level.savings}
                   </div>
                 )}
                 
-                <p className="text-foreground mb-4 text-sm leading-relaxed">{level.desc}</p>
+                <p className="text-[#2a3439] mb-4 text-sm leading-relaxed">{level.desc}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {level.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-xs text-foreground leading-relaxed">
-                      <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        level.color === 'green' ? 'text-[#8edb38]' : 
-                        level.color === 'blue' ? 'text-[#8edb38]' : 
-                        level.color === 'purple' ? 'text-purple-500' :
-                        'text-foreground'
-                      }`} />
+                    <li key={idx} className="flex items-start gap-2 text-xs text-[#2a3439] leading-relaxed">
+                      <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#8edb38]" />
                       <span>{feature}</span>
                     </li>
                   ))}

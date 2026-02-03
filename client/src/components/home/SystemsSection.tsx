@@ -11,8 +11,8 @@ export default function SystemsSection() {
     <section id="systems" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">{t('pricing_title')}</h2>
-          <p className="text-xl text-foreground">{t('pricing_subtitle')}</p>
+          <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{t('pricing_title')}</h2>
+          <p className="text-xl text-[#2a3439]">{t('pricing_subtitle')}</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
@@ -26,24 +26,24 @@ export default function SystemsSection() {
               }`}
             >
               {system.highlight && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8edb38] text-foreground px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8edb38] text-[#2a3439] px-4 py-1 rounded-full text-sm font-bold">
                   Meest Gekozen
                 </div>
               )}
               <CardHeader className={`${system.highlight ? 'bg-[#dcdcdc]' : 'bg-card'} border-b border-[#dcdcdc]`}>
-                <CardTitle className="text-2xl font-bold text-center text-foreground">
+                <CardTitle className="text-2xl font-bold text-center text-[#2a3439]">
                   {system.name}
                 </CardTitle>
                 <div className="text-center mt-2">
-                  <span className="text-sm text-foreground">Rc-waarde</span>
+                  <span className="text-sm text-[#2a3439]">Rc-waarde</span>
                   <div className="text-3xl font-bold text-[#8edb38]">{system.r_value}</div>
                 </div>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="text-center mb-6">
-                  <span className="text-foreground font-medium">Isolatie: {system.insulation}</span>
+                  <span className="text-[#2a3439] font-medium">Isolatie: {system.insulation}</span>
                 </div>
-                <p className="text-foreground text-center mb-8 text-sm min-h-[3rem]">
+                <p className="text-[#2a3439] text-center mb-8 text-sm min-h-[3rem]">
                   {system.desc}
                 </p>
                 <ul className="space-y-4">
@@ -52,7 +52,7 @@ export default function SystemsSection() {
                       <div className="mt-1 bg-[#dcdcdc] rounded-full p-1">
                         <Check className="text-[#8edb38] w-3 h-3" />
                       </div>
-                      <span className="text-sm text-foreground">{feature}</span>
+                      <span className="text-sm text-[#2a3439]">{feature}</span>
                     </li>
                   ))}
                 </ul>
