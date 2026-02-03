@@ -8,7 +8,7 @@ export default function ProblemSolution() {
   return (
     <>
       {/* SENMAR PARTNERSHIP INTRO */}
-      <section className="py-16 bg-background text-[#2a3439]">
+      <section className="py-16 bg-[#dcdcdc] text-[#2a3439]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
@@ -36,7 +36,7 @@ export default function ProblemSolution() {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-red-200 bg-background/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -48,7 +48,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-background/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -60,7 +60,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-background/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -72,7 +72,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-background/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">

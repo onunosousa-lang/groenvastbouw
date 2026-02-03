@@ -62,13 +62,13 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#dcdcdc] relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/fabriek-productie-houten-structuur-montage.jpg)' }}
       />
-      <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

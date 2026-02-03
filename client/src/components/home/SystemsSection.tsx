@@ -8,7 +8,7 @@ export default function SystemsSection() {
   const systems = translations[language].systems_array;
 
   return (
-    <section id="systems" className="py-20 bg-background">
+    <section id="systems" className="py-20 bg-[#dcdcdc]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{t('pricing_title')}</h2>

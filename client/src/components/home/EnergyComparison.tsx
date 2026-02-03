@@ -6,7 +6,7 @@ export default function EnergyComparison() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-20 bg-background text-[#2a3439]">
+    <section className="py-20 bg-[#dcdcdc] text-[#2a3439]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('energy_comparison_title')}</h2>
@@ -52,11 +52,11 @@ export default function EnergyComparison() {
 
             <div className="mt-12 pt-8 border-t border-[#dcdcdc]">
               <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="bg-background/50 p-4 rounded-xl">
+                <div className="bg-[#dcdcdc]/50 p-4 rounded-xl">
                   <div className="text-3xl font-bold text-[#8edb38] mb-1">90%</div>
                   <div className="text-sm text-[#2a3439]">{t('energy_comparison_savings_annual')}</div>
                 </div>
-                <div className="bg-background/50 p-4 rounded-xl border border-[#8edb38]/20">
+                <div className="bg-[#dcdcdc]/50 p-4 rounded-xl border border-[#8edb38]/20">
                   <div className="text-3xl font-bold text-[#8edb38] mb-1">{language === 'nl' ? 'Aanzienlijk' : 'Significant'}</div>
                   <div className="text-sm text-[#2a3439]">{t('energy_comparison_savings_30y')}</div>
                 </div>

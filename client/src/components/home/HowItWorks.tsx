@@ -103,7 +103,7 @@ export default function HowItWorks() {
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: 'url(/fabriek-productie-prefab-wand-constructie.jpg)' }}
       />
-      <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -118,7 +118,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-background text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -128,7 +128,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-background text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -159,7 +159,7 @@ export default function HowItWorks() {
                     <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#dcdcdc] -z-10" />
                   )}
                   
-                  <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-[#dcdcdc]/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
                       activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
                     }`}>

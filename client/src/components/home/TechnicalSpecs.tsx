@@ -108,7 +108,7 @@ export default function TechnicalSpecs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-background rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-[#8edb38] transition-colors"
+              className="bg-[#dcdcdc] rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-[#8edb38] transition-colors"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-xl bg-[#8edb38]/10 flex items-center justify-center flex-shrink-0">

@@ -6,7 +6,7 @@ export default function TechnologySection() {
   const { t, language } = useLanguage();
 
   return (
-    <section id="technology" className="py-20 bg-background">
+    <section id="technology" className="py-20 bg-[#dcdcdc]">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

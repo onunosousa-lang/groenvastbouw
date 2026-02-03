@@ -121,7 +121,7 @@ export default function TechnicalSolutions() {
             >
               <button
                 onClick={() => toggleTier(tier.id)}
-                className="w-full bg-background border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
+                className="w-full bg-[#dcdcdc] border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">

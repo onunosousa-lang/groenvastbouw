@@ -66,7 +66,7 @@ export default function LazyVideo({ src, poster, className, children }: LazyVide
       
       <button
         onClick={togglePlay}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background/50 hover:bg-background/70 text-foreground p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus:opacity-100"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#dcdcdc]/50 hover:bg-[#dcdcdc]/70 text-[#2a3439] p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus:opacity-100"
         aria-label={isPlaying ? "Pause video" : "Play video"}
       >
         {isPlaying ? <Pause size={32} /> : <Play size={32} />}

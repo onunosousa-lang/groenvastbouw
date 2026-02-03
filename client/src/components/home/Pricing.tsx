@@ -85,7 +85,7 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-background scroll-mt-20 relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-[#dcdcdc] scroll-mt-20 relative overflow-hidden">
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8edb38 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
