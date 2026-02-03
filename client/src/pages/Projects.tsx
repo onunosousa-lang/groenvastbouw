@@ -12,17 +12,13 @@ export default function Projects() {
     subtitle: language === 'nl' 
       ? 'Bekijk onze gerealiseerde passiefhuis projecten en lopende constructies'
       : 'View our realized passive house projects and ongoing constructions',
-    completedTitle: language === 'nl' ? 'Voltooide Projecten' : 'Completed Projects',
-    completedDesc: language === 'nl'
+    projectsTitle: language === 'nl' ? 'Enkele van onze projecten' : 'Some of our projects',
+    projectsDesc: language === 'nl'
       ? 'Hoogperformante passiefhuizen en extensies gerealiseerd in samenwerking met Senmar'
       : 'High-performance passive houses and extensions realized in partnership with Senmar',
-    constructionTitle: language === 'nl' ? 'In Constructie' : 'Under Construction',
-    constructionDesc: language === 'nl'
-      ? 'Lopende projecten: van productie tot montage'
-      : 'Ongoing projects: from production to assembly',
   };
 
-  const completedProjects = [
+  const allProjects = [
     { src: '/project-horta-spanje-passief-huis-voltooid.jpg', alt: 'Horta Spanje - Passief huis voltooid' },
     { src: '/project-horta-spanje-passief-huis-exterieur.jpg', alt: 'Horta Spanje - Passief huis exterieur' },
     { src: '/project-horta-spanje-passief-huis-detail.jpg', alt: 'Horta Spanje - Passief huis detail' },
@@ -46,7 +42,7 @@ export default function Projects() {
     { src: '/project-ioan-ijsland-buitenkant.jpg', alt: 'Ioan IJsland - Buitenkant' },
   ];
 
-  const underConstructionProjects = [
+  const moreProjects = [
     { src: '/project-constructie-externe-muur-isolatie-1.jpg', alt: 'Constructie - Externe muur isolatie fase 1' },
     { src: '/project-constructie-externe-muur-isolatie-2.jpg', alt: 'Constructie - Externe muur isolatie fase 2' },
     { src: '/project-rav-zweden-constructie-fase-1.jpg', alt: 'Rav Zweden - Constructie fase 1' },
@@ -98,7 +94,7 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Completed Projects Gallery */}
+      {/* Projects Gallery */}
       <section className="relative py-16 overflow-hidden">
         {/* Background Image with Transparency */}
         <div 
@@ -109,9 +105,9 @@ export default function Projects() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-3">{content.completedTitle}</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-3">{content.projectsTitle}</h2>
             <p className="text-lg text-[#2a3439]">
-              {content.completedDesc.split('Senmar')[0]}
+              {content.projectsDesc.split('Senmar')[0]}
               <a 
                 href="https://www.senmar.pt" 
                 target="_blank" 
@@ -120,36 +116,13 @@ export default function Projects() {
               >
                 Senmar
               </a>
-              {content.completedDesc.split('Senmar')[1]}
+              {content.projectsDesc.split('Senmar')[1]}
             </p>
           </div>
           
           <RollingGallery
-            images={completedProjects}
+            images={[...allProjects, ...moreProjects]}
             speed={30}
-            height="400px"
-          />
-        </div>
-      </section>
-
-      {/* Under Construction Gallery */}
-      <section className="relative py-16 overflow-hidden">
-        {/* Background Image with Transparency */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: 'url(/project-rav-zweden-constructie-fase-1.jpg)' }}
-        />
-        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-3">{content.constructionTitle}</h2>
-            <p className="text-lg text-[#2a3439]">{content.constructionDesc}</p>
-          </div>
-          
-          <RollingGallery
-            images={underConstructionProjects}
-            speed={35}
             height="400px"
           />
         </div>

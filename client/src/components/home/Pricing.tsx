@@ -116,7 +116,7 @@ export default function Pricing() {
             
             <div className="p-8">
               <div className="text-center mb-6">
-                <div className="text-5xl font-bold text-[#8edb38] mb-2">
+                <div className="text-5xl font-bold text-[#2a3439] mb-2">
                   {content.structurePrice}
                   <span className="text-2xl text-[#2a3439] ml-2">{content.structurePriceUnit}</span>
                 </div>
@@ -126,7 +126,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-6">
                 {content.structureFeatures.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm text-[#2a3439] leading-relaxed">
-                    <span className="text-[#8edb38] font-bold">●</span>
+                    <span className="text-[#2a3439] font-bold">●</span>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -156,7 +156,7 @@ export default function Pricing() {
             
             <div className="p-8">
               <div className="text-center mb-6">
-                <div className="text-5xl font-bold text-[#8edb38] mb-2">
+                <div className="text-5xl font-bold text-[#2a3439] mb-2">
                   {content.turnkeyPrice}
                   <span className="text-2xl text-[#2a3439] ml-2">{content.turnkeyPriceUnit}</span>
                 </div>
@@ -167,7 +167,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-6">
                 {content.turnkeyFeatures.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm text-[#2a3439] leading-relaxed">
-                    <span className="text-[#8edb38] font-bold">●</span>
+                    <span className="text-[#2a3439] font-bold">●</span>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -189,14 +189,14 @@ export default function Pricing() {
                 transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
                 className="bg-[#dcdcdc] rounded-xl p-6 flex items-center gap-4 shadow-md"
               >
-                <div className="w-12 h-12 rounded-full bg-[#8edb38]/20 flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-6 h-6 text-[#8edb38]" />
+                <div className="w-12 h-12 rounded-full bg-[#2a3439]/20 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-[#2a3439]" />
                 </div>
                 <div className="flex-grow">
                   <p className="text-sm text-[#2a3439] font-medium">{item.label}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-2xl font-bold text-[#8edb38]">{item.price}</p>
+                  <p className="text-2xl font-bold text-[#2a3439]">{item.price}</p>
                   <p className="text-xs text-[#2a3439]">{item.unit}</p>
                 </div>
               </motion.div>

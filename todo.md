@@ -231,5 +231,31 @@
   - ALL descriptions
 - [x] Text boxes must be SOLID #dcdcdc - NO transparency - VERIFIED
 - [x] Current implementation is ALREADY CORRECT - no changes needed to green usage
-- [ ] Build and deploy (only transparency fix)
+- [x] Build successful
+- [x] Committed and pushed (commit 2a4edbd) - Removed transparency from 9 instances
+- [x] Wait for Vercel deployment
+- [x] Verify on live site - ALL VERIFIED
+  - ✅ Text boxes have SOLID #dcdcdc backgrounds (NO transparency)
+  - ✅ Green #8edb38 used for headers, titles, icons, buttons, links
+  - ✅ Text #2a3439 used for ALL body text
+  - ✅ Photos fully visible behind text boxes
+  - ✅ Proper contrast and readability maintained
+
+
+## PRICING SECTION TEXT BOX ISSUE (2026-02-03 - USER FEEDBACK):
+- [x] Remove green headers from INSIDE Pricing section text boxes
+  - "Passieve Structuur" → changed to #2a3439
+  - "Sleutelklaar Gebouw" → changed to #2a3439
+  - "€400", "€1.750" → changed to #2a3439
+  - Bullet points "●" → changed to #2a3439
+  - Additional costs icons and prices → changed to #2a3439
+- [x] ALL text INSIDE text boxes now #2a3439 ONLY (7 replacements made)
+- [ ] Build and deploy fixes
 - [ ] Verify on live site
+
+## PROJECTS PAGE TITLES (2026-02-03 - USER FEEDBACK):
+- [x] Remove incorrect titles from Projects page:
+  - "Voltooide Projecten" (Completed Projects) - REMOVED
+  - "In Constructie" (Under Construction) - REMOVED
+- [x] Replace with simple title: "Enkele van onze projecten" (Some of our projects)
+- [x] Merged all pictures into single gallery (no separate categories)
