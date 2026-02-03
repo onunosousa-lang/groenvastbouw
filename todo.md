@@ -207,5 +207,29 @@
   - bg-gray-700 → bg-[#2a3439] (dark backgrounds)
   - border-gray-* → border-[#dcdcdc]
 - [x] Verify NO other grey colors exist - 0 instances remaining
-- [ ] Build and deploy fixes
+- [x] Build successful
+- [x] Committed and pushed (commit ca699ca)
+- [x] Wait for Vercel deployment
+- [x] Verify on live site - ALL VERIFIED
+  - ✅ Homepage text boxes use #dcdcdc
+  - ✅ ZERO non-#dcdcdc grey colors remain
+  - ✅ Only 2 grey colors in entire website: #dcdcdc (text boxes) and #2a3439 (text/dark backgrounds)
+  - ✅ All 22 modified files deployed successfully
+
+
+## TEXT BOX CORRECTIONS (2026-02-03 - USER CORRECTED UNDERSTANDING):
+- [x] Remove transparency from ALL text boxes (bg-[#dcdcdc]/90 → bg-[#dcdcdc]) - 9 instances fixed
+- [x] CORRECTED: Green #8edb38 should be used for:
+  - ALL headers and titles (h1, h2, h3) throughout the site
+  - ALL icons throughout the site
+  - ALL buttons (with WHITE text) throughout the site
+  - ALL accents and links throughout the site
+  - "GROENVASTBOUW" in header
+- [x] Text #2a3439 should be used for:
+  - ALL body text
+  - ALL paragraphs
+  - ALL descriptions
+- [x] Text boxes must be SOLID #dcdcdc - NO transparency - VERIFIED
+- [x] Current implementation is ALREADY CORRECT - no changes needed to green usage
+- [ ] Build and deploy (only transparency fix)
 - [ ] Verify on live site

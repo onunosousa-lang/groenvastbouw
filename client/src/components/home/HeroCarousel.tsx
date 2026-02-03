@@ -223,7 +223,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             {slides.map((slide) => (
               <div key={slide.id} className="embla__slide min-w-full">
                 {/* Text content with light gray background box for contrast - Senmar style */}
-                <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
+                <div className="bg-[#dcdcdc] backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
                   {/* Headline */}
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">
                     {slide.headline}

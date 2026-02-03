@@ -166,7 +166,7 @@ export default function WhyUs() {
             <div className="bg-card p-10 rounded-2xl text-foreground mb-8">
               <h3 className="text-2xl font-bold mb-6">{language === 'nl' ? 'Technische Oplossingen' : 'Technical Solutions'}</h3>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8edb38]/20">
+                <div className="bg-[#dcdcdc] p-6 rounded-lg border border-[#8edb38]/20">
                   <div className="text-3xl font-bold text-[#8edb38] mb-2">R-5.7</div>
                   <h4 className="font-bold mb-2">Optimal</h4>
                   <p className="text-sm text-[#2a3439]">
@@ -183,7 +183,7 @@ export default function WhyUs() {
                     {language === 'nl' ? 'Meest Gekozen' : 'Most Popular'}
                   </div>
                 </div>
-                <div className="bg-[#dcdcdc]/10 p-6 rounded-lg border border-[#8edb38]/20">
+                <div className="bg-[#dcdcdc] p-6 rounded-lg border border-[#8edb38]/20">
                   <div className="text-3xl font-bold text-[#8edb38] mb-2">R-10.5</div>
                   <h4 className="font-bold mb-2">Super Passive</h4>
                   <p className="text-sm text-[#2a3439]">
@@ -230,15 +230,15 @@ export default function WhyUs() {
                    : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
-                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc] p-4 rounded-lg">
                    <span className="block font-bold text-[#2a3439] mb-1">Stikstof reductie</span>
                    <span className="text-sm text-[#2a3439]">{language === 'nl' ? '80% minder transportbewegingen naar de bouwplaats.' : '80% fewer transport movements to the site.'}</span>
                  </div>
-                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc] p-4 rounded-lg">
                    <span className="block font-bold text-[#2a3439] mb-1">Circulair</span>
                    <span className="text-sm text-[#2a3439]">{language === 'nl' ? 'Materialen zijn demontabel en recyclebaar.' : 'Materials are demountable and recyclable.'}</span>
                  </div>
-                 <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
+                 <div className="bg-[#dcdcdc] p-4 rounded-lg">
                    <span className="block font-bold text-[#2a3439] mb-1">FSC Gecertificeerd</span>
                    <span className="text-sm text-[#2a3439]">{language === 'nl' ? '100% duurzaam geproduceerd hout.' : '100% sustainably sourced timber.'}</span>
                  </div>
