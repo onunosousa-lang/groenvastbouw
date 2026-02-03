@@ -101,5 +101,19 @@
 - [x] Add #dcdcdc background with light opacity to header (80% when transparent, 95% when scrolled)
 - [x] Update all hover states to use #8edb38 for links
 - [x] Update button hover to #7aa050 (existing hover color)
+- [x] Build successful
+- [x] Committed and pushed (commit 09992e9)
+- [x] Wait for Vercel deployment
+- [x] Verify on live site - ALL CHANGES CONFIRMED
+  - ✅ Brand name "Groenvastbouw" visible in green
+  - ✅ Header background #dcdcdc/80 visible and improves text readability
+  - ✅ Buttons "Request an intro call" and "en" visible with green background
+  - ✅ All changes successfully deployed
+
+
+## TEXT BOX TRANSPARENCY UPDATE (2026-01-30):
+- [x] Reduce opacity of #dcdcdc backgrounds in hero carousel text boxes (90% → 70%)
+- [x] Make photos more visible behind text boxes
+- [x] Changed from bg-[#dcdcdc]/90 to bg-[#dcdcdc]/70 in HeroCarousel.tsx
 - [ ] Build and deploy changes
 - [ ] Verify on live site
