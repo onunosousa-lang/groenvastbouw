@@ -44,23 +44,23 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
     {
       id: 1,
       headline: language === 'nl' 
-        ? 'Jouw Passiefhuis. Gebouwd in 3 Maanden.'
-        : 'Your Passive House. Built in 3 Months.',
+        ? 'Jouw Passiefhuis. Montage in 8-12 Dagen.'
+        : 'Your Passive House. Assembly in 8-12 Days.',
       subheadline: language === 'nl'
-        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>
-        : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] font-bold hover:underline">SENMAR</a></>,
+        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>
+        : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>,
       description: language === 'nl'
         ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
         : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
       points: language === 'nl' 
         ? [
             '90% lagere energierekeningen. voor het leven',
-            '3 maanden van bestelling tot gemonteerde structuur',
+            'Montage: 8-12 dagen. Totale doorlooptijd: 3 maanden',
             'Maximale kwaliteit, gebouwd om te duren'
           ]
         : [
             '90% lower energy bills. for life',
-            '3 months from order to mounted structure',
+            'Assembly: 8-12 days. Total lead time: 3 months',
             'Maximum quality, built to last'
           ]
     },
@@ -223,9 +223,9 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             {slides.map((slide) => (
               <div key={slide.id} className="embla__slide min-w-full">
                 {/* Text content with light gray background box for contrast - Senmar style */}
-                <div className="bg-[#dcdcdc]/70 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
+                <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
                   {/* Headline */}
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8eb564] mb-6 leading-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">
                     {slide.headline}
                   </h1>
 
@@ -243,7 +243,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                   <div className="space-y-3 mb-10">
                     {slide.points.map((point, index) => (
                       <div key={index} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#8eb564] flex-shrink-0 mt-1" />
+                        <Check className="w-5 h-5 text-[#8edb38] flex-shrink-0 mt-1" />
                         <span className="text-[#2a3439] text-base md:text-lg font-medium">
                           {point}
                         </span>
@@ -257,13 +257,13 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
                       href="https://wa.me/31629841298"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#8eb564]"
+                      className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#8edb38]"
                     >
                       WhatsApp
                     </a>
                     <Button 
                       onClick={openModal}
-                      className="flex-1 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#8eb564]"
+                      className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#8edb38]"
                     >
                       {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
                     </Button>
@@ -283,7 +283,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             onClick={() => scrollTo(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === selectedIndex 
-                ? 'bg-[#8eb564] w-8' 
+                ? 'bg-[#8edb38] w-8' 
                 : 'bg-[#2a3439]/40 hover:bg-[#2a3439]/60'
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -294,7 +294,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
       {/* Scroll Indicator */}
       <button 
         onClick={() => scrollToSection('offer')} 
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-[#2a3439] hover:text-[#8eb564] transition-colors animate-bounce z-20"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-[#2a3439] hover:text-[#8edb38] transition-colors animate-bounce z-20"
       >
         <ChevronDown size={40} />
       </button>

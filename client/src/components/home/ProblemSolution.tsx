@@ -13,8 +13,8 @@ export default function ProblemSolution() {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
               {language === 'nl' 
-                ? <>Samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-green-300 font-semibold">Senmar</a>, een leider in duurzame bouwtechnologie, creëren wij woningen die werken voor Nederlandse gezinnen. Hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
-                : <>Together with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8eb564] hover:text-green-300 font-semibold">Senmar</a>, a leader in sustainable building technology, we create homes that work for Dutch families. High quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
+                ? <>Samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>, een leider in duurzame bouwtechnologie, creëren wij woningen die werken voor Nederlandse gezinnen. Hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
+                : <>Together with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>, a leader in sustainable building technology, we create homes that work for Dutch families. High quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
               }
             </p>
           </div>
@@ -101,36 +101,36 @@ export default function ProblemSolution() {
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Clock className="text-[#8eb564]" size={32} />
+                    <Clock className="text-[#8edb38]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#8eb564] mb-2">{t('solution_speed')}</h3>
+                  <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_speed')}</h3>
                   <p className="text-foreground">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Zap className="text-[#8eb564]" size={32} />
+                    <Zap className="text-[#8edb38]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#8eb564] mb-2">{t('solution_energy')}</h3>
+                  <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_energy')}</h3>
                   <p className="text-foreground">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <ShieldCheck className="text-[#8eb564]" size={32} />
+                    <ShieldCheck className="text-[#8edb38]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#8eb564] mb-2">{t('solution_quality')}</h3>
+                  <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_quality')}</h3>
                   <p className="text-foreground">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
               <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
-                    <Leaf className="text-[#8eb564]" size={32} />
+                    <Leaf className="text-[#8edb38]" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#8eb564] mb-2">{t('solution_future')}</h3>
+                  <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_future')}</h3>
                   <p className="text-foreground">{t('solution_future_desc')}</p>
                 </CardContent>
               </Card>

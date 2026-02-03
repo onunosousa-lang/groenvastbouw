@@ -152,7 +152,7 @@ export default function WhatWeOffer() {
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
-            className="inline-flex items-center text-[#8eb564] hover:text-foreground font-semibold transition-colors group"
+            className="inline-flex items-center text-[#8edb38] hover:text-foreground font-semibold transition-colors group"
           >
             <ArrowLeft className="mr-2 w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             {content.backToHome}
@@ -182,8 +182,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('structure')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
-                  ? 'bg-[#8eb564] text-foreground shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8eb564]'
+                  ? 'bg-[#8edb38] text-foreground shadow-lg'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8edb38]'
               }`}
             >
               {content.structureDelivery}
@@ -192,8 +192,8 @@ export default function WhatWeOffer() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
-                  ? 'bg-[#8eb564] text-foreground shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8eb564]'
+                  ? 'bg-[#8edb38] text-foreground shadow-lg'
+                  : 'bg-[#dcdcdc] text-[#2a3439] border border-gray-300 hover:border-[#8edb38]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -218,13 +218,13 @@ export default function WhatWeOffer() {
                 <Card className="border-2 border-green-200 bg-green-50">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-green-900 mb-6 flex items-center gap-2">
-                      <CheckCircle2 className="text-[#8eb564]" />
+                      <CheckCircle2 className="text-[#8edb38]" />
                       {content.structureIncludes}
                     </h3>
                     <ul className="space-y-3">
                       {content.structureIncludesItems.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
-                          <span className="text-[#8eb564] font-bold mt-1">✓</span>
+                          <span className="text-[#8edb38] font-bold mt-1">✓</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -262,13 +262,13 @@ export default function WhatWeOffer() {
               <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
-                    <CheckCircle2 className="text-[#8eb564]" />
+                    <CheckCircle2 className="text-[#8edb38]" />
                     {content.turnkeyIncludes}
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-4">
                     {content.turnkeyIncludesItems.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
-                        <span className="text-[#8eb564] font-bold mt-1">✓</span>
+                        <span className="text-[#8edb38] font-bold mt-1">✓</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -294,7 +294,7 @@ export default function WhatWeOffer() {
                 >
                   <Card className="border-2 border-green-200 h-full hover:shadow-xl transition-shadow">
                     <CardContent className="p-8">
-                      <h3 className="text-2xl font-bold text-[#8eb564] mb-4">{benefit.title}</h3>
+                      <h3 className="text-2xl font-bold text-[#8edb38] mb-4">{benefit.title}</h3>
                       <p className="text-[#2a3439] text-lg">{benefit.desc}</p>
                     </CardContent>
                   </Card>
@@ -309,7 +309,7 @@ export default function WhatWeOffer() {
             <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}
-              className="bg-[#8eb564] hover:bg-[#8eb564] text-foreground px-8 py-6 text-lg font-semibold"
+              className="bg-[#8edb38] hover:bg-[#8edb38] text-foreground px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}
             </Button>

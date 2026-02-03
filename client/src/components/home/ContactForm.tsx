@@ -86,13 +86,13 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-1">Email</h3>
-                  <a href="mailto:info@groenvastbouw.nl" className="text-[#8eb564] hover:underline">
+                  <a href="mailto:info@groenvastbouw.nl" className="text-[#8edb38] hover:underline">
                     info@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
-                  <a href="https://wa.me/31629841297" className="text-[#8eb564] hover:underline">
+                  <a href="https://wa.me/31629841297" className="text-[#8edb38] hover:underline">
                     {t('whatsapp_button')}
                   </a>
                 </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
                 />
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#8eb564] hover:bg-[#8eb564] text-lg py-6"
+                  className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-lg py-6"
                   disabled={isSubmitting}
                 >
                   {isSubmitting

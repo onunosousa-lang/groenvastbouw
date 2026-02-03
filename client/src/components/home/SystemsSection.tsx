@@ -21,12 +21,12 @@ export default function SystemsSection() {
               key={index} 
               className={`relative transition-all duration-300 hover:-translate-y-2 ${
                 system.highlight 
-                  ? 'border-[#8eb564] shadow-2xl scale-105 z-10' 
+                  ? 'border-[#8edb38] shadow-2xl scale-105 z-10' 
                   : 'border-gray-200 shadow-lg hover:shadow-xl'
               }`}
             >
               {system.highlight && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8eb564] text-foreground px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8edb38] text-foreground px-4 py-1 rounded-full text-sm font-bold">
                   Meest Gekozen
                 </div>
               )}
@@ -36,7 +36,7 @@ export default function SystemsSection() {
                 </CardTitle>
                 <div className="text-center mt-2">
                   <span className="text-sm text-foreground">Rc-waarde</span>
-                  <div className="text-3xl font-bold text-[#8eb564]">{system.r_value}</div>
+                  <div className="text-3xl font-bold text-[#8edb38]">{system.r_value}</div>
                 </div>
               </CardHeader>
               <CardContent className="p-6">
@@ -50,7 +50,7 @@ export default function SystemsSection() {
                   {system.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <div className="mt-1 bg-[#f0f7e8] rounded-full p-1">
-                        <Check className="text-[#8eb564] w-3 h-3" />
+                        <Check className="text-[#8edb38] w-3 h-3" />
                       </div>
                       <span className="text-sm text-foreground">{feature}</span>
                     </li>

@@ -12,10 +12,10 @@ export default function HowItWorks() {
 
   const content = {
     headline: language === 'nl' ? 'Hoe Het Werkt' : 'How It Works',
-    subheadline: language === 'nl' ? 'Van ontwerp tot geleverde structuur in 3 maanden' : 'From design to delivered structure in 3 months',
+    subheadline: language === 'nl' ? 'Montage: 8-12 dagen. Totale doorlooptijd: 3 maanden' : 'Assembly: 8-12 days. Total lead time: 3 months',
     
     tabs: {
-      structure: language === 'nl' ? 'Structuur Levering (3 maanden)' : 'Structure Delivery (3 months)',
+      structure: language === 'nl' ? 'Structuur Levering (Montage: 8-12 dagen)' : 'Structure Delivery (Assembly: 8-12 days)',
       turnkey: language === 'nl' ? 'Turn-key Levering (B2C)' : 'Turn-key Delivery (B2C)'
     },
 
@@ -118,7 +118,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-background text-[#8eb564] shadow-sm' 
+                  ? 'bg-background text-[#8edb38] shadow-sm' 
                   : 'text-foreground hover:text-foreground'
               }`}
             >
@@ -128,7 +128,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-background text-[#8eb564] shadow-sm' 
+                  ? 'bg-background text-[#8edb38] shadow-sm' 
                   : 'text-foreground hover:text-foreground'
               }`}
             >
@@ -159,9 +159,9 @@ export default function HowItWorks() {
                     <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#dcdcdc] -z-10" />
                   )}
                   
-                  <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-[#8eb564]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-green-50 text-[#8eb564]' : 'bg-green-50 text-[#8eb564]'
+                      activeTab === 'structure' ? 'bg-green-50 text-[#8edb38]' : 'bg-green-50 text-[#8edb38]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -174,7 +174,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-foreground mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#8eb564]' : 'bg-[#f0f7e8] text-[#8eb564]'
+                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#8edb38]' : 'bg-[#f0f7e8] text-[#8edb38]'
                     }`}>
                       {step.duration}
                     </div>
@@ -198,8 +198,8 @@ export default function HowItWorks() {
                 onClick={openModal}
                 className={`px-8 py-6 text-lg font-semibold text-[#2a3439] ${
                   activeTab === 'structure' 
-                    ? 'bg-[#8eb564] hover:bg-[#8eb564]' 
-                    : 'bg-[#8eb564] hover:bg-[#8eb564]'
+                    ? 'bg-[#8edb38] hover:bg-[#8edb38]' 
+                    : 'bg-[#8edb38] hover:bg-[#8edb38]'
                 }`}
               >
                 {content.cta.button}

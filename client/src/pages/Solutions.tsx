@@ -98,7 +98,7 @@ export default function Solutions() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#2a3439] to-[#1a1f24] text-foreground py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#8eb564] hover:text-[#8eb564] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
@@ -123,19 +123,19 @@ export default function Solutions() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-[#dcdcdc] border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#dcdcdc] border-2 border-gray-200 rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#8eb564] transition-colors">
+                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#8edb38] transition-colors">
                         {language === 'nl' ? tier.titleNl : tier.titleEn}
                       </h3>
-                      <p className="text-lg font-semibold text-[#8eb564]">
+                      <p className="text-lg font-semibold text-[#8edb38]">
                         {language === 'nl' ? tier.priceNl : tier.priceEn}
                       </p>
                     </div>
                     <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`}>
-                      <ChevronDown className="w-6 h-6 text-[#8eb564]" />
+                      <ChevronDown className="w-6 h-6 text-[#8edb38]" />
                     </div>
                   </div>
                 </button>
@@ -156,7 +156,7 @@ export default function Solutions() {
                       <ul className="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
                           <li key={idx} className="flex items-start gap-3 text-[#2a3439]">
-                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#8eb564] flex-shrink-0" />
+                            <span className="mt-1.5 w-3 h-3 rounded-full bg-[#8edb38] flex-shrink-0" />
                             <span className="font-medium">{spec}</span>
                           </li>
                         ))}
@@ -165,10 +165,10 @@ export default function Solutions() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <a href="/#contact" className="inline-block bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Aanvraag indienen' : 'Submit Request'}
                       </a>
-                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8eb564] text-[#8eb564] hover:bg-[#8eb564] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#8edb38] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Bekijk op Senmar.pt' : 'View on Senmar.pt'}
                       </a>
                     </div>
@@ -179,7 +179,7 @@ export default function Solutions() {
           </div>
 
           {/* Bottom Info */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border-2 border-[#8eb564] shadow-lg">
+          <div className="mt-16 max-w-4xl mx-auto p-8 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border-2 border-[#8edb38] shadow-lg">
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Informatie over prijzen' : 'Pricing Information'}
             </h3>
@@ -200,7 +200,7 @@ export default function Solutions() {
             <h3 className="text-3xl font-bold text-[#2a3439] mb-6">
               {language === 'nl' ? 'Klaar om te beginnen?' : 'Ready to get started?'}
             </h3>
-            <a href="/#contact" className="inline-block bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
+            <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg">
               {language === 'nl' ? 'Plan een gratis consult' : 'Schedule a Free Consultation'}
             </a>
           </div>

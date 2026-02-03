@@ -40,7 +40,7 @@ export default function FeaturedProjects() {
             <p className="text-lg text-foreground leading-relaxed">{content.subheadline}</p>
           </div>
           <Link href="/projects">
-            <a className="inline-flex items-center gap-2 px-6 py-3 bg-[#8eb564] text-[#2a3439] rounded-lg font-semibold hover:bg-[#8eb564] transition-colors whitespace-nowrap">
+            <a className="inline-flex items-center gap-2 px-6 py-3 bg-[#8edb38] text-[#2a3439] rounded-lg font-semibold hover:bg-[#8edb38] transition-colors whitespace-nowrap">
               {content.cta}
               <ArrowRight className="w-5 h-5" />
             </a>

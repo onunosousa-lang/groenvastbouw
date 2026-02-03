@@ -121,17 +121,17 @@ export default function TechnicalSolutions() {
             >
               <button
                 onClick={() => toggleTier(tier.id)}
-                className="w-full bg-background border-2 border-gray-200 rounded-lg p-6 hover:border-[#8eb564] transition-all duration-300 text-left group"
+                className="w-full bg-background border-2 border-gray-200 rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-[#8eb564] transition-colors">
+                    <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-[#8edb38] transition-colors">
                       {language === 'nl' ? tier.titleNl : tier.titleEn}
                     </h3>
 
                   </div>
                   <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`}>
-                    <ChevronDown className="w-6 h-6 text-[#8eb564]" />
+                    <ChevronDown className="w-6 h-6 text-[#8edb38]" />
                   </div>
                 </div>
               </button>
@@ -160,7 +160,7 @@ export default function TechnicalSolutions() {
                         <ul className="space-y-2">
                           {(language === 'nl' ? tier.specsNl : tier.specsEn).map((spec, idx) => (
                             <li key={idx} className="flex items-start gap-3 text-foreground">
-                              <span className="mt-1.5 w-2 h-2 rounded-full bg-[#8eb564] flex-shrink-0" />
+                              <span className="mt-1.5 w-2 h-2 rounded-full bg-[#8edb38] flex-shrink-0" />
                               <span>{spec}</span>
                             </li>
                           ))}
@@ -169,7 +169,7 @@ export default function TechnicalSolutions() {
 
                       {/* CTA Button */}
                       <div className="pt-4">
-                        <a href="/#contact" className="inline-block bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                        <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
                           {language === 'nl' ? 'Meer informatie' : 'Learn More'}
                         </a>
                       </div>

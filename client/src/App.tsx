@@ -38,7 +38,7 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 function LoadingSpinner() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#dcdcdc]">
-      <Loader2 className="h-12 w-12 animate-spin text-[#8eb564]" />
+      <Loader2 className="h-12 w-12 animate-spin text-[#8edb38]" />
     </div>
   );
 }

@@ -133,7 +133,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-[#8eb564]/10 bg-background">
+          <div className="lg:hidden py-4 border-t border-[#8edb38]/10 bg-background">
             <div className="flex flex-col space-y-4 px-4">
               <Link href="/our-offer" className="text-foreground/90 hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}

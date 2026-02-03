@@ -111,9 +111,39 @@
   - ✅ All changes successfully deployed
 
 
-## TEXT BOX TRANSPARENCY UPDATE (2026-01-30):
-- [x] Reduce opacity of #dcdcdc backgrounds in hero carousel text boxes (90% → 70%)
-- [x] Make photos more visible behind text boxes
-- [x] Changed from bg-[#dcdcdc]/90 to bg-[#dcdcdc]/70 in HeroCarousel.tsx
+## TEXT BOX TRANSPARENCY UPDATE (2026-01-30) - REVERTED:
+- [x] Reduce opacity of #dcdcdc backgrounds in hero carousel text boxes (90% → 70%) - WRONG CHANGE
+- [ ] REVERT: Change text boxes back to 90% opacity
+- [ ] CORRECT TASK: Remove overlay/filter on BACKGROUND PHOTOS (not text boxes)
+- [ ] Find and remove any dark overlay on hero background images
+- [ ] Build and deploy fix
+- [ ] Verify photos are more visible on live site
+
+
+## CONTENT CROSS-CHECK WITH PRESENTATION (2026-01-30):
+- [x] Read and analyze Groenvastbouw-CompleteDutchPresentation.pdf
+- [x] Extract prices mentioned in presentation
+- [x] Extract savings percentages for insulation options
+- [x] Compare presentation content with website content
+- [x] Identify and list all discrepancies
+
+### DISCREPANCIES FOUND:
+1. Energy savings: Website claims "90%" without specifying performance level (should be 70-80% OPTIMAL, 85-90% PASSIVE, 90-95% SUPER PASSIVE)
+2. Timeline: "3 months" is total timeline, but assembly is only 8-12 days
+3. Missing pricing: €400/m² structure, €1,750/m² turnkey
+4. Missing insulation specs: Wall/roof thickness per level
+5. Missing technical specs: U-values, air tightness, sound insulation
+
+### TASKS TO COMPLETE:
+- [x] Apply 5-color scheme to ALL pages - Replaced #8eb564 with #8edb38 in ALL files
+- [x] Update About page with new Nuno Sousa biography (craft, experience, standards, responsibility)
+- [x] Add pricing section: €400/m² structure, €1,750/m² turnkey, €100/m² transport, €150/m² assembly
+- [x] Update energy savings: 70-80% OPTIMAL, 85-90% PASSIVE, 90-95% SUPER PASSIVE
+- [x] Created new Pricing component with all pricing information from presentation
+- [x] Added energy savings percentages to PerformanceLevels component
+- [x] Add detailed insulation specs: Wall/roof thickness, Rc values per level - Already in PerformanceLevels component
+- [x] Add technical specs: U-values, air tightness, sound insulation, material waste - Created TechnicalSpecs component
+- [x] Clarify timeline: "Montage: 8-12 dagen" + "Totale doorlooptijd: 3 maanden" - Updated HeroCarousel, HeroSection, HowItWorks
+- [x] Ensure ALL pages use only 5 colors: #8edb38, #2a3439, #dcdcdc, #ffffff, #7aa050 - Already done in phase 1
 - [ ] Build and deploy changes
 - [ ] Verify on live site

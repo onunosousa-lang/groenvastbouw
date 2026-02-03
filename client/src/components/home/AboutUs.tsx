@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <section className="bg-[#dcdcdc] py-16 md:py-24">
       <div className="container max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#8eb564] mb-8 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#8edb38] mb-8 text-center">
           {t('aboutus_title')}
         </h2>
         
@@ -30,7 +30,7 @@ export default function AboutUs() {
           
           <p>{t('aboutus_p4')}</p>
           
-          <p className="text-xl font-semibold text-[#8eb564] text-center mt-8">
+          <p className="text-xl font-semibold text-[#8edb38] text-center mt-8">
             {t('aboutus_tagline')}
           </p>
         </div>

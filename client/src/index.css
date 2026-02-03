@@ -48,7 +48,7 @@
 
 /* Senmar Brand Palette */
 :root {
-  /* Primary Brand - Green (#8eb564) */
+  /* Primary Brand - Green (#8edb38) */
   --primary: 142 181 100;
   --primary-foreground: 255 255 255;
   
@@ -62,7 +62,7 @@
   /* Dark Text - Deep Slate (#2A3439) */
   --foreground: 42 52 57;
   
-  /* Accent - Green (#8eb564) */
+  /* Accent - Green (#8edb38) */
   --accent: 142 181 100;
   --accent-foreground: 255 255 255;
   
@@ -107,7 +107,7 @@
   --radius: 0.65rem;
   
   /* 3-Color Scheme */
-  --color-green: #8eb564;
+  --color-green: #8edb38;
   --color-text: #2a3439;
   --color-background: #dcdcdc;
 }
@@ -252,7 +252,7 @@
 /* Senmar-inspired dashed border button style */
 .btn-dashed {
   position: relative;
-  background: #8eb564;
+  background: #8edb38;
   color: #2A3439;
   padding: 1.5rem 2rem;
   font-weight: 700;
@@ -276,7 +276,7 @@
 }
 
 .btn-dashed:hover {
-  background: #8eb564;
+  background: #8edb38;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(144, 220, 53, 0.3);
 }
@@ -287,8 +287,8 @@
   inset: -2px;
   background: repeating-linear-gradient(
     90deg,
-    #8eb564 0px,
-    #8eb564 8px,
+    #8edb38 0px,
+    #8edb38 8px,
     transparent 8px,
     transparent 16px
   );
@@ -313,7 +313,7 @@
 /* Simplified zigzag border for smaller elements */
 .border-zigzag {
   position: relative;
-  border: 2px dashed #8eb564;
+  border: 2px dashed #8edb38;
   border-radius: 0.5rem;
 }
 
@@ -321,7 +321,7 @@
   content: '';
   position: absolute;
   inset: -3px;
-  border: 2px dashed #8eb564;
+  border: 2px dashed #8edb38;
   border-radius: 0.5rem;
   opacity: 0.3;
   pointer-events: none;
@@ -360,7 +360,7 @@
   box-shadow: 0 10px 25px 0 rgba(42, 52, 57, 0.08), 0 4px 10px 0 rgba(42, 52, 57, 0.05);
 }
 
-/* Force all headings to be green #8eb564 */
+/* Force all headings to be green #8edb38 */
 h1, h2, h3, h4, h5, h6 {
-  color: #8eb564 !important;
+  color: #8edb38 !important;
 }

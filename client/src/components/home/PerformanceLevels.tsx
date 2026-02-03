@@ -39,6 +39,7 @@ export default function PerformanceLevels() {
         title: 'OPTIMAL',
         badge: language === 'nl' ? 'Beste Prijs-Kwaliteit' : 'Best Value',
         rValue: 'Rc 5.0 - 6.0',
+        savings: '70-80%',
         desc: language === 'nl' ? 'Uitstekende isolatie, ruim boven bouwbesluit.' : 'Excellent insulation, well above building regulations.',
         features: language === 'nl' ? [
           'Wanden: 240mm isolatie',
@@ -58,6 +59,7 @@ export default function PerformanceLevels() {
         title: 'PASSIVE',
         badge: language === 'nl' ? 'Meest Gekozen' : 'Most Popular',
         rValue: 'Rc 8.0 - 9.0',
+        savings: '85-90%',
         desc: language === 'nl' ? 'Volledige passiefhuis standaard. Minimale energiekosten.' : 'Full passive house standard. Minimal energy costs.',
         features: language === 'nl' ? [
           'Wanden: 360mm isolatie',
@@ -77,6 +79,7 @@ export default function PerformanceLevels() {
         title: 'SUPER PASSIVE',
         badge: language === 'nl' ? 'Extreme Prestaties' : 'Extreme Performance',
         rValue: 'Rc 10.0+',
+        savings: '90-95%',
         desc: language === 'nl' ? 'Voor off-grid ambities en extreme klimaten.' : 'For off-grid ambitions and extreme climates.',
         features: language === 'nl' ? [
           'Wanden: 400mm+ isolatie',
@@ -106,7 +109,7 @@ export default function PerformanceLevels() {
       
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8eb564 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8edb38 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -117,7 +120,7 @@ export default function PerformanceLevels() {
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#8eb564] text-[#2a3439] font-semibold rounded-lg hover:bg-[#8eb564] transition-colors"
+            className="inline-block px-6 py-3 bg-[#8edb38] text-[#2a3439] font-semibold rounded-lg hover:bg-[#8edb38] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
@@ -132,34 +135,39 @@ export default function PerformanceLevels() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bg-background rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
-                level.color === 'green' ? 'border-[#8eb564] transform md:-translate-y-4' : 'border-transparent'
+                level.color === 'green' ? 'border-[#8edb38] transform md:-translate-y-4' : 'border-transparent'
               }`}
             >
               {level.color === 'green' && (
-                <div className="absolute top-0 left-0 right-0 bg-[#8eb564] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
+                <div className="absolute top-0 left-0 right-0 bg-[#8edb38] text-foreground text-center py-1 text-sm font-bold uppercase tracking-wide">
                   {level.badge}
                 </div>
               )}
               
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#8eb564]' : 
-                  level.color === 'blue' ? 'bg-[#e8f5f0] text-[#8eb564]' : 
-                  level.color === 'purple' ? 'bg-[#e8f5f0] text-[#8eb564]' :
+                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#8edb38]' : 
+                  level.color === 'blue' ? 'bg-[#e8f5f0] text-[#8edb38]' : 
+                  level.color === 'purple' ? 'bg-[#e8f5f0] text-[#8edb38]' :
                   'bg-gray-200 text-[#2a3439]'
                 }`}>
                   <level.icon className="w-6 h-6" />
                 </div>
 
                 <h3 className="text-xl font-bold text-foreground mb-1">{level.title}</h3>
-                <div className={`text-lg font-bold mb-3 ${
-                  level.color === 'green' ? 'text-[#8eb564]' : 
-                  level.color === 'blue' ? 'text-[#8eb564]' : 
-                  level.color === 'purple' ? 'text-[#8eb564]' :
+                <div className={`text-lg font-bold mb-1 ${
+                  level.color === 'green' ? 'text-[#8edb38]' : 
+                  level.color === 'blue' ? 'text-[#8edb38]' : 
+                  level.color === 'purple' ? 'text-[#8edb38]' :
                   'text-foreground'
                 }`}>
                   {level.rValue}
                 </div>
+                {level.savings && (
+                  <div className="text-sm font-semibold text-[#8edb38] mb-3">
+                    {language === 'nl' ? 'Energiebesparing: ' : 'Energy Savings: '}{level.savings}
+                  </div>
+                )}
                 
                 <p className="text-foreground mb-4 text-sm leading-relaxed">{level.desc}</p>
                 
@@ -167,8 +175,8 @@ export default function PerformanceLevels() {
                   {level.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-xs text-foreground leading-relaxed">
                       <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        level.color === 'green' ? 'text-[#8eb564]' : 
-                        level.color === 'blue' ? 'text-[#8eb564]' : 
+                        level.color === 'green' ? 'text-[#8edb38]' : 
+                        level.color === 'blue' ? 'text-[#8edb38]' : 
                         level.color === 'purple' ? 'text-purple-500' :
                         'text-foreground'
                       }`} />
@@ -186,7 +194,7 @@ export default function PerformanceLevels() {
         <div className="mt-16 text-center">
           <button
             onClick={openModal}
-            className="px-8 py-4 bg-[#8eb564] hover:bg-[#8eb564] text-[#2a3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
+            className="px-8 py-4 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
             <ArrowRight className="w-5 h-5" />
