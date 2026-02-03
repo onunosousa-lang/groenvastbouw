@@ -180,7 +180,6 @@ export default function HowItWorks() {
           style={{ backgroundImage: 'url(/passief-huis-isolatie-binnenkant.jpg)' }}
         />
         {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2a3439]/95 to-[#2a3439]/90" />
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] font-semibold mb-8 transition-colors">

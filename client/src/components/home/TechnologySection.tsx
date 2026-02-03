@@ -64,7 +64,6 @@ export default function TechnologySection() {
               alt="Senmar Factory Production" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#2a3439]/60 via-transparent to-transparent"></div>
             <div className="absolute bottom-8 left-8 text-[#2a3439]">
               <div className="text-sm font-bold uppercase tracking-wider mb-2">Coja, Portugal</div>
               <div className="text-2xl font-bold">High-Tech Timber Frame Production</div>
