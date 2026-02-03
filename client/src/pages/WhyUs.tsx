@@ -107,7 +107,7 @@ export default function WhyUs() {
           {/* 2. TECHNICAL SUPERIORITY */}
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#e8f5f0] rounded-xl text-[#2a3439]"><Factory size={32} /></div>
+              <div className="p-4 bg-[#dcdcdc] rounded-xl text-[#2a3439]"><Factory size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '2. Technische Superioriteit' : '2. Technical Superiority'}</h2>
                 <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>

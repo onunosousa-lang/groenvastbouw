@@ -225,7 +225,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
           <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#8edb38] hover:bg-[#6da545] text-foreground px-8 py-6 text-lg" onClick={openModal}>
+            <Button size="lg" className="bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
             <Button size="lg" variant="outline" className="border-[#8edb38] text-foreground hover:bg-[#dcdcdc] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
