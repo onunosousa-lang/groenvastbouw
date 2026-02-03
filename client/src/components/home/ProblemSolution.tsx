@@ -13,8 +13,8 @@ export default function ProblemSolution() {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
               {language === 'nl' 
-                ? <>Samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>, een leider in duurzame bouwtechnologie, creëren wij woningen die werken voor Nederlandse gezinnen. Hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
-                : <>Together with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>, a leader in sustainable building technology, we create homes that work for Dutch families. High quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
+                ? <>Samen met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>, een leider in duurzame bouwtechnologie, creëren wij woningen die werken voor Nederlandse gezinnen. Hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
+                : <>Together with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>, a leader in sustainable building technology, we create homes that work for Dutch families. High quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
               }
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function ProblemSolution() {
           {/* Solution */}
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
+              <div className="inline-block px-4 py-2 bg-[#dcdcdc] text-[#2a3439] rounded-full text-sm font-semibold mb-4">
                 {t('solution_title')}
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -98,36 +98,36 @@ export default function ProblemSolution() {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
                     <Clock className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_speed')}</h3>
                   <p className="text-foreground">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
                     <Zap className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_energy')}</h3>
                   <p className="text-foreground">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
                     <ShieldCheck className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_quality')}</h3>
                   <p className="text-foreground">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#f0f7e8] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
                     <Leaf className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_future')}</h3>

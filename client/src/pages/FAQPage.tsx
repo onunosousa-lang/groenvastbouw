@@ -136,7 +136,7 @@ export default function FAQPage() {
                 href="https://wa.me/31628358556" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <MessageCircle size={20} />
                 Get in touch on WhatsApp
@@ -150,7 +150,7 @@ export default function FAQPage() {
                 href="https://wa.me/31628358556" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <MessageCircle size={20} />
                 Neem contact op via WhatsApp
@@ -182,7 +182,7 @@ export default function FAQPage() {
       {/* Header */}
       <header className="bg-background text-foreground py-4">
         <div className="container mx-auto px-4">
-          <Link href="/" className="flex items-center gap-2 text-[#8edb38] hover:text-green-300 transition-colors w-fit">
+          <Link href="/" className="flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] transition-colors w-fit">
             <ArrowLeft size={20} />
             <span>{content.backToHome}</span>
           </Link>
@@ -214,7 +214,7 @@ export default function FAQPage() {
             href="https://wa.me/31629841297" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#128C7E] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
           >
             <MessageCircle size={20} />
             {content.chatWhatsApp}
@@ -264,7 +264,7 @@ export default function FAQPage() {
         </div>
 
         {/* Bottom Contact Buttons */}
-        <div className="mt-16 bg-green-50 rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-[#dcdcdc] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-[#2a3439] mb-4">
             {content.readyTitle}
           </h2>
@@ -283,7 +283,7 @@ export default function FAQPage() {
               href="https://wa.me/31629841297" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#128C7E] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-foreground px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
             >
               <MessageCircle size={20} />
               {content.chatWhatsApp}

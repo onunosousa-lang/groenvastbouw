@@ -30,7 +30,7 @@ export default function SystemsSection() {
                   Meest Gekozen
                 </div>
               )}
-              <CardHeader className={`${system.highlight ? 'bg-green-50' : 'bg-card'} border-b border-gray-100`}>
+              <CardHeader className={`${system.highlight ? 'bg-[#dcdcdc]' : 'bg-card'} border-b border-gray-100`}>
                 <CardTitle className="text-2xl font-bold text-center text-foreground">
                   {system.name}
                 </CardTitle>
@@ -49,7 +49,7 @@ export default function SystemsSection() {
                 <ul className="space-y-4">
                   {system.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="mt-1 bg-[#f0f7e8] rounded-full p-1">
+                      <div className="mt-1 bg-[#dcdcdc] rounded-full p-1">
                         <Check className="text-[#8edb38] w-3 h-3" />
                       </div>
                       <span className="text-sm text-foreground">{feature}</span>

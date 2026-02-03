@@ -142,7 +142,7 @@ export default function Solutions() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
+                  <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}
@@ -179,7 +179,7 @@ export default function Solutions() {
           </div>
 
           {/* Bottom Info */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 bg-gradient-to-br from-[#f0f7e8] to-white rounded-lg border-2 border-[#8edb38] shadow-lg">
+          <div className="mt-16 max-w-4xl mx-auto p-8 bg-gradient-to-br from-[#dcdcdc] to-white rounded-lg border-2 border-[#8edb38] shadow-lg">
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Informatie over prijzen' : 'Pricing Information'}
             </h3>

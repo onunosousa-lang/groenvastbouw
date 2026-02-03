@@ -110,7 +110,7 @@ export default function PrefabBenefits() {
       />
       <Navbar />
       
-      <div className="pt-24 pb-12 bg-green-50">
+      <div className="pt-24 pb-12 bg-[#dcdcdc]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-6">
             {t('prefab_title')}
@@ -131,7 +131,7 @@ export default function PrefabBenefits() {
           {benefits.map((benefit, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="flex flex-col items-center text-center pb-2">
-                <div className="mb-4 p-3 bg-green-50 rounded-full">
+                <div className="mb-4 p-3 bg-[#dcdcdc] rounded-full">
                   {benefit.icon}
                 </div>
                 <CardTitle className="text-xl font-bold text-[#2a3439]">

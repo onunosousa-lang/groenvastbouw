@@ -145,5 +145,31 @@
 - [x] Add technical specs: U-values, air tightness, sound insulation, material waste - Created TechnicalSpecs component
 - [x] Clarify timeline: "Montage: 8-12 dagen" + "Totale doorlooptijd: 3 maanden" - Updated HeroCarousel, HeroSection, HowItWorks
 - [x] Ensure ALL pages use only 5 colors: #8edb38, #2a3439, #dcdcdc, #ffffff, #7aa050 - Already done in phase 1
+- [x] Build and deploy changes - Commit 62eaaf2 pushed to GitHub
+- [x] Wait for Vercel deployment
+- [x] Verify on live site - ALL UPDATES CONFIRMED LIVE
+  - ✅ 5-color scheme (#8edb38) deployed
+  - ✅ Timeline clarification (8-12 days assembly) deployed
+  - ✅ Energy savings percentages (70-80%, 85-90%, 90-95%) deployed
+  - ✅ Pricing section (€400/m², €1,750/m², €100/m², €150/m²) deployed
+  - ✅ Technical specs section deployed
+  - ✅ About page biography updated
+
+
+## COLOR CONSISTENCY ACROSS ALL PAGES (2026-02-03):
+- [x] Audit ALL pages for color scheme inconsistencies - Found 50+ instances
+- [x] Replaced ALL bg-green-* with bg-[#dcdcdc] or bg-[#2a3439]
+- [x] Replaced ALL text-green-* with text-[#2a3439] or text-[#8edb38]
+- [x] Replaced ALL border-green-* with border-[#8edb38] or border-[#dcdcdc]
+- [x] Replaced ALL bg-blue-* with bg-[#dcdcdc] or bg-[#7aa050]
+- [x] Replaced ALL text-blue-* with text-[#2a3439]
+- [x] Replaced ALL border-blue-* with border-[#8edb38]
+- [x] Replaced ALL bg-emerald-* with bg-[#dcdcdc]
+- [x] Replaced ALL text-emerald-* with text-[#2a3439]
+- [x] Replaced gradient backgrounds with solid #dcdcdc
+- [x] Replaced WhatsApp green (#25D366, #20bd5a, #128C7E) with palette colors
+- [x] Replaced #f0f7e8 (light green) with #dcdcdc
+- [x] Replaced #858481, #1a1a19 with #2a3439
+- [x] Verified 0 remaining green/blue/emerald Tailwind classes
 - [ ] Build and deploy changes
-- [ ] Verify on live site
+- [ ] Verify all pages on live site

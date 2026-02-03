@@ -106,7 +106,7 @@ export default function OfferSection() {
           >
             <div className="p-8 flex-grow">
               <motion.div 
-                className="w-16 h-16 bg-gradient-to-br from-[#f0f7e8] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-16 h-16 bg-gradient-to-br from-[#dcdcdc] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
@@ -148,7 +148,7 @@ export default function OfferSection() {
           >
             <div className="p-8 flex-grow">
               <motion.div 
-                className="w-16 h-16 bg-gradient-to-br from-[#f0f7e8] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-16 h-16 bg-gradient-to-br from-[#dcdcdc] to-[#e0f0d8] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
@@ -197,7 +197,7 @@ export default function OfferSection() {
           >
             <div className="p-8 flex-grow">
               <motion.div 
-                className="w-16 h-16 bg-gradient-to-br from-[#e8f5f0] to-[#d0ebe0] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-16 h-16 bg-gradient-to-br from-[#dcdcdc] to-[#dcdcdc] rounded-2xl flex items-center justify-center mb-6 shadow-lg"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >

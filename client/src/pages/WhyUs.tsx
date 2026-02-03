@@ -34,7 +34,7 @@ export default function WhyUs() {
       </section>
 
       {/* Groenvastbouw + Senmar Partnership */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-white">
+      <section className="py-20 bg-[#dcdcdc]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
@@ -73,7 +73,7 @@ export default function WhyUs() {
           {/* 1. ECONOMIC INCENTIVE */}
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8edb38]"><TrendingUp size={32} /></div>
+              <div className="p-4 bg-[#dcdcdc] rounded-xl text-[#8edb38]"><TrendingUp size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '1. Het Economische Perspectief' : '1. The Economic Perspective'}</h2>
                 <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'ROI, Cashflow & Risicobeheersing' : 'ROI, Cashflow & Risk Management'}</p>
@@ -107,7 +107,7 @@ export default function WhyUs() {
           {/* 2. TECHNICAL SUPERIORITY */}
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#e8f5f0] rounded-xl text-blue-700"><Factory size={32} /></div>
+              <div className="p-4 bg-[#e8f5f0] rounded-xl text-[#2a3439]"><Factory size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '2. Technische Superioriteit' : '2. Technical Superiority'}</h2>
                 <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'Fysica & Productieprecisie' : 'Physics & Manufacturing Precision'}</p>
@@ -193,7 +193,7 @@ export default function WhyUs() {
               </div>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-[#8edb38] p-6 rounded-r-lg">
+            <div className="bg-[#dcdcdc] border-l-4 border-[#8edb38] p-6 rounded-r-lg">
               <p className="text-[#2a3439] font-semibold mb-2">
                 💡 {language === 'nl' ? 'Besparingen over de levensduur' : 'Lifetime Savings'}
               </p>
@@ -210,7 +210,7 @@ export default function WhyUs() {
           {/* 4. ECOLOGICAL IMPACT */}
           <div className="mb-10">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-4 bg-[#f0f7e8] rounded-xl text-[#8edb38]"><Leaf size={32} /></div>
+              <div className="p-4 bg-[#dcdcdc] rounded-xl text-[#8edb38]"><Leaf size={32} /></div>
               <div>
                 <h2 className="text-3xl font-bold text-[#2a3439]">{language === 'nl' ? '4. Ecologische Impact' : '4. Ecological Impact'}</h2>
                 <p className="text-[#2a3439] text-lg mt-1">{language === 'nl' ? 'CO₂, Stikstof & Toekomstbestendigheid' : 'CO₂, Nitrogen & Future Proofing'}</p>
@@ -222,25 +222,25 @@ export default function WhyUs() {
               <img src="/senmar-photos/senmar_montage_11.jpg" alt="Senmar Mission" className="w-full h-auto" />
             </div>
 
-            <div className="bg-green-50 p-10 rounded-2xl border border-[#f0f7e8] shadow-inner">
-               <h3 className="text-2xl font-bold text-green-900 mb-4">Carbon Negative Bouwen</h3>
-               <p className="text-green-800 mb-6 text-lg leading-relaxed">
+            <div className="bg-[#dcdcdc] p-10 rounded-2xl border border-[#dcdcdc] shadow-inner">
+               <h3 className="text-2xl font-bold text-[#2a3439] mb-4">Carbon Negative Bouwen</h3>
+               <p className="text-[#2a3439] mb-6 text-lg leading-relaxed">
                  {language === 'nl' 
                    ? <>De bouwsector is verantwoordelijk voor 39% van de wereldwijde CO₂-uitstoot. Onze methode draait dit om. Elk huis slaat ongeveer 20 ton CO₂ op in de houtstructuur. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a> gebruikt uitsluitend FSC-gecertificeerd hout en streeft naar een volledig carbon-negatieve productieketen.</> 
                    : <>The construction sector is responsible for 39% of global CO₂ emissions. Our method reverses this. Each house stores approximately 20 tons of CO₂ in its timber structure. <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a> uses only FSC-certified wood and strives for a fully carbon-negative production chain.</>}
                </p>
                <div className="grid md:grid-cols-3 gap-6">
                  <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
-                   <span className="block font-bold text-green-900 mb-1">Stikstof reductie</span>
-                   <span className="text-sm text-green-800">{language === 'nl' ? '80% minder transportbewegingen naar de bouwplaats.' : '80% fewer transport movements to the site.'}</span>
+                   <span className="block font-bold text-[#2a3439] mb-1">Stikstof reductie</span>
+                   <span className="text-sm text-[#2a3439]">{language === 'nl' ? '80% minder transportbewegingen naar de bouwplaats.' : '80% fewer transport movements to the site.'}</span>
                  </div>
                  <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
-                   <span className="block font-bold text-green-900 mb-1">Circulair</span>
-                   <span className="text-sm text-green-800">{language === 'nl' ? 'Materialen zijn demontabel en recyclebaar.' : 'Materials are demountable and recyclable.'}</span>
+                   <span className="block font-bold text-[#2a3439] mb-1">Circulair</span>
+                   <span className="text-sm text-[#2a3439]">{language === 'nl' ? 'Materialen zijn demontabel en recyclebaar.' : 'Materials are demountable and recyclable.'}</span>
                  </div>
                  <div className="bg-[#dcdcdc]/60 p-4 rounded-lg">
-                   <span className="block font-bold text-green-900 mb-1">FSC Gecertificeerd</span>
-                   <span className="text-sm text-green-800">{language === 'nl' ? '100% duurzaam geproduceerd hout.' : '100% sustainably sourced timber.'}</span>
+                   <span className="block font-bold text-[#2a3439] mb-1">FSC Gecertificeerd</span>
+                   <span className="text-sm text-[#2a3439]">{language === 'nl' ? '100% duurzaam geproduceerd hout.' : '100% sustainably sourced timber.'}</span>
                  </div>
                </div>
             </div>
@@ -255,7 +255,7 @@ export default function WhyUs() {
           <h2 className="text-4xl font-bold mb-6">
             {language === 'nl' ? 'Klaar om de toekomst te bouwen?' : 'Ready to build the future?'}
           </h2>
-          <p className="text-xl mb-10 text-[#f0f7e8]">
+          <p className="text-xl mb-10 text-[#dcdcdc]">
             {language === 'nl' 
               ? <>Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a> uw project kunnen transformeren.</>
               : <>Contact us today for a no-obligation consultation and discover how Groenvastbouw and <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a> can transform your project.</>}

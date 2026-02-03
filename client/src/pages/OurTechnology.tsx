@@ -188,7 +188,7 @@ export default function OurTechnology() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-gradient-to-br from-[#f0f7e8] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
+                  <div className="bg-gradient-to-br from-[#dcdcdc] to-white border-2 border-t-0 border-gray-200 rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}

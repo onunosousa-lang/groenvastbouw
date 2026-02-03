@@ -66,7 +66,7 @@ export default function EnergyComparison() {
 
           {/* Context & Info */}
           <div className="space-y-8">
-            <div className="bg-green-900/20 border border-[#8edb38]/30 p-6 rounded-xl">
+            <div className="bg-[#2a3439]/20 border border-[#8edb38]/30 p-6 rounded-xl">
               <h3 className="text-2xl font-bold text-[#8edb38] mb-2">
                 {t('energy_comparison_ratio')}
               </h3>
@@ -100,15 +100,15 @@ export default function EnergyComparison() {
             <Card className="bg-card border-gray-700">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-green-900/50 p-3 rounded-lg">
+                  <div className="bg-[#2a3439]/50 p-3 rounded-lg">
                     <Leaf className="text-[#8edb38]" size={24} />
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-2">{t('energy_comparison_embodied')}</h4>
                     <p className="text-sm text-foreground leading-relaxed">
                       {language === 'nl' 
-                        ? <>Houtskeletbouw (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.</>
-                        : <>Timber frame construction (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-green-300 font-semibold">Senmar</a>) uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.</>
+                        ? <>Houtskeletbouw (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>) gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.</>
+                        : <>Timber frame construction (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>) uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.</>
                       }
                     </p>
                   </div>

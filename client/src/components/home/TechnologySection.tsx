@@ -10,7 +10,7 @@ export default function TechnologySection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block px-4 py-2 bg-[#f0f7e8] text-green-800 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-[#dcdcdc] text-[#2a3439] rounded-full text-sm font-semibold mb-4">
               {t('senmar_title')}
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -24,7 +24,7 @@ export default function TechnologySection() {
             
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
-                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                <div className="bg-[#dcdcdc] p-3 rounded-lg">
                   <Factory className="text-[#8edb38]" size={24} />
                 </div>
                 <div>
@@ -33,7 +33,7 @@ export default function TechnologySection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                <div className="bg-[#dcdcdc] p-3 rounded-lg">
                   <Ruler className="text-[#8edb38]" size={24} />
                 </div>
                 <div>
@@ -42,7 +42,7 @@ export default function TechnologySection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-[#f0f7e8] p-3 rounded-lg">
+                <div className="bg-[#dcdcdc] p-3 rounded-lg">
                   <Award className="text-[#8edb38]" size={24} />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export default function TechnologySection() {
             </div>
 
             <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="gap-2 border-[#8edb38] text-[#8edb38] hover:bg-green-50">
+              <Button variant="outline" className="gap-2 border-[#8edb38] text-[#8edb38] hover:bg-[#dcdcdc]">
                 {t('senmar_link')} <ExternalLink size={16} />
               </Button>
             </a>

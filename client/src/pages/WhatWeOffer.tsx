@@ -215,9 +215,9 @@ export default function WhatWeOffer() {
               <p className="text-xl text-[#2a3439] mb-12">{content.structureDesc}</p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-16">
-                <Card className="border-2 border-green-200 bg-green-50">
+                <Card className="border-2 border-[#8edb38] bg-[#dcdcdc]">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-green-900 mb-6 flex items-center gap-2">
+                    <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                       <CheckCircle2 className="text-[#8edb38]" />
                       {content.structureIncludes}
                     </h3>
@@ -259,9 +259,9 @@ export default function WhatWeOffer() {
               <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.turnkeyTitle}</h2>
               <p className="text-xl text-[#2a3439] mb-12">{content.turnkeyDesc}</p>
 
-              <Card className="border-2 border-blue-200 bg-blue-50 mb-16">
+              <Card className="border-2 border-[#8edb38] bg-[#dcdcdc] mb-16">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                  <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                     <CheckCircle2 className="text-[#8edb38]" />
                     {content.turnkeyIncludes}
                   </h3>
@@ -292,7 +292,7 @@ export default function WhatWeOffer() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                 >
-                  <Card className="border-2 border-green-200 h-full hover:shadow-xl transition-shadow">
+                  <Card className="border-2 border-[#8edb38] h-full hover:shadow-xl transition-shadow">
                     <CardContent className="p-8">
                       <h3 className="text-2xl font-bold text-[#8edb38] mb-4">{benefit.title}</h3>
                       <p className="text-[#2a3439] text-lg">{benefit.desc}</p>

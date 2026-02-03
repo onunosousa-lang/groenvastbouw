@@ -161,7 +161,7 @@ export default function HowItWorks() {
                   
                   <div className="bg-background/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-green-50 text-[#8edb38]' : 'bg-green-50 text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -174,7 +174,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-foreground mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#f0f7e8] text-[#8edb38]' : 'bg-[#f0f7e8] text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
                     }`}>
                       {step.duration}
                     </div>

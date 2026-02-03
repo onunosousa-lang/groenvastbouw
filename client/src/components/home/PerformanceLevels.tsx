@@ -146,7 +146,7 @@ export default function PerformanceLevels() {
               
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                  level.color === 'green' ? 'bg-[#f0f7e8] text-[#8edb38]' : 
+                  level.color === 'green' ? 'bg-[#dcdcdc] text-[#8edb38]' : 
                   level.color === 'blue' ? 'bg-[#e8f5f0] text-[#8edb38]' : 
                   level.color === 'purple' ? 'bg-[#e8f5f0] text-[#8edb38]' :
                   'bg-gray-200 text-[#2a3439]'
