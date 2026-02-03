@@ -65,7 +65,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       {/* 1. HERO SECTION */}
-      <section className="pt-32 pb-16 px-4 bg-[#2a3439] text-foreground">
+      <section className="pt-24 pb-12 px-4 bg-[#2a3439]">
         <div className="max-w-6xl mx-auto mb-8">
           <a 
             href="/" 
@@ -81,10 +81,10 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-[#8edb38]">
               {content.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl text-[#2a3439] font-light">
+            <p className="text-xl md:text-2xl text-[#ffffff] font-light">
               {content.heroSubtitle}
             </p>
           </motion.div>

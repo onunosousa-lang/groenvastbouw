@@ -173,3 +173,15 @@
 - [x] Verified 0 remaining green/blue/emerald Tailwind classes
 - [ ] Build and deploy changes
 - [ ] Verify all pages on live site
+
+
+## NEW ISSUES REPORTED (2026-02-03 - AFTER COLOR CONSISTENCY):
+- [x] Remove color overlay on background photos (behind text boxes) in hero carousel - NO OVERLAY FOUND (already removed)
+- [x] Keep text boxes opaque (NOT transparent) - text boxes already opaque (bg-[#dcdcdc]/90)
+- [x] Fix About page header: background already #2a3439, fixed text colors (title → #8edb38, subtitle → #ffffff)
+- [x] Reduce About page header size: pt-32 → pt-24, pb-16 → pb-12
+- [x] Re-audit ALL pages for color consistency - ZERO non-palette colors found
+- [x] Ensure NO pages have colors outside the 5-color palette - VERIFIED
+  - ✅ 0 hex colors outside palette in pages
+  - ✅ 0 hex colors outside palette in components (except external chart library)
+  - ✅ CSS variables all correct
