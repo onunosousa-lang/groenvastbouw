@@ -10,7 +10,7 @@ export default function Footer() {
       description: 'Prefab passiefhuizen gebouwd met innovatieve technologie van Senmar.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
-      phone: '+31 6 29841298',
+      phone: '+31 6 29841297',
       kvk: 'KvK: 75308045',
       insurance: '€2,5M Verzekerd',
       rights: '© 2026 Groenvastbouw. Alle rechten voorbehouden.',
@@ -22,7 +22,7 @@ export default function Footer() {
       description: 'Prefab passive houses built with innovative Senmar technology.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
-      phone: '+31 6 29841298',
+      phone: '+31 6 29841297',
       kvk: 'KvK: 75308045',
       insurance: '€2.5M Insured',
       rights: '© 2026 Groenvastbouw. All rights reserved.',
@@ -50,12 +50,12 @@ export default function Footer() {
             <h4 className="font-semibold text-[#8edb38] mb-3">{currentContent.contact}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <a href={`mailto:${currentContent.email}`} className="text-[#ffffff] hover:text-[#8edb38] transition-colors">
+                <a href={`mailto:${currentContent.email}`} className="text-[#ffffff] hover:text-[#7aa050] transition-colors">
                   {currentContent.email}
                 </a>
               </p>
               <p>
-                <a href={`tel:${currentContent.phone}`} className="text-[#ffffff] hover:text-[#8edb38] transition-colors">
+                <a href={`tel:${currentContent.phone}`} className="text-[#ffffff] hover:text-[#7aa050] transition-colors">
                   {currentContent.phone}
                 </a>
               </p>
@@ -67,12 +67,12 @@ export default function Footer() {
             <h4 className="font-semibold text-[#8edb38] mb-3">{t('footer_legal')}</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <Link href="/privacy-policy" className="text-[#ffffff] hover:text-[#8edb38] transition-colors">
+                <Link href="/privacy-policy" className="text-[#ffffff] hover:text-[#7aa050] transition-colors">
                   {currentContent.privacy}
                 </Link>
               </p>
               <p>
-                <Link href="/terms-of-service" className="text-[#ffffff] hover:text-[#8edb38] transition-colors">
+                <Link href="/terms-of-service" className="text-[#ffffff] hover:text-[#7aa050] transition-colors">
                   {currentContent.terms}
                 </Link>
               </p>

@@ -360,7 +360,7 @@
   box-shadow: 0 10px 25px 0 rgba(42, 52, 57, 0.08), 0 4px 10px 0 rgba(42, 52, 57, 0.05);
 }
 
-/* Force all headings to be green #8edb38 */
+/* Heading colors - applied via CSS variable, can be overridden with inline styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #8edb38 !important;
+  color: #8edb38;
 }

@@ -119,7 +119,7 @@ export default function OurTechnology() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#2a3439] to-[#2a3439] text-[#2a3439] py-16 md:py-24 mt-20">
         <div className="container mx-auto px-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#7aa050] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
@@ -173,7 +173,7 @@ export default function OurTechnology() {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#8edb38] transition-colors">
+                      <h3 className="text-2xl font-bold text-[#2a3439] mb-2 group-hover:text-[#7aa050] transition-colors">
                         {language === 'nl' ? tier.titleNl : tier.titleEn}
                       </h3>
                       <p className="text-lg font-semibold text-[#8edb38]">
@@ -211,10 +211,10 @@ export default function OurTechnology() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Offerte aanvragen' : 'Request Quote'}
                       </a>
-                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#8edb38] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
+                      <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#7aa050] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
                         {language === 'nl' ? 'Meer info op Senmar' : 'More info on Senmar'}
                       </a>
                     </div>

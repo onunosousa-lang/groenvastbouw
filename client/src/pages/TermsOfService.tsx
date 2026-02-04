@@ -146,7 +146,7 @@ export default function TermsOfService() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <Link href="/">
-            <a className="inline-flex items-center gap-2 text-[#2a3439] hover:text-[#8edb38] transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-[#2a3439] hover:text-[#7aa050] transition-colors mb-8">
               <ArrowLeft className="w-5 h-5" />
               {content.backHome}
             </a>

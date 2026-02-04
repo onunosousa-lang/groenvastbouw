@@ -24,14 +24,14 @@ export default function About() {
     founderStory3: language === 'nl'
       ? 'Nuno is geen afstandelijke manager. Hij is aanwezig op de bouwplaats, coördineert de montage, de kraan en de afwerkingswerkzaamheden, en zorgt ervoor dat kwaliteit, precisie en duurzaamheid van begin tot eind worden gehandhaafd. Hij staat persoonlijk in voor de technische betrouwbaarheid van elk project. Groenvastbouw staat voor solide constructie, slimme oplossingen en gebouwen die klaar zijn voor de toekomst.'
       : 'Nuno is not a remote manager. He is present on site, coordinating the assembly, the crane, and the finishing works, ensuring that quality, precision, and durability are maintained from start to finish. He personally stands behind the technical reliability of every project. Groenvastbouw stands for solid construction, smart solutions, and buildings that are ready for the future.',
-    partnershipTitle: language === 'nl' ? <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38]">Senmar</a></> : <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38]">Senmar</a></>,
+    partnershipTitle: language === 'nl' ? <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a></> : <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a></>,
     partnershipSubtitle: language === 'nl' 
       ? 'Alleen kan een vakman één huis per jaar bouwen. Samen met technologie kunnen we een wijk bouwen.'
       : 'Alone, a craftsman can build one house a year. Together with technology, we can build a neighborhood.',
     engineTitle: language === 'nl' ? 'Industriële Precisie (De Motor)' : 'Industrial Precision (The Engine)',
     engineDesc: language === 'nl'
-      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
-      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>,
+      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
+      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>,
     driverTitle: language === 'nl' ? 'Lokale Expertise (De Bestuurder)' : 'Local Expertise (The Driver)',
     driverDesc: language === 'nl'
       ? 'Groenvastbouw brengt deze technologie naar Nederlandse bodem. Wij navigeren lokale regelgeving (BENG-normen), beheren funderingen en afwerking, en zorgen dat het project perfect past binnen het Nederlandse landschap.'
@@ -220,15 +220,15 @@ export default function About() {
       </section>
 
       {/* 6. CTA */}
-      <section id="contact-cta" className="py-20 bg-[#2a3439] text-[#2a3439] text-center">
+      <section id="contact-cta" className="py-20 bg-[#2a3439] text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{content.ctaTitle}</h2>
-          <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8edb38]">{content.ctaTitle}</h2>
+          <p className="text-xl text-[#ffffff] mb-8">{content.ctaText}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-8 py-6 text-lg" onClick={openModal}>
               {content.contactNuno}
             </Button>
-            <Button size="lg" variant="outline" className="border-[#8edb38] text-[#2a3439] hover:bg-[#dcdcdc] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
+            <Button size="lg" variant="outline" className="border-[#8edb38] text-[#ffffff] hover:bg-[#7aa050] hover:text-[#2a3439] px-8 py-6 text-lg" onClick={() => window.location.href = '/#services'}>
               {content.exploreSystems}
             </Button>
           </div>

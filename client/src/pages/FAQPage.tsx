@@ -133,7 +133,7 @@ export default function FAQPage() {
             <div className="space-y-4">
               <p>Ready to realize your sustainable dream home? Contact us directly and we will guide you through every step of the process.</p>
               <a 
-                href="https://wa.me/31628358556" 
+                href="https://wa.me/31629841297" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -147,7 +147,7 @@ export default function FAQPage() {
             <div className="space-y-4">
               <p>Klaar om uw duurzame droomhuis te realiseren? Neem direct contact met ons op en wij begeleiden u door elke stap van het proces.</p>
               <a 
-                href="https://wa.me/31628358556" 
+                href="https://wa.me/31629841297" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -165,16 +165,16 @@ export default function FAQPage() {
   let questionIndex = 0;
 
   const content = {
-    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-bold">Senmar</a> System</>,
+    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> System</>,
     intro: language === 'nl' 
-      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
-      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
+      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
+      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',
     readyTitle: language === 'nl' ? 'Klaar om Uw Project te Starten?' : 'Ready to Start Your Project?',
     readyText: language === 'nl' ? 'Neem contact met ons op om uw passief huis project te bespreken.' : 'Get in touch with us to discuss your passive house project.',
-    footer: language === 'nl' ? '© 2024 Groenvastbouw. Alle rechten voorbehouden.' : '© 2024 Groenvastbouw. All rights reserved.'
+    footer: language === 'nl' ? '© 2026 Groenvastbouw. Alle rechten voorbehouden.' : '© 2026 Groenvastbouw. All rights reserved.'
   };
 
   return (
@@ -182,7 +182,7 @@ export default function FAQPage() {
       {/* Header */}
       <header className="bg-background text-[#2a3439] py-4">
         <div className="container mx-auto px-4">
-          <Link href="/" className="flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] transition-colors w-fit">
+          <Link href="/" className="flex items-center gap-2 text-[#8edb38] hover:text-[#7aa050] transition-colors w-fit">
             <ArrowLeft size={20} />
             <span>{content.backToHome}</span>
           </Link>
@@ -205,7 +205,7 @@ export default function FAQPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a 
             href="/#contact" 
-            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
           >
             <Mail size={20} />
             {content.contactUs}
@@ -274,7 +274,7 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/#contact" 
-              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#8edb38] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#8edb38] text-[#2a3439] px-6 py-3 rounded-full font-semibold hover:bg-[#7aa050] transition-colors"
             >
               <Mail size={20} />
               {content.contactUs}

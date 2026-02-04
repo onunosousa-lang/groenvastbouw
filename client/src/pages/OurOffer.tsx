@@ -333,7 +333,7 @@ export default function OurOffer() {
         {/* Dark Overlay for Text Readability */}
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#7aa050] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {content.backHome}
           </Link>
@@ -362,7 +362,7 @@ export default function OurOffer() {
               <>
                 <button 
                   onClick={openModal}
-                  className="text-[#8edb38] hover:text-[#8edb38] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
+                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
                 >
                   Groenvastbouw
                 </button>
@@ -371,7 +371,7 @@ export default function OurOffer() {
                   href="https://www.senmar.pt" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#8edb38] hover:text-[#8edb38] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
+                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
                 >
                   Senmar
                 </a>
@@ -381,7 +381,7 @@ export default function OurOffer() {
               <>
                 <button 
                   onClick={openModal}
-                  className="text-[#8edb38] hover:text-[#8edb38] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
+                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
                 >
                   Groenvastbouw
                 </button>
@@ -390,7 +390,7 @@ export default function OurOffer() {
                   href="https://www.senmar.pt" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#8edb38] hover:text-[#8edb38] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
+                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
                 >
                   Senmar
                 </a>

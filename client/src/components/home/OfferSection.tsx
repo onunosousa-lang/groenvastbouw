@@ -129,7 +129,7 @@ export default function OfferSection() {
             <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
               <Button 
                 onClick={openModal}
-                className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] h-12 text-base font-semibold group"
+                className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] h-12 text-base font-semibold group"
               >
                 {content.b2b.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -177,7 +177,7 @@ export default function OfferSection() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <Button className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
+                <Button className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
                   {content.prefab.cta}
                   <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -222,7 +222,7 @@ export default function OfferSection() {
             <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
               <Button 
                 onClick={openModal}
-                className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] h-12 text-base font-semibold group"
+                className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] h-12 text-base font-semibold group"
               >
                 {content.custom.cta}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

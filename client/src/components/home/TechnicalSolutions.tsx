@@ -169,7 +169,7 @@ export default function TechnicalSolutions() {
 
                       {/* CTA Button */}
                       <div className="pt-4">
-                        <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                        <a href="/#contact" className="inline-block bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
                           {language === 'nl' ? 'Meer informatie' : 'Learn More'}
                         </a>
                       </div>

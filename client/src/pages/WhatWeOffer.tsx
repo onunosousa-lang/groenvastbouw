@@ -309,7 +309,7 @@ export default function WhatWeOffer() {
             <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
             <Button
               onClick={openModal}
-              className="bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] px-8 py-6 text-lg font-semibold"
+              className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-8 py-6 text-lg font-semibold"
             >
               {content.contactButton}
             </Button>

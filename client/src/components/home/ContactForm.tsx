@@ -161,9 +161,9 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button 
-                  type="submit" 
-                  className="w-full bg-[#8edb38] hover:bg-[#8edb38] text-lg py-6"
+                <Button
+                  type="submit"
+                  className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-lg py-6"
                   disabled={isSubmitting}
                 >
                   {isSubmitting

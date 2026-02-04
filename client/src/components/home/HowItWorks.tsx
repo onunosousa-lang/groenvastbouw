@@ -198,8 +198,8 @@ export default function HowItWorks() {
                 onClick={openModal}
                 className={`px-8 py-6 text-lg font-semibold text-[#2a3439] ${
                   activeTab === 'structure' 
-                    ? 'bg-[#8edb38] hover:bg-[#8edb38]' 
-                    : 'bg-[#8edb38] hover:bg-[#8edb38]'
+                    ? 'bg-[#8edb38] hover:bg-[#7aa050]' 
+                    : 'bg-[#8edb38] hover:bg-[#7aa050]'
                 }`}
               >
                 {content.cta.button}

@@ -120,7 +120,7 @@ export default function PerformanceLevels() {
             href="https://www.senmar.pt/en/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#8edb38] text-[#2a3439] font-semibold rounded-lg hover:bg-[#8edb38] transition-colors"
+            className="inline-block px-6 py-3 bg-[#8edb38] text-[#2a3439] font-semibold rounded-lg hover:bg-[#7aa050] transition-colors"
           >
             {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
           </a>
@@ -184,7 +184,7 @@ export default function PerformanceLevels() {
         <div className="mt-16 text-center">
           <button
             onClick={openModal}
-            className="px-8 py-4 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
+            className="px-8 py-4 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold text-lg rounded-lg transition-colors inline-flex items-center gap-2 shadow-lg"
           >
             {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
             <ArrowRight className="w-5 h-5" />

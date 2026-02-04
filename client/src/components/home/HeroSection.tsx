@@ -94,17 +94,17 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-10 w-full max-w-2xl">
-            <a 
-              href="https://wa.me/31629841298"
+            <a
+              href="https://wa.me/31629841297"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 flex items-center justify-center"
+              className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300 flex items-center justify-center"
             >
               WhatsApp
             </a>
-            <Button 
+            <Button
               onClick={openModal}
-              className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
+              className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg font-bold px-8 py-6 rounded-lg shadow-xl transition-all duration-300"
             >
               {content.ctaSecondary}
             </Button>

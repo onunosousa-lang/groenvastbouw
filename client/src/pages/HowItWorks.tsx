@@ -182,7 +182,7 @@ export default function HowItWorks() {
         {/* Dark Overlay for Text Readability */}
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#8edb38] font-semibold mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#7aa050] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {language === 'nl' ? 'Terug naar Home' : 'Back to Home'}
           </Link>
@@ -322,7 +322,7 @@ export default function HowItWorks() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
                     href="/#contact" 
-                    className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+                    className="inline-block bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
                   >
                     {language === 'nl' ? 'Vraag Offerte Aan' : 'Request Quote'}
                   </a>
@@ -330,7 +330,7 @@ export default function HowItWorks() {
                     href="https://senmar.pt/en/solutions" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#8edb38] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+                    className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#7aa050] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
                   >
                     {language === 'nl' ? 'Bekijk op Senmar' : 'View on Senmar'}
                   </a>
@@ -415,7 +415,7 @@ export default function HowItWorks() {
           </p>
           <a 
             href="/#contact" 
-            className="inline-block bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+            className="inline-block bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? 'Plan een Gratis Consult' : 'Schedule a Free Consultation'}
           </a>
