@@ -33,6 +33,7 @@ const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const Contact = lazy(() => import("./pages/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const PassiveHouse = lazy(() => import("./pages/PassiveHouse"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 function LoadingSpinner() {
@@ -62,6 +63,8 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/passive-house" component={PassiveHouse} />
+        <Route path="/wat-is-een-passiefhuis" component={PassiveHouse} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
       </Switch>
