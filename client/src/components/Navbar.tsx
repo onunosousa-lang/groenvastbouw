@@ -77,7 +77,7 @@ export default function Navbar() {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 lg:h-20">
-          
+
           {/* Logo - Desktop */}
           <div className="hidden lg:flex items-center gap-4">
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center">
@@ -99,19 +99,19 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            <Link href="/our-offer" className="text-[#2a3439] hover:text-[#8edb38] transition-colors text-sm">
+            <Link href="/our-offer" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm">
               {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
             </Link>
-            <Link href="/passive-house" className="text-[#2a3439] hover:text-[#8edb38] transition-colors text-sm">
+            <Link href="/passive-house" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm">
               {language === 'nl' ? 'Passiefhuis' : 'Passive House'}
             </Link>
-            <Link href="/projects" className="text-[#2a3439] hover:text-[#8edb38] transition-colors text-sm">
+            <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm">
               {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
-            <Link href="/about" className="text-[#2a3439] hover:text-[#8edb38] transition-colors text-sm">
+            <Link href="/about" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm">
               {language === 'nl' ? 'Over Ons' : 'About Us'}
             </Link>
-            <Link href="/faq" className="text-[#2a3439] hover:text-[#8edb38] transition-colors text-sm">
+            <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm">
               FAQ
             </Link>
             <button onClick={() => openModal()} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
@@ -138,19 +138,19 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-[#8edb38]/10 bg-[#dcdcdc]">
             <div className="flex flex-col space-y-4 px-4">
-              <Link href="/our-offer" className="text-[#2a3439] hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/our-offer" className="text-[#2a3439] hover:text-[#7aa050]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
               </Link>
-              <Link href="/passive-house" className="text-[#2a3439] hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/passive-house" className="text-[#2a3439] hover:text-[#7aa050]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Passiefhuis' : 'Passive House'}
               </Link>
-              <Link href="/projects" className="text-[#2a3439] hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}
               </Link>
-              <Link href="/about" className="text-[#2a3439] hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/about" className="text-[#2a3439] hover:text-[#7aa050]" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Over Ons' : 'About Us'}
               </Link>
-              <Link href="/faq" className="text-[#2a3439] hover:text-[#8edb38]" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050]" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
               </Link>
               <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">

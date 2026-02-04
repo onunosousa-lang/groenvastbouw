@@ -55,13 +55,13 @@ export default function Contact() {
               <div className="space-y-4 text-[#2a3439]">
                 <div>
                   <p className="font-semibold text-[#2a3439]">{language === 'nl' ? 'Email' : 'Email'}</p>
-                  <a href="mailto:contact@groenvastbouw.nl" className="text-[#8edb38] hover:text-[#8edb38]">
+                  <a href="mailto:contact@groenvastbouw.nl" className="text-[#8edb38] hover:text-[#7aa050]">
                     contact@groenvastbouw.nl
                   </a>
                 </div>
                 <div>
                   <p className="font-semibold text-[#2a3439]">{language === 'nl' ? 'WhatsApp' : 'WhatsApp'}</p>
-                  <a href="https://wa.me/31629841298" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#8edb38]">
+                  <a href="https://wa.me/31629841297" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">
                     +31 6 29841298
                   </a>
                 </div>

@@ -253,17 +253,17 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
 
                   {/* CTA Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4 w-full">
-                    <a 
-                      href="https://wa.me/31629841298"
+                    <a
+                      href="https://wa.me/31629841297"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#8edb38]"
+                      className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-dashed border-[#8edb38]"
                     >
                       WhatsApp
                     </a>
-                    <Button 
+                    <Button
                       onClick={openModal}
-                      className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#8edb38]"
+                      className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 border-2 border-dashed border-[#8edb38]"
                     >
                       {language === 'nl' ? 'Request an intro call' : 'Request an intro call'}
                     </Button>

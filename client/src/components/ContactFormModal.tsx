@@ -200,9 +200,9 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   >
                     {language === 'nl' ? 'Annuleren' : 'Cancel'}
                   </Button>
-                  <Button 
-                    type="submit" 
-                    className="flex-1 bg-[#8edb38] hover:bg-[#8edb38] text-[#2a3439] font-semibold transition-all duration-200"
+                  <Button
+                    type="submit"
+                    className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-semibold transition-all duration-200"
                     disabled={isSubmitting}
                   >
                     {isSubmitting 
