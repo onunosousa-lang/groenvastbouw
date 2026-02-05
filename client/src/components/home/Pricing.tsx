@@ -21,7 +21,7 @@ export default function Pricing() {
     
     structureTitle: language === 'nl' ? 'Passieve Structuur' : 'Passive Structure',
     structureSubtitle: language === 'nl' ? 'Fabrieksmatig Geproduceerd' : 'Factory Produced',
-    structurePrice: language === 'nl' ? 'Vanaf ≈ €550' : 'From ≈ €550',
+    structurePrice: language === 'nl' ? 'Vanaf ≈ €440' : 'From ≈ €440',
     structurePriceUnit: language === 'nl' ? 'per m² (fabrieksmatig geproduceerde passieve structuur)' : 'per m² (factory-produced passive structure)',
     structureIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
     structureFeatures: language === 'nl' ? [
@@ -59,7 +59,7 @@ export default function Pricing() {
     
     turnkeyTitle: language === 'nl' ? 'Sleutelklaar Gebouw' : 'Turnkey Building',
     turnkeySubtitle: language === 'nl' ? 'Indicatief' : 'Indicative',
-    turnkeyPrice: language === 'nl' ? 'Rond ≈ €1.850' : 'Around ≈ €1.850',
+    turnkeyPrice: language === 'nl' ? 'Rond ≈ €1.925' : 'Around ≈ €1.925',
     turnkeyPriceUnit: language === 'nl' ? 'per m² sleutelklaar' : 'per m² turnkey',
     turnkeyExcludes: language === 'nl' ? '(exclusief funderingen)' : '(excluding foundations)',
     turnkeyIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
