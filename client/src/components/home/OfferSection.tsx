@@ -31,7 +31,7 @@ export default function OfferSection() {
         'Complete structure delivered in 3 months',
         'Turn-key finishing available'
       ],
-      cta: language === 'nl' ? 'Bekijk Groenvastbouw Modellen' : 'View Groenvastbouw Models'
+      cta: language === 'nl' ? 'Prefab modellen' : 'Prefab models'
     },
 
     custom: {
