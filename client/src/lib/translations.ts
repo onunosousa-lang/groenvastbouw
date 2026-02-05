@@ -257,14 +257,6 @@ export const translations = {
      prefab_manufacturing_title: "Sustainable Manufacturing",
     prefab_manufacturing_desc: "The prefabrication process uses sustainably sourced wood and efficient manufacturing techniques, further enhancing the environmental benefits of prefab wooden houses.",
     
-    // About Us Section
-    aboutus_title: "About Us",
-    aboutus_p1: "We build sustainable, high-performance timber frame buildings designed to be truly future-proof.",
-    aboutus_p2: "With over 15 years of experience in timber construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial manufacturing through our partner factory in Portugal (Senmar).",
-    aboutus_p3: "Our commitment is to real sustainability and real performance, never compromising on materials, build quality, or long-term efficiency. By producing precision timber structures in controlled factory conditions, we reduce waste, control costs, and deliver buildings that can save up to 90% of heating energy while providing a healthy and comfortable indoor environment.",
-    aboutus_p4: "We offer solutions from structural shell to fully turnkey buildings and can coordinate the entire process, from foundations to energy systems, working alongside trusted local partners when needed.",
-    aboutus_tagline: "Build better. Build sustainably. Build for the future.",
-    
     // Markets Array
     markets_array: [
       {
