@@ -26,6 +26,14 @@ export const translations = {
     about_mission_title: "Onze Missie",
     about_mission_text: "Duurzame, hoogwaardige woningbouw toegankelijk maken door geavanceerde prefabricage.",
     
+    // About Us Section
+    aboutus_title: "Over Ons",
+    aboutus_p1: "Wij bouwen duurzame, hoogwaardige houtskeletbouwconstructies die ontworpen zijn om toekomstbestendig te zijn.",
+    aboutus_p2: "Met meer dan 15 jaar ervaring combineert Groenvastbouw lokale expertise in Nederland met productie in onze partnerfabriek in Portugal (Senmar).",
+    aboutus_p3: "Door prefabricage in gecontroleerde fabrieksomstandigheden leveren we constante kwaliteit, minder afval en voorspelbare doorlooptijden.",
+    aboutus_p4: "Wij leveren trajecten van casco tot sleutelklaar en coördineren desgewenst het volledige proces met lokale partners.",
+    aboutus_tagline: "Beter bouwen. Duurzaam bouwen. Bouwen voor de toekomst.",
+    
     // Services Section
     services_title: "Wat Wij Bouwen",
     services_subtitle: "Van concept tot sleutelklaar",
@@ -299,6 +307,14 @@ export const translations = {
     about_subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
     about_mission_title: "Our Mission",
     about_mission_text: "Making sustainable, high-performance housing accessible through advanced prefabrication.",
+    
+    // About Us Section
+    aboutus_title: "About Us",
+    aboutus_p1: "We build sustainable, high-quality timber frame structures designed to be future-ready.",
+    aboutus_p2: "With more than 15 years of experience, Groenvastbouw combines local expertise in the Netherlands with manufacturing at our partner factory in Portugal (Senmar).",
+    aboutus_p3: "By prefabricating in controlled factory conditions, we deliver consistent quality, less waste, and predictable lead times.",
+    aboutus_p4: "We deliver trajectories from structural shell to turnkey and can coordinate the full process with trusted local partners.",
+    aboutus_tagline: "Build better. Build sustainably. Build for the future.",
     
     // Services Section
     services_title: "What We Build",
