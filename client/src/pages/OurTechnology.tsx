@@ -215,7 +215,7 @@ export default function OurTechnology() {
                         {language === 'nl' ? 'Offerte aanvragen' : 'Request Quote'}
                       </a>
                       <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#7aa050] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
-                        {language === 'nl' ? 'Meer info op Senmar' : 'More info on Senmar'}
+                        {language === 'nl' ? 'Meer info partnerfabriek' : 'More info on partner factory'}
                       </a>
                     </div>
                   </div>

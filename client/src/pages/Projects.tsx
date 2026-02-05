@@ -14,8 +14,8 @@ export default function Projects() {
       : 'View our realized passive house projects and ongoing constructions',
     projectsTitle: language === 'nl' ? 'Enkele van onze projecten' : 'Some of our projects',
     projectsDesc: language === 'nl'
-      ? 'Hoogperformante passiefhuizen en extensies gerealiseerd in samenwerking met Senmar'
-      : 'High-performance passive houses and extensions realized in partnership with Senmar',
+      ? 'Hoogperformante passiefhuizen en extensies gerealiseerd met het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal'
+      : 'High-performance passive houses and extensions realized with the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal',
   };
 
   const allProjects = [

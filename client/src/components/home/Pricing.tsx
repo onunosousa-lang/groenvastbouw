@@ -21,8 +21,8 @@ export default function Pricing() {
     
     structureTitle: language === 'nl' ? 'Passieve Structuur' : 'Passive Structure',
     structureSubtitle: language === 'nl' ? 'Fabrieksmatig Geproduceerd' : 'Factory Produced',
-    structurePrice: '€400',
-    structurePriceUnit: language === 'nl' ? 'per m²' : 'per m²',
+    structurePrice: language === 'nl' ? 'Vanaf ≈ €550' : 'From ≈ €550',
+    structurePriceUnit: language === 'nl' ? 'per m² (fabrieksmatig geproduceerde passieve structuur)' : 'per m² (factory-produced passive structure)',
     structureIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
     structureFeatures: language === 'nl' ? [
       'Houtskeletstructuur in C24 NordicPine',
@@ -38,29 +38,29 @@ export default function Pricing() {
       'Service cavities for technical installations'
     ],
     structureExcludes: language === 'nl'
-      ? 'Exclusief: transport, montage, ramen, installaties, afwerking en funderingen.'
-      : 'Excludes: transport, assembly, windows, installations, finishing and foundations.',
+      ? 'Exclusief: transport en montage, ramen, installaties, afwerking en funderingen.'
+      : 'Excludes: transport and assembly, windows, installations, finishing and foundations.',
     
     additionalTitle: language === 'nl' ? 'Gemiddelde Richtprijzen Bijkomende Onderdelen:' : 'Average Guide Prices Additional Components:',
     additionalItems: [
       {
         icon: Truck,
         label: language === 'nl' ? 'Transport Portugal → Nederland' : 'Transport Portugal → Netherlands',
-        price: '€100',
+        price: '≈ €100',
         unit: language === 'nl' ? 'per m²' : 'per m²'
       },
       {
         icon: Hammer,
         label: language === 'nl' ? 'Montage op locatie (NL)' : 'Assembly on site (NL)',
-        price: '€150',
+        price: '≈ €150',
         unit: language === 'nl' ? 'per m²' : 'per m²'
       }
     ],
     
     turnkeyTitle: language === 'nl' ? 'Sleutelklaar Gebouw' : 'Turnkey Building',
     turnkeySubtitle: language === 'nl' ? 'Indicatief' : 'Indicative',
-    turnkeyPrice: '€1.750',
-    turnkeyPriceUnit: language === 'nl' ? 'per m²' : 'per m²',
+    turnkeyPrice: language === 'nl' ? 'Rond ≈ €1.850' : 'Around ≈ €1.850',
+    turnkeyPriceUnit: language === 'nl' ? 'per m² sleutelklaar' : 'per m² turnkey',
     turnkeyExcludes: language === 'nl' ? '(exclusief funderingen)' : '(excluding foundations)',
     turnkeyIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
     turnkeyFeatures: language === 'nl' ? [

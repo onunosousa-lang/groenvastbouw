@@ -3,17 +3,17 @@ export const whyUsContent = {
     title: "Waarom Groenvastbouw?",
     hero: {
       title: "De Toekomst van Bouwen, Vandaag.",
-      subtitle: "Groenvastbouw is partner van Senmar in Nederland. Samen herdefiniëren we de bouwsector met innovatieve, duurzame en efficiënte modulaire technologie.",
+      subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "Het Groenvastbouw Verschil: Meer dan een Bouwer",
-      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Onze samenwerking met Senmar, een pionier in geprefabriceerde bouwtechnologie, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
+      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
-      title: "De Senmar Revolutie: Geavanceerde Prefabricage",
-      content: "De kern van onze aanpak is de revolutionaire MOD (Modular On Demand) technologie van Senmar. In een state-of-the-art fabriek van 4.000 m² worden uw bouwelementen met CNC-precisie vervaardigd. Dit elimineert menselijke fouten, garandeert een consistente kwaliteit en verkort de bouwtijd op locatie met tot wel 70%.",
+      title: "Groenvastbouw engineered timber system: Geavanceerde Prefabricage",
+      content: "De kern van onze aanpak is het Groenvastbouw engineered timber system, vervaardigd in samenwerking met Senmar in Portugal. In een state-of-the-art fabriek van 4.000 m² worden uw bouwelementen met CNC-precisie vervaardigd. Dit elimineert menselijke fouten, garandeert een consistente kwaliteit en verkort de bouwtijd op locatie met tot wel 70%.",
       methods: [
         {
           title: "Gepaneeliseerde Constructie",
@@ -26,7 +26,7 @@ export const whyUsContent = {
           imageUrl: "/senmar/006.webp" 
         }
       ],
-      senmarLink: "Bezoek Senmar.pt voor meer technische details"
+      senmarLink: "Bezoek de partnerfabriek voor meer technische details"
     },
     unmatchedBenefits: {
       title: "Ongeëvenaarde Voordelen",
@@ -75,7 +75,7 @@ export const whyUsContent = {
     },
     callToAction: {
       title: "Klaar om de toekomst te bouwen?",
-      content: "Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe Groenvastbouw en Senmar uw project kunnen transformeren.",
+      content: "Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal, uw project kan transformeren.",
       buttonText: "Neem Contact Op"
     }
   },
@@ -83,17 +83,17 @@ export const whyUsContent = {
     title: "Why Groenvastbouw?",
     hero: {
       title: "The Future of Construction, Today.",
-      subtitle: "Groenvastbouw is a partner of Senmar in the Netherlands. Together, we are redefining the construction industry with innovative, sustainable, and efficient modular technology.",
+      subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "The Groenvastbouw Difference: More than a Builder",
-      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. Our partnership with Senmar, a pioneer in prefabricated construction technology, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final delivery, we manage the entire process, ensuring a seamless and worry-free experience.",
+      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final delivery, we manage the entire process, ensuring a seamless and worry-free experience.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
-      title: "The Senmar Revolution: Advanced Prefabrication",
-      content: "At the core of our approach is Senmar's revolutionary MOD (Modular On Demand) technology. In a state-of-the-art 4,000 m² factory, your building components are manufactured with CNC precision. This eliminates human error, guarantees consistent quality, and reduces on-site construction time by up to 70%.",
+      title: "Groenvastbouw engineered timber system: Advanced Prefabrication",
+      content: "At the core of our approach is the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. In a state-of-the-art 4,000 m² factory, your building components are manufactured with CNC precision. This eliminates human error, guarantees consistent quality, and reduces on-site construction time by up to 70%.",
       methods: [
         {
           title: "Panelized Construction",
@@ -106,7 +106,7 @@ export const whyUsContent = {
           imageUrl: "/senmar/006.webp"
         }
       ],
-      senmarLink: "Visit Senmar.pt for more technical details"
+      senmarLink: "Visit the partner factory for more technical details"
     },
     unmatchedBenefits: {
       title: "Unmatched Benefits",
@@ -155,7 +155,7 @@ export const whyUsContent = {
     },
     callToAction: {
       title: "Ready to build the future?",
-      content: "Contact us today for a no-obligation consultation and discover how Groenvastbouw and Senmar can transform your project.",
+      content: "Contact us today for a no-obligation consultation and discover how the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, can transform your project.",
       buttonText: "Contact Us"
     }
   }

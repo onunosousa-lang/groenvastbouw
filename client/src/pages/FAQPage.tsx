@@ -81,8 +81,8 @@ export default function FAQPage() {
         {
           question_en: "What is the realistic production capacity for Dutch projects?",
           question_nl: "Wat is de realistische productiecapaciteit voor Nederlandse projecten?",
-          answer_en: "Senmar's total annual production capacity is approximately 19,000 m² of modular houses. Currently operating one shift, production can be scaled up to three shifts daily when needed. Capacity is allocated project by project, typically on a first-come basis, though project importance may influence scheduling. Transport is optimized with up to 70 m² per conventional truck.",
-          answer_nl: "De totale jaarlijkse productiecapaciteit van Senmar is ongeveer 19.000 m² modulaire woningen. Momenteel wordt er in één ploeg gewerkt, maar de productie kan indien nodig worden opgeschaald naar drie ploegen per dag. Capaciteit wordt project per project toegewezen, doorgaans op volgorde van binnenkomst, hoewel projectbelang de planning kan beïnvloeden. Transport wordt geoptimaliseerd met tot 70 m² per conventionele vrachtwagen."
+          answer_en: "Our partner factory in Portugal (Senmar) has a total annual production capacity of approximately 19,000 m² of modular houses. Currently operating one shift, production can be scaled up to three shifts daily when needed. Capacity is allocated project by project, typically on a first-come basis, though project importance may influence scheduling. Transport is optimized with up to 70 m² per conventional truck.",
+          answer_nl: "Onze partnerfabriek in Portugal (Senmar) heeft een totale jaarlijkse productiecapaciteit van ongeveer 19.000 m² modulaire woningen. Momenteel wordt er in één ploeg gewerkt, maar de productie kan indien nodig worden opgeschaald naar drie ploegen per dag. Capaciteit wordt project per project toegewezen, doorgaans op volgorde van binnenkomst, hoewel projectbelang de planning kan beïnvloeden. Transport wordt geoptimaliseerd met tot 70 m² per conventionele vrachtwagen."
         },
         {
           question_en: "How are large projects (20–50 units) managed?",
@@ -105,8 +105,8 @@ export default function FAQPage() {
         {
           question_en: "Do the buildings comply with Eurocodes and Dutch regulations (Bouwbesluit/BENG)?",
           question_nl: "Voldoen de gebouwen aan Eurocodes en Nederlandse regelgeving (Bouwbesluit/BENG)?",
-          answer_en: "All Senmar materials have CE certification and designs follow Eurocodes. Groenvastbouw handles Dutch-specific compliance including BENG calculations and Bouwbesluit requirements. We ensure your project meets all local regulations through our local expertise and network of certified professionals.",
-          answer_nl: "Alle Senmar materialen hebben CE-certificering en ontwerpen volgen Eurocodes. Groenvastbouw verzorgt de Nederlandse compliance inclusief BENG-berekeningen en Bouwbesluit-eisen. Wij zorgen ervoor dat uw project aan alle lokale regelgeving voldoet via onze lokale expertise en netwerk van gecertificeerde professionals."
+          answer_en: "Materials from our partner factory in Portugal (Senmar) have CE certification and designs follow Eurocodes. Groenvastbouw handles Dutch-specific compliance including BENG calculations and Bouwbesluit requirements. We ensure your project meets all local regulations through our local expertise and network of certified professionals.",
+          answer_nl: "Materialen van onze partnerfabriek in Portugal (Senmar) hebben CE-certificering en ontwerpen volgen Eurocodes. Groenvastbouw verzorgt de Nederlandse compliance inclusief BENG-berekeningen en Bouwbesluit-eisen. Wij zorgen ervoor dat uw project aan alle lokale regelgeving voldoet via onze lokale expertise en netwerk van gecertificeerde professionals."
         },
         {
           question_en: "What is the structural warranty period?",
@@ -165,10 +165,10 @@ export default function FAQPage() {
   let questionIndex = 0;
 
   const content = {
-    title: language === 'nl' ? <>FAQ – Passieve Huizen & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> Systeem</> : <>FAQ – Passive Houses & <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> System</>,
+    title: language === 'nl' ? <>FAQ – Groenvastbouw engineered timber system</> : <>FAQ – Groenvastbouw engineered timber system</>,
     intro: language === 'nl' 
-      ? <>Groenvastbouw biedt hoogwaardige houtskelet passieve huizen in samenwerking met het <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> prefab systeem uit Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
-      : <>Groenvastbouw offers high-performance timber frame passive houses in cooperation with the <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> prefab system from Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
+      ? <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> in Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
+      : <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> in Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',

@@ -24,14 +24,14 @@ export default function About() {
     founderStory3: language === 'nl'
       ? 'Nuno is geen afstandelijke manager. Hij is aanwezig op de bouwplaats, coördineert de montage, de kraan en de afwerkingswerkzaamheden, en zorgt ervoor dat kwaliteit, precisie en duurzaamheid van begin tot eind worden gehandhaafd. Hij staat persoonlijk in voor de technische betrouwbaarheid van elk project. Groenvastbouw staat voor solide constructie, slimme oplossingen en gebouwen die klaar zijn voor de toekomst.'
       : 'Nuno is not a remote manager. He is present on site, coordinating the assembly, the crane, and the finishing works, ensuring that quality, precision, and durability are maintained from start to finish. He personally stands behind the technical reliability of every project. Groenvastbouw stands for solid construction, smart solutions, and buildings that are ready for the future.',
-    partnershipTitle: language === 'nl' ? <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a></> : <>Groenvastbouw x <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a></>,
+    partnershipTitle: language === 'nl' ? <>Groenvastbouw × partnerfabriek in Portugal (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a>)</> : <>Groenvastbouw × partner factory in Portugal (<a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050]">Senmar</a>)</>,
     partnershipSubtitle: language === 'nl' 
       ? 'Alleen kan een vakman één huis per jaar bouwen. Samen met technologie kunnen we een wijk bouwen.'
       : 'Alone, a craftsman can build one house a year. Together with technology, we can build a neighborhood.',
     engineTitle: language === 'nl' ? 'Industriële Precisie (De Motor)' : 'Industrial Precision (The Engine)',
     engineDesc: language === 'nl'
-      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
-      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>,
+      ? <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a> in Portugal. Onze partnerfabriek gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving, beschermd tegen regen en wind, resulterend in nul afval en perfecte structurele integriteit.</>
+      : <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a> in Portugal. Our partner factory uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment, safe from rain and wind, resulting in zero waste and perfect structural integrity.</>,
     driverTitle: language === 'nl' ? 'Lokale Expertise (De Bestuurder)' : 'Local Expertise (The Driver)',
     driverDesc: language === 'nl'
       ? 'Groenvastbouw brengt deze technologie naar Nederlandse bodem. Wij navigeren lokale regelgeving (BENG-normen), beheren funderingen en afwerking, en zorgen dat het project perfect past binnen het Nederlandse landschap.'
@@ -127,7 +127,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 3. SENMAR PARTNERSHIP */}
+      {/* 3. Partner Factory */}
       <section className="py-20 bg-card">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -147,8 +147,8 @@ export default function About() {
                   <h3 className="text-xl font-bold mb-2 text-[#2a3439]">{content.engineTitle}</h3>
                   <p className="text-[#2a3439] leading-relaxed">
                     {language === 'nl' 
-                      ? <>Groenvastbouw heeft een strategisch partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:underline font-semibold">Senmar</a>. Hun fabriek in Portugal gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving.beschermd tegen regen en wind.resulterend in nul afval en perfecte structurele integriteit.</>
-                      : <>Groenvastbouw has formed a strategic partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:underline font-semibold">Senmar</a>. Their factory in Portugal uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment.safe from rain and wind.resulting in zero waste and perfect structural integrity.</>
+                      ? <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:underline font-semibold">Senmar</a> in Portugal. Onze partnerfabriek gebruikt CNC-robotica om houtskeletframes met millimeterprecisie te snijden. Deze "off-site" productie betekent dat uw huis wordt gebouwd in een geconditioneerde omgeving, beschermd tegen regen en wind, resulterend in nul afval en perfecte structurele integriteit.</>
+                      : <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:underline font-semibold">Senmar</a> in Portugal. Our partner factory uses CNC robotics to cut timber frames with millimeter accuracy. This "off-site" production means your home is built in a conditioned environment, safe from rain and wind, resulting in zero waste and perfect structural integrity.</>
                     }
                   </p>
                 </div>
@@ -167,7 +167,7 @@ export default function About() {
             <div className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/senmar-photos/factory_senmar_12.jpg" 
-                alt="Senmar CNC Factory Production" 
+                alt="Partner factory CNC production" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute bottom-4 left-4 bg-[#dcdcdc] backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">

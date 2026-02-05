@@ -18,8 +18,8 @@ export default function OfferSection() {
       title: language === 'nl' ? 'Prefab Modellen' : 'Prefab Models',
       subtitle: language === 'nl' ? 'Bewezen ontwerpen. Voorspelbare resultaten.' : 'Proven designs. Predictable results.',
       description: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van Senmar. ontworpen voor efficiëntie, klaar voor levering.'
-        : 'Choose from Senmar\'s tested passive house designs. engineered for efficiency, ready for delivery.',
+        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.'
+        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
       points: language === 'nl' ? [
         'Meerdere modellen beschikbaar',
         '3 prestatie-niveaus: Optimal / Passive / Super Passive',
@@ -31,7 +31,7 @@ export default function OfferSection() {
         'Complete structure delivered in 3 months',
         'Turn-key finishing available'
       ],
-      cta: language === 'nl' ? 'Bekijk Senmar Modellen' : 'View Senmar Models'
+      cta: language === 'nl' ? 'Bekijk Groenvastbouw Modellen' : 'View Groenvastbouw Models'
     },
 
     custom: {

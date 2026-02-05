@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
     sections: language === 'nl' ? [
       {
         title: '1. Wie zijn wij?',
-        content: 'Groenvastbouw is een bedrijf dat hoogperformante geprefabriceerde timmerhuizen levert in samenwerking met Senmar, Portugal. Wij zijn gevestigd in Nederland en zijn verantwoordelijk voor de verwerking van uw persoonsgegevens. Voor vragen over dit privacybeleid kunt u contact met ons opnemen via info@groenvastbouw.nl of telefonisch op +31 6 2984 1297.'
+        content: 'Groenvastbouw is een bedrijf dat hoogperformante geprefabriceerde timmerhuizen levert via het Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Wij zijn gevestigd in Nederland en zijn verantwoordelijk voor de verwerking van uw persoonsgegevens. Voor vragen over dit privacybeleid kunt u contact met ons opnemen via info@groenvastbouw.nl of telefonisch op +31 6 2984 1297.'
       },
       {
         title: '2. Welke gegevens verzamelen wij?',
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
       },
       {
         title: '3. Hoe verzamelen wij uw gegevens?',
-        content: 'Wij verzamelen uw gegevens op verschillende manieren. Direct van u wanneer u een contactformulier invult, een offerte aanvraagt, per e-mail of telefoon contact met ons opneemt, of een overeenkomst met ons aangaat. Automatisch via onze website door middel van cookies en vergelijkbare technologieën die informatie verzamelen over uw bezoek. Van derden zoals Senmar, onze productiepartner in Portugal, die technische specificaties en productie-informatie met ons deelt. Van openbare bronnen zoals het Kadaster voor informatie over bouwlocaties en vergunningen.'
+        content: 'Wij verzamelen uw gegevens op verschillende manieren. Direct van u wanneer u een contactformulier invult, een offerte aanvraagt, per e-mail of telefoon contact met ons opneemt, of een overeenkomst met ons aangaat. Automatisch via onze website door middel van cookies en vergelijkbare technologieën die informatie verzamelen over uw bezoek. Van derden zoals onze partnerfabriek in Portugal (Senmar), die technische specificaties en productie-informatie met ons deelt. Van openbare bronnen zoals het Kadaster voor informatie over bouwlocaties en vergunningen.'
       },
       {
         title: '4. Waarvoor gebruiken wij uw gegevens?',
@@ -37,11 +37,11 @@ export default function PrivacyPolicy() {
       },
       {
         title: '6. Met wie delen wij uw gegevens?',
-        content: 'Wij delen uw persoonsgegevens alleen met derden wanneer dit noodzakelijk is voor onze dienstverlening of wanneer wij hiertoe wettelijk verplicht zijn. Senmar, onze productiepartner in Portugal, ontvangt technische specificaties en projectinformatie die nodig is voor de CNC-prefabricatie van uw huis. Onderaannemers en leveranciers die betrokken zijn bij de bouw en installatie van uw passief huis ontvangen relevante projectinformatie. Professionele adviseurs zoals accountants, advocaten en verzekeraars krijgen toegang tot uw gegevens voor hun dienstverlening. Overheidsinstanties ontvangen informatie wanneer wij hiertoe wettelijk verplicht zijn, zoals voor vergunningen en belastingdoeleinden. Wij verkopen uw persoonsgegevens nooit aan derden voor marketingdoeleinden.'
+        content: 'Wij delen uw persoonsgegevens alleen met derden wanneer dit noodzakelijk is voor onze dienstverlening of wanneer wij hiertoe wettelijk verplicht zijn. Onze partnerfabriek in Portugal (Senmar) ontvangt technische specificaties en projectinformatie die nodig is voor de CNC-prefabricatie van uw huis. Onderaannemers en leveranciers die betrokken zijn bij de bouw en installatie van uw passief huis ontvangen relevante projectinformatie. Professionele adviseurs zoals accountants, advocaten en verzekeraars krijgen toegang tot uw gegevens voor hun dienstverlening. Overheidsinstanties ontvangen informatie wanneer wij hiertoe wettelijk verplicht zijn, zoals voor vergunningen en belastingdoeleinden. Wij verkopen uw persoonsgegevens nooit aan derden voor marketingdoeleinden.'
       },
       {
         title: '7. Internationale gegevensoverdracht',
-        content: 'Omdat wij samenwerken met Senmar in Portugal, worden sommige van uw persoonsgegevens overgedragen naar Portugal. Portugal is een lidstaat van de Europese Unie en valt onder de AVG, waardoor uw gegevens hetzelfde beschermingsniveau genieten als in Nederland. Voor overdrachten buiten de EU, indien van toepassing, zorgen wij ervoor dat passende waarborgen aanwezig zijn, zoals standaard contractuele clausules of andere door de Europese Commissie goedgekeurde mechanismen.'
+        content: 'Omdat wij produceren via onze partnerfabriek in Portugal (Senmar), worden sommige van uw persoonsgegevens overgedragen naar Portugal. Portugal is een lidstaat van de Europese Unie en valt onder de AVG, waardoor uw gegevens hetzelfde beschermingsniveau genieten als in Nederland. Voor overdrachten buiten de EU, indien van toepassing, zorgen wij ervoor dat passende waarborgen aanwezig zijn, zoals standaard contractuele clausules of andere door de Europese Commissie goedgekeurde mechanismen.'
       },
       {
         title: '8. Hoe lang bewaren wij uw gegevens?',
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
     ] : [
       {
         title: '1. Who are we?',
-        content: 'Groenvastbouw is a company that delivers high-performance prefabricated timber houses in partnership with Senmar, Portugal. We are based in the Netherlands and are responsible for processing your personal data. For questions about this privacy policy, you can contact us at info@groenvastbouw.nl or by phone at +31 6 2984 1297.'
+        content: 'Groenvastbouw is a company that delivers high-performance prefabricated timber houses via the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. We are based in the Netherlands and are responsible for processing your personal data. For questions about this privacy policy, you can contact us at info@groenvastbouw.nl or by phone at +31 6 2984 1297.'
       },
       {
         title: '2. What data do we collect?',
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
       },
       {
         title: '3. How do we collect your data?',
-        content: 'We collect your data in various ways. Directly from you when you fill out a contact form, request a quote, contact us by email or phone, or enter into an agreement with us. Automatically through our website using cookies and similar technologies that collect information about your visit. From third parties such as Senmar, our production partner in Portugal, who shares technical specifications and production information with us. From public sources such as the Land Registry for information about construction sites and permits.'
+        content: 'We collect your data in various ways. Directly from you when you fill out a contact form, request a quote, contact us by email or phone, or enter into an agreement with us. Automatically through our website using cookies and similar technologies that collect information about your visit. From third parties such as our partner factory in Portugal (Senmar), which shares technical specifications and production information with us. From public sources such as the Land Registry for information about construction sites and permits.'
       },
       {
         title: '4. What do we use your data for?',
@@ -86,11 +86,11 @@ export default function PrivacyPolicy() {
       },
       {
         title: '6. Who do we share your data with?',
-        content: 'We only share your personal data with third parties when necessary for our services or when legally required. Senmar, our production partner in Portugal, receives technical specifications and project information necessary for CNC prefabrication of your house. Subcontractors and suppliers involved in the construction and installation of your passive house receive relevant project information. Professional advisors such as accountants, lawyers, and insurers have access to your data for their services. Government agencies receive information when we are legally required, such as for permits and tax purposes. We never sell your personal data to third parties for marketing purposes.'
+        content: 'We only share your personal data with third parties when necessary for our services or when legally required. Our partner factory in Portugal (Senmar) receives technical specifications and project information necessary for CNC prefabrication of your house. Subcontractors and suppliers involved in the construction and installation of your passive house receive relevant project information. Professional advisors such as accountants, lawyers, and insurers have access to your data for their services. Government agencies receive information when we are legally required, such as for permits and tax purposes. We never sell your personal data to third parties for marketing purposes.'
       },
       {
         title: '7. International data transfer',
-        content: 'Because we work with Senmar in Portugal, some of your personal data is transferred to Portugal. Portugal is a member state of the European Union and falls under GDPR, ensuring your data enjoys the same level of protection as in the Netherlands. For transfers outside the EU, if applicable, we ensure appropriate safeguards are in place, such as standard contractual clauses or other mechanisms approved by the European Commission.'
+        content: 'Because we manufacture via our partner factory in Portugal (Senmar), some of your personal data is transferred to Portugal. Portugal is a member state of the European Union and falls under GDPR, ensuring your data enjoys the same level of protection as in the Netherlands. For transfers outside the EU, if applicable, we ensure appropriate safeguards are in place, such as standard contractual clauses or other mechanisms approved by the European Commission.'
       },
       {
         title: '8. How long do we retain your data?',
