@@ -47,8 +47,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
         ? 'Jouw Passiefhuis. Montage in 8-12 Dagen.'
         : 'Your Passive House. Assembly in 8-12 Days.',
       subheadline: language === 'nl'
-        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>
-        : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>,
+        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>
+        : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>,
       description: language === 'nl'
         ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
         : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -162,8 +162,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
         ? 'Bewezen Prefab Modellen'
         : 'Proven Prefab Models',
       subheadline: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van Senmar. Voorspelbare kosten, voorspelbare resultaten, voorspelbare planning.'
-        : 'Choose from Senmar\'s tested passive house designs. Predictable costs, predictable results, predictable planning.',
+        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.'
+        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
       description: language === 'nl'
         ? 'Meerdere bewezen modellen beschikbaar in drie prestatieniveaus: Optimal, Passive en Super Passive. Klaar voor levering.'
         : 'Multiple proven models available in three performance levels: Optimal, Passive and Super Passive. Ready for delivery.',

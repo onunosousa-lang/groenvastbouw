@@ -332,7 +332,7 @@ export default function HowItWorks() {
                     rel="noopener noreferrer" 
                     className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#7aa050] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300"
                   >
-                    {language === 'nl' ? 'Bekijk op Senmar' : 'View on Senmar'}
+                    {language === 'nl' ? 'Bekijk partnerfabriek' : 'View partner factory'}
                   </a>
                 </div>
               </div>
@@ -342,7 +342,7 @@ export default function HowItWorks() {
           {/* Additional Info */}
           <div className="mt-16 max-w-4xl mx-auto p-8 bg-[#dcdcdc] rounded-xl border-2 border-[#8edb38] shadow-lg">
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
-              {language === 'nl' ? 'Waarom Kiezen Voor Senmar Technologie?' : 'Why Choose Senmar Technology?'}
+              {language === 'nl' ? 'Waarom Kiezen Voor het Groenvastbouw engineered timber system?' : 'Why Choose the Groenvastbouw engineered timber system?'}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">

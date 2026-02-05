@@ -15,14 +15,14 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     company: 'Groenvastbouw',
     tagline: language === 'nl' ? 'Nuchter bouwen. Slim wonen.' : 'Smart building. Smart living.',
     partnership: language === 'nl'
-      ? 'In partnerschap met Senmar. innovatief bedrijf uit Portugal, gericht op maximale kwaliteit, efficiëntie en duurzaam bouwen.'
-      : 'In partnership with Senmar. cutting-edge company based in Portugal, focused on maximum quality, efficiency, and truly sustainable building.',
+      ? 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.'
+      : 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
     headline: language === 'nl' 
       ? 'Jouw Passiefhuis. Montage in 8-12 Dagen.'
       : 'Your Passive House. Assembly in 8-12 Days.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. In partnerschap met <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>
-      : <>Prefab passive houses. full structure delivered and mounted on site. In partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">SENMAR</a></>,
+      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>
+      : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -53,7 +53,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       <div className="absolute inset-0 z-0">
         <img 
           src="/hero-background.jpg" 
-          alt="Senmar Passive House Structure" 
+          alt="Partner factory passive house structure" 
           className="w-full h-full object-cover"
         />
         {/* No overlays - photos fully visible */}
