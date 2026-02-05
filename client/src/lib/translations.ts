@@ -271,13 +271,6 @@ export const translations = {
       }
     ],
 
-    // About Us Section
-    aboutus_title: "Over Ons",
-    aboutus_p1: "Wij bouwen duurzame, hoogwaardige houtskeletbouwconstructies die ontworpen zijn om echt toekomstbestendig te zijn.",
-    aboutus_p2: "Met meer dan 15 jaar ervaring in houtbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productie via onze partnerfabriek in Portugal (Senmar).",
-    aboutus_p3: "Onze toewijding is aan echte duurzaamheid en echte prestaties, zonder compromissen op materialen, bouwkwaliteit of langetermijnefficiëntie. Door precisie houtconstructies te produceren in gecontroleerde fabrieksomstandigheden, verminderen we afval, beheersen we kosten en leveren we gebouwen die tot 90% van de verwarmingsenergie kunnen besparen, terwijl ze een gezonde en comfortabele binnenomgeving bieden.",
-    aboutus_p4: "Wij bieden oplossingen van structurele schil tot volledig sleutelklare gebouwen en kunnen het hele proces coördineren, van funderingen tot energiesystemen, waarbij we indien nodig samenwerken met vertrouwde lokale partners.",
-    aboutus_tagline: "Beter bouwen. Duurzaam bouwen. Bouwen voor de toekomst."
   },
   
   en: {
