@@ -326,36 +326,35 @@ export default function OurOffer() {
       {/* Hero Section with Background Image */}
       <section className="relative text-[#2a3439] py-16 md:py-24 mt-20 overflow-hidden">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/passief-huis-zonnepanelen-buitenkant.png)' }}
         />
-        {/* Dark Overlay for Text Readability */}
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8edb38] hover:text-[#7aa050] font-semibold mb-8 transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {content.backHome}
           </Link>
-          
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {language === 'nl' ? content.intro.titleNl : content.intro.titleEn}
-          </h1>
-          <p className="text-xl text-[#2a3439] max-w-2xl">
-            {language === 'nl' ? content.intro.subtitleNl : content.intro.subtitleEn}
-          </p>
+
+          <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-8 rounded-lg inline-block max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              {language === 'nl' ? content.intro.titleNl : content.intro.titleEn}
+            </h1>
+            <p className="text-xl text-[#2a3439]">
+              {language === 'nl' ? content.intro.subtitleNl : content.intro.subtitleEn}
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Intro Section */}
       <section className="relative py-16 overflow-hidden">
         {/* Background Image with Transparency */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/moderne-woonkamer-open-keuken-passief-huis.png)' }}
         />
-        {/* Dark Background */}
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">
             {language === 'nl' ? (
@@ -412,13 +411,12 @@ export default function OurOffer() {
 
 
       {/* How We Do It */}
-      <section className="relative py-16 overflow-hidden">
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
         {/* Background Image with Transparency */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/houten-frame-constructie-kraan.jpg)' }}
         />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? content.method.titleNl : content.method.titleEn}
@@ -469,12 +467,11 @@ export default function OurOffer() {
       </section>
 
       {/* Scope of Delivery */}
-      <section className="relative py-16 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
         />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? content.scope.titleNl : content.scope.titleEn}
@@ -532,9 +529,8 @@ export default function OurOffer() {
       </section>
 
       {/* Timeline */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.timeline.titleNl : content.timeline.titleEn}
@@ -563,9 +559,8 @@ export default function OurOffer() {
       </section>
 
       {/* Technology */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.technology.titleNl : content.technology.titleEn}
@@ -583,9 +578,8 @@ export default function OurOffer() {
       </section>
 
       {/* Use Cases */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.usecases.titleNl : content.usecases.titleEn}
@@ -603,9 +597,8 @@ export default function OurOffer() {
       </section>
 
       {/* Compliance */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.compliance.titleNl : content.compliance.titleEn}
@@ -636,9 +629,8 @@ export default function OurOffer() {
       </section>
 
       {/* Warranty */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
-        <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
+      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
             {language === 'nl' ? content.warranty.titleNl : content.warranty.titleEn}

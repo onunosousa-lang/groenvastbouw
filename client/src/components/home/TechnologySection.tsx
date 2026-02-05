@@ -59,14 +59,16 @@ export default function TechnologySection() {
             </a>
           </div>
           <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl group">
-            <img 
-              src="/senmar-photos/factory_senmar_4.jpg" 
-              alt="Partner factory production" 
+            <img
+              src="/senmar-photos/factory_senmar_4.jpg"
+              alt="Partner factory production"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute bottom-8 left-8 text-[#2a3439]">
-              <div className="text-sm font-bold uppercase tracking-wider mb-2">Coja, Portugal</div>
-              <div className="text-2xl font-bold">High-Tech Timber Frame Production</div>
+            <div className="absolute bottom-8 left-8">
+              <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-4 rounded-lg">
+                <div className="text-sm font-bold uppercase tracking-wider mb-2 text-[#2a3439]">Coja, Portugal</div>
+                <div className="text-2xl font-bold text-[#2a3439]">High-Tech Timber Frame Production</div>
+              </div>
             </div>
           </div>
         </div>
