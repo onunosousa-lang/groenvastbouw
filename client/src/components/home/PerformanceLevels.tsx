@@ -122,7 +122,7 @@ export default function PerformanceLevels() {
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-[#8edb38] text-[#2a3439] font-semibold rounded-lg hover:bg-[#7aa050] transition-colors"
           >
-            {language === 'nl' ? 'Bekijk volledige specificaties op Senmar.pt' : 'View full specifications on Senmar.pt'}
+            {language === 'nl' ? 'Bekijk volledige specificaties van de partnerfabriek' : 'View full partner factory specifications'}
           </a>
         </div>
 

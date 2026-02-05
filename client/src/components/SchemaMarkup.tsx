@@ -10,8 +10,8 @@ export default function SchemaMarkup() {
     "url": "https://groenvastbouw.nl",
     "logo": "https://groenvastbouw.nl/logo-icon.png",
     "description": language === 'nl' 
-      ? "Groenvastbouw bouwt hoogwaardige passieve huizen met Senmar technologie uit Portugal. Energie-efficiënt, duurzaam en betaalbaar."
-      : "Groenvastbouw builds high-quality passive houses with Senmar technology from Portugal. Energy-efficient, sustainable and affordable.",
+      ? "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Energie-efficiënt, duurzaam en betaalbaar."
+      : "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Energy-efficient, sustainable and affordable.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Wageningen",

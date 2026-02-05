@@ -18,8 +18,8 @@ export default function TechnologySection() {
             </h2>
             <p className="text-xl text-[#2a3439] mb-8 leading-relaxed">
               {language === 'nl' 
-                ? 'Groenvastbouw werkt samen met Senmar om geavanceerde bouwoplossingen naar Nederland te brengen. Wij combineren state-of-the-art technologie met vakmanschap. CNC-precisie elimineert fouten en garandeert consistente kwaliteit in elk project.'
-                : 'Groenvastbouw partners with Senmar to bring advanced building solutions to the Netherlands. We combine state-of-the-art technology with craftsmanship. CNC precision eliminates errors and guarantees consistent quality in every project.'}
+                ? 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Geproduceerd door onze partnerfabriek met CNC-precisie om consistente kwaliteit in elk project te garanderen.'
+                : 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Manufactured by our partner factory using CNC precision to guarantee consistent quality in every project.'}
             </p>
             
             <div className="space-y-6 mb-8">
@@ -61,7 +61,7 @@ export default function TechnologySection() {
           <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl group">
             <img 
               src="/senmar-photos/factory_senmar_4.jpg" 
-              alt="Senmar Factory Production" 
+              alt="Partner factory production" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-8 left-8 text-[#2a3439]">

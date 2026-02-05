@@ -20,8 +20,8 @@ export default function OurOffer() {
       titleEn: 'What We Offer',
       subtitleNl: 'Hoogperformante Geprefabriceerde Timmerhuizen voor Nederland',
       subtitleEn: 'High-Performance Prefabricated Timber Homes for the Netherlands',
-      descNl: 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen in samenwerking met Senmar, Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
-      descEn: 'Groenvastbouw delivers high-performance prefabricated timber homes in partnership with Senmar, Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
+      descNl: 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
+      descEn: 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
       featuresNl: [
         'Duurzame geprefabriceerde timmerconstructie (C24)',
         'Passief-klare isolatie en luchtdichtheid',
@@ -366,7 +366,7 @@ export default function OurOffer() {
                 >
                   Groenvastbouw
                 </button>
-                {' '}levert hoogperformante geprefabriceerde timmerhuizen in samenwerking met{' '}
+                {' '}levert hoogperformante geprefabriceerde timmerhuizen via het Groenvastbouw engineered timber system, manufactured in partnership with{' '}
                 <a 
                   href="https://www.senmar.pt" 
                   target="_blank" 
@@ -385,7 +385,7 @@ export default function OurOffer() {
                 >
                   Groenvastbouw
                 </button>
-                {' '}delivers high-performance prefabricated timber homes in partnership with{' '}
+                {' '}delivers high-performance prefabricated timber homes via the Groenvastbouw engineered timber system, manufactured in partnership with{' '}
                 <a 
                   href="https://www.senmar.pt" 
                   target="_blank" 

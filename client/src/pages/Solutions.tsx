@@ -169,7 +169,7 @@ export default function Solutions() {
                         {language === 'nl' ? 'Aanvraag indienen' : 'Submit Request'}
                       </a>
                       <a href="https://senmar.pt" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-[#8edb38] text-[#8edb38] hover:bg-[#7aa050] hover:text-[#2a3439] font-bold py-3 px-8 rounded-lg transition-colors duration-300 text-center">
-                        {language === 'nl' ? 'Bekijk op Senmar.pt' : 'View on Senmar.pt'}
+                        {language === 'nl' ? 'Bekijk partnerfabriek' : 'View partner factory'}
                       </a>
                     </div>
                   </div>

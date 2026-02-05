@@ -27,8 +27,8 @@ export default function HowItWorks() {
         icon: Ruler
       },
       {
-        title: language === 'nl' ? 'Productie in Senmar Fabriek' : 'Production in Senmar Factory',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in onze gecontroleerde fabriek in Portugal, gebouwd met Senmar technologie voor maximale efficiëntie.' : 'The complete prefab structure is produced in our controlled factory in Portugal, built with Senmar technology for maximum efficiency.',
+        title: language === 'nl' ? 'Productie in partnerfabriek' : 'Production in partner factory',
+        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in onze partnerfabriek in Portugal, met CNC-precisie en het Groenvastbouw engineered timber system.' : 'The complete prefab structure is produced in our partner factory in Portugal, using CNC precision and the Groenvastbouw engineered timber system.',
         duration: language === 'nl' ? '8-12 weken' : '8-12 weeks',
         icon: Factory
       },

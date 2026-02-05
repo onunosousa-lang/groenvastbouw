@@ -13,7 +13,7 @@ export default function SenmarVideo() {
               {language === 'nl' ? 'Zie het in actie' : 'See it in action'}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">
-              {language === 'nl' ? 'Senmar Passieve Oplossing' : 'Senmar Passive Solution'}
+              {language === 'nl' ? 'Groenvastbouw engineered timber system' : 'Groenvastbouw engineered timber system'}
             </h2>
             <p className="text-xl text-[#2a3439]">
               {language === 'nl' ? 'Industriële precisie ontmoet duurzaam bouwen' : 'Industrial precision meets sustainable construction'}

@@ -7,7 +7,7 @@ export default function Footer() {
   const content = {
     nl: {
       company: 'Groenvastbouw',
-      description: 'Prefab passiefhuizen gebouwd met innovatieve technologie van Senmar.',
+      description: 'Prefab passiefhuizen met het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
       phone: '+31 6 29841297',
@@ -19,7 +19,7 @@ export default function Footer() {
     },
     en: {
       company: 'Groenvastbouw',
-      description: 'Prefab passive houses built with innovative Senmar technology.',
+      description: 'Prefab passive houses with the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
       phone: '+31 6 29841297',
