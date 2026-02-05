@@ -69,13 +69,12 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden bg-background/95">
         {/* Background Image with Transparency */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
         />
-        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           {/* Back Button */}
@@ -95,13 +94,12 @@ export default function Projects() {
       </section>
 
       {/* Projects Gallery */}
-      <section className="relative py-16 overflow-hidden">
+      <section className="relative py-16 overflow-hidden bg-background/95">
         {/* Background Image with Transparency */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/project-horta-spanje-passief-huis-voltooid.jpg)' }}
         />
-        <div className="absolute inset-0 bg-background" style={{ zIndex: -1 }} />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-8">

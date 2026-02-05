@@ -99,13 +99,12 @@ export default function PerformanceLevels() {
   };
 
   return (
-    <section id="systems" className="py-20 bg-card scroll-mt-20 relative overflow-hidden">
+    <section id="systems" className="py-20 bg-card/95 scroll-mt-20 relative overflow-hidden">
       {/* Background Image with Transparency */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: 'url(/fabriek-productie-houten-frame-detail.jpg)' }}
       />
-      <div className="absolute inset-0 bg-card" style={{ zIndex: -1 }} />
       
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">

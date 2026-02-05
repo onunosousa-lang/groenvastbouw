@@ -78,13 +78,12 @@ export default function OfferSection() {
 
 
   return (
-    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#dcdcdc]">
+    <section id={language === 'nl' ? 'aanbod' : 'offer'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#dcdcdc]/95">
       {/* Background Images with Transparency */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: 'url(/fabriek-productie-houten-wanden-assemblage.jpg)' }}
       />
-      <div className="absolute inset-0 bg-[#dcdcdc]" style={{ zIndex: -1 }} />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}

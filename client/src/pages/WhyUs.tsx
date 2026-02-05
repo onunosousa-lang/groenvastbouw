@@ -14,10 +14,10 @@ export default function WhyUs() {
       
       {/* Hero Section with Partner Factory Image */}
       <section className="relative pt-32 pb-20 bg-background text-[#2a3439] overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-40">
           <img src="/senmar-photos/factory_senmar_2.jpg" alt="Partner factory in Portugal" className="w-full h-full object-cover" />
         </div>
-        <div className="relative container mx-auto px-4 text-center max-w-4xl">
+        <div className="relative container mx-auto px-4 text-center max-w-4xl bg-[#dcdcdc]/80 backdrop-blur-sm rounded-lg p-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8edb38]/20 text-[#8edb38] border border-[#8edb38]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
             <BarChart3 size={16} />
             {language === 'nl' ? 'Markt & Technologie Analyse' : 'Market & Technology Analysis'}
