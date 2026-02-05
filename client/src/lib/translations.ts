@@ -561,3 +561,6 @@ export const translations = {
     ]
   }
 };
+
+export type Language = 'nl' | 'en';
+export type TranslationKey = keyof typeof translations.nl;
