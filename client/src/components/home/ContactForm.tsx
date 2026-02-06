@@ -111,7 +111,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel className="text-[#2a3439]">{t('contact_name')} *</FormLabel>
                       <FormControl>
-                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-card text-[#2a3439]" />
+                        <Input placeholder={language === 'nl' ? "Uw naam" : "Your name"} {...field} className="bg-white text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -124,7 +124,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel className="text-[#2a3439]">{t('contact_email')} *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-card text-[#2a3439]" />
+                        <Input type="email" placeholder="naam@voorbeeld.nl" {...field} className="bg-white text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -137,7 +137,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel className="text-[#2a3439]">{t('contact_phone')}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-card text-[#2a3439]" />
+                        <Input type="tel" placeholder="+31 6 12345678" {...field} className="bg-white text-[#2a3439]" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -152,7 +152,7 @@ export default function ContactForm() {
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[150px] bg-card text-[#2a3439]" 
+                          className="min-h-[150px] bg-white text-[#2a3439]" 
                           {...field} 
                         />
                       </FormControl>
