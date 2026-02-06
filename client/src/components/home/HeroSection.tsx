@@ -17,9 +17,9 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     partnership: language === 'nl'
       ? 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.'
       : 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
-    headline: language === 'nl' 
-      ? 'Jouw Passiefhuis. Montage in 8-12 Dagen.'
-      : 'Your Passive House. Assembly in 8-12 Days.',
+    headline: language === 'nl'
+      ? 'Jouw Passiefhuis. Gemonteerde Structuur in 3 Maanden na Aankoop.'
+      : 'Your Passive House. Mounted Structure in 3 Months from Purchase.',
     subheadline: language === 'nl'
       ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>
       : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>,
