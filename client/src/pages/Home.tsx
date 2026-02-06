@@ -33,7 +33,7 @@ export default function Home() {
       <OfferSection />
       <HowItWorks />
       <PerformanceLevels />
-      <Pricing />
+      {/* <Pricing /> — temporarily hidden */}
       <TechnicalSpecs />
       <SenmarVideo />
       <FeaturedProjects />
