@@ -21,7 +21,7 @@ export default function Pricing() {
     
     structureTitle: language === 'nl' ? 'Passieve Structuur' : 'Passive Structure',
     structureSubtitle: language === 'nl' ? 'Fabrieksmatig Geproduceerd' : 'Factory Produced',
-    structurePrice: language === 'nl' ? 'Vanaf ≈ €440' : 'From ≈ €440',
+    structurePrice: language === 'nl' ? 'Vanaf €440' : 'From €440',
     structurePriceUnit: language === 'nl' ? 'per m² (fabrieksmatig geproduceerde passieve structuur)' : 'per m² (factory-produced passive structure)',
     structureIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
     structureFeatures: language === 'nl' ? [
@@ -46,20 +46,20 @@ export default function Pricing() {
       {
         icon: Truck,
         label: language === 'nl' ? 'Transport Portugal → Nederland' : 'Transport Portugal → Netherlands',
-        price: '≈ €100',
+        price: '≈ €110',
         unit: language === 'nl' ? 'per m²' : 'per m²'
       },
       {
         icon: Hammer,
         label: language === 'nl' ? 'Montage op locatie (NL)' : 'Assembly on site (NL)',
-        price: '≈ €150',
+        price: '≈ €165',
         unit: language === 'nl' ? 'per m²' : 'per m²'
       }
     ],
     
     turnkeyTitle: language === 'nl' ? 'Sleutelklaar Gebouw' : 'Turnkey Building',
     turnkeySubtitle: language === 'nl' ? 'Indicatief' : 'Indicative',
-    turnkeyPrice: language === 'nl' ? 'Rond ≈ €1.925' : 'Around ≈ €1.925',
+    turnkeyPrice: language === 'nl' ? 'Rond €1.925' : 'Around €1.925',
     turnkeyPriceUnit: language === 'nl' ? 'per m² sleutelklaar' : 'per m² turnkey',
     turnkeyExcludes: language === 'nl' ? '(exclusief funderingen)' : '(excluding foundations)',
     turnkeyIncludes: language === 'nl' ? 'INCLUSIEF:' : 'INCLUDED:',
