@@ -1,14 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useContactModal } from '@/App';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Link, useLocation } from 'wouter';
+import { Menu, X } from 'lucide-react';
+import { Link } from 'wouter';
+import { Button } from '@/components/ui/button';
 
 // Simple throttle implementation
 function throttle<T extends (...args: any[]) => any>(func: T, limit: number): (...args: Parameters<T>) => void {
@@ -22,10 +17,11 @@ function throttle<T extends (...args: any[]) => any>(func: T, limit: number): (.
   };
 }
 
+const navLinkClass = "text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold";
+
 export default function Navbar() {
   const { t, language, setLanguage } = useLanguage();
   const { openModal } = useContactModal();
-  const [location, setLocation] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,97 +34,60 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = useCallback((id: string) => {
-    const scrollToElement = () => {
-      const element = document.getElementById(id);
-      if (element) {
-        const headerOffset = 80; // Height of fixed header
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }
-    };
-
-    if (location !== '/') {
-      setLocation('/');
-      // Wait for navigation to complete and DOM to update
-      const checkAndScroll = (attempts = 0) => {
-        const element = document.getElementById(id);
-        if (element) {
-          scrollToElement();
-        } else if (attempts < 10) {
-          setTimeout(() => checkAndScroll(attempts + 1), 50);
-        }
-      };
-      setTimeout(() => checkAndScroll(), 100);
-    } else {
-      scrollToElement();
-    }
-    setIsMobileMenuOpen(false);
-  }, [location, setLocation]);
-
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled ? 'bg-[#dcdcdc] backdrop-blur-md shadow-lg' : 'bg-[#dcdcdc] backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 lg:h-20">
+        <div className="flex items-center justify-between h-20">
 
-          {/* Logo - Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center">
-              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
-            </a>
+          {/* Logo — Desktop */}
+          <Link href="/" className="hidden lg:flex items-center gap-3 flex-shrink-0">
+            <img src="/logo-icon.png" alt="Groenvastbouw" className="h-12 w-auto" />
             <div>
-              <div className="text-[#8edb38] font-bold text-xl">Groenvastbouw</div>
+              <div className="text-[#8edb38] font-bold text-xl leading-tight">Groenvastbouw</div>
               <div className="text-[#2a3439]/80 text-xs italic font-bold">{t('nav_slogan')}</div>
             </div>
-          </div>
+          </Link>
 
-          {/* Logo - Mobile */}
-          <div className="flex lg:hidden flex-1 justify-center items-center gap-2">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="flex items-center gap-2">
-              <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
-              <span className="text-[#8edb38] font-bold text-lg">Groenvastbouw</span>
-            </a>
-          </div>
+          {/* Logo — Mobile */}
+          <Link href="/" className="flex lg:hidden flex-1 justify-center items-center gap-2">
+            <img src="/logo-icon.png" alt="Groenvastbouw" className="h-10 w-auto" />
+            <span className="text-[#8edb38] font-bold text-lg">Groenvastbouw</span>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <Link href="/our-offer" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
+          <div className="hidden lg:flex items-center gap-5">
+            <Link href="/homes" className={navLinkClass}>
+              {language === 'nl' ? 'Particulieren' : 'Private Clients'}
             </Link>
-            <Link href="/passive-house" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              {language === 'nl' ? 'Passiefhuis' : 'Passive House'}
-            </Link>
-            <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              {language === 'nl' ? 'Projecten' : 'Projects'}
-            </Link>
-            <Link href="/about" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              {language === 'nl' ? 'Over Ons' : 'About Us'}
-            </Link>
-            <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              FAQ
-            </Link>
-            <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
+            <Link href="/programs" className={navLinkClass}>
               {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
             </Link>
-            <Link href="/programs#estimate" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold inline-flex items-center">
-              {language === 'nl' ? 'Budgetinschatting aanvragen' : 'Request budget estimate'}
+            <Link href="/projects" className={navLinkClass}>
+              {language === 'nl' ? 'Projecten' : 'Projects'}
             </Link>
-            <button onClick={() => openModal()} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
+            <Link href="/about" className={navLinkClass}>
+              {language === 'nl' ? 'Over Ons' : 'About Us'}
+            </Link>
+            <Link href="/faq" className={navLinkClass}>
+              FAQ
+            </Link>
+            <Button
+              onClick={() => openModal()}
+              className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-sm font-semibold"
+              size="default"
+            >
               {t('nav_contact')}
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="ghost"
               onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
-              className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-4 py-2 rounded transition-colors text-sm font-semibold"
+              className="text-[#2a3439] text-sm font-semibold uppercase"
+              size="default"
             >
               {language === 'nl' ? 'en' : 'nl'}
-            </button>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -143,37 +102,37 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-[#8edb38]/10 bg-[#dcdcdc]">
-            <div className="flex flex-col space-y-4 px-4">
-              <Link href="/our-offer" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Ons Aanbod' : 'Our Offer'}
+            <div className="flex flex-col space-y-3 px-4">
+              <Link href="/homes" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Particulieren' : 'Private Clients'}
               </Link>
-              <Link href="/passive-house" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Passiefhuis' : 'Passive House'}
-              </Link>
-              <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Projecten' : 'Projects'}
-              </Link>
-              <Link href="/about" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Over Ons' : 'About Us'}
-              </Link>
-              <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                FAQ
-              </Link>
-              <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
               </Link>
-              <Link href="/programs#estimate" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold block" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Budgetinschatting aanvragen' : 'Request budget estimate'}
+              <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Projecten' : 'Projects'}
               </Link>
-              <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
+              <Link href="/about" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                {language === 'nl' ? 'Over Ons' : 'About Us'}
+              </Link>
+              <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                FAQ
+              </Link>
+              <Button
+                onClick={() => { openModal(); setIsMobileMenuOpen(false); }}
+                className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-semibold"
+                size="default"
+              >
                 {t('nav_contact')}
-              </button>
-              <button
+              </Button>
+              <Button
+                variant="outline"
                 onClick={() => { setLanguage(language === 'nl' ? 'en' : 'nl'); setIsMobileMenuOpen(false); }}
-                className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center font-semibold uppercase"
+                className="w-full text-[#2a3439] font-semibold uppercase"
+                size="default"
               >
                 {language === 'nl' ? 'EN' : 'NL'}
-              </button>
+              </Button>
             </div>
           </div>
         )}

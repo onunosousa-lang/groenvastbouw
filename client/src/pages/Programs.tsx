@@ -13,7 +13,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { toast } from 'sonner';
-import { Check, Building2, Box, Layers, ClipboardList, Truck, Wrench, HardHat, PenTool, FileCheck, Factory, KeyRound } from 'lucide-react';
+import { Check, Building2, Box, Layers, Truck, Wrench, HardHat, PenTool, FileCheck, Factory, KeyRound } from 'lucide-react';
 
 const formSchema = z.object({
   clientType: z.string().min(1, { message: "Please select a client type." }),
@@ -197,13 +197,12 @@ export default function Programs() {
       <Navbar />
 
       {/* SECTION 1 — HERO */}
-      <section className="relative pt-32 pb-20 bg-[#dcdcdc] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(/fabriek-productie-houten-structuur-montage.jpg)' }}
-        />
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/fabriek-productie-houten-structuur-montage.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">
               Turnkey building programs for municipalities & developers
             </h1>
@@ -227,14 +226,16 @@ export default function Programs() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Button
                 onClick={scrollToEstimate}
-                className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg font-bold px-8 py-4 rounded-lg shadow-lg transition-all duration-300"
+                className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold"
+                size="lg"
               >
                 Request budget estimate
               </Button>
               <Button
                 variant="outline"
                 onClick={() => window.location.href = '/contact'}
-                className="border-[#2a3439] text-[#2a3439] hover:bg-[#2a3439]/10 text-lg font-bold px-8 py-4 rounded-lg transition-all duration-300"
+                className="border-[#2a3439] text-[#2a3439] hover:bg-[#2a3439]/10 font-bold"
+                size="lg"
               >
                 Book a call
               </Button>
@@ -371,13 +372,12 @@ export default function Programs() {
       </section>
 
       {/* SECTION 4 — WHAT'S INCLUDED */}
-      <section className="py-20 bg-[#dcdcdc]/95 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{ backgroundImage: 'url(/fabriek-productie-prefab-wand-constructie.jpg)' }}
-        />
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/fabriek-productie-prefab-wand-constructie.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-6">
               What Full Turnkey includes
             </h2>
@@ -464,13 +464,12 @@ export default function Programs() {
       </section>
 
       {/* SECTION 6 — BUDGET ESTIMATE FORM */}
-      <section id="estimate" className="py-20 bg-[#dcdcdc]/95 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(/fabriek-productie-wand-isolatie-plaatsing.jpg)' }}
-        />
+      <section id="estimate" className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/fabriek-productie-wand-isolatie-plaatsing.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">
               Request a budget estimate
             </h2>
@@ -641,7 +640,8 @@ export default function Programs() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] text-lg py-6 font-semibold"
+                      className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-semibold"
+                      size="lg"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Sending...' : 'Send request'}
