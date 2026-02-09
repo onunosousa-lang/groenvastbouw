@@ -1,5 +1,366 @@
-.some-class {
-  background-color: rgb(244, 245, 243);
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Senmar Brand Font */
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
-/* Updated color to #F4F5F3 from #dcdcdc */
+/* Senmar Brand Palette */
+:root {
+  /* Primary Brand - Green (#8edb38) */
+  --primary: 142 181 100;
+  --primary-foreground: 255 255 255;
+  
+  /* Light Background - (#dcdcdc) */
+  --background: 220 220 220;
+  
+  /* Surface / Cards - Light Grey (#dcdcdc) */
+  --card: 220 220 220;
+  --card-foreground: 42 52 57;
+  
+  /* Dark Text - Deep Slate (#2A3439) */
+  --foreground: 42 52 57;
+  
+  /* Accent - Green (#8edb38) */
+  --accent: 142 181 100;
+  --accent-foreground: 255 255 255;
+  
+  /* Secondary - Green Hover (#7aa050) */
+  --secondary: 122 160 80;
+  --secondary-foreground: 255 255 255;
+  
+  /* Muted variants - (#dcdcdc) */
+  --muted: 220 220 220;
+  --muted-foreground: 42 52 57;
+  
+  /* Popover */
+  --popover: 220 220 220;
+  --popover-foreground: 42 52 57;
+  
+  /* Destructive - Clay Red */
+  --destructive: 234 73 36;
+  --destructive-foreground: 255 255 255;
+  
+  /* Border & Input - (#dcdcdc) */
+  --border: 220 220 220;
+  --input: 220 220 220;
+  --ring: 142 181 100;
+  
+  /* Sidebar - Deep Slate */
+  --sidebar: 42 52 57;
+  --sidebar-foreground: 255 255 255;
+  --sidebar-primary: 142 181 100;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 142 181 100;
+  --sidebar-accent-foreground: 255 255 255;
+  --sidebar-border: 52 62 67;
+  --sidebar-ring: 142 181 100;
+  
+  /* Charts - 3-Color Palette */
+  --chart-1: 142 181 100;
+  --chart-2: 42 52 57;
+  --chart-3: 220 220 220;
+  --chart-4: 142 181 100;
+  --chart-5: 42 52 57;
+  
+  --radius: 0.65rem;
+  
+  /* 3-Color Scheme */
+  --color-green: #8edb38;
+  --color-text: #2a3439;
+  --color-background: #dcdcdc;
+}
+
+.dark {
+  /* Primary Brand - Garden Green */
+  --primary: 127 185 86;
+  --primary-foreground: 255 255 255;
+  --sidebar-primary: 142 181 100;
+  --sidebar-primary-foreground: 255 255 255;
+  
+  /* Dark Background - Deep Slate (#2A3439) */
+  --background: 42 52 57;
+  --foreground: 248 248 247;
+  
+  /* Cards - Slightly lighter than background */
+  --card: 52 62 67;
+  --card-foreground: 248 248 247;
+  
+  --popover: 52 62 67;
+  --popover-foreground: 248 248 247;
+  
+  /* Secondary - Leaf Green */
+  --secondary: 62 72 77;
+  --secondary-foreground: 248 248 247;
+  
+  --muted: 62 72 77;
+  --muted-foreground: 140 145 148;
+  
+  /* Accent - Clay Red */
+  --accent: 234 73 36;
+  --accent-foreground: 255 255 255;
+  
+  --destructive: 234 73 36;
+  --destructive-foreground: 255 255 255;
+  
+  --border: 62 72 77;
+  --input: 62 72 77;
+  --ring: 164 214 94;
+  
+  --chart-1: 127 185 86;
+  --chart-2: 234 73 36;
+  --chart-3: 142 181 100;
+  --chart-4: 248 248 247;
+  --chart-5: 255 255 255;
+  
+  --sidebar: 42 52 57;
+  --sidebar-foreground: 248 248 247;
+  --sidebar-accent: 62 72 77;
+  --sidebar-accent-foreground: 255 255 255;
+  --sidebar-border: 62 72 77;
+  --sidebar-ring: 142 181 100;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* Senmar Brand Utility Classes */
+  .text-senmar-green {
+    color: var(--senmar-garden-green);
+  }
+  
+  .bg-senmar-green {
+    background-color: var(--senmar-garden-green);
+  }
+  
+  .text-senmar-slate {
+    color: var(--senmar-deep-slate);
+  }
+  
+  .bg-senmar-slate {
+    background-color: var(--senmar-deep-slate);
+  }
+  
+  .text-senmar-red {
+    color: var(--senmar-clay-red);
+  }
+  
+  .bg-senmar-red {
+    background-color: var(--senmar-clay-red);
+  }
+  
+  .border-senmar-green {
+    border-color: var(--senmar-garden-green);
+  }
+}
+
+/* Senmar-inspired dashed border button style */
+.btn-dashed {
+  position: relative;
+  background: #8edb38;
+  color: #2A3439;
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  clip-path: polygon(
+    0% 5px,
+    5px 5px,
+    5px 0%,
+    calc(100% - 5px) 0%,
+    calc(100% - 5px) 5px,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    5px calc(100% - 5px),
+    0% calc(100% - 5px)
+  );
+  transition: all 0.3s ease;
+}
+
+.btn-dashed:hover {
+  background: #8edb38;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(144, 220, 53, 0.3);
+}
+
+.btn-dashed::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8edb38 0px,
+    #8edb38 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  clip-path: polygon(
+    0% 5px,
+    5px 5px,
+    5px 0%,
+    calc(100% - 5px) 0%,
+    calc(100% - 5px) 5px,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    5px calc(100% - 5px),
+    0% calc(100% - 5px)
+  );
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Simplified zigzag border for smaller elements */
+.border-zigzag {
+  position: relative;
+  border: 2px dashed #8edb38;
+  border-radius: 0.5rem;
+}
+
+.border-zigzag::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border: 2px dashed #8edb38;
+  border-radius: 0.5rem;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Senmar-style spacing utilities */
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+/* Senmar-style card shadows */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(42, 52, 57, 0.05), 0 1px 2px 0 rgba(42, 52, 57, 0.03);
+}
+
+.card-shadow-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 10px 25px 0 rgba(42, 52, 57, 0.08), 0 4px 10px 0 rgba(42, 52, 57, 0.05);
+}
+
+/* Heading colors - applied via CSS variable, can be overridden with inline styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #8edb38;
+}
