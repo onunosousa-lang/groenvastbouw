@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar';
 import SEO from '@/components/SEO';
 import HeroCarousel from '@/components/home/HeroCarousel';
-import TwoDoorsBlock from '@/components/home/TwoDoorsBlock';
 import AboutUs from '@/components/home/AboutUs';
 import OfferSection from '@/components/home/OfferSection';
 import HowItWorks from '@/components/home/HowItWorks';
@@ -30,7 +29,6 @@ export default function Home() {
       <SEO />
       <Navbar />
       <HeroCarousel scrollToSection={scrollToSection} />
-      <TwoDoorsBlock />
       <AboutUs />
       <OfferSection />
       <HowItWorks />
