@@ -1,46 +1,5 @@
-:root {
-  --color-bg: #F4F5F3;
-  --color-text: #000;
-  --color-grey-light: #F4F5F3;
-  --color-grey-dark: #A9A9A9;
-  --color-primary: #3498db;
-  --color-secondary: #2ecc71;
-  --color-accent: #e74c3c;
+.some-class {
+  background-color: rgb(244, 245, 243);
 }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-}
-
-.grey {
-  color: var(--color-grey-light);
-}
-
-.dark-mode {
-  background-color: #333;
-  color: #FFF;
-}
-
-.dark-mode .grey {
-  color: var(--color-grey-dark);
-}
-
-.utility {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Additional styles can vary based on requirements */
-
-/* Update grey elements */
-.grey-light {
-  background-color: #F4F5F3;
-}
-
-.grey-dark {
-  color: #A9A9A9;
-}
-
-/* Add media queries and other utilities if required */
+/* Updated color to #F4F5F3 from #dcdcdc */
