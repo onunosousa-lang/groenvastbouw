@@ -114,12 +114,6 @@ export default function Navbar() {
             <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
               FAQ
             </Link>
-            <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] transition-colors text-sm font-bold">
-              {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
-            </Link>
-            <Link href="/programs#estimate" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold inline-flex items-center">
-              {language === 'nl' ? 'Budgetinschatting aanvragen' : 'Request budget estimate'}
-            </Link>
             <button onClick={() => openModal()} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-sm cursor-pointer font-semibold">
               {t('nav_contact')}
             </button>
@@ -158,12 +152,6 @@ export default function Navbar() {
               </Link>
               <Link href="/faq" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
                 FAQ
-              </Link>
-              <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] font-bold" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
-              </Link>
-              <Link href="/programs#estimate" className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold block" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Budgetinschatting aanvragen' : 'Request budget estimate'}
               </Link>
               <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] px-6 py-2 rounded transition-colors text-center cursor-pointer w-full font-semibold">
                 {t('nav_contact')}
