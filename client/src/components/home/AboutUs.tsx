@@ -13,18 +13,7 @@ export default function AboutUs() {
         <div className="space-y-6 text-lg text-[#2a3439] leading-relaxed">
           <p>{t('aboutus_p1')}</p>
           
-          <p>
-            {t('aboutus_p2').split('Senmar')[0]}
-            <a 
-              href="https://senmar.pt" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-[#2a3439] hover:underline"
-            >
-              Senmar
-            </a>
-            {t('aboutus_p2').split('Senmar')[1]}
-          </p>
+          <p>{t('aboutus_p2')}</p>
           
           <p>{t('aboutus_p3')}</p>
           

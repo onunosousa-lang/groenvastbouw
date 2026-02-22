@@ -41,12 +41,12 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Senmar Brand Font */
+  /* Brand Font */
   --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
-/* Senmar Brand Palette */
+/* Brand Palette */
 :root {
   /* Primary Brand - Green (#8edb38) */
   --primary: 142 181 100;
@@ -219,37 +219,37 @@
     }
   }
   
-  /* Senmar Brand Utility Classes */
-  .text-senmar-green {
-    color: var(--senmar-garden-green);
+  /* Brand Utility Classes */
+  .text-brand-green {
+    color: var(--brand-garden-green);
   }
   
-  .bg-senmar-green {
-    background-color: var(--senmar-garden-green);
+  .bg-brand-green {
+    background-color: var(--brand-garden-green);
   }
   
-  .text-senmar-slate {
-    color: var(--senmar-deep-slate);
+  .text-brand-slate {
+    color: var(--brand-deep-slate);
   }
   
-  .bg-senmar-slate {
-    background-color: var(--senmar-deep-slate);
+  .bg-brand-slate {
+    background-color: var(--brand-deep-slate);
   }
   
-  .text-senmar-red {
-    color: var(--senmar-clay-red);
+  .text-brand-red {
+    color: var(--brand-clay-red);
   }
   
-  .bg-senmar-red {
-    background-color: var(--senmar-clay-red);
+  .bg-brand-red {
+    background-color: var(--brand-clay-red);
   }
   
-  .border-senmar-green {
-    border-color: var(--senmar-garden-green);
+  .border-brand-green {
+    border-color: var(--brand-garden-green);
   }
 }
 
-/* Senmar-inspired dashed border button style */
+/* Brand-inspired dashed border button style */
 .btn-dashed {
   position: relative;
   background: #8edb38;
@@ -327,7 +327,7 @@
   pointer-events: none;
 }
 
-/* Senmar-style spacing utilities */
+/* Brand-style spacing utilities */
 .section-spacing {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -347,7 +347,7 @@
   }
 }
 
-/* Senmar-style card shadows */
+/* Brand-style card shadows */
 .card-shadow {
   box-shadow: 0 1px 3px 0 rgba(42, 52, 57, 0.05), 0 1px 2px 0 rgba(42, 52, 57, 0.03);
 }

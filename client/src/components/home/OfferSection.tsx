@@ -18,8 +18,8 @@ export default function OfferSection() {
       title: language === 'nl' ? 'Prefab Modellen' : 'Prefab Models',
       subtitle: language === 'nl' ? 'Bewezen ontwerpen. Voorspelbare resultaten.' : 'Proven designs. Predictable results.',
       description: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.'
-        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
+        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal.'
+        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
       points: language === 'nl' ? [
         'Meerdere modellen beschikbaar',
         '3 prestatie-niveaus: Optimal / Passive / Super Passive',
@@ -170,18 +170,13 @@ export default function OfferSection() {
             </div>
             
             <div className="p-8 bg-[#dcdcdc] border-t border-[#dcdcdc]">
-              <a 
-                href="https://senmar.pt/en/projects#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full"
+              <Button 
+                onClick={openModal}
+                className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105"
               >
-                <Button className="w-full bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] h-12 text-base font-semibold group shadow-lg hover:shadow-[0_0_30px_rgba(144,220,53,0.5)] transition-all duration-300 hover:scale-105">
-                  {content.prefab.cta}
-                  <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </a>
-
+                {content.prefab.cta}
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </div>
           </motion.div>
 

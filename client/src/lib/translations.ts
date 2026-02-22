@@ -3,7 +3,7 @@ export const translations = {
     // Navigation
     nav_about: "Over Ons",
     nav_services: "Systemen",
-    nav_senmar: "Technologie",
+    nav_technology: "Technologie",
     nav_benefits: "Oplossingen",
     nav_projects: "Projecten",
     nav_why_us: "Waarom Ons",
@@ -12,7 +12,7 @@ export const translations = {
     
     // Hero Section
     hero_title: "De toekomst van bouwen",
-    hero_subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    hero_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     hero_cta: "Bekijk Systemen",
     hero_slogan: "Nuchter bouwen. Slim wonen.",
     hero_main_title: "Duurzame woningen op maat",
@@ -22,7 +22,7 @@ export const translations = {
     
     // About Section
     about_title: "Technische Perfectie",
-    about_subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    about_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     about_mission_title: "Onze Missie",
     about_mission_text: "Duurzame, hoogwaardige woningbouw toegankelijk maken door geavanceerde prefabricage.",
     
@@ -42,14 +42,14 @@ export const translations = {
     services_development: "Development",
     services_development_desc: "Van grond tot sleutelklaar project",
     
-    // Senmar Section
-    senmar_title: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
-    senmar_subtitle: "Geproduceerd door onze partnerfabriek in Portugal met CNC-precisie.",
-    senmar_factory: "4.000 m² fabriek in Coja, Portugal",
-    senmar_capacity: "Capaciteit 19.000 m² per jaar",
-    senmar_precision: "CNC-precisie met 1mm tolerantie",
-    senmar_certified: "FSC & CE gecertificeerd",
-    senmar_link: "Bezoek partnerfabriek",
+    // Technology Section
+    technology_title: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    technology_subtitle: "Geproduceerd door onze partnerfabriek in Portugal met CNC-precisie.",
+    technology_factory: "4.000 m² fabriek in Coja, Portugal",
+    technology_capacity: "Capaciteit 19.000 m² per jaar",
+    technology_precision: "CNC-precisie met 1mm tolerantie",
+    technology_certified: "FSC & CE gecertificeerd",
+    technology_link: "Neem contact op",
     
     // Principles Section
     principles_title: "Onze Principes",
@@ -95,7 +95,7 @@ export const translations = {
     energy_comparison_ventilation: "Ventilatie",
     energy_comparison_cooling: "Koeling (zomer)",
     energy_comparison_embodied: "Bonus: Lagere Bouw-impact",
-    energy_comparison_embodied_desc: "Houtskeletbouw van het Groenvastbouw engineered timber system, vervaardigd in samenwerking met Senmar in Portugal, gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.",
+    energy_comparison_embodied_desc: "Houtskeletbouw van het Groenvastbouw engineered timber system, vervaardigd met industriële precisie in Portugal, gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.",
     
     // FAQ Section
     faq_title: "Veelgestelde Vragen",
@@ -108,7 +108,7 @@ export const translations = {
     faq_design_q: "Kan ik mijn eigen ontwerp realiseren?",
     faq_design_a: "Absoluut. Ons modulair systeem biedt volledige architecturale vrijheid. Elk project is uniek - alleen de productie is gestandaardiseerd, niet het ontwerp.",
     faq_certification_q: "Welke certificeringen hebben jullie?",
-    faq_certification_a: "Onze woningen behalen EPC label A++ of A+++. Onze partnerfabriek in Portugal is FSC en CE gecertificeerd. Op aanvraag kunnen we Passivhaus-certificering regelen.",
+    faq_certification_a: "Onze woningen behalen EPC label A++ of A+++. Onze fabriek in Portugal is FSC en CE gecertificeerd. Op aanvraag kunnen we Passivhaus-certificering regelen.",
     faq_warranty_q: "Wat is de garantie?",
     faq_warranty_a: "10 jaar garantie op de structuur. Fabrieksproductie betekent superieure kwaliteitscontrole en nul weerschade tijdens bouw.",
     faq_location_q: "Waar bouwen jullie?",
@@ -137,7 +137,7 @@ export const translations = {
     footer_contact: "Contact",
     footer_rights: "Alle rechten voorbehouden",
     footer_about: "Over Groenvastbouw",
-    footer_about_text: "Duurzame, energiezuinige woningbouw met het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.",
+    footer_about_text: "Duurzame, energiezuinige woningbouw met het Groenvastbouw engineered timber system, geproduceerd com precisão industrial em Portugal.",
     footer_legal: "Juridisch",
     footer_credentials: "Gegevens",
     
@@ -274,7 +274,7 @@ export const translations = {
     // About Us Section
     aboutus_title: "Over Ons",
     aboutus_p1: "Wij bouwen duurzame, hoogwaardige houtskeletbouwconstructies die ontworpen zijn om echt toekomstbestendig te zijn.",
-    aboutus_p2: "Met meer dan 15 jaar ervaring in houtbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productie. Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    aboutus_p2: "Met meer dan 15 jaar ervaring in houtbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     aboutus_p3: "Onze toewijding is aan echte duurzaamheid en echte prestaties, zonder compromissen op materialen, bouwkwaliteit of langetermijnefficiëntie. Door precisie houtconstructies te produceren in gecontroleerde fabrieksomstandigheden, verminderen we afval, beheersen we kosten en leveren we gebouwen die tot 90% van de verwarmingsenergie kunnen besparen, terwijl ze een gezonde en comfortabele binnenomgeving bieden.",
     aboutus_p4: "Wij bieden oplossingen van structurele schil tot volledig sleutelklare gebouwen en kunnen het hele proces coördineren, van funderingen tot energiesystemen, waarbij we indien nodig samenwerken met vertrouwde lokale partners.",
     aboutus_tagline: "Beter bouwen. Duurzaam bouwen. Bouwen voor de toekomst."
@@ -284,7 +284,7 @@ export const translations = {
     // Navigation
     nav_about: "About Us",
     nav_services: "Systems",
-    nav_senmar: "Technology",
+    nav_technology: "Technology",
     nav_benefits: "Solutions",
     nav_projects: "Projects",
     nav_why_us: "Why Us",
@@ -293,7 +293,7 @@ export const translations = {
     
     // Hero Section
     hero_title: "The future of building",
-    hero_subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    hero_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     hero_cta: "View Systems",
     hero_slogan: "Sober building. Smart living.",
     hero_main_title: "Sustainable custom homes",
@@ -303,7 +303,7 @@ export const translations = {
     
     // About Section
     about_title: "Technical Perfection",
-    about_subtitle: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    about_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     about_mission_title: "Our Mission",
     about_mission_text: "Making sustainable, high-performance housing accessible through advanced prefabrication.",
     
@@ -323,14 +323,14 @@ export const translations = {
     services_development: "Development",
     services_development_desc: "From land to turnkey project",
     
-    // Senmar Section
-    senmar_title: "Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
-    senmar_subtitle: "Manufactured by our partner factory in Portugal using CNC precision.",
-    senmar_factory: "4,000 m² factory in Coja, Portugal",
-    senmar_capacity: "Capacity 19,000 m² per year",
-    senmar_precision: "CNC precision with 1mm tolerance",
-    senmar_certified: "FSC & CE certified",
-    senmar_link: "Visit partner factory",
+    // Technology Section
+    technology_title: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    technology_subtitle: "Manufactured by our partner factory in Portugal using CNC precision.",
+    technology_factory: "4,000 m² factory in Coja, Portugal",
+    technology_capacity: "Capacity 19,000 m² per year",
+    technology_precision: "CNC precision with 1mm tolerance",
+    technology_certified: "FSC & CE certified",
+    technology_link: "Contact us",
     
     // Principles Section
     principles_title: "Our Principles",
@@ -376,7 +376,7 @@ export const translations = {
     energy_comparison_ventilation: "Ventilation",
     energy_comparison_cooling: "Cooling (summer)",
     energy_comparison_embodied: "Bonus: Lower Construction Impact",
-    energy_comparison_embodied_desc: "Timber frame construction from the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.",
+    energy_comparison_embodied_desc: "Timber frame construction from the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.",
     
     // FAQ Section
     faq_title: "Frequently Asked Questions",
@@ -389,7 +389,7 @@ export const translations = {
     faq_design_q: "Can I realize my own design?",
     faq_design_a: "Absolutely. Our modular system offers complete architectural freedom. Every project is unique - only the production is standardized, not the design.",
     faq_certification_q: "What certifications do you have?",
-    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Our partner factory in Portugal is FSC and CE certified. We can arrange Passivhaus certification on request.",
+    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Our factory in Portugal is FSC and CE certified. We can arrange Passivhaus certification on request.",
     faq_warranty_q: "What is the warranty?",
     faq_warranty_a: "10-year warranty on the structure. Factory production means superior quality control and zero weather damage during construction.",
     faq_location_q: "Where do you build?",
@@ -418,7 +418,7 @@ export const translations = {
     footer_contact: "Contact",
     footer_rights: "All rights reserved",
     footer_about: "About Groenvastbouw",
-    footer_about_text: "Sustainable, energy-efficient housing with the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    footer_about_text: "Sustainable, energy-efficient housing with the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     footer_legal: "Legal",
     footer_credentials: "Credentials",
     
@@ -555,7 +555,7 @@ export const translations = {
     // About Us Section
     aboutus_title: "About Us",
     aboutus_p1: "We build sustainable, high-performance timber frame buildings designed to be truly future-proof.",
-    aboutus_p2: "With over 15 years of experience in timber construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial manufacturing. Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.",
+    aboutus_p2: "With over 15 years of experience in timber construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial manufacturing. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
     aboutus_p3: "Our commitment is to real sustainability and real performance, never compromising on materials, build quality, or long-term efficiency. By producing precision timber structures in controlled factory conditions, we reduce waste, control costs, and deliver buildings that can save up to 90% of heating energy while providing a healthy and comfortable indoor environment.",
     aboutus_p4: "We offer solutions from structural shell to fully turnkey buildings and can coordinate the entire process, from foundations to energy systems, working alongside trusted local partners when needed.",
     aboutus_tagline: "Build better. Build sustainably. Build for the future."

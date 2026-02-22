@@ -1,7 +1,7 @@
 import LazyVideo from '@/components/LazyVideo';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-export default function SenmarVideo() {
+export default function TechnologyVideo() {
   const { language } = useLanguage();
 
   return (
@@ -21,7 +21,7 @@ export default function SenmarVideo() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <LazyVideo 
-              src="/senmar-solution.mp4"
+              src="/technology-solution.mp4"
               poster="/images/new/hero-bg.jpg"
               className="w-full h-auto cursor-pointer"
             >

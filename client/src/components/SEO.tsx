@@ -10,7 +10,7 @@ interface SEOProps {
 
 export default function SEO({
   title = 'Groenvastbouw - Duurzame Passieve Huizen | Nuchter bouwen. Slim wonen.',
-  description = 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. Turnkey service of alleen structuur. Duurzaam, betaalbaar en hoogwaardig.',
+  description = 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. Turnkey service of alleen structuur. Duurzaam, betaalbaar en hoogwaardig.',
   keywords = 'passieve huizen, passiefhuis, energiezuinig bouwen, duurzame woningen, Groenvastbouw engineered timber system, prefab huizen, houtbouw, Nederland, groenvastbouw, passive house, energiebesparing',
   ogImage = '/logo-transparent.png',
   url = 'https://groenvastbouw.nl'

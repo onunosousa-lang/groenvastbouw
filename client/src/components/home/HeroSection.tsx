@@ -15,14 +15,14 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     company: 'Groenvastbouw',
     tagline: language === 'nl' ? 'Nuchter bouwen. Slim wonen.' : 'Smart building. Smart living.',
     partnership: language === 'nl'
-      ? 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.'
-      : 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
+      ? 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.'
+      : 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
     headline: language === 'nl'
       ? 'Jouw Passiefhuis. Gemonteerde Structuur in 3 Maanden na Aankoop.'
       : 'Your Passive House. Mounted Structure in 3 Months from Purchase.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>
-      : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>,
+      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>
+      : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',

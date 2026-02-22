@@ -7,14 +7,14 @@ export default function ProblemSolution() {
 
   return (
     <>
-      {/* SENMAR PARTNERSHIP INTRO */}
+      {/* TECHNOLOGY PARTNERSHIP INTRO */}
       <section className="py-16 bg-[#dcdcdc] text-[#2a3439]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
               {language === 'nl' 
-                ? <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a> in Portugal. Wij creëren woningen die werken voor Nederlandse gezinnen: hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
-                : <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-semibold">Senmar</a> in Portugal. We create homes that work for Dutch families: high quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
+                ? <>Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. Wij creëren woningen die werken voor Nederlandse gezinnen: hoogwaardige passieve huizen waar echte duurzaamheid samengaat met echte efficiëntie, slimme kosten en dagelijks comfort.</>
+                : <>Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. We create homes that work for Dutch families: high quality passive houses where genuine sustainability meets real efficiency, smart costs, and everyday comfort.</>
               }
             </p>
           </div>

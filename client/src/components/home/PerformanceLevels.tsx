@@ -115,14 +115,12 @@ export default function PerformanceLevels() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.headline}</h2>
           <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">{content.subheadline}</p>
-          <a
-            href="https://www.senmar.pt/en/projects"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openModal}
             className="inline-block px-6 py-3 bg-[#8edb38] text-[#2a3439] font-semibold rounded-lg hover:bg-[#7aa050] transition-colors"
           >
-            {language === 'nl' ? 'Bekijk volledige specificaties van de partnerfabriek' : 'View full partner factory specifications'}
-          </a>
+            {language === 'nl' ? 'Bespreek de specificaties' : 'Discuss the specifications'}
+          </button>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">

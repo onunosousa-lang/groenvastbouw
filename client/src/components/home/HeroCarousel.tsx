@@ -47,8 +47,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
         ? 'Jouw Passiefhuis. Gemonteerde Structuur in 3 Maanden na Aankoop.'
         : 'Your Passive House. Mounted Structure in 3 Months from Purchase.',
       subheadline: language === 'nl'
-        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>
-        : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] font-bold hover:underline">Senmar</a> in Portugal.</>,
+        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>
+        : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>,
       description: language === 'nl'
         ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
         : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -162,8 +162,8 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
         ? 'Bewezen Prefab Modellen'
         : 'Proven Prefab Models',
       subheadline: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal.'
-        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal.',
+        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal.'
+        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
       description: language === 'nl'
         ? 'Meerdere bewezen modellen beschikbaar in drie prestatieniveaus: Optimal, Passive en Super Passive. Klaar voor levering.'
         : 'Multiple proven models available in three performance levels: Optimal, Passive and Super Passive. Ready for delivery.',
@@ -222,7 +222,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
           <div className="embla__container">
             {slides.map((slide) => (
               <div key={slide.id} className="embla__slide min-w-full">
-                {/* Text content with light gray background box for contrast - Senmar style */}
+                {/* Text content with light gray background box for contrast - Brand style */}
                 <div className="bg-[#dcdcdc] backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
                   {/* Headline */}
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">

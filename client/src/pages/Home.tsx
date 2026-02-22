@@ -57,13 +57,13 @@ export default function Home() {
             <div className="space-y-3 mb-6">
               {(language === 'nl'
                 ? [
-                    'Prefab passiefhuissystemen, geproduceerd in partnerschap met Senmar',
+                    'Prefab passiefhuissystemen, geproduceerd met industriële precisie',
                     'Volledige structuur gemonteerd in 8\u201312 dagen',
                     'Gecontroleerde kosten, minimaal afval, toekomstbestendig comfort',
                     '90% lagere energierekeningen \u2014 voor het leven',
                   ]
                 : [
-                    'Prefab passive house systems, manufactured in partnership with Senmar',
+                    'Prefab passive house systems, manufactured with industrial precision',
                     'Full structure mounted in 8\u201312 days',
                     'Controlled costs, minimum waste, future-proof comfort',
                     '90% lower energy bills \u2014 for life',
