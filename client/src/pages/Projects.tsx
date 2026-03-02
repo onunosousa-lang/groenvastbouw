@@ -14,8 +14,8 @@ export default function Projects() {
       : 'View our realized passive house projects and ongoing constructions',
     projectsTitle: language === 'nl' ? 'Enkele van onze projecten' : 'Some of our projects',
     projectsDesc: language === 'nl'
-      ? 'Hoogperformante passiefhuizen en extensies gerealiseerd met het Groenvastbouw engineered timber system, geproduceerd in samenwerking met Senmar in Portugal'
-      : 'High-performance passive houses and extensions realized with the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal',
+      ? 'Hoogperformante passiefhuizen en extensies gerealiseerd met het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal'
+      : 'High-performance passive houses and extensions realized with the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal',
   };
 
   const allProjects = [
@@ -105,16 +105,7 @@ export default function Projects() {
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-[#2a3439] mb-3">{content.projectsTitle}</h2>
             <p className="text-lg text-[#2a3439]">
-              {content.projectsDesc.split('Senmar')[0]}
-              <a 
-                href="https://www.senmar.pt" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
-              >
-                Senmar
-              </a>
-              {content.projectsDesc.split('Senmar')[1]}
+              {content.projectsDesc}
             </p>
           </div>
           

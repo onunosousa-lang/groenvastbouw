@@ -165,7 +165,7 @@ export default function HowItWorks() {
   const currentComponents = currentTier.components[activeView];
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       <SEO
         title={language === 'nl' ? 'Hoe Het Werkt - Technische Oplossingen' : 'How It Works - Technical Solutions'}
         description={language === 'nl' ? 'Ontdek onze vier technische oplossingen voor geprefabriceerde bouw, van basis tot super passief.' : 'Discover our four technical solutions for prefabricated construction, from basic to super passive.'}
@@ -197,14 +197,14 @@ export default function HowItWorks() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 bg-[#dcdcdc]">
+      <section className="py-16 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-lg text-[#2a3439] leading-relaxed mb-8">
             {language === 'nl' ? content.hero.introNl : content.hero.introEn}
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-[#dcdcdc] p-6 rounded-lg border-2 border-[#8edb38]/30">
+            <div className="bg-[#F5F5EF] p-6 rounded-lg border-2 border-[#8edb38]/30">
               <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.panelizedTitleNl : content.hero.panelizedTitleEn}
               </h3>
@@ -213,7 +213,7 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            <div className="bg-[#dcdcdc] p-6 rounded-lg border-2 border-[#8edb38]/30">
+            <div className="bg-[#F5F5EF] p-6 rounded-lg border-2 border-[#8edb38]/30">
               <h3 className="text-xl font-bold text-[#2a3439] mb-3">
                 {language === 'nl' ? content.hero.modularTitleNl : content.hero.modularTitleEn}
               </h3>
@@ -230,11 +230,11 @@ export default function HowItWorks() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-16 bg-[#dcdcdc]">
+      <section className="py-16 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           {/* Tier Navigation */}
           <div className="flex justify-center mb-12 overflow-x-auto">
-            <div className="inline-flex bg-[#dcdcdc] rounded-xl shadow-md p-2 gap-2">
+            <div className="inline-flex bg-[#F5F5EF] rounded-xl shadow-md p-2 gap-2">
               {content.tiers.map((tier) => (
                 <button
                   key={tier.id}
@@ -242,7 +242,7 @@ export default function HowItWorks() {
                   className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeTier === tier.id
                       ? 'bg-[#8edb38] text-[#2a3439] shadow-md'
-                      : 'text-[#2a3439] hover:text-[#2a3439] hover:bg-[#dcdcdc]'
+                      : 'text-[#2a3439] hover:text-[#2a3439] hover:bg-[#F5F5EF]'
                   }`}
                 >
                   {language === 'nl' ? tier.titleNl : tier.titleEn}
@@ -253,9 +253,9 @@ export default function HowItWorks() {
 
           {/* Active Tier Content */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-[#dcdcdc] rounded-2xl shadow-xl overflow-hidden border-2 border-[#dcdcdc]">
+            <div className="bg-[#F5F5EF] rounded-2xl shadow-xl overflow-hidden border-2 border-[#F5F5EF]">
               {/* Tier Header */}
-              <div className="bg-[#dcdcdc] p-8 border-b-2 border-[#dcdcdc]">
+              <div className="bg-[#F5F5EF] p-8 border-b-2 border-[#F5F5EF]">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#8edb38] mb-2">
                   {language === 'nl' ? currentTier.titleNl : currentTier.titleEn}
                 </h2>
@@ -268,7 +268,7 @@ export default function HowItWorks() {
               </div>
 
               {/* View Tabs */}
-              <div className="flex justify-center gap-4 p-6 bg-[#dcdcdc] border-b-2 border-[#dcdcdc]">
+              <div className="flex justify-center gap-4 p-6 bg-[#F5F5EF] border-b-2 border-[#F5F5EF]">
                 {(['wall', 'floor', 'roof'] as const).map((view) => (
                   <button
                     key={view}
@@ -276,7 +276,7 @@ export default function HowItWorks() {
                     className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                       activeView === view
                         ? 'bg-[#8edb38] text-[#2a3439] shadow-md'
-                        : 'bg-[#dcdcdc] text-[#2a3439] hover:text-[#2a3439] hover:shadow-sm'
+                        : 'bg-[#F5F5EF] text-[#2a3439] hover:text-[#2a3439] hover:shadow-sm'
                     }`}
                   >
                     {view === 'wall' && (language === 'nl' ? 'Wand' : 'Wall')}
@@ -293,7 +293,7 @@ export default function HowItWorks() {
                 </h3>
                 <div className="space-y-4">
                   {currentComponents.map((component, idx) => (
-                    <div key={idx} className="bg-[#dcdcdc] p-5 rounded-lg border border-[#8edb38]/20 hover:border-[#8edb38]/50 transition-colors">
+                    <div key={idx} className="bg-[#F5F5EF] p-5 rounded-lg border border-[#8edb38]/20 hover:border-[#8edb38]/50 transition-colors">
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#8edb38] text-[#2a3439] flex items-center justify-center font-bold">
                           {idx + 1}
@@ -340,7 +340,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 bg-[#dcdcdc] rounded-xl border-2 border-[#8edb38] shadow-lg">
+          <div className="mt-16 max-w-4xl mx-auto p-8 bg-[#F5F5EF] rounded-xl border-2 border-[#8edb38] shadow-lg">
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Waarom Kiezen Voor het Groenvastbouw engineered timber system?' : 'Why Choose the Groenvastbouw engineered timber system?'}
             </h3>
@@ -403,7 +403,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-[#dcdcdc]">
+      <section className="py-16 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold text-[#2a3439] mb-4">
             {language === 'nl' ? 'Klaar om te beginnen?' : 'Ready to get started?'}

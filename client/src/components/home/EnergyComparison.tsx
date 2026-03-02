@@ -6,7 +6,7 @@ export default function EnergyComparison() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-20 bg-[#dcdcdc] text-[#2a3439]">
+    <section className="py-20 bg-[#F5F5EF] text-[#2a3439]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('energy_comparison_title')}</h2>
@@ -15,7 +15,7 @@ export default function EnergyComparison() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Chart Visualization */}
-          <div className="bg-card p-8 rounded-2xl shadow-2xl border border-[#dcdcdc]">
+          <div className="bg-card p-8 rounded-2xl shadow-2xl border border-[#F5F5EF]">
             <div className="space-y-8">
               {/* Average House Bar */}
               <div>
@@ -50,13 +50,13 @@ export default function EnergyComparison() {
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-[#dcdcdc]">
+            <div className="mt-12 pt-8 border-t border-[#F5F5EF]">
               <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="bg-[#dcdcdc]/50 p-4 rounded-xl">
+                <div className="bg-[#F5F5EF]/50 p-4 rounded-xl">
                   <div className="text-3xl font-bold text-[#8edb38] mb-1">90%</div>
                   <div className="text-sm text-[#2a3439]">{t('energy_comparison_savings_annual')}</div>
                 </div>
-                <div className="bg-[#dcdcdc]/50 p-4 rounded-xl border border-[#8edb38]/20">
+                <div className="bg-[#F5F5EF]/50 p-4 rounded-xl border border-[#8edb38]/20">
                   <div className="text-3xl font-bold text-[#8edb38] mb-1">{language === 'nl' ? 'Aanzienlijk' : 'Significant'}</div>
                   <div className="text-sm text-[#2a3439]">{t('energy_comparison_savings_30y')}</div>
                 </div>
@@ -97,7 +97,7 @@ export default function EnergyComparison() {
               </ul>
             </div>
 
-            <Card className="bg-card border-[#dcdcdc]">
+            <Card className="bg-card border-[#F5F5EF]">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-[#2a3439]/50 p-3 rounded-lg">

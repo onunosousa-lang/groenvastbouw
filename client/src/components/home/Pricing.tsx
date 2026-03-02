@@ -85,7 +85,7 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-[#dcdcdc] scroll-mt-20 relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-[#F5F5EF] scroll-mt-20 relative overflow-hidden">
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8edb38 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
@@ -104,7 +104,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-[#dcdcdc] rounded-2xl shadow-lg overflow-hidden border-2 border-[#8edb38]"
+            className="bg-[#F5F5EF] rounded-2xl shadow-lg overflow-hidden border-2 border-[#8edb38]"
           >
             <div className="bg-[#8edb38] text-[#2a3439] p-6 text-center">
               <div className="flex items-center justify-center mb-2">
@@ -144,7 +144,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-[#dcdcdc] rounded-2xl shadow-lg overflow-hidden border-2 border-[#8edb38]"
+            className="bg-[#F5F5EF] rounded-2xl shadow-lg overflow-hidden border-2 border-[#8edb38]"
           >
             <div className="bg-[#8edb38] text-[#2a3439] p-6 text-center">
               <div className="flex items-center justify-center mb-2">
@@ -187,7 +187,7 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
-                className="bg-[#dcdcdc] rounded-xl p-6 flex items-center gap-4 shadow-md"
+                className="bg-[#F5F5EF] rounded-xl p-6 flex items-center gap-4 shadow-md"
               >
                 <div className="w-12 h-12 rounded-full bg-[#2a3439]/20 flex items-center justify-center flex-shrink-0">
                   <item.icon className="w-6 h-6 text-[#2a3439]" />

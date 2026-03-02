@@ -8,7 +8,7 @@ export default function ProblemSolution() {
   return (
     <>
       {/* TECHNOLOGY PARTNERSHIP INTRO */}
-      <section className="py-16 bg-[#dcdcdc] text-[#2a3439]">
+      <section className="py-16 bg-[#F5F5EF] text-[#2a3439]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl leading-relaxed">
@@ -22,7 +22,7 @@ export default function ProblemSolution() {
       </section>
 
       {/* PROBLEM & SOLUTION */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           
           {/* Problem */}
@@ -36,7 +36,7 @@ export default function ProblemSolution() {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#F5F5EF]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -48,7 +48,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#F5F5EF]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -60,7 +60,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#F5F5EF]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -72,7 +72,7 @@ export default function ProblemSolution() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-red-200 bg-[#dcdcdc]/95 backdrop-blur">
+              <Card className="border-red-200 bg-[#F5F5EF]/95 backdrop-blur">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
@@ -90,7 +90,7 @@ export default function ProblemSolution() {
           {/* Solution */}
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block px-4 py-2 bg-[#dcdcdc] text-[#2a3439] rounded-full text-sm font-semibold mb-4">
+              <div className="inline-block px-4 py-2 bg-[#F5F5EF] text-[#2a3439] rounded-full text-sm font-semibold mb-4">
                 {t('solution_title')}
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-4">
@@ -98,36 +98,36 @@ export default function ProblemSolution() {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#F5F5EF] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#F5F5EF] flex items-center justify-center mx-auto mb-4">
                     <Clock className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_speed')}</h3>
                   <p className="text-[#2a3439]">{t('solution_speed_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#F5F5EF] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#F5F5EF] flex items-center justify-center mx-auto mb-4">
                     <Zap className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_energy')}</h3>
                   <p className="text-[#2a3439]">{t('solution_energy_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#F5F5EF] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#F5F5EF] flex items-center justify-center mx-auto mb-4">
                     <ShieldCheck className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_quality')}</h3>
                   <p className="text-[#2a3439]">{t('solution_quality_desc')}</p>
                 </CardContent>
               </Card>
-              <Card className="border-[#8edb38] bg-[#dcdcdc] hover:shadow-xl transition-shadow">
+              <Card className="border-[#8edb38] bg-[#F5F5EF] hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#dcdcdc] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#F5F5EF] flex items-center justify-center mx-auto mb-4">
                     <Leaf className="text-[#8edb38]" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#8edb38] mb-2">{t('solution_future')}</h3>

@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section className="py-20 bg-[#dcdcdc]/95 relative overflow-hidden">
+    <section className="py-20 bg-[#F5F5EF]/95 relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"

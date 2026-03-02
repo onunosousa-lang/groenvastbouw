@@ -14,7 +14,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       {/* Header */}
       <div className="bg-gradient-to-r from-[#2a3439] to-[#2a3439] text-[#2a3439] py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -45,7 +45,7 @@ export default function Contact() {
       </div>
 
       {/* Quick Info Section */}
-      <section className="py-16 px-4 bg-[#dcdcdc]">
+      <section className="py-16 px-4 bg-[#F5F5EF]">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeInUp} className="grid md:grid-cols-2 gap-12">
             <div>

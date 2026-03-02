@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-[#dcdcdc] backdrop-blur-md shadow-lg' : 'bg-[#dcdcdc] backdrop-blur-sm'
+      isScrolled ? 'bg-[#F5F5EF] backdrop-blur-md shadow-lg' : 'bg-[#F5F5EF] backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -62,7 +62,7 @@ export default function Navbar() {
               {language === 'nl' ? 'Particulieren' : 'Private Clients'}
             </Link>
             <Link href="/programs" className={navLinkClass}>
-              {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
+              {language === 'nl' ? 'Bedrijven & Ontwikkelaars' : 'Businesses & Developers'}
             </Link>
             <Link href="/projects" className={navLinkClass}>
               {language === 'nl' ? 'Projecten' : 'Projects'}
@@ -101,13 +101,13 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-[#8edb38]/10 bg-[#dcdcdc]">
+          <div className="lg:hidden py-4 border-t border-[#8edb38]/10 bg-[#F5F5EF]">
             <div className="flex flex-col space-y-3 px-4">
               <Link href="/homes" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Particulieren' : 'Private Clients'}
               </Link>
               <Link href="/programs" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
+                {language === 'nl' ? 'Bedrijven & Ontwikkelaars' : 'Businesses & Developers'}
               </Link>
               <Link href="/projects" className="text-[#2a3439] hover:text-[#7aa050] font-bold py-1" onClick={() => setIsMobileMenuOpen(false)}>
                 {language === 'nl' ? 'Projecten' : 'Projects'}

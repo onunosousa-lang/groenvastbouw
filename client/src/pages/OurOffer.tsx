@@ -20,8 +20,8 @@ export default function OurOffer() {
       titleEn: 'What We Offer',
       subtitleNl: 'Hoogperformante Geprefabriceerde Timmerhuizen voor Nederland',
       subtitleEn: 'High-Performance Prefabricated Timber Homes for the Netherlands',
-      descNl: 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
-      descEn: 'Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
+      descNl: 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
+      descEn: 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
       featuresNl: [
         'Duurzame geprefabriceerde timmerconstructie (C24)',
         'Passief-klare isolatie en luchtdichtheid',
@@ -320,7 +320,7 @@ export default function OurOffer() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       <Navbar />
       
       {/* Hero Section with Background Image */}
@@ -337,7 +337,7 @@ export default function OurOffer() {
             {content.backHome}
           </Link>
 
-          <div className="bg-[#dcdcdc]/90 backdrop-blur-sm p-8 rounded-lg inline-block max-w-3xl">
+          <div className="bg-[#F5F5EF]/90 backdrop-blur-sm p-8 rounded-lg inline-block max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {language === 'nl' ? content.intro.titleNl : content.intro.titleEn}
             </h1>
@@ -357,50 +357,15 @@ export default function OurOffer() {
         />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">
-            {language === 'nl' ? (
-              <>
-                <button 
-                  onClick={openModal}
-                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
-                >
-                  Groenvastbouw
-                </button>
-                {' '}levert hoogperformante geprefabriceerde timmerhuizen via het Groenvastbouw engineered timber system, manufactured in partnership with{' '}
-                <a 
-                  href="https://www.senmar.pt" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
-                >
-                  Senmar
-                </a>
-                , Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.
-              </>
-            ) : (
-              <>
-                <button 
-                  onClick={openModal}
-                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors cursor-pointer"
-                >
-                  Groenvastbouw
-                </button>
-                {' '}delivers high-performance prefabricated timber homes via the Groenvastbouw engineered timber system, manufactured in partnership with{' '}
-                <a 
-                  href="https://www.senmar.pt" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#8edb38] hover:text-[#7aa050] font-semibold underline decoration-[#8edb38] underline-offset-2 transition-colors"
-                >
-                  Senmar
-                </a>
-                , Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.
-              </>
-            )}
+            {language === 'nl'
+              ? 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen via het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.'
+              : 'Groenvastbouw delivers high-performance prefabricated timber homes via the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.'
+            }
           </p>
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.intro.featuresNl : content.intro.featuresEn).map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#F5F5EF] hover:border-[#8edb38] transition-colors">
                 <Check className="w-5 h-5 text-[#8edb38] flex-shrink-0 mt-0.5" />
                 <span className="text-[#2a3439]">{feature}</span>
               </div>
@@ -411,7 +376,7 @@ export default function OurOffer() {
 
 
       {/* How We Do It */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         {/* Background Image with Transparency */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -427,7 +392,7 @@ export default function OurOffer() {
           
           <div className="space-y-4">
             {(language === 'nl' ? content.method.phasesNl : content.method.phasesEn).map((phase, idx) => (
-              <div key={idx} className="border-2 border-[#dcdcdc] rounded-lg overflow-hidden hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="border-2 border-[#F5F5EF] rounded-lg overflow-hidden hover:border-[#8edb38] transition-colors">
                 <button
                   onClick={() => toggleSection(`phase-${idx}`)}
                   className="w-full p-6 bg-card/50 backdrop-blur-sm hover:bg-card/70 flex items-center justify-between text-left">
@@ -436,7 +401,7 @@ export default function OurOffer() {
                 </button>
                 
                 {expandedSection === `phase-${idx}` && (
-                  <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-[#dcdcdc]">
+                  <div className="bg-card/30 backdrop-blur-sm p-6 border-t-2 border-[#F5F5EF]">
                     <ul className="space-y-2">
                       {phase.items.map((item, itemIdx) => (
                         <li key={itemIdx} className="flex items-start gap-3 text-[#2a3439]">
@@ -467,7 +432,7 @@ export default function OurOffer() {
       </section>
 
       {/* Scope of Delivery */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(/bouwplaats-montage-houten-frame.jpg)' }}
@@ -529,7 +494,7 @@ export default function OurOffer() {
       </section>
 
       {/* Timeline */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/dakconstructie-houten-balken-detail.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
@@ -539,7 +504,7 @@ export default function OurOffer() {
           <div className="bg-card/50 backdrop-blur-sm rounded-lg p-8 border-2 border-[#8edb38] mb-8">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {(language === 'nl' ? content.timeline.phasesNl : content.timeline.phasesEn).map((item, idx) => (
-                <div key={idx} className="flex items-center justify-between p-4 bg-[#2a3439]/50 rounded-lg border border-[#dcdcdc]">
+                <div key={idx} className="flex items-center justify-between p-4 bg-[#2a3439]/50 rounded-lg border border-[#F5F5EF]">
                   <span className="font-semibold text-[#2a3439]">{item.phase}</span>
                   <span className="text-[#8edb38] font-bold">{item.duration}</span>
                 </div>
@@ -559,7 +524,7 @@ export default function OurOffer() {
       </section>
 
       {/* Technology */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/passief-huis-interieur-houten-balken.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
@@ -568,7 +533,7 @@ export default function OurOffer() {
           
           <div className="space-y-3">
             {(language === 'nl' ? content.technology.itemsNl : content.technology.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#F5F5EF] hover:border-[#8edb38] transition-colors">
                 <span className="text-[#8edb38] font-bold flex-shrink-0 mt-0.5">•</span>
                 <span className="text-[#2a3439]">{item}</span>
               </div>
@@ -578,7 +543,7 @@ export default function OurOffer() {
       </section>
 
       {/* Use Cases */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/moderne-badkamer-passief-huis.png)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
@@ -597,7 +562,7 @@ export default function OurOffer() {
       </section>
 
       {/* Compliance */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/prefab-wand-plaatsing-bouwplaats.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
@@ -606,7 +571,7 @@ export default function OurOffer() {
           
           <div className="grid md:grid-cols-2 gap-4">
             {(language === 'nl' ? content.compliance.itemsNl : content.compliance.itemsEn).map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#dcdcdc] hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="flex items-start gap-3 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-[#F5F5EF] hover:border-[#8edb38] transition-colors">
                 <Shield className="w-5 h-5 text-[#8edb38] flex-shrink-0 mt-0.5" />
                 <span className="text-[#2a3439]">{item}</span>
               </div>
@@ -629,7 +594,7 @@ export default function OurOffer() {
       </section>
 
       {/* Warranty */}
-      <section className="relative py-16 overflow-hidden bg-[#dcdcdc]/95">
+      <section className="relative py-16 overflow-hidden bg-[#F5F5EF]/95">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/houten-balk-plaatsing-kraan.jpg)' }} />
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12">
@@ -662,7 +627,7 @@ export default function OurOffer() {
           </p>
           <button
             onClick={openModal}
-            className="inline-block bg-[#2a3439] hover:bg-[#dcdcdc] text-[#8edb38] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
+            className="inline-block bg-[#2a3439] hover:bg-[#F5F5EF] text-[#8edb38] font-bold py-4 px-10 rounded-lg transition-colors duration-300 text-lg"
           >
             {language === 'nl' ? content.cta.buttonNl : content.cta.buttonEn}
           </button>

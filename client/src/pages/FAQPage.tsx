@@ -81,8 +81,8 @@ export default function FAQPage() {
         {
           question_en: "What is the realistic production capacity for Dutch projects?",
           question_nl: "Wat is de realistische productiecapaciteit voor Nederlandse projecten?",
-          answer_en: "Our partner factory in Portugal (Senmar) has a total annual production capacity of approximately 19,000 m² of modular houses. Currently operating one shift, production can be scaled up to three shifts daily when needed. Capacity is allocated project by project, typically on a first-come basis, though project importance may influence scheduling. Transport is optimized with up to 70 m² per conventional truck.",
-          answer_nl: "Onze partnerfabriek in Portugal (Senmar) heeft een totale jaarlijkse productiecapaciteit van ongeveer 19.000 m² modulaire woningen. Momenteel wordt er in één ploeg gewerkt, maar de productie kan indien nodig worden opgeschaald naar drie ploegen per dag. Capaciteit wordt project per project toegewezen, doorgaans op volgorde van binnenkomst, hoewel projectbelang de planning kan beïnvloeden. Transport wordt geoptimaliseerd met tot 70 m² per conventionele vrachtwagen."
+          answer_en: "Our partner factory in Portugal has a total annual production capacity of approximately 19,000 m² of modular houses. Currently operating one shift, production can be scaled up to three shifts daily when needed. Capacity is allocated project by project, typically on a first-come basis, though project importance may influence scheduling. Transport is optimized with up to 70 m² per conventional truck.",
+          answer_nl: "Onze partnerfabriek in Portugal heeft een totale jaarlijkse productiecapaciteit van ongeveer 19.000 m² modulaire woningen. Momenteel wordt er in één ploeg gewerkt, maar de productie kan indien nodig worden opgeschaald naar drie ploegen per dag. Capaciteit wordt project per project toegewezen, doorgaans op volgorde van binnenkomst, hoewel projectbelang de planning kan beïnvloeden. Transport wordt geoptimaliseerd met tot 70 m² per conventionele vrachtwagen."
         },
         {
           question_en: "How are large projects (20–50 units) managed?",
@@ -105,8 +105,8 @@ export default function FAQPage() {
         {
           question_en: "Do the buildings comply with Eurocodes and Dutch regulations (Bouwbesluit/BENG)?",
           question_nl: "Voldoen de gebouwen aan Eurocodes en Nederlandse regelgeving (Bouwbesluit/BENG)?",
-          answer_en: "Materials from our partner factory in Portugal (Senmar) have CE certification and designs follow Eurocodes. Groenvastbouw handles Dutch-specific compliance including BENG calculations and Bouwbesluit requirements. We ensure your project meets all local regulations through our local expertise and network of certified professionals.",
-          answer_nl: "Materialen van onze partnerfabriek in Portugal (Senmar) hebben CE-certificering en ontwerpen volgen Eurocodes. Groenvastbouw verzorgt de Nederlandse compliance inclusief BENG-berekeningen en Bouwbesluit-eisen. Wij zorgen ervoor dat uw project aan alle lokale regelgeving voldoet via onze lokale expertise en netwerk van gecertificeerde professionals."
+          answer_en: "Materials from our partner factory in Portugal have CE certification and designs follow Eurocodes. Groenvastbouw handles Dutch-specific compliance including BENG calculations and Bouwbesluit requirements. We ensure your project meets all local regulations through our local expertise and network of certified professionals.",
+          answer_nl: "Materialen van onze partnerfabriek in Portugal hebben CE-certificering en ontwerpen volgen Eurocodes. Groenvastbouw verzorgt de Nederlandse compliance inclusief BENG-berekeningen en Bouwbesluit-eisen. Wij zorgen ervoor dat uw project aan alle lokale regelgeving voldoet via onze lokale expertise en netwerk van gecertificeerde professionals."
         },
         {
           question_en: "What is the structural warranty period?",
@@ -166,9 +166,9 @@ export default function FAQPage() {
 
   const content = {
     title: language === 'nl' ? <>FAQ – Groenvastbouw engineered timber system</> : <>FAQ – Groenvastbouw engineered timber system</>,
-    intro: language === 'nl' 
-      ? <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> in Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.</>
-      : <>Groenvastbouw engineered timber system, manufactured in partnership with <a href="https://www.senmar.pt" target="_blank" rel="noopener noreferrer" className="text-[#8edb38] hover:text-[#7aa050] font-bold">Senmar</a> in Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.</>,
+    intro: language === 'nl'
+      ? 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal. Op deze pagina vindt u antwoorden op de meest gestelde vragen van particuliere klanten, ontwikkelaars en architecten.'
+      : 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. On this page you will find answers to the most common questions from private clients, developers and architects.',
     backToHome: language === 'nl' ? 'Terug naar Home' : 'Back to Home',
     contactUs: language === 'nl' ? 'Request an intro call' : 'Request an intro call',
     chatWhatsApp: language === 'nl' ? 'Neem contact op via WhatsApp' : 'Get in touch on WhatsApp',
@@ -178,7 +178,7 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       {/* Header */}
       <header className="bg-background text-[#2a3439] py-4">
         <div className="container mx-auto px-4">
@@ -234,7 +234,7 @@ export default function FAQPage() {
                   return (
                     <div 
                       key={currentIndex}
-                      className="bg-[#dcdcdc] border border-[#dcdcdc] rounded-lg overflow-hidden hover:shadow-md transition-all"
+                      className="bg-[#F5F5EF] border border-[#F5F5EF] rounded-lg overflow-hidden hover:shadow-md transition-all"
                     >
                       <button
                         className="w-full p-5 text-left flex justify-between items-center"
@@ -249,7 +249,7 @@ export default function FAQPage() {
                         />
                       </button>
                       {openFaq === currentIndex && (
-                        <div className="px-5 pb-5 border-t border-[#dcdcdc]">
+                        <div className="px-5 pb-5 border-t border-[#F5F5EF]">
                           <p className="text-[#2a3439] leading-relaxed pt-4">
                             {language === 'nl' ? faq.answer_nl : faq.answer_en}
                           </p>
@@ -264,7 +264,7 @@ export default function FAQPage() {
         </div>
 
         {/* Bottom Contact Buttons */}
-        <div className="mt-16 bg-[#dcdcdc] rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-[#F5F5EF] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-[#2a3439] mb-4">
             {content.readyTitle}
           </h2>

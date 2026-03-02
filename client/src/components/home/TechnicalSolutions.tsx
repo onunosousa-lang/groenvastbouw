@@ -95,7 +95,7 @@ export default function TechnicalSolutions() {
   };
 
   return (
-    <section id="technical-solutions" className="py-20 bg-[#dcdcdc]">
+    <section id="technical-solutions" className="py-20 bg-[#F5F5EF]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -121,7 +121,7 @@ export default function TechnicalSolutions() {
             >
               <button
                 onClick={() => toggleTier(tier.id)}
-                className="w-full bg-[#dcdcdc] border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
+                className="w-full bg-[#F5F5EF] border-2 border-[#F5F5EF] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
@@ -146,7 +146,7 @@ export default function TechnicalSolutions() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-6 space-y-4">
+                    <div className="bg-[#F5F5EF] border-2 border-t-0 border-[#F5F5EF] rounded-b-lg p-6 space-y-4">
                       {/* Description */}
                       <p className="text-[#2a3439] leading-relaxed">
                         {language === 'nl' ? tier.descNl : tier.descEn}

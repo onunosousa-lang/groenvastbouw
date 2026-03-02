@@ -31,7 +31,7 @@ export default function MarketsSection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 flex items-end p-6">
-                  <div className="bg-[#dcdcdc]/90 backdrop-blur-sm px-4 py-2 rounded-lg">
+                  <div className="bg-[#F5F5EF]/90 backdrop-blur-sm px-4 py-2 rounded-lg">
                     <h3 className="text-2xl font-bold text-[#2a3439]">{market.title}</h3>
                   </div>
                 </div>

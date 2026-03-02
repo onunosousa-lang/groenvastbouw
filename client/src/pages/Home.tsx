@@ -27,7 +27,7 @@ export default function Home() {
 
         {/* Content card */}
         <div className="container mx-auto px-4 z-10 relative pt-28 pb-16">
-          <div className="max-w-3xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
+          <div className="max-w-3xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#8edb38] mb-4 leading-tight">
               {language === 'nl'
                 ? 'Hoogwaardige prefab bouwsystemen in Nederland'
@@ -35,15 +35,15 @@ export default function Home() {
             </h1>
             <p className="text-base md:text-lg text-[#2a3439]/80 mb-8">
               {language === 'nl'
-                ? 'Turnkey programma\u2019s voor gemeenten & ontwikkelaars \u2014 en maatwerkwoningen voor particulieren.'
-                : 'Turnkey programs for municipalities & developers \u2014 and custom homes for private clients.'}
+                ? 'Turnkey programma\u2019s voor bedrijven & ontwikkelaars \u2014 en maatwerkwoningen voor particulieren.'
+                : 'Turnkey programs for businesses & developers \u2014 and custom homes for private clients.'}
             </p>
 
             {/* Two audience buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button asChild className="flex-1 bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold text-base py-6">
                 <Link href="/programs">
-                  {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
+                  {language === 'nl' ? 'Bedrijven & Ontwikkelaars' : 'Businesses & Developers'}
                 </Link>
               </Button>
               <Button asChild variant="outline" className="flex-1 border-[#2a3439] text-[#2a3439] hover:bg-[#2a3439]/10 font-bold text-base py-6">

@@ -92,7 +92,7 @@ export default function Solutions() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       <Navbar />
       
       {/* Hero Section */}
@@ -115,7 +115,7 @@ export default function Solutions() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           {/* Accordion Tiers */}
           <div className="max-w-4xl mx-auto space-y-3">
@@ -123,7 +123,7 @@ export default function Solutions() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-[#dcdcdc] border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#F5F5EF] border-2 border-[#F5F5EF] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
@@ -142,7 +142,7 @@ export default function Solutions() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-8 space-y-6">
+                  <div className="bg-[#F5F5EF] border-2 border-t-0 border-[#F5F5EF] rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}
@@ -179,7 +179,7 @@ export default function Solutions() {
           </div>
 
           {/* Bottom Info */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 bg-[#dcdcdc] rounded-lg border-2 border-[#8edb38] shadow-lg">
+          <div className="mt-16 max-w-4xl mx-auto p-8 bg-[#F5F5EF] rounded-lg border-2 border-[#8edb38] shadow-lg">
             <h3 className="text-2xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Informatie over prijzen' : 'Pricing Information'}
             </h3>

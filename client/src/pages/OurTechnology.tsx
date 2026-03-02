@@ -113,7 +113,7 @@ export default function OurTechnology() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc]">
+    <div className="min-h-screen bg-[#F5F5EF]">
       <Navbar />
       
       {/* Hero Section */}
@@ -136,7 +136,7 @@ export default function OurTechnology() {
       </section>
 
       {/* Construction Methods */}
-      <section className="py-16 bg-[#dcdcdc]">
+      <section className="py-16 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Constructiemethoden' : 'Our Construction Methods'}
@@ -144,7 +144,7 @@ export default function OurTechnology() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {constructionMethods.map((method, idx) => (
-              <div key={idx} className="bg-[#dcdcdc] rounded-lg border-2 border-[#dcdcdc] p-8 hover:border-[#8edb38] transition-colors">
+              <div key={idx} className="bg-[#F5F5EF] rounded-lg border-2 border-[#F5F5EF] p-8 hover:border-[#8edb38] transition-colors">
                 <h3 className="text-2xl font-bold text-[#2a3439] mb-4 text-[#8edb38]">
                   {language === 'nl' ? method.titleNl : method.titleEn}
                 </h3>
@@ -158,7 +158,7 @@ export default function OurTechnology() {
       </section>
 
       {/* Technical Tiers */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#2a3439] mb-12 text-center">
             {language === 'nl' ? 'Onze Technische Presets' : 'Our Technical Presets'}
@@ -169,7 +169,7 @@ export default function OurTechnology() {
               <div key={tier.id}>
                 <button
                   onClick={() => toggleTier(tier.id)}
-                  className="w-full bg-[#dcdcdc] border-2 border-[#dcdcdc] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
+                  className="w-full bg-[#F5F5EF] border-2 border-[#F5F5EF] rounded-lg p-6 hover:border-[#8edb38] transition-all duration-300 text-left group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
@@ -188,7 +188,7 @@ export default function OurTechnology() {
 
                 {/* Expanded Content */}
                 {expandedTier === tier.id && (
-                  <div className="bg-[#dcdcdc] border-2 border-t-0 border-[#dcdcdc] rounded-b-lg p-8 space-y-6">
+                  <div className="bg-[#F5F5EF] border-2 border-t-0 border-[#F5F5EF] rounded-b-lg p-8 space-y-6">
                     {/* Description */}
                     <p className="text-[#2a3439] text-lg leading-relaxed">
                       {language === 'nl' ? tier.descNl : tier.descEn}

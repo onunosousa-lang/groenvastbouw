@@ -1,6 +1,6 @@
 export default function SolutionsSection() {
   return (
-    <section id="solutions" className="py-20 bg-[#dcdcdc]">
+    <section id="solutions" className="py-20 bg-[#F5F5EF]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">
@@ -12,7 +12,7 @@ export default function SolutionsSection() {
         </div>
 
         <div className="max-w-4xl mx-auto mt-12 space-y-4">
-          <div className="bg-[#dcdcdc] rounded-lg shadow-md border border-[#dcdcdc] p-6">
+          <div className="bg-[#F5F5EF] rounded-lg shadow-md border border-[#F5F5EF] p-6">
             <h3 className="text-xl font-bold text-[#2a3439] mb-2">Basis Structuur</h3>
 
             <p className="text-[#2a3439]">
@@ -20,7 +20,7 @@ export default function SolutionsSection() {
             </p>
           </div>
 
-          <div className="bg-[#dcdcdc] rounded-lg shadow-md border border-[#dcdcdc] p-6">
+          <div className="bg-[#F5F5EF] rounded-lg shadow-md border border-[#F5F5EF] p-6">
             <h3 className="text-xl font-bold text-[#2a3439] mb-2">Optimale Structuur</h3>
 
             <p className="text-[#2a3439]">
@@ -28,7 +28,7 @@ export default function SolutionsSection() {
             </p>
           </div>
 
-          <div className="bg-[#dcdcdc] rounded-lg shadow-md border border-[#dcdcdc] p-6">
+          <div className="bg-[#F5F5EF] rounded-lg shadow-md border border-[#F5F5EF] p-6">
             <h3 className="text-xl font-bold text-[#2a3439] mb-2">Passieve Structuur</h3>
 
             <p className="text-[#2a3439]">

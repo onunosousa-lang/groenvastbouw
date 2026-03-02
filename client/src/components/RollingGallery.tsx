@@ -62,7 +62,7 @@ export default function RollingGallery({
         {duplicatedImages.map((image, index) => (
           <div
             key={index}
-            className="flex-shrink-0 rounded-lg overflow-hidden border-2 border-[#dcdcdc] hover:border-[#8edb38] transition-colors"
+            className="flex-shrink-0 rounded-lg overflow-hidden border-2 border-[#F5F5EF] hover:border-[#8edb38] transition-colors"
             style={{ height }}
           >
             <img

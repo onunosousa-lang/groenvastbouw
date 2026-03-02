@@ -143,7 +143,7 @@ export default function WhatWeOffer() {
 
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc] font-sans">
+    <div className="min-h-screen bg-[#F5F5EF] font-sans">
       <SEO title={content.heroTitle} />
       <Navbar />
 
@@ -175,7 +175,7 @@ export default function WhatWeOffer() {
       </section>
 
       {/* TABS */}
-      <section className="py-12 px-4 bg-[#dcdcdc] border-b border-[#dcdcdc]">
+      <section className="py-12 px-4 bg-[#F5F5EF] border-b border-[#F5F5EF]">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center gap-4">
             <button
@@ -183,7 +183,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'structure'
                   ? 'bg-[#8edb38] text-[#2a3439] shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-[#dcdcdc] hover:border-[#8edb38]'
+                  : 'bg-[#F5F5EF] text-[#2a3439] border border-[#F5F5EF] hover:border-[#8edb38]'
               }`}
             >
               {content.structureDelivery}
@@ -193,7 +193,7 @@ export default function WhatWeOffer() {
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'turnkey'
                   ? 'bg-[#8edb38] text-[#2a3439] shadow-lg'
-                  : 'bg-[#dcdcdc] text-[#2a3439] border border-[#dcdcdc] hover:border-[#8edb38]'
+                  : 'bg-[#F5F5EF] text-[#2a3439] border border-[#F5F5EF] hover:border-[#8edb38]'
               }`}
             >
               {content.turnkeyDelivery}
@@ -215,7 +215,7 @@ export default function WhatWeOffer() {
               <p className="text-xl text-[#2a3439] mb-12">{content.structureDesc}</p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-16">
-                <Card className="border-2 border-[#8edb38] bg-[#dcdcdc]">
+                <Card className="border-2 border-[#8edb38] bg-[#F5F5EF]">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                       <CheckCircle2 className="text-[#8edb38]" />
@@ -232,7 +232,7 @@ export default function WhatWeOffer() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 border-[#dcdcdc] bg-[#dcdcdc]">
+                <Card className="border-2 border-[#F5F5EF] bg-[#F5F5EF]">
                   <CardContent className="p-8">
                     <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                       <AlertCircle className="text-[#2a3439]" />
@@ -259,7 +259,7 @@ export default function WhatWeOffer() {
               <h2 className="text-4xl font-bold text-[#2a3439] mb-8">{content.turnkeyTitle}</h2>
               <p className="text-xl text-[#2a3439] mb-12">{content.turnkeyDesc}</p>
 
-              <Card className="border-2 border-[#8edb38] bg-[#dcdcdc] mb-16">
+              <Card className="border-2 border-[#8edb38] bg-[#F5F5EF] mb-16">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-[#2a3439] mb-6 flex items-center gap-2">
                     <CheckCircle2 className="text-[#8edb38]" />
@@ -279,7 +279,7 @@ export default function WhatWeOffer() {
           )}
 
           {/* MODULAR & MULTIPLE ORDERS */}
-          <div className="mt-24 pt-16 border-t-2 border-[#dcdcdc]">
+          <div className="mt-24 pt-16 border-t-2 border-[#F5F5EF]">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.modularTitle}</h2>
             <p className="text-xl text-[#2a3439] mb-12">{content.modularDesc}</p>
 
@@ -304,7 +304,7 @@ export default function WhatWeOffer() {
           </div>
 
           {/* CTA */}
-          <div className="mt-24 pt-16 border-t-2 border-[#dcdcdc] text-center">
+          <div className="mt-24 pt-16 border-t-2 border-[#F5F5EF] text-center">
             <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{content.ctaTitle}</h2>
             <p className="text-xl text-[#2a3439] mb-8">{content.ctaText}</p>
             <Button

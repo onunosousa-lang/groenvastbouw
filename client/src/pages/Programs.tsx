@@ -91,7 +91,7 @@ const productCards = [
 const deliverySteps = [
   { label: 'Architect & Permit', icon: PenTool },
   { label: 'Compliance & Engineering', icon: FileCheck },
-  { label: 'Manufacturing (Senmar)', icon: Factory },
+  { label: 'Manufacturing', icon: Factory },
   { label: 'Logistics', icon: Truck },
   { label: 'Site Assembly', icon: HardHat },
   { label: 'MEP + Testing', icon: Wrench },
@@ -111,7 +111,7 @@ const turnkeyItems = [
 const faqItems = [
   {
     q: 'Do you also deliver "structure only" for B2B?',
-    a: 'No. For municipalities and developers we offer Full Turnkey only.',
+    a: 'No. For businesses and developers we offer Full Turnkey only.',
   },
   {
     q: 'Why no published prices?',
@@ -202,9 +202,9 @@ export default function Programs() {
           <img src="/fabriek-productie-houten-structuur-montage.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
+          <div className="max-w-4xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">
-              Turnkey building programs for municipalities & developers
+              Turnkey building programs for businesses & developers
             </h1>
             <p className="text-lg md:text-xl text-[#2a3439] mb-8 font-semibold leading-relaxed">
               Full turnkey delivery — from foundation to rooftop solar. Choose Standard or Passive performance.
@@ -249,7 +249,7 @@ export default function Programs() {
       </section>
 
       {/* SECTION 2 — PERFORMANCE OPTIONS (TABS) */}
-      <section className="py-20 bg-[#dcdcdc]/95">
+      <section className="py-20 bg-[#F5F5EF]/95">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-8 text-center">
@@ -324,7 +324,7 @@ export default function Programs() {
       </section>
 
       {/* SECTION 3 — PRODUCT CARDS */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {productCards.map((card) => {
@@ -377,7 +377,7 @@ export default function Programs() {
           <img src="/fabriek-productie-prefab-wand-constructie.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
+          <div className="max-w-4xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-6">
               What Full Turnkey includes
             </h2>
@@ -400,7 +400,7 @@ export default function Programs() {
       </section>
 
       {/* SECTION 5 — DELIVERY MAP */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-12 text-center">
@@ -469,7 +469,7 @@ export default function Programs() {
           <img src="/fabriek-productie-wand-isolatie-plaatsing.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl mx-auto bg-[#dcdcdc] rounded-lg shadow-xl p-8 md:p-12">
+          <div className="max-w-2xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">
               Request a budget estimate
             </h2>
@@ -655,7 +655,7 @@ export default function Programs() {
       </section>
 
       {/* SECTION 7 — FAQ */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-10 text-center">

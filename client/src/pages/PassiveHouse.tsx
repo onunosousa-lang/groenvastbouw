@@ -179,12 +179,12 @@ export default function PassiveHouse() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc] font-sans">
+    <div className="min-h-screen bg-[#F5F5EF] font-sans">
       <SEO title={content.title} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-[#dcdcdc] text-[#2a3439] overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#F5F5EF] text-[#2a3439] overflow-hidden">
         <div className="relative container mx-auto px-4 text-center max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8edb38]/20 text-[#8edb38] border border-[#8edb38]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
             <Home size={16} />
@@ -205,10 +205,10 @@ export default function PassiveHouse() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-4 mb-8">
-            <div className="p-4 bg-[#dcdcdc] rounded-xl text-[#ea4924] border border-[#ea4924]/20">
+            <div className="p-4 bg-[#F5F5EF] rounded-xl text-[#ea4924] border border-[#ea4924]/20">
               <AlertTriangle size={32} />
             </div>
             <div>
@@ -245,7 +245,7 @@ export default function PassiveHouse() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.solutionTitle}</h2>
@@ -256,7 +256,7 @@ export default function PassiveHouse() {
             {content.principles.map((principle, index) => {
               const IconComponent = principle.icon;
               return (
-                <div key={index} className="bg-card p-8 rounded-xl shadow-md border border-[#dcdcdc] hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-card p-8 rounded-xl shadow-md border border-[#F5F5EF] hover:shadow-lg transition-shadow">
                   <div className="flex items-start gap-6">
                     <div className="p-3 bg-[#8edb38]/10 rounded-lg text-[#8edb38]">
                       <IconComponent size={28} />
@@ -274,7 +274,7 @@ export default function PassiveHouse() {
       </section>
 
       {/* Comparison Table Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2a3439] mb-4">{content.comparisonTitle}</h2>
@@ -291,9 +291,9 @@ export default function PassiveHouse() {
               </thead>
               <tbody>
                 {content.tableRows.map((row, index) => (
-                  <tr key={index} className={index % 2 === 0 ? 'bg-[#dcdcdc]' : 'bg-white'}>
-                    <td className="px-6 py-4 text-[#2a3439] border-b border-[#dcdcdc]">{row[0]}</td>
-                    <td className="px-6 py-4 text-[#2a3439] border-b border-[#dcdcdc] font-semibold">{row[1]}</td>
+                  <tr key={index} className={index % 2 === 0 ? 'bg-[#F5F5EF]' : 'bg-white'}>
+                    <td className="px-6 py-4 text-[#2a3439] border-b border-[#F5F5EF]">{row[0]}</td>
+                    <td className="px-6 py-4 text-[#2a3439] border-b border-[#F5F5EF] font-semibold">{row[1]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -303,7 +303,7 @@ export default function PassiveHouse() {
       </section>
 
       {/* How Groenvastbouw Achieves This Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="p-4 bg-[#8edb38]/10 rounded-xl text-[#8edb38]">
@@ -324,7 +324,7 @@ export default function PassiveHouse() {
       </section>
 
       {/* The Result Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="p-4 bg-[#8edb38]/10 rounded-xl text-[#8edb38]">
@@ -348,7 +348,7 @@ export default function PassiveHouse() {
       </section>
 
       {/* Passive vs Super Passive Section */}
-      <section className="py-20 bg-[#dcdcdc]">
+      <section className="py-20 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-4 mb-8">
             <div className="p-4 bg-[#8edb38]/10 rounded-xl text-[#8edb38]">

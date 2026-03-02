@@ -97,7 +97,7 @@ export default function HowItWorks() {
 
 
   return (
-    <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#dcdcdc]/95">
+    <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#F5F5EF]/95">
       {/* Background Image with Transparency */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -112,12 +112,12 @@ export default function HowItWorks() {
 
         {/* Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="bg-[#dcdcdc] p-1 rounded-xl inline-flex">
+          <div className="bg-[#F5F5EF] p-1 rounded-xl inline-flex">
             <button
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#F5F5EF] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -127,7 +127,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#F5F5EF] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -155,12 +155,12 @@ export default function HowItWorks() {
                 <div key={`${activeTab}-step-${index}`} className="relative group">
                   {/* Connecting Line (Desktop) */}
                   {index < (activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#dcdcdc] -z-10" />
+                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#F5F5EF] -z-10" />
                   )}
                   
-                  <div className="bg-[#dcdcdc]/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-[#F5F5EF]/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#F5F5EF] text-[#8edb38]' : 'bg-[#F5F5EF] text-[#8edb38]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -173,7 +173,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-[#2a3439] mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#F5F5EF] text-[#8edb38]' : 'bg-[#F5F5EF] text-[#8edb38]'
                     }`}>
                       {step.duration}
                     </div>

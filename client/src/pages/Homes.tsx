@@ -6,7 +6,7 @@ import OfferSection from '@/components/home/OfferSection';
 import HowItWorks from '@/components/home/HowItWorks';
 import PerformanceLevels from '@/components/home/PerformanceLevels';
 import TechnicalSpecs from '@/components/home/TechnicalSpecs';
-import SenmarVideo from '@/components/home/SenmarVideo';
+import TechnologyVideo from '@/components/home/TechnologyVideo';
 import FeaturedProjects from '@/components/home/FeaturedProjects';
 import ContactForm from '@/components/home/ContactForm';
 import FAQSection from '@/components/home/FAQSection';
@@ -33,7 +33,7 @@ export default function Homes() {
       <HowItWorks />
       <PerformanceLevels />
       <TechnicalSpecs />
-      <SenmarVideo />
+      <TechnologyVideo />
       <FeaturedProjects />
       <ContactForm />
       <FAQSection />
