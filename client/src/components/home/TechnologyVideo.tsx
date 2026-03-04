@@ -5,7 +5,7 @@ export default function TechnologyVideo() {
   const { language } = useLanguage();
 
   return (
-    <section className="relative py-20 bg-[#dcdcdc] overflow-hidden">
+    <section className="relative py-20 bg-[#F5F5EF] overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">

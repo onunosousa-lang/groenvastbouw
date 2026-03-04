@@ -6,7 +6,7 @@ export default function TwoDoorsBlock() {
   const { language } = useLanguage();
 
   return (
-    <section className="py-12 bg-[#dcdcdc]">
+    <section className="py-12 bg-[#F5F5EF]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#2a3439] mb-3">
@@ -16,13 +16,13 @@ export default function TwoDoorsBlock() {
           </h2>
           <p className="text-base md:text-lg text-[#2a3439]/80 mb-6">
             {language === 'nl'
-              ? 'Turnkey programma\u2019s voor gemeenten & ontwikkelaars \u2014 en maatwerkwoningen voor particulieren.'
-              : 'Turnkey programs for municipalities & developers \u2014 and custom homes for private clients.'}
+              ? 'Turnkey programma\u2019s voor bedrijven & ontwikkelaars \u2014 en maatwerkwoningen voor particulieren.'
+              : 'Turnkey programs for businesses & developers \u2014 and custom homes for private clients.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
             <Link href="/programs">
               <Button className="bg-[#8edb38] hover:bg-[#7aa050] text-[#2a3439] font-bold px-8 py-3 text-base">
-                {language === 'nl' ? 'Gemeenten & Ontwikkelaars' : 'Municipalities & Developers'}
+                {language === 'nl' ? 'Bedrijven & Ontwikkelaars' : 'Businesses & Developers'}
               </Button>
             </Link>
             <Link href="/our-offer">

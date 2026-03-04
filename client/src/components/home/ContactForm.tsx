@@ -62,7 +62,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#dcdcdc]/95 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#F5F5EF]/95 relative overflow-hidden">
       {/* Background Image with Transparency */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"

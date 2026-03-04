@@ -1,73 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
   <url>
     <loc>https://groenvastbouw.nl/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://groenvastbouw.nl/images/header-background.jpg</image:loc>
-      <image:title>Groenvastbouw Passive Houses</image:title>
-    </image:image>
   </url>
-
-  <!-- Projects Page -->
+  <url>
+    <loc>https://groenvastbouw.nl/homes</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/programs</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://groenvastbouw.nl/projecten</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Section: About -->
   <url>
-    <loc>https://groenvastbouw.nl/#about</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://groenvastbouw.nl/about</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/faq</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/contact</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Section: Services -->
+  <!-- Product / offer pages -->
   <url>
-    <loc>https://groenvastbouw.nl/#services</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://groenvastbouw.nl/our-offer</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Section: Technology -->
   <url>
-    <loc>https://groenvastbouw.nl/#technology</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://groenvastbouw.nl/our-technology</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/why-us</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/what-we-offer</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/how-it-works</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Section: Pricing -->
+  <!-- Informational pages -->
   <url>
-    <loc>https://groenvastbouw.nl/#pricing</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Section: FAQ -->
-  <url>
-    <loc>https://groenvastbouw.nl/#faq</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://groenvastbouw.nl/passive-house</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Section: Contact -->
   <url>
-    <loc>https://groenvastbouw.nl/#contact</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://groenvastbouw.nl/prefab-benefits</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/solutions</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Legal -->
+  <url>
+    <loc>https://groenvastbouw.nl/privacy-policy</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://groenvastbouw.nl/terms-of-service</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 
 </urlset>

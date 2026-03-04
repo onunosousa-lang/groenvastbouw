@@ -44,23 +44,23 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
     {
       id: 1,
       headline: language === 'nl'
-        ? 'Jouw Passiefhuis. Gemonteerde Structuur in 3 Maanden na Aankoop.'
-        : 'Your Passive House. Mounted Structure in 3 Months from Purchase.',
+        ? 'Jouw Passiefhuis. Casco gemonteerd in ca. 3 maanden.'
+        : 'Your Passive House. Shell mounted in approx. 3 months.',
       subheadline: language === 'nl'
-        ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>
-        : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>,
+        ? <>Prefab houtskeletbouw. Volledige draagstructuur geleverd en gemonteerd op locatie. Sneller dan conventionele bouw.</>
+        : <>Prefab timber frame construction. Full structural shell delivered and assembled on site. Faster than conventional construction.</>,
       description: language === 'nl'
         ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
         : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
-      points: language === 'nl' 
+      points: language === 'nl'
         ? [
             '90% lagere energierekeningen. voor het leven',
-            'Montage: 8-12 dagen. Totale doorlooptijd: 3 maanden',
+            'Cascomontage: 8-12 dagen. Casco-doorlooptijd: ca. 3 maanden',
             'Maximale kwaliteit, gebouwd om te duren'
           ]
         : [
             '90% lower energy bills. for life',
-            'Assembly: 8-12 days. Total lead time: 3 months',
+            'Shell assembly: 8-12 days. Shell lead time: approx. 3 months',
             'Maximum quality, built to last'
           ]
     },
@@ -223,7 +223,7 @@ export default function HeroCarousel({ scrollToSection }: HeroCarouselProps) {
             {slides.map((slide) => (
               <div key={slide.id} className="embla__slide min-w-full">
                 {/* Text content with light gray background box for contrast - Brand style */}
-                <div className="bg-[#dcdcdc] backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
+                <div className="bg-[#F5F5EF] backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
                   {/* Headline */}
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8edb38] mb-6 leading-tight">
                     {slide.headline}

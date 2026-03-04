@@ -74,15 +74,15 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-[#dcdcdc]/40 z-40 transition-opacity duration-300"
+        className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
         onClick={onClose}
       />
       
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div className="bg-[#dcdcdc] rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-300">
+        <div className="bg-[#F5F5EF] rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-300">
           {/* Header with Close Button */}
-          <div className="flex items-start justify-between p-6 border-b border-[#dcdcdc]">
+          <div className="flex items-start justify-between p-6 border-b border-[#F5F5EF]">
             <div>
               <h2 className="text-2xl font-bold text-[#2a3439]">
                 {language === 'nl' ? 'Contacteer Ons' : 'Contact Us'}
@@ -93,7 +93,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
             </div>
             <button
               onClick={onClose}
-              className="p-1 hover:bg-[#dcdcdc] rounded-lg transition-colors flex-shrink-0 ml-4"
+              className="p-1 hover:bg-[#F5F5EF] rounded-lg transition-colors flex-shrink-0 ml-4"
               aria-label="Close"
             >
               <X className="w-5 h-5 text-[#2a3439]" />
@@ -117,7 +117,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                         <Input 
                           placeholder={language === 'nl' ? "Uw naam" : "Your name"} 
                           {...field} 
-                          className="bg-[#dcdcdc] border-[#dcdcdc] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
+                          className="bg-[#F5F5EF] border-[#F5F5EF] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -139,7 +139,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                           type="email" 
                           placeholder="naam@voorbeeld.nl" 
                           {...field} 
-                          className="bg-[#dcdcdc] border-[#dcdcdc] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
+                          className="bg-[#F5F5EF] border-[#F5F5EF] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -161,7 +161,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                           type="tel" 
                           placeholder="+31 6 12345678" 
                           {...field} 
-                          className="bg-[#dcdcdc] border-[#dcdcdc] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
+                          className="bg-[#F5F5EF] border-[#F5F5EF] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439]"
                         />
                       </FormControl>
                       <FormMessage className="text-xs" />
@@ -181,7 +181,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                       <FormControl>
                         <Textarea 
                           placeholder={language === 'nl' ? "Beschrijf uw project..." : "Describe your project..."} 
-                          className="min-h-[100px] bg-[#dcdcdc] border-[#dcdcdc] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439] resize-none"
+                          className="min-h-[100px] bg-[#F5F5EF] border-[#F5F5EF] focus:border-[#8edb38] focus:ring-[#8edb38] placeholder:text-[#2a3439] resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -195,7 +195,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
                   <Button 
                     type="button"
                     variant="outline"
-                    className="flex-1 border-[#dcdcdc] text-[#2a3439] hover:bg-[#dcdcdc]"
+                    className="flex-1 border-[#F5F5EF] text-[#2a3439] hover:bg-[#F5F5EF]"
                     onClick={onClose}
                   >
                     {language === 'nl' ? 'Annuleren' : 'Cancel'}
@@ -216,7 +216,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
           </div>
 
           {/* Footer Info */}
-          <div className="px-6 py-4 bg-[#dcdcdc] border-t border-[#dcdcdc] rounded-b-2xl">
+          <div className="px-6 py-4 bg-[#F5F5EF] border-t border-[#F5F5EF] rounded-b-2xl">
             <p className="text-xs text-[#2a3439] text-center">
               {language === 'nl' 
                 ? '📧 info@groenvastbouw.nl' 

@@ -12,7 +12,7 @@ export default function HowItWorks() {
 
   const content = {
     headline: language === 'nl' ? 'Hoe Het Werkt' : 'How It Works',
-    subheadline: language === 'nl' ? 'Montage: 8-12 dagen. Totale doorlooptijd: 3 maanden' : 'Assembly: 8-12 days. Total lead time: 3 months',
+    subheadline: language === 'nl' ? 'Cascomontage: 8-12 dagen. Casco-doorlooptijd: ca. 3 maanden' : 'Shell assembly: 8-12 days. Shell lead time: approx. 3 months',
     
     tabs: {
       structure: language === 'nl' ? 'Structuur Levering (Montage: 8-12 dagen)' : 'Structure Delivery (Assembly: 8-12 days)',
@@ -27,8 +27,8 @@ export default function HowItWorks() {
         icon: Ruler
       },
       {
-        title: language === 'nl' ? 'Productie in partnerfabriek' : 'Production in partner factory',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in onze partnerfabriek in Portugal, met CNC-precisie en het Groenvastbouw engineered timber system.' : 'The complete prefab structure is produced in our partner factory in Portugal, using CNC precision and the Groenvastbouw engineered timber system.',
+        title: language === 'nl' ? 'Productie bij gecertificeerde productiepartner' : 'Production at certified production partner',
+        desc: language === 'nl' ? 'De volledige prefab draagstructuur wordt geproduceerd bij onze gecertificeerde productiepartner, met CNC-precisie en het Groenvastbouw engineered timber system.' : 'The complete prefab structural frame is produced at our certified production partner, using CNC precision and the Groenvastbouw engineered timber system.',
         duration: language === 'nl' ? '8-12 weken' : '8-12 weeks',
         icon: Factory
       },
@@ -54,8 +54,8 @@ export default function HowItWorks() {
         icon: Calendar
       },
       {
-        title: language === 'nl' ? 'Productie in Portugal' : 'Production in Portugal',
-        desc: language === 'nl' ? 'De volledige prefab structuur wordt geproduceerd in een gecontroleerde fabriek.' : 'The complete prefab structure is produced in a controlled factory.',
+        title: language === 'nl' ? 'Productie bij productiepartner' : 'Production at production partner',
+        desc: language === 'nl' ? 'De volledige prefab draagstructuur wordt geproduceerd in een gecertificeerde, gecontroleerde productiefaciliteit.' : 'The complete prefab structural frame is produced at a certified, controlled production facility.',
         duration: language === 'nl' ? '8-12 weken' : '8-12 weeks',
         icon: Factory
       },
@@ -80,13 +80,13 @@ export default function HowItWorks() {
     ],
 
     totalTimeline: {
-      structure: language === 'nl' ? 'Totale doorlooptijd: 3 maanden (inclusief volledige montage)' : 'Total timeline: 3 months (including full assembly)',
-      turnkey: language === 'nl' ? 'Totale doorlooptijd: 3 maanden (van bestelling tot volledig gemonteerde structuur)' : 'Total timeline: 3 months (from order to fully mounted structure)'
+      structure: language === 'nl' ? 'Casco-doorlooptijd: ca. 3 maanden (van bestelling tot gemonteerd casco)' : 'Shell lead time: approx. 3 months (from order to mounted structural shell)',
+      turnkey: language === 'nl' ? 'Casco-doorlooptijd: ca. 3 maanden. Volledig turnkey project duurt langer.' : 'Shell lead time: approx. 3 months. Full turnkey project takes longer.'
     },
 
-    asteriskNote: language === 'nl' 
-      ? 'Volledige montage door ons team is inbegrepen in de 3-maanden timeline. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.'
-      : 'Full assembly by our team is included in the 3-month timeline. Foundation and groundwork are prepared in advance by you or by us upon request.',
+    asteriskNote: language === 'nl'
+      ? 'De ca. 3 maanden doorlooptijd geldt voor het casco (ruwbouw). Volledig turnkey project duurt langer, afhankelijk van vergunningen en afbouw. Fundering en grondwerk worden van tevoren door u of op aanvraag door ons voorbereid.'
+      : 'The approx. 3-month lead time applies to the structural shell only. Full turnkey projects take longer, depending on permits and finishing work. Foundation and groundwork are prepared in advance by you or by us upon request.',
 
     cta: {
       text: language === 'nl' ? 'Wil je meer weten over het proces?' : 'Want to know more about the process?',
@@ -97,7 +97,7 @@ export default function HowItWorks() {
 
 
   return (
-    <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#dcdcdc]/95">
+    <section id={language === 'nl' ? 'proces' : 'process'} className="py-20 relative scroll-mt-20 overflow-hidden bg-[#F5F5EF]/95">
       {/* Background Image with Transparency */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -112,12 +112,12 @@ export default function HowItWorks() {
 
         {/* Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="bg-[#dcdcdc] p-1 rounded-xl inline-flex">
+          <div className="bg-[#F5F5EF] p-1 rounded-xl inline-flex">
             <button
               onClick={() => setActiveTab('structure')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'structure' 
-                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#F5F5EF] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -127,7 +127,7 @@ export default function HowItWorks() {
               onClick={() => setActiveTab('turnkey')}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
                 activeTab === 'turnkey' 
-                  ? 'bg-[#dcdcdc] text-[#8edb38] shadow-sm' 
+                  ? 'bg-[#F5F5EF] text-[#8edb38] shadow-sm' 
                   : 'text-[#2a3439] hover:text-[#2a3439]'
               }`}
             >
@@ -155,12 +155,12 @@ export default function HowItWorks() {
                 <div key={`${activeTab}-step-${index}`} className="relative group">
                   {/* Connecting Line (Desktop) */}
                   {index < (activeTab === 'structure' ? content.structureSteps : content.turnkeySteps).length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#dcdcdc] -z-10" />
+                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-[#F5F5EF] -z-10" />
                   )}
                   
-                  <div className="bg-[#dcdcdc]/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
+                  <div className="bg-[#F5F5EF]/95 backdrop-blur-md p-6 rounded-xl border border-[#8edb38]/50 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center relative z-10">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#F5F5EF] text-[#8edb38]' : 'bg-[#F5F5EF] text-[#8edb38]'
                     }`}>
                       <step.icon className="w-8 h-8" />
                     </div>
@@ -173,7 +173,7 @@ export default function HowItWorks() {
                     <p className="text-sm text-[#2a3439] mb-4 flex-grow">{step.desc}</p>
                     
                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      activeTab === 'structure' ? 'bg-[#dcdcdc] text-[#8edb38]' : 'bg-[#dcdcdc] text-[#8edb38]'
+                      activeTab === 'structure' ? 'bg-[#F5F5EF] text-[#8edb38]' : 'bg-[#F5F5EF] text-[#8edb38]'
                     }`}>
                       {step.duration}
                     </div>

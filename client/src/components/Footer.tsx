@@ -7,7 +7,7 @@ export default function Footer() {
   const content = {
     nl: {
       company: 'Groenvastbouw',
-      description: 'Prefab passiefhuizen met het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal.',
+      description: 'Prefab passiefhuizen met het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
       phone: '+31 6 29841297',
@@ -19,7 +19,7 @@ export default function Footer() {
     },
     en: {
       company: 'Groenvastbouw',
-      description: 'Prefab passive houses with the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
+      description: 'Prefab passive houses with the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.',
       contact: 'Contact',
       email: 'contact@groenvastbouw.nl',
       phone: '+31 6 29841297',
@@ -34,7 +34,7 @@ export default function Footer() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <footer className="bg-[#dcdcdc] py-12">
+    <footer className="bg-[#F5F5EF] py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}

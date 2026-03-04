@@ -17,7 +17,7 @@ export default function TermsOfService() {
     sections: language === 'nl' ? [
       {
         title: '1. Definities',
-        content: 'In deze algemene voorwaarden worden de volgende termen gebruikt. Groenvastbouw verwijst naar het bedrijf dat hoogperformante geprefabriceerde timmerhuizen levert via het Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. De Klant is elke natuurlijke of rechtspersoon die een offerte aanvraagt, een overeenkomst aangaat of anderszins gebruik maakt van de diensten van Groenvastbouw. Diensten omvatten alle werkzaamheden, leveringen en prestaties die Groenvastbouw voor de Klant uitvoert, waaronder maar niet beperkt tot het ontwerpen, produceren en installeren van passiefhuizen en extensies. De Overeenkomst is elke afspraak tussen Groenvastbouw en de Klant met betrekking tot de levering van diensten. De Website verwijst naar groenvastbouw.nl en alle bijbehorende subdomeinen en pagina\'s.'
+        content: 'In deze algemene voorwaarden worden de volgende termen gebruikt. Groenvastbouw verwijst naar het bedrijf dat hoogperformante geprefabriceerde timmerhuizen levert via het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal. De Klant is elke natuurlijke of rechtspersoon die een offerte aanvraagt, een overeenkomst aangaat of anderszins gebruik maakt van de diensten van Groenvastbouw. Diensten omvatten alle werkzaamheden, leveringen en prestaties die Groenvastbouw voor de Klant uitvoert, waaronder maar niet beperkt tot het ontwerpen, produceren en installeren van passiefhuizen en extensies. De Overeenkomst is elke afspraak tussen Groenvastbouw en de Klant met betrekking tot de levering van diensten. De Website verwijst naar groenvastbouw.nl en alle bijbehorende subdomeinen en pagina\'s.'
       },
       {
         title: '2. Toepasselijkheid',
@@ -33,7 +33,7 @@ export default function TermsOfService() {
       },
       {
         title: '5. Levertijd en uitvoering',
-        content: 'De door Groenvastbouw opgegeven levertijden zijn indicatief en geen fatale termijnen, tenzij uitdrukkelijk schriftelijk anders is overeengekomen. Overschrijding van de levertijd geeft de Klant geen recht op schadevergoeding of ontbinding van de overeenkomst, tenzij de vertraging zodanig is dat van de Klant redelijkerwijs niet kan worden gevergd de overeenkomst in stand te houden. Groenvastbouw zal de Klant tijdig informeren indien voorzienbaar is dat de levertijd niet kan worden gehaald. De levertijd vangt aan nadat de Klant alle benodigde informatie en documenten heeft verstrekt en de aanbetaling is ontvangen. Groenvastbouw voert de werkzaamheden uit naar beste kunnen en volgens de huidige stand der techniek. De uitvoering geschiedt via onze partnerfabriek in Portugal (Senmar), die verantwoordelijk is voor de CNC-prefabricatie van de houten constructie-elementen.'
+        content: 'De door Groenvastbouw opgegeven levertijden zijn indicatief en geen fatale termijnen, tenzij uitdrukkelijk schriftelijk anders is overeengekomen. Overschrijding van de levertijd geeft de Klant geen recht op schadevergoeding of ontbinding van de overeenkomst, tenzij de vertraging zodanig is dat van de Klant redelijkerwijs niet kan worden gevergd de overeenkomst in stand te houden. Groenvastbouw zal de Klant tijdig informeren indien voorzienbaar is dat de levertijd niet kan worden gehaald. De levertijd vangt aan nadat de Klant alle benodigde informatie en documenten heeft verstrekt en de aanbetaling is ontvangen. Groenvastbouw voert de werkzaamheden uit naar beste kunnen en volgens de huidige stand der techniek. De uitvoering geschiedt via onze partnerfabriek in Portugal, die verantwoordelijk is voor de CNC-prefabricatie van de houten constructie-elementen.'
       },
       {
         title: '6. Verplichtingen van de Klant',
@@ -57,7 +57,7 @@ export default function TermsOfService() {
       },
       {
         title: '11. Overmacht',
-        content: 'Groenvastbouw is niet gehouden tot nakoming van enige verplichting indien zij daartoe verhinderd wordt als gevolg van overmacht. Onder overmacht wordt verstaan elke omstandigheid buiten de wil en macht van Groenvastbouw die de nakoming van de overeenkomst blijvend of tijdelijk verhindert. Hieronder vallen onder meer natuurrampen, oorlog, terrorisme, pandemieën, stakingen, overheidsmaatregelen, transportproblemen, tekorten aan grondstoffen of energie, en storingen bij toeleveranciers of onze partnerfabriek in Portugal (Senmar). Bij overmacht heeft Groenvastbouw het recht de uitvoering van de overeenkomst op te schorten of de overeenkomst geheel of gedeeltelijk te ontbinden, zonder tot enige schadevergoeding gehouden te zijn. Indien de overmacht langer dan drie maanden duurt, hebben beide partijen het recht de overeenkomst schriftelijk te ontbinden zonder dat er een verplichting tot schadevergoeding ontstaat.'
+        content: 'Groenvastbouw is niet gehouden tot nakoming van enige verplichting indien zij daartoe verhinderd wordt als gevolg van overmacht. Onder overmacht wordt verstaan elke omstandigheid buiten de wil en macht van Groenvastbouw die de nakoming van de overeenkomst blijvend of tijdelijk verhindert. Hieronder vallen onder meer natuurrampen, oorlog, terrorisme, pandemieën, stakingen, overheidsmaatregelen, transportproblemen, tekorten aan grondstoffen of energie, en storingen bij toeleveranciers of onze partnerfabriek in Portugal. Bij overmacht heeft Groenvastbouw het recht de uitvoering van de overeenkomst op te schorten of de overeenkomst geheel of gedeeltelijk te ontbinden, zonder tot enige schadevergoeding gehouden te zijn. Indien de overmacht langer dan drie maanden duurt, hebben beide partijen het recht de overeenkomst schriftelijk te ontbinden zonder dat er een verplichting tot schadevergoeding ontstaat.'
       },
       {
         title: '12. Intellectueel eigendom',
@@ -65,7 +65,7 @@ export default function TermsOfService() {
       },
       {
         title: '13. Geheimhouding',
-        content: 'Beide partijen verplichten zich tot geheimhouding van alle vertrouwelijke informatie die zij in het kader van de overeenkomst van elkaar of uit andere bron hebben verkregen. Informatie geldt als vertrouwelijk als dit door de andere partij is medegedeeld of als dit voortvloeit uit de aard van de informatie. Groenvastbouw zal vertrouwelijke informatie van de Klant niet zonder voorafgaande schriftelijke toestemming aan derden verstrekken, behalve voor zover dit noodzakelijk is voor de uitvoering van de overeenkomst, zoals het delen van technische specificaties met onze partnerfabriek in Portugal (Senmar). De geheimhoudingsverplichting geldt niet voor informatie die publiekelijk bekend is zonder schending van de geheimhoudingsverplichting, die de ontvangende partij reeds kende voordat deze werd verstrekt, of die op grond van een wettelijke verplichting moet worden verstrekt.'
+        content: 'Beide partijen verplichten zich tot geheimhouding van alle vertrouwelijke informatie die zij in het kader van de overeenkomst van elkaar of uit andere bron hebben verkregen. Informatie geldt als vertrouwelijk als dit door de andere partij is medegedeeld of als dit voortvloeit uit de aard van de informatie. Groenvastbouw zal vertrouwelijke informatie van de Klant niet zonder voorafgaande schriftelijke toestemming aan derden verstrekken, behalve voor zover dit noodzakelijk is voor de uitvoering van de overeenkomst, zoals het delen van technische specificaties met onze partnerfabriek in Portugal. De geheimhoudingsverplichting geldt niet voor informatie die publiekelijk bekend is zonder schending van de geheimhoudingsverplichting, die de ontvangende partij reeds kende voordat deze werd verstrekt, of die op grond van een wettelijke verplichting moet worden verstrekt.'
       },
       {
         title: '14. Ontbinding en opzegging',
@@ -78,7 +78,7 @@ export default function TermsOfService() {
     ] : [
       {
         title: '1. Definitions',
-        content: 'In these terms of service, the following terms are used. Groenvastbouw refers to the company that delivers high-performance prefabricated timber houses via the Groenvastbouw engineered timber system, manufactured in partnership with Senmar in Portugal. The Customer is any natural or legal person who requests a quote, enters into an agreement, or otherwise uses the services of Groenvastbouw. Services include all work, deliveries, and performances that Groenvastbouw carries out for the Customer, including but not limited to designing, producing, and installing passive houses and extensions. The Agreement is any arrangement between Groenvastbouw and the Customer regarding the delivery of services. The Website refers to groenvastbouw.nl and all associated subdomains and pages.'
+        content: 'In these terms of service, the following terms are used. Groenvastbouw refers to the company that delivers high-performance prefabricated timber houses via the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. The Customer is any natural or legal person who requests a quote, enters into an agreement, or otherwise uses the services of Groenvastbouw. Services include all work, deliveries, and performances that Groenvastbouw carries out for the Customer, including but not limited to designing, producing, and installing passive houses and extensions. The Agreement is any arrangement between Groenvastbouw and the Customer regarding the delivery of services. The Website refers to groenvastbouw.nl and all associated subdomains and pages.'
       },
       {
         title: '2. Applicability',
@@ -94,7 +94,7 @@ export default function TermsOfService() {
       },
       {
         title: '5. Delivery time and execution',
-        content: 'The delivery times stated by Groenvastbouw are indicative and not fatal deadlines, unless expressly agreed otherwise in writing. Exceeding the delivery time does not entitle the Customer to compensation or dissolution of the agreement, unless the delay is such that the Customer cannot reasonably be expected to maintain the agreement. Groenvastbouw will inform the Customer in a timely manner if it is foreseeable that the delivery time cannot be met. The delivery time starts after the Customer has provided all necessary information and documents and the down payment has been received. Groenvastbouw carries out the work to the best of its ability and according to the current state of the art. The execution takes place via our partner factory in Portugal (Senmar), which is responsible for the CNC prefabrication of the wooden construction elements.'
+        content: 'The delivery times stated by Groenvastbouw are indicative and not fatal deadlines, unless expressly agreed otherwise in writing. Exceeding the delivery time does not entitle the Customer to compensation or dissolution of the agreement, unless the delay is such that the Customer cannot reasonably be expected to maintain the agreement. Groenvastbouw will inform the Customer in a timely manner if it is foreseeable that the delivery time cannot be met. The delivery time starts after the Customer has provided all necessary information and documents and the down payment has been received. Groenvastbouw carries out the work to the best of its ability and according to the current state of the art. The execution takes place via our partner factory in Portugal, which is responsible for the CNC prefabrication of the wooden construction elements.'
       },
       {
         title: '6. Obligations of the Customer',
@@ -118,7 +118,7 @@ export default function TermsOfService() {
       },
       {
         title: '11. Force majeure',
-        content: 'Groenvastbouw is not obliged to fulfill any obligation if it is prevented from doing so as a result of force majeure. Force majeure means any circumstance beyond the will and control of Groenvastbouw that permanently or temporarily prevents the performance of the agreement. This includes, among other things, natural disasters, war, terrorism, pandemics, strikes, government measures, transport problems, shortages of raw materials or energy, and disruptions at suppliers or our partner factory in Portugal (Senmar). In case of force majeure, Groenvastbouw has the right to suspend the execution of the agreement or to dissolve the agreement in whole or in part, without being obliged to pay any compensation. If the force majeure lasts longer than three months, both parties have the right to dissolve the agreement in writing without any obligation to pay compensation.'
+        content: 'Groenvastbouw is not obliged to fulfill any obligation if it is prevented from doing so as a result of force majeure. Force majeure means any circumstance beyond the will and control of Groenvastbouw that permanently or temporarily prevents the performance of the agreement. This includes, among other things, natural disasters, war, terrorism, pandemics, strikes, government measures, transport problems, shortages of raw materials or energy, and disruptions at suppliers or our partner factory in Portugal. In case of force majeure, Groenvastbouw has the right to suspend the execution of the agreement or to dissolve the agreement in whole or in part, without being obliged to pay any compensation. If the force majeure lasts longer than three months, both parties have the right to dissolve the agreement in writing without any obligation to pay compensation.'
       },
       {
         title: '12. Intellectual property',
@@ -126,7 +126,7 @@ export default function TermsOfService() {
       },
       {
         title: '13. Confidentiality',
-        content: 'Both parties undertake to maintain confidentiality of all confidential information obtained from each other or from other sources in the context of the agreement. Information is considered confidential if this has been communicated by the other party or if this follows from the nature of the information. Groenvastbouw will not provide confidential information from the Customer to third parties without prior written permission, except insofar as this is necessary for the execution of the agreement, such as sharing technical specifications with our partner factory in Portugal (Senmar). The confidentiality obligation does not apply to information that is publicly known without breach of the confidentiality obligation, that the receiving party already knew before it was provided, or that must be provided on the basis of a legal obligation.'
+        content: 'Both parties undertake to maintain confidentiality of all confidential information obtained from each other or from other sources in the context of the agreement. Information is considered confidential if this has been communicated by the other party or if this follows from the nature of the information. Groenvastbouw will not provide confidential information from the Customer to third parties without prior written permission, except insofar as this is necessary for the execution of the agreement, such as sharing technical specifications with our partner factory in Portugal. The confidentiality obligation does not apply to information that is publicly known without breach of the confidentiality obligation, that the receiving party already knew before it was provided, or that must be provided on the basis of a legal obligation.'
       },
       {
         title: '14. Dissolution and termination',
@@ -140,7 +140,7 @@ export default function TermsOfService() {
   };
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc] text-[#2a3439]">
+    <div className="min-h-screen bg-[#F5F5EF] text-[#2a3439]">
       {/* Hero Section */}
       <section className="relative py-20">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -178,7 +178,7 @@ export default function TermsOfService() {
           </div>
 
           {/* Contact Section */}
-          <div className="mt-12 p-6 bg-card rounded-lg border border-[#dcdcdc]">
+          <div className="mt-12 p-6 bg-card rounded-lg border border-[#F5F5EF]">
             <h3 className="text-xl font-bold text-[#2a3439] mb-4">
               {language === 'nl' ? 'Vragen over deze voorwaarden?' : 'Questions about these terms?'}
             </h3>

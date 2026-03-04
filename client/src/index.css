@@ -52,11 +52,11 @@
   --primary: 142 181 100;
   --primary-foreground: 255 255 255;
   
-  /* Light Background - (#dcdcdc) */
-  --background: 220 220 220;
-  
-  /* Surface / Cards - Light Grey (#dcdcdc) */
-  --card: 220 220 220;
+  /* Light Background - (#F5F5EF) */
+  --background: 245 245 239;
+
+  /* Surface / Cards - Warm Off-White (#F5F5EF) */
+  --card: 245 245 239;
   --card-foreground: 42 52 57;
   
   /* Dark Text - Deep Slate (#2A3439) */
@@ -70,21 +70,21 @@
   --secondary: 122 160 80;
   --secondary-foreground: 255 255 255;
   
-  /* Muted variants - (#dcdcdc) */
-  --muted: 220 220 220;
+  /* Muted variants - (#F5F5EF) */
+  --muted: 245 245 239;
   --muted-foreground: 42 52 57;
-  
+
   /* Popover */
-  --popover: 220 220 220;
+  --popover: 245 245 239;
   --popover-foreground: 42 52 57;
   
   /* Destructive - Clay Red */
   --destructive: 234 73 36;
   --destructive-foreground: 255 255 255;
   
-  /* Border & Input - (#dcdcdc) */
-  --border: 220 220 220;
-  --input: 220 220 220;
+  /* Border & Input - (#E8E8E2) slightly darker for visible borders */
+  --border: 232 232 226;
+  --input: 232 232 226;
   --ring: 142 181 100;
   
   /* Sidebar - Deep Slate */
@@ -100,7 +100,7 @@
   /* Charts - 3-Color Palette */
   --chart-1: 142 181 100;
   --chart-2: 42 52 57;
-  --chart-3: 220 220 220;
+  --chart-3: 245 245 239;
   --chart-4: 142 181 100;
   --chart-5: 42 52 57;
   
@@ -109,7 +109,7 @@
   /* 3-Color Scheme */
   --color-green: #8edb38;
   --color-text: #2a3439;
-  --color-background: #dcdcdc;
+  --color-background: #F5F5EF;
 }
 
 .dark {

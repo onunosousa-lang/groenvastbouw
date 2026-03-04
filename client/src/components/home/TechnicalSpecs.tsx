@@ -88,7 +88,7 @@ export default function TechnicalSpecs() {
   };
 
   return (
-    <section id="technical-specs" className="py-20 bg-[#dcdcdc] scroll-mt-20 relative overflow-hidden">
+    <section id="technical-specs" className="py-20 bg-[#F5F5EF] scroll-mt-20 relative overflow-hidden">
       {/* Subtle Pattern Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8edb38 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
@@ -108,7 +108,7 @@ export default function TechnicalSpecs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#dcdcdc] rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-[#8edb38] transition-colors"
+              className="bg-[#F5F5EF] rounded-2xl shadow-lg p-8 border-2 border-transparent hover:border-[#8edb38] transition-colors"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-xl bg-[#8edb38]/10 flex items-center justify-center flex-shrink-0">

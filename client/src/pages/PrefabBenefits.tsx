@@ -103,14 +103,14 @@ export default function PrefabBenefits() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#dcdcdc] font-sans">
+    <div className="min-h-screen bg-[#F5F5EF] font-sans">
       <SEO 
         title={`${t('prefab_title')} | Groenvastbouw`}
         description={t('prefab_intro')}
       />
       <Navbar />
       
-      <div className="pt-24 pb-12 bg-[#dcdcdc]">
+      <div className="pt-24 pb-12 bg-[#F5F5EF]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#2a3439] mb-6">
             {t('prefab_title')}
@@ -131,7 +131,7 @@ export default function PrefabBenefits() {
           {benefits.map((benefit, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="flex flex-col items-center text-center pb-2">
-                <div className="mb-4 p-3 bg-[#dcdcdc] rounded-full">
+                <div className="mb-4 p-3 bg-[#F5F5EF] rounded-full">
                   {benefit.icon}
                 </div>
                 <CardTitle className="text-xl font-bold text-[#2a3439]">

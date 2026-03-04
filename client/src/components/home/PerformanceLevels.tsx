@@ -131,7 +131,7 @@ export default function PerformanceLevels() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-[#dcdcdc] rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
+              className={`bg-[#F5F5EF] rounded-2xl shadow-lg overflow-hidden border-2 relative flex flex-col ${
                 level.color === 'green' ? 'border-[#8edb38] transform md:-translate-y-4' : 'border-transparent'
               }`}
             >
@@ -143,10 +143,10 @@ export default function PerformanceLevels() {
               
               <div className={`p-6 flex-grow ${level.color === 'green' ? 'pt-10' : ''}`}>
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                  level.color === 'green' ? 'bg-[#dcdcdc] text-[#8edb38]' : 
-                  level.color === 'blue' ? 'bg-[#dcdcdc] text-[#8edb38]' : 
-                  level.color === 'purple' ? 'bg-[#dcdcdc] text-[#8edb38]' :
-                  'bg-[#dcdcdc] text-[#2a3439]'
+                  level.color === 'green' ? 'bg-[#F5F5EF] text-[#8edb38]' : 
+                  level.color === 'blue' ? 'bg-[#F5F5EF] text-[#8edb38]' : 
+                  level.color === 'purple' ? 'bg-[#F5F5EF] text-[#8edb38]' :
+                  'bg-[#F5F5EF] text-[#2a3439]'
                 }`}>
                   <level.icon className="w-6 h-6" />
                 </div>

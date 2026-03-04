@@ -8,7 +8,7 @@ export default function SystemsSection() {
   const systems = translations[language].systems_array;
 
   return (
-    <section id="systems" className="py-20 bg-[#dcdcdc]">
+    <section id="systems" className="py-20 bg-[#F5F5EF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#2a3439] mb-4">{t('pricing_title')}</h2>
@@ -22,7 +22,7 @@ export default function SystemsSection() {
               className={`relative transition-all duration-300 hover:-translate-y-2 ${
                 system.highlight 
                   ? 'border-[#8edb38] shadow-2xl scale-105 z-10' 
-                  : 'border-[#dcdcdc] shadow-lg hover:shadow-xl'
+                  : 'border-[#F5F5EF] shadow-lg hover:shadow-xl'
               }`}
             >
               {system.highlight && (
@@ -30,7 +30,7 @@ export default function SystemsSection() {
                   Meest Gekozen
                 </div>
               )}
-              <CardHeader className={`${system.highlight ? 'bg-[#dcdcdc]' : 'bg-card'} border-b border-[#dcdcdc]`}>
+              <CardHeader className={`${system.highlight ? 'bg-[#F5F5EF]' : 'bg-card'} border-b border-[#F5F5EF]`}>
                 <CardTitle className="text-2xl font-bold text-center text-[#2a3439]">
                   {system.name}
                 </CardTitle>
@@ -49,7 +49,7 @@ export default function SystemsSection() {
                 <ul className="space-y-4">
                   {system.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="mt-1 bg-[#dcdcdc] rounded-full p-1">
+                      <div className="mt-1 bg-[#F5F5EF] rounded-full p-1">
                         <Check className="text-[#8edb38] w-3 h-3" />
                       </div>
                       <span className="text-sm text-[#2a3439]">{feature}</span>

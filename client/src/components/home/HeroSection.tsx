@@ -15,14 +15,14 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     company: 'Groenvastbouw',
     tagline: language === 'nl' ? 'Nuchter bouwen. Slim wonen.' : 'Smart building. Smart living.',
     partnership: language === 'nl'
-      ? 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.'
-      : 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
+      ? 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.'
+      : 'Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.',
     headline: language === 'nl'
-      ? 'Jouw Passiefhuis. Gemonteerde Structuur in 3 Maanden na Aankoop.'
-      : 'Your Passive House. Mounted Structure in 3 Months from Purchase.',
+      ? 'Jouw Passiefhuis. Casco gemonteerd in ca. 3 maanden.'
+      : 'Your Passive House. Shell mounted in approx. 3 months.',
     subheadline: language === 'nl'
-      ? <>Prefab passiefhuizen. volledige structuur geleverd en gemonteerd op locatie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>
-      : <>Prefab passive houses. full structure delivered and mounted on site. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.</>,
+      ? <>Prefab houtskeletbouw. Volledige draagstructuur geleverd en gemonteerd op locatie. Sneller dan conventionele bouw.</>
+      : <>Prefab timber frame construction. Full structural shell delivered and assembled on site. Faster than conventional construction.</>,
     description: language === 'nl'
       ? 'Onze technologie zorgt voor maximale efficiëntie in productie. gecontroleerde kosten zonder verrassingen, minimaal afval, toekomstbestendig comfort.'
       : 'Our technology allows for maximum efficiency in production. controlled costs without surprises, minimum waste, future-proof comfort.',
@@ -31,20 +31,20 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
     points: language === 'nl' 
       ? [
           '90% lagere energierekeningen. voor het leven',
-          'Montage: 8-12 dagen. Totale doorlooptijd: 3 maanden',
+          'Cascomontage: 8-12 dagen. Casco-doorlooptijd: ca. 3 maanden*',
           'Maximale kwaliteit, gebouwd om te duren'
         ]
       : [
           '90% lower energy bills. for life',
-          'Assembly: 8-12 days. Total lead time: 3 months',
+          'Shell assembly: 8-12 days. Shell lead time: approx. 3 months*',
           'Maximum quality, built to last'
         ],
     footnotes: language === 'nl'
       ? [
-          '*Van bestelling tot volledig gemonteerde structuur.'
+          '*Doorlooptijd geldt voor het casco (ruwbouw). Volledig turnkey project duurt langer, afhankelijk van vergunningen en afbouw.'
         ]
       : [
-          '*From order to fully mounted structure.'
+          '*Lead time applies to the structural shell. Full turnkey project takes longer, depending on permits and finishing work.'
         ]
   };
 

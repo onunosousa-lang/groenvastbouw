@@ -45,7 +45,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-[#dcdcdc]">
+    <section id="faq" className="py-20 bg-[#F5F5EF]">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#8edb38] mb-4">{t('faq_title')}</h2>
@@ -59,7 +59,7 @@ export default function FAQSection() {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-[#dcdcdc] border border-[#2a3439] rounded-lg px-6"
+              className="bg-[#F5F5EF] border border-[#2a3439] rounded-lg px-6"
             >
               <AccordionTrigger className="text-lg font-medium text-[#2a3439] hover:text-[#7aa050] hover:no-underline py-6">
                 {faq.question}
