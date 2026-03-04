@@ -107,6 +107,7 @@ export default function About() {
                   src="/nuno-sousa-profile.jpg"
                   alt="Nuno Machado e Sousa"
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -165,10 +166,11 @@ export default function About() {
               </div>
             </div>
             <div className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/senmar-photos/factory_senmar_12.jpg" 
-                alt="Partner factory CNC production" 
+              <img
+                src="/senmar-photos/factory_senmar_12.jpg"
+                alt="Partner factory CNC production"
                 className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-4 left-4 bg-[#F5F5EF] backdrop-blur px-4 py-2 rounded-lg text-sm font-bold">
                 {language === 'nl' ? 'Fabriek Unit 1 | Coja, Portugal' : 'Factory Unit 1 | Coja, Portugal'}

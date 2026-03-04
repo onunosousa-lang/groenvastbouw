@@ -376,7 +376,7 @@ export default function Programs() {
       {/* SECTION 4 — WHAT'S INCLUDED */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/fabriek-productie-prefab-wand-constructie.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/fabriek-productie-prefab-wand-constructie.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">
@@ -468,7 +468,7 @@ export default function Programs() {
       {/* SECTION 6 — BUDGET ESTIMATE FORM */}
       <section id="estimate" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/fabriek-productie-wand-isolatie-plaatsing.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/fabriek-productie-wand-isolatie-plaatsing.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto bg-[#F5F5EF] rounded-lg shadow-xl p-8 md:p-12">

@@ -51,7 +51,7 @@ export default function WhyUs() {
               </p>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
-              <img src="/senmar-photos/senmar_delivery_4.jpg" alt="Partner factory delivery" className="w-full h-full object-cover" />
+              <img src="/senmar-photos/senmar_delivery_4.jpg" alt="Partner factory delivery" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function WhyUs() {
               
               {/* Partner Factory Production Image */}
               <div className="my-10 rounded-xl overflow-hidden shadow-xl">
-                <img src="/senmar-photos/factory_senmar_7.jpg" alt="Partner factory production facilities" className="w-full h-auto" />
+                <img src="/senmar-photos/factory_senmar_7.jpg" alt="Partner factory production facilities" className="w-full h-auto" loading="lazy" />
               </div>
 
               <ul className="space-y-6 list-none pl-0 mt-8">
@@ -210,7 +210,7 @@ export default function WhyUs() {
             
             {/* Partner Factory Mission Image */}
             <div className="mb-10 rounded-xl overflow-hidden shadow-xl">
-              <img src="/senmar-photos/senmar_montage_11.jpg" alt="Partner factory montage" className="w-full h-auto" />
+              <img src="/senmar-photos/senmar_montage_11.jpg" alt="Partner factory montage" className="w-full h-auto" loading="lazy" />
             </div>
 
             <div className="bg-[#F5F5EF] p-10 rounded-2xl border border-[#F5F5EF] shadow-inner">

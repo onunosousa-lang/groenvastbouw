@@ -29,6 +29,7 @@ export default function MarketsSection() {
                   src={index === 0 ? "/images/private_residential.jpg" : "/images/business_development.jpg"}
                   alt={market.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 flex items-end p-6">
                   <div className="bg-[#F5F5EF]/90 backdrop-blur-sm px-4 py-2 rounded-lg">

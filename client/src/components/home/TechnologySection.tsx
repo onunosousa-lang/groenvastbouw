@@ -67,6 +67,7 @@ export default function TechnologySection() {
               src="/factory-photos/factory_production_4.jpg"
               alt="Partner factory production"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              loading="lazy"
             />
             <div className="absolute bottom-8 left-8">
               <div className="bg-[#F5F5EF]/90 backdrop-blur-sm p-4 rounded-lg">
