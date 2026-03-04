@@ -15,7 +15,7 @@ export default function WhyUs() {
       {/* Hero Section with Partner Factory Image */}
       <section className="relative pt-32 pb-20 bg-background text-[#2a3439] overflow-hidden">
         <div className="absolute inset-0 opacity-40">
-          <img src="/senmar-photos/factory_senmar_2.jpg" alt="Partner factory in Portugal" className="w-full h-full object-cover" />
+          <img src="/senmar-photos/factory_senmar_2.jpg" alt="Certified production partner facility" className="w-full h-full object-cover" />
         </div>
         <div className="relative container mx-auto px-4 text-center max-w-4xl bg-[#F5F5EF]/80 backdrop-blur-sm rounded-lg p-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8edb38]/20 text-[#8edb38] border border-[#8edb38]/30 rounded-full text-sm font-bold mb-8 uppercase tracking-wider">
@@ -42,12 +42,12 @@ export default function WhyUs() {
                 {language === 'nl' ? 'Strategisch Partnerschap' : 'Strategic Partnership'}
               </div>
               <h2 className="text-4xl font-bold text-[#2a3439] mb-6">
-                {language === 'nl' ? 'Groenvastbouw × partnerfabriek in Portugal' : 'Groenvastbouw × partner factory in Portugal'}
+                {language === 'nl' ? 'Groenvastbouw × gecertificeerde productiepartner' : 'Groenvastbouw × certified production partner'}
               </h2>
               <p className="text-lg text-[#2a3439] leading-relaxed mb-6">
                 {language === 'nl'
-                  ? 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal. Onze partnerfabriek in Coja beschikt over 4.000 m² productieruimte en een jaarlijkse capaciteit van 19.000 m², met CNC-automatisering voor consistente kwaliteit.'
-                  : 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. Our partner factory in Coja has 4,000 m² of production space and an annual capacity of 19,000 m², using CNC automation for consistent quality.'}
+                  ? 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners. De productiefaciliteit beschikt over 4.000 m² productieruimte en een jaarlijkse capaciteit van 19.000 m², met CNC-automatisering voor consistente constructiekwaliteit.'
+                  : 'Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners. The production facility has 4,000 m² of production space and an annual capacity of 19,000 m², using CNC automation for consistent build quality.'}
               </p>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">

@@ -20,8 +20,8 @@ export default function OurOffer() {
       titleEn: 'What We Offer',
       subtitleNl: 'Hoogperformante Geprefabriceerde Timmerhuizen voor Nederland',
       subtitleEn: 'High-Performance Prefabricated Timber Homes for the Netherlands',
-      descNl: 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.',
-      descEn: 'Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
+      descNl: 'Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregelgeving en passieve energiestandaarden.',
+      descEn: 'Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.',
       featuresNl: [
         'Duurzame geprefabriceerde timmerconstructie (C24)',
         'Passief-klare isolatie en luchtdichtheid',
@@ -48,7 +48,7 @@ export default function OurOffer() {
       subtitleEn: 'Four Phases: Design → Production → Transport → Assembly',
       phasesNl: [
         {
-          title: 'Fase 1: CNC Prefabricage (Portugal)',
+          title: 'Fase 1: CNC Prefabricage (productiepartner)',
           items: [
             'CNC gesneden C24 Nordic Pine hout',
             'Tolerantie ±1mm voor architecturale nauwkeurigheid',
@@ -88,7 +88,7 @@ export default function OurOffer() {
       ],
       phasesEn: [
         {
-          title: 'Phase 1: CNC Prefabrication (Portugal)',
+          title: 'Phase 1: CNC Prefabrication (production partner)',
           items: [
             'CNC-cut C24 Nordic Pine timber',
             'Tolerance ±1mm for architectural accuracy',
@@ -190,10 +190,10 @@ export default function OurOffer() {
         { phase: 'Transport', duration: '± 1 week' },
         { phase: 'Assembly', duration: '± 1–3 weeks' }
       ],
-      totalNl: 'Totale tijd van bestelling tot gemonteerd casco: ca. 3 maanden',
-      totalEn: 'Total time from order to mounted structure: approx. 3 months',
-      noteNl: 'Na montage worden ramen, installaties en binnenafwerkingen uitgevoerd ter plaatse.',
-      noteEn: 'After assembly, windows, installations and interior finishing are completed on-site.'
+      totalNl: 'Totale doorlooptijd casco (ruwbouw): ca. 3 maanden. Volledig turnkey project duurt langer.',
+      totalEn: 'Total shell lead time: approx. 3 months. Full turnkey project takes longer.',
+      noteNl: 'Na cascomontage worden kozijnen, installaties en binnenafwerking ter plaatse uitgevoerd.',
+      noteEn: 'After shell assembly, windows, installations and interior finishing are completed on-site.'
     },
 
     // SECTION 5: Technology & Energy
@@ -358,8 +358,8 @@ export default function OurOffer() {
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <p className="text-lg text-[#2a3439] mb-8 leading-relaxed">
             {language === 'nl'
-              ? 'Groenvastbouw levert hoogperformante geprefabriceerde timmerhuizen via het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregels en Passieve energiestandaarden.'
-              : 'Groenvastbouw delivers high-performance prefabricated timber homes via the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.'
+              ? 'Groenvastbouw levert hoogperformante geprefabriceerde houtskeletwoningen via het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners, met behulp van een geavanceerd CNC-prefabricatiesysteem, speciaal ontworpen voor het Nederlandse klimaat, Nederlandse bouwregelgeving en passieve energiestandaarden.'
+              : 'Groenvastbouw delivers high-performance prefabricated timber frame homes via the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners, using an advanced CNC-prefabrication system, specifically designed for the Dutch climate, Dutch building regulations, and Passive energy standards.'
             }
           </p>
           

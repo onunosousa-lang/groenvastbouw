@@ -74,7 +74,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-[#F5F5EF]/40 z-40 transition-opacity duration-300"
+        className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
         onClick={onClose}
       />
       

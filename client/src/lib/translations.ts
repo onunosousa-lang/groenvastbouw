@@ -12,17 +12,17 @@ export const translations = {
     
     // Hero Section
     hero_title: "De toekomst van bouwen",
-    hero_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    hero_subtitle: "Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.",
     hero_cta: "Bekijk Systemen",
     hero_slogan: "Nuchter bouwen. Slim wonen.",
     hero_main_title: "Duurzame woningen op maat",
-    hero_main_subtitle: "Passieve houtskeletbouw met industriële precisie uit Portugal",
+    hero_main_subtitle: "Prefab houtskeletbouw — sneller dan conventionele bouw",
     hero_cta_primary: "Bekijk Projecten",
     hero_cta_secondary: "Meer Informatie",
     
     // About Section
     about_title: "Technische Perfectie",
-    about_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    about_subtitle: "Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.",
     about_mission_title: "Onze Missie",
     about_mission_text: "Duurzame, hoogwaardige woningbouw toegankelijk maken door geavanceerde prefabricage.",
     
@@ -43,9 +43,9 @@ export const translations = {
     services_development_desc: "Van grond tot sleutelklaar project",
     
     // Technology Section
-    technology_title: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
-    technology_subtitle: "Geproduceerd door onze partnerfabriek in Portugal met CNC-precisie.",
-    technology_factory: "4.000 m² fabriek in Coja, Portugal",
+    technology_title: "Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.",
+    technology_subtitle: "Geproduceerd door onze gecertificeerde productiepartner met CNC-precisie.",
+    technology_factory: "4.000 m² gecertificeerde productiefaciliteit",
     technology_capacity: "Capaciteit 19.000 m² per jaar",
     technology_precision: "CNC-precisie met 1mm tolerantie",
     technology_certified: "FSC & CE gecertificeerd",
@@ -95,12 +95,12 @@ export const translations = {
     energy_comparison_ventilation: "Ventilatie",
     energy_comparison_cooling: "Koeling (zomer)",
     energy_comparison_embodied: "Bonus: Lagere Bouw-impact",
-    energy_comparison_embodied_desc: "Houtskeletbouw van het Groenvastbouw engineered timber system, vervaardigd met industriële precisie in Portugal, gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.",
+    energy_comparison_embodied_desc: "Houtskeletbouw van het Groenvastbouw engineered timber system, geproduceerd door gecertificeerde productiepartners, gebruikt 50% minder energie tijdens productie dan betonbouw. Na ~4 jaar heeft het huis zijn bouwinvestering terugverdiend en wordt het carbon-positief voor 50+ jaar.",
     
     // FAQ Section
     faq_title: "Veelgestelde Vragen",
     faq_timeline_q: "Hoe lang duurt het bouwproces?",
-    faq_timeline_a: "Productie in fabriek: 6-8 weken. Montage ter plaatse: 7-10 dagen voor structuur. Totale bouwtijd inclusief afwerking: 4-6 maanden (50-70% sneller dan traditioneel).",
+    faq_timeline_a: "Productie bij onze productiepartner: 6-8 weken. Cascomontage op locatie: 7-10 dagen. Totale doorlooptijd casco (ruwbouw): ca. 3 maanden. Voor volledig turnkey projecten is de totale doorlooptijd langer, afhankelijk van vergunningen en afbouw — maar aanzienlijk sneller dan conventionele bouw.",
     faq_price_q: "Hoe werkt de prijsopbouw?",
     faq_price_a: "De prijs is afhankelijk van het gekozen prestatieniveau en projectspecificaties. Fundaties, transport, montage en afwerking worden apart berekend op basis van uw project. Neem contact op voor een offerte op maat.",
     faq_energy_q: "Hoeveel bespaar ik op energie?",
@@ -108,11 +108,11 @@ export const translations = {
     faq_design_q: "Kan ik mijn eigen ontwerp realiseren?",
     faq_design_a: "Absoluut. Ons modulair systeem biedt volledige architecturale vrijheid. Elk project is uniek - alleen de productie is gestandaardiseerd, niet het ontwerp.",
     faq_certification_q: "Welke certificeringen hebben jullie?",
-    faq_certification_a: "Onze woningen behalen EPC label A++ of A+++. Onze fabriek in Portugal is FSC en CE gecertificeerd. Op aanvraag kunnen we Passivhaus-certificering regelen.",
+    faq_certification_a: "Onze woningen behalen EPC label A++ of A+++. Onze productiepartners zijn FSC en CE gecertificeerd. Op aanvraag kunnen we Passivhaus-certificering regelen.",
     faq_warranty_q: "Wat is de garantie?",
     faq_warranty_a: "10 jaar garantie op de structuur. Fabrieksproductie betekent superieure kwaliteitscontrole en nul weerschade tijdens bouw.",
     faq_location_q: "Waar bouwen jullie?",
-    faq_location_a: "Wij bouwen door heel Nederland. Transport vanuit Portugal is efficiënt en duurzaam dankzij geoptimaliseerde logistiek.",
+    faq_location_a: "Wij bouwen door heel Nederland. Transport is efficiënt en duurzaam dankzij geoptimaliseerde logistiek.",
     faq_foundation_q: "Regelen jullie ook de fundering?",
     faq_foundation_a: "Ja, wij kunnen het volledige project coördineren inclusief fundering, of samenwerken met uw eigen aannemer.",
     
@@ -137,7 +137,7 @@ export const translations = {
     footer_contact: "Contact",
     footer_rights: "Alle rechten voorbehouden",
     footer_about: "Over Groenvastbouw",
-    footer_about_text: "Duurzame, energiezuinige woningbouw met het Groenvastbouw engineered timber system, geproduceerd com precisão industrial em Portugal.",
+    footer_about_text: "Duurzame, energiezuinige woningbouw met het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.",
     footer_legal: "Juridisch",
     footer_credentials: "Gegevens",
     
@@ -165,7 +165,7 @@ export const translations = {
     solution_title: "Onze Oplossing",
     solution_subtitle: "Industriële precisie + Passivhaus standaard",
     solution_speed: "70% Sneller",
-    solution_speed_desc: "Montage in 7-10 dagen. Totale bouwtijd 4-6 maanden.",
+    solution_speed_desc: "Cascomontage in 7-10 dagen. Volledig project aanzienlijk sneller dan conventionele bouw.",
     solution_energy: "90% Energiebesparing",
     solution_energy_desc: "Aanzienlijke besparing per jaar voor een gemiddeld gezin.",
     solution_quality: "Fabriekscontrole",
@@ -274,7 +274,7 @@ export const translations = {
     // About Us Section
     aboutus_title: "Over Ons",
     aboutus_p1: "Wij bouwen duurzame, hoogwaardige houtskeletbouwconstructies die ontworpen zijn om echt toekomstbestendig te zijn.",
-    aboutus_p2: "Met meer dan 15 jaar ervaring in houtbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productie. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    aboutus_p2: "Met meer dan 15 jaar ervaring in houtskeletbouw en duurzaam bouwen, combineert Groenvastbouw lokale expertise in Nederland met directe toegang tot geavanceerde industriële productiepartners.",
     aboutus_p3: "Onze toewijding is aan echte duurzaamheid en echte prestaties, zonder compromissen op materialen, bouwkwaliteit of langetermijnefficiëntie. Door precisie houtconstructies te produceren in gecontroleerde fabrieksomstandigheden, verminderen we afval, beheersen we kosten en leveren we gebouwen die tot 90% van de verwarmingsenergie kunnen besparen, terwijl ze een gezonde en comfortabele binnenomgeving bieden.",
     aboutus_p4: "Wij bieden oplossingen van structurele schil tot volledig sleutelklare gebouwen en kunnen het hele proces coördineren, van funderingen tot energiesystemen, waarbij we indien nodig samenwerken met vertrouwde lokale partners.",
     aboutus_tagline: "Beter bouwen. Duurzaam bouwen. Bouwen voor de toekomst."
@@ -293,17 +293,17 @@ export const translations = {
     
     // Hero Section
     hero_title: "The future of building",
-    hero_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    hero_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.",
     hero_cta: "View Systems",
     hero_slogan: "Sober building. Smart living.",
     hero_main_title: "Sustainable custom homes",
-    hero_main_subtitle: "Passive timber frame construction with industrial precision from Portugal",
+    hero_main_subtitle: "Prefab timber frame construction — faster than conventional construction",
     hero_cta_primary: "View Projects",
     hero_cta_secondary: "More Information",
     
     // About Section
     about_title: "Technical Perfection",
-    about_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    about_subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.",
     about_mission_title: "Our Mission",
     about_mission_text: "Making sustainable, high-performance housing accessible through advanced prefabrication.",
     
@@ -324,9 +324,9 @@ export const translations = {
     services_development_desc: "From land to turnkey project",
     
     // Technology Section
-    technology_title: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
-    technology_subtitle: "Manufactured by our partner factory in Portugal using CNC precision.",
-    technology_factory: "4,000 m² factory in Coja, Portugal",
+    technology_title: "Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.",
+    technology_subtitle: "Manufactured by our certified production partners using CNC precision.",
+    technology_factory: "4,000 m² certified production facility",
     technology_capacity: "Capacity 19,000 m² per year",
     technology_precision: "CNC precision with 1mm tolerance",
     technology_certified: "FSC & CE certified",
@@ -376,12 +376,12 @@ export const translations = {
     energy_comparison_ventilation: "Ventilation",
     energy_comparison_cooling: "Cooling (summer)",
     energy_comparison_embodied: "Bonus: Lower Construction Impact",
-    energy_comparison_embodied_desc: "Timber frame construction from the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.",
+    energy_comparison_embodied_desc: "Timber frame construction from the Groenvastbouw engineered timber system, produced by certified production partners, uses 50% less energy during production than concrete construction. After ~4 years, the house has earned back its construction investment and becomes carbon-positive for 50+ years.",
     
     // FAQ Section
     faq_title: "Frequently Asked Questions",
     faq_timeline_q: "How long does the building process take?",
-    faq_timeline_a: "Factory production: 6-8 weeks. On-site assembly: 7-10 days for structure. Total construction time including finishing: 4-6 months (50-70% faster than traditional).",
+    faq_timeline_a: "Production at our partner facility: 6-8 weeks. On-site shell assembly: 7-10 days. Total lead time for the structural shell: approx. 3 months. For full turnkey projects, total duration is longer depending on permits and finishing — but significantly faster than conventional construction.",
     faq_price_q: "How does pricing work?",
     faq_price_a: "Pricing depends on the chosen performance level and project specifications. Foundations, transport, assembly, and finishing are calculated separately based on your project. Contact us for a customized quote.",
     faq_energy_q: "How much do I save on energy?",
@@ -389,11 +389,11 @@ export const translations = {
     faq_design_q: "Can I realize my own design?",
     faq_design_a: "Absolutely. Our modular system offers complete architectural freedom. Every project is unique - only the production is standardized, not the design.",
     faq_certification_q: "What certifications do you have?",
-    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Our factory in Portugal is FSC and CE certified. We can arrange Passivhaus certification on request.",
+    faq_certification_a: "Our homes achieve EPC label A++ or A+++. Our production partners are FSC and CE certified. We can arrange Passivhaus certification on request.",
     faq_warranty_q: "What is the warranty?",
     faq_warranty_a: "10-year warranty on the structure. Factory production means superior quality control and zero weather damage during construction.",
     faq_location_q: "Where do you build?",
-    faq_location_a: "We build throughout the Netherlands. Transport from Portugal is efficient and sustainable thanks to optimized logistics.",
+    faq_location_a: "We build throughout the Netherlands. Transport is efficient and sustainable thanks to optimized logistics.",
     faq_foundation_q: "Do you also handle the foundation?",
     faq_foundation_a: "Yes, we can coordinate the entire project including foundation, or work with your own contractor.",
     
@@ -418,7 +418,7 @@ export const translations = {
     footer_contact: "Contact",
     footer_rights: "All rights reserved",
     footer_about: "About Groenvastbouw",
-    footer_about_text: "Sustainable, energy-efficient housing with the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    footer_about_text: "Sustainable, energy-efficient housing with the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.",
     footer_legal: "Legal",
     footer_credentials: "Credentials",
     
@@ -446,7 +446,7 @@ export const translations = {
     solution_title: "Our Solution",
     solution_subtitle: "Industrial precision + Passivhaus standard",
     solution_speed: "70% Faster",
-    solution_speed_desc: "Assembly in 7-10 days. Total construction time 4-6 months.",
+    solution_speed_desc: "Shell assembly in 7-10 days. Full project significantly faster than conventional construction.",
     solution_energy: "90% Energy Savings",
     solution_energy_desc: "Significant savings per year for an average family.",
     solution_quality: "Factory Control",
@@ -555,7 +555,7 @@ export const translations = {
     // About Us Section
     aboutus_title: "About Us",
     aboutus_p1: "We build sustainable, high-performance timber frame buildings designed to be truly future-proof.",
-    aboutus_p2: "With over 15 years of experience in timber construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial manufacturing. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+    aboutus_p2: "With over 15 years of experience in timber frame construction and sustainable building, Groenvastbouw combines local expertise in the Netherlands with direct access to advanced industrial production partners.",
     aboutus_p3: "Our commitment is to real sustainability and real performance, never compromising on materials, build quality, or long-term efficiency. By producing precision timber structures in controlled factory conditions, we reduce waste, control costs, and deliver buildings that can save up to 90% of heating energy while providing a healthy and comfortable indoor environment.",
     aboutus_p4: "We offer solutions from structural shell to fully turnkey buildings and can coordinate the entire process, from foundations to energy systems, working alongside trusted local partners when needed.",
     aboutus_tagline: "Build better. Build sustainably. Build for the future."

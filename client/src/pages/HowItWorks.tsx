@@ -365,9 +365,9 @@ export default function HowItWorks() {
                     {language === 'nl' ? 'Snelle Levering' : 'Fast Delivery'}
                   </h4>
                   <p className="text-[#2a3439] text-sm">
-                    {language === 'nl' 
-                      ? 'Van ontwerp tot geleverde structuur in slechts 3 maanden.' 
-                      : 'From design to delivered structure in just 3 months.'}
+                    {language === 'nl'
+                      ? 'Van ontwerp tot gemonteerd casco in ca. 3 maanden. Sneller dan conventionele bouw.'
+                      : 'From design to mounted structural shell in approx. 3 months. Faster than conventional construction.'}
                   </p>
                 </div>
               </div>

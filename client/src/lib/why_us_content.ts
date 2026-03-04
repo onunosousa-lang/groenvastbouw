@@ -3,17 +3,17 @@ export const whyUsContent = {
     title: "Waarom Groenvastbouw?",
     hero: {
       title: "De Toekomst van Bouwen, Vandaag.",
-      subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+      subtitle: "Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "Het Groenvastbouw Verschil: Meer dan een Bouwer",
-      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
+      content: "Wij zijn niet zomaar een bouwbedrijf. Wij zijn uw toegewijde partner in het realiseren van een duurzame toekomst. Het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners, stelt ons in staat om ongeëvenaarde kwaliteit, snelheid en efficiëntie te leveren. Van het eerste ontwerp tot de uiteindelijke oplevering, wij beheren het volledige traject, zodat u verzekerd bent van een naadloos en zorgeloos proces.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
       title: "Groenvastbouw engineered timber system: Geavanceerde Prefabricage",
-      content: "De kern van onze aanpak is het Groenvastbouw engineered timber system, vervaardigd met industriële precisie in Portugal. In een state-of-the-art fabriek van 4.000 m² worden uw bouwelementen met CNC-precisie vervaardigd. Dit elimineert menselijke fouten, garandeert een consistente kwaliteit en verkort de bouwtijd op locatie met tot wel 70%.",
+      content: "De kern van onze aanpak is het Groenvastbouw engineered timber system, vervaardigd met industriële precisie door gecertificeerde productiepartners. In een state-of-the-art productiefaciliteit van 4.000 m² worden uw bouwelementen met CNC-precisie vervaardigd. Dit elimineert maatafwijkingen, garandeert een consistente constructiekwaliteit en verkort de bouwtijd op locatie met tot wel 70%.",
       methods: [
         {
           title: "Gepaneeliseerde Constructie",
@@ -75,7 +75,7 @@ export const whyUsContent = {
     },
     callToAction: {
       title: "Klaar om de toekomst te bouwen?",
-      content: "Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal, uw project kan transformeren.",
+      content: "Neem vandaag nog contact op voor een vrijblijvend gesprek en ontdek hoe het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners, uw project kan transformeren.",
       buttonText: "Neem Contact Op"
     }
   },
@@ -83,17 +83,17 @@ export const whyUsContent = {
     title: "Why Groenvastbouw?",
     hero: {
       title: "The Future of Construction, Today.",
-      subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.",
+      subtitle: "Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.",
       imageUrl: "/senmar/002.webp"
     },
     groenvastbouwDifference: {
       title: "The Groenvastbouw Difference: More than a Builder",
-      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final delivery, we manage the entire process, ensuring a seamless and worry-free experience.",
+      content: "We are not just a construction company. We are your dedicated partner in building a sustainable future. The Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners, allows us to deliver unparalleled quality, speed, and efficiency. From the initial design to the final handover, we manage the entire process, ensuring a seamless and worry-free experience.",
       imageUrl: "/senmar/005.webp"
     },
     senmarRevolution: {
       title: "Groenvastbouw engineered timber system: Advanced Prefabrication",
-      content: "At the core of our approach is the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal. In a state-of-the-art 4,000 m² factory, your building components are manufactured with CNC precision. This eliminates human error, guarantees consistent quality, and reduces on-site construction time by up to 70%.",
+      content: "At the core of our approach is the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners. In a state-of-the-art 4,000 m² production facility, your building components are manufactured with CNC precision. This eliminates dimensional error, guarantees consistent quality, and reduces on-site construction time by up to 70%.",
       methods: [
         {
           title: "Panelized Construction",
@@ -155,7 +155,7 @@ export const whyUsContent = {
     },
     callToAction: {
       title: "Ready to build the future?",
-      content: "Contact us today for a no-obligation consultation and discover how the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal, can transform your project.",
+      content: "Contact us today for a no-obligation consultation and discover how the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners, can transform your project.",
       buttonText: "Contact Us"
     }
   }

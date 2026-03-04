@@ -70,7 +70,7 @@ export default function TechnologySection() {
             />
             <div className="absolute bottom-8 left-8">
               <div className="bg-[#F5F5EF]/90 backdrop-blur-sm p-4 rounded-lg">
-                <div className="text-sm font-bold uppercase tracking-wider mb-2 text-[#2a3439]">Coja, Portugal</div>
+                <div className="text-sm font-bold uppercase tracking-wider mb-2 text-[#2a3439]">Gecertificeerde productiepartner</div>
                 <div className="text-2xl font-bold text-[#2a3439]">High-Tech Timber Frame Production</div>
               </div>
             </div>

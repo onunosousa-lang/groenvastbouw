@@ -25,10 +25,10 @@ export default function WhatWeOffer() {
     structureDelivery: language === 'nl' ? 'Structuur Levering' : 'Structure Delivery',
     turnkeyDelivery: language === 'nl' ? 'Turn-key Levering' : 'Turn-key Delivery',
 
-    structureTitle: language === 'nl' ? 'Structuur Levering (3 maanden)' : 'Structure Delivery (3 months)',
+    structureTitle: language === 'nl' ? 'Casco Levering (ca. 3 maanden)' : 'Shell Delivery (approx. 3 months)',
     structureDesc: language === 'nl'
-      ? 'De volledige prefab structuur wordt in 3 maanden geleverd. U verzorgt de fundering en afwerking.'
-      : 'The complete prefab structure is delivered in 3 months. You handle the foundation and finishing.',
+      ? 'Het volledige prefab casco (ruwbouw) wordt in ca. 3 maanden geleverd en gemonteerd. Fundering en afbouw verzorgt u zelf of via onze lokale partners.'
+      : 'The complete prefab structural shell is delivered and assembled in approx. 3 months. Foundation and finishing are handled by you or through our local partners.',
     
     structureIncludes: language === 'nl' ? 'Inclusief:' : 'Includes:',
     structureIncludesItems: language === 'nl' ? [

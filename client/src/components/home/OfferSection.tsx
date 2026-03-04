@@ -11,25 +11,25 @@ export default function OfferSection() {
   const content = {
     headline: language === 'nl' ? 'Ons Aanbod' : 'Our Offer',
     subheadline: language === 'nl' 
-      ? 'Jouw passiefhuis, jouw manier. Kies uit bewezen prefab modellen of volledig op maat. Structuur geleverd in 3 maanden. turn-key opties beschikbaar.'
-      : 'Your passive house, your way. Choose proven prefab models or go fully custom. Structure delivered in 3 months. turn-key options available.',
+      ? 'Jouw passiefhuis, jouw manier. Kies uit bewezen prefab modellen of volledig op maat. Casco geleverd in ca. 3 maanden. Turnkey opties beschikbaar.'
+      : 'Your passive house, your way. Choose proven prefab models or go fully custom. Structural shell delivered in approx. 3 months. Turnkey options available.',
     
     prefab: {
       title: language === 'nl' ? 'Prefab Modellen' : 'Prefab Models',
       subtitle: language === 'nl' ? 'Bewezen ontwerpen. Voorspelbare resultaten.' : 'Proven designs. Predictable results.',
       description: language === 'nl'
-        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd met industriële precisie in Portugal.'
-        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured with industrial precision in Portugal.',
+        ? 'Kies uit geteste passiefhuisontwerpen van het Groenvastbouw engineered timber system, geproduceerd met industriële precisie door gecertificeerde productiepartners.'
+        : 'Choose from tested passive house designs from the Groenvastbouw engineered timber system, manufactured with industrial precision by certified production partners.',
       points: language === 'nl' ? [
         'Meerdere modellen beschikbaar',
         '3 prestatie-niveaus: Optimal / Passive / Super Passive',
-        'Volledige structuur geleverd in 3 maanden',
-        'Turn-key afwerking beschikbaar'
+        'Casco geleverd in ca. 3 maanden',
+        'Turnkey afwerking beschikbaar'
       ] : [
         'Multiple models available',
         '3 performance levels: Optimal / Passive / Super Passive',
-        'Complete structure delivered in 3 months',
-        'Turn-key finishing available'
+        'Structural shell delivered in approx. 3 months',
+        'Turnkey finishing available'
       ],
       cta: language === 'nl' ? 'Prefab modellen' : 'Prefab models'
     },
@@ -43,13 +43,13 @@ export default function OfferSection() {
       points: language === 'nl' ? [
         'Ontwerp op basis van jouw eisen',
         'Passivhaus certificering mogelijk',
-        'Volledige structuur geleverd in 3 maanden',
-        'Turn-key afwerking beschikbaar'
+        'Casco geleverd in ca. 3 maanden',
+        'Turnkey afwerking beschikbaar'
       ] : [
         'Design based on your requirements',
         'Passivhaus certification possible',
-        'Complete structure delivered in 3 months',
-        'Turn-key finishing available'
+        'Structural shell delivered in approx. 3 months',
+        'Turnkey finishing available'
       ],
       cta: language === 'nl' ? 'Start Op Maat Project' : 'Start Your Custom Project'
     },

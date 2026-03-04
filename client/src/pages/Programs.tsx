@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useContactModal } from '@/App';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -124,6 +125,7 @@ const faqItems = [
 ];
 
 export default function Programs() {
+  const { openModal } = useContactModal();
   const [performanceTab, setPerformanceTab] = useState('standard');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -233,7 +235,7 @@ export default function Programs() {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => window.location.href = '/contact'}
+                onClick={openModal}
                 className="border-[#2a3439] text-[#2a3439] hover:bg-[#2a3439]/10 font-bold"
                 size="lg"
               >
